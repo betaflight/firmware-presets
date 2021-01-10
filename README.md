@@ -1,2 +1,3 @@
-# template
-Template for newly created repositories with all the required configuration files.
+# Firmware Presets
+
+Configuration Snippets for the Betaflight Flight Controller Firmware
