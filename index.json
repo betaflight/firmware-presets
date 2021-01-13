@@ -1,0 +1,273 @@
+{
+    "subFolders": [
+        {
+            "subFolders": [
+                {
+                    "subFolders": [
+                        {
+                            "subFolders": [],
+                            "files": [
+                                {
+                                    "fullPath": "presets/TestSamples/4.2/rates/defaults.txt",
+                                    "title": "default rates",
+                                    "version": "4.2",
+                                    "description": [
+                                        "description line 1",
+                                        "description line 2"
+                                    ],
+                                    "hash": "a449419898058bab8a2994f93c11055dcf5114cc5887050f27a3ae15889cfd5e4ea9003eda0bba63a3ade89c54d5bfd51dc98d526a3f8df05b60d2c57e7643c7"
+                                },
+                                {
+                                    "fullPath": "presets/TestSamples/4.2/rates/rates_example1.txt",
+                                    "title": "some presets 1",
+                                    "version": "4.2",
+                                    "description": [
+                                        "description line 1",
+                                        "description line 2"
+                                    ],
+                                    "hash": "54b518e21f553e37f6efb294dff5a3d624467a9f78435ffd832bb7de43ac9e2313c92f66da998397645dc0021e2b2caf857494836edc4db236dbc77c1dd639ab"
+                                },
+                                {
+                                    "fullPath": "presets/TestSamples/4.2/rates/rates_example2.txt",
+                                    "title": "some second presets",
+                                    "version": "4.2",
+                                    "description": [
+                                        "description line 1 second presets exampe",
+                                        "description line 2"
+                                    ],
+                                    "hash": "dbc860e65053890cf03a6f973386492bc6eb862fe69991d919bcd7cf2e113b465144adaf744e2f5a9ff462b0028213750fa1f88abe6042b9855119d1ab35312a"
+                                }
+                            ],
+                            "fullPath": "presets/TestSamples/4.2/rates",
+                            "name": "rates"
+                        },
+                        {
+                            "subFolders": [],
+                            "files": [
+                                {
+                                    "fullPath": "presets/TestSamples/4.2/tune/defaults.txt",
+                                    "title": "default tune",
+                                    "version": "4.2",
+                                    "description": [
+                                        "description line 1 example",
+                                        "description line 2",
+                                        "description line 3 example"
+                                    ],
+                                    "hash": "46ecbad6187bb116e40b51019f996baa7418bd173bb4ce20a9098f7b9c67b01389d15b4100a21d013731605d349f4795e9174cc2fdee1213250f76dce74d7afd"
+                                },
+                                {
+                                    "fullPath": "presets/TestSamples/4.2/tune/tuning_example_1 - Copy (2).txt",
+                                    "title": "some tuning example 4",
+                                    "version": "4.2",
+                                    "description": [
+                                        "description line 1 example",
+                                        "description line 2",
+                                        "description line 3 example",
+                                        "description line 4 example",
+                                        "description line 5 example"
+                                    ],
+                                    "hash": "8ca0d92ff455b1af9e5f0635c346cd7c9c4a9ce0f5de7552095918148b8190b4ab67a0367caa8932192cbd8e58a66db7e1b24efb04050350c8f584882d2ac949"
+                                },
+                                {
+                                    "fullPath": "presets/TestSamples/4.2/tune/tuning_example_1 - Copy (3).txt",
+                                    "title": "some tuning example 3",
+                                    "version": "4.2",
+                                    "description": [
+                                        "description line 1 example",
+                                        "description line 2",
+                                        "description line 3 example",
+                                        "description line 4 example",
+                                        "description line 5 example"
+                                    ],
+                                    "hash": "4d50322c158848e565c882bc1c55924ac8a8f2615d7b307702d056b36bf60af9792b13010feca1bbe1a50e9b3cdd593f9dc2778cf34aa8715fa24c8c535bc29e"
+                                },
+                                {
+                                    "fullPath": "presets/TestSamples/4.2/tune/tuning_example_1 - Copy.txt",
+                                    "title": "some tuning example 2",
+                                    "version": "4.2",
+                                    "description": [
+                                        "description line 1 example",
+                                        "description line 2",
+                                        "description line 3 example",
+                                        "description line 4 example",
+                                        "description line 5 example"
+                                    ],
+                                    "hash": "b9ee059e9f31b731f17459419e6999e47dbf0c41fb4906be61a1919223d2ba7897f34e709adf54d288e12426d3a12bfc705645a0809d4e9f3ab23101528a2e11"
+                                },
+                                {
+                                    "fullPath": "presets/TestSamples/4.2/tune/tuning_example_1.txt",
+                                    "title": "some tuning example",
+                                    "version": "4.2",
+                                    "description": [
+                                        "description line 1 example",
+                                        "description line 2",
+                                        "description line 3 example",
+                                        "description line 4 example",
+                                        "description line 5 example"
+                                    ],
+                                    "hash": "73833e311c7dcbcc8d9d6f86597e667b8f99385895989e70b004966c7031c4d47736d6beb4dbb1f16a7bb9ec41907ad258b6807a4e02b6e7c1426ee6a94f730f"
+                                }
+                            ],
+                            "fullPath": "presets/TestSamples/4.2/tune",
+                            "name": "tune"
+                        }
+                    ],
+                    "files": [
+                        {
+                            "fullPath": "presets/TestSamples/4.2/4.2example.txt",
+                            "title": "some presets 1",
+                            "version": "4.2",
+                            "description": [
+                                "description line 1",
+                                "description line 2"
+                            ],
+                            "hash": "54b518e21f553e37f6efb294dff5a3d624467a9f78435ffd832bb7de43ac9e2313c92f66da998397645dc0021e2b2caf857494836edc4db236dbc77c1dd639ab"
+                        },
+                        {
+                            "fullPath": "presets/TestSamples/4.2/4.2example_2.txt",
+                            "title": "some second presets",
+                            "version": "4.2",
+                            "description": [
+                                "description line 1 second presets exampe",
+                                "description line 2"
+                            ],
+                            "hash": "dbc860e65053890cf03a6f973386492bc6eb862fe69991d919bcd7cf2e113b465144adaf744e2f5a9ff462b0028213750fa1f88abe6042b9855119d1ab35312a"
+                        },
+                        {
+                            "fullPath": "presets/TestSamples/4.2/defaults.txt",
+                            "title": "default rates",
+                            "version": "4.2",
+                            "description": [
+                                "description line 1",
+                                "description line 2"
+                            ],
+                            "hash": "a449419898058bab8a2994f93c11055dcf5114cc5887050f27a3ae15889cfd5e4ea9003eda0bba63a3ade89c54d5bfd51dc98d526a3f8df05b60d2c57e7643c7"
+                        }
+                    ],
+                    "fullPath": "presets/TestSamples/4.2",
+                    "name": "4.2"
+                },
+                {
+                    "subFolders": [
+                        {
+                            "subFolders": [],
+                            "files": [
+                                {
+                                    "fullPath": "presets/TestSamples/4.3/rates/defaults.txt",
+                                    "title": "default rates",
+                                    "version": "4.3",
+                                    "description": [
+                                        "description line 1",
+                                        "description line 2"
+                                    ],
+                                    "hash": "2e61b50bb9706c1369ae435c054622c0c409815b04ed6aa6e0910305f0e85aea957af0d8cc051ed55489fe20fbeb7514578d4ff58ab1f43c590509c5fd0de3e8"
+                                },
+                                {
+                                    "fullPath": "presets/TestSamples/4.3/rates/rates_example1.txt",
+                                    "title": "some presets 1",
+                                    "version": "4.3",
+                                    "description": [
+                                        "description line 1",
+                                        "description line 2"
+                                    ],
+                                    "hash": "233ac3cd047be61111d7a71d71dec212b3b54e357459f60813db354421b8354e40a258881e6ee6bd1e6b4a7851d5af34b4e954194c3c479e68eb87756efe6d01"
+                                },
+                                {
+                                    "fullPath": "presets/TestSamples/4.3/rates/rates_example2.txt",
+                                    "title": "some second presets",
+                                    "version": "4.3",
+                                    "description": [
+                                        "description line 1 second presets exampe",
+                                        "description line 2"
+                                    ],
+                                    "hash": "d122470a7deee3b0b2b0be95abb32d4f5deea1505705edcbf8d45f875539a3d3b8f7a612c16373fddab15aab96cfd22b24eb6f2a9a9613452ae08e645a081e18"
+                                }
+                            ],
+                            "fullPath": "presets/TestSamples/4.3/rates",
+                            "name": "rates"
+                        },
+                        {
+                            "subFolders": [],
+                            "files": [
+                                {
+                                    "fullPath": "presets/TestSamples/4.3/tune/defaults.txt",
+                                    "title": "default tune",
+                                    "version": "4.3",
+                                    "description": [
+                                        "description line 1 example",
+                                        "description line 2",
+                                        "description line 3 example"
+                                    ],
+                                    "hash": "2d198ba7efa3952c8c26acb5db5e8e8114a254d3766e93c744eb75027abb697519d838f0ecfbb8a5c28d10ab1da9f9e615c5c0eef72aaae5da1b8f281c315e34"
+                                },
+                                {
+                                    "fullPath": "presets/TestSamples/4.3/tune/tuning_example_1 - Copy (2).txt",
+                                    "title": "some tuning example 4",
+                                    "version": "4.3",
+                                    "description": [
+                                        "description line 1 example",
+                                        "description line 2",
+                                        "description line 3 example",
+                                        "description line 4 example",
+                                        "description line 5 example"
+                                    ],
+                                    "hash": "5831d97e9c3e3542f431f04edaddd1bd157929cc8fd47ecf0babd563f03f153770ea8fcdc0b7f1af613733b14fc27dc4f06a9e116eadadf34ed8f1802720880e"
+                                },
+                                {
+                                    "fullPath": "presets/TestSamples/4.3/tune/tuning_example_1 - Copy (3).txt",
+                                    "title": "some tuning example 3",
+                                    "version": "4.3",
+                                    "description": [
+                                        "description line 1 example",
+                                        "description line 2",
+                                        "description line 3 example",
+                                        "description line 4 example",
+                                        "description line 5 example"
+                                    ],
+                                    "hash": "91ec3d5f7177af84d5769ecf2e01f55e15b044ff6c0c6955303e9ab8b550bdb36f49e4df1786291c47cde473adf3e1ea41b4ca44b764b879f3db4fa96a98eb65"
+                                },
+                                {
+                                    "fullPath": "presets/TestSamples/4.3/tune/tuning_example_1 - Copy.txt",
+                                    "title": "some tuning example 2",
+                                    "version": "4.3",
+                                    "description": [
+                                        "description line 1 example",
+                                        "description line 2",
+                                        "description line 3 example",
+                                        "description line 4 example",
+                                        "description line 5 example"
+                                    ],
+                                    "hash": "f92f2cec7e167c1ddb8b8497bc3c397ffa15c3a3d723cc949fcf112e34fa03272b564beac82b731fdfc56eb469e5cffac589915c9d196dc05aa5d55ed20a43d1"
+                                },
+                                {
+                                    "fullPath": "presets/TestSamples/4.3/tune/tuning_example_1.txt",
+                                    "title": "some tuning example",
+                                    "version": "4.3",
+                                    "description": [
+                                        "description line 1 example",
+                                        "description line 2",
+                                        "description line 3 example",
+                                        "description line 4 example",
+                                        "description line 5 example"
+                                    ],
+                                    "hash": "743b3bb19ceba9e4e484261b9d4be0faf9d48876be56b4b521a33c6c6befc880c9182bb56c6d660e82c341b3692b58333c86e4fa233df890bfa84a5408710b58"
+                                }
+                            ],
+                            "fullPath": "presets/TestSamples/4.3/tune",
+                            "name": "tune"
+                        }
+                    ],
+                    "files": [],
+                    "fullPath": "presets/TestSamples/4.3",
+                    "name": "4.3"
+                }
+            ],
+            "files": [],
+            "fullPath": "presets/TestSamples",
+            "name": "TestSamples"
+        }
+    ],
+    "files": [],
+    "fullPath": "presets",
+    "name": ""
+}

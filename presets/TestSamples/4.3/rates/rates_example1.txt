@@ -1,0 +1,26 @@
+# some presets 1
+# 4.3
+# description line 1
+# description line 2
+
+set thr_mid = 50
+set thr_expo = 0
+set rates_type = BETAFLIGHT
+set quickrates_rc_expo = OFF
+set roll_rc_rate = 200
+set pitch_rc_rate = 200
+set yaw_rc_rate = 100
+set roll_expo = 0
+set pitch_expo = 0
+set yaw_expo = 0
+set roll_srate = 30
+set pitch_srate = 30
+set yaw_srate = 70
+set tpa_rate = 65
+set tpa_breakpoint = 1350
+set tpa_mode = D
+set throttle_limit_type = OFF
+set throttle_limit_percent = 100
+set roll_rate_limit = 1998
+set pitch_rate_limit = 1998
+set yaw_rate_limit = 1998
