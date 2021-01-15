@@ -1,0 +1,8 @@
+# Description: some text line 1111
+# Description: some text line 2222
+set tpa_rate = 46
+set tpa_breakpoint = 1351
+set tpa_mode = D
+
+# FirmwareVersion: 4.3
+# Title: some title sample 2 last line
