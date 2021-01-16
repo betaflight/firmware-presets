@@ -1,8 +1,8 @@
-# Title: some title for defaults
-# FirmwareVersion: 4.2
-# Description: some text line 1
-# Description: some text line 2
-# Description: some text line 3
+# Title: some title for defaults 4.3
+# FirmwareVersion: 4.3
+# Description: some text line 1 4.3
+# Description: some text line 2 4.3
+# Description: some text line 3 4.3
 
 set gyro_hardware_lpf = NORMAL
 set gyro_lowpass_type = PT1
