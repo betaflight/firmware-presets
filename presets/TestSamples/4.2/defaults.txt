@@ -3,6 +3,8 @@
 # Description: some text line 1
 # Description: some text line 2
 # Description: some text line 3
+# Category: rates
+# Official: FALSE
 
 set gyro_hardware_lpf = NORMAL
 set gyro_lowpass_type = PT1

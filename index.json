@@ -1,126 +1,231 @@
 {
-    "subFolders": [
-        {
-            "subFolders": [
-                {
-                    "subFolders": [],
-                    "files": [
-                        {
-                            "fullPath": "presets/TestSamples/4.2/defaults.txt",
-                            "hash": "efc2a36df66d435faec35d7897a3c378d8feb588910e03e3d26e7243ea997a1d311512ea3656b844702d711251c6517a7ac7432211801524d51dd955f227b3b2",
-                            "title": "some title for defaults",
-                            "firmwareVersion": "4.2",
-                            "description": [
-                                "some text line 1",
-                                "some text line 2",
-                                "some text line 3"
-                            ]
-                        },
-                        {
-                            "fullPath": "presets/TestSamples/4.2/sample1.txt",
-                            "hash": "617f20e0b21e4290ba8c5c87392ddfa5e13defa3f95d2d40f85ee48686857762868cc1a7dedfb11b33c0e77227a3a7b51058f89a5d0f7c6a5e5e9933cd34f53f",
-                            "title": "some title sample 1",
-                            "firmwareVersion": "4.2",
-                            "description": [
-                                "some text line 1",
-                                "some text line 2",
-                                "some text line 3",
-                                "some text line 4 after commands",
-                                "some text line 5 end of file"
-                            ],
-                            "author": "limon"
-                        },
-                        {
-                            "fullPath": "presets/TestSamples/4.2/sample2.txt",
-                            "hash": "35b8e2201cbca9d27a4942ca5835344971da2639110adf2e5cf526d5d4f514c2e60e774713f4a17683cee0dab9979562fe09620dab0e7a546ec5e438638209d6",
-                            "firmwareVersion": "4.2",
-                            "description": [
-                                "some text line 1 single line."
-                            ],
-                            "title": "some title sample 2 end of file"
-                        }
-                    ],
-                    "fullPath": "presets/TestSamples/4.2",
-                    "name": "4.2"
-                },
-                {
-                    "subFolders": [],
-                    "files": [
-                        {
-                            "fullPath": "presets/TestSamples/4.3/defaults.txt",
-                            "hash": "dccf751680863ea4d9eb3b2719434a9b9cf9a5adff4a34007af6215cfae8fe496876f9e9baaa94c3c066a936cb0761815cd8cd0fbad572be73a98ad7e553cae2",
-                            "title": "some title for defaults 4.3",
-                            "firmwareVersion": "4.3",
-                            "description": [
-                                "some text line 1 4.3",
-                                "some text line 2 4.3",
-                                "some text line 3 4.3"
-                            ]
-                        },
-                        {
-                            "fullPath": "presets/TestSamples/4.3/sample1.txt",
-                            "hash": "68257a386a874d0449a1e9363835eb10db3adb5b930f484cdb2cf8ce07911d2953bfae0d2ba4839c0b2e024d668c9e72a76c6a3acbbb412d1fb8d8b042a130d2",
-                            "title": "some title sample 1",
-                            "firmwareVersion": "4.3",
-                            "description": [
-                                "Description line1",
-                                "Description line2",
-                                "Description line3",
-                                "some text line 4 after commands",
-                                "some text line 5 end of file"
-                            ]
-                        },
-                        {
-                            "fullPath": "presets/TestSamples/4.3/sample2.txt",
-                            "hash": "86c58cbc7666c0f65f5354b6e7d5cb69e842fa8f63dfca89bcb6009148481797e6a792ee860389c8b20eac28ecdc2c5c3c287e6f17bd8cd0aa2e4b964e1fd2a9",
-                            "description": [
-                                "some text line 1111",
-                                "some text line 2222"
-                            ],
-                            "firmwareVersion": "4.3",
-                            "title": "some title sample 2 last line"
-                        }
-                    ],
-                    "fullPath": "presets/TestSamples/4.3",
-                    "name": "4.3"
-                },
-                {
-                    "subFolders": [],
-                    "files": [
-                        {
-                            "fullPath": "presets/TestSamples/no_defaults_test/sample1.txt",
-                            "hash": "68257a386a874d0449a1e9363835eb10db3adb5b930f484cdb2cf8ce07911d2953bfae0d2ba4839c0b2e024d668c9e72a76c6a3acbbb412d1fb8d8b042a130d2",
-                            "title": "some title sample 1",
-                            "firmwareVersion": "4.3",
-                            "description": [
-                                "Description line1",
-                                "Description line2",
-                                "Description line3",
-                                "some text line 4 after commands",
-                                "some text line 5 end of file"
-                            ]
-                        },
-                        {
-                            "fullPath": "presets/TestSamples/no_defaults_test/sample2.txt",
-                            "hash": "c818c838f15a6294b9b563d5962a5e6cc5309fed50864cb15ab56d737fd69efe826ea28e46bedb56709437fc12543ce3d8e5df1769262e13283d0e9bf546528b",
-                            "description": [
-                                "some text line 1111",
-                                "some text line 2222"
-                            ],
-                            "title": "some title sample 2 end of file",
-                            "firmwareVersion": "4.3"
-                        }
-                    ],
-                    "fullPath": "presets/TestSamples/no_defaults_test",
-                    "name": "no_defaults_test"
-                }
-            ],
-            "files": [],
-            "fullPath": "presets/TestSamples",
-            "name": "TestSamples"
-        }
+  "settings": {
+    "PresetCategories": {
+      "TUNE": "TUNE",
+      "RATES": "RATES",
+      "OSD": "OSD",
+      "VTX": "VTX",
+      "LEDS": "LEDS",
+      "MODES": "MODES",
+      "BNF": "BNF",
+      "RC_SMOOTHING": "RC_SMOOTHING",
+      "MIXED": "MIXED"
+    },
+    "MetadataTypes": {
+      "STRING": "STRING",
+      "STRING_ARRAY": "STRING_ARRAY",
+      "PRESET_CATEGORY": "PRESET_CATEGORY",
+      "FILE_PATH": "FILE_PATH",
+      "BOOLEAN": "BOOLEAN",
+      "WORDS_ARRAY": "WORDS_ARRAY"
+    },
+    "presetsDir": "presets",
+    "presetsFileEncoding": "utf-8",
+    "presetsFileMetadata": {
+      "title": {
+        "type": "STRING",
+        "optional": false
+      },
+      "firmwareVersion": {
+        "type": "STRING_ARRAY",
+        "optional": false
+      },
+      "category": {
+        "type": "PRESET_CATEGORY",
+        "optional": false
+      },
+      "official": {
+        "type": "BOOLEAN",
+        "optional": false
+      },
+      "author": {
+        "type": "STRING",
+        "optional": true
+      },
+      "description": {
+        "type": "STRING_ARRAY",
+        "optional": true
+      },
+      "defaults": {
+        "type": "FILE_PATH",
+        "optional": true
+      },
+      "keywords": {
+        "type": "WORDS_ARRAY",
+        "optional": true
+      }
+    }
+  },
+  "uniqueValues": {
+    "firmwareVersion": [
+      "4.1",
+      "4.2",
+      "4.3"
     ],
-    "files": [],
-    "fullPath": "presets",
-    "name": ""
+    "category": [
+      "MIXED",
+      "OSD",
+      "RATES",
+      "TUNE"
+    ],
+    "author": [
+      "TEST AuthoR",
+      "limon"
+    ],
+    "keywords": [
+      "1S",
+      "4S",
+      "5 inch",
+      "65mm",
+      "6S",
+      "high kv",
+      "racer",
+      "whoop"
+    ]
+  },
+  "presets": [
+    {
+      "fullPath": "presets/TestSamples/4.2/defaults.txt",
+      "hash": "f750e80efd3930913fbb36f5cf410f8877f1bbfd1ca13f2ec2289013826a8365",
+      "title": "some title for defaults",
+      "firmwareVersion": [
+        "4.2"
+      ],
+      "description": [
+        "some text line 1",
+        "some text line 2",
+        "some text line 3"
+      ],
+      "category": "RATES",
+      "official": false
+    },
+    {
+      "fullPath": "presets/TestSamples/4.2/sample1.txt",
+      "hash": "d959c2281b9c9cb1b7cf2b7a7f1115ee8fa9916e654903b86df0ba871966e2fd",
+      "title": "some title sample 1",
+      "firmwareVersion": [
+        "4.2"
+      ],
+      "description": [
+        "some text line 1",
+        "some text line 2",
+        "some text line 3",
+        "some text line 4 after commands",
+        "some text line 5 end of file"
+      ],
+      "author": "limon",
+      "category": "RATES",
+      "official": false
+    },
+    {
+      "fullPath": "presets/TestSamples/4.2/sample2.txt",
+      "hash": "005036391a053e65bed1b902014c2520376f317692b40a6a3e36e634fb154140",
+      "firmwareVersion": [
+        "4.2"
+      ],
+      "description": [
+        "some text line 1 single line."
+      ],
+      "category": "RATES",
+      "official": true,
+      "keywords": [
+        "4S",
+        "racer",
+        "5 inch"
+      ],
+      "title": "some title sample 2 end of file",
+      "author": "TEST AuthoR"
+    },
+    {
+      "fullPath": "presets/TestSamples/4.3/defaults.txt",
+      "hash": "b593ad0d6cc48783e968ff5d18c8fbcc6cd2897be73e137eda7ddcfc8d092b2a",
+      "title": "some title for defaults 4.3",
+      "firmwareVersion": [
+        "4.3"
+      ],
+      "description": [
+        "some text line 1 4.3",
+        "some text line 2 4.3",
+        "some text line 3 4.3"
+      ],
+      "category": "TUNE",
+      "official": true
+    },
+    {
+      "fullPath": "presets/TestSamples/4.3/sample1.txt",
+      "hash": "03f8c682c1db61901bb22308844fb2b5a5f1a42315ad2e68018df31f9acce12c",
+      "title": "some title sample 1",
+      "firmwareVersion": [
+        "4.3"
+      ],
+      "description": [
+        "Description line1",
+        "Description line2",
+        "Description line3",
+        "some text line 4 after commands",
+        "some text line 5 end of file"
+      ],
+      "official": false,
+      "keywords": [
+        "6S",
+        "racer",
+        "high kv"
+      ],
+      "category": "TUNE",
+      "defaults": "presets/TestSamples/4.3/defaults.txt",
+      "author": "TEST Author"
+    },
+    {
+      "fullPath": "presets/TestSamples/4.3/sample2.txt",
+      "hash": "aaa7011656adcac85743747eddb0c34e923a2659d9579dfcdfba6610180a0cfc",
+      "description": [
+        "some text line 1111",
+        "some text line 2222"
+      ],
+      "official": true,
+      "firmwareVersion": [
+        "4.3"
+      ],
+      "title": "some title sample 2 last line",
+      "category": "RATES",
+      "keywords": [
+        "whoop",
+        "1S",
+        "65mm"
+      ]
+    },
+    {
+      "fullPath": "presets/TestSamples/no_defaults_test/sample1.txt",
+      "hash": "531ad2a7bf6358b2e6a4c7a2bdf656c5151724f848cc8a19ebdca38975393af6",
+      "title": "some title sample 1",
+      "firmwareVersion": [
+        "4.3",
+        "4.2",
+        "4.1"
+      ],
+      "description": [
+        "Description line1",
+        "Description line2",
+        "Description line3",
+        "some text line 4 after commands",
+        "some text line 5 end of file"
+      ],
+      "category": "MIXED",
+      "official": true
+    },
+    {
+      "fullPath": "presets/TestSamples/no_defaults_test/sample2.txt",
+      "hash": "3574c2f0625099708512df88bc9335a59ca3e27c96814293a6c8d05f0a1093a7",
+      "description": [
+        "some text line 1111",
+        "some text line 2222"
+      ],
+      "title": "some title sample 2 end of file",
+      "firmwareVersion": [
+        "4.3"
+      ],
+      "category": "OSD",
+      "official": true
+    }
+  ]
 }

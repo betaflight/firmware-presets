@@ -6,7 +6,7 @@ const PresetsFile = require('./PresetsFile');
 
 class PresetsFolder
 {
-    constructor(fullPath, presetsFileEncoding, presetsFileMetadata, errors)
+    constructor(fullPath, settings, presetFilesArray, errors)
     {
         this.subFolders = [];
         this.files = [];
@@ -16,14 +16,15 @@ class PresetsFolder
         let list = fs.readdirSync(fullPath);
 
         list.forEach((fileName) => {
-            let fullFileName = fullPath + '/' + fileName;
-            let stat = fs.statSync(fullFileName);
+            const fullFileName = fullPath + '/' + fileName;
+            const stat = fs.statSync(fullFileName);
             if (stat && stat.isDirectory()) {
-                let subdir = new PresetsFolder(fullFileName, presetsFileEncoding, presetsFileMetadata, errors);
+                let subdir = new PresetsFolder(fullFileName, settings, presetFilesArray, errors);
                 subdir.name = fileName;
                 this.subFolders.push(subdir);
             } else {
-                let presetsFile = new PresetsFile(fullFileName, presetsFileEncoding, presetsFileMetadata, errors);
+                let presetsFile = new PresetsFile(fullFileName, settings, errors);
+                presetFilesArray.push(presetsFile);
                 this.files.push(presetsFile);
             }
         });
