@@ -1,0 +1,35 @@
+# Title: Tehllama DJI OSD (Universal)
+# FirmwareVersion: 4.2.6 and Later
+# Author: Daniel "Tehllama" Appel
+# Description: This is my universal OSD for all DJI equipped craft
+# Description: Contains features currently enabled via DJI MSP Protocol
+
+# OSD Locations Below - Disable all unwanted items
+set osd_vbat_pos = 2465
+set osd_rssi_pos = 2049
+set osd_link_quality_pos = 2115
+set osd_tim_1_pos = 2455
+set osd_tim_2_pos = 2423
+set osd_flymode_pos = 173
+set osd_throttle_pos = 2392
+set osd_ah_pos = 200
+set osd_current_pos = 321
+set osd_mah_drawn_pos = 2516
+set osd_craft_name_pos = 2496
+set osd_gps_speed_pos = 2536
+set osd_gps_lon_pos = 82       # Placeholder
+set osd_gps_lat_pos = 65       # Placeholder
+set osd_gps_sats_pos = 2074
+set osd_home_dir_pos = 302     # Placeholder
+set osd_home_dist_pos = 303    # Placeholder
+set osd_compass_bar_pos = 266  # Placeholder
+set osd_altitude_pos = 247     # Placeholder
+set osd_warnings_pos = 2377    # Placeholder
+set osd_avg_cell_voltage_pos = 2545
+set osd_battery_usage_pos = 2537
+set osd_disarmed_pos = 2476
+
+
+# save configuration
+save
+# 

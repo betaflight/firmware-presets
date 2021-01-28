@@ -1,0 +1,140 @@
+# Title: Tehllama GTB-339 1105/1106 5000-6000KV 2/3S Racing Tune
+# FirmwareVersion: 4.3
+# Author: Daniel "Tehllama" Appel
+# Description: For racing craft 1105, 1106, 1204, 1206 motors
+# Description: This versatile tune allows for 2S and 3S batteries
+# Description: Suggested ESC Settings: 48kHz PWM, MedHigh Timing, .25 Rampup
+
+
+# master
+set gyro_lowpass_hz = 275
+set gyro_lowpass2_hz = 425
+set dyn_notch_width_percent = 0
+set dyn_notch_q = 250
+set dyn_notch_min_hz = 115
+set dyn_notch_max_hz = 444
+set dyn_lpf_gyro_min_hz = 0
+
+set dshot_idle_value = 475
+set dshot_bidir = ON
+set motor_poles = 12
+
+set thrust_linear = 25
+
+set gyro_rpm_notch_harmonics = 2
+set gyro_rpm_notch_q = 750
+# set debug_mode = GYRO_SCALED
+
+profile 0
+# profile 0 - 3S
+set dyn_lpf_dterm_min_hz = 98
+set dyn_lpf_dterm_max_hz = 333
+set dterm_lowpass2_hz = 225
+set vbat_sag_compensation = 70
+set anti_gravity_gain = 4400
+set iterm_rotation = ON
+set iterm_relax = RPY
+set iterm_relax_cutoff = 33
+set yaw_lowpass_hz = 115
+set throttle_boost = 8
+set p_pitch = 51
+set i_pitch = 72
+set d_pitch = 44
+set f_pitch = 238
+set p_roll = 47
+set i_roll = 68
+set d_roll = 40
+set f_roll = 222
+set p_yaw = 50
+set i_yaw = 72
+set f_yaw = 222
+set d_min_roll = 28
+set d_min_pitch = 30
+set d_min_boost_gain = 33
+set d_min_advance = 0
+set auto_profile_cell_count = 3
+set launch_control_mode = PITCHONLY
+set launch_trigger_allow_reset = OFF
+set launch_angle_limit = 60
+set ff_max_rate_limit = 102
+set ff_smooth_factor = 33
+set ff_boost = 20
+set dyn_idle_min_rpm = 16
+
+profile 1
+# profile 1 - 2S
+set dyn_lpf_dterm_min_hz = 98
+set dyn_lpf_dterm_max_hz = 288
+set dterm_lowpass2_hz = 240
+set anti_gravity_gain = 4400
+set iterm_rotation = ON
+set iterm_relax = RPY
+set iterm_relax_cutoff = 33
+set yaw_lowpass_hz = 115
+set throttle_boost = 10
+set p_pitch = 67
+set i_pitch = 81
+set d_pitch = 55
+set f_pitch = 238
+set p_roll = 60
+set i_roll = 77
+set d_roll = 50
+set f_roll = 222
+set p_yaw = 65
+set i_yaw = 81
+set f_yaw = 222
+set d_min_roll = 38
+set d_min_pitch = 35
+set d_min_boost_gain = 33
+set d_min_advance = 0
+set auto_profile_cell_count = 2
+set ff_max_rate_limit = 102
+set ff_smooth_factor = 33
+set ff_boost = 25
+set dyn_idle_min_rpm = 16
+
+
+profile 2
+
+# profile 2
+set dyn_lpf_dterm_min_hz = 98
+set dyn_lpf_dterm_max_hz = 333
+set dterm_lowpass2_hz = 210
+set vbat_sag_compensation = 70
+set anti_gravity_gain = 4400
+set feedforward_transition = 25
+set iterm_rotation = ON
+set iterm_relax = RPY
+set iterm_relax_cutoff = 22
+set yaw_lowpass_hz = 115
+set throttle_boost = 3
+set p_pitch = 36
+set i_pitch = 63
+set d_pitch = 35
+set f_pitch = 238
+set p_roll = 32
+set i_roll = 59
+set d_roll = 32
+set f_roll = 222
+set p_yaw = 35
+set i_yaw = 63
+set f_yaw = 222
+set d_min_roll = 21
+set d_min_pitch = 23
+set d_min_boost_gain = 55
+set d_min_advance = 99
+set auto_profile_cell_count = 4
+set launch_control_mode = PITCHONLY
+set launch_trigger_allow_reset = OFF
+set launch_angle_limit = 60
+set ff_interpolate_sp = OFF
+set ff_max_rate_limit = 102
+set ff_smooth_factor = 33
+set dyn_idle_min_rpm = 16
+
+# restore original profile selection
+profile 0
+
+# save configuration
+save
+# 
