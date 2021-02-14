@@ -3,6 +3,8 @@
 # Description: Description line1
 # Description: Description line2
 # Description: Description line3
+# OFFICIAL: FALSE
+# keywords: 6S, racer, high kv,
 
 set tpa_rate = 31
 
@@ -12,3 +14,6 @@ set tpa_breakpoint = 1351
 set tpa_mode = D
 
 # Description: some text line 5 end of file
+# Category: tune
+# defaults: presets/TestSamples/4.3/defaults.txt
+# Author: TEST Author

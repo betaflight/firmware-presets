@@ -1,5 +1,7 @@
 # Title: some title sample 1
 # FirmwareVersion: 4.3
+# FirmwareVersion: 4.2
+# FirmwareVersion: 4.1
 # Description: Description line1
 # Description: Description line2
 # Description: Description line3
@@ -12,3 +14,5 @@ set tpa_breakpoint = 1351
 set tpa_mode = D
 
 # Description: some text line 5 end of file
+# Category: mixed
+# Official: yes

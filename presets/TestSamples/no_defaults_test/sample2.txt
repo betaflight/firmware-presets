@@ -6,3 +6,5 @@ set tpa_mode = D
 
 # Title: some title sample 2 end of file
 # FirmwareVersion: 4.3
+# Category: osd
+# Official: YES
