@@ -6,23 +6,38 @@
 
 
 # Llama Universal Rate Bank
-# rateprofile 0 (Tehllama Rates) 360/360/270
+# rateprofile 0 (Tehllama Rates) 450/360/270
 rateprofile 0
 set roll_rc_rate = 72
 set pitch_rc_rate = 72
 set yaw_rc_rate = 54
-set roll_srate = 60
+set roll_srate = 68
 set pitch_srate = 60
 set yaw_srate = 60
 
-# rateprofile 1 (Beginner-Intermediate Race Rates) 466/466/400
+# Beginner Rates 400/400/300
 rateprofile 1
+set roll_rc_rate = 72
+set pitch_rc_rate = 72
+set yaw_rc_rate = 54
+set roll_srate = 64
+set pitch_srate = 64
+set yaw_srate = 64
+
+# rateprofile 2 (Intermediate Race Rates) 466/466/400
+rateprofile 2
 set roll_rc_rate = 70
 set pitch_rc_rate = 70
 set yaw_rc_rate = 60
 
-# rateprofile 2 (Nytfury Race Rates) (571/422/254)
-rateprofile 2
+# rateprofile 3 (533° Race Rates)
+rateprofile 3
+set roll_rc_rate = 80
+set pitch_rc_rate = 80
+set yaw_rc_rate = 80
+
+# rateprofile 4 (Nytfury Race Rates) (571/422/254)
+rateprofile 4
 set roll_rc_rate = 80
 set pitch_rc_rate = 80
 set yaw_rc_rate = 62
@@ -33,27 +48,9 @@ set roll_srate = 72
 set pitch_srate = 62
 set yaw_srate = 51
 
-# rateprofile 3 (533° Race Rates)
-rateprofile 3
-set roll_rc_rate = 80
-set pitch_rc_rate = 80
-set yaw_rc_rate = 80
-set roll_expo = 5
-set pitch_expo = 5
-set yaw_expo = 5
-
-rateprofile 4
-# Limon - Default Betaflight Rates
-
 rateprofile 5
-# Experimental Llama Rates 400/400/300
-set roll_rc_rate = 72
-set pitch_rc_rate = 72
-set yaw_rc_rate = 54
-set roll_srate = 64
-set pitch_srate = 64
-set yaw_srate = 64
+# Limon Race Rates - Default Betaflight Rates
 
 # restore original rateprofile selection
-# rateprofile 0
+rateprofile 0
 
