@@ -2,8 +2,8 @@
 # FirmwareVersion: 4.3
 # Author: Daniel "Tehllama" Appel
 # Description: For racing craft with 1960KV 533 Motors
-# Description: This versatile tune allows for  5S, and 6S batteries, and 3S FreedomSPec
-# Description: Suggested ESC Settings: 48kHz PWM, 23 Timing, .25 Rampup
+# Description: This versatile tune allows for  5S, and 6S batteries, and 3S FreedomSpec
+# Description: Suggested ESC Settings: 48kHz PWM, 23° Timing, .25 Rampup
 
 ## Tehllama 5" 1960KV 3/5/6S Tune
 
@@ -19,8 +19,8 @@
 # Demag Compensation ENABLED, LOW
 
 # master
-# set gyro_lowpass_hz = 222    # Optional - Review BBL before disabling
-set gyro_lowpass2_hz = 500
+# set gyro_lowpass_hz = 500    # Optional - Review BBL before disabling
+set gyro_lowpass2_hz = 222
 set dyn_notch_width_percent = 0
 set dyn_notch_q = 250
 set dyn_notch_min_hz = 115
