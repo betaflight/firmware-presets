@@ -1,3 +1,5 @@
+### 2021 Apr 6 ### Needs Updates to accommodate SDFT Dynamic Notch and cascaded PT3 RC Filtering ###
+
 # Title: Tehllama 3" Heavy Racing for 1407/1408 3200-4300KV
 # FirmwareVersion: 4.3
 # Author: Daniel "Tehllama" Appel
