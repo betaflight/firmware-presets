@@ -1,4 +1,6 @@
-﻿# Title: Tehllama High KV 4/5S Racing Tune
+### 2021 Apr 6 ### Needs Updates to accommodate SDFT Dynamic Notch and cascaded PT3 RC Filtering ###
+
+# Title: Tehllama High KV 4/5S Racing Tune
 # FirmwareVersion: 4.3
 # Author: Daniel "Tehllama" Appel
 # Description: For racing craft with 2400-2750 KV Motors
