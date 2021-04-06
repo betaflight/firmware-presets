@@ -1,3 +1,5 @@
+### 2021 Apr 6 ### Needs Updates to accommodate SDFT Dynamic Notch and cascaded PT3 RC Filtering ###
+
 # Title: Tehllama 533 3/5/6S Racing Tune
 # FirmwareVersion: 4.3
 # Author: Daniel "Tehllama" Appel
