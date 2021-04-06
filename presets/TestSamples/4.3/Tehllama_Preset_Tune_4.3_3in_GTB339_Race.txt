@@ -1,3 +1,5 @@
+### 2021 Apr 6 ### Needs Updates to accommodate SDFT Dynamic Notch and cascaded PT3 RC Filtering ###
+
 # Title: Tehllama GTB-339 1105/1106 5000-6000KV 2/3S Racing Tune
 # FirmwareVersion: 4.3
 # Author: Daniel "Tehllama" Appel
