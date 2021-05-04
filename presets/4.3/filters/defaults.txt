@@ -48,6 +48,5 @@ set dterm_notch_cutoff = 0
 set simplified_dterm_filter = ON
 set simplified_dterm_filter_multiplier = 100
 
-
 set yaw_lowpass_hz = 100
 

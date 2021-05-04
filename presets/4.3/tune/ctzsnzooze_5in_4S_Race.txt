@@ -1,0 +1,253 @@
+#$ TITLE: 5" 4S race by ctzsznooze
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: TUNE
+#$ OFFICIAL: false
+#$ KEYWORDS: 5in, 4S, race, tune, ctzsnooze
+#$ AUTHOR: ctzsnooze
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/8
+#$ DESCRIPTION: Basic 5" 4S race setup for 4.3 by ctzsnooze, tolerates bad props.
+#$ DESCRIPTION:
+
+#$ INCLUDE: presets/4.3/tune/defaults.txt
+
+# -- PID values --
+set p_pitch = 44
+set i_pitch = 79
+set d_pitch = 41
+set d_min_pitch = 29
+set f_pitch = 132
+
+set p_roll = 42
+set i_roll = 76
+set d_roll = 35
+set d_min_roll = 25
+set f_roll = 125
+
+set p_yaw = 42
+set i_yaw = 76
+set d_yaw = 0
+set d_min_yaw = 0
+set f_yaw = 125
+
+# -- iTerm relax --
+set iterm_relax_cutoff = 25
+
+# -- iTerm windup (default)--
+# -- iTerm rotation (off) --
+
+# -- Dmax --
+set d_min_advance = 0
+
+# -- TPA --
+set tpa_rate = 65
+set tpa_breakpoint = 1250
+
+# -- Feedforward --
+set feedforward_boost = 18
+set feedforward_max_rate_limit = 95
+
+# -- PIDsum limits (default)--
+
+# -- Sliders --
+set simplified_d_gain = 85
+set simplified_pi_gain = 95
+set simplified_dmax_gain = 120
+set simplified_feedforward_gain = 105
+
+# -- Antigravity (default) --
+# -- Absolute control (off) --
+# -- Accecleration limits (off) --
+# -- Angle and Horizon mode tuning (default) --
+
+
+# ------ THE FOLLOWING PARAMETERS ARE OPTIONAL ------
+
+#$ DESCRIPTION: Your existing airmode, launch control, turtle mode, acro trainer and level race settings will not be changed:
+#$ DESCRIPTION:
+#$ DESCRIPTION: Review the following optional settings - uncheck if you want to retain your existing settings
+#$ DESCRIPTION:
+
+# -- Rates --
+#$ OPTION BEGIN (checked) ctznooze race Rates
+#$ INCLUDE: presets/4.3/rates/ctzsnooze_race.txt
+#$ OPTION END
+
+# -- RC_Smoothing --
+#$ OPTION BEGIN (checked) Default RC_smoothing (recommended)
+#$ INCLUDE: presets/4.3/rc_smoothing/defaults.txt
+#$ OPTION END
+
+# -- Filters --
+#$ OPTION BEGIN (checked) ctzsnooze race Filters (recommended)
+#$ INCLUDE: presets/4.3/filters/ctzsnooze_race.txt
+#$ OPTION END
+#$ OPTION BEGIN (unchecked) or default filters
+#$ INCLUDE: presets/4.3/filters/defaults.txt
+#$ OPTION END
+
+# blank line
+#$ DESCRIPTION:
+
+# -- Startup and arming --
+#$ OPTION BEGIN (checked) arm quickly at any angle
+set gyro_cal_on_first_arm = OFF
+set pwr_on_arm_grace = 2
+set small_angle = 180
+#$ OPTION END
+
+# -- Airmode (don't change user's existing config) --
+# -- Level Race  (don't change user's existing config) --
+
+# -- Mixer type --
+# I recommend the default mixer
+#$ OPTION BEGIN (checked) Use default mixer
+set mixer_type = LEGACY
+#$ OPTION END
+
+# -- PIDs active below min throttle --
+# PIDs should be active at min throttle
+#$ OPTION BEGIN (checked) pids active at min throttle
+set pid_at_min_throttle = ON
+#$ OPTION END
+
+# -- Reduce throttle gap --
+# Less of a deadband at bottom of throttle stick
+#$ OPTION BEGIN (checked) set min_throttle to 1020
+set min_throttle = 1020
+#$ OPTION END
+
+# -- Feedforward averaging (no change - honour user's existing settings) --
+# set feedforward_averaging = OFF 
+
+# -- Feedforward jitter reduction --
+# set jitter reduction to 5 for crisp stick response
+#$ OPTION BEGIN (checked) set jitter reduction to 5
+set feedforward_jitter_reduction = 5
+#$ OPTION END
+
+# -- Stick behaviour -- 
+# no deadband is recommended
+#$ OPTION BEGIN (checked) set deadbands to zero
+set deadband = 0
+set yaw_deadband = 0
+#$ OPTION END
+
+# tighter min_check
+#$ OPTION BEGIN (checked) set min_check to 1020
+set min_check = 1020
+#$ OPTION END
+
+# -- Yaw spin recovery --
+# force yaw spin recovery to default of AUTO for fastest recovery
+#$ OPTION BEGIN (checked) set yaw spin recovery AUTO
+set yaw_spin_recovery = AUTO
+#$ OPTION END
+
+# -- Integrated yaw --
+# force integrated yaw to off (default)
+#$ OPTION BEGIN (checked) set integrated yaw OFF
+set use_integrated_yaw = OFF
+#$ OPTION END
+
+# -- DShot Telemetry --
+## must be ON for Dynamic Idle and RPM filtering to work
+#$ OPTION BEGIN (checked) DShot telemetry MUST BE ON
+set dshot_bidir = ON
+#$ OPTION END
+
+# -- Dynamic Idle --
+#$ OPTION BEGIN (checked) Dynamic idle ON at 3500 rpm
+set dyn_idle_min_rpm = 35
+set dyn_idle_p_gain = 40
+set dyn_idle_i_gain = 50
+set dyn_idle_d_gain = 50
+set dyn_idle_max_increase = 150
+#$ OPTION END
+
+# -- Transient throttle limit --
+# Transient throttle limit is incompatible with dynamic idle
+#$ OPTION BEGIN (checked) transient_throttle_limit MUST BE OFF
+set transient_throttle_limit = 0
+#$ OPTION END
+
+# -- Thrust linear --
+# Not usually required for 5in setups
+#$ OPTION BEGIN (checked) thrust linear off
+set thrust_linear = 0
+#$ OPTION END
+
+# -- Motor output limit --
+# Reduce reflected noise at full throttle
+#$ OPTION BEGIN (checked) motor_output-limit to 95%
+# set motor_output_limit = 95
+#$ OPTION END
+
+# -- Throttle boost --
+# force default throttle boost to compensate for motor lag
+#$ OPTION BEGIN (checked) use default throttle boost
+set throttle_boost = 5
+set throttle_boost_cutoff = 15
+#$ OPTION END
+
+# -- Throttle curve --
+#$ OPTION BEGIN (checked) use flat/linear throttle curve
+set thr_mid = 50
+set thr_expo = 0
+#$ OPTION END
+
+# -- Throttle limit --
+#$ OPTION BEGIN (checked) no throttle limit/scaling
+set throttle_limit_type = OFF
+set throttle_limit_percent = 100
+#$ OPTION END
+
+# -- VBat sag compensation --
+#$ OPTION BEGIN (checked) full VBat sag compensation
+set vbat_sag_compensation = 100
+set vbat_sag_lpf_period = 2
+#$ OPTION END
+
+# -- VBat thresholds and display update rate (no change - honour user's existing settings)--
+# Per-cell voltages over RC telemetry, option to send full pack voltage readings
+#$ OPTION BEGIN (unchecked) Per-cell VBat telemetry
+set report_cell_voltage = ON
+#$ OPTION END
+
+# -- Runaway takeoff prevention --
+#$ OPTION BEGIN (checked) Disable runaway takeoff prevention
+# set runaway_takeoff_prevention = OFF
+#$ OPTION END
+
+# -- Crash Recovery settings (no change - honour user's existing settings)--
+# set crash_dthreshold = 50
+# set crash_gthreshold = 400
+# set crash_setpoint_threshold = 350
+# set crash_time = 500
+# set crash_delay = 0
+# set crash_recovery_angle = 10
+# set crash_recovery_rate = 100
+# set crash_limit_yaw = 200
+# set crash_recovery = OFF
+
+# -- Turtle mode settings (no change - honour user's existing settings)--
+## this will enable turtle mode on aux 3 when above 1300:
+# aux 3 35 2 1300 2100 0 0
+## defaults:
+# set crashflip_motor_percent = 0
+# set crashflip_expo = 35
+
+# -- Acro trainer settings (no change - honour user's existing settings) --
+# set acro_trainer_angle_limit = 20
+# set acro_trainer_lookahead_ms = 50
+# set acro_trainer_debug_axis = ROLL
+# set acro_trainer_gain = 75
+
+# -- Launch control settings (no change - honour user's existing settings)--
+# set launch_control_mode = NORMAL
+# set launch_trigger_allow_reset = ON
+# set launch_trigger_throttle_percent = 20
+# set launch_angle_limit = 0
+# set launch_control_gain = 40
+
+
+
