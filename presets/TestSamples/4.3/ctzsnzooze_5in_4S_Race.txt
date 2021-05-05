@@ -5,7 +5,8 @@
 # Keywords: 5in, 4S, race
 # Author: Chris Thompson ctzsnooze
 # Description: Basic 5" 4S race setup for 4.3 by ctzsnooze
-# Description: assumes a decent radio link
+# Description: WARNING: Disables Runaway Takeoff Prevention!
+# Description: Assumes a decent radio link.
 
 # General settings
 
