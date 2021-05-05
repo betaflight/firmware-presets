@@ -5,7 +5,6 @@
 # Keywords: 5in, 4S, race
 # Author: Chris Thompson ctzsnooze
 # Description: Basic 5" 4S race setup for 4.3 by ctzsnooze
-# Description: WARNING: Disables Runaway Takeoff Prevention!
 # Description: Assumes a decent radio link.
 
 # General settings
@@ -15,7 +14,7 @@ set mixer_type = LEGACY
 set gyro_cal_on_first_arm = OFF
 set deadband = 0
 set yaw_deadband = 0
-set runaway_takeoff_prevention = OFF
+set runaway_takeoff_prevention = ON
 set thrust_linear = 0
 set transient_throttle_limit = 0
 set pwr_on_arm_grace = 1
