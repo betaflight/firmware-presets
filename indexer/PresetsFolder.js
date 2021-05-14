@@ -18,14 +18,16 @@ class PresetsFolder
         list.forEach((fileName) => {
             const fullFileName = fullPath + '/' + fileName;
             const stat = fs.statSync(fullFileName);
-            if (stat && stat.isDirectory()) {
-                let subdir = new PresetsFolder(fullFileName, settings, presetFilesArray, errors);
-                subdir.name = fileName;
-                this.subFolders.push(subdir);
-            } else {
-                let presetsFile = new PresetsFile(fullFileName, settings, errors);
-                presetFilesArray.push(presetsFile);
-                this.files.push(presetsFile);
+            if (!fileName.startsWith(".")) {
+                if (stat && stat.isDirectory()) {
+                    let subdir = new PresetsFolder(fullFileName, settings, presetFilesArray, errors);
+                    subdir.name = fileName;
+                    this.subFolders.push(subdir);
+                } else if (fileName.toLowerCase().endsWith(".txt")) {
+                    let presetsFile = new PresetsFile(fullFileName, settings, errors);
+                    presetFilesArray.push(presetsFile);
+                    this.files.push(presetsFile);
+                }
             }
         });
     }
