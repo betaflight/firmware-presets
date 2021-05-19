@@ -1,0 +1,22 @@
+# Title: sample with multiple regions and defaults
+# FirmwareVersion: 4.3
+# Description: sample with multiple regions and defaults
+# OFFICIAL: FALSE
+# Category: MIXED
+# Author: TEST Author
+# Defaults: presets/TestSamples/regions_test/defaults_with_regions.txt
+
+# region begin VBAT
+# region end
+
+# region begin PIDs no yaw
+    set p_pitch = 5
+    set i_pitch = 6
+    set d_pitch = 7
+    set f_pitch = 8
+# region end
+
+    set p_yaw = 19
+    set i_yaw = 20
+    set d_yaw = 31
+    set f_yaw = 42
