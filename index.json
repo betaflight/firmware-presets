@@ -17,7 +17,8 @@
       "PRESET_CATEGORY": "PRESET_CATEGORY",
       "FILE_PATH": "FILE_PATH",
       "BOOLEAN": "BOOLEAN",
-      "WORDS_ARRAY": "WORDS_ARRAY"
+      "WORDS_ARRAY": "WORDS_ARRAY",
+      "FILE_PATH_ARRAY": "FILE_PATH_ARRAY"
     },
     "presetsDir": "presets",
     "presetsFileEncoding": "utf-8",
@@ -47,7 +48,7 @@
         "optional": true
       },
       "defaults": {
-        "type": "FILE_PATH",
+        "type": "FILE_PATH_ARRAY",
         "optional": true
       },
       "keywords": {
@@ -78,6 +79,7 @@
       "5 inch",
       "65mm",
       "6S",
+      "freestyle",
       "high kv",
       "racer",
       "whoop"
@@ -172,7 +174,9 @@
         "high kv"
       ],
       "category": "TUNE",
-      "defaults": "presets/TestSamples/4.3/defaults.txt",
+      "defaults": [
+        "presets/TestSamples/4.3/defaults.txt"
+      ],
       "author": "TEST Author"
     },
     {
@@ -193,6 +197,32 @@
         "1S",
         "65mm"
       ]
+    },
+    {
+      "fullPath": "presets/TestSamples/multiple_defaults_test/sample_multiple_defaults_test.txt",
+      "hash": "d6c32e0b1ab746b76b6fc370ac39b417b6ca515512a174444faaaf238e860226",
+      "title": "multiple defaults sample 1",
+      "firmwareVersion": [
+        "4.3"
+      ],
+      "description": [
+        "multiple defaults sample 1 Description line1",
+        "multiple defaults sample 1 Description line2",
+        "multiple defaults sample 1 Description line3",
+        "some text line 4 after commands",
+        "some text line 5 end of file"
+      ],
+      "official": false,
+      "keywords": [
+        "4S",
+        "freestyle"
+      ],
+      "category": "TUNE",
+      "defaults": [
+        "presets/TestSamples/4.3/defaults.txt",
+        "presets/TestSamples/4.3/sample1.txt"
+      ],
+      "author": "TEST Author"
     },
     {
       "fullPath": "presets/TestSamples/no_defaults_test/sample1.txt",

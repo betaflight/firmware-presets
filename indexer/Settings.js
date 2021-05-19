@@ -7,6 +7,7 @@ const MetadataTypes = {
         FILE_PATH:          "FILE_PATH", // path/to/file.ext and check if file exists
         BOOLEAN:            "BOOLEAN", // true/false
         WORDS_ARRAY:        "WORDS_ARRAY", // "word1, word2, word3"
+        FILE_PATH_ARRAY:    "FILE_PATH_ARRAY", // array of path/to/file.ext and check if files exist
 }
 
 const PresetCategories = {
@@ -36,7 +37,7 @@ const settings = {
         official:          {type: MetadataTypes.BOOLEAN,          optional: false  },
         author:            {type: MetadataTypes.STRING,           optional: true   },
         description:       {type: MetadataTypes.STRING_ARRAY,     optional: true   },
-        defaults:          {type: MetadataTypes.FILE_PATH,        optional: true   },
+        defaults:          {type: MetadataTypes.FILE_PATH_ARRAY,  optional: true   },
         keywords:          {type: MetadataTypes.WORDS_ARRAY,      optional: true   },
     }),
 }

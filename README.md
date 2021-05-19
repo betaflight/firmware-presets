@@ -15,7 +15,8 @@ Configuration Snippets for the Betaflight Flight Controller Firmware
 # Author: Name Lastname Pilotname
 # Description: Description line1
 # Description: Description line2  (as many description lines as needed)
-# Defaults: path/to/defaults.txt
+# Defaults: path/to/defaults1.txt
+# Defaults: path/to/defaults2.txt (as many default snippets as needed)
 
 <cli command 1>
 <cli command 2>
@@ -34,7 +35,8 @@ Configuration Snippets for the Betaflight Flight Controller Firmware
 ```
 
 ### Defaults
-Optional path to defaults snippet file to reset parameters before applying the current preset.
+Optional paths to defaults snippet files to reset parameters before applying the current preset.
+Allows multiple defaults.
 
 ### Mandatory properties
 ```
