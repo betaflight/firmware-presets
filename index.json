@@ -20,6 +20,11 @@
       "WORDS_ARRAY": "WORDS_ARRAY",
       "FILE_PATH_ARRAY": "FILE_PATH_ARRAY"
     },
+    "RegionDirectives": {
+      "REGION_DIRECTIVE": "region",
+      "BEGIN_REGION_DIRECTIVE": "region begin",
+      "END_REGION_DIRECTIVE": "region end"
+    },
     "presetsDir": "presets",
     "presetsFileEncoding": "utf-8",
     "presetsFileMetadata": {
@@ -89,6 +94,7 @@
     {
       "fullPath": "presets/TestSamples/4.2/defaults.txt",
       "hash": "f750e80efd3930913fbb36f5cf410f8877f1bbfd1ca13f2ec2289013826a8365",
+      "regions": [],
       "title": "some title for defaults",
       "firmwareVersion": [
         "4.2"
@@ -104,6 +110,7 @@
     {
       "fullPath": "presets/TestSamples/4.2/sample1.txt",
       "hash": "d959c2281b9c9cb1b7cf2b7a7f1115ee8fa9916e654903b86df0ba871966e2fd",
+      "regions": [],
       "title": "some title sample 1",
       "firmwareVersion": [
         "4.2"
@@ -122,6 +129,7 @@
     {
       "fullPath": "presets/TestSamples/4.2/sample2.txt",
       "hash": "005036391a053e65bed1b902014c2520376f317692b40a6a3e36e634fb154140",
+      "regions": [],
       "firmwareVersion": [
         "4.2"
       ],
@@ -141,6 +149,7 @@
     {
       "fullPath": "presets/TestSamples/4.3/defaults.txt",
       "hash": "b593ad0d6cc48783e968ff5d18c8fbcc6cd2897be73e137eda7ddcfc8d092b2a",
+      "regions": [],
       "title": "some title for defaults 4.3",
       "firmwareVersion": [
         "4.3"
@@ -156,6 +165,7 @@
     {
       "fullPath": "presets/TestSamples/4.3/sample1.txt",
       "hash": "03f8c682c1db61901bb22308844fb2b5a5f1a42315ad2e68018df31f9acce12c",
+      "regions": [],
       "title": "some title sample 1",
       "firmwareVersion": [
         "4.3"
@@ -182,6 +192,7 @@
     {
       "fullPath": "presets/TestSamples/4.3/sample2.txt",
       "hash": "aaa7011656adcac85743747eddb0c34e923a2659d9579dfcdfba6610180a0cfc",
+      "regions": [],
       "description": [
         "some text line 1111",
         "some text line 2222"
@@ -200,7 +211,8 @@
     },
     {
       "fullPath": "presets/TestSamples/multiple_defaults_test/sample_multiple_defaults_test.txt",
-      "hash": "d6c32e0b1ab746b76b6fc370ac39b417b6ca515512a174444faaaf238e860226",
+      "hash": "87555ad9da50856ff7df040c716f38ef6293850dc6caefa03cc214925edb4bd3",
+      "regions": [],
       "title": "multiple defaults sample 1",
       "firmwareVersion": [
         "4.3"
@@ -227,6 +239,7 @@
     {
       "fullPath": "presets/TestSamples/no_defaults_test/sample1.txt",
       "hash": "531ad2a7bf6358b2e6a4c7a2bdf656c5151724f848cc8a19ebdca38975393af6",
+      "regions": [],
       "title": "some title sample 1",
       "firmwareVersion": [
         "4.3",
@@ -246,6 +259,7 @@
     {
       "fullPath": "presets/TestSamples/no_defaults_test/sample2.txt",
       "hash": "3574c2f0625099708512df88bc9335a59ca3e27c96814293a6c8d05f0a1093a7",
+      "regions": [],
       "description": [
         "some text line 1111",
         "some text line 2222"
@@ -256,6 +270,92 @@
       ],
       "category": "OSD",
       "official": true
+    },
+    {
+      "fullPath": "presets/TestSamples/regions_test/defaults_with_regions.txt",
+      "hash": "14f288765d6dfe617b2bc1454fcd1bf37181081402684aa027aca0a627ada96d",
+      "regions": [
+        "TPA",
+        "VBAT",
+        "PIDs no yaw"
+      ],
+      "title": "defaults sample with multiple regions",
+      "firmwareVersion": [
+        "4.3"
+      ],
+      "description": [
+        "defaults sample with multiple regions description line1"
+      ],
+      "official": false,
+      "category": "MIXED",
+      "author": "TEST Author"
+    },
+    {
+      "fullPath": "presets/TestSamples/regions_test/multiple_regions.txt",
+      "hash": "aa0caf547e0d1ecea7b454727b0c0d2908b26f08489e1d276261bd286ec48b0d",
+      "regions": [
+        "TPA",
+        "VBAT",
+        "PIDs no yaw"
+      ],
+      "title": "preset sample with multiple regions",
+      "firmwareVersion": [
+        "4.3"
+      ],
+      "description": [
+        "preset sample with multiple regions description line1",
+        "preset sample with multiple regions description line2",
+        "preset sample with multiple regions description line3"
+      ],
+      "official": false,
+      "category": "MIXED",
+      "defaults": [
+        "presets/TestSamples/4.3/defaults.txt"
+      ],
+      "author": "TEST Author"
+    },
+    {
+      "fullPath": "presets/TestSamples/regions_test/one_region.txt",
+      "hash": "6cb86612600efbefb7e5ee2d96c4b5f73525a55de907c3bdab388ba6fa1a138a",
+      "regions": [
+        "TPA"
+      ],
+      "title": "preset sample with one region",
+      "firmwareVersion": [
+        "4.3"
+      ],
+      "description": [
+        "preset sample with one region description line1",
+        "preset sample with one region description line2",
+        "preset sample with one region description line3"
+      ],
+      "official": false,
+      "category": "MIXED",
+      "defaults": [
+        "presets/TestSamples/4.3/defaults.txt"
+      ],
+      "author": "TEST Author"
+    },
+    {
+      "fullPath": "presets/TestSamples/regions_test/sample_regions_with_defaults.txt",
+      "hash": "899272f6e7bb637cf5e9cf1f1680189c6e958e3350b09903117c0a254b512fc7",
+      "regions": [
+        "VBAT",
+        "PIDs no yaw"
+      ],
+      "title": "sample with multiple regions and defaults",
+      "firmwareVersion": [
+        "4.3"
+      ],
+      "description": [
+        "sample with multiple regions and defaults"
+      ],
+      "official": false,
+      "category": "MIXED",
+      "author": "TEST Author",
+      "defaults": [
+        "presets/TestSamples/regions_test/defaults_with_regions.txt"
+      ]
     }
   ]
 }

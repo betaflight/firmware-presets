@@ -13,6 +13,8 @@ class PresetsFile
         this._presetsFileMetadata = settings.presetsFileMetadata;
         this._errors = errors;
         this._settings = settings;
+        this.regions = [];
+        this._currentRegion = "";
 
         const binaryFileContent = fs.readFileSync(this.fullPath);
         let sum = crypto.createHash('sha256');
@@ -25,6 +27,7 @@ class PresetsFile
         delete this._presetsFileMetadata;
         delete this._errors;
         delete this._settings;
+        delete this._currentRegion;
     }
 
     _checkProperties()
@@ -36,6 +39,10 @@ class PresetsFile
                     this._addError(`missing or empty property '${property}'`);
                 }
             }
+        }
+
+        if ("" !== this._currentRegion) {
+            this._addError(`line ${this._currentLine}, missing ${this._settings.RegionDirectives.END_REGION_DIRECTIVE} for ${this._currentRegion}`);
         }
     }
 
@@ -67,6 +74,7 @@ class PresetsFile
     {
         line = line.slice(1).trim(); // (# Title: foo) -> (Title: foo)
         const lowCaseLine = line.toLowerCase();
+        let isProperty = false;
 
         for (const [property, value] of Object.entries(this._presetsFileMetadata)) {
             const lineBeginning = `${property.toLowerCase()}:`; // "Title:"
@@ -74,7 +82,46 @@ class PresetsFile
             if (lowCaseLine.startsWith(lineBeginning)) {
                 line = line.slice(lineBeginning.length).trim(); // (Title: foo) -> (foo)
                 this._processProperty(property, line);
+                isProperty = true;
             }
+        }
+
+        if (!isProperty && lowCaseLine.startsWith(this._settings.RegionDirectives.REGION_DIRECTIVE)) {
+            this._processRegionDirective(line);
+        }
+    }
+
+    _processRegionDirective(line)
+    {
+        const lowCaseLine = line.toLowerCase();
+
+        if (lowCaseLine.startsWith(this._settings.RegionDirectives.BEGIN_REGION_DIRECTIVE)) {
+            const regionName = line.slice(this._settings.RegionDirectives.BEGIN_REGION_DIRECTIVE.length).trim();
+            const lowCaseRegionName = regionName.toLowerCase();
+
+            if ("" === regionName) {
+                this._addError(`line ${this._currentLine}, empty region name`);
+            } else if ("" !== this._currentRegion) {
+                this._addError(`line ${this._currentLine}, nested regions are not allowed`);
+            } else {
+                this._currentRegion = regionName;
+            }
+
+        } else if (lowCaseLine.startsWith(this._settings.RegionDirectives.END_REGION_DIRECTIVE)) {
+            if ("" === this._currentRegion) {
+                this._addError(`line ${this._currentLine}, end region directive found but no region to close`);
+            } else {
+                const lowCaseRegionName = this._currentRegion.toLowerCase();
+
+                const indexOfRegion = this.regions.findIndex(item => lowCaseRegionName === item.toLowerCase());
+
+                if (-1 === indexOfRegion) {
+                    this.regions.push(this._currentRegion);
+                }
+
+                this._currentRegion = "";
+            }
+
         }
     }
 

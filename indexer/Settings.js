@@ -22,10 +22,18 @@ const PresetCategories = {
     MIXED:          "MIXED",
 }
 
+const RegionDirectives = {
+    REGION_DIRECTIVE: "region",
+    BEGIN_REGION_DIRECTIVE: "region begin",
+    END_REGION_DIRECTIVE: "region end",
+}
+
 const settings = {
     PresetCategories: Object.freeze(PresetCategories),
 
     MetadataTypes: Object.freeze(MetadataTypes),
+
+    RegionDirectives : Object.freeze(RegionDirectives),
 
     presetsDir: "presets",
     presetsFileEncoding: "utf-8",
