@@ -93,6 +93,9 @@ class PresetsFile
             case this._settings.MetadataTypes.FILE_PATH:
                 this._processFilePathProperty(property, line);
                 break;
+            case this._settings.MetadataTypes.FILE_PATH_ARRAY:
+                this._processFilePathArrayProperty(property, line);
+                break;
             case this._settings.MetadataTypes.BOOLEAN:
                 this._processBooleanProperty(property, line);
                 break;
@@ -152,6 +155,20 @@ class PresetsFile
             this._addError(`line ${this._currentLine}, can't find file '${line}'`);
         } else {
             this[property] = line;
+        }
+    }
+
+    _processFilePathArrayProperty(property, line)
+    {
+        if (!this[property]) {
+            this[property] = [];
+        }
+
+        const stat = fs.statSync(line);
+        if (!stat || stat.isDirectory()) {
+            this._addError(`line ${this._currentLine}, can't find file '${line}'`);
+        } else {
+            this[property].push(line);
         }
     }
 
