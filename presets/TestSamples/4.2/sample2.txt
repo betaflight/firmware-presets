@@ -1,8 +1,0 @@
-# FirmwareVersion: 4.2
-# Description: some text line 1 single line.
-
-set tpa_rate = 45
-set tpa_breakpoint = 1350
-set tpa_mode = D
-
-# Title: some title sample 2 end of file
