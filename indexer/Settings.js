@@ -37,7 +37,7 @@ const settings = {
         official:          {type: MetadataTypes.BOOLEAN,          optional: false  },
         author:            {type: MetadataTypes.STRING,           optional: true   },
         description:       {type: MetadataTypes.STRING_ARRAY,     optional: true   },
-        defaults:          {type: MetadataTypes.FILE_PATH_ARRAY,  optional: true   },
+        include:           {type: MetadataTypes.FILE_PATH_ARRAY,  optional: true   },
         keywords:          {type: MetadataTypes.WORDS_ARRAY,      optional: true   },
     }),
 }

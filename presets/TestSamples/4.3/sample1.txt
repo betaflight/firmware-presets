@@ -15,5 +15,5 @@ set tpa_mode = D
 
 # Description: some text line 5 end of file
 # Category: tune
-# defaults: presets/TestSamples/4.3/defaults.txt
+# included_preset: presets/TestSamples/4.3/defaults.txt
 # Author: TEST Author

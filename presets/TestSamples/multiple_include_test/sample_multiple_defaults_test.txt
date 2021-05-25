@@ -11,10 +11,10 @@ set tpa_rate = 31
 # Description: some text line 4 after commands
 
 set tpa_breakpoint = 1351
+# include: presets/TestSamples/4.3/defaults.txt
 set tpa_mode = D
 
 # Description: some text line 5 end of file
 # Category: tune
-# defaults: presets/TestSamples/4.3/defaults.txt
-# defaults: presets/TestSamples/4.3/sample1.txt
+# include: presets/TestSamples/4.3/sample1.txt
 # Author: TEST Author
