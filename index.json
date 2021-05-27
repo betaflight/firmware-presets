@@ -47,7 +47,7 @@
         "type": "STRING_ARRAY",
         "optional": true
       },
-      "defaults": {
+      "include": {
         "type": "FILE_PATH_ARRAY",
         "optional": true
       },
@@ -155,7 +155,7 @@
     },
     {
       "fullPath": "presets/TestSamples/4.3/sample1.txt",
-      "hash": "03f8c682c1db61901bb22308844fb2b5a5f1a42315ad2e68018df31f9acce12c",
+      "hash": "d1da829da9bfd50be8f3690f3171f663190f7ae79edd7f88610f5eebb38b6e60",
       "title": "some title sample 1",
       "firmwareVersion": [
         "4.3"
@@ -174,9 +174,6 @@
         "high kv"
       ],
       "category": "TUNE",
-      "defaults": [
-        "presets/TestSamples/4.3/defaults.txt"
-      ],
       "author": "TEST Author"
     },
     {
@@ -199,8 +196,8 @@
       ]
     },
     {
-      "fullPath": "presets/TestSamples/multiple_defaults_test/sample_multiple_defaults_test.txt",
-      "hash": "d6c32e0b1ab746b76b6fc370ac39b417b6ca515512a174444faaaf238e860226",
+      "fullPath": "presets/TestSamples/multiple_include_test/sample_multiple_defaults_test.txt",
+      "hash": "0a2773b3ed8a64183613f7f8b44d1156de3dc130cf5f7c404fbf96990c3a3aee",
       "title": "multiple defaults sample 1",
       "firmwareVersion": [
         "4.3"
@@ -217,15 +214,15 @@
         "4S",
         "freestyle"
       ],
-      "category": "TUNE",
-      "defaults": [
+      "include": [
         "presets/TestSamples/4.3/defaults.txt",
         "presets/TestSamples/4.3/sample1.txt"
       ],
+      "category": "TUNE",
       "author": "TEST Author"
     },
     {
-      "fullPath": "presets/TestSamples/no_defaults_test/sample1.txt",
+      "fullPath": "presets/TestSamples/no_include_test/sample1.txt",
       "hash": "531ad2a7bf6358b2e6a4c7a2bdf656c5151724f848cc8a19ebdca38975393af6",
       "title": "some title sample 1",
       "firmwareVersion": [
@@ -244,7 +241,7 @@
       "official": true
     },
     {
-      "fullPath": "presets/TestSamples/no_defaults_test/sample2.txt",
+      "fullPath": "presets/TestSamples/no_include_test/sample2.txt",
       "hash": "3574c2f0625099708512df88bc9335a59ca3e27c96814293a6c8d05f0a1093a7",
       "description": [
         "some text line 1111",
