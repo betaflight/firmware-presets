@@ -104,7 +104,7 @@
   "presets": [
     {
       "fullPath": "presets/4.3/leds/defaults.txt",
-      "hash": "a83049dcb6c2302c2037dac005ce91449d57f12f05c0fc358c9632a2ad539b4f",
+      "hash": "b05d7efe9cfed403a0228b9075aa045fae81730011f64d14cb33440c8a2f74d2",
       "title": "Default LEDs settings",
       "firmwareVersion": [
         "4.3"
@@ -123,7 +123,7 @@
     },
     {
       "fullPath": "presets/4.3/modes/defaults.txt",
-      "hash": "4190d6d8279853577ea78149a4fe7e7c24531803ec7ce17e3554b7139bda9052",
+      "hash": "5944fd9d0b64d2d10d9b8a37142a702af6165b1fcc6429d91116d74ecc172be5",
       "title": "Default modes settings",
       "firmwareVersion": [
         "4.3"
@@ -142,7 +142,7 @@
     },
     {
       "fullPath": "presets/4.3/osd/defaults.txt",
-      "hash": "2932ec320a0369d18ca6a6550fe3066cfabe28d9569dff96c62ad23f258436b2",
+      "hash": "53ae6ab9a38d2d078002445d6b513a0b61bb523095dd6c6e83ba49fb2c58e047",
       "title": "Default OSD settings",
       "firmwareVersion": [
         "4.3"
@@ -161,7 +161,7 @@
     },
     {
       "fullPath": "presets/4.3/rates/defaults.txt",
-      "hash": "ea16d1cc7dad5cc5751485e3281ef455f25b1edc90fe051961a179d9856f4f09",
+      "hash": "5f4c5832faa4cd1190f8295b39b367d0cc5d6155e01b8caa574d898e7a0dd9c4",
       "title": "Default rate settings",
       "firmwareVersion": [
         "4.3"
@@ -180,7 +180,7 @@
     },
     {
       "fullPath": "presets/4.3/rc_link/defaults.txt",
-      "hash": "0488330e39e29c9eaa4c1be8de8bf7a29fccf90d7dd598e999738cdb7e7dda19",
+      "hash": "bbaf86c09aa8acb1bd8771d90aa7980129b10449647bbbef494b1ee8e037444f",
       "title": "Default RC link settings",
       "firmwareVersion": [
         "4.3"
@@ -199,7 +199,7 @@
     },
     {
       "fullPath": "presets/4.3/rc_smoothing/defaults.txt",
-      "hash": "0518f5450488efe191448a59acf755a91bf36d4ea53395f5d66e75d2b7947bba",
+      "hash": "c042cdf355ba56fee994e2e80cb066583019e741ca304405e22ef1a019f27098",
       "title": "Default RC smoothing settings",
       "firmwareVersion": [
         "4.3"
@@ -218,7 +218,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/defaults.txt",
-      "hash": "d858226e1a14ddc2cdd9c36baae58821c2b7730a0d024fa36308b8da3917dfbc",
+      "hash": "071b21ae5d3b20b6b766e53ad9a73e6b032dd69aa52c17b5abf3b0d5ce5868ca",
       "title": "Default tune settings",
       "firmwareVersion": [
         "4.3"
@@ -237,7 +237,7 @@
     },
     {
       "fullPath": "presets/4.3/vtx/defaults.txt",
-      "hash": "d9722e742e01b5867b651ac53f4f5afc22ec357ee5bc91957e1d0ad9cf01f542",
+      "hash": "0979f591efadf99a844a32a6137d1a7c076436810fd2f1e1a47f80bd5672ee7e",
       "title": "Default vtx table settings",
       "firmwareVersion": [
         "4.3"
