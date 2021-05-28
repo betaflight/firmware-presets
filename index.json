@@ -184,7 +184,26 @@
       ]
     },
     {
-      "fullPath": "presets/4.3/rc-link/frsky_sbus.txt",
+      "fullPath": "presets/4.3/rc_link/defaults.txt",
+      "hash": "bbaf86c09aa8acb1bd8771d90aa7980129b10449647bbbef494b1ee8e037444f",
+      "title": "Default RC link settings",
+      "firmwareVersion": [
+        "4.3"
+      ],
+      "category": "RC_LINK",
+      "official": true,
+      "keywords": [
+        "defaults",
+        "rc link"
+      ],
+      "author": "Betaflight",
+      "description": [
+        "Not ready",
+        "To be filled"
+      ]
+    },
+    {
+      "fullPath": "presets/4.3/rc_link/frsky_sbus.txt",
       "hash": "8a380fd6d01a23b8a4e16a964e349e7ef03ab080b38c249429ad751976165b66",
       "title": "FrSky Sbus",
       "firmwareVersion": [
@@ -205,25 +224,6 @@
         "Note: Telemetry requires smartPort (s.Port) and does not convey RSSI (use Lua or analog RSSI)",
         "Note: When more than 8 channels are used, manual RC smoothing settings and two point averaging is required",
         "Early versions of OpenTx with poor module sync will require two point averaging."
-      ]
-    },
-    {
-      "fullPath": "presets/4.3/rc_link/defaults.txt",
-      "hash": "bbaf86c09aa8acb1bd8771d90aa7980129b10449647bbbef494b1ee8e037444f",
-      "title": "Default RC link settings",
-      "firmwareVersion": [
-        "4.3"
-      ],
-      "category": "RC_LINK",
-      "official": true,
-      "keywords": [
-        "defaults",
-        "rc link"
-      ],
-      "author": "Betaflight",
-      "description": [
-        "Not ready",
-        "To be filled"
       ]
     },
     {
