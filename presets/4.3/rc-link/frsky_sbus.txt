@@ -1,0 +1,32 @@
+# Title: FrSky Sbus
+# FirmwareVersion: 4.3
+# Category: RC_LINK
+# Official: true
+# Keywords: frsky, sbus, rc, link
+# Author: Chris Thompson ctzsnooze
+# Description: Basic RC link settings for a 111hz / 9ms FrSky Sbus link, with the Rx bound in D16 mode with no more than 8 channels
+# Description: These settings work best when used with a version of OpenTx with good module sync
+# Description: Note: Telemetry requires smartPort (s.Port) and does not convey RSSI (use Lua or analog RSSI)
+# Description: Note: When more than 8 channels are used, manual RC smoothing settings and two point averaging is required
+# Description: Early versions of OpenTx with poor module sync will require two point averaging.  
+
+feature RX_SERIAL
+set serialrx_provider = SBUS
+set feedforward_averaging = 0
+set feedforward_smooth_factor = 0
+set tlm_inverted = OFF
+set tlm_halfduplex = ON
+set frsky_vfas_precision = 1
+
+# we do not recommend disabling rc smoothing
+set rc_smoothing = ON
+
+#   uncomment these and set to your preference
+# set frsky_default_lat = your_latitude
+# set frsky_default_long = your_longitude
+# set frsky_gps_format = ?
+# set frsky_unit = metric/imperial
+# set smartport_use_extra_sensors = usually off unless you have extra sensors
+
+#   for per cell voltage readings, rather than total battery voltage:
+# set report_cell_voltage = ON 
