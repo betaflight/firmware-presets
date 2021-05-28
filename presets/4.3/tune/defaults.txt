@@ -1,0 +1,8 @@
+# Title: Default tune settings
+# FirmwareVersion: 4.3
+# Category: TUNE
+# Official: true
+# Keywords: defaults, tune
+# Author: Betaflight
+# Description: Not ready
+# Description: To be filled 

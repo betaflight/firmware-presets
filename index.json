@@ -9,6 +9,7 @@
       "MODES": "MODES",
       "BNF": "BNF",
       "RC_SMOOTHING": "RC_SMOOTHING",
+      "RC_LINK": "RC_LINK",
       "MIXED": "MIXED"
     },
     "MetadataTypes": {
@@ -64,12 +65,18 @@
       "4.3"
     ],
     "category": [
+      "LEDS",
       "MIXED",
+      "MODES",
       "OSD",
       "RATES",
-      "TUNE"
+      "RC_LINK",
+      "RC_SMOOTHING",
+      "TUNE",
+      "VTX"
     ],
     "author": [
+      "Betaflight",
       "TEST AuthoR",
       "limon"
     ],
@@ -79,13 +86,174 @@
       "5 inch",
       "65mm",
       "6S",
+      "OSD",
+      "defaults",
       "freestyle",
       "high kv",
+      "leds",
+      "modes",
       "racer",
+      "rates",
+      "rc link",
+      "rc smoothing",
+      "tune",
+      "vtx",
       "whoop"
     ]
   },
   "presets": [
+    {
+      "fullPath": "presets/4.3/leds/defaults.txt",
+      "hash": "a83049dcb6c2302c2037dac005ce91449d57f12f05c0fc358c9632a2ad539b4f",
+      "title": "Default LEDs settings",
+      "firmwareVersion": [
+        "4.3"
+      ],
+      "category": "LEDS",
+      "official": true,
+      "keywords": [
+        "defaults",
+        "leds"
+      ],
+      "author": "Betaflight",
+      "description": [
+        "Not ready",
+        "To be filled"
+      ]
+    },
+    {
+      "fullPath": "presets/4.3/modes/defaults.txt",
+      "hash": "4190d6d8279853577ea78149a4fe7e7c24531803ec7ce17e3554b7139bda9052",
+      "title": "Default modes settings",
+      "firmwareVersion": [
+        "4.3"
+      ],
+      "category": "MODES",
+      "official": true,
+      "keywords": [
+        "defaults",
+        "modes"
+      ],
+      "author": "Betaflight",
+      "description": [
+        "Not ready",
+        "To be filled"
+      ]
+    },
+    {
+      "fullPath": "presets/4.3/osd/defaults.txt",
+      "hash": "2932ec320a0369d18ca6a6550fe3066cfabe28d9569dff96c62ad23f258436b2",
+      "title": "Default OSD settings",
+      "firmwareVersion": [
+        "4.3"
+      ],
+      "category": "OSD",
+      "official": true,
+      "keywords": [
+        "defaults",
+        "OSD"
+      ],
+      "author": "Betaflight",
+      "description": [
+        "Not ready",
+        "To be filled"
+      ]
+    },
+    {
+      "fullPath": "presets/4.3/rates/defaults.txt",
+      "hash": "ea16d1cc7dad5cc5751485e3281ef455f25b1edc90fe051961a179d9856f4f09",
+      "title": "Default rate settings",
+      "firmwareVersion": [
+        "4.3"
+      ],
+      "category": "RATES",
+      "official": true,
+      "keywords": [
+        "defaults",
+        "rates"
+      ],
+      "author": "Betaflight",
+      "description": [
+        "Not ready",
+        "To be filled"
+      ]
+    },
+    {
+      "fullPath": "presets/4.3/rc_link/defaults.txt",
+      "hash": "0488330e39e29c9eaa4c1be8de8bf7a29fccf90d7dd598e999738cdb7e7dda19",
+      "title": "Default RC link settings",
+      "firmwareVersion": [
+        "4.3"
+      ],
+      "category": "RC_LINK",
+      "official": true,
+      "keywords": [
+        "defaults",
+        "rc link"
+      ],
+      "author": "Betaflight",
+      "description": [
+        "Not ready",
+        "To be filled"
+      ]
+    },
+    {
+      "fullPath": "presets/4.3/rc_smoothing/defaults.txt",
+      "hash": "0518f5450488efe191448a59acf755a91bf36d4ea53395f5d66e75d2b7947bba",
+      "title": "Default RC smoothing settings",
+      "firmwareVersion": [
+        "4.3"
+      ],
+      "category": "RC_SMOOTHING",
+      "official": true,
+      "keywords": [
+        "defaults",
+        "rc smoothing"
+      ],
+      "author": "Betaflight",
+      "description": [
+        "Not ready",
+        "To be filled"
+      ]
+    },
+    {
+      "fullPath": "presets/4.3/tune/defaults.txt",
+      "hash": "d858226e1a14ddc2cdd9c36baae58821c2b7730a0d024fa36308b8da3917dfbc",
+      "title": "Default tune settings",
+      "firmwareVersion": [
+        "4.3"
+      ],
+      "category": "TUNE",
+      "official": true,
+      "keywords": [
+        "defaults",
+        "tune"
+      ],
+      "author": "Betaflight",
+      "description": [
+        "Not ready",
+        "To be filled"
+      ]
+    },
+    {
+      "fullPath": "presets/4.3/vtx/defaults.txt",
+      "hash": "d9722e742e01b5867b651ac53f4f5afc22ec357ee5bc91957e1d0ad9cf01f542",
+      "title": "Default vtx table settings",
+      "firmwareVersion": [
+        "4.3"
+      ],
+      "category": "VTX",
+      "official": true,
+      "keywords": [
+        "defaults",
+        "vtx"
+      ],
+      "author": "Betaflight",
+      "description": [
+        "Not ready",
+        "To be filled"
+      ]
+    },
     {
       "fullPath": "presets/TestSamples/4.2/defaults.txt",
       "hash": "f750e80efd3930913fbb36f5cf410f8877f1bbfd1ca13f2ec2289013826a8365",

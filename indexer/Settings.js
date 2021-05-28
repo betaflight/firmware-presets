@@ -19,6 +19,7 @@ const PresetCategories = {
     MODES:          "MODES",
     BNF:            "BNF",
     RC_SMOOTHING:   "RC_SMOOTHING",
+    RC_LINK:        "RC_LINK",
     MIXED:          "MIXED",
 }
 

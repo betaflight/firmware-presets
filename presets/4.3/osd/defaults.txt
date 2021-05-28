@@ -1,0 +1,8 @@
+# Title: Default OSD settings
+# FirmwareVersion: 4.3
+# Category: OSD
+# Official: true
+# Keywords: defaults, OSD
+# Author: Betaflight
+# Description: Not ready
+# Description: To be filled 
