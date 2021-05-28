@@ -77,6 +77,7 @@
     ],
     "author": [
       "Betaflight",
+      "Chris Thompson ctzsnooze",
       "TEST AuthoR",
       "limon"
     ],
@@ -89,13 +90,17 @@
       "OSD",
       "defaults",
       "freestyle",
+      "frsky",
       "high kv",
       "leds",
+      "link",
       "modes",
       "racer",
       "rates",
+      "rc",
       "rc link",
       "rc smoothing",
+      "sbus",
       "tune",
       "vtx",
       "whoop"
@@ -176,6 +181,30 @@
       "description": [
         "Not ready",
         "To be filled"
+      ]
+    },
+    {
+      "fullPath": "presets/4.3/rc-link/frsky_sbus.txt",
+      "hash": "8a380fd6d01a23b8a4e16a964e349e7ef03ab080b38c249429ad751976165b66",
+      "title": "FrSky Sbus",
+      "firmwareVersion": [
+        "4.3"
+      ],
+      "category": "RC_LINK",
+      "official": true,
+      "keywords": [
+        "frsky",
+        "sbus",
+        "rc",
+        "link"
+      ],
+      "author": "Chris Thompson ctzsnooze",
+      "description": [
+        "Basic RC link settings for a 111hz / 9ms FrSky Sbus link, with the Rx bound in D16 mode with no more than 8 channels",
+        "These settings work best when used with a version of OpenTx with good module sync",
+        "Note: Telemetry requires smartPort (s.Port) and does not convey RSSI (use Lua or analog RSSI)",
+        "Note: When more than 8 channels are used, manual RC smoothing settings and two point averaging is required",
+        "Early versions of OpenTx with poor module sync will require two point averaging."
       ]
     },
     {
