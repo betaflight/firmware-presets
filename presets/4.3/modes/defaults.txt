@@ -1,0 +1,8 @@
+# Title: Default modes settings
+# FirmwareVersion: 4.3
+# Category: MODES
+# Official: true
+# Keywords: defaults, modes
+# Author: Betaflight
+# Description: Not ready
+# Description: To be filled 

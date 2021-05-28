@@ -1,0 +1,8 @@
+# Title: Default RC smoothing settings
+# FirmwareVersion: 4.3
+# Category: RC_SMOOTHING
+# Official: true
+# Keywords: defaults, rc smoothing
+# Author: Betaflight
+# Description: Not ready
+# Description: To be filled 

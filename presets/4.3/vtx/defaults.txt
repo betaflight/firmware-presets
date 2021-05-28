@@ -1,0 +1,8 @@
+# Title: Default vtx table settings
+# FirmwareVersion: 4.3
+# Category: VTX
+# Official: true
+# Keywords: defaults, vtx
+# Author: Betaflight
+# Description: Not ready
+# Description: To be filled 

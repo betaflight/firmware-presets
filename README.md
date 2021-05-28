@@ -26,7 +26,7 @@ Configuration Snippets for the Betaflight Flight Controller Firmware
 
 ### Categories
 ```
-    TUNE, RATES, OSD, VTX, LEDS, MODES, BNF, RC_SMOOTHING, MIXED
+    TUNE, RATES, OSD, VTX, LEDS, MODES, BNF, RC_SMOOTHING, RC_LINK, MIXED
 ```
 
 ### Official

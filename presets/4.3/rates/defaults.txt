@@ -1,0 +1,8 @@
+# Title: Default rate settings
+# FirmwareVersion: 4.3
+# Category: RATES
+# Official: true
+# Keywords: defaults, rates
+# Author: Betaflight
+# Description: Not ready
+# Description: To be filled 

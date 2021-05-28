@@ -1,0 +1,8 @@
+# Title: Default LEDs settings
+# FirmwareVersion: 4.3
+# Category: LEDS
+# Official: true
+# Keywords: defaults, leds
+# Author: Betaflight
+# Description: Not ready
+# Description: To be filled 
