@@ -79,6 +79,7 @@
       "Betaflight",
       "Chris Thompson ctzsnooze",
       "TEST AuthoR",
+      "Thomas \"BMSThomas\" Bitmatta",
       "limon"
     ],
     "keywords": [
@@ -96,6 +97,7 @@
       "link",
       "modes",
       "racer",
+      "racing",
       "rates",
       "rc",
       "rc link",
@@ -165,9 +167,27 @@
       ]
     },
     {
+      "fullPath": "presets/4.3/rates/BMSThomas.txt",
+      "hash": "45e93c3765346f5f3887d1c080d3feb52699d813bc5e0ec43fc1cb452d39bbaf",
+      "title": "BMSThomas racing/freestyle rates",
+      "firmwareVersion": [
+        "4.3"
+      ],
+      "category": "RATES",
+      "official": false,
+      "keywords": [
+        "racing"
+      ],
+      "author": "Thomas \"BMSThomas\" Bitmatta",
+      "description": [
+        "Racing and freestyle rates by BMSThomas - MultiGP International Open 2019 champion",
+        "ACTUAL rates with 720 degrees/sec max"
+      ]
+    },
+    {
       "fullPath": "presets/4.3/rates/defaults.txt",
-      "hash": "5f4c5832faa4cd1190f8295b39b367d0cc5d6155e01b8caa574d898e7a0dd9c4",
-      "title": "Default rate settings",
+      "hash": "e20c15abd80cc7d6c47ead2169a44e7c53906d8548adf210659fd25360ed3a86",
+      "title": "Default rates",
       "firmwareVersion": [
         "4.3"
       ],
@@ -179,8 +199,10 @@
       ],
       "author": "Betaflight",
       "description": [
-        "Not ready",
-        "To be filled"
+        "Default Betaflight rates",
+        "Will be applied for the currently selected rate profile",
+        "TPA values are not included",
+        "Throttle limit and curve are not included"
       ]
     },
     {
