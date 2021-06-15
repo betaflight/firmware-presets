@@ -1,0 +1,37 @@
+name: CI - Build only (deploy if master)
+
+on: 
+  push:
+    branches:
+    - '**'
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [15.x]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - if: github.ref != 'refs/heads/master' 
+      name: Run the build (only) script
+      run: ./scripts/build.sh
+
+    - if: github.ref == 'refs/heads/master' 
+      name: Run the build & deploy script
+      run: ./scripts/build.sh deploy
+      env:
+        AWS_DISTRIBUTION_ID: ${{secrets.AWS_DISTRIBUTION_ID}}
+        AWS_BUCKET: api.betaflight.com
+        AWS_REGION: us-east-1
+        AWS_DEFAULT_REGION: us-east-1
+        AWS_ACCESS_KEY_ID: ${{secrets.AWS_ACCESS_KEY_ID}}
+        AWS_SECRET_ACCESS_KEY: ${{secrets.AWS_SECRET_ACCESS_KEY}}
