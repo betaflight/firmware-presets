@@ -53,3 +53,6 @@ eeprom.bin
 
 # public file staging location 
 /public
+
+# NPM packages folder
+/node_modules
