@@ -50,3 +50,6 @@ ubuntu*.log
 
 # EEPROM image file (created by SITL)
 eeprom.bin
+
+# public file staging location 
+/public
