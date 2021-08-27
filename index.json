@@ -21,6 +21,13 @@
       "WORDS_ARRAY": "WORDS_ARRAY",
       "FILE_PATH_ARRAY": "FILE_PATH_ARRAY"
     },
+    "RegionDirectives": {
+      "REGION_DIRECTIVE": "region",
+      "BEGIN_REGION_DIRECTIVE": "region begin",
+      "END_REGION_DIRECTIVE": "region end",
+      "REGION_CHECKED": "(checked)",
+      "REGION_UNCHECKED": "(unchecked)"
+    },
     "presetsDir": "presets",
     "presetsFileEncoding": "utf-8",
     "presetsFileMetadata": {
@@ -112,6 +119,7 @@
     {
       "fullPath": "presets/4.3/leds/defaults.txt",
       "hash": "b05d7efe9cfed403a0228b9075aa045fae81730011f64d14cb33440c8a2f74d2",
+      "regions": [],
       "title": "Default LEDs settings",
       "firmwareVersion": [
         "4.3"
@@ -131,6 +139,7 @@
     {
       "fullPath": "presets/4.3/modes/defaults.txt",
       "hash": "5944fd9d0b64d2d10d9b8a37142a702af6165b1fcc6429d91116d74ecc172be5",
+      "regions": [],
       "title": "Default modes settings",
       "firmwareVersion": [
         "4.3"
@@ -150,6 +159,7 @@
     {
       "fullPath": "presets/4.3/osd/defaults.txt",
       "hash": "53ae6ab9a38d2d078002445d6b513a0b61bb523095dd6c6e83ba49fb2c58e047",
+      "regions": [],
       "title": "Default OSD settings",
       "firmwareVersion": [
         "4.3"
@@ -169,6 +179,7 @@
     {
       "fullPath": "presets/4.3/rates/BMSThomas.txt",
       "hash": "45e93c3765346f5f3887d1c080d3feb52699d813bc5e0ec43fc1cb452d39bbaf",
+      "regions": [],
       "title": "BMSThomas racing/freestyle rates",
       "firmwareVersion": [
         "4.3"
@@ -187,6 +198,7 @@
     {
       "fullPath": "presets/4.3/rates/defaults.txt",
       "hash": "e20c15abd80cc7d6c47ead2169a44e7c53906d8548adf210659fd25360ed3a86",
+      "regions": [],
       "title": "Default rates",
       "firmwareVersion": [
         "4.3"
@@ -208,6 +220,7 @@
     {
       "fullPath": "presets/4.3/rc_link/defaults.txt",
       "hash": "bbaf86c09aa8acb1bd8771d90aa7980129b10449647bbbef494b1ee8e037444f",
+      "regions": [],
       "title": "Default RC link settings",
       "firmwareVersion": [
         "4.3"
@@ -227,6 +240,7 @@
     {
       "fullPath": "presets/4.3/rc_link/frsky_sbus.txt",
       "hash": "8a380fd6d01a23b8a4e16a964e349e7ef03ab080b38c249429ad751976165b66",
+      "regions": [],
       "title": "FrSky Sbus",
       "firmwareVersion": [
         "4.3"
@@ -251,6 +265,7 @@
     {
       "fullPath": "presets/4.3/rc_smoothing/defaults.txt",
       "hash": "c042cdf355ba56fee994e2e80cb066583019e741ca304405e22ef1a019f27098",
+      "regions": [],
       "title": "Default RC smoothing settings",
       "firmwareVersion": [
         "4.3"
@@ -270,6 +285,7 @@
     {
       "fullPath": "presets/4.3/tune/defaults.txt",
       "hash": "071b21ae5d3b20b6b766e53ad9a73e6b032dd69aa52c17b5abf3b0d5ce5868ca",
+      "regions": [],
       "title": "Default tune settings",
       "firmwareVersion": [
         "4.3"
@@ -289,6 +305,7 @@
     {
       "fullPath": "presets/4.3/vtx/defaults.txt",
       "hash": "0979f591efadf99a844a32a6137d1a7c076436810fd2f1e1a47f80bd5672ee7e",
+      "regions": [],
       "title": "Default vtx table settings",
       "firmwareVersion": [
         "4.3"
@@ -308,6 +325,7 @@
     {
       "fullPath": "presets/TestSamples/4.2/defaults.txt",
       "hash": "f750e80efd3930913fbb36f5cf410f8877f1bbfd1ca13f2ec2289013826a8365",
+      "regions": [],
       "title": "some title for defaults",
       "firmwareVersion": [
         "4.2"
@@ -323,6 +341,7 @@
     {
       "fullPath": "presets/TestSamples/4.2/sample1.txt",
       "hash": "d959c2281b9c9cb1b7cf2b7a7f1115ee8fa9916e654903b86df0ba871966e2fd",
+      "regions": [],
       "title": "some title sample 1",
       "firmwareVersion": [
         "4.2"
@@ -341,6 +360,7 @@
     {
       "fullPath": "presets/TestSamples/4.2/sample2.txt",
       "hash": "005036391a053e65bed1b902014c2520376f317692b40a6a3e36e634fb154140",
+      "regions": [],
       "firmwareVersion": [
         "4.2"
       ],
@@ -360,6 +380,7 @@
     {
       "fullPath": "presets/TestSamples/4.3/defaults.txt",
       "hash": "b593ad0d6cc48783e968ff5d18c8fbcc6cd2897be73e137eda7ddcfc8d092b2a",
+      "regions": [],
       "title": "some title for defaults 4.3",
       "firmwareVersion": [
         "4.3"
@@ -375,6 +396,7 @@
     {
       "fullPath": "presets/TestSamples/4.3/sample1.txt",
       "hash": "d1da829da9bfd50be8f3690f3171f663190f7ae79edd7f88610f5eebb38b6e60",
+      "regions": [],
       "title": "some title sample 1",
       "firmwareVersion": [
         "4.3"
@@ -398,6 +420,7 @@
     {
       "fullPath": "presets/TestSamples/4.3/sample2.txt",
       "hash": "aaa7011656adcac85743747eddb0c34e923a2659d9579dfcdfba6610180a0cfc",
+      "regions": [],
       "description": [
         "some text line 1111",
         "some text line 2222"
@@ -417,6 +440,7 @@
     {
       "fullPath": "presets/TestSamples/multiple_include_test/sample_multiple_defaults_test.txt",
       "hash": "0a2773b3ed8a64183613f7f8b44d1156de3dc130cf5f7c404fbf96990c3a3aee",
+      "regions": [],
       "title": "multiple defaults sample 1",
       "firmwareVersion": [
         "4.3"
@@ -443,6 +467,7 @@
     {
       "fullPath": "presets/TestSamples/no_include_test/sample1.txt",
       "hash": "531ad2a7bf6358b2e6a4c7a2bdf656c5151724f848cc8a19ebdca38975393af6",
+      "regions": [],
       "title": "some title sample 1",
       "firmwareVersion": [
         "4.3",
@@ -462,6 +487,7 @@
     {
       "fullPath": "presets/TestSamples/no_include_test/sample2.txt",
       "hash": "3574c2f0625099708512df88bc9335a59ca3e27c96814293a6c8d05f0a1093a7",
+      "regions": [],
       "description": [
         "some text line 1111",
         "some text line 2222"
@@ -472,6 +498,110 @@
       ],
       "category": "OSD",
       "official": true
+    },
+    {
+      "fullPath": "presets/TestSamples/regions_test/defaults_with_regions.txt",
+      "hash": "115b95826223a927977a93a51b82315b3fdb681dbb19d66e16b9fafb4841e088",
+      "regions": [
+        {
+          "name": "TPA",
+          "checked": true
+        },
+        {
+          "name": "VBAT asdasdasdasd",
+          "checked": false
+        },
+        {
+          "name": "PIDs no yaw",
+          "checked": false
+        }
+      ],
+      "title": "defaults sample with multiple regions",
+      "firmwareVersion": [
+        "4.3"
+      ],
+      "description": [
+        "defaults sample with multiple regions description line1"
+      ],
+      "official": false,
+      "category": "MIXED",
+      "author": "TEST Author"
+    },
+    {
+      "fullPath": "presets/TestSamples/regions_test/multiple_regions.txt",
+      "hash": "08abf5b05ec815397e79755d80c49e79c0a4c9ba043cf0b5f50a2e0c4cd9efae",
+      "regions": [
+        {
+          "name": "TPA",
+          "checked": true
+        },
+        {
+          "name": "VBAT",
+          "checked": true
+        },
+        {
+          "name": "PIDs no yaw",
+          "checked": true
+        }
+      ],
+      "title": "preset sample with multiple regions",
+      "firmwareVersion": [
+        "4.3"
+      ],
+      "description": [
+        "preset sample with multiple regions description line1",
+        "preset sample with multiple regions description line2",
+        "preset sample with multiple regions description line3"
+      ],
+      "official": false,
+      "category": "MIXED",
+      "author": "TEST Author"
+    },
+    {
+      "fullPath": "presets/TestSamples/regions_test/one_region.txt",
+      "hash": "febbc9b137d3c9516e264de69568c10827e4b1bd5233b66943ffb5f41879295c",
+      "regions": [
+        {
+          "name": "TPA",
+          "checked": true
+        }
+      ],
+      "title": "preset sample with one region",
+      "firmwareVersion": [
+        "4.3"
+      ],
+      "description": [
+        "preset sample with one region description line1",
+        "preset sample with one region description line2",
+        "preset sample with one region description line3"
+      ],
+      "official": false,
+      "category": "MIXED",
+      "author": "TEST Author"
+    },
+    {
+      "fullPath": "presets/TestSamples/regions_test/sample_regions_with_defaults.txt",
+      "hash": "c575485c0b90e2db36c02761ef0dd194d2687b87cc484ff6896112a1ac103c89",
+      "regions": [
+        {
+          "name": "VBAT",
+          "checked": true
+        },
+        {
+          "name": "PIDs no yaw",
+          "checked": true
+        }
+      ],
+      "title": "sample with multiple regions and defaults",
+      "firmwareVersion": [
+        "4.3"
+      ],
+      "description": [
+        "sample with multiple regions and defaults"
+      ],
+      "official": false,
+      "category": "MIXED",
+      "author": "TEST Author"
     }
   ]
 }

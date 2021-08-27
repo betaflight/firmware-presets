@@ -1,0 +1,33 @@
+# Title: preset sample with one region
+# FirmwareVersion: 4.3
+# Description: preset sample with one region description line1
+# Description: preset sample with one region description line2
+# Description: preset sample with one region description line3
+# OFFICIAL: FALSE
+# Category: MIXED
+# defaults: presets/TestSamples/4.3/defaults.txt
+# Author: TEST Author
+
+# region begin TPA
+    set tpa_rate = 31
+    set tpa_breakpoint = 1351
+    set tpa_mode = D
+# region end
+
+set vbat_max_cell_voltage = 430
+set vbat_full_cell_voltage = 410
+set vbat_min_cell_voltage = 330
+set vbat_warning_cell_voltage = 350
+set vbat_hysteresis = 1
+set p_pitch = 46
+set i_pitch = 90
+set d_pitch = 38
+set f_pitch = 95
+set p_roll = 42
+set i_roll = 85
+set d_roll = 35
+set f_roll = 90
+set p_yaw = 45
+set i_yaw = 90
+set d_yaw = 0
+set f_yaw = 90

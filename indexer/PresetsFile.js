@@ -13,6 +13,8 @@ class PresetsFile
         this._presetsFileMetadata = settings.presetsFileMetadata;
         this._errors = errors;
         this._settings = settings;
+        this.regions = [];
+        this._currentRegion = undefined;
 
         const binaryFileContent = fs.readFileSync(this.fullPath);
         let sum = crypto.createHash('sha256');
@@ -25,6 +27,7 @@ class PresetsFile
         delete this._presetsFileMetadata;
         delete this._errors;
         delete this._settings;
+        delete this._currentRegion;
     }
 
     _checkProperties()
@@ -36,6 +39,10 @@ class PresetsFile
                     this._addError(`missing or empty property '${property}'`);
                 }
             }
+        }
+
+        if (undefined !== this._currentRegion) {
+            this._addError(`line ${this._currentLine}, missing ${this._settings.RegionDirectives.END_REGION_DIRECTIVE} for ${this._currentRegion.name}`);
         }
     }
 
@@ -67,6 +74,7 @@ class PresetsFile
     {
         line = line.slice(1).trim(); // (# Title: foo) -> (Title: foo)
         const lowCaseLine = line.toLowerCase();
+        let isProperty = false;
 
         for (const [property, value] of Object.entries(this._presetsFileMetadata)) {
             const lineBeginning = `${property.toLowerCase()}:`; // "Title:"
@@ -74,8 +82,91 @@ class PresetsFile
             if (lowCaseLine.startsWith(lineBeginning)) {
                 line = line.slice(lineBeginning.length).trim(); // (Title: foo) -> (foo)
                 this._processProperty(property, line);
+                isProperty = true;
             }
         }
+
+        if (!isProperty && lowCaseLine.startsWith(this._settings.RegionDirectives.REGION_DIRECTIVE)) {
+            this._processRegionDirective(line);
+        }
+    }
+
+    _processRegionDirective(line)
+    {
+        const lowCaseLine = line.toLowerCase();
+
+        if (lowCaseLine.startsWith(this._settings.RegionDirectives.BEGIN_REGION_DIRECTIVE)) {
+            const region = this._getRegion(line);
+            const lowCaseRegionName = region.name.toLowerCase();
+
+            if ("" === region.name) {
+                this._addError(`line ${this._currentLine}, empty region name`);
+            } else if (undefined !== this._currentRegion) {
+                this._addError(`line ${this._currentLine}, nested regions are not allowed`);
+            } else {
+                this._currentRegion = region;
+            }
+
+        } else if (lowCaseLine.startsWith(this._settings.RegionDirectives.END_REGION_DIRECTIVE)) {
+            if (undefined === this._currentRegion) {
+                this._addError(`line ${this._currentLine}, end region directive found but no region to close`);
+            } else {
+                const lowCaseRegionName = this._currentRegion.name.toLowerCase();
+
+                const indexOfRegion = this.regions.findIndex(item => lowCaseRegionName === item.name.toLowerCase());
+
+                if (-1 === indexOfRegion) {
+                    this.regions.push(this._currentRegion);
+                }
+
+                this._currentRegion = undefined;
+            }
+
+        }
+    }
+
+    _escapeRegex(string) {
+        return string.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+    }
+
+    _getRegion(line)
+    {
+        const directiveRemoved = line.slice(this._settings.RegionDirectives.BEGIN_REGION_DIRECTIVE.length).trim();
+        const directiveRemovedLowCase = directiveRemoved.toLowerCase();
+        const regionChecked = this._isRegionChecked(directiveRemovedLowCase);
+
+        const regExpRemoveChecked = new RegExp(this._escapeRegex(this._settings.RegionDirectives.REGION_CHECKED), 'gi');
+        const regExpRemoveUnchecked = new RegExp(this._escapeRegex(this._settings.RegionDirectives.REGION_UNCHECKED), 'gi');
+        let regionName = directiveRemoved.replace(regExpRemoveChecked, "");
+        regionName = regionName.replace(regExpRemoveUnchecked, "").trim();
+
+        let region = {
+            name: regionName,
+            checked: regionChecked
+        }
+
+        return region;
+    }
+
+    _isRegionChecked(lowCaseLine)
+    {
+        let regionChecked = false;
+        let regionUnchecked = false;
+
+        if (lowCaseLine.includes(this._settings.RegionDirectives.REGION_CHECKED)) {
+            regionChecked = true;
+        }
+        if (lowCaseLine.includes(this._settings.RegionDirectives.REGION_UNCHECKED)) {
+            regionUnchecked = true;
+        }
+
+        if (regionChecked && regionUnchecked) {
+            this._addError(`line ${this._currentLine}, region can't be checked and unchecked at the same time`);
+        } else {
+            regionChecked = regionChecked || !regionUnchecked;
+        }
+
+        return regionChecked;
     }
 
     _processProperty(property, line)
