@@ -36,9 +36,9 @@ if (0 === errors.length) {
         const indexHash = sum.digest('hex');
         fs.writeFileSync("index_hash.txt", indexHash);
         console.log("index_hash.txt created");
-
-        process.exitCode = 0;
     }
+
+    process.exitCode = 0;
 } else {
     console.log("Failed with errors");
 }
