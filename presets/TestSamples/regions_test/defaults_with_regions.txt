@@ -1,0 +1,36 @@
+# Title: defaults sample with multiple regions
+# FirmwareVersion: 4.3
+# Description: defaults sample with multiple regions description line1
+# OFFICIAL: FALSE
+# Category: MIXED
+# Author: TEST Author
+
+# region begin TPA (checked)
+    set tpa_rate = 1
+    set tpa_breakpoint = 1001
+    set tpa_mode = PD
+# region end
+
+# region begin (unchecked) VBAT asdasdasdasd
+    set vbat_max_cell_voltage = 112
+    set vbat_full_cell_voltage = 113
+    set vbat_min_cell_voltage = 114
+    set vbat_warning_cell_voltage = 115
+    set vbat_hysteresis = 2
+# region end
+
+# region begin PIDs no yaw (unchecked)
+    set p_pitch = 1
+    set i_pitch = 2
+    set d_pitch = 3
+    set f_pitch = 4
+    set p_roll = 5
+    set i_roll = 6
+    set d_roll = 7
+    set f_roll = 8
+# region end
+
+    set p_yaw = 9
+    set i_yaw = 10
+    set d_yaw = 11
+    set f_yaw = 12
