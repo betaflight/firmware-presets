@@ -1,0 +1,120 @@
+# Title: Karate Race
+# FirmwareVersion: 4.2
+# FirmwareVersion: 4.3 (as many versions as needed)
+# Category: TUNE
+# Official: true
+# Keywords: karate, 6S, race, world champion
+# Author: Zak smiley SugarK
+# Description: This 6s racing tune was developed 
+# Description: with the help of @ctzsnooze around 
+# Description: @karatebrot’s RPM crossfade code
+# Description: allowing a pretty aggressive 
+# Description: filter array which is the karate
+# Description: array. This tune works well on
+# Description: any quality airframes and has been
+# Description: flown on the Viper racer (where it 
+# Description: was developed ) BMS Js1, 533 
+# Description: switchback and the HGLRC wind.
+# Description: It should also work on other quality 
+# Description: racing frames but use at your own 
+# Description: risk as it is an aggressive tune.
+# Description: this tune so far has won a good 
+# Description: number of events including the 
+# Description: 2021 IO 
+
+# master
+set gyro_lpf2_static_hz = 1000
+set dyn_notch_count = 2
+set dyn_notch_q = 500
+set dyn_notch_min_hz = 200
+set gyro_lpf1_dyn_min_hz = 500
+set gyro_lpf1_dyn_max_hz = 1000
+set dshot_bidir = ON
+set motor_pwm_protocol = DSHOT600
+set small_angle = 180
+set simplified_gyro_filter_multiplier = 200
+set debug_mode = GYRO_SCALED
+set rpm_filter_fade_range_hz = 100
+set name = karate race
+
+profile 0
+
+# profile 0
+set dterm_lpf1_dyn_expo = 10
+set anti_gravity_gain = 5500
+set p_pitch = 42
+set i_pitch = 89
+set d_pitch = 41
+set f_pitch = 138
+set p_roll = 38
+set i_roll = 81
+set d_roll = 37
+set f_roll = 125
+set d_min_roll = 22
+set d_min_pitch = 24
+set feedforward_averaging = 2_POINT
+set feedforward_jitter_reduction = 5
+set feedforward_max_rate_limit = 90
+set dyn_idle_min_rpm = 40
+set dyn_idle_p_gain = 35
+set dyn_idle_i_gain = 35
+set dyn_idle_d_gain = 35
+set simplified_pids_mode = RP
+set simplified_i_gain = 120
+set simplified_d_gain = 75
+set simplified_pi_gain = 85
+set simplified_dmax_gain = 200
+set simplified_feedforward_gain = 105
+set simplified_pitch_d_gain = 110
+set simplified_pitch_pi_gain = 110
+
+rateprofile 0
+
+# rateprofile 0
+set tpa_rate = 70
+set tpa_breakpoint = 1250
+
+
+# region begin (checked) dynamic idle 
+
+#dynamic idle for 6s 2000kv
+set dshot_idle_value = 400
+set dyn_idle_min_rpm = 40
+set dyn_idle_p_gain = 35
+# region end
+
+
+# region begin (unchecked) spicy tune 
+
+#spicy tune use with care
+
+set dyn_notch_count = 1
+set dyn_notch_q = 500
+set dyn_notch_min_hz = 250
+set rpm_filter_harmonics = 2
+set p_pitch = 42
+set i_pitch = 89
+set d_pitch = 42
+set f_pitch = 138
+set p_roll = 38
+set i_roll = 81
+set d_roll = 38
+set f_roll = 125
+set d_min_roll = 27
+set d_min_pitch = 29
+set feedforward_averaging = off
+set feedforward_smoothing = 35
+set feedforward_jitter_reduction = 5
+set feedforward_max_rate_limit = 90
+set simplified_pids_mode = RP
+set simplified_i_gain = 120
+set simplified_d_gain = 90
+set simplified_pi_gain = 85
+set simplified_dmax_gain = 125
+set simplified_feedforward_gain = 105
+set simplified_pitch_d_gain = 110
+set simplified_pitch_pi_gain = 110
+set throttle_limit_type = SCALE
+set throttle_limit_percent = 100
+# region end
+
