@@ -1,0 +1,32 @@
+# Title: ELRS 250hz
+# FirmwareVersion: 4.3
+# Category: RC_LINK
+# Official: true
+# Keywords: ELRS, rc, link, 250hz
+# Author: ctzsnooze
+# Description: Basic RC link settings for a 250hz ELRS link via CRSF
+# Description: WARNING: make ABSOLUTELY SURE that the OpenTx or EdgeTx Hardware ADC Filter is un-checked!
+# Description: WARNING: check that you are using a compatible version of EdgeTx or OpenTx!
+# Description: Voltage option is for OpenTx telemetry back to the transmitter, default is per cell, option whole pack
+
+feature RX_SERIAL
+set serialrx_provider = CRSF
+
+# rc smoothing should always be enabled with ELRS
+set rc_smoothing = ON
+
+set feedforward_averaging = 2_POINT
+set feedforward_smooth_factor = 35
+set feedforward_jitter_reduction = 6
+
+# per cell or whole pack voltage readings:
+set report_cell_voltage = ON
+# region begin (unchecked) Whole pack voltage readings
+set report_cell_voltage = OFF
+# region end
+
+# stronger feedforward smoothing for HD or Cinematic flying (not for racing):
+# region begin (unchecked) Stronger smoothing for HD or cinematic (not for racing)
+set feedforward_averaging = 2_POINT
+set feedforward_smooth_factor = 65
+# region end
