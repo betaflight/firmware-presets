@@ -3,17 +3,10 @@
 # Category: TUNE
 # Official: true
 # Keywords: karate, 6S, race, world champion, 5 inch, 5"
-# Author: Zak smiley SugarK
-# Description: This 6s racing tune was developed with the help of @ctzsnooze around @karatebrot’s RPM crossfade code
-# Description: allowing a pretty aggressive filter array which is the karate array. This tune works well on
-# Description: any quality airframes and has been flown on the Viper racer (where it was developed ) BMS Js1, 533 
-# Description: switchback and the HGLRC wind. It should also work on other quality racing frames but use at your own 
-# Description: risk as it is an aggressive tune. This tune so far has won a good number of events including the 
-# Description: 2021 IO. Things to note.. you have to use RPM filtering on this tune, failure to do so might result in fire
-# Description: and regarding Dshot600,  if your setup has errors in the motor tab using bidirectional Dshot then change to 
-# Description: 8k/4k and dshot300. To test arm the quad with props on, it should sound clean with no grinding, if it passes 
-# Description: that then hover test and check motor temps. If any thing is off don't fly it!!
-
+# Author: Zak Smiley SugarK
+# Description: This 6s racing tune was developed with the help of @ctzsnooze around @karatebrot’s RPM crossfade code allowing a pretty aggressive filter array which is the karate array. This tune works well on any quality airframes and has been flown on the Viper racer (where it was developed ) BMS Js1, 533 switchback and the HGLRC wind. It should also work on other quality racing frames but use at your own risk as it is an aggressive tune. This tune so far has won a good number of events including the 2021 IO.
+# Description: Things to note.. YOU have to use RPM filtering on this tune, failure to do so might result in fire and regarding Dshot600,  if your setup has errors in the motor tab using bidirectional Dshot then change to 8k/4k and dshot300. Also this should be applied to a clean flash after you've setup your rates, swtiches, vtx tables etc. To test arm the quad with props on, it should sound clean with no grinding, if it passes that then hover test and check motor temps. If any thing is off don't fly it!!
+# include: presets/4.3/tune/defaults.txt
 
 # master
 set gyro_lpf2_static_hz = 1000
