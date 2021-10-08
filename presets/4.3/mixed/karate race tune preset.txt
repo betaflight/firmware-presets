@@ -8,26 +8,42 @@
 # Description: Things to note.. YOU have to use RPM filtering on this tune, failure to do so might result in fire and regarding Dshot600,  if your setup has errors in the motor tab using bidirectional Dshot then change to 8k/4k and dshot300. Also this should be applied to a clean flash after you've setup your rates, swtiches, vtx tables etc. To test arm the quad with props on, it should sound clean with no grinding, if it passes that then hover test and check motor temps. If any thing is off don't fly it!!
 # Description: Radio links.. 1. Make sure your radio system is totally up to date using either Edgetx or Opentx and your ADC in the hardware page is OFF 2. Go to the radio presets and apply the correct setup for your system and link speed.
 
-# include: presets/4.3/tune/defaults.txt
 
 # master
 set gyro_lpf2_static_hz = 1000
+set gyro_lpf1_type = PT1
+set gyro_lpf2_type = PT1
 set dyn_notch_count = 2
 set dyn_notch_q = 500
 set dyn_notch_min_hz = 200
 set gyro_lpf1_dyn_min_hz = 500
 set gyro_lpf1_dyn_max_hz = 1000
+set yaw_spin_recovery = AUTO
+set thrust_linear = 0
 set dshot_bidir = ON
 set motor_pwm_protocol = DSHOT600
 set small_angle = 180
 set simplified_gyro_filter_multiplier = 200
 set debug_mode = GYRO_SCALED
+set rpm_filter_harmonics = 3
+set rpm_filter_q = 500
+set rpm_filter_min_hz = 100
 set rpm_filter_fade_range_hz = 100
+set rpm_filter_lpf_hz = 150
 set name = karate race
 
+profile 0
 
-# pidprofile
+# profile 0
+set dterm_lpf1_dyn_min_hz = 75
+set dterm_lpf1_dyn_max_hz = 150
 set dterm_lpf1_dyn_expo = 10
+set dterm_lpf1_type = PT1
+set dterm_lpf1_static_hz = 150
+set dterm_lpf2_type = PT1
+set dterm_lpf2_static_hz = 150
+set dterm_notch_hz = 0
+set dterm_notch_cutoff = 0
 set anti_gravity_gain = 5500
 set p_pitch = 42
 set i_pitch = 89
@@ -41,6 +57,10 @@ set d_min_roll = 22
 set d_min_pitch = 24
 set feedforward_jitter_reduction = 5
 set feedforward_max_rate_limit = 90
+set dyn_idle_min_rpm = 40
+set dyn_idle_p_gain = 35
+set dyn_idle_i_gain = 35
+set dyn_idle_d_gain = 35
 set simplified_pids_mode = RP
 set simplified_i_gain = 120
 set simplified_d_gain = 75
@@ -49,6 +69,8 @@ set simplified_dmax_gain = 200
 set simplified_feedforward_gain = 105
 set simplified_pitch_d_gain = 110
 set simplified_pitch_pi_gain = 110
+set simplified_dterm_filter = ON
+set simplified_dterm_filter_multiplier = 100
 
 
 
