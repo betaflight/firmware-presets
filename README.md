@@ -3,7 +3,7 @@
 A simple way to configure your Betaflight Flight Controller Firmware settings.
 
 - [Introduction](https://github.com/betaflight/firmware-presets#introduction)
-- [Applying and using Presets](https://github.com/betaflight/firmware-presets#using-presets)
+- [Applying and using Presets](https://github.com/betaflight/firmware-presets#applying-and-using-presets)
 - [Providing feedback](https://github.com/betaflight/firmware-presets#providing-feedback)
 - [Creating new presets](https://github.com/betaflight/firmware-presets#creating-new-presets)
 - [Modifying existing presets](https://github.com/betaflight/firmware-presets#modifying-existing-presets)
