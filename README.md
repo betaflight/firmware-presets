@@ -2,13 +2,13 @@
 
 A simple way to configure your Betaflight Flight Controller Firmware settings.
 
-- [Introduction](Introduction)
-- [Applying and using Presets](Applying-and-using-Presets)
-- [Providing feedback](Providing-feedback)
-- [Creating new presets](Creating-new-presets)
-- [Changing existing presets](Changing-existing-presets)
-- [Preset specifications](Preset-specifications)
-- [Credits](Credits)
+- [Introduction](https://github.com/betaflight/firmware-presets#introduction)
+- [Applying and using Presets](https://github.com/betaflight/firmware-presets#using-presets)
+- [Providing feedback](https://github.com/betaflight/firmware-presets#providing-feedback)
+- [Creating new presets](https://github.com/betaflight/firmware-presets#creating-new-presets)
+- [Modifying existing presets](https://github.com/betaflight/firmware-presets#modifying-existing-presets)
+- [Preset specifications](https://github.com/betaflight/firmware-presets#preset-specifications)
+- [Credits](https://github.com/betaflight/firmware-presets#credits)
 
 ## Introduction
 
@@ -18,7 +18,7 @@ All Presets go through a checking and approval process before being made publicl
 
 >WARNING: When a Preset is saved, the configuration settings are permanently changed!  Users MUST make a backup of their previous settings, and know how to restore their settings from the backup.
 
-## Using Presets
+## Applying and using Presets
 
 - Make a backup of your current settings (go to CLI, type `dump all`, and save that data to a safe place)`
 - Go to the Preset tab in Configurator
