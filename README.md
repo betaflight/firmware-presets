@@ -48,6 +48,14 @@ Submissions for new presets must be made with a GitHub *Pull Request* (PR):
 - Since CLI names and preset values will change from version to version, it's usually best to make separate presets for 4.2 or 4.3
 - The Preset must comply with the [specifications](Preset-specifications) and must include a concise description of what will be changed
 
+When making a Preset, the changes to be made to the existing configuration can be applied in four fundamentally different ways.  A Preset may:
+- Replace or force overwrite one or more values with new values that actively achieve something, eg change a PID value, or a parameter set to a higher than default value.
+- Force some values to off, or to default, so that regardless of the user's prior configuration, these settings will no longer be active, or will be at default values.  This requires lines in the Preset that set the parameters to off, or to their default values, or by `including` a defaults file before applying the active changes.  'Including' a defaults file before your changes can provide a 'clean slate' over which active changes are written.  It can, howeever, make more changes than are needed.  Always check that an included defaults file only makes the changes you really need, and doesn't mess with settings that a user would likely want to keep, or are irrelevant to your Preset.
+- Ignore some values, or not change values that don't matter to your Preset, at whatever value the user the user has in their configuration, by not mentioning those parameters in the Preset.
+- Provide checkboxes so that the user can choose between alternative or optional groups of values, eg to provide alternate filter settings to suit noisy or clean setups, or let the user choose to have Thrust Linear active on their quad.  This can be done with `regions`.
+
+In summary, a Preset should overwrite any value that must be set to a specific value, disable or turn off values or settings that need to be off, and provide checkbox options (regions) to let the user choose, where appropriate, between alternative options.
+
 Before final submission of the PR, check the preset by:
 - installing `node.js` for your OS
 - running `node indexer/check.js` in a terminal window from your draft's working directory.
