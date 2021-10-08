@@ -2,13 +2,13 @@
 
 A simple way to configure your Betaflight Flight Controller Firmware settings.
 
-- [Introduction](Introduction)
-- [Applying and using Presets](Applying-and-using-Presets)
-- [Providing feedback](Providing-feedback)
-- [Creating new presets](Creating-new-presets)
-- [Changing existing presets](Changing-existing-presets)
-- [Preset specifications](Preset-specifications)
-- [Credits](Credits)
+- [Introduction](https://github.com/betaflight/firmware-presets#introduction)
+- [Applying and using Presets](https://github.com/betaflight/firmware-presets#applying-and-using-presets)
+- [Providing feedback](https://github.com/betaflight/firmware-presets#providing-feedback)
+- [Creating new presets](https://github.com/betaflight/firmware-presets#creating-new-presets)
+- [Modifying existing presets](https://github.com/betaflight/firmware-presets#modifying-existing-presets)
+- [Preset specifications](https://github.com/betaflight/firmware-presets#preset-specifications)
+- [Credits](https://github.com/betaflight/firmware-presets#credits)
 
 ## Introduction
 
@@ -18,7 +18,7 @@ All Presets go through a checking and approval process before being made publicl
 
 >WARNING: When a Preset is saved, the configuration settings are permanently changed!  Users MUST make a backup of their previous settings, and know how to restore their settings from the backup.
 
-## Using Presets
+## Applying and using Presets
 
 - Make a backup of your current settings (go to CLI, type `dump all`, and save that data to a safe place)`
 - Go to the Preset tab in Configurator
@@ -46,7 +46,7 @@ Submissions for new presets must be made with a GitHub *Pull Request* (PR):
 - Every PR will be assessed carefully by Betaflight developers.
 - Approval is not automatic, and may take some time.
 - Since CLI names and preset values will change from version to version, it's usually best to make separate presets for 4.2 or 4.3
-- The Preset must comply with the [specifications](Preset-specifications) and must include a concise description of what will be changed
+- The Preset must comply with the [specifications](https://github.com/betaflight/firmware-presets#preset-specifications) and must include a concise description of what will be changed
 
 Before final submission of the PR, check the preset by:
 - installing `node.js` for your OS
@@ -83,7 +83,7 @@ Checking out similar Presets beforehand may be useful.
 | Author | Your Github name or nickname. |
 | Description | Clearly explain what is changed, especially if Rates, Motor protocols, Rx links or VTx tables are changed. If filter setup requires RPM filtering, be sure to state this.  Text can flow across multiple Description lines. |
 | Include | Inserts data from one or more separate Presets ahead of the CLI commands of this Preset.  Useful to enforce defaults ahead of your commands. |
-| Region | Commands within a region are optional.  When a region is specified, the user is presented with a checkbox to apply, or not apply, the commands within the region.  The default check-box behaviour can be specified.  Each region must have a unique name. More info [here](Region)|
+| Region | Commands within a region are optional.  When a region is specified, the user is presented with a checkbox to apply, or not apply, the commands within the region.  The default check-box behaviour can be specified.  Each region must have a unique name. More info [here](https://github.com/betaflight/firmware-presets#regions)|
 
 ### General Preset structure:
 
