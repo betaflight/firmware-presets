@@ -46,7 +46,7 @@ Submissions for new presets must be made with a GitHub *Pull Request* (PR):
 - Every PR will be assessed carefully by Betaflight developers.
 - Approval is not automatic, and may take some time.
 - Since CLI names and preset values will change from version to version, it's usually best to make separate presets for 4.2 or 4.3
-- The Preset must comply with the [specifications](Preset-specifications) and must include a concise description of what will be changed
+- The Preset must comply with the [specifications](https://github.com/betaflight/firmware-presets#preset-specifications) and must include a concise description of what will be changed
 
 Before final submission of the PR, check the preset by:
 - installing `node.js` for your OS
@@ -83,7 +83,7 @@ Checking out similar Presets beforehand may be useful.
 | Author | Your Github name or nickname. |
 | Description | Clearly explain what is changed, especially if Rates, Motor protocols, Rx links or VTx tables are changed. If filter setup requires RPM filtering, be sure to state this.  Text can flow across multiple Description lines. |
 | Include | Inserts data from one or more separate Presets ahead of the CLI commands of this Preset.  Useful to enforce defaults ahead of your commands. |
-| Region | Commands within a region are optional.  When a region is specified, the user is presented with a checkbox to apply, or not apply, the commands within the region.  The default check-box behaviour can be specified.  Each region must have a unique name. More info [here](Region)|
+| Region | Commands within a region are optional.  When a region is specified, the user is presented with a checkbox to apply, or not apply, the commands within the region.  The default check-box behaviour can be specified.  Each region must have a unique name. More info [here](https://github.com/betaflight/firmware-presets#regions)|
 
 ### General Preset structure:
 
