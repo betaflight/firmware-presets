@@ -18,7 +18,7 @@ const PresetCategories = {
     LEDS:           "LEDS",
     MODES:          "MODES",
     RC_SMOOTHING:   "RC_SMOOTHING",
-    FILTERS:         "FILTERS",
+    FILTERS:        "FILTERS",
     RC_LINK:        "RC_LINK",
     BNF:            "BNF",
     OTHER:          "OTHER",
@@ -51,6 +51,8 @@ const settings = {
         description:       {type: MetadataTypes.STRING_ARRAY,     optional: true   },
         include:           {type: MetadataTypes.FILE_PATH_ARRAY,  optional: true   },
         keywords:          {type: MetadataTypes.WORDS_ARRAY,      optional: true   },
+        nosearch:          {type: MetadataTypes.BOOLEAN,          optional: true   },
+        discussion:        {type: MetadataTypes.STRING,           optional: true   },
     }),
 }
 
