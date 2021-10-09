@@ -17,10 +17,11 @@ const PresetCategories = {
     VTX:            "VTX",
     LEDS:           "LEDS",
     MODES:          "MODES",
-    BNF:            "BNF",
     RC_SMOOTHING:   "RC_SMOOTHING",
+    FILTERS:         "FILTERS",
     RC_LINK:        "RC_LINK",
-    MIXED:          "MIXED",
+    BNF:            "BNF",
+    OTHER:          "OTHER",
 }
 
 const RegionDirectives = {

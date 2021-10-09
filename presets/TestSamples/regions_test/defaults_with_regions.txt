@@ -2,7 +2,7 @@
 # FirmwareVersion: 4.3
 # Description: defaults sample with multiple regions description line1
 # OFFICIAL: FALSE
-# Category: MIXED
+# Category: OTHER
 # Author: TEST Author
 
 # region begin TPA (checked)

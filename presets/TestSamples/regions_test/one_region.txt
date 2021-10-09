@@ -4,7 +4,7 @@
 # Description: preset sample with one region description line2
 # Description: preset sample with one region description line3
 # OFFICIAL: FALSE
-# Category: MIXED
+# Category: OTHER
 # defaults: presets/TestSamples/4.3/defaults.txt
 # Author: TEST Author
 
