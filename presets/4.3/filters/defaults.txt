@@ -1,8 +1,8 @@
 # Title: Default 4.3 Filter settings
 # FirmwareVersion: 4.3
-# Category: FILTER
+# Category: FILTERS
 # Official: true
-# Keywords: defaults, filter, filters
+# Keywords: defaults, filter, filters, reset
 # Author: Betaflight
 # Description: Resets Filter settings to 4.3 defaults
 

@@ -2,7 +2,7 @@
 # FirmwareVersion: 4.3
 # Description: sample with multiple regions and defaults
 # OFFICIAL: FALSE
-# Category: MIXED
+# Category: OTHER
 # Author: TEST Author
 # Defaults: presets/TestSamples/regions_test/defaults_with_regions.txt
 

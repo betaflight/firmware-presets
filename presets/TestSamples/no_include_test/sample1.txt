@@ -14,5 +14,5 @@ set tpa_breakpoint = 1351
 set tpa_mode = D
 
 # Description: some text line 5 end of file
-# Category: mixed
+# Category: other
 # Official: yes
