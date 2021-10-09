@@ -1,0 +1,32 @@
+# Title: Freestyle RC smoothing
+# FirmwareVersion: 4.3
+# Category: RC_SMOOTHING
+# Official: true
+# Keywords: freestyle, rc, smooth, smoothing, rc_smoothing, jitter
+# Author: ctzsnooze
+# Description: RC smoothing settings for Freestyle footage
+# Description: Fixed cutoff frequency for consistent, responsive results over a wide range of RC link frequencies. Auto-smoothing cutoff values are over-ridden by the fixed cutoff values.
+# Description: There should be no need to turn off feedforward or to enable transition, beause the jitter reduction provides dynamic attenuation of feedforward whenever the sticks move slowly.
+# Description: Option: Actual Rates, with centre sensitivity around 60 and 750 deg/s max.
+
+set rc_smoothing = ON
+set feedforward_jitter_reduction = 12
+set feedforward_transition = 0
+set rc_smoothing_auto_factor = 40
+set rc_smoothing_setpoint_cutoff = 40
+set rc_smoothing_feedforward_cutoff = 40
+set rc_smoothing_auto_factor_throttle = 30
+set rc_smoothing_throttle_cutoff = 0
+
+# Region begin (unchecked) Recommended Actual rates
+set rates_type = ACTUAL
+set roll_rc_rate = 6
+set pitch_rc_rate = 6
+set yaw_rc_rate = 6
+set roll_expo = 0
+set pitch_expo = 0
+set yaw_expo = 0
+set roll_srate = 75
+set pitch_srate = 75
+set yaw_srate = 75
+# Region end
