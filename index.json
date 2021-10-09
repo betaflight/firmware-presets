@@ -63,6 +63,14 @@
       "keywords": {
         "type": "WORDS_ARRAY",
         "optional": true
+      },
+      "nosearch": {
+        "type": "BOOLEAN",
+        "optional": true
+      },
+      "discussion": {
+        "type": "STRING",
+        "optional": true
       }
     }
   },
@@ -549,6 +557,58 @@
       ]
     },
     {
+      "fullPath": "presets/4.3/rc_link/Tracer_CFV2.txt",
+      "hash": "2caad2bb6c6602918deceeedf7bd7b6ad170ba12a6df297a61b7e300329be601",
+      "regions": [],
+      "title": "TBS Tacer CFV2",
+      "firmwareVersion": [
+        "4.3"
+      ],
+      "category": "RC_LINK",
+      "official": true,
+      "keywords": [
+        "defaults",
+        "rc link",
+        "tracer",
+        "TBS",
+        "cfv2",
+        "250hz"
+      ],
+      "author": "Zak Smiley sugarK",
+      "description": [
+        "setup fo the various TBS radio links via CRSF",
+        "WARNING: make ABSOLUTELY SURE that the Hardware > ADC Filter is un-checked! and both radio and the TX unit are all up to date with the latest EdgeTX, OpenTX or FreedomTX",
+        "Please use RC smoothing presets for flying style required. Note base settings are for racing, there is a check box at the end for freestyle.",
+        "There are 2 current types of Crossfire protocol, CFV2 and CFV3 this can be checked in your TBS lua"
+      ]
+    },
+    {
+      "fullPath": "presets/4.3/rc_link/Tracer_CFV3.txt",
+      "hash": "7eb823ba43739a3c6c0567c0dff57272a6d2fb8f01051721b02f6f3f1eed9013",
+      "regions": [],
+      "title": "TBS Tacer CFV3",
+      "firmwareVersion": [
+        "4.3"
+      ],
+      "category": "RC_LINK",
+      "official": true,
+      "keywords": [
+        "defaults",
+        "rc link",
+        "tracer",
+        "TBS",
+        "cfv3",
+        "250hz"
+      ],
+      "author": "Zak Smiley sugarK",
+      "description": [
+        "setup for TBS Tacer CFV3",
+        "WARNING: make ABSOLUTELY SURE that the Hardware > ADC Filter is un-checked! and both radio and the TX unit are all up to date with the latest EdgeTX, OpenTX or FreedomTX",
+        "Please use RC smoothing presets for flying style required. Note base settings are for racing, there is a check box at the end for freestyle.",
+        "There are 2 current types of Crossfire protocol, CFV2 and CFV3 this can be checked in your TBS lua"
+      ]
+    },
+    {
       "fullPath": "presets/4.3/rc_link/defaults.txt",
       "hash": "84509d0d8a09c3494cbf702c8b697093ceec7dab03983100e15f07f44cef79df",
       "regions": [],
@@ -747,58 +807,6 @@
         "Cell vs full voltage option affects which value will be sent by telemetry to the handset.  Default is per cell.",
         "Units default to metric. Telemetry defaults to non-inverted and half-duple.  Both can be changed with checkbox",
         "Other telemetry settings,eg gps format, default latitude and longitude, extra sensors, require manual CLI entries"
-      ]
-    },
-    {
-      "fullPath": "presets/4.3/rc_link/Tracer_CFV2.txt",
-      "hash": "2caad2bb6c6602918deceeedf7bd7b6ad170ba12a6df297a61b7e300329be601",
-      "regions": [],
-      "title": "TBS Tacer CFV2",
-      "firmwareVersion": [
-        "4.3"
-      ],
-      "category": "RC_LINK",
-      "official": true,
-      "keywords": [
-        "defaults",
-        "rc link",
-        "tracer",
-        "TBS",
-        "cfv2",
-        "250hz"
-      ],
-      "author": "Zak Smiley sugarK",
-      "description": [
-        "setup fo the various TBS radio links via CRSF",
-        "WARNING: make ABSOLUTELY SURE that the Hardware > ADC Filter is un-checked! and both radio and the TX unit are all up to date with the latest EdgeTX, OpenTX or FreedomTX",
-        "Please use RC smoothing presets for flying style required. Note base settings are for racing, there is a check box at the end for freestyle.",
-        "There are 2 current types of Crossfire protocol, CFV2 and CFV3 this can be checked in your TBS lua"
-      ]
-    },
-    {
-      "fullPath": "presets/4.3/rc_link/Tracer_CFV3.txt",
-      "hash": "7eb823ba43739a3c6c0567c0dff57272a6d2fb8f01051721b02f6f3f1eed9013",
-      "regions": [],
-      "title": "TBS Tacer CFV3",
-      "firmwareVersion": [
-        "4.3"
-      ],
-      "category": "RC_LINK",
-      "official": true,
-      "keywords": [
-        "defaults",
-        "rc link",
-        "tracer",
-        "TBS",
-        "cfv3",
-        "250hz"
-      ],
-      "author": "Zak Smiley sugarK",
-      "description": [
-        "setup for TBS Tacer CFV3",
-        "WARNING: make ABSOLUTELY SURE that the Hardware > ADC Filter is un-checked! and both radio and the TX unit are all up to date with the latest EdgeTX, OpenTX or FreedomTX",
-        "Please use RC smoothing presets for flying style required. Note base settings are for racing, there is a check box at the end for freestyle.",
-        "There are 2 current types of Crossfire protocol, CFV2 and CFV3 this can be checked in your TBS lua"
       ]
     },
     {
