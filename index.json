@@ -22,12 +22,12 @@
       "WORDS_ARRAY": "WORDS_ARRAY",
       "FILE_PATH_ARRAY": "FILE_PATH_ARRAY"
     },
-    "RegionDirectives": {
-      "REGION_DIRECTIVE": "region",
-      "BEGIN_REGION_DIRECTIVE": "region begin",
-      "END_REGION_DIRECTIVE": "region end",
-      "REGION_CHECKED": "(checked)",
-      "REGION_UNCHECKED": "(unchecked)"
+    "OptionsDirectives": {
+      "OPTION_DIRECTIVE": "option",
+      "BEGIN_OPTION_DIRECTIVE": "option begin",
+      "END_OPTION_DIRECTIVE": "option end",
+      "OPTION_CHECKED": "(checked)",
+      "OPTION_UNCHECKED": "(unchecked)"
     },
     "presetsDir": "presets",
     "presetsFileEncoding": "utf-8",
@@ -62,6 +62,14 @@
       },
       "keywords": {
         "type": "WORDS_ARRAY",
+        "optional": true
+      },
+      "nosearch": {
+        "type": "BOOLEAN",
+        "optional": true
+      },
+      "discussion": {
+        "type": "STRING",
         "optional": true
       }
     }
@@ -160,7 +168,7 @@
     {
       "fullPath": "presets/4.3/filters/defaults.txt",
       "hash": "1b79df5ceee4b4c1d80f2dfbdc3bd525944776e9b069c06f5a832d0ee7451666",
-      "regions": [],
+      "options": [],
       "title": "Default 4.3 Filter settings",
       "firmwareVersion": [
         "4.3"
@@ -181,7 +189,7 @@
     {
       "fullPath": "presets/4.3/leds/defaults.txt",
       "hash": "c5b366058d0e20946395d62fda67e0ea49dd5842df804a7863ead73e5eb250f4",
-      "regions": [],
+      "options": [],
       "title": "Default 4.3 LED settings",
       "firmwareVersion": [
         "4.3"
@@ -202,7 +210,7 @@
     {
       "fullPath": "presets/4.3/modes/defaults.txt",
       "hash": "6d0d35c169b503826866b81908c321cb4caef08518115c444a800f90b9167eeb",
-      "regions": [],
+      "options": [],
       "title": "Default 4.3 Modes and Adjustment settings",
       "firmwareVersion": [
         "4.3"
@@ -226,7 +234,7 @@
     {
       "fullPath": "presets/4.3/osd/defaults.txt",
       "hash": "587c0eb6969bc40d03038673c3090d75b5f22bd938a0cffa3ec1923ca3deb5b8",
-      "regions": [],
+      "options": [],
       "title": "Default 4.3 OSD settings",
       "firmwareVersion": [
         "4.3"
@@ -246,7 +254,7 @@
     {
       "fullPath": "presets/4.3/other/reset_blackbox.txt",
       "hash": "8d314c75308b44a5e6bd4146eba913f795eb07a4e549a354bccb2807396f871a",
-      "regions": [],
+      "options": [],
       "title": "Reset 4.3 Blackbox settings",
       "firmwareVersion": [
         "4.3"
@@ -268,7 +276,7 @@
     {
       "fullPath": "presets/4.3/other/reset_camera_control.txt",
       "hash": "7e3f13369312938df5f4dee8113229794f2c3cc8485c45a943eaf20bf3bddf75",
-      "regions": [],
+      "options": [],
       "title": "Reset Camera Control settings",
       "firmwareVersion": [
         "4.3"
@@ -290,8 +298,8 @@
     },
     {
       "fullPath": "presets/4.3/other/reset_gps.txt",
-      "hash": "5dac1d1766f5cdfc66a8e1d4d52b6a6054516c186bfb2fdf91289559e804dfb2",
-      "regions": [
+      "hash": "1c27a54a0461a60cc8593219251ceef84491e8647b01f99e76e23fd8ac0df246",
+      "options": [
         {
           "name": "enable GPS?",
           "checked": false
@@ -317,7 +325,7 @@
     {
       "fullPath": "presets/4.3/other/reset_launch_mode.txt",
       "hash": "6cdec094ca38c8956ae96604d512e3143c14cda2644d55033713e471e497b617",
-      "regions": [],
+      "options": [],
       "title": "Reset Launch Mode settings",
       "firmwareVersion": [
         "4.3"
@@ -338,8 +346,8 @@
     },
     {
       "fullPath": "presets/4.3/other/reset_names.txt",
-      "hash": "76da8d04bfb22d0fa04749937105b56c310aac2be2342ebf7de2b3a5026c102a",
-      "regions": [
+      "hash": "4acfcea9134b9182db414bdd621cd4d9c216dd8115c4a0ae8bf75b09b6835432",
+      "options": [
         {
           "name": "reset profile 1 name?",
           "checked": true
@@ -365,7 +373,7 @@
     {
       "fullPath": "presets/4.3/other/reset_servo.txt",
       "hash": "ac03ec723b780a146984d4fc064d5fb033491965f92a1decc594c8ad30036b79",
-      "regions": [],
+      "options": [],
       "title": "Reset 4.3 Stats",
       "firmwareVersion": [
         "4.3"
@@ -385,7 +393,7 @@
     {
       "fullPath": "presets/4.3/other/reset_stats.txt",
       "hash": "7f015f073f845f7528de9652ff492836d409977549874769ab515f99da3685f7",
-      "regions": [],
+      "options": [],
       "title": "Reset 4.3 Stats",
       "firmwareVersion": [
         "4.3"
@@ -405,7 +413,7 @@
     {
       "fullPath": "presets/4.3/rates/BMSThomas.txt",
       "hash": "45e93c3765346f5f3887d1c080d3feb52699d813bc5e0ec43fc1cb452d39bbaf",
-      "regions": [],
+      "options": [],
       "title": "BMSThomas racing/freestyle rates",
       "firmwareVersion": [
         "4.3"
@@ -424,7 +432,7 @@
     {
       "fullPath": "presets/4.3/rates/defaults.txt",
       "hash": "e20c15abd80cc7d6c47ead2169a44e7c53906d8548adf210659fd25360ed3a86",
-      "regions": [],
+      "options": [],
       "title": "Default rates",
       "firmwareVersion": [
         "4.3"
@@ -446,7 +454,7 @@
     {
       "fullPath": "presets/4.3/rc_link/Crossfire_150hz_locked _CFV3.txt",
       "hash": "90c1dafc92b12354bebb3bd09f1e6b59c8e1f216742228bf9181d0a5205f3fc9",
-      "regions": [],
+      "options": [],
       "title": "TBS Crossfire 150hz locked  CFV3",
       "firmwareVersion": [
         "4.3"
@@ -471,7 +479,7 @@
     {
       "fullPath": "presets/4.3/rc_link/Crossfire_150hz_locked_CFV2.txt",
       "hash": "348f1b8c40f860a10a03558eca8cb737eb99ea4f47ad4c3f65867ec4a2158ae7",
-      "regions": [],
+      "options": [],
       "title": "TBS Crossfire 150hz locked  CFV2",
       "firmwareVersion": [
         "4.3"
@@ -498,7 +506,7 @@
     {
       "fullPath": "presets/4.3/rc_link/Crossfire_50hz_locked_CFV2_CFV3.txt",
       "hash": "024ba7a1413baef115390bd234634afb97f1c88576347fc814f20ab41289208d",
-      "regions": [],
+      "options": [],
       "title": "TBS Crossfire 50hz locked  CFV2/CFV3",
       "firmwareVersion": [
         "4.3"
@@ -524,7 +532,7 @@
     {
       "fullPath": "presets/4.3/rc_link/Crossfire_dyanmic_rate.txt",
       "hash": "8893cc9ac72f68a13674f1205259460291eb43fda64afb56e98ed7e123f87e85",
-      "regions": [],
+      "options": [],
       "title": "TBS Crossfire Dynamic rate CFV2/CFV3",
       "firmwareVersion": [
         "4.3"
@@ -551,7 +559,7 @@
     {
       "fullPath": "presets/4.3/rc_link/defaults.txt",
       "hash": "84509d0d8a09c3494cbf702c8b697093ceec7dab03983100e15f07f44cef79df",
-      "regions": [],
+      "options": [],
       "title": "Default 4.3 RC link settings",
       "firmwareVersion": [
         "4.3"
@@ -571,8 +579,8 @@
     },
     {
       "fullPath": "presets/4.3/rc_link/elrs_150hz.txt",
-      "hash": "f7cc912fe06a9ed2b32fe10f36f4a45876c698a8b2535ba2740e996e4098210d",
-      "regions": [
+      "hash": "876d47e40cb7d21e90161162d45d0abbccb09a4c237e6e38b3d0746481810bcb",
+      "options": [
         {
           "name": "Whole pack voltage readings",
           "checked": false
@@ -605,8 +613,8 @@
     },
     {
       "fullPath": "presets/4.3/rc_link/elrs_250hz.txt",
-      "hash": "622c7b11f2fd8ddd23eebffe834086ad7f5a365d4a56da3140a806a2312104d9",
-      "regions": [
+      "hash": "2d743facb8126e11333171a768a26b8a46b21f5bcb35e571aae4825a5f7dfd8c",
+      "options": [
         {
           "name": "Whole pack voltage readings",
           "checked": false
@@ -638,8 +646,8 @@
     },
     {
       "fullPath": "presets/4.3/rc_link/elrs_500hz.txt",
-      "hash": "9be81dd4d55c584d20ba834bdde7d34b79d8b422ac2b591ed99884cadc87b27a",
-      "regions": [
+      "hash": "78f66ce543694d0eefc552820a22eda7d7167c205ca8781d9f22baf88f3c963c",
+      "options": [
         {
           "name": "Whole pack voltage readings",
           "checked": false
@@ -672,8 +680,8 @@
     },
     {
       "fullPath": "presets/4.3/rc_link/elrs_50hz.txt",
-      "hash": "5ac50e5dab960531d92df9e2af0b6bca9fc7a5162605888ba702af53d5b02067",
-      "regions": [
+      "hash": "2761b6941f31e7622efe05636dede80f1de7027031aea6a9892c67bf54492fd0",
+      "options": [
         {
           "name": "Whole pack voltage readings",
           "checked": false
@@ -706,8 +714,8 @@
     },
     {
       "fullPath": "presets/4.3/rc_link/frsky_sbus.txt",
-      "hash": "43dce2b6800e21d717ed5d3314c630da0c027893f91008f3032b5295f68c201d",
-      "regions": [
+      "hash": "76c972e76f0cbfd5fa15e7427e6a869a74f0e7fa79b43dad568afe389849025e",
+      "options": [
         {
           "name": "Whole pack voltage readings",
           "checked": false
@@ -752,7 +760,7 @@
     {
       "fullPath": "presets/4.3/rc_link/Tracer_CFV2.txt",
       "hash": "2caad2bb6c6602918deceeedf7bd7b6ad170ba12a6df297a61b7e300329be601",
-      "regions": [],
+      "options": [],
       "title": "TBS Tacer CFV2",
       "firmwareVersion": [
         "4.3"
@@ -778,7 +786,7 @@
     {
       "fullPath": "presets/4.3/rc_link/Tracer_CFV3.txt",
       "hash": "7eb823ba43739a3c6c0567c0dff57272a6d2fb8f01051721b02f6f3f1eed9013",
-      "regions": [],
+      "options": [],
       "title": "TBS Tacer CFV3",
       "firmwareVersion": [
         "4.3"
@@ -803,8 +811,8 @@
     },
     {
       "fullPath": "presets/4.3/rc_smoothing/cinematic_ctzsnooze.txt",
-      "hash": "07ec6779b9a68b2be6a0e1efbb91735908f1a9ac4d7444f0192c5356895fb9a4",
-      "regions": [
+      "hash": "b91cc7fec277bae5e0e78339b50ea3a4d9ae01cd5df1041947a8f4df43172933",
+      "options": [
         {
           "name": "Recommended Actual rates",
           "checked": false
@@ -838,7 +846,7 @@
     {
       "fullPath": "presets/4.3/rc_smoothing/defaults.txt",
       "hash": "8e1ec13273866d9304eb2347ba4aed6325cb28a5acad747589ef59cfd63b1c78",
-      "regions": [],
+      "options": [],
       "title": "Default 4.3 RC smoothing settings",
       "firmwareVersion": [
         "4.3"
@@ -858,8 +866,8 @@
     },
     {
       "fullPath": "presets/4.3/rc_smoothing/freestyle_ctzsnooze.txt",
-      "hash": "03175067867f26d8dc310a26953a2befa3a50c3379af6959e7cdc10f73b7d287",
-      "regions": [
+      "hash": "a968b191f033db18c04063851d3c486293d44ff3ee8b388afdb3c3daad70ec78",
+      "options": [
         {
           "name": "Recommended Actual rates",
           "checked": false
@@ -889,8 +897,8 @@
     },
     {
       "fullPath": "presets/4.3/rc_smoothing/hd_freestyle_ctzsnooze.txt",
-      "hash": "19535a1d4c906a5e1a4008cef1d81658782234e53dfb9202a045b94ce20a24f8",
-      "regions": [
+      "hash": "002528d0e8754c125f1eadd065d8f2fdeb734e8606cee5b8654fc4fb6e264e59",
+      "options": [
         {
           "name": "Recommended Actual rates",
           "checked": false
@@ -924,7 +932,7 @@
     {
       "fullPath": "presets/4.3/rc_smoothing/race_ctzsnooze.txt",
       "hash": "99598640b74b5108af11d6502a94822c2bde8ad3b32c83adb8247c61b9aa6fad",
-      "regions": [],
+      "options": [],
       "title": "Race RC smoothing",
       "firmwareVersion": [
         "4.3"
@@ -951,7 +959,7 @@
     {
       "fullPath": "presets/4.3/tune/defaults.txt",
       "hash": "c6fbd6a95b55710af2c8536e16a5efcfe68e77b247f668520a67bc62e113ad9a",
-      "regions": [],
+      "options": [],
       "title": "Default 4.3 Tune settings",
       "firmwareVersion": [
         "4.3"
@@ -973,8 +981,8 @@
     },
     {
       "fullPath": "presets/4.3/tune/karate_race_tune_preset.txt",
-      "hash": "2e5204cd3d34f160b98e0bfe4f613587ae21827f9b9a20497d222d0da7833985",
-      "regions": [
+      "hash": "126780257954ab672e7d9b9b3c6b307b6a32fb32c022d5585885a0529075954c",
+      "options": [
         {
           "name": "dynamic idle",
           "checked": true
@@ -1008,7 +1016,7 @@
     {
       "fullPath": "presets/4.3/vtx/defaults.txt",
       "hash": "b6acb1cbc7478bac01262629acd59de5d13bffd556075042415d4e331de0ba50",
-      "regions": [],
+      "options": [],
       "title": "Default 4.3 VTX settings",
       "firmwareVersion": [
         "4.3"

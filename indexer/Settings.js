@@ -24,12 +24,12 @@ const PresetCategories = {
     OTHER:          "OTHER",
 }
 
-const RegionDirectives = {
-    REGION_DIRECTIVE: "region",
-    BEGIN_REGION_DIRECTIVE: "region begin",
-    END_REGION_DIRECTIVE: "region end",
-    REGION_CHECKED: "(checked)",
-    REGION_UNCHECKED: "(unchecked)",
+const OptionsDirectives = {
+    OPTION_DIRECTIVE: "option",
+    BEGIN_OPTION_DIRECTIVE: "option begin",
+    END_OPTION_DIRECTIVE: "option end",
+    OPTION_CHECKED: "(checked)",
+    OPTION_UNCHECKED: "(unchecked)",
 }
 
 const settings = {
@@ -37,7 +37,7 @@ const settings = {
 
     MetadataTypes: Object.freeze(MetadataTypes),
 
-    RegionDirectives : Object.freeze(RegionDirectives),
+    OptionsDirectives : Object.freeze(OptionsDirectives),
 
     presetsDir: "presets",
     presetsFileEncoding: "utf-8",

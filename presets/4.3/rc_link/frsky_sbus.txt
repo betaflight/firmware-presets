@@ -31,24 +31,24 @@ set rc_smoothing = ON
 
 # per cell or whole pack voltage readings sent to Tx:
 set report_cell_voltage = ON
-# region begin (unchecked) Whole pack voltage readings
+# option begin (unchecked) Whole pack voltage readings
 set report_cell_voltage = OFF
-# region end
+# option end
 
 # metric or imperial units:
 set frsky_unit = metric
-# region begin (unchecked) Imperial units
+# option begin (unchecked) Imperial units
 set frsky_unit = imperial
-# region end
+# option end
 
 # telemetry inverted:
 set tlm_inverted = OFF
-# region begin (unchecked) Telemetry inverted 
+# option begin (unchecked) Telemetry inverted 
 set tlm_inverted = ON
-# region end
+# option end
 
 # telemetry halfduplex:
 set tlm_halfduplex = ON
-# region begin (unchecked) Full duplex telemetry
+# option begin (unchecked) Full duplex telemetry
 set tlm_halfduplex = OFF
-# region end
+# option end
