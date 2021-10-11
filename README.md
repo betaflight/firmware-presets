@@ -54,7 +54,7 @@ When making a Preset, the changes to be made to the existing configuration can b
 - **Replace or force overwrite one or more values** with new values that actively achieve something, eg change a PID value, or a parameter set to a higher than default value.
 - **Force some values to off, or to default**, so that regardless of the user's prior configuration, these settings will no longer be active, or will be at default values.  This requires lines in the Preset that set the parameters to off, or to their default values, or by `including` a defaults file before applying the active changes.  'Including' a defaults file before your changes can provide a 'clean slate' over which active changes are written.  It can, howeever, make more changes than are needed.  Always check that an included defaults file only makes the changes you really need, and doesn't mess with settings that a user would likely want to keep, or are irrelevant to your Preset.
 - **Ignore some values**, or not change values that don't matter to your Preset, at whatever value the user the user has in their configuration, by not mentioning those parameters in the Preset.
-- **Provide checkboxes** so that the user can choose between alternative or optional groups of values, eg to provide alternate filter settings to suit noisy or clean setups, or let the user choose to have Thrust Linear active on their quad.  This can be done with `regions`.
+- **Provide checkboxes** so that the user can choose between alternative or optional groups of values, eg to provide alternate filter settings to suit noisy or clean setups, or let the user choose to have Thrust Linear active on their quad.  This can be done with the `Option` directive.
 
 A Preset should therefore overwrite any value that must be set to a specific value, disable or turn off values or settings that need to be off, and provide checkbox options (regions) to let the user choose, where appropriate, between alternative options.
 
@@ -101,7 +101,8 @@ A Preset must include a field structure that complies with the specifications be
 | Author | Your Github name or nickname. |
 | Description | Clearly explain what will be changed, and, where relevant, what will not be changed. For example, if  filter setup requires RPM filtering, be sure to state this. Each ``# Description` line results in a separate paragraph.  A blank `# Description` line results in a blank line between paragraphs.|
 | Include | Inserts data from one or more separate Presets ahead of the CLI commands of this Preset.  Useful to enforce defaults ahead of your commands. See details below.|
-| Region | Commands within a region are optional.  When a region is specified, the user is presented with a checkbox to apply, or not apply, the commands within the region.  The default check-box behaviour can be specified.  Each region must have a unique name. More info [here](https://github.com/betaflight/firmware-presets#regions)|
+| Option | Commands within `Option` tags present the user with a checkbox to apply, or not apply, the enclosed commands.  The default check-box behaviour can be specified.  Each `Option` group must have a unique name. For more info, 
+[click here](https://github.com/betaflight/firmware-presets#Option). |
 | Discussion | Field containing a URL that links to the feedback and discussion page for the preset.  At present this must be set to the URL of the PR that generated the Preset. |
 | Nosearch | `# Nosearch: true` prevents a Preset from being indexed, and hence prevents it being found by a user search.  Intended for 'invisible' Presets that are only included in other Presets. |
 
@@ -127,19 +128,19 @@ A Preset must include a field structure that complies with the specifications be
 ....
 <cli command n>
 
-# region begin (checked) region1Name
+# option begin (checked) region1Name
 <cli command n + 1>
 <cli command n + 2>
 ...
 <cli command m>
-# region end
+# option end
 
-# region begin (unchecked) region2Name
+# option begin (unchecked) region2Name
 <cli command m + 1>
 <cli command m + 2>
 ...
 <cli command k>
-# region end
+# option end
 ```
 
 ### Categories
@@ -173,32 +174,37 @@ Optional paths to other Presets that are to be included in the current Preset.
 - Metaproperties of `include` Presets are ignored.
 
 
-### Regions
-Regions give the user control over some parts of a Preset with simple checkboxes.
+### Option
+`option` tags give the user control over some parts of a Preset with simple checkboxes.
 
 The Preset author can decide if the checkbox should be checked or unchecked, by default, and defines the label next to the checkbox.
 
-Regions mark a group of CLI commands into a named group, similar to the C# preprocessor directive `#region`.
+`option` tags organise a set of CLI commands into a named group, and work similar to the C# preprocessor directive `#region`.
 
-With regions, the user sees a list of options with checkboxes in the preset dialog, and can apply some, all or none of them.
+The user will see a list of checkboxes in the 'Apply' dialog, and can apply some, all or none of the CLI content, according to which options are checked.
 
-One example of using regions is a BNF quad Preset. The manufacturer could add different regions for different radio protocols such as SBUS, Crossfire, Ghost, etc. The user can select the radio protocol when the preset is applied.
+One example of using options is a BNF or TUNE Preset. The Preset could provide different options for different supported radio protocols such as SBUS, Crossfire, Ghost, etc. The user could select the radio protocol to be used when the preset is applied.
 
-Another example could be to provide different RC_Smoothing settings, for example, to suit fast freestyle, HD freestyle or Cinematic usage within the same overall tune.
+Another example could be to provide different RC_Smoothing settings, for example, to configure some settings to specifically suit fast freestyle, HD freestyle or Cinematic usage within the same overall tune.
 
-A region starts with `# Region begin <region name>` directive. It can be extended with `(checked)` or `(unchecked)` to specify whether this region should be selected by default or not.
+An `option` region starts with a `# option begin <option name>` tag. The default state of the checkbox is set by including either `(checked)` or `(unchecked)` in the tag. Every `# option` tag must be closed with `# option end`. The CLI payload goes in the middle.
 
-Every region must be closed with `# Region end`. Put the CLI payload between `# Region begin <region name>` and `# Region end`.
-
-Nested regions are not supported.
-
-If an included Preset has regions, its regions will not be shown to the user, unless ‘dummy’ region/s have been pre-defined for each of the regions from the included Preset, like this:
+Complete `option` syntax looks like this:
 ```
-# region begin <first_region_name_from_preset_x>
-# region end
-# region begin <second_region_name_from_preset_x>
-# region end
-(for however many regions in preset_x that you want to include)
+# option begin (unchecked) <option name>
+CLI payload strings
+# option end
+```
+
+Note 1: nested `Option` tags are not supported.
+
+Note 2: If an included Preset has options, those options will not be shown to the user, unless ‘dummy’ option tags have been supplied, pre-defined, for each of the regions from the included Preset, like this:
+```
+# option begin <first_option_name_from_preset_x>
+# option end
+# option begin <second_region_name_from_preset_x>
+# option end
+(for however many options exist in preset_x that you want to provide)
 # include path/preset_x
 ```
 
