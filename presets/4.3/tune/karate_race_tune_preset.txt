@@ -85,16 +85,16 @@ set tpa_rate = 70
 set tpa_breakpoint = 1250
 
 
-# region begin (checked) dynamic idle 
+# option begin (checked) dynamic idle 
 
 #dynamic idle for 6s 2000kv
 set dshot_idle_value = 400
 set dyn_idle_min_rpm = 40
 set dyn_idle_p_gain = 35
-# region end
+# option end
 
 
-# region begin (unchecked) spicy tune 
+# option begin (unchecked) spicy tune 
 
 #spicy tune use with care
 
@@ -122,5 +122,5 @@ set simplified_dmax_gain = 125
 set simplified_feedforward_gain = 105
 set simplified_pitch_d_gain = 110
 set simplified_pitch_pi_gain = 110
-# region end
+# option end
 

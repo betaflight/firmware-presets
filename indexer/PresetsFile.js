@@ -13,8 +13,8 @@ class PresetsFile
         this._presetsFileMetadata = settings.presetsFileMetadata;
         this._errors = errors;
         this._settings = settings;
-        this.regions = [];
-        this._currentRegion = undefined;
+        this.options = [];
+        this._currentOption = undefined;
 
         const binaryFileContent = fs.readFileSync(this.fullPath);
         let sum = crypto.createHash('sha256');
@@ -27,7 +27,7 @@ class PresetsFile
         delete this._presetsFileMetadata;
         delete this._errors;
         delete this._settings;
-        delete this._currentRegion;
+        delete this._currentOption;
     }
 
     _checkProperties()
@@ -41,8 +41,8 @@ class PresetsFile
             }
         }
 
-        if (undefined !== this._currentRegion) {
-            this._addError(`line ${this._currentLine}, missing ${this._settings.RegionDirectives.END_REGION_DIRECTIVE} for ${this._currentRegion.name}`);
+        if (undefined !== this._currentOption) {
+            this._addError(`line ${this._currentLine}, missing ${this._settings.OptionsDirectives.END_OPTION_DIRECTIVE} for ${this._currentOption.name}`);
         }
     }
 
@@ -86,40 +86,40 @@ class PresetsFile
             }
         }
 
-        if (!isProperty && lowCaseLine.startsWith(this._settings.RegionDirectives.REGION_DIRECTIVE)) {
-            this._processRegionDirective(line);
+        if (!isProperty && lowCaseLine.startsWith(this._settings.OptionsDirectives.OPTION_DIRECTIVE)) {
+            this._processOptionDirective(line);
         }
     }
 
-    _processRegionDirective(line)
+    _processOptionDirective(line)
     {
         const lowCaseLine = line.toLowerCase();
 
-        if (lowCaseLine.startsWith(this._settings.RegionDirectives.BEGIN_REGION_DIRECTIVE)) {
-            const region = this._getRegion(line);
-            const lowCaseRegionName = region.name.toLowerCase();
+        if (lowCaseLine.startsWith(this._settings.OptionsDirectives.BEGIN_OPTION_DIRECTIVE)) {
+            const Option = this._getOption(line);
+            const lowCaseOptionName = Option.name.toLowerCase();
 
-            if ("" === region.name) {
-                this._addError(`line ${this._currentLine}, empty region name`);
-            } else if (undefined !== this._currentRegion) {
-                this._addError(`line ${this._currentLine}, nested regions are not allowed`);
+            if ("" === Option.name) {
+                this._addError(`line ${this._currentLine}, empty Option name`);
+            } else if (undefined !== this._currentOption) {
+                this._addError(`line ${this._currentLine}, nested #options are not allowed`);
             } else {
-                this._currentRegion = region;
+                this._currentOption = Option;
             }
 
-        } else if (lowCaseLine.startsWith(this._settings.RegionDirectives.END_REGION_DIRECTIVE)) {
-            if (undefined === this._currentRegion) {
-                this._addError(`line ${this._currentLine}, end region directive found but no region to close`);
+        } else if (lowCaseLine.startsWith(this._settings.OptionsDirectives.END_OPTION_DIRECTIVE)) {
+            if (undefined === this._currentOption) {
+                this._addError(`line ${this._currentLine}, end Option directive found but no Option to close`);
             } else {
-                const lowCaseRegionName = this._currentRegion.name.toLowerCase();
+                const lowCaseOptionName = this._currentOption.name.toLowerCase();
 
-                const indexOfRegion = this.regions.findIndex(item => lowCaseRegionName === item.name.toLowerCase());
+                const indexOfOption = this.options.findIndex(item => lowCaseOptionName === item.name.toLowerCase());
 
-                if (-1 === indexOfRegion) {
-                    this.regions.push(this._currentRegion);
+                if (-1 === indexOfOption) {
+                    this.options.push(this._currentOption);
                 }
 
-                this._currentRegion = undefined;
+                this._currentOption = undefined;
             }
 
         }
@@ -129,44 +129,44 @@ class PresetsFile
         return string.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
     }
 
-    _getRegion(line)
+    _getOption(line)
     {
-        const directiveRemoved = line.slice(this._settings.RegionDirectives.BEGIN_REGION_DIRECTIVE.length).trim();
+        const directiveRemoved = line.slice(this._settings.OptionsDirectives.BEGIN_OPTION_DIRECTIVE.length).trim();
         const directiveRemovedLowCase = directiveRemoved.toLowerCase();
-        const regionChecked = this._isRegionChecked(directiveRemovedLowCase);
+        const OptionChecked = this._isOptionChecked(directiveRemovedLowCase);
 
-        const regExpRemoveChecked = new RegExp(this._escapeRegex(this._settings.RegionDirectives.REGION_CHECKED), 'gi');
-        const regExpRemoveUnchecked = new RegExp(this._escapeRegex(this._settings.RegionDirectives.REGION_UNCHECKED), 'gi');
-        let regionName = directiveRemoved.replace(regExpRemoveChecked, "");
-        regionName = regionName.replace(regExpRemoveUnchecked, "").trim();
+        const regExpRemoveChecked = new RegExp(this._escapeRegex(this._settings.OptionsDirectives.OPTION_CHECKED), 'gi');
+        const regExpRemoveUnchecked = new RegExp(this._escapeRegex(this._settings.OptionsDirectives.OPTION_UNCHECKED), 'gi');
+        let OptionName = directiveRemoved.replace(regExpRemoveChecked, "");
+        OptionName = OptionName.replace(regExpRemoveUnchecked, "").trim();
 
-        let region = {
-            name: regionName,
-            checked: regionChecked
+        let Option = {
+            name: OptionName,
+            checked: OptionChecked
         }
 
-        return region;
+        return Option;
     }
 
-    _isRegionChecked(lowCaseLine)
+    _isOptionChecked(lowCaseLine)
     {
-        let regionChecked = false;
-        let regionUnchecked = false;
+        let OptionChecked = false;
+        let OptionUnchecked = false;
 
-        if (lowCaseLine.includes(this._settings.RegionDirectives.REGION_CHECKED)) {
-            regionChecked = true;
+        if (lowCaseLine.includes(this._settings.OptionsDirectives.OPTION_CHECKED)) {
+            OptionChecked = true;
         }
-        if (lowCaseLine.includes(this._settings.RegionDirectives.REGION_UNCHECKED)) {
-            regionUnchecked = true;
+        if (lowCaseLine.includes(this._settings.OptionsDirectives.OPTION_UNCHECKED)) {
+            OptionUnchecked = true;
         }
 
-        if (regionChecked && regionUnchecked) {
-            this._addError(`line ${this._currentLine}, region can't be checked and unchecked at the same time`);
+        if (OptionChecked && OptionUnchecked) {
+            this._addError(`line ${this._currentLine}, Option can't be checked and unchecked at the same time`);
         } else {
-            regionChecked = regionChecked || !regionUnchecked;
+            OptionChecked = OptionChecked || !OptionUnchecked;
         }
 
-        return regionChecked;
+        return OptionChecked;
     }
 
     _processProperty(property, line)
