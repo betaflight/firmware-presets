@@ -2,6 +2,7 @@
 # FirmwareVersion: 4.3
 # Category: VTX
 # Official: false
+# Nosearch: false (set to true for actual VTX table)
 # Keywords: vtx, vtx table
 # Author: first last pilot name 
 # Description: fill this in with description (the below txt must be included in a vtx table and official MUST be set to off for legal reasons)
@@ -10,4 +11,4 @@
 # Description: ----------
 # Description: Using the VTX tables as provided may be in breach of your local RF laws. It is up to the end user to research and comply with local regulations and in using these presets  the user assumes all liability associated  with breaching local regulations 
 
-# add vtx table here 
+# Add vtx table here 
