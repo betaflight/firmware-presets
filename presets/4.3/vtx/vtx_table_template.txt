@@ -4,7 +4,7 @@
 # Official: false
 # Keywords: vtx, vtx table
 # Author: first last pilot name 
-# Description: fill this in with description ( the below txt must be included in a vtx table and official MUST be set to off for legal reasons )
+# Description: fill this in with description (the below txt must be included in a vtx table and official MUST be set to off for legal reasons)
 # Description: Note this table is as provided by the manufacture
 # Description: The information provided on this preset is for educational and entertainment purposes only. Betaflight makes no representations as to the safety or legality of the use of any information provided herein. End users assume all responsibility and liability for ensuring they are complying with all relevant laws and regulations. 
 # Description: ----------
