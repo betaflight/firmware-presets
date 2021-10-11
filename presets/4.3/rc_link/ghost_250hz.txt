@@ -1,0 +1,26 @@
+# Title: IRC Ghost 250hz
+# FirmwareVersion: 4.3
+# Category: RC_LINK
+# Official: true
+# Keywords: IRC, GHOST, rc, link, 250hz
+# Author: daleckystepan
+# Description: Basic RC link settings for a 250hz GHOST
+# Description: WARNING: make ABSOLUTELY SURE that the OpenTx or EdgeTx Hardware ADC Filter is un-checked!
+# Description: WARNING: check that you are using a compatible version of EdgeTx or OpenTx and Ghost firmware!
+# Description: Voltage option is for OpenTx telemetry back to the transmitter, default is per cell, option whole pack
+
+feature RX_SERIAL
+set serialrx_provider = GHST
+
+# rc smoothing should always be enabled with GHOST
+set rc_smoothing = ON
+
+set feedforward_averaging = 2_POINT
+set feedforward_smooth_factor = 40
+set feedforward_jitter_reduction = 7
+
+# per cell or whole pack voltage readings:
+set report_cell_voltage = ON
+# region begin (unchecked) Whole pack voltage readings
+set report_cell_voltage = OFF
+# region end
