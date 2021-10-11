@@ -1,9 +1,6 @@
-name: CI - Build only (deploy if master)
+name: CI - Indexer job (deploy if default branch - i.e. main)
 
-on: 
-  push:
-    branches:
-    - '**'
+on: [push, pull_request]
 
 jobs:
   build:
@@ -21,12 +18,12 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
-    - if: github.ref != 'refs/heads/master' 
-      name: Run the build (only) script
+    - if: github.ref != 'refs/heads/main' 
+      name: Run the checker script
       run: ./scripts/build.sh
 
-    - if: github.ref == 'refs/heads/master' 
-      name: Run the build & deploy script
+    - if: github.ref == 'refs/heads/main' 
+      name: Run the checker, indexer and deployment script
       run: ./scripts/build.sh deploy
       env:
         AWS_DISTRIBUTION_ID: ${{secrets.AWS_DISTRIBUTION_ID}}
