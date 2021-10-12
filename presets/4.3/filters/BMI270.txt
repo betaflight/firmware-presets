@@ -3,9 +3,10 @@
 # Category: FILTERS
 # Official: true
 # Keywords: BMI270, filter, filters, gyroscope, gyro, gyros, settings
-# Author: DusKing1(Hugo Chiang), Pitronic
+# Author: DusKing1 (Hugo Chiang), Pitronic
 # Description: These settings are for BMI270 gyroscope only.
 # Description: With only these settings, the BMI270 will give a nice output and control performance.
+# Discussion: https://github.com/betaflight/firmware-presets/pull/47
 
 set gyro_lowpass2_type = PT3
 set gyro_lowpass2_hz = 150
