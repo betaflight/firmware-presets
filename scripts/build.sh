@@ -20,6 +20,7 @@ if [ "${1}" == "deploy" ]; then
 
   mkdir -p ${artifacts}
   mkdir -p ${artifacts}/presets
+  mkdir -p ${artifacts}/misc
 
   echo "Running indexer"
   node indexer/indexer.js
@@ -28,6 +29,9 @@ if [ "${1}" == "deploy" ]; then
   cp ./index.json $artifacts
   cp ./index_hash.txt $artifacts 
   cp -r ./presets/* $artifacts/presets
+  if [ -d ./misc ]; then
+    cp -r ./misc/* $artifacts/misc
+  fi
 
   echo "Deploying to AWS S3: ${AWS_REGION}/${AWS_BUCKET}"
   aws configure set preview.cloudfront true
