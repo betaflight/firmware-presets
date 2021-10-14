@@ -8,7 +8,7 @@
 # Description: This tune works well on any quality airframes and has been flown on the Viper racer (where it was developed ) BMS Js1, 533 switchback, HGLRC wind and of course @limons Open racer. 
 # Description: It should also work on other quality racing frames but use at your own risk as it is an aggressive tune. This tune so far has won a good number of events including the 2021 IO.
 # Description: 
-# Description: Things to note.. YOU have to use RPM filtering on this tune, failure to do so might result in fire and regarding Dshot600,  if your setup has errors in the motor tab using bidirectional Dshot then change to 8k/4k and dshot300.
+# Description: Things to note.. YOU HAVE TO USE RPM FILTERING WITH THIS TUNE, failure to do so might result in fire and regarding Dshot600,  if your setup has errors in the motor tab using bidirectional Dshot then change to 8k/4k and dshot300.
 # Description: Also this should be applied to a clean flash after you've setup your rates, swtiches, vtx tables etc. To test arm the quad with props on, it should sound clean with no grinding, if it passes that then hover test and check motor temps.
 # Description:  If any thing is off don't fly it!!
 # Description: 
@@ -36,7 +36,6 @@ set rpm_filter_q = 500
 set rpm_filter_min_hz = 100
 set rpm_filter_fade_range_hz = 100
 set rpm_filter_lpf_hz = 150
-set name = karate race
 
 profile 0
 
@@ -123,4 +122,9 @@ set simplified_feedforward_gain = 105
 set simplified_pitch_d_gain = 110
 set simplified_pitch_pi_gain = 110
 # option end
+
+# Option begin (unchecked) Dshot300
+set dshot_bidir = ON
+set motor_pwm_protocol = Dshot300
+# Option end
 
