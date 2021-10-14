@@ -18,11 +18,11 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
-    - if: github.ref != 'refs/heads/main' 
+    - if: github.ref != 'refs/heads/master' 
       name: Run the checker script
       run: ./scripts/build.sh
 
-    - if: github.ref == 'refs/heads/main' 
+    - if: github.ref == 'refs/heads/master' 
       name: Run the checker, indexer and deployment script
       run: ./scripts/build.sh deploy
       env:
