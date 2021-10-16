@@ -6,6 +6,8 @@
 #$ AUTHOR: Betaflight
 #$ DESCRIPTION: Resets RC Smoothing settings to 4.3 defaults
 
+# NOTE TO AUTHORS: Always include all of the lines below in your Preset, even if keeping some at default
+
 set rc_smoothing = ON
 set rc_smoothing_auto_factor = 30
 set rc_smoothing_auto_factor_throttle = 30
