@@ -4,8 +4,10 @@
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: defaults, reset, tune, pid, expert, default
 #$ AUTHOR: Betaflight
-#$ DESCRIPTION: Lists 4.3 TUNE related parameters to be reset. 
-#$ DESCRIPTION: Un-check the parameters you want to keep.
+#$ DESCRIPTION: Checked tune related parameters will be reset to defaults. 
+#$ DESCRIPTION: Un-check the parameters you want to keep at current values.
+
+#  -- PID settings -- 
 
 #$ OPTION BEGIN (CHECKED) PID values
 set p_pitch = 44
@@ -86,8 +88,7 @@ set iterm_limit = 400
 #$ OPTION END
 
 
-#$ DESCRIPTION:
-#$ DESCRIPTION: Miscellaneous settings
+#  -- Miscellaneous settings -- 
 
 #$ OPTION BEGIN (CHECKED) Yaw spin recovery auto
 set yaw_spin_recovery = AUTO
@@ -119,8 +120,7 @@ set mixer_type = LEGACY
 #$ OPTION END
 
 
-#$ DESCRIPTION:
-#$ DESCRIPTION: Level and Horizon settings
+#  -- Level and Horizon settings -- 
 
 #$ OPTION BEGIN (CHECKED) Angle and Horizon reset
 # set angle_level_strength = 50
@@ -136,8 +136,7 @@ set level_race_mode = OFF
 #$ OPTION END
 
 
-#$ DESCRIPTION:
-#$ DESCRIPTION: Voltage and motor output
+#  -- Voltage and motor settings -- 
 
 #$ OPTION BEGIN (CHECKED) Motor output limit 100
 set motor_output_limit = 100
@@ -182,8 +181,7 @@ set report_cell_voltage = OFF
 #$ OPTION END
 
 
-#$ DESCRIPTION:
-#$ DESCRIPTION: Specialised settings
+#  -- Specialised settings -- 
 
 #$ OPTION BEGIN (CHECKED) DShot Telemetry (off)
 set dshot_bidir = OFF
@@ -237,8 +235,8 @@ set launch_control_gain = 40
 #$ OPTION END
 
 
-#$ DESCRIPTION:
-#$ DESCRIPTION: Rarely used / deprecated
+#  -- Rarely used or deprecated settings -- 
+
 #$ OPTION BEGIN (CHECKED) Absolute control (off)
 set abs_control_gain = 0
 set abs_control_limit = 90
