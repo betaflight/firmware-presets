@@ -24,7 +24,7 @@ All Presets go through a checking and approval process before being made publicl
 - Go to the Preset tab in Configurator
 - Search for the Preset that you want to apply, and click on it
 - Read the description, and optionally review the changes that will be made by clicking `Open Online`
-- Select from the available `options` using the checkboxes
+- Select from the available `Options` using the checkboxes
 - Click `Apply` - this writes the settings to the CLI
 - Click `Save` to permanently write the changes to the firmware.  There is no undo function.  
 
@@ -56,7 +56,7 @@ When making a Preset, the changes to be made to the existing configuration can b
 - **Ignore some values**, or not change values that don't matter to your Preset, at whatever value the user the user has in their configuration, by not mentioning those parameters in the Preset.
 - **Provide checkboxes** so that the user can choose between alternative or optional groups of values, eg to provide alternate filter settings to suit noisy or clean setups, or let the user choose to have Thrust Linear active on their quad.  This can be done with the `Option` directive.
 
-A Preset should therefore overwrite any value that must be set to a specific value, disable or turn off values or settings that need to be off, and provide checkbox options (regions) to let the user choose, where appropriate, between alternative options.
+A Preset should therefore overwrite any value that must be set to a specific value, disable or turn off values or settings that need to be off, and provide checkboxes to let the user choose, where appropriate, alternative settings.
 
 **Before final submission of the PR**, check the preset by:
 - installing `node.js` for your OS
@@ -87,7 +87,7 @@ A Preset must include a field structure that complies with the specifications be
 
 **Optional fields**
 ```
-    Author, Description, Include, Keywords, Discussion, Nosearch
+    Author, Description, Include, Keywords, Discussion, Disclaimer, Nosearch
 ```
 
 | Field | Notes |
@@ -101,9 +101,9 @@ A Preset must include a field structure that complies with the specifications be
 | Author | Your Github name or nickname. |
 | Description | Clearly explain what will be changed, and, where relevant, what will not be changed. For example, if  filter setup requires RPM filtering, be sure to state this. Each ``# Description` line results in a separate paragraph.  A blank `# Description` line results in a blank line between paragraphs.|
 | Include | Inserts data from one or more separate Presets ahead of the CLI commands of this Preset.  Useful to enforce defaults ahead of your commands. See details below.|
-| Option | Commands within `Option` tags present the user with a checkbox to apply, or not apply, the enclosed commands.  The default check-box behaviour can be specified.  Each `Option` group must have a unique name. For more info, 
-[click here](https://github.com/betaflight/firmware-presets#Option). |
+| Option | Commands within `Option` tags present the user with a checkbox to apply, or not apply, the enclosed commands.  The default check-box behaviour can be specified.  Each `Option` group must have a unique name. For more info, [click here](https://github.com/betaflight/firmware-presets#Option). |
 | Discussion | Field containing a URL that links to the feedback and discussion page for the preset.  At present this must be set to the URL of the PR that generated the Preset. |
+| Disclaimer | Field containing text for a disclaimer or strong warning. |
 | Nosearch | `# Nosearch: true` prevents a Preset from being indexed, and hence prevents it being found by a user search.  Intended for 'invisible' Presets that are only included in other Presets. |
 
 ### Example Preset structure:
@@ -118,29 +118,30 @@ A Preset must include a field structure that complies with the specifications be
 # Author: Name Lastname / Pilotname
 # Description: Description paragraph1
 # Description: Description pagagraph2  (as many description paragraphs as needed)
+# Disclaimer : Text of disclaimer (mandatory for VTx Presets)
 # Discussion: https://github.com/betaflight/firmware-presets/pull/nn
 
-# include: file/to/include1.txt
-# include: file/to/include2.txt
+# Include: file/to/include1.txt
+# Include: file/to/include2.txt
 
 <cli command 1>
 <cli command 2>
 ....
 <cli command n>
 
-# option begin (checked) region1Name
+# Option begin (checked) region1Name
 <cli command n + 1>
 <cli command n + 2>
 ...
 <cli command m>
-# option end
+# Option end
 
-# option begin (unchecked) region2Name
+# Option begin (unchecked) region2Name
 <cli command m + 1>
 <cli command m + 2>
 ...
 <cli command k>
-# option end
+# Option end
 ```
 
 ### Categories
@@ -158,12 +159,15 @@ All presets must be assigned one of the following categories:
 | RC_LINK | The type of link (serial, PPM), the protocol used (SBus, CRSF, Spektrum etc), including telemetry settings, units, precision settings, etc, and the feedforward_averaging and feedforward_smoothing, and feedforward_jitter settings that must be configured to suit the link speed.  Separate Presets, or Regions, may be used for RC links that can be set to different speeds.|
 | RC_SMOOTHING | RC smoothing settings vary how reactive the stick is to sudden stick changes.  Auto configurations can provide anything from race to cinematic levels of smoothness, but the final amount of smoothness in an auto configuration also depends on the RC link speed.  Manual rc_smoothing configurations can provide more consistent smoothing across a wider range of RC Link speeds.  
 | OSD | Any collection of OSD related parameters.  May include report_cell_voltage, debug_mode or similar settings that affect what is shown on the OSD.  |
-| VTX | A VTx table or related settings |
+| VTX | A VTx table or related settings.  The disclaimer below at note 1 must be included.|
 | LEDS | LED configurations |
 | MODES | Mode switch and Adjustment configurations | 
 | OTHER | Any Preset that includes settings from more than one category, or for settings that don't fall readily into other categories.  Examples include: a complete configuration with rates, tune, link, and LED settings; or a set of GPS, Launch Control, Camera Control or similar values.
 | BNF | A complete configuration for a pre-built machine.  Regions may be used to provide alternatives options for RC_LINK, RC_SMOOTHING, or other settings. | 
 
+Note 1: The following disclaimer is MANDATORY for VTx presets:
+> The information provided in these presets is for educational and entertainment purposes only. Betaflight makes no representations as to the safety or legality of the use of any information provided herein. End users assume all responsibility and liability for ensuring they comply with all relevant laws and regulations.
+>Using these VTX tables may be in breach of your local RF laws. You as the end user must research and comply with your local regulations. In using these presets, the user assumes any and all liability associated with breaching local regulations.
 
 ### Include
 Optional paths to other Presets that are to be included in the current Preset. 
@@ -175,37 +179,35 @@ Optional paths to other Presets that are to be included in the current Preset.
 
 
 ### Option
-`option` tags give the user control over some parts of a Preset with simple checkboxes.
+`Option` tags let the user apply groups of settings with simple checkboxes in the Apply dialog.
 
-The Preset author can decide if the checkbox should be checked or unchecked, by default, and defines the label next to the checkbox.
+The Preset author sets the checkbox default to ticked or un-ticked, and specifies the label next to the checkbox.
 
-`option` tags organise a set of CLI commands into a named group, and work similar to the C# preprocessor directive `#region`.
+They work similar to the C# preprocessor directive `#region`.
 
-The user will see a list of checkboxes in the 'Apply' dialog, and can apply some, all or none of the CLI content, according to which options are checked.
+One example where `Options` may be useful is in a `BNF` or `TUNE` Preset. The Preset could provide different options for different radio protocols, eg SBUS, Crossfire, Ghost, etc. The user can then select the radio protocol to be used when the preset is applied.
 
-One example of using options is a BNF or TUNE Preset. The Preset could provide different options for different supported radio protocols such as SBUS, Crossfire, Ghost, etc. The user could select the radio protocol to be used when the preset is applied.
+Another example could be to provide different RC_Smoothing settings, to suit race, HD freestyle or Cinematic usage within the same overall tune.
 
-Another example could be to provide different RC_Smoothing settings, for example, to configure some settings to specifically suit fast freestyle, HD freestyle or Cinematic usage within the same overall tune.
+An `Option` region starts with an `# Option begin <option name>` tag. The default state of the checkbox is set by including either `(checked)` or `(unchecked)` in the tag. Every `# Option` tag must be closed with `# Option end`. The CLI payload goes in the middle.
 
-An `option` region starts with a `# option begin <option name>` tag. The default state of the checkbox is set by including either `(checked)` or `(unchecked)` in the tag. Every `# option` tag must be closed with `# option end`. The CLI payload goes in the middle.
-
-Complete `option` syntax looks like this:
+Complete `Option` syntax looks like this:
 ```
-# option begin (unchecked) <option name>
+# Option begin (unchecked) <option name>
 CLI payload strings
-# option end
+# Option end
 ```
 
 Note 1: nested `Option` tags are not supported.
 
 Note 2: If an included Preset has options, those options will not be shown to the user, unless ‘dummy’ option tags have been supplied, pre-defined, for each of the regions from the included Preset, like this:
 ```
-# option begin <first_option_name_from_preset_x>
-# option end
-# option begin <second_region_name_from_preset_x>
-# option end
+# Option begin <first_option_name_from_preset_x>
+# Option end
+# Option begin <second_region_name_from_preset_x>
+# Option end
 (for however many options exist in preset_x that you want to provide)
-# include path/preset_x
+# Include path/preset_x
 ```
 
 ## Credits
