@@ -1,13 +1,13 @@
-# Title: Default rates
-# FirmwareVersion: 4.3
-# Category: RATES
-# Official: true
-# Keywords: defaults, rates
-# Author: Betaflight
-# Description: Default Betaflight rates
-# Description: Will be applied for the currently selected rate profile
-# Description: TPA values are not included
-# Description: Throttle limit and curve are not included
+#$ TITLE: Default rates
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: RATES
+#$ OFFICIAL: true
+#$ KEYWORDS: defaults, rates
+#$ AUTHOR: Betaflight
+#$ DESCRIPTION: Default Betaflight rates
+#$ DESCRIPTION: Will be applied for the currently selected rate profile
+#$ DESCRIPTION: TPA values are not included
+#$ DESCRIPTION: Throttle limit and curve are not included
 
 set rates_type = BETAFLIGHT
 set quickrates_rc_expo = OFF

@@ -1,10 +1,10 @@
-# Title: Default 4.3 Modes and Adjustment settings
-# FirmwareVersion: 4.3
-# Category: MODES
-# Official: true
-# Keywords: defaults, reset, mode, modes, adjustments, aux, switch
-# Author: Betaflight
-# Description: Resets modes and adjustment ranges to 4.3 defaults
+#$ TITLE: Default 4.3 Modes and Adjustment settings
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: MODES
+#$ OFFICIAL: true
+#$ KEYWORDS: defaults, reset, mode, modes, adjustments, aux, switch
+#$ AUTHOR: Betaflight
+#$ DESCRIPTION: Resets modes and adjustment ranges to 4.3 defaults
 
 # aux switch settings
 

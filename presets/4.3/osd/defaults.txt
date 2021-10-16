@@ -1,10 +1,10 @@
-# Title: Default 4.3 OSD settings
-# FirmwareVersion: 4.3
-# Category: OSD
-# Official: true
-# Keywords: defaults, reset, OSD
-# Author: Betaflight
-# Description: Resets the OSD values back to Betaflight 4.3 defaults
+#$ TITLE: Default 4.3 OSD settings
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: OSD
+#$ OFFICIAL: true
+#$ KEYWORDS: defaults, reset, OSD
+#$ AUTHOR: Betaflight
+#$ DESCRIPTION: Resets the OSD values back to Betaflight 4.3 defaults
 
 set osd_units = METRIC
 set osd_warn_arming_disable = ON

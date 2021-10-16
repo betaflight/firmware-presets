@@ -1,12 +1,12 @@
-# Title: Default 4.3 Tune settings
-# FirmwareVersion: 4.3
-# Category: TUNE
-# Official: true
-# Keywords: defaults, reset, tune, pid
-# Author: Betaflight
-# Description: Resets Tune parameters to 4.3 defaults
-# Description: WARNING: Resets MANY things, check the list before applying!
-# Description: DOES NOT reset filters!  They must be separately reset
+#$ TITLE: Default 4.3 Tune settings
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: TUNE
+#$ OFFICIAL: true
+#$ KEYWORDS: defaults, reset, tune, pid
+#$ AUTHOR: Betaflight
+#$ DESCRIPTION: Resets Tune parameters to 4.3 defaults
+#$ DESCRIPTION: WARNING: Resets MANY things, check the list before applying!
+#$ DESCRIPTION: DOES NOT reset filters!  They must be separately reset
 
 
 
