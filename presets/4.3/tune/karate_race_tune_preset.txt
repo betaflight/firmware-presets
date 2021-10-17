@@ -1,19 +1,19 @@
-# Title: Karate Race
-# FirmwareVersion: 4.3
-# Category: TUNE
-# Official: true
-# Keywords: karate, 6S, race, world champion, 5 inch, 5", sugarK, limon, ctzsnooze, karatreBrot
-# Author: Zak Smiley SugarK
-# Description: This 6s racing tune was developed with the help of @ctzsnooze around @karatebrot’s RPM crossfade code allowing a pretty aggressive filter array which is the karate array. 
-# Description: This tune works well on any quality airframes and has been flown on the Viper racer (where it was developed ) BMS Js1, 533 switchback, HGLRC wind and of course @limons Open racer. 
-# Description: It should also work on other quality racing frames but use at your own risk as it is an aggressive tune. This tune so far has won a good number of events including the 2021 IO.
-# Description: 
-# Description: Things to note.. YOU HAVE TO USE RPM FILTERING WITH THIS TUNE, failure to do so might result in fire and regarding Dshot600,  if your setup has errors in the motor tab using bidirectional Dshot then change to 8k/4k and dshot300.
-# Description: Also this should be applied to a clean flash after you've setup your rates, swtiches, vtx tables etc. To test arm the quad with props on, it should sound clean with no grinding, if it passes that then hover test and check motor temps.
-# Description:  If any thing is off don't fly it!!
-# Description: 
-# Description: SECOND NOTE.... Radio links.. 1. Make sure your radio system is totally up to date using either Edgetx or Opentx and your ADC in the hardware page is OFF 2. Go to the radio presets and apply the correct setup for your system and link speed.
-# Discussion: https://github.com/betaflight/firmware-presets/pull/41
+#$ TITLE: Karate Race
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: TUNE
+#$ OFFICIAL: true
+#$ KEYWORDS: karate, 6S, race, world champion, 5 inch, 5", sugarK, limon, ctzsnooze, karatreBrot
+#$ AUTHOR: Zak Smiley SugarK
+#$ DESCRIPTION: This 6s racing tune was developed with the help of @ctzsnooze around @karatebrot’s RPM crossfade code allowing a pretty aggressive filter array which is the karate array. 
+#$ DESCRIPTION: This tune works well on any quality airframes and has been flown on the Viper racer (where it was developed ) BMS Js1, 533 switchback, HGLRC wind and of course @limons Open racer. 
+#$ DESCRIPTION: It should also work on other quality racing frames but use at your own risk as it is an aggressive tune. This tune so far has won a good number of events including the 2021 IO.
+#$ DESCRIPTION: 
+#$ DESCRIPTION: Things to note.. YOU HAVE TO USE RPM FILTERING WITH THIS TUNE, failure to do so might result in fire and regarding Dshot600,  if your setup has errors in the motor tab using bidirectional Dshot then change to 8k/4k and dshot300.
+#$ DESCRIPTION: Also this should be applied to a clean flash after you've setup your rates, swtiches, vtx tables etc. To test arm the quad with props on, it should sound clean with no grinding, if it passes that then hover test and check motor temps.
+#$ DESCRIPTION:  If any thing is off don't fly it!!
+#$ DESCRIPTION: 
+#$ DESCRIPTION: SECOND NOTE.... Radio links.. 1. Make sure your radio system is totally up to date using either Edgetx or Opentx and your ADC in the hardware page is OFF 2. Go to the radio presets and apply the correct setup for your system and link speed.
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/41
 
 # master
 set gyro_lpf2_static_hz = 1000
@@ -84,16 +84,16 @@ set tpa_rate = 70
 set tpa_breakpoint = 1250
 
 
-# option begin (checked) dynamic idle 
+#$ OPTION BEGIN (CHECKED) dynamic idle 
 
 #dynamic idle for 6s 2000kv
 set dshot_idle_value = 400
 set dyn_idle_min_rpm = 40
 set dyn_idle_p_gain = 35
-# option end
+#$ OPTION END
 
 
-# option begin (unchecked) spicy tune 
+#$ OPTION BEGIN (UNCHECKED) spicy tune 
 
 #spicy tune use with care
 
@@ -121,10 +121,10 @@ set simplified_dmax_gain = 125
 set simplified_feedforward_gain = 105
 set simplified_pitch_d_gain = 110
 set simplified_pitch_pi_gain = 110
-# option end
+#$ OPTION END
 
-# Option begin (unchecked) Dshot300
+#$ OPTION BEGIN (UNCHECKED) Dshot300
 set dshot_bidir = ON
 set motor_pwm_protocol = Dshot300
-# Option end
+#$ OPTION END
 

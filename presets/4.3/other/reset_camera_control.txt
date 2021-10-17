@@ -1,10 +1,10 @@
-# Title: Reset Camera Control settings
-# FirmwareVersion: 4.3
-# Category: OTHER
-# Official: true
-# Keywords: defaults, reset, names, camera, control, camera_control
-# Author: Betaflight
-# Description: Resets the Camera Control settings to 4.3 defaults
+#$ TITLE: Reset Camera Control settings
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: OTHER
+#$ OFFICIAL: true
+#$ KEYWORDS: defaults, reset, names, camera, control, camera_control
+#$ AUTHOR: Betaflight
+#$ DESCRIPTION: Resets the Camera Control settings to 4.3 defaults
 
 set camera_control_mode = HARDWARE_PWM
 set camera_control_ref_voltage = 330

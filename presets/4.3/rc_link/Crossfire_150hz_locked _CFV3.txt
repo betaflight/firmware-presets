@@ -1,13 +1,13 @@
-# Title: TBS Crossfire 150hz locked  CFV3
-# FirmwareVersion: 4.3
-# Category: RC_LINK
-# Official: true
-# Keywords:  rc link, TBS, cfv3, 150hz, Crossfire
-# Author: Zak Smiley sugarK
-# Description: setup for TBS Crossfire 150hz locked  CFV3
-# Description: WARNING: make ABSOLUTELY SURE that the Hardware > ADC Filter is un-checked! and both radio and the TX unit are all up to date with the latest EdgeTX, OpenTX or FreedomTX
-# Description: Please use RC smoothing presets for flying style required. Note base settings are for racing, there is a check box at the end for freestyle.
-# Description: There are 2 current types of Crossfire protocol, CFV2 and CFV3 this can be checked in your TBS lua 
+#$ TITLE: TBS Crossfire 150hz locked  CFV3
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: RC_LINK
+#$ OFFICIAL: true
+#$ KEYWORDS:  rc link, TBS, cfv3, 150hz, Crossfire
+#$ AUTHOR: Zak Smiley sugarK
+#$ DESCRIPTION: setup for TBS Crossfire 150hz locked  CFV3
+#$ DESCRIPTION: WARNING: make ABSOLUTELY SURE that the Hardware > ADC Filter is un-checked! and both radio and the TX unit are all up to date with the latest EdgeTX, OpenTX or FreedomTX
+#$ DESCRIPTION: Please use RC smoothing presets for flying style required. Note base settings are for racing, there is a check box at the end for freestyle.
+#$ DESCRIPTION: There are 2 current types of Crossfire protocol, CFV2 and CFV3 this can be checked in your TBS lua 
 
 feature RX_SERIAL
 set serialrx_provider = CRSF

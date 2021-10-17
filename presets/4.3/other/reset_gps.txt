@@ -1,11 +1,11 @@
-# Title: Reset GPS settings
-# FirmwareVersion: 4.3
-# Category: OTHER
-# Official: true
-# Keywords: defaults, reset, GPS
-# Author: Betaflight
-# Description: Resets the GPS settings to 4.3 defaults
-# Description: Optionally enable GPS feature, default is off
+#$ TITLE: Reset GPS settings
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: OTHER
+#$ OFFICIAL: true
+#$ KEYWORDS: defaults, reset, GPS
+#$ AUTHOR: Betaflight
+#$ DESCRIPTION: Resets the GPS settings to 4.3 defaults
+#$ DESCRIPTION: Optionally enable GPS feature, default is off
 
 set gps_provider = NMEA
 set gps_sbas_mode = NONE
@@ -44,6 +44,6 @@ set gps_rescue_use_mag = ON
 
 feature -GPS
 
-# option begin (unchecked) enable GPS?
+#$ OPTION BEGIN (UNCHECKED) enable GPS?
 feature GPS
-# option end
+#$ OPTION END

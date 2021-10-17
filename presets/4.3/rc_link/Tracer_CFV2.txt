@@ -1,13 +1,13 @@
-# Title: TBS Tacer CFV2
-# FirmwareVersion: 4.3
-# Category: RC_LINK
-# Official: true
-# Keywords: defaults, rc link, tracer, TBS, cfv2, 250hz
-# Author: Zak Smiley sugarK
-# Description: setup fo the various TBS radio links via CRSF
-# Description: WARNING: make ABSOLUTELY SURE that the Hardware > ADC Filter is un-checked! and both radio and the TX unit are all up to date with the latest EdgeTX, OpenTX or FreedomTX
-# Description: Please use RC smoothing presets for flying style required. Note base settings are for racing, there is a check box at the end for freestyle.
-# Description: There are 2 current types of Crossfire protocol, CFV2 and CFV3 this can be checked in your TBS lua 
+#$ TITLE: TBS Tacer CFV2
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: RC_LINK
+#$ OFFICIAL: true
+#$ KEYWORDS: defaults, rc link, tracer, TBS, cfv2, 250hz
+#$ AUTHOR: Zak Smiley sugarK
+#$ DESCRIPTION: setup fo the various TBS radio links via CRSF
+#$ DESCRIPTION: WARNING: make ABSOLUTELY SURE that the Hardware > ADC Filter is un-checked! and both radio and the TX unit are all up to date with the latest EdgeTX, OpenTX or FreedomTX
+#$ DESCRIPTION: Please use RC smoothing presets for flying style required. Note base settings are for racing, there is a check box at the end for freestyle.
+#$ DESCRIPTION: There are 2 current types of Crossfire protocol, CFV2 and CFV3 this can be checked in your TBS lua 
 
 feature RX_SERIAL
 set serialrx_provider = CRSF

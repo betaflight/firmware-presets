@@ -1,14 +1,14 @@
-# Title: ELRS 500hz
-# FirmwareVersion: 4.3
-# Category: RC_LINK
-# Official: true
-# Keywords: ELRS, rc, link, 500hz
-# Author: ctzsnooze
-# Description: Basic RC link settings for a 500hz ELRS link via CRSF
-# Description: WARNING: make ABSOLUTELY SURE that the OpenTx or EdgeTx Hardware ADC Filter is un-checked!
-# Description: WARNING: check that you are using a compatible version of EdgeTx or OpenTx!
-# Description: If a log shows excessive noise in your feedforward trace, most likely there is a Tx firmware issue 
-# Description: The Voltage option is for OpenTx telemetry back to the transmitter, default is per cell, option whole pack
+#$ TITLE: ELRS 500hz
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: RC_LINK
+#$ OFFICIAL: true
+#$ KEYWORDS: ELRS, rc, link, 500hz
+#$ AUTHOR: ctzsnooze
+#$ DESCRIPTION: Basic RC link settings for a 500hz ELRS link via CRSF
+#$ DESCRIPTION: WARNING: make ABSOLUTELY SURE that the OpenTx or EdgeTx Hardware ADC Filter is un-checked!
+#$ DESCRIPTION: WARNING: check that you are using a compatible version of EdgeTx or OpenTx!
+#$ DESCRIPTION: If a log shows excessive noise in your feedforward trace, most likely there is a Tx firmware issue 
+#$ DESCRIPTION: The Voltage option is for OpenTx telemetry back to the transmitter, default is per cell, option whole pack
 
 feature RX_SERIAL
 set serialrx_provider = CRSF
@@ -22,12 +22,12 @@ set rc_smoothing = ON
 
 # per cell or whole pack voltage readings:
 set report_cell_voltage = ON
-# option begin (unchecked) Whole pack voltage readings
+#$ OPTION BEGIN (UNCHECKED) Whole pack voltage readings
 set report_cell_voltage = OFF
-# option end
+#$ OPTION END
 
 # stronger feedforward smoothing for HD or Cinematic flying (not for racing):
-# option begin (unchecked) Stronger smoothing for HD or cinematic (not for racing)
+#$ OPTION BEGIN (UNCHECKED) Stronger smoothing for HD or cinematic (not for racing)
 set feedforward_averaging = 3_POINT
 set feedforward_smooth_factor = 70
-# option end
+#$ OPTION END

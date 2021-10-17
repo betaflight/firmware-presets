@@ -1,10 +1,10 @@
-# Title: Default 4.3 RC smoothing settings
-# FirmwareVersion: 4.3
-# Category: RC_SMOOTHING
-# Official: true
-# Keywords: defaults, reset, rc smoothing, rc_smoothing
-# Author: Betaflight
-# Description: Resets RC Smoothing settings to 4.3 defaults
+#$ TITLE: Default 4.3 RC smoothing settings
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: RC_SMOOTHING
+#$ OFFICIAL: true
+#$ KEYWORDS: defaults, reset, rc smoothing, rc_smoothing
+#$ AUTHOR: Betaflight
+#$ DESCRIPTION: Resets RC Smoothing settings to 4.3 defaults
 
 set rc_smoothing = ON
 set rc_smoothing_auto_factor = 30

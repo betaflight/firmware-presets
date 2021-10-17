@@ -1,10 +1,10 @@
-# Title: Default 4.3 RC link settings
-# FirmwareVersion: 4.3
-# Category: RC_LINK
-# Official: true
-# Keywords: defaults, reset, rc link, rc_link
-# Author: Betaflight
-# Description: Resets all RC Link related parameters to 4.3 defaults
+#$ TITLE: Default 4.3 RC link settings
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: RC_LINK
+#$ OFFICIAL: true
+#$ KEYWORDS: defaults, reset, rc link, rc_link
+#$ AUTHOR: Betaflight
+#$ DESCRIPTION: Resets all RC Link related parameters to 4.3 defaults
 # Warning: Resets settings for ALL protocols
 # Note: Does NOT reset serial port settings or Rx Link mode (TAER / AETR etc)
 

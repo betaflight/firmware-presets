@@ -33,6 +33,8 @@ const OptionsDirectives = {
 }
 
 const settings = {
+    MetapropertyDirective: "#$",
+
     PresetCategories: Object.freeze(PresetCategories),
 
     MetadataTypes: Object.freeze(MetadataTypes),
@@ -44,7 +46,7 @@ const settings = {
 
     presetsFileMetadata: Object.freeze({
         title:             {type: MetadataTypes.STRING,           optional: false  },
-        firmwareVersion:   {type: MetadataTypes.STRING_ARRAY,     optional: false  },
+        firmware_version:  {type: MetadataTypes.STRING_ARRAY,     optional: false  },
         category:          {type: MetadataTypes.PRESET_CATEGORY,  optional: false  },
         official:          {type: MetadataTypes.BOOLEAN,          optional: false  },
         author:            {type: MetadataTypes.STRING,           optional: true   },

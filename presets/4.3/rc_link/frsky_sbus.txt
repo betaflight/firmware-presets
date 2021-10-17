@@ -1,18 +1,18 @@
-# Title: FrSky Sbus
-# FirmwareVersion: 4.3
-# Category: RC_LINK
-# Official: true
-# Keywords: frsky, sbus, rc, link
-# Author: ctzsnooze
-# Description: Basic RC link settings for a 111hz / 9ms FrSky Sbus link, with the Rx bound in D16 mode with no more than 8 channels
-# Description: These settings work best when used with a version of OpenTx with good module sync
-# Description: Note: Telemetry requires smartPort (s.Port) and does not convey RSSI (use Lua or analog RSSI)
-# Description: Note: When more than 8 channels are bound, manual RC smoothing settings and two point averaging is required
-# Description: Early versions of OpenTx with poor module sync will require two point averaging
-# Description: Cell vs full voltage option affects which value will be sent by telemetry to the handset.  Default is per cell.
-# Description: Units default to metric. Telemetry defaults to non-inverted and half-duple.  Both can be changed with checkbox
-# Description: Other telemetry settings,eg gps format, default latitude and longitude, extra sensors, require manual CLI entries
-# Description: Other options are provided for the intended flying style.
+#$ TITLE: FrSky Sbus
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: RC_LINK
+#$ OFFICIAL: true
+#$ KEYWORDS: frsky, sbus, rc, link
+#$ AUTHOR: ctzsnooze
+#$ DESCRIPTION: Basic RC link settings for a 111hz / 9ms FrSky Sbus link, with the Rx bound in D16 mode with no more than 8 channels
+#$ DESCRIPTION: These settings work best when used with a version of OpenTx with good module sync
+#$ DESCRIPTION: Note: Telemetry requires smartPort (s.Port) and does not convey RSSI (use Lua or analog RSSI)
+#$ DESCRIPTION: Note: When more than 8 channels are bound, manual RC smoothing settings and two point averaging is required
+#$ DESCRIPTION: Early versions of OpenTx with poor module sync will require two point averaging
+#$ DESCRIPTION: Cell vs full voltage option affects which value will be sent by telemetry to the handset.  Default is per cell.
+#$ DESCRIPTION: Units default to metric. Telemetry defaults to non-inverted and half-duple.  Both can be changed with checkbox
+#$ DESCRIPTION: Other telemetry settings,eg gps format, default latitude and longitude, extra sensors, require manual CLI entries
+#$ DESCRIPTION: Other options are provided for the intended flying style.
 
 feature RX_SERIAL
 set serialrx_provider = SBUS
@@ -32,50 +32,50 @@ set rc_smoothing = ON
 
 # per cell or whole pack voltage readings sent to Tx:
 set report_cell_voltage = ON
-# option begin (unchecked) Whole pack voltage readings
+#$ OPTION BEGIN (UNCHECKED) Whole pack voltage readings
 set report_cell_voltage = OFF
-# option end
+#$ OPTION END
 
 # metric or imperial units:
 set frsky_unit = metric
-# option begin (unchecked) Imperial units
+#$ OPTION BEGIN (UNCHECKED) Imperial units
 set frsky_unit = imperial
-# option end
+#$ OPTION END
 
 # telemetry inverted:
 set tlm_inverted = OFF
-# option begin (unchecked) Telemetry inverted 
+#$ OPTION BEGIN (UNCHECKED) Telemetry inverted 
 set tlm_inverted = ON
-# option end
+#$ OPTION END
 
 # telemetry halfduplex:
 set tlm_halfduplex = ON
-# option begin (unchecked) Full duplex telemetry
+#$ OPTION BEGIN (UNCHECKED) Full duplex telemetry
 set tlm_halfduplex = OFF
-# option end
+#$ OPTION END
 
 # if bound in D16 with more than 8 channels - sends duplicates all the time - too slow for racing
-# option begin (unchecked) Bound with >8 channels
+#$ OPTION BEGIN (UNCHECKED) Bound with >8 channels
 set feedforward_averaging = 2_POINT
 set feedforward_smooth_factor = 35
-# option end
+#$ OPTION END
 
 # sharper handling for racing:
-# option begin (unchecked) Race
+#$ OPTION BEGIN (UNCHECKED) Race
 set feedforward_smooth_factor = 20
 set set feedforward_jitter_reduction = 5
-# option end
+#$ OPTION END
 
 # stronger smoothing for HD freestyle (not for racing):
-# option begin (unchecked) HD Freestyle
+#$ OPTION BEGIN (UNCHECKED) HD Freestyle
 set feedforward_averaging = 2_POINT
 set feedforward_smooth_factor = 45
 set set feedforward_jitter_reduction = 12
-# option end
+#$ OPTION END
 
 # stronger smoothing for Cinematic flying (not for racing):
-# option begin (unchecked) Cinematic
+#$ OPTION BEGIN (UNCHECKED) Cinematic
 set feedforward_averaging = 2_POINT
 set feedforward_smooth_factor = 60
 set set feedforward_jitter_reduction = 15
-# option end
+#$ OPTION END

@@ -60,8 +60,8 @@ class PresetsFile
 
         for (let line of lines) {
             line = line.trim();
-            if (line.startsWith("#")) {
-                this._processCommentLine(line);
+            if (line.startsWith(this._settings.MetapropertyDirective)) {
+                this._processMetapropertyLine(line);
             }
 
             this._currentLine++;
@@ -70,11 +70,12 @@ class PresetsFile
         delete this._currentLine;
     }
 
-    _processCommentLine(line)
+    _processMetapropertyLine(line)
     {
-        line = line.slice(1).trim(); // (# Title: foo) -> (Title: foo)
+        line = line.slice(this._settings.MetapropertyDirective.length).trim(); // (#$ Title: foo) -> (Title: foo)
         const lowCaseLine = line.toLowerCase();
         let isProperty = false;
+        let isOptionDirective = false;
 
         for (const [property, value] of Object.entries(this._presetsFileMetadata)) {
             const lineBeginning = `${property.toLowerCase()}:`; // "Title:"
@@ -88,6 +89,11 @@ class PresetsFile
 
         if (!isProperty && lowCaseLine.startsWith(this._settings.OptionsDirectives.OPTION_DIRECTIVE)) {
             this._processOptionDirective(line);
+            isOptionDirective = true;
+        }
+
+        if (!isProperty && !isOptionDirective) {
+                this._addError(`line ${this._currentLine}, unknown preset directive: '${line}'`);
         }
     }
 

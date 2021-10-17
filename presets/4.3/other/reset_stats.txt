@@ -1,10 +1,10 @@
-# Title: Reset 4.3 Stats
-# FirmwareVersion: 4.3
-# Category: OTHER
-# Official: true
-# Keywords: defaults, reset statistics, stats
-# Author: Betaflight
-# Description: Resets the saved flight stats values back to zero
+#$ TITLE: Reset 4.3 Stats
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: OTHER
+#$ OFFICIAL: true
+#$ KEYWORDS: defaults, reset statistics, stats
+#$ AUTHOR: Betaflight
+#$ DESCRIPTION: Resets the saved flight stats values back to zero
 
 set stats_min_armed_time_s = -1
 set stats_total_flights = 0
