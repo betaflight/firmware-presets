@@ -1,7 +1,7 @@
 #$ TITLE: TBS Crossfire 150hz locked  CFV3
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: RC_LINK
-#$ OFFICIAL: true
+#$ STATUS: OFFICIAL
 #$ KEYWORDS:  rc link, TBS, cfv3, 150hz, Crossfire
 #$ AUTHOR: Zak Smiley sugarK
 #$ DESCRIPTION: setup for TBS Crossfire 150hz locked  CFV3

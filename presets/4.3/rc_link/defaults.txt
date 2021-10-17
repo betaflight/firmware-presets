@@ -1,7 +1,7 @@
 #$ TITLE: Default 4.3 RC link settings
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: RC_LINK
-#$ OFFICIAL: true
+#$ STATUS: OFFICIAL
 #$ KEYWORDS: defaults, reset, rc link, rc_link
 #$ AUTHOR: Betaflight
 #$ DESCRIPTION: Resets all RC Link related parameters to 4.3 defaults

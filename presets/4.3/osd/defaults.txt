@@ -1,7 +1,7 @@
 #$ TITLE: Default 4.3 OSD settings
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: OSD
-#$ OFFICIAL: true
+#$ STATUS: OFFICIAL
 #$ KEYWORDS: defaults, reset, OSD
 #$ AUTHOR: Betaflight
 #$ DESCRIPTION: Resets the OSD values back to Betaflight 4.3 defaults

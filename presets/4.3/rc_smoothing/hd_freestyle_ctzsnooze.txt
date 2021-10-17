@@ -1,7 +1,7 @@
 #$ TITLE: Freestyle HD RC smoothing
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: RC_SMOOTHING
-#$ OFFICIAL: true
+#$ STATUS: OFFICIAL
 #$ KEYWORDS: freestyle, rc, smooth, HD, freestyle_HD, HD_freestyle, smoothing, rc_smoothing, jitter,
 #$ AUTHOR: ctzsnooze
 #$ DESCRIPTION: RC smoothing settings for smooth HD freestyle footage.

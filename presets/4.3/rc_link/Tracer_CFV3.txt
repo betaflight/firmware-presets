@@ -1,7 +1,7 @@
 #$ TITLE: TBS Tacer CFV3
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: RC_LINK
-#$ OFFICIAL: true
+#$ STATUS: OFFICIAL
 #$ KEYWORDS: defaults, rc link, tracer, TBS, cfv3, 250hz
 #$ AUTHOR: Zak Smiley sugarK
 #$ DESCRIPTION: setup for TBS Tacer CFV3

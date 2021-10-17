@@ -1,7 +1,7 @@
 #$ TITLE: Karate Race
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: TUNE
-#$ OFFICIAL: true
+#$ STATUS: OFFICIAL
 #$ KEYWORDS: karate, 6S, race, world champion, 5 inch, 5", sugarK, limon, ctzsnooze, karatreBrot
 #$ AUTHOR: Zak Smiley SugarK
 #$ DESCRIPTION: This 6s racing tune was developed with the help of @ctzsnooze around @karatebrot’s RPM crossfade code allowing a pretty aggressive filter array which is the karate array. 

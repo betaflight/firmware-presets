@@ -1,7 +1,7 @@
 #$ TITLE: Cinematic RC smoothing
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: RC_SMOOTHING
-#$ OFFICIAL: true
+#$ STATUS: OFFICIAL
 #$ KEYWORDS: cinematic, rc, smoothing, rc_smoothing, jitter, transition, hd
 #$ AUTHOR: ctzsnooze
 #$ DESCRIPTION: Warning: will feel VERY 'soft' and unresponsive for small stick inputs!
