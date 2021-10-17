@@ -1,7 +1,7 @@
 #$ TITLE: TBS Crossfire Dynamic rate CFV2/CFV3
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: RC_LINK
-#$ OFFICIAL: true
+#$ STATUS: OFFICIAL
 #$ KEYWORDS: rc link, TBS, cfv2, 150hz, Crossfire ,dynamic, cfv3
 #$ AUTHOR: Zak Smiley sugarK
 #$ DESCRIPTION: setup for TBS Crossfire dynamic rate  CFV2/CFV3

@@ -1,7 +1,7 @@
 #$ TITLE: Reset Launch Mode settings
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: OTHER
-#$ OFFICIAL: true
+#$ STATUS: OFFICIAL
 #$ KEYWORDS: defaults, reset, names, launch, launch_mode
 #$ AUTHOR: Betaflight
 #$ DESCRIPTION: Resets the Launch Mode settings to 4.3 defaults

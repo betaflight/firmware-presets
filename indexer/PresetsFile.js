@@ -199,10 +199,26 @@ class PresetsFile
             case this._settings.MetadataTypes.WORDS_ARRAY:
                 this._processWordsArrayProperty(property, line);
                 break;
+            case this._settings.MetadataTypes.PRESET_STATUS:
+                this._processPresetStatusProperty(property, line);
+                break;
             default:
                 this._addError(`line ${this._currentLine}, unknown property type '${this._presetsFileMetadata[property].type}' for the property '${property}'`);
         }
     }
+
+    _processPresetStatusProperty(property, line)
+    {
+        this._checkPropertyDublicated(property);
+
+        if (this._settings.PresetStatusEnum.includes(line)) {
+            this[property] = line;
+        } else {
+            this._addError(`line ${this._currentLine}, unknown ${property} values: '${line}'; available values: ${this._settings.PresetStatusEnum}`);
+        }
+
+    }
+
 
     _processWordsArrayProperty(property, line)
     {
@@ -261,11 +277,16 @@ class PresetsFile
             this[property] = [];
         }
 
-        const stat = fs.statSync(line);
-        if (!stat || stat.isDirectory()) {
-            this._addError(`line ${this._currentLine}, can't find file '${line}'`);
+        if (fs.existsSync(line)) {
+             // still could be a folder, so have to filter out folders
+            const stat = fs.statSync(line);
+            if (!stat || stat.isDirectory()) {
+                this._addError(`line ${this._currentLine}, a folder is specified instead of a file: '${line}'`);
+            } else {
+                this[property].push(line);
+            }
         } else {
-            this[property].push(line);
+            this._addError(`line ${this._currentLine}, can't find file '${line}'`);
         }
     }
 

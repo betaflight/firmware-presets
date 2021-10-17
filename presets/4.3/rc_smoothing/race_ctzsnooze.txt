@@ -1,7 +1,7 @@
 #$ TITLE: Race RC smoothing
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: RC_SMOOTHING
-#$ OFFICIAL: true
+#$ STATUS: OFFICIAL
 #$ KEYWORDS: aggressive, rc, smoothing, race, rc_smoothing, jitter
 #$ AUTHOR: ctzsnooze
 #$ DESCRIPTION: RC smoothing settings for racing that slightly increases stick responsiveness over defaults. 

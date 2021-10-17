@@ -8,7 +8,10 @@ const MetadataTypes = {
         BOOLEAN:            "BOOLEAN", // true/false
         WORDS_ARRAY:        "WORDS_ARRAY", // "word1, word2, word3"
         FILE_PATH_ARRAY:    "FILE_PATH_ARRAY", // array of path/to/file.ext and check if files exist
+        PRESET_STATUS:      "PRESET_STATUS", // official/community/experimental
 }
+
+const PresetStatusEnum = ["OFFICIAL", "COMMUNITY", "EXPERIMENTAL"];
 
 const PresetCategories = {
     TUNE:           "TUNE",
@@ -41,6 +44,8 @@ const settings = {
 
     OptionsDirectives : Object.freeze(OptionsDirectives),
 
+    PresetStatusEnum : Object.freeze(PresetStatusEnum),
+
     presetsDir: "presets",
     presetsFileEncoding: "utf-8",
 
@@ -48,7 +53,7 @@ const settings = {
         title:             {type: MetadataTypes.STRING,           optional: false  },
         firmware_version:  {type: MetadataTypes.STRING_ARRAY,     optional: false  },
         category:          {type: MetadataTypes.PRESET_CATEGORY,  optional: false  },
-        official:          {type: MetadataTypes.BOOLEAN,          optional: false  },
+        status:            {type: MetadataTypes.PRESET_STATUS,    optional: false  },
         author:            {type: MetadataTypes.STRING,           optional: true   },
         description:       {type: MetadataTypes.STRING_ARRAY,     optional: true   },
         include:           {type: MetadataTypes.FILE_PATH_ARRAY,  optional: true   },

@@ -1,7 +1,7 @@
 #$ TITLE: ELRS 250hz
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: RC_LINK
-#$ OFFICIAL: true
+#$ STATUS: OFFICIAL
 #$ KEYWORDS: ELRS, rc, link, 250hz
 #$ AUTHOR: ctzsnooze
 #$ DESCRIPTION: Basic RC link settings for a 250hz ELRS link via CRSF

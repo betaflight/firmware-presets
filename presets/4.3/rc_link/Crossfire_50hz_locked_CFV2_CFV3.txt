@@ -1,7 +1,7 @@
 #$ TITLE: TBS Crossfire 50hz locked  CFV2/CFV3
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: RC_LINK
-#$ OFFICIAL: true
+#$ STATUS: OFFICIAL
 #$ KEYWORDS: defaults, rc link, TBS, cfv2, 50hz, Crossfire
 #$ AUTHOR: Zak Smiley sugarK
 #$ DESCRIPTION: setup for TBS Crossfire 50hz locked  CFV2

@@ -1,7 +1,7 @@
 #$ TITLE: Reset Camera Control settings
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: OTHER
-#$ OFFICIAL: true
+#$ STATUS: OFFICIAL
 #$ KEYWORDS: defaults, reset, names, camera, control, camera_control
 #$ AUTHOR: Betaflight
 #$ DESCRIPTION: Resets the Camera Control settings to 4.3 defaults

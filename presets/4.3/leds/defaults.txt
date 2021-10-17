@@ -1,7 +1,7 @@
 #$ TITLE: Default 4.3 LED settings
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: LEDS
-#$ OFFICIAL: true
+#$ STATUS: OFFICIAL
 #$ KEYWORDS: defaults, reset, leds
 #$ AUTHOR: Betaflight
 #$ DESCRIPTION: Resets LED settings to 4.3 defaults

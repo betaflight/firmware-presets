@@ -1,7 +1,7 @@
 #$ TITLE: FrSky Sbus
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: RC_LINK
-#$ OFFICIAL: true
+#$ STATUS: OFFICIAL
 #$ KEYWORDS: frsky, sbus, rc, link
 #$ AUTHOR: ctzsnooze
 #$ DESCRIPTION: Basic RC link settings for a 111hz / 9ms FrSky Sbus link, with the Rx bound in D16 mode with no more than 8 channels

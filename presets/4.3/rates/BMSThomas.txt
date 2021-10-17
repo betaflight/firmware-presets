@@ -1,7 +1,7 @@
 #$ TITLE: BMSThomas racing/freestyle rates
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: RATES
-#$ OFFICIAL: false
+#$ STATUS: COMMUNITY
 #$ KEYWORDS: racing
 #$ AUTHOR: Thomas "BMSThomas" Bitmatta
 #$ DESCRIPTION: Racing and freestyle rates by BMSThomas - MultiGP International Open 2019 champion
