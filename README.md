@@ -87,12 +87,12 @@ A Preset must include a field structure that complies with the specifications be
 
 **Optional fields**
 ```
-    KEYWORDS, AUTHOR, DESCRIPTION, INCLUDE, OPTION, DISCUSSION, DISCLAIMER, WARNING, HIDDEN
+    KEYWORDS, AUTHOR, DESCRIPTION, INCLUDE, OPTION, DISCUSSION, DISCLAIMER, INCLUDE_DISCLAIMER, WARNING, INCLUDE_WARNING, HIDDEN
 ```
 All field tags must be:
 - preceded with `#$ `, 
 - be `CAPITALISED`, and 
-- end with a colon `:` (except `OPTION` tags, no colon there)
+- end with a colon `:` (except `OPTION END` tags, no colon there)
 - eg `#$ KEYWORDS:`
 
 | Field | Notes |
@@ -104,11 +104,13 @@ All field tags must be:
 | STATUS | `Official` for Betaflight developed Presets, `Community` for user-contributed Presets, or `Experimental` for 'in-development' Presets |
 | KEYWORDS | Choose carefully.  Make it easy for your intended user to find your preset with keywords that you expect they will use.  Comma separate each entry. |
 | AUTHOR | Your Github name or nickname. |
-| DESCRIPTION| Clearly explain what will be changed, and, where relevant, what will not be changed. For example, if  filter setup requires RPM filtering, be sure to state this. Each ``#$ DESCRIPTION:` line results in a separate paragraph.  A blank `#$ DESCRIPTION:` line results in a blank line between paragraphs.|
+| DESCRIPTION| Clearly explain what will be changed, and, where relevant, what will not be changed. For example, if  filter setup requires RPM filtering, be sure to state this. Each ``#$ DESCRIPTION:` line results in a separate paragraph.  A blank `#$ DESCRIPTION:` line results in a blank line between paragraphs. All description text should be placed above any includes or options. |
 | INCLUDE | Inserts data from one or more separate Presets ahead of the CLI commands of this Preset.  Useful to enforce defaults ahead of your commands. See details below.|
 | OPTION | Commands within `OPTION` tags present the user with a checkbox to apply, or not apply, the enclosed commands.  The default check-box behaviour can be specified.  Each `OPTION` group must have a unique name. For more info, [click here](https://github.com/betaflight/firmware-presets#OPTION). |
 | DISCLAIMER | Field containing text for a disclaimer. |
-| WARNING | Field containing text for a warning. |
+| INCLUDE_DISCLAIMER | path to file containing text for a disclaimer, starting from `presets/`` |
+| WARNING | Field containing text for a warning. Intended to be a final dialog before accepting the Preset |
+| INCLUDE_WARNING | path to file containing text for a warning, starting from `presets/`, functionally the same as warning. |
 | DISCUSSION | Field containing a URL that links to the feedback and discussion page for the preset.  At present this must be set to the URL of the PR that generated the Preset. |
 | HIDDEN | `#$ HIDDEN: true` prevents a Preset from being indexed, and hence prevents it being found by a user search.  Intended for 'invisible' Presets that are only included in other Presets. |
 
@@ -135,14 +137,14 @@ All field tags must be:
 ....
 <cli command n>
 
-#$ OPTION BEGIN (CHECKED) region1Name
+#$ OPTION BEGIN: (CHECKED) region1Name
 <cli command n + 1>
 <cli command n + 2>
 ...
 <cli command m>
 # OPTION END
 
-# OPTION BEGIN (UNCHECKED) region2Name
+# OPTION BEGIN: (UNCHECKED) region2Name
 <cli command m + 1>
 <cli command m + 2>
 ...
@@ -188,9 +190,9 @@ The path must be the full path from the root of the Presets directory.
 Example:  `#$ INCLUDE: presets/4.3/category/preset_x.txt`
 
 ### OPTION
-`OPTION` tags let the user apply groups of settings with simple checkboxes in the Apply dialog.
+`OPTION` tags let the user apply groups of settings with simple checkboxes from a dropdown list in the Apply dialog.  Each `OPTION` fills one line in the dropdown list.  No text or blank lines are possible in the `OPTION` list.
 
-The Preset author sets the checkbox default to ticked or un-ticked, and specifies the label next to the checkbox.
+The Preset author sets the checkbox default to be ticked or un-ticked, and specifies the label next to the checkbox.
 
 They work similar to the C# preprocessor directive `#region`.
 
@@ -206,7 +208,7 @@ The default state of the checkbox is set by including either `(CHECKED)` or `(UN
 
 Complete `OPTION` syntax looks like this:
 ```
-#$ OPTION BEGIN (UNCHECKED) <Option name>
+#$ OPTION BEGIN: (UNCHECKED) <Option name>
 CLI payload strings
 # OPTION END
 ```
@@ -215,9 +217,9 @@ Note 1: nested `OPTION` tags are not supported.
 
 Note 2: If an included Preset has options, those options will not be shown to the user, unless ‘dummy’ option tags have been supplied, pre-defined, for each of the regions from the included Preset, like this:
 ```
-#$ OPTION BEGIN <first_option_name_from_preset_x>
+#$ OPTION BEGIN: <first_option_name_from_preset_x>
 #$ OPTION END
-#$ OPTION BEGIN <second_region_name_from_preset_x>
+#$ OPTION BEGIN: <second_region_name_from_preset_x>
 #$ OPTION END
 (for however many options exist in preset_x that you want to provide)
 #$ INCLUDE: presets/4.3/category/preset_x.txt
