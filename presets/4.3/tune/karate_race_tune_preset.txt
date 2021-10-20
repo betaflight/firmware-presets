@@ -84,7 +84,7 @@ set tpa_rate = 70
 set tpa_breakpoint = 1250
 
 
-#$ OPTION BEGIN (CHECKED) dynamic idle 
+#$ OPTION BEGIN (CHECKED): dynamic idle 
 
 #dynamic idle for 6s 2000kv
 set dshot_idle_value = 400
@@ -93,7 +93,7 @@ set dyn_idle_p_gain = 35
 #$ OPTION END
 
 
-#$ OPTION BEGIN (UNCHECKED) spicy tune 
+#$ OPTION BEGIN (UNCHECKED): spicy tune 
 
 #spicy tune use with care
 
@@ -123,7 +123,7 @@ set simplified_pitch_d_gain = 110
 set simplified_pitch_pi_gain = 110
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED) Dshot300
+#$ OPTION BEGIN (UNCHECKED): Dshot300
 set dshot_bidir = ON
 set motor_pwm_protocol = Dshot300
 #$ OPTION END

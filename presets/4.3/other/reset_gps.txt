@@ -44,6 +44,6 @@ set gps_rescue_use_mag = ON
 
 feature -GPS
 
-#$ OPTION BEGIN (UNCHECKED) enable GPS?
+#$ OPTION BEGIN (UNCHECKED): enable GPS?
 feature GPS
 #$ OPTION END

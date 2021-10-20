@@ -75,15 +75,19 @@ class PresetsFile
         line = line.slice(this._settings.MetapropertyDirective.length).trim(); // (#$ Title: foo) -> (Title: foo)
         const lowCaseLine = line.toLowerCase();
         let isProperty = false;
+        let isPropertyMissingSemicolon = false;
         let isOptionDirective = false;
 
         for (const [property, value] of Object.entries(this._presetsFileMetadata)) {
-            const lineBeginning = `${property.toLowerCase()}:`; // "Title:"
+            const lineBeginning = `${property.toLowerCase()}:`; // "TITLE:"
+            const wrongLineBeginning = `${property.toLowerCase()}`; // "TITLE"
 
             if (lowCaseLine.startsWith(lineBeginning)) {
                 line = line.slice(lineBeginning.length).trim(); // (Title: foo) -> (foo)
                 this._processProperty(property, line);
                 isProperty = true;
+            } else if (lowCaseLine.startsWith(wrongLineBeginning)) {
+                isPropertyMissingSemicolon = true;
             }
         }
 
@@ -93,7 +97,11 @@ class PresetsFile
         }
 
         if (!isProperty && !isOptionDirective) {
+            if (isPropertyMissingSemicolon) {
+                this._addError(`line ${this._currentLine}, property missing ":"`);
+            } else {
                 this._addError(`line ${this._currentLine}, unknown preset directive: '${line}'`);
+            }
         }
     }
 
@@ -143,11 +151,14 @@ class PresetsFile
 
         const regExpRemoveChecked = new RegExp(this._escapeRegex(this._settings.OptionsDirectives.OPTION_CHECKED), 'gi');
         const regExpRemoveUnchecked = new RegExp(this._escapeRegex(this._settings.OptionsDirectives.OPTION_UNCHECKED), 'gi');
-        let OptionName = directiveRemoved.replace(regExpRemoveChecked, "");
-        OptionName = OptionName.replace(regExpRemoveUnchecked, "").trim();
+        let optionName = directiveRemoved.replace(regExpRemoveChecked, "");
+        optionName = optionName.replace(regExpRemoveUnchecked, "").trim();
+        if (0 == optionName.length || optionName[0] != ":") {
+                this._addError(`line ${this._currentLine}, OPTION BEGIN directive should be followed by ":". Example: #$ OPTION BEGIN (UNCHECKED): My Option Name`);
+        }
 
         let Option = {
-            name: OptionName,
+            name: optionName,
             checked: OptionChecked
         }
 
@@ -168,8 +179,10 @@ class PresetsFile
 
         if (OptionChecked && OptionUnchecked) {
             this._addError(`line ${this._currentLine}, Option can't be checked and unchecked at the same time`);
+        } else if (!OptionChecked && !OptionUnchecked) {
+            this._addError(`line ${this._currentLine}, Every option must specify whether it is ${this._settings.OptionsDirectives.OPTION_CHECKED.toUpperCase()} or ${this._settings.OptionsDirectives.OPTION_UNCHECKED.toUpperCase()}`);
         } else {
-            OptionChecked = OptionChecked || !OptionUnchecked;
+            OptionChecked = OptionChecked;
         }
 
         return OptionChecked;

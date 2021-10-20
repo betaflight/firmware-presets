@@ -91,55 +91,55 @@ set dyn_idle_p_gain = 40
 # -- Filters --
 
 # Filter options
-#$ OPTION BEGIN (UNCHECKED) FILTER: RPM enabled, ctzsnooze race
+#$ OPTION BEGIN (UNCHECKED): FILTER: RPM enabled, ctzsnooze race
 #$ INCLUDE: presets/4.3/filters/ctzsnooze_race.txt
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED) FILTER: RPM enabled, noisy build
+#$ OPTION BEGIN (UNCHECKED): FILTER: RPM enabled, noisy build
 #$ INCLUDE: presets/4.3/filters/default_rpm_noisy.txt
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED) FILTER: NON-RPM ESCs, normal build
+#$ OPTION BEGIN (UNCHECKED): FILTER: NON-RPM ESCs, normal build
 #$ INCLUDE: presets/4.3/filters/default_no_rpm_normal.txt
 #$ OPTION END
 
 # -- Recommended options --
 
 # -- RC_Smoothing --
-#$ OPTION BEGIN (CHECKED) Default RC_smoothing (recommended)
+#$ OPTION BEGIN (CHECKED): Default RC_smoothing (recommended)
 #$ INCLUDE: presets/4.3/rc_smoothing/race.txt
 #$ OPTION END
 
 # -- Throttle limit --
-#$ OPTION BEGIN (UNCHECKED) Throttle limit 96% (recommended)
+#$ OPTION BEGIN (UNCHECKED): Throttle limit 96% (recommended)
 set throttle_limit_type = SCALE
 set throttle_limit_percent = 96
 #$ OPTION END
 
 # -- VBat sag compensation --
-#$ OPTION BEGIN (UNCHECKED) Full Sag compensation (recommended)
+#$ OPTION BEGIN (UNCHECKED): Full Sag compensation (recommended)
 set vbat_sag_compensation = 100
 set vbat_sag_lpf_period = 2
 #$ OPTION END
 
 # -- Stick behaviour -- 
-#$ OPTION BEGIN (UNCHECKED) No deadband (recommended)
+#$ OPTION BEGIN (UNCHECKED): No deadband (recommended)
 set deadband = 0
 set yaw_deadband = 0
 #$ OPTION END
 
 # -- Throttle curve --
-#$ OPTION BEGIN (UNCHECKED) Flat throttle curve (recommended)
+#$ OPTION BEGIN (UNCHECKED): Flat throttle curve (recommended)
 set thr_mid = 50
 set thr_expo = 0
 #$ OPTION END
 
 # -- Startup and arming --
-#$ OPTION BEGIN (UNCHECKED) Arm at any angle (recommended)
+#$ OPTION BEGIN (UNCHECKED): Arm at any angle (recommended)
 set small_angle = 180
 #$ OPTION END
 
 # -- Rates --
-#$ OPTION BEGIN (UNCHECKED) Try ctzsnooze's race Rates (optional)
+#$ OPTION BEGIN (UNCHECKED): Try ctzsnooze's race Rates (optional)
 #$ INCLUDE: presets/4.3/rates/ctzsnooze_race.txt
 #$ OPTION END
