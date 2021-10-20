@@ -82,66 +82,74 @@ A Preset must include a field structure that complies with the specifications be
 
 **Mandatory fields**
 ```
- Title, FirmwareVersion, Category, Official
+ TITLE, FIRMWARE_VERSION, CATEGORY, STATUS
 ```
 
 **Optional fields**
 ```
-    Author, Description, Include, Keywords, Discussion, Disclaimer, Nosearch
+    KEYWORDS, AUTHOR, DESCRIPTION, INCLUDE, OPTION, DISCUSSION, DISCLAIMER, INCLUDE_DISCLAIMER, WARNING, INCLUDE_WARNING, HIDDEN
 ```
+All field tags must be:
+- preceded with `#$ `, 
+- be `CAPITALISED`, and 
+- end with a colon `:` (except `OPTION END` tags, no colon there)
+- eg `#$ KEYWORDS:`
 
 | Field | Notes |
 | ----------- | ----------- |
 | File name | Unique, brief, descriptive, include author, underscores not spaces eg race_4in_ctzsnooze |
-| Title | Explanatory, clear, concise; include the main characteristics of the preset. |
-| FirmwareVersion | One line for each supported version. as many lines as requred. Ensure that all CLI commands are readable by the firmware versions listed.  CLI commands that do not match will throw errors.  If a Preset support two versions by including two versions of the same command, explain to the user that an error will be gene|
-| Official | True or False; true only for Betaflight developed Presets |
-| Category | See category list below.  Only approved category names will be accepted. |
-| Keywords | Choose carefully.  Make it easy for your intended user to find your preset with keywords that you expect they will use.  Comma separate each entry. |
-| Author | Your Github name or nickname. |
-| Description | Clearly explain what will be changed, and, where relevant, what will not be changed. For example, if  filter setup requires RPM filtering, be sure to state this. Each ``# Description` line results in a separate paragraph.  A blank `# Description` line results in a blank line between paragraphs.|
-| Include | Inserts data from one or more separate Presets ahead of the CLI commands of this Preset.  Useful to enforce defaults ahead of your commands. See details below.|
-| Option | Commands within `Option` tags present the user with a checkbox to apply, or not apply, the enclosed commands.  The default check-box behaviour can be specified.  Each `Option` group must have a unique name. For more info, [click here](https://github.com/betaflight/firmware-presets#Option). |
-| Discussion | Field containing a URL that links to the feedback and discussion page for the preset.  At present this must be set to the URL of the PR that generated the Preset. |
-| Disclaimer | Field containing text for a disclaimer or strong warning. |
-| Nosearch | `# Nosearch: true` prevents a Preset from being indexed, and hence prevents it being found by a user search.  Intended for 'invisible' Presets that are only included in other Presets. |
+| TITLE | Explanatory, clear, concise; include the main characteristics of the preset. |
+| FIRMWARE_VERSION | One line for each supported version. as many lines as requred. Ensure that all CLI commands are readable by the firmware versions listed.  CLI commands that do not match will throw errors.  If a Preset support two versions by including two versions of the same command, explain to the user that an error will be gene|
+| CATEGORY | See category list below.  Only approved category names will be accepted. |
+| STATUS | `Official` for Betaflight developed Presets, `Community` for user-contributed Presets, or `Experimental` for 'in-development' Presets |
+| KEYWORDS | Choose carefully.  Make it easy for your intended user to find your preset with keywords that you expect they will use.  Comma separate each entry. |
+| AUTHOR | Your Github name or nickname. |
+| DESCRIPTION| Clearly explain what will be changed, and, where relevant, what will not be changed. For example, if  filter setup requires RPM filtering, be sure to state this. Each ``#$ DESCRIPTION:` line results in a separate paragraph.  A blank `#$ DESCRIPTION:` line results in a blank line between paragraphs. All description text should be placed above any includes or options. |
+| INCLUDE | Inserts data from one or more separate Presets ahead of the CLI commands of this Preset.  Useful to enforce defaults ahead of your commands. See details below.|
+| OPTION | Commands within `OPTION` tags present the user with a checkbox to apply, or not apply, the enclosed commands.  The default check-box behaviour can be specified.  Each `OPTION` group must have a unique name. For more info, [click here](https://github.com/betaflight/firmware-presets#OPTION). |
+| DISCLAIMER | Field containing text for a disclaimer. |
+| INCLUDE_DISCLAIMER | path to file containing text for a disclaimer, starting from `presets/`` |
+| WARNING | Field containing text for a warning. Intended to be a final dialog before accepting the Preset |
+| INCLUDE_WARNING | path to file containing text for a warning, starting from `presets/`, functionally the same as warning. |
+| DISCUSSION | Field containing a URL that links to the feedback and discussion page for the preset.  At present this must be set to the URL of the PR that generated the Preset. |
+| HIDDEN | `#$ HIDDEN: true` prevents a Preset from being indexed, and hence prevents it being found by a user search.  Intended for 'invisible' Presets that are only included in other Presets. |
 
 ### Example Preset structure:
 
 ```
-# Title: 7in long range cinematic by userx
-# FirmwareVersion: 4.2
-# FirmwareVersion: 4.3
-# Category: TUNE
-# Official: true
-# Keywords: word1, word2, word3
-# Author: Name Lastname / Pilotname
-# Description: Description paragraph1
-# Description: Description pagagraph2  (as many description paragraphs as needed)
-# Disclaimer : Text of disclaimer (mandatory for VTx Presets)
-# Discussion: https://github.com/betaflight/firmware-presets/pull/nn
+#$ TITLE: 7in long range cinematic by userx
+#$ FIRMWARE_VERSION: 4.2
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: TUNE
+#$ STATUS: true
+#$ KEYWORDS: word1, word2, word3
+#$ AUTHOR: Name Lastname / Pilotname
+#$ DESCRIPTION: Description paragraph1
+#$ DESCRIPTION: Description pagagraph2  (as many description paragraphs as needed)
+#$ DISCLAIMER: Text of disclaimer (mandatory for VTx Presets)
+#$ WARNING: Text of warning
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/nn
 
-# Include: file/to/include1.txt
-# Include: file/to/include2.txt
+#$ INCLUDE: presets/4.3/rates/defaults.txt
 
 <cli command 1>
 <cli command 2>
 ....
 <cli command n>
 
-# Option begin (checked) region1Name
+#$ OPTION BEGIN: (CHECKED) region1Name
 <cli command n + 1>
 <cli command n + 2>
 ...
 <cli command m>
-# Option end
+# OPTION END
 
-# Option begin (unchecked) region2Name
+# OPTION BEGIN: (UNCHECKED) region2Name
 <cli command m + 1>
 <cli command m + 2>
 ...
 <cli command k>
-# Option end
+# OPTION END
 ```
 
 ### Categories
@@ -169,45 +177,52 @@ Note 1: The following disclaimer is MANDATORY for VTx presets:
 > The information provided in these presets is for educational and entertainment purposes only. Betaflight makes no representations as to the safety or legality of the use of any information provided herein. End users assume all responsibility and liability for ensuring they comply with all relevant laws and regulations.
 >Using these VTX tables may be in breach of your local RF laws. You as the end user must research and comply with your local regulations. In using these presets, the user assumes any and all liability associated with breaching local regulations.
 
-### Include
-Optional paths to other Presets that are to be included in the current Preset. 
+### INCLUDE
+Optional paths to other Presets that are to be included in the current Preset.
+
+The path must be the full path from the root of the Presets directory.
 
 - Works like the C/C++ `#include` function.
-- Sequential `include` statements allow multiple Presets to be applied.. 
-- recursion of `include` is not supported. 
-- Metaproperties of `include` Presets are ignored.
+- Sequential `INCLUDE` statements allow multiple Presets to be applied.. 
+- Recursion of `INCLUDE` is supported. 
+- Metaproperties of `INCLUDE` Presets are ignored.
 
+Example:  `#$ INCLUDE: presets/4.3/category/preset_x.txt`
 
-### Option
-`Option` tags let the user apply groups of settings with simple checkboxes in the Apply dialog.
+### OPTION
+`OPTION` tags let the user apply groups of settings with simple checkboxes from a dropdown list in the Apply dialog.  Each `OPTION` fills one line in the dropdown list.  No text or blank lines are possible in the `OPTION` list.
 
-The Preset author sets the checkbox default to ticked or un-ticked, and specifies the label next to the checkbox.
+The Preset author sets the checkbox default to be ticked or un-ticked, and specifies the label next to the checkbox.
 
 They work similar to the C# preprocessor directive `#region`.
 
-One example where `Options` may be useful is in a `BNF` or `TUNE` Preset. The Preset could provide different options for different radio protocols, eg SBUS, Crossfire, Ghost, etc. The user can then select the radio protocol to be used when the preset is applied.
+One example where `OPTION` may be useful is in a `BNF` or `TUNE` Preset. The Preset could provide different options for different radio protocols, eg SBUS, Crossfire, Ghost, etc. The user can then select the radio protocol to be used when the preset is applied.
 
 Another example could be to provide different RC_Smoothing settings, to suit race, HD freestyle or Cinematic usage within the same overall tune.
 
-An `Option` region starts with an `# Option begin <option name>` tag. The default state of the checkbox is set by including either `(checked)` or `(unchecked)` in the tag. Every `# Option` tag must be closed with `# Option end`. The CLI payload goes in the middle.
+Another example is where a user may want to retain a personal setting, eg motor output limit, when applying a TUNE that might also like to set that value to some specific value.  Here the tuner can give an option to use their value, but allow the user to not accept that suggestion.
 
-Complete `Option` syntax looks like this:
+An `OPTION` region starts with an `#$ OPTION BEGIN <option name>` tag. 
+
+The default state of the checkbox is set by including either `(CHECKED)` or `(UNCHECKED)` in the tag. Every `#$ OPTION` tag must be closed with `#$ OPTION END`. The CLI payload goes in the middle.
+
+Complete `OPTION` syntax looks like this:
 ```
-# Option begin (unchecked) <option name>
+#$ OPTION BEGIN: (UNCHECKED) <Option name>
 CLI payload strings
-# Option end
+# OPTION END
 ```
 
-Note 1: nested `Option` tags are not supported.
+Note 1: nested `OPTION` tags are not supported.
 
 Note 2: If an included Preset has options, those options will not be shown to the user, unless ‘dummy’ option tags have been supplied, pre-defined, for each of the regions from the included Preset, like this:
 ```
-# Option begin <first_option_name_from_preset_x>
-# Option end
-# Option begin <second_region_name_from_preset_x>
-# Option end
+#$ OPTION BEGIN: <first_option_name_from_preset_x>
+#$ OPTION END
+#$ OPTION BEGIN: <second_region_name_from_preset_x>
+#$ OPTION END
 (for however many options exist in preset_x that you want to provide)
-# Include path/preset_x
+#$ INCLUDE: presets/4.3/category/preset_x.txt
 ```
 
 ## Credits
