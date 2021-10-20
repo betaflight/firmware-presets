@@ -7,7 +7,6 @@
 #$ DESCRIPTION: RC smoothing settings for smooth HD freestyle footage.
 #$ DESCRIPTION: This preset uses fixed manual cutoff frequencies for consistent results over a wide range of RC link frequencies - the auto cutoff values are not used.
 #$ DESCRIPTION: There is no need to turn off feedforward or to enable transition; jitter reduction provides dynamic attenuation of feedforward when sticks move slowly.
-#$ DESCRIPTION: Option: Actual Rates, centre sensitivity around 30 deg/s, max rate 750 deg/s, with zero expo.
 
 set rc_smoothing = ON
 set feedforward_jitter_reduction = 13
@@ -18,6 +17,8 @@ set rc_smoothing_feedforward_cutoff = 25
 set rc_smoothing_auto_factor_throttle = 30
 set rc_smoothing_throttle_cutoff = 0
 
+#$ DESCRIPTION:
+#$ DESCRIPTION: Option: Actual Rates, centre sensitivity 30 deg/s, max rate 750 deg/s, zero expo
 #$ OPTION BEGIN (UNCHECKED) Recommended Actual rates
 set rates_type = ACTUAL
 set roll_rc_rate = 3
