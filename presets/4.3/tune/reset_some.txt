@@ -9,7 +9,7 @@
 
 #  -- PID settings -- 
 
-#$ OPTION BEGIN (UNCHECKED) PID values
+#$ OPTION BEGIN (UNCHECKED): PID values
 set p_pitch = 44
 set i_pitch = 79
 set d_pitch = 41
@@ -29,7 +29,7 @@ set d_min_yaw = 0
 set f_yaw = 125
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED) PID Sliders
+#$ OPTION BEGIN (UNCHECKED): PID Sliders
 set simplified_pids_mode = RPY
 set simplified_master_multiplier = 100
 set simplified_i_gain = 100
@@ -41,39 +41,39 @@ set simplified_pitch_d_gain = 115
 set simplified_pitch_pi_gain = 105
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED) iTerm Relax
+#$ OPTION BEGIN (UNCHECKED): iTerm Relax
 set iterm_relax = RP
 set iterm_relax_type = SETPOINT
 set iterm_relax_cutoff = 15
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED) iTerm Windup
+#$ OPTION BEGIN (UNCHECKED): iTerm Windup
 set iterm_windup = 85
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED) iTerm Rotation
+#$ OPTION BEGIN (UNCHECKED): iTerm Rotation
 set iterm_rotation = OFF
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED) DMax settings
+#$ OPTION BEGIN (UNCHECKED): DMax settings
 set d_min_boost_gain = 37
 set d_min_advance = 20
 set simplified_dmax_gain = 100
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED) TPA
+#$ OPTION BEGIN (UNCHECKED): TPA
 set tpa_rate = 65
 set tpa_breakpoint = 1350
 set tpa_mode = D
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED) AntiGravity
+#$ OPTION BEGIN (UNCHECKED): AntiGravity
 set anti_gravity_mode = SMOOTH
 set anti_gravity_threshold = 250
 set anti_gravity_gain = 3500
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED) Feedforward
+#$ OPTION BEGIN (UNCHECKED): Feedforward
 set feedforward_boost = 18
 set feedforward_max_rate_limit = 95
 set feedforward_jitter_reduction = 5
@@ -81,7 +81,7 @@ set feedforward_jitter_reduction = 7
 set feedforward_averaging = OFF
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED) PID Sum Limit
+#$ OPTION BEGIN (UNCHECKED): PID Sum Limit
 set pidsum_limit = 500
 set pidsum_limit_yaw = 400
 set iterm_limit = 400
@@ -90,39 +90,39 @@ set iterm_limit = 400
 
 #  -- Miscellaneous settings -- 
 
-#$ OPTION BEGIN (UNCHECKED) Yaw spin recovery auto
+#$ OPTION BEGIN (UNCHECKED): Yaw spin recovery auto
 set yaw_spin_recovery = AUTO
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED) Arm only while level
+#$ OPTION BEGIN (UNCHECKED): Arm only while level
 set small_angle = 25
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED) Power on arm grace time 5
+#$ OPTION BEGIN (UNCHECKED): Power on arm grace time 5
 set pwr_on_arm_grace = 5
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED) Deadbands to zero
+#$ OPTION BEGIN (UNCHECKED): Deadbands to zero
 set deadband = 0
 set yaw_deadband = 0
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED) Min check 1070
+#$ OPTION BEGIN (UNCHECKED): Min check 1070
 set min_check = 1050
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED) Min throttle 1050
+#$ OPTION BEGIN (UNCHECKED): Min throttle 1050
 set min_throttle = 1070
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED) Mixer type default
+#$ OPTION BEGIN (UNCHECKED): Mixer type default
 set mixer_type = LEGACY
 #$ OPTION END
 
 
 #  -- Level and Horizon settings -- 
 
-#$ OPTION BEGIN (UNCHECKED) Angle and Horizon reset
+#$ OPTION BEGIN (UNCHECKED): Angle and Horizon reset
 # set angle_level_strength = 50
 # set horizon_level_strength = 50
 # set horizon_transition = 75
@@ -131,42 +131,42 @@ set mixer_type = LEGACY
 # set horizon_tilt_expert_mode = OFF
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED) Level Race Mode off
+#$ OPTION BEGIN (UNCHECKED): Level Race Mode off
 set level_race_mode = OFF
 #$ OPTION END
 
 
 #  -- Voltage and motor output settings -- 
 
-#$ OPTION BEGIN (UNCHECKED) Motor output limit 100
+#$ OPTION BEGIN (UNCHECKED): Motor output limit 100
 set motor_output_limit = 100
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED) Thrust Linear off
+#$ OPTION BEGIN (UNCHECKED): Thrust Linear off
 set thrust_linear = 0
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED) Throttle limit off
+#$ OPTION BEGIN (UNCHECKED): Throttle limit off
 set throttle_limit_type = OFF
 set throttle_limit_percent = 100
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED) Throttle curve flat
+#$ OPTION BEGIN (UNCHECKED): Throttle curve flat
 set thr_mid = 50
 set thr_expo = 0
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED) Throttle boost reset
+#$ OPTION BEGIN (UNCHECKED): Throttle boost reset
 set throttle_boost = 5
 set throttle_boost_cutoff = 15
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED) VBat Sag Compensation off
+#$ OPTION BEGIN (UNCHECKED): VBat Sag Compensation off
 set vbat_sag_compensation = 0
 set vbat_sag_lpf_period = 2
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED) Voltage monitoring reset
+#$ OPTION BEGIN (UNCHECKED): Voltage monitoring reset
 set vbat_max_cell_voltage = 430
 set vbat_full_cell_voltage = 410
 set vbat_warning_cell_voltage = 350
@@ -176,17 +176,17 @@ set vbat_hysteresis = 1
 set vbat_display_lpf_period = 10
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED) Full pack voltage telemetry
+#$ OPTION BEGIN (UNCHECKED): Full pack voltage telemetry
 set report_cell_voltage = OFF
 #$ OPTION END
 
 #  -- Specialised settings -- 
 
-#$ OPTION BEGIN (UNCHECKED) DShot Telemetry (off)
+#$ OPTION BEGIN (UNCHECKED): DShot Telemetry (off)
 set dshot_bidir = OFF
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED) Dynamic idle off & reset
+#$ OPTION BEGIN (UNCHECKED): Dynamic idle off & reset
 set dyn_idle_min_rpm = 0
 set dyn_idle_p_gain = 50
 set dyn_idle_i_gain = 50
@@ -195,13 +195,13 @@ set dyn_idle_max_increase = 150
 set motor_pwm_rate = 480
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED) Runaway takeoff prevention on
+#$ OPTION BEGIN (UNCHECKED): Runaway takeoff prevention on
 set runaway_takeoff_prevention = ON
 set runaway_takeoff_deactivate_delay = 500
 set runaway_takeoff_deactivate_throttle_percent = 20
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED) Crash recovery settings
+#$ OPTION BEGIN (UNCHECKED): Crash recovery settings
 set crash_dthreshold = 50
 set crash_gthreshold = 400
 set crash_setpoint_threshold = 350
@@ -213,19 +213,19 @@ set crash_limit_yaw = 200
 set crash_recovery = OFF
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED) Turtle mode settings
+#$ OPTION BEGIN (UNCHECKED): Turtle mode settings
 set crashflip_motor_percent = 0
 set crashflip_expo = 35
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED) Acro trainer settings
+#$ OPTION BEGIN (UNCHECKED): Acro trainer settings
 set acro_trainer_angle_limit = 20
 set acro_trainer_lookahead_ms = 50
 set acro_trainer_debug_axis = ROLL
 set acro_trainer_gain = 75
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED) Launch control settings
+#$ OPTION BEGIN (UNCHECKED): Launch control settings
 set launch_control_mode = NORMAL
 set launch_trigger_allow_reset = ON
 set launch_trigger_throttle_percent = 20
@@ -236,31 +236,31 @@ set launch_control_gain = 40
 
 #  -- Rarely used or deprecated settings -- 
 
-#$ OPTION BEGIN (UNCHECKED) Absolute control (off)
+#$ OPTION BEGIN (UNCHECKED): Absolute control (off)
 set abs_control_gain = 0
 set abs_control_limit = 90
 set abs_control_error_limit = 20
 set abs_control_cutoff = 11
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED) PIDs at min throttle (on)
+#$ OPTION BEGIN (UNCHECKED): PIDs at min throttle (on)
 set pid_at_min_throttle = ON
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED) Acceleration limits (off)
+#$ OPTION BEGIN (UNCHECKED): Acceleration limits (off)
 set acc_limit_yaw = 0
 set acc_limit = 0
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED) Integrated yaw (off)
+#$ OPTION BEGIN (UNCHECKED): Integrated yaw (off)
 set use_integrated_yaw = OFF
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED) Gyro Cal first arm (off)
+#$ OPTION BEGIN (UNCHECKED): Gyro Cal first arm (off)
 set gyro_cal_on_first_arm = OFF
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED) Transient throttle limit (off)
+#$ OPTION BEGIN (UNCHECKED): Transient throttle limit (off)
 set transient_throttle_limit = 0
 #$ OPTION END
 
