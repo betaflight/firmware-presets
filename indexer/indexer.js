@@ -19,6 +19,7 @@ if (process.argv.length === 3) {
 
 let presetFilesArray = [];
 let presetsFolder = new PresetsFolder(settings.presetsDir, settings, presetFilesArray, errors);
+PresetsFolder.checkForIncludeLoops(presetFilesArray, errors);
 
 //console.log(getUniqueValues(presetFilesArray, "firmwareVersion"));
 
