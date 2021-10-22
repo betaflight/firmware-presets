@@ -4,11 +4,11 @@
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: ELRS, rc, link, 500hz
 #$ AUTHOR: ctzsnooze
-#$ DESCRIPTION: Basic RC link settings for a 500hz ELRS link via CRSF
+#$ DESCRIPTION: Basic RC link settings for a 500hz ELRS link via CRSF.
 #$ DESCRIPTION: WARNING: make ABSOLUTELY SURE that the OpenTx or EdgeTx Hardware ADC Filter is un-checked!
 #$ DESCRIPTION: WARNING: check that you are using a compatible version of EdgeTx or OpenTx!
-#$ DESCRIPTION: If a log shows excessive noise in your feedforward trace, most likely there is a Tx firmware issue 
-#$ DESCRIPTION: The Voltage option is for OpenTx telemetry back to the transmitter, default is per cell, option whole pack
+#$ DESCRIPTION: If a log shows excessive noise in your feedforward trace, most likely there is a Tx firmware issue.
+#$ DESCRIPTION: The Voltage option is for OpenTx telemetry back to the transmitter, default is per cell, option whole pack.
 
 feature RX_SERIAL
 set serialrx_provider = CRSF

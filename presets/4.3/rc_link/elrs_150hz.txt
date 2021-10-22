@@ -7,7 +7,7 @@
 #$ DESCRIPTION: Basic RC link settings for a 150hz ELRS link via CRSF
 #$ DESCRIPTION: WARNING: make ABSOLUTELY SURE that the OpenTx or EdgeTx Hardware ADC Filter is un-checked!
 #$ DESCRIPTION: WARNING: check that you are using a compatible version of EdgeTx or OpenTx!
-#$ DESCRIPTION: The voltage option is for OpenTx telemetry back to the transmitter, default is per cell, option is whole pack
+#$ DESCRIPTION: The voltage option is for OpenTx telemetry back to the transmitter, default is per cell, option is whole pack.
 
 feature RX_SERIAL
 set serialrx_provider = CRSF
@@ -45,4 +45,3 @@ set feedforward_averaging = 2_POINT
 set feedforward_smooth_factor = 60
 set set feedforward_jitter_reduction = 14
 #$ OPTION END
-

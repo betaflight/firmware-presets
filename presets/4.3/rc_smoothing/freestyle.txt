@@ -17,7 +17,7 @@ set rc_smoothing_feedforward_cutoff = 40
 set rc_smoothing_auto_factor_throttle = 30
 set rc_smoothing_throttle_cutoff = 0
 
-#$ DESCRIPTION: 
+#$ DESCRIPTION:
 #$ DESCRIPTION: Option: Actual Rates, with centre sensitivity around 60 and 750 deg/s max.
 #$ OPTION BEGIN (UNCHECKED): Suggested Actual rates
 set rates_type = ACTUAL
