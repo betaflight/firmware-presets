@@ -158,7 +158,7 @@ class PresetsFile
         }
 
         let Option = {
-            name: optionName,
+            name: optionName.slice(1).trim(),
             checked: OptionChecked
         }
 
