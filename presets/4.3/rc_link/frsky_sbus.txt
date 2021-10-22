@@ -4,14 +4,14 @@
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: frsky, sbus, rc, link
 #$ AUTHOR: ctzsnooze
-#$ DESCRIPTION: Basic RC link settings for a 111hz / 9ms FrSky Sbus link, with the Rx bound in D16 mode with no more than 8 channels
-#$ DESCRIPTION: These settings work best when used with a version of OpenTx with good module sync
-#$ DESCRIPTION: Note: Telemetry requires smartPort (s.Port) and does not convey RSSI (use Lua or analog RSSI)
-#$ DESCRIPTION: Note: When more than 8 channels are bound, manual RC smoothing settings and two point averaging is required
-#$ DESCRIPTION: Early versions of OpenTx with poor module sync will require two point averaging
-#$ DESCRIPTION: Cell vs full voltage option affects which value will be sent by telemetry to the handset.  Default is per cell.
-#$ DESCRIPTION: Units default to metric. Telemetry defaults to non-inverted and half-duple.  Both can be changed with checkbox
-#$ DESCRIPTION: Other telemetry settings,eg gps format, default latitude and longitude, extra sensors, require manual CLI entries
+#$ DESCRIPTION: Basic RC link settings for a 111hz / 9ms FrSky Sbus link, with the Rx bound in D16 mode with no more than 8 channels.
+#$ DESCRIPTION: These settings work best when used with a version of OpenTx with good module sync.
+#$ DESCRIPTION: Note: Telemetry requires smartPort (s.Port) and does not convey RSSI (use Lua or analog RSSI).
+#$ DESCRIPTION: Note: When more than 8 channels are bound, manual RC smoothing settings and two point averaging is required.
+#$ DESCRIPTION: Early versions of OpenTx with poor module sync will require two point averaging.
+#$ DESCRIPTION: Cell vs full voltage option affects which value will be sent by telemetry to the handset. Default is per cell.
+#$ DESCRIPTION: Units default to metric. Telemetry defaults to non-inverted and half-duple. Both can be changed with checkbox.
+#$ DESCRIPTION: Other telemetry settings,eg gps format, default latitude and longitude, extra sensors, require manual CLI entries.
 #$ DESCRIPTION: Other options are provided for the intended flying style.
 
 feature RX_SERIAL
@@ -44,7 +44,7 @@ set frsky_unit = imperial
 
 # telemetry inverted:
 set tlm_inverted = OFF
-#$ OPTION BEGIN (UNCHECKED): Telemetry inverted 
+#$ OPTION BEGIN (UNCHECKED): Telemetry inverted
 set tlm_inverted = ON
 #$ OPTION END
 

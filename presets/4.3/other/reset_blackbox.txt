@@ -4,7 +4,7 @@
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: defaults, reset, blackbox, logging, log
 #$ AUTHOR: Betaflight
-#$ DESCRIPTION: Resets the 4.3 blackbox settings back to defaults
+#$ DESCRIPTION: Resets the 4.3 blackbox settings back to defaults.
 
 set blackbox_sample_rate = 1/4
 set blackbox_device = SPIFLASH
@@ -21,4 +21,3 @@ set blackbox_disable_debug = OFF
 set blackbox_disable_motors = OFF
 set blackbox_disable_gps = OFF
 set blackbox_mode = NORMAL
-
