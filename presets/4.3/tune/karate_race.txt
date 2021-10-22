@@ -1,9 +1,9 @@
-#$ TITLE: Karate Race
+#$ TITLE: Karate Race 6s
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: TUNE
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: karate, 6S, race, world champion, 5 inch, 5", sugarK, limon, ctzsnooze, karatreBrot
-#$ AUTHOR: Zak Smiley SugarK
+#$ AUTHOR: sugarK
 #$ DESCRIPTION: This 6s racing tune was developed with the help of @ctzsnooze around @karatebrot’s RPM crossfade code allowing a pretty aggressive filter array which is the karate array. 
 #$ DESCRIPTION: This tune works well on any quality airframes and has been flown on the Viper racer (where it was developed ) BMS Js1, 533 switchback, HGLRC wind and of course @limons Open racer. 
 #$ DESCRIPTION: It should also work on other quality racing frames but use at your own risk as it is an aggressive tune. This tune so far has won a good number of events including the 2021 IO.
@@ -14,77 +14,87 @@
 #$ DESCRIPTION: 
 #$ DESCRIPTION: SECOND NOTE.... Radio links.. 1. Make sure your radio system is totally up to date using either Edgetx or Opentx and your ADC in the hardware page is OFF 2. Go to the radio presets and apply the correct setup for your system and link speed.
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/41
+#$ INCLUDE_WARNING: misc/warnings/en/rpm_filters.txt
+#$ INCLUDE: presets/4.3/tune/defaults.txt
+#$ INCLUDE: presets/4.3/filters/defaults.txt
 
-# master
-set gyro_lpf2_static_hz = 1000
-set gyro_lpf1_type = PT1
-set gyro_lpf2_type = PT1
-set dyn_notch_count = 2
-set dyn_notch_q = 500
-set dyn_notch_min_hz = 200
+
+
+# -- Gyro lowpass filters --
+set gyro_lpf2_static_hz = 500
 set gyro_lpf1_dyn_min_hz = 500
 set gyro_lpf1_dyn_max_hz = 1000
-set yaw_spin_recovery = AUTO
-set thrust_linear = 0
-set dshot_bidir = ON
-set motor_pwm_protocol = DSHOT600
-set small_angle = 180
-set simplified_gyro_filter_multiplier = 200
-set debug_mode = GYRO_SCALED
-set rpm_filter_harmonics = 3
-set rpm_filter_q = 500
-set rpm_filter_min_hz = 100
-set rpm_filter_fade_range_hz = 100
-set rpm_filter_lpf_hz = 150
+set simplified_gyro_filter = OFF
+set simplified_gyro_filter_multiplier = 140
 
-profile 0
+# -- Gyro Dynamic Notches --
+set dyn_notch_count = 2
+set dyn_notch_q = 450
+set dyn_notch_min_hz = 200
+set dyn_notch_max_hz = 650
 
-# profile 0
-set dterm_lpf1_dyn_min_hz = 75
-set dterm_lpf1_dyn_max_hz = 150
+# -- Dterm filtering --
+set dterm_lpf1_dyn_min_hz = 70
 set dterm_lpf1_dyn_expo = 10
-set dterm_lpf1_type = PT1
-set dterm_lpf1_static_hz = 150
-set dterm_lpf2_type = PT1
-set dterm_lpf2_static_hz = 150
-set dterm_notch_hz = 0
-set dterm_notch_cutoff = 0
-set anti_gravity_gain = 5500
-set p_pitch = 42
-set i_pitch = 89
-set d_pitch = 41
-set f_pitch = 138
-set p_roll = 38
-set i_roll = 81
-set d_roll = 37
-set f_roll = 125
-set d_min_roll = 22
-set d_min_pitch = 24
-set feedforward_jitter_reduction = 5
-set feedforward_max_rate_limit = 90
-set dyn_idle_min_rpm = 40
-set dyn_idle_p_gain = 35
-set dyn_idle_i_gain = 35
-set dyn_idle_d_gain = 35
-set simplified_pids_mode = RP
-set simplified_i_gain = 120
-set simplified_d_gain = 75
-set simplified_pi_gain = 85
-set simplified_dmax_gain = 200
-set simplified_feedforward_gain = 105
-set simplified_pitch_d_gain = 110
-set simplified_pitch_pi_gain = 110
-set simplified_dterm_filter = ON
+set simplified_dterm_filter = OFF
 set simplified_dterm_filter_multiplier = 100
 
+# -- RPM filtering --
+set dshot_bidir = ON
+set rpm_filter_fade_range_hz = 100
+
+# -- Misc --
+set yaw_spin_recovery = AUTO
+set thrust_linear = 0
+set throttle_boost = 2
 
 
-# rateprofile 
+# -- Antigravity --
+set anti_gravity_gain = 5500
+
+# -- iTerm  --
+set iterm_relax_cutoff = 20
+
+# -- PIDsum limits --
+set iterm_limit = 500
+set pidsum_limit_yaw = 1000
+
+
+# -- PID values --
+set p_pitch = 42
+set i_pitch = 85
+set d_pitch = 42
+set f_pitch = 135
+
+set p_roll = 37
+set d_roll = 36
+
+set f_yaw = 80
+
+set d_min_roll = 22
+set d_min_pitch = 22
+set d_min_boost_gain = 35
+set d_min_advance = 0
+set simplified_pids_mode = OFF
+
+-- Feedforward --
+set feedforward_jitter_reduction = 5
+
+-- TPA --
 set tpa_rate = 70
 set tpa_breakpoint = 1250
 
+#$ OPTION BEGIN (UNCHECKED): Dshot300
+set dshot_bidir = ON
+set motor_pwm_protocol = Dshot300
+#$ OPTION END
 
-#$ OPTION BEGIN (CHECKED): dynamic idle 
+#$ OPTION BEGIN (UNCHECKED): Dshot600
+set dshot_bidir = ON
+set motor_pwm_protocol = DSHOT600
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): dynamic idle for 2000kv 6s
 
 #dynamic idle for 6s 2000kv
 set dshot_idle_value = 400
@@ -97,34 +107,50 @@ set dyn_idle_p_gain = 35
 
 #spicy tune use with care
 
+# -- Gyro Dynamic Notches --
 set dyn_notch_count = 1
-set dyn_notch_q = 500
+set dyn_notch_q = 600
 set dyn_notch_min_hz = 250
+set dyn_notch_max_hz = 650
+
+# -- RPM filtering --
 set rpm_filter_harmonics = 2
+set rpm_filter_min_hz = 200
+
+# -- PID values --
 set p_pitch = 42
-set i_pitch = 89
+set i_pitch = 85
 set d_pitch = 42
-set f_pitch = 138
-set p_roll = 38
-set i_roll = 81
-set d_roll = 38
-set f_roll = 125
-set d_min_roll = 27
-set d_min_pitch = 29
-set feedforward_jitter_reduction = 5
-set feedforward_max_rate_limit = 90
-set simplified_pids_mode = RP
-set simplified_i_gain = 120
-set simplified_d_gain = 90
-set simplified_pi_gain = 85
-set simplified_dmax_gain = 125
-set simplified_feedforward_gain = 105
-set simplified_pitch_d_gain = 110
-set simplified_pitch_pi_gain = 110
+set f_pitch = 135
+set p_roll = 37
+set i_roll = 80
+set d_roll = 36
+set f_roll = 120
+set p_yaw = 45
+set i_yaw = 80
+set d_yaw = 0
+set f_yaw = 80
+
+set d_min_roll = 26
+set d_min_pitch = 26
+set d_min_boost_gain = 25
+set d_min_advance = 0
+set simplified_pids_mode = OFF
+set simplified_dterm_filter = OFF
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED): Dshot300
-set dshot_bidir = ON
-set motor_pwm_protocol = Dshot300
-#$ OPTION END
 
+
+#$ OPTION BEGIN (UNCHECKED): sugarK's rates
+set thr_mid = 25
+set thr_expo = 65
+set roll_rc_rate = 20
+set pitch_rc_rate = 20
+set yaw_rc_rate = 20
+set roll_expo = 54
+set pitch_expo = 54
+set yaw_expo = 54
+set roll_srate = 40
+set pitch_srate = 40
+set yaw_srate = 45
+#$ OPTION END
