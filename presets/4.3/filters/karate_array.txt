@@ -14,10 +14,10 @@
 
 
 # -- Gyro lowpass filters --
-set gyro_lpf1_dyn_min_hz = 500
-set gyro_lpf1_dyn_max_hz = 1000
+set gyro_lpf1_static_hz = 0
+set gyro_lpf1_dyn_min_hz = 0
 set simplified_gyro_filter = OFF
-set simplified_gyro_filter_multiplier = 140
+
 
 # -- Gyro Dynamic Notches --
 set dyn_notch_count = 2
@@ -28,11 +28,11 @@ set dyn_notch_min_hz = 200
 set dshot_bidir = ON
 set rpm_filter_harmonics = 2
 set rpm_filter_fade_range_hz = 100
+set rpm_filter_min_hz = 150
 
 # -- Dterm filtering --
-set dterm_lpf1_dyn_expo = 10
-set simplified_dterm_filter = ON
-set simplified_dterm_filter_multiplier = 100
+set dterm_lpf1_dyn_expo = 7
+
 
 
 # OPTION BEGIN (UNCHECKED): Dshot300
