@@ -58,7 +58,7 @@ const settings = {
         description:          {type: MetadataTypes.STRING_ARRAY,     optional: true   },
         include:              {type: MetadataTypes.FILE_PATH_ARRAY,  optional: true   },
         keywords:             {type: MetadataTypes.WORDS_ARRAY,      optional: true   },
-        nosearch:             {type: MetadataTypes.BOOLEAN,          optional: true   },
+        hidden:               {type: MetadataTypes.BOOLEAN,          optional: true   },
         discussion:           {type: MetadataTypes.STRING,           optional: true   },
         warning:              {type: MetadataTypes.STRING,           optional: true   },
         disclaimer:           {type: MetadataTypes.STRING,           optional: true   },
