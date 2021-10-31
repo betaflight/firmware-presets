@@ -18,5 +18,5 @@ set rc_smoothing = ON
 
 # Crossfire dynamic rate ( both 150 and 50 hz )
 set feedforward_averaging = 2_POINT
-set feedforward_smooth_factor = 25
+set feedforward_smoothing = 25
 set feedforward_jitter_reduction = 7
