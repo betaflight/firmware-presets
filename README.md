@@ -137,19 +137,19 @@ All field tags must be:
 ....
 <cli command n>
 
-#$ OPTION BEGIN: (CHECKED) region1Name
+#$ OPTION BEGIN (CHECKED): Region 1 name
 <cli command n + 1>
 <cli command n + 2>
 ...
 <cli command m>
-# OPTION END
+#$ OPTION END
 
-# OPTION BEGIN: (UNCHECKED) region2Name
+#$ OPTION BEGIN (UNCHECKED): Region 2 name
 <cli command m + 1>
 <cli command m + 2>
 ...
 <cli command k>
-# OPTION END
+#$ OPTION END
 ```
 
 ### Categories
@@ -202,15 +202,15 @@ Another example could be to provide different RC_Smoothing settings, to suit rac
 
 Another example is where a user may want to retain a personal setting, eg motor output limit, when applying a TUNE that might also like to set that value to some specific value.  Here the tuner can give an option to use their value, but allow the user to not accept that suggestion.
 
-An `OPTION` region starts with an `#$ OPTION BEGIN <option name>` tag. 
+An `OPTION` region starts with an `#$ OPTION BEGIN: <option name>` tag. 
 
 The default state of the checkbox is set by including either `(CHECKED)` or `(UNCHECKED)` in the tag. Every `#$ OPTION` tag must be closed with `#$ OPTION END`. The CLI payload goes in the middle.
 
 Complete `OPTION` syntax looks like this:
 ```
-#$ OPTION BEGIN: (UNCHECKED) <Option name>
+#$ OPTION BEGIN (UNCHECKED): <Option name>
 CLI payload strings
-# OPTION END
+#$ OPTION END
 ```
 
 Note 1: nested `OPTION` tags are not supported.
