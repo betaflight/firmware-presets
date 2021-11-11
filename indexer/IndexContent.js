@@ -8,7 +8,7 @@ class IndexContent
         this.uniqueValues = {};
         this.presets = presetFilesArray;
 
-        this.uniqueValues.firmwareVersion = this._getUniqueValues(presetFilesArray, "firmwareVersion");
+        this.uniqueValues.firmware_version = this._getUniqueValues(presetFilesArray, "firmware_version");
         this.uniqueValues.category = this._getUniqueValues(presetFilesArray, "category");
         this.uniqueValues.author = this._getUniqueValues(presetFilesArray, "author");
         this.uniqueValues.keywords = this._getUniqueValues(presetFilesArray, "keywords");
