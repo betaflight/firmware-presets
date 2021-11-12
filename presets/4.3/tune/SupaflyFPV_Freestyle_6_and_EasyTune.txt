@@ -5,18 +5,25 @@
 #$ KEYWORDS: Supafly, SupaflyFPV, Freestyle, 6", 6 Inch
 #$ AUTHOR: SupaflyFPV
 #$ DESCRIPTION: Supa-Easy Freestyle Preset for 6 Inch Builds
-#$ DESCRIPTION: Easily tune freestyle builds using only the Master Multiplier Slider
-#$ DESCRIPTION: Select the option for your build with or without HD camera (eg GoPro)
-#$ DESCRIPTION: Half to one click up or down Master Slider to tweak the tune - in OSD or Configurator
-#$ DESCRIPTION: Quad feels loose, click Master up. Quad shakes/oscillates click Master down
-#$ DESCRIPTION: RPM Filtering for best performance (default) - or de-select for Non RPM Setup (check esc compatibility)
-#$ DESCRIPTION: Enjoy!
+#$ DESCRIPTION:
+#$ DESCRIPTION: Easily tune freestyle builds and get great performance using only the Master Multiplier Slider.
+#$ DESCRIPTION:
+#$ DESCRIPTION: Select the option for your build with or without HD camera (eg GoPro) as the base tune.
+#$ DESCRIPTION:
+#$ DESCRIPTION: Half to one click up or down Master Slider to tweak the tune - in OSD or Configurator.
+#$ DESCRIPTION:
+#$ DESCRIPTION: If the quad feels loose, click Master up. Quad shakes/oscillates click Master down.
+#$ DESCRIPTION:
+#$ DESCRIPTION: RPM Filtering for best performance (default) - or de-select for Non RPM Setup (check esc compatibility).
+#$ DESCRIPTION:
+#$ DESCRIPTION: Thats it. Enjoy!
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/41
 #$ INCLUDE_WARNING: misc/warnings/en/rpm_filters.txt
 #$ INCLUDE: presets/4.3/tune/defaults.txt
 #$ INCLUDE: presets/4.3/filters/defaults.txt
 
 # -- Non-RPM Filtering --
+
 set dshot_bidir = OFF
 set simplified_gyro_filter = OFF
 set gyro_lpf2_static_hz = 1000
@@ -88,7 +95,7 @@ set simplified_dterm_filter = OFF
 
 #$ OPTION END
 
-#$ OPTION BEGIN (CHECKED): Without HD Cam
+#$ OPTION BEGIN (UNCHECKED): Without HD Cam
 
 # -- PID values --
 
