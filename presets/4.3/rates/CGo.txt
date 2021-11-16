@@ -3,7 +3,7 @@
 #$ CATEGORY: RATES
 #$ STATUS: COMMUNITY
 #$ KEYWORDS: racing, rates, MultiGP, quaddiction, Cgo
-#$ AUTHOR: SugarK
+#$ AUTHOR: sugarK
 #$ DESCRIPTION: Racing rates from Chris Go (Cgo), fastest pilot in NSW Australia and leader of the Quaddiction krew.
 #$ DESCRIPTION: lols and yes he still uses BETAFLIGHT rates
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/84
