@@ -24,7 +24,12 @@ jobs:
 
     - if: github.ref == 'refs/heads/master' 
       name: Run the checker, indexer and deployment script
-      run: ./scripts/build.sh deploy
+      run: |
+        if [[ "${{github.REPOSITORY}}" == "betaflight/firmware-presets"]] ; then
+          ./scripts/build.sh deploy
+        else
+          ./scripts/build.sh
+        fi
       env:
         AWS_DISTRIBUTION_ID: ${{secrets.AWS_DISTRIBUTION_ID}}
         AWS_BUCKET: api.betaflight.com
