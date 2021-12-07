@@ -18,18 +18,13 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
-    - if: github.ref != 'refs/heads/master' 
+    - if: github.ref != 'refs/heads/master' || github.repository_owner != 'betaflight' 
       name: Run the checker script
       run: ./scripts/build.sh
 
-    - if: github.ref == 'refs/heads/master' 
+    - if: github.ref == 'refs/heads/master' && github.repository_owner == 'betaflight' 
       name: Run the checker, indexer and deployment script
-      run: |
-        if [[ "${{github.REPOSITORY}}" == "betaflight/firmware-presets"]] ; then
-          ./scripts/build.sh deploy
-        else
-          ./scripts/build.sh
-        fi
+      run: ./scripts/build.sh deploy
       env:
         AWS_DISTRIBUTION_ID: ${{secrets.AWS_DISTRIBUTION_ID}}
         AWS_BUCKET: api.betaflight.com
