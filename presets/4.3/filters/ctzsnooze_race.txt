@@ -12,17 +12,17 @@
 # -- Gyro filters --
 # Single static gyro lowpass at 500hz
 set gyro_lpf1_dyn_min_hz = 0
-set gyro_lpf1_dyn_max_hz = 1000
+set gyro_lpf1_dyn_max_hz = 500
 set gyro_lpf1_static_hz = 0
 set gyro_lpf2_static_hz = 500
 
-# Gyro Sliders OFF since only lpf2 is active
-set simplified_gyro_filter = OFF
-set simplified_gyro_filter_multiplier = 200
+# -- Gyro Sliders (on by default at default but only lowpass2 is active) --
+# only lpf2 is active
 
 # -- Gyro Dynamic Notches --
 set dyn_notch_count = 2
 set dyn_notch_q = 450
+set dyn_notch_min_hz = 100
 
 # -- RPM filtering --
 set dshot_bidir = ON

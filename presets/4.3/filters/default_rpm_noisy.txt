@@ -6,7 +6,7 @@
 #$ AUTHOR: Betaflight
 #$ DESCRIPTION: WARNING: Ensure that DShot Telemetry is working properly!
 #$ DESCRIPTION: Intended for slightly beaten up, or larger (7" and above), builds.
-#$ DESCRIPTION: If motors get hot, try the filter Preset for very noisy motors, or enable slider control for gyro filtering.
+#$ DESCRIPTION: If motors get hot, try the filter Preset for very noisy motors.
 #$ DESCRIPTION: If motors grind or make noise at idle, lower the D filter slider.
 
 #$ INCLUDE: presets/4.3/filters/defaults.txt
@@ -17,14 +17,13 @@ set dshot_bidir = ON
 # -- Gyro filters --
 # Single static gyro lowpass at 250hz
 set gyro_lpf1_dyn_min_hz = 0
-set gyro_lpf1_dyn_max_hz = 500
+set gyro_lpf1_dyn_max_hz = 250
 set gyro_lpf1_static_hz = 0
 set gyro_lpf2_static_hz = 250
  
-# -- Gyro Sliders OFF --
-# since only lpf2 is active
-set simplified_gyro_filter = OFF
-set simplified_gyro_filter_multiplier = 75
+# -- Gyro Sliders (on by default) --
+# only lpf2 is active
+set simplified_gyro_filter_multiplier = 50
 
 # -- Gyro Static Notches (default)--
 
@@ -43,7 +42,7 @@ set dterm_lpf1_static_hz = 127
 
 set dterm_lpf2_static_hz = 127
 
-# -- Dterm sliders --
+# -- Dterm sliders (both filters on by default) --
 set simplified_dterm_filter_multiplier = 85
 
 # -- Yaw lowpass --
