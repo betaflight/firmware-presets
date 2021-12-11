@@ -4,10 +4,10 @@
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: rpm, DShot telemetry, filter, filters, clean, basic, default, betaflight
 #$ AUTHOR: Betaflight
-#$ DESCRIPTION: WARNING: Ensure that DShot Telemetry is working properly!
+#$ DESCRIPTION: WARNING: Required RPM filtering.  Ensure that DShot Telemetry is working properly!
 #$ DESCRIPTION: WARNING: May cause motor overheating!
 #$ DESCRIPTION: Intended for solid frames, motors with good bearings and clean props.  
-#$ DESCRIPTION: If motors get hot, try a filter set for normal or noisy motors, or try enabling gyro filter slider.
+#$ DESCRIPTION: If motors get hot, try a filter set for normal or noisy motors.
 #$ DESCRIPTION: If motors grind or make noise at idle, lower the D filter slider.
 
 #$ INCLUDE: presets/4.3/filters/defaults.txt
@@ -18,14 +18,13 @@ set dshot_bidir = ON
 # -- Gyro filters --
 # Single static gyro lowpass at 1000Hz
 set gyro_lpf1_dyn_min_hz = 0
-set gyro_lpf1_dyn_max_hz = 1000
+set gyro_lpf1_dyn_max_hz = 875
 set gyro_lpf1_static_hz = 0
-set gyro_lpf2_static_hz = 1000
+set gyro_lpf2_static_hz = 875
 
-# -- Gyro Sliders OFF --
-# since only lpf2 is active
-set simplified_gyro_filter = OFF
-set simplified_gyro_filter_multiplier = 200
+# -- Gyro Sliders (on by default) --
+# only lpf2 is active
+set simplified_gyro_filter_multiplier = 175
 
 # -- Gyro Static Notches (default)--
 
