@@ -1,0 +1,34 @@
+#$ TITLE: Clinton Jagger rates
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: RATES
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: BubbleGum Basher
+#$ AUTHOR: Clinton Jagger
+#$ DESCRIPTION: Freestyle rates with 907 deg/sec for roll/pitch and 800 deg/sec for yaw. Relatively smooth around the sticks middle.
+#$ DESCRIPTION: The OG BuBbLeGuM_BaShEr.
+#$ DESCRIPTION: FlapJack FPV
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/94
+#$ INCLUDE: presets/4.3/rates/defaults.txt
+
+set rates_type = BETAFLIGHT
+set roll_rc_rate = 127
+set pitch_rc_rate = 127
+set yaw_rc_rate = 100
+set roll_expo = 40
+set pitch_expo = 40
+set roll_srate = 72
+set pitch_srate = 72
+set yaw_srate = 75
+
+#$ OPTION BEGIN (UNCHECKED): Actual rates analogue
+set rates_type = ACTUAL
+set roll_rc_rate = 15
+set pitch_rc_rate = 15
+set yaw_rc_rate = 20
+set roll_expo = 76
+set pitch_expo = 76
+set yaw_expo = 64
+set roll_srate = 91
+set pitch_srate = 91
+set yaw_srate = 80
+#$ OPTION END
