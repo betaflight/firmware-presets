@@ -1,4 +1,4 @@
-#$ TITLE: Clinton Jagger rates
+#$ TITLE: FlapJack FPV BubbleGumBasher
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: RATES
 #$ STATUS: COMMUNITY
