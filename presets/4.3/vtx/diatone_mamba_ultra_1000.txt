@@ -3,9 +3,9 @@
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: VTX
 #$ STATUS: COMMUNITY
-#$ KEYWORDS:  vtx, vtx table, diatone, mamaba, ultra 1000
+#$ KEYWORDS:  vtx, vtx table, vtxtable, diatone, mamba, ultra, ultra 1000
 #$ AUTHOR: NemesisXB
-#$ DESCRIPTION: VTX tables for the Diatone Mamba Ultra 1000.
+#$ DESCRIPTION: VTX tables for the Diatone Mamba Ultra 1000. (IRC Tramp)
 #$ DESCRIPTION: Select the the HAM option if you have a HAM license or the NO HAM if you do not.
 #$ DESCRIPTION: EU users select the NO HAM option.
 #$ DISCLAIMER:  Only select one option. All previous VTX Table settings will be reset.
