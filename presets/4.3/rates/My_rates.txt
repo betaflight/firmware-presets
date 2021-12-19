@@ -21,3 +21,8 @@ set yaw_expo = 54
 set roll_srate = 100
 set pitch_srate = 100
 set tpa_breakpoint = 1750
+
+#$ OPTION BEGIN (UNCHECKED): Throttle curve
+thr_mid = 50
+thr_expo = 0
+#$ OPTION END
