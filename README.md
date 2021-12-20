@@ -101,7 +101,7 @@ All field tags must be:
 | TITLE | Explanatory, clear, concise; include the main characteristics of the preset. |
 | FIRMWARE_VERSION | One line for each supported version. as many lines as requred. Ensure that all CLI commands are readable by the firmware versions listed.  CLI commands that do not match will throw errors.  If a Preset support two versions by including two versions of the same command, explain to the user that an error will be gene|
 | CATEGORY | See category list below.  Only approved category names will be accepted. |
-| STATUS | `Official` for Betaflight developed Presets, `Community` for user-contributed Presets, or `Experimental` for 'in-development' Presets |
+| STATUS | `OFFICIAL` for Betaflight developed Presets, `COMMUNITY` for user-contributed Presets, or `EXPERIMENTAL` for 'in-development' Presets |
 | KEYWORDS | Choose carefully.  Make it easy for your intended user to find your preset with keywords that you expect they will use.  Comma separate each entry. |
 | AUTHOR | Your Github name or nickname. |
 | DESCRIPTION| Clearly explain what will be changed, and, where relevant, what will not be changed. For example, if  filter setup requires RPM filtering, be sure to state this. Each ``#$ DESCRIPTION:` line results in a separate paragraph.  A blank `#$ DESCRIPTION:` line results in a blank line between paragraphs. All description text should be placed above any includes or options. |
@@ -121,7 +121,7 @@ All field tags must be:
 #$ FIRMWARE_VERSION: 4.2
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: TUNE
-#$ STATUS: true
+#$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: word1, word2, word3
 #$ AUTHOR: Name Lastname / Pilotname
 #$ DESCRIPTION: Description paragraph1
