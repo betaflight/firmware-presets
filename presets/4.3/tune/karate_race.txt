@@ -69,12 +69,12 @@ set f_yaw = 80
 
 set d_min_roll = 22
 set d_min_pitch = 22
-set d_min_boost_gain = 35
-set d_min_advance = 0
+set d_max_gain = 35
+set d_max_advance = 0
 set simplified_pids_mode = OFF
 
 # -- Feedforward --
-set feedforward_jitter_reduction = 5
+set feedforward_jitter_factor = 5
 
 # -- TPA --
 set tpa_rate = 70
@@ -132,8 +132,8 @@ set f_yaw = 80
 
 set d_min_roll = 26
 set d_min_pitch = 26
-set d_min_boost_gain = 25
-set d_min_advance = 0
+set d_max_gain = 25
+set d_max_advance = 0
 set simplified_pids_mode = OFF
 set simplified_dterm_filter = OFF
 #$ OPTION END

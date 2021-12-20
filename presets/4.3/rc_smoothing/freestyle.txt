@@ -9,7 +9,7 @@
 #$ DESCRIPTION: There should be no need to turn off feedforward or to enable transition, beause the jitter reduction provides dynamic attenuation of feedforward whenever the sticks move slowly.
 
 set rc_smoothing = ON
-set feedforward_jitter_reduction = 12
+set feedforward_jitter_factor = 12
 set feedforward_transition = 0
 set rc_smoothing_auto_factor = 40
 set rc_smoothing_setpoint_cutoff = 40
