@@ -48,7 +48,7 @@ set anti_gravity_gain = 4000
 
 # -- Feedforward jitter reduction --
 
-set feedforward_jitter_reduction = 12
+set feedforward_jitter_factor = 12
 
 #$ OPTION BEGIN (CHECKED): RPM filtering --
 

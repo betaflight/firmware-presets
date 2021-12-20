@@ -18,7 +18,7 @@ set rc_smoothing = ON
 
 set feedforward_averaging = 2_POINT
 set feedforward_smoothing = 35
-set feedforward_jitter_reduction = 5
+set feedforward_jitter_factor = 5
 
 # per cell or whole pack voltage readings back via telemetry to Tx:
 set report_cell_voltage = ON
@@ -29,19 +29,19 @@ set report_cell_voltage = OFF
 # sharper handling for racing:
 #$ OPTION BEGIN (UNCHECKED): Race feedforward settings
 set feedforward_smoothing = 65
-set feedforward_jitter_reduction = 4
+set feedforward_jitter_factor = 4
 #$ OPTION END
 
 # stronger smoothing for HD freestyle:
 #$ OPTION BEGIN (UNCHECKED): HD Freestyle feedforward settings
 set feedforward_averaging = 3_POINT
 set feedforward_smoothing = 70
-set feedforward_jitter_reduction = 9
+set feedforward_jitter_factor = 9
 #$ OPTION END
 
 # stronger smoothing for Cinematic flying (not for racing):
 #$ OPTION BEGIN (UNCHECKED): Cinematic feedforward settings
 set feedforward_averaging = 3_POINT
 set feedforward_smoothing = 75
-set feedforward_jitter_reduction = 12
+set feedforward_jitter_factor = 12
 #$ OPTION END

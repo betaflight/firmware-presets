@@ -58,8 +58,8 @@ set iterm_windup = 85
 set iterm_rotation = OFF
 
 # -- Dmax (default) --
-set d_min_boost_gain = 37
-set d_min_advance = 20
+set d_max_gain = 37
+set d_max_advance = 20
 
 # -- TPA (default) --
 set tpa_rate = 65
@@ -76,11 +76,11 @@ set feedforward_max_rate_limit = 90
 
 # -- Feedforward jitter reduction (default)--
 # depends on RC link and flying style - default is 7
-set feedforward_jitter_reduction = 7
+set feedforward_jitter_factor = 7
 
-# Note: feedforward_jitter_reduction is related to both RC link and flying style.
+# Note: feedforward_jitter_factor is related to both RC link and flying style.
 # It is overwritten by this default
-# The Preset author should provide feedforward_jitter_reduction options to set jitter reduction appropriately for different kinds of RC links
+# The Preset author should provide feedforward_jitter_factor options to set jitter reduction appropriately for different kinds of RC links
 
 # -- PIDsum limits (default) --
 set pidsum_limit = 500

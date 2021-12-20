@@ -19,4 +19,4 @@ set rc_smoothing = ON
 # Crossfire CFV3  this is the 11bit system can be checked in your TBS lua
 set feedforward_averaging = off
 set feedforward_smoothing = 25
-set feedforward_jitter_reduction = 7
+set feedforward_jitter_factor = 7

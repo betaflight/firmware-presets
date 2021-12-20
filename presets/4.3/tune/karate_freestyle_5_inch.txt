@@ -59,7 +59,7 @@ set simplified_pitch_pi_gain = 110
 
 # -- Feedforward --
 set feedforward_averaging = 2_POINT
-set feedforward_jitter_reduction = 12
+set feedforward_jitter_factor = 12
 
 #$ OPTION BEGIN (UNCHECKED): Dshot300
 set dshot_bidir = ON
