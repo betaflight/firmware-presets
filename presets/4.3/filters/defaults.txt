@@ -6,6 +6,9 @@
 #$ AUTHOR: Betaflight
 #$ DESCRIPTION: Resets Filter settings to 4.3 defaults
 
+# -- Motor protocol --
+set motor_pwm_protocol = DISABLED
+
 # -- Gyro lowpass filters --
 set gyro_lpf1_type = PT1
 set gyro_lpf1_dyn_min_hz = 250
