@@ -4,7 +4,7 @@
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: Supafly, SupaflyFPV, 4S, 6S, Freestyle, 5 inch, 5"
 #$ AUTHOR: SupaflyFPV
-#$ DESCRIPTION: Supa-Easy Freestyle Preset for 5 Inch Builds
+#$ DESCRIPTION: SupaflyFPV Community Freestyle Preset for 5 Inch Builds
 #$ DESCRIPTION:
 #$ DESCRIPTION: Easily tune freestyle builds and get great performance using only the Master Multiplier Slider.
 #$ DESCRIPTION:
@@ -12,9 +12,11 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: Half to one click up or down Master Slider to tweak the tune - in OSD or Configurator.
 #$ DESCRIPTION:
-#$ DESCRIPTION: If the quad feels loose, click Master up. Quad shakes/oscillates click Master down.
-#$ DESCRIPTION:
 #$ DESCRIPTION: RPM Filtering for best performance (default) - or de-select for Non RPM Setup (check esc compatibility).
+#$ DESCRIPTION:
+#$ DESCRIPTION: If using F7/H7 you can run 8k Pidloop and turn off Gyro Low Pass Filter 2.
+#$ DESCRIPTION:
+#$ DESCRIPTION: Master Slider setting tailored to your Motor Kv go here: https://tinyurl.com/SupaflyFPV
 #$ DESCRIPTION:
 #$ DESCRIPTION: Thats it. Enjoy!
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/41
@@ -38,9 +40,9 @@ set dyn_notch_max_hz = 650
 
 set simplified_dterm_filter = OFF
 set dterm_lpf1_dyn_min_hz = 0
-set dterm_lpf1_dyn_max_hz = 150
+set dterm_lpf1_dyn_max_hz = 140
 set dterm_lpf1_dyn_expo = 0
-set dterm_lpf1_static_hz = 90
+set dterm_lpf1_static_hz = 80
 
 # -- Antigravity --
 
