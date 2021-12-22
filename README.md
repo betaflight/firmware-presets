@@ -177,6 +177,15 @@ Note 1: The following disclaimer is MANDATORY for VTx presets:
 > The information provided in these presets is for educational and entertainment purposes only. Betaflight makes no representations as to the safety or legality of the use of any information provided herein. End users assume all responsibility and liability for ensuring they comply with all relevant laws and regulations.
 >Using these VTX tables may be in breach of your local RF laws. You as the end user must research and comply with your local regulations. In using these presets, the user assumes any and all liability associated with breaching local regulations.
 
+### Setting a motor protocol
+Preset authors are allowed to set motor protocol inside of these preset categoris: TUNE, FILTERS, OTHER, BNF even outside of the `#$ OPTIONS`.
+
+`set motor_pwm_protocol = .....`
+
+**However, a proper `#$ WARNING:` or `#$ INCLUDE_WARNING:` must be set in this case for safety.** Users and authors must understand that setting, for example, DSHOT with the ESCs that don't support DSHOT is dangerous and can spin up the motors right away without arming.
+
+Note: None of the default.txt files are resetting the motor protocol.
+
 ### INCLUDE
 Optional paths to other Presets that are to be included in the current Preset.
 
