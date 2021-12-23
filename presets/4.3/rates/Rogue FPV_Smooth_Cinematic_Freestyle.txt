@@ -2,7 +2,7 @@
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: RATES
 #$ STATUS: COMMUNITY
-#$ KEYWORDS: Pilot, Rogue FPV, youtube, freestyle, cinematic, low rates, smooth, flow
+#$ KEYWORDS: Pilot, Rogue FPV, youtube, freestyle, cinematic, low rates, smooth, flow, FPV_Rogue
 #$ AUTHOR: Rogue FPV
 #$ DESCRIPTION: Freestyle rates with 540 deg/sec for roll/pitch and 620 deg/sec for yaw. Smooth around the sticks middle, with expo rising at the stick throw ends, for clean precise flying.
 #$ DESCRIPTION: I use these rates on all my crafts, I hope you enjoy them, or use these settings as a base for dialing in your own rates.
@@ -10,6 +10,7 @@
 #$ DESCRIPTION: and technical drone tips on my youtube channel. Please check it out, Like and SUB! https://www.youtube.com/c/RogueFPV805
 #$ DESCRIPTION: Instagram - https://www.instagram.com/fpv_rogue/
 #$ DESCRIPTION: Facebook - https://www.facebook.com/rogue.fpv.52/
+#$ DESCRIPTION: Support me with Merch! - https://www.zazzle.com/store/rogue_fpv/collections
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/94
 #$ INCLUDE: presets/4.3/rates/defaults.txt
 
