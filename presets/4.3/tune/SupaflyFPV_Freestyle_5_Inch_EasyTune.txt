@@ -1,23 +1,23 @@
-#$ TITLE: SupaflyFPV Freestyle 5 Inch EasyTune
+#$ TITLE: SupaflyFPV Freestyle 5 Inch
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: TUNE
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: Supafly, SupaflyFPV, 4S, 6S, Freestyle, 5 inch, 5"
 #$ AUTHOR: SupaflyFPV
-#$ DESCRIPTION: Supa-Easy Freestyle Preset for 5 Inch Builds
+#$ DESCRIPTION: SupaflyFPV Community Freestyle Preset for 5 Inch Builds
 #$ DESCRIPTION:
-#$ DESCRIPTION: Easily tune freestyle builds and get great performance using only the Master Multiplier Slider.
-#$ DESCRIPTION:
-#$ DESCRIPTION: Select the option for your build with or without HD camera (eg GoPro) as the base tune.
+#$ DESCRIPTION: Select the option for your build with or without HD camera (eg GoPro) as the baseline.
 #$ DESCRIPTION:
 #$ DESCRIPTION: Half to one click up or down Master Slider to tweak the tune - in OSD or Configurator.
 #$ DESCRIPTION:
-#$ DESCRIPTION: If the quad feels loose, click Master up. Quad shakes/oscillates click Master down.
+#$ DESCRIPTION: For a Master Slider setting tailored to your Lipo and Motor Kv go here: https://tinyurl.com/SupaflyFPV
 #$ DESCRIPTION:
 #$ DESCRIPTION: RPM Filtering for best performance (default) - or de-select for Non RPM Setup (check esc compatibility).
 #$ DESCRIPTION:
-#$ DESCRIPTION: Thats it. Enjoy!
-#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/41
+#$ DESCRIPTION: If using F7/H7 Flight Controller run 8k Pidloop and turn off Gyro Low Pass Filter 2 for max performance.
+#$ DESCRIPTION:
+#$ DESCRIPTION: Enjoy!
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/124
 #$ INCLUDE_WARNING: misc/warnings/en/rpm_filters.txt
 #$ INCLUDE: presets/4.3/tune/defaults.txt
 #$ INCLUDE: presets/4.3/filters/defaults.txt
@@ -26,21 +26,24 @@
 
 set dshot_bidir = OFF
 set simplified_gyro_filter = OFF
+set simplified_gyro_filter_multiplier = 0
 set gyro_lpf2_static_hz = 1000
 set gyro_lpf1_dyn_min_hz = 300
 set gyro_lpf1_dyn_max_hz = 600
 set dyn_notch_count = 3
 set dyn_notch_q = 300
 set dyn_notch_min_hz = 100
-set dyn_notch_max_hz = 650
+set dyn_notch_max_hz = 800
 
 # -- Dterm filtering --
 
 set simplified_dterm_filter = OFF
+set simplified_dterm_filter_multiplier = 0
 set dterm_lpf1_dyn_min_hz = 0
-set dterm_lpf1_dyn_max_hz = 150
+set dterm_lpf1_dyn_max_hz = 0
 set dterm_lpf1_dyn_expo = 0
-set dterm_lpf1_static_hz = 90
+set dterm_lpf1_static_hz = 80
+set dterm_lpf2_static_hz = 140
 
 # -- Antigravity --
 
@@ -52,8 +55,10 @@ set feedforward_jitter_factor = 12
 
 #$ OPTION BEGIN (CHECKED): RPM filtering
 
+set motor_pwm_protocol = DSHOT600
 set dshot_bidir = ON
 set simplified_gyro_filter = OFF
+set simplified_gyro_filter_multiplier = 0
 set rpm_filter_harmonics = 1
 set gyro_lpf2_static_hz = 1000
 set gyro_lpf1_dyn_min_hz = 300
@@ -62,131 +67,67 @@ set gyro_lpf1_dyn_expo = 8
 set dyn_notch_count = 2
 set dyn_notch_q = 400
 set dyn_notch_min_hz = 100
-set dyn_notch_max_hz = 650
+set dyn_notch_max_hz = 800
 
 #$ OPTION END
 
 #$ OPTION BEGIN (CHECKED): 4s Lipo with HD Cam (2400-2700kv motors)
 
-# -- PID values --
-
-set p_pitch = 71
-set i_pitch = 88
-set d_pitch = 43
-set f_pitch = 146
-set p_roll = 59
-set i_roll = 73
-set d_roll = 39
-set f_roll = 122
-set p_yaw = 59
-set i_yaw = 73
-set f_yaw = 122
-set d_min_roll = 39
-set d_min_pitch = 43
-
 # -- Sliders --
 
 set simplified_master_multiplier = 120
-set simplified_i_gain = 70
+set simplified_i_gain = 75
 set simplified_d_gain = 110
 set simplified_pi_gain = 110
 set simplified_dmax_gain = 0
-set simplified_feedforward_gain = 85
-set simplified_pitch_d_gain = 110
-set simplified_pitch_pi_gain = 120
-set simplified_dterm_filter = OFF
+set simplified_feedforward_gain = 90
+set simplified_pitch_d_gain = 95
+set simplified_pitch_pi_gain = 115
+simplified_tuning apply
 
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): 4s Lipo with No HD Cam (2400-2700kv motors)
 
-# -- PID values --
-
-set p_pitch = 65
-set i_pitch = 81
-set d_pitch = 43
-set f_pitch = 134
-set p_roll = 59
-set i_roll = 73
-set d_roll = 39
-set f_roll = 122
-set p_yaw = 59
-set i_yaw = 73
-set f_yaw = 122
-set d_min_roll = 39
-set d_min_pitch = 43
-
 # -- Sliders --
 
 set simplified_master_multiplier = 120
-set simplified_i_gain = 70
+set simplified_i_gain = 75
 set simplified_d_gain = 110
 set simplified_pi_gain = 110
 set simplified_dmax_gain = 0
-set simplified_feedforward_gain = 85
-set simplified_pitch_d_gain = 110
-set simplified_pitch_pi_gain = 110
-set simplified_dterm_filter = OFF
+set simplified_feedforward_gain = 90
+set simplified_pitch_d_gain = 90
+simplified_tuning apply
 
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): 6s Lipo with HD Cam (1750 - 1950kv motors)
 
-# -- PID values --
-
-set p_pitch = 59
-set i_pitch = 79
-set d_pitch = 39
-set f_pitch = 136
-set p_roll = 49
-set i_roll = 66
-set d_roll = 33
-set f_roll = 114
-set p_yaw = 49
-set i_yaw = 66
-set f_yaw = 114
-set d_min_roll = 33
-set d_min_pitch = 39
-
 # -- Sliders --
 
+set simplified_master_multiplier = 100
 set simplified_i_gain = 75
 set simplified_d_gain = 110
-set simplified_pi_gain = 110
+set simplified_pi_gain = 115
 set simplified_dmax_gain = 0
-set simplified_feedforward_gain = 95
-set simplified_pitch_d_gain = 120
-set simplified_pitch_pi_gain = 120
-set simplified_dterm_filter = OFF
+set simplified_feedforward_gain = 90
+set simplified_pitch_pi_gain = 110
+simplified_tuning apply
 
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): 6s Lipo with No HD Cam (1750 - 1950kv motors)
 
-# -- PID values --
-
-set p_pitch = 54
-set i_pitch = 77
-set d_pitch = 36
-set p_roll = 49
-set i_roll = 70
-set d_roll = 33
-set f_roll = 114
-set p_yaw = 49
-set i_yaw = 70
-set f_yaw = 114
-set d_min_roll = 33
-set d_min_pitch = 36
-
 # -- Sliders --
 
-set simplified_i_gain = 80
+set simplified_master_multiplier = 100
+set simplified_i_gain = 75
 set simplified_d_gain = 110
-set simplified_pi_gain = 110
+set simplified_pi_gain = 115
 set simplified_dmax_gain = 0
-set simplified_feedforward_gain = 95
-set simplified_pitch_d_gain = 110
-set simplified_pitch_pi_gain = 110
-set simplified_dterm_filter = OFF
+set simplified_feedforward_gain = 90
+set simplified_pitch_d_gain = 95
+simplified_tuning apply
 
 #$ OPTION END
