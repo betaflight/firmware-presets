@@ -45,7 +45,7 @@ set dterm_lpf1_type = PT1
 set dterm_lpf1_dyn_min_hz = 75
 set dterm_lpf1_dyn_max_hz = 150
 set dterm_lpf1_dyn_expo = 5
-set dterm_lpf1_static_hz = 150
+set dterm_lpf1_static_hz = 75
 
 set dterm_lpf2_type = PT1
 set dterm_lpf2_static_hz = 150
