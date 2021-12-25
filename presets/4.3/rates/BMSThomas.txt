@@ -3,7 +3,7 @@
 #$ CATEGORY: RATES
 #$ STATUS: COMMUNITY
 #$ KEYWORDS: racing, BMSThomas, rates, MultiGP
-#$ AUTHOR: Ivan Efimov (Limon)
+#$ AUTHOR: BMSThomas
 #$ DESCRIPTION: Racing and freestyle rates by BMSThomas - MultiGP International Open 2019 champion.
 #$ DESCRIPTION: ACTUAL rates with 720 degrees/sec max.
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/10
