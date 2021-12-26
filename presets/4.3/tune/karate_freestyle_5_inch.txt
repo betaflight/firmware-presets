@@ -1,7 +1,7 @@
 #$ TITLE: Karate Freestyle 5"
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: TUNE
-#$ STATUS: COMMUNITY 
+#$ STATUS: OFFICIAL 
 #$ KEYWORDS: karate, 6S,5 inch, 5", sugarK, limon, ctzsnooze, karateBrot, freestyle
 #$ AUTHOR: sugarK
 #$ DESCRIPTION: This is the sugarK freestyle tune, its been test over the last few months, on 5" quads by members of the UAVtech discord.. This is a starting point tune and has siders active so you can fine tune it easily.
@@ -18,57 +18,42 @@
 
 
 # -- Gyro lowpass filters --
-set gyro_lpf2_static_hz = 1000
-set gyro_lpf1_type = PT1
-set gyro_lpf2_type = PT1
-set gyro_lpf1_dyn_min_hz = 500
-set gyro_lpf1_dyn_max_hz = 1000
 set simplified_gyro_filter_multiplier = 200
+
 
 # -- Gyro Dynamic Notches --
 set dyn_notch_count = 2
 set dyn_notch_q = 500
-set dyn_notch_min_hz = 200
+set dyn_notch_min_hz = 120
 
 # -- Dterm filtering --
-set simplified_dterm_filter = ON
-set simplified_dterm_filter_multiplier = 100
 set dterm_lpf1_dyn_expo = 10
 
 # -- RPM filtering --
 set rpm_filter_fade_range_hz = 100
 
 # -- PID values --
-set p_pitch = 59
-set i_pitch = 105
-set d_pitch = 59
-set f_pitch = 151
-set p_roll = 53
-set i_roll = 95
-set d_roll = 53
-set f_roll = 138
-set d_min_roll = 43
-set d_min_pitch = 47
 set simplified_pids_mode = RP
 set simplified_d_gain = 145
-set simplified_pi_gain = 120
+set simplified_pi_gain = 115
 set simplified_dmax_gain = 70
 set simplified_feedforward_gain = 115
-set simplified_pitch_d_gain = 110
+set simplified_pitch_d_gain = 95
 set simplified_pitch_pi_gain = 110
+simplified_tuning apply
 
 # -- Feedforward --
 set feedforward_averaging = 2_POINT
 set feedforward_jitter_factor = 12
 
+#$ OPTION BEGIN (CHECKED): Dshot600
+set dshot_bidir = ON
+set motor_pwm_protocol = DSHOT600
+#$ OPTION END
+
 #$ OPTION BEGIN (UNCHECKED): Dshot300
 set dshot_bidir = ON
 set motor_pwm_protocol = Dshot300
-#$ OPTION END
-
-#$ OPTION BEGIN (UNCHECKED): Dshot600
-set dshot_bidir = ON
-set motor_pwm_protocol = DSHOT600
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): dynamic idle 
