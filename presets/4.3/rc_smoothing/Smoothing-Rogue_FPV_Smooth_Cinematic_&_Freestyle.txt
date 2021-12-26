@@ -1,0 +1,33 @@
+#$ TITLE: Rogue FPV Smooth Cinematic & Freestyle RC smoothing
+#$ FIRMWARE_VERSION: 4.2
+#$ CATEGORY: RC_SMOOTHING
+#$ STATUS: Community
+#$ KEYWORDS: cinematic, rc, smoothing, rc_smoothing, jitter, transition, hd, Pilot, Rogue_FPV, youtube, freestyle, cinematic, low rates, smooth, flow, FPV_Rogue
+#$ AUTHOR: Rogue_FPV
+#$ DESCRIPTION: This is my default settings for RC Smoothing when using Crossfire. I use these settings on all my crafts, from 4" - 7".
+#$ DESCRIPTION: Note: auto-smoothing values are over-ridden by manually configure cutoff values.
+#$ DESCRIPTION: This preset provides RC smoothing settings for cinematic HD footage and hard core balls ripping freestyle, basically it's my "special sauce" for my style.
+#$ DESCRIPTION: There is no need to turn off feedforward; it should remain at values that give good stick responsiveness.
+#$ DESCRIPTION: For even smoother stick feel, reduce rc_smoothing_setpoint_cutoff and rc_smoothing_feedforward_cutoff to 10 in CLI.  If too smooth, increase rc_smoothing_setpoint_cutoff and rc_smoothing_feedforward_cutoff to 20 in CLI.
+#$ DESCRIPTION: Rogue FPV - one of the most non-famous YouTubers in FPV. I like to publish cinematic drone footage, FPV Freestyle, 
+#$ DESCRIPTION: and technical drone tips on my youtube channel. Please check it out, Like and SUB! https://www.youtube.com/c/RogueFPV805
+#$ DESCRIPTION: Instagram - https://www.instagram.com/fpv_rogue/
+#$ DESCRIPTION: Facebook - https://www.facebook.com/rogue.fpv.52/
+#$ DESCRIPTION: Instagram - https://www.instagram.com/fpv_rogue/
+#$ DESCRIPTION: Support me with Merch! - https://www.zazzle.com/store/rogue_fpv/collections
+
+set rc_smoothing = ON
+set iterm_relax_cutoff = 10
+set rc_smoothing_auto_smoothness = 40
+set ff_interpolate_sp = AVERAGED_3
+set ff_smooth_factor = 50
+set ff_spike_limit = 50
+set ff_boost = 0
+set feedforward_transition = 70
+set yaw_lowpass_hz = 50
+set throttle_boost = 5
+set throttle_boost_cutoff = 15
+set dyn_lpf_dterm_curve_expo = 5
+set gyro_rpm_notch_q = 900
+set iterm_windup = 75
+
