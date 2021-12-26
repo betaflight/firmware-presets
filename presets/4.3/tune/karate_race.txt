@@ -23,8 +23,6 @@
 # -- Gyro lowpass filters --
 set gyro_lpf1_static_hz = 0
 set gyro_lpf1_dyn_min_hz = 0
-set simplified_gyro_filter = OFF
-
 
 # -- Gyro Dynamic Notches --
 set dyn_notch_count = 2
@@ -34,7 +32,6 @@ set dyn_notch_max_hz = 650
 
 # -- Dterm filtering --
 
-
 # -- RPM filtering --
 set dshot_bidir = ON
 set rpm_filter_fade_range_hz = 100
@@ -43,7 +40,6 @@ set rpm_filter_fade_range_hz = 100
 set yaw_spin_recovery = AUTO
 set thrust_linear = 0
 set throttle_boost = 2
-
 
 # -- Antigravity --
 set anti_gravity_gain = 5500
@@ -75,34 +71,32 @@ set simplified_pids_mode = OFF
 
 # -- Feedforward --
 set feedforward_jitter_factor = 5
+set feedforward_max_rate_limit = 100
 
 # -- TPA --
 set tpa_rate = 70
 set tpa_breakpoint = 1250
+
+#$ OPTION BEGIN (CHECKED): Dshot600
+set dshot_bidir = ON
+set motor_pwm_protocol = DSHOT600
+#$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): Dshot300
 set dshot_bidir = ON
 set motor_pwm_protocol = Dshot300
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED): Dshot600
-set dshot_bidir = ON
-set motor_pwm_protocol = DSHOT600
-#$ OPTION END
-
 #$ OPTION BEGIN (UNCHECKED): dynamic idle for 2000kv 6s
-
 #dynamic idle for 6s 2000kv
 set dshot_idle_value = 400
 set dyn_idle_min_rpm = 40
 set dyn_idle_p_gain = 35
 #$ OPTION END
 
-
 #$ OPTION BEGIN (UNCHECKED): spicy tune 
 
 #spicy tune use with care
-
 # -- Gyro Dynamic Notches --
 set dyn_notch_count = 1
 set dyn_notch_q = 600
@@ -135,10 +129,20 @@ set d_min_pitch = 26
 set d_max_gain = 25
 set d_max_advance = 0
 set simplified_pids_mode = OFF
-set simplified_dterm_filter = OFF
 #$ OPTION END
 
+#$ OPTION BEGIN (UNCHECKED): Noisy airframe (can be used with spicey)
 
+# -- Gyro lowpass filters --
+set gyro_lpf1_static_hz = 0
+set gyro_lpf2_static_hz = 0
+set gyro_lpf1_dyn_min_hz = 0
+set gyro_lpf1_dyn_max_hz = 0
+
+# -- Dterm filtering --
+set dterm_lpf1_dyn_expo = 10
+set dterm_lpf1_type = BIQUAD
+#$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): sugarK's rates
 set thr_mid = 25
