@@ -1,0 +1,31 @@
+#$ TITLE: Pablo Flor/Fenix Fpv Tune
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: TUNE
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: youtube, Fenix, freestyle, Pablo Flor
+#$ AUTHOR: Pablo Flor
+#$ DESCRIPTION: Pablo Flor / Fenix Fpv Pid´s for 5inch Freestyle builds
+#$ DESCRIPTION:
+#$ DESCRIPTION: This configuartion is intended for freestyle quads, specially for setups around 730g AUW (with Gopro and Lipo)
+#$ DESCRIPTION:
+#$ DESCRIPTION: I have worked on this tune to minimize propwash and make the quad feel "on rails" which really helps for hitting gaps and general precission flying.
+#$ DESCRIPTION:
+#$ DESCRIPTION: Note: I also use the RPM Filtering for clean builds preset, so as a recommendation, load also that one if your quad supports it.
+#$ DESCRIPTION:
+#$ DESCRIPTION: Enjoy!
+#$ INCLUDE: presets/4.3/tune/defaults.txt
+
+#  -- PID settings -- 
+
+set anti_gravity_gain = 4000
+set feedforward_jitter_factor = 12
+set simplified_master_multiplier = 120
+set simplified_i_gain = 75
+set simplified_d_gain = 115
+set simplified_pi_gain = 115
+set simplified_dmax_gain = 0
+set simplified_feedforward_gain = 95
+set simplified_pitch_d_gain = 115
+set simplified_dterm_filter = OFF
+set simplified_dterm_filter_multiplier = 0
+

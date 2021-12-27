@@ -5,7 +5,6 @@
 #$ KEYWORDS: youtube, Fenix, freestyle, Pablo Flor
 #$ AUTHOR: Pablo Flor
 #$ DESCRIPTION: Freestyle rates with 760 deg/sec for roll/pitch and 667 deg/sec for yaw. Great precission for bando ripping but enough speed to do some juicy moves.
-#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/94
 #$ INCLUDE: presets/4.3/rates/defaults.txt
 
 set rates_type = BETAFLIGHT

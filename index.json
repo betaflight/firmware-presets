@@ -1379,7 +1379,7 @@
     },
     {
       "fullPath": "presets/4.3/rates/PabloFlor_Freestyle.txt",
-      "hash": "c733706251b0c465c892684c0f4df9491eaf5515ddcf55d4ca5c7e64a626bc23",
+      "hash": "b87a6e7cd7ff937d6c838da0d13f903c8ac0f7c2b3e031f15865393264d4b441",
       "options": [],
       "title": "Pablo Flor/Fenix Fpv Rates",
       "firmware_version": [
@@ -1397,7 +1397,6 @@
       "description": [
         "Freestyle rates with 760 deg/sec for roll/pitch and 667 deg/sec for yaw. Great precission for bando ripping but enough speed to do some juicy moves."
       ],
-      "discussion": "https://github.com/betaflight/firmware-presets/pull/94",
       "include": [
         "presets/4.3/rates/defaults.txt"
       ]
@@ -2307,6 +2306,38 @@
       "include": [
         "presets/4.3/tune/defaults.txt",
         "presets/4.3/filters/defaults.txt"
+      ]
+    },
+    {
+      "fullPath": "presets/4.3/tune/PabloFlor_Freestyle.txt",
+      "hash": "e6a4dc306314d47b1242c554f47f8943bbefe70c9938a8c7543f4bc5f7b58c1c",
+      "options": [],
+      "title": "Pablo Flor/Fenix Fpv Tune",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "youtube",
+        "Fenix",
+        "freestyle",
+        "Pablo Flor"
+      ],
+      "author": "Pablo Flor",
+      "description": [
+        "Pablo Flor / Fenix Fpv Pid´s for 5inch Freestyle builds",
+        "",
+        "This configuartion is intended for freestyle quads, specially for setups around 730g AUW (with Gopro and Lipo)",
+        "",
+        "I have worked on this tune to minimize propwash and make the quad feel \"on rails\" which really helps for hitting gaps and general precission flying.",
+        "",
+        "Note: I also use the RPM Filtering for clean builds preset, so as a recommendation, load also that one if your quad supports it.",
+        "",
+        "Enjoy!"
+      ],
+      "include": [
+        "presets/4.3/tune/defaults.txt"
       ]
     },
     {
