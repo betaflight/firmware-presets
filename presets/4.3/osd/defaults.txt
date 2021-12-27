@@ -138,5 +138,5 @@ set osd_rcchannels = -1,-1,-1,-1
 set osd_camera_frame_width = 24
 set osd_camera_frame_height = 11
 set osd_stat_avg_cell_value = OFF
-set osd_task_frequency = 60
+set osd_framerate_hz = 12
 set osd_menu_background = TRANSPARENT
