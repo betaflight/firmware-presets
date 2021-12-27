@@ -16,8 +16,8 @@ set serialrx_provider = CRSF
 set rc_smoothing = ON
 
 set feedforward_averaging = 2_POINT
-set feedforward_smoothing = 35
-set feedforward_jitter_reduction = 6
+set feedforward_smooth_factor = 35
+set feedforward_jitter_factor = 6
 
 # per cell or whole pack voltage readings back via telemetry to Tx:
 set report_cell_voltage = ON
@@ -28,20 +28,20 @@ set report_cell_voltage = OFF
 # sharper handling for racing:
 #$ OPTION BEGIN (UNCHECKED): Race feedforward settings
 set feedforward_averaging = 2_POINT
-set feedforward_smoothing = 25
-set feedforward_jitter_reduction = 5
+set feedforward_smooth_factor = 25
+set feedforward_jitter_factor = 5
 #$ OPTION END
 
 # stronger smoothing for HD freestyle (not for racing):
 #$ OPTION BEGIN (UNCHECKED): HD Freestyle feedforward settings
 set feedforward_averaging = 2_POINT
-set feedforward_smoothing = 50
-set feedforward_jitter_reduction = 10
+set feedforward_smooth_factor = 50
+set feedforward_jitter_factor = 10
 #$ OPTION END
 
 # stronger smoothing for Cinematic flying (not for racing):
 #$ OPTION BEGIN (UNCHECKED): Cinematic feedforward settings
 set feedforward_averaging = 2_POINT
-set feedforward_smoothing = 65
-set feedforward_jitter_reduction = 12
+set feedforward_smooth_factor = 65
+set feedforward_jitter_factor = 12
 #$ OPTION END

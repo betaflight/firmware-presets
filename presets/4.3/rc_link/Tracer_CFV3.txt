@@ -18,5 +18,5 @@ set rc_smoothing = ON
 
 # Tracer CFV3 this is the 11bit system can be checked in your TBS lua
 set feedforward_averaging = OFF
-set feedforward_smoothing = 35
-set feedforward_jitter_reduction = 7
+set feedforward_smooth_factor = 35
+set feedforward_jitter_factor = 7

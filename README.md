@@ -101,7 +101,7 @@ All field tags must be:
 | TITLE | Explanatory, clear, concise; include the main characteristics of the preset. |
 | FIRMWARE_VERSION | One line for each supported version. as many lines as requred. Ensure that all CLI commands are readable by the firmware versions listed.  CLI commands that do not match will throw errors.  If a Preset support two versions by including two versions of the same command, explain to the user that an error will be gene|
 | CATEGORY | See category list below.  Only approved category names will be accepted. |
-| STATUS | `Official` for Betaflight developed Presets, `Community` for user-contributed Presets, or `Experimental` for 'in-development' Presets |
+| STATUS | `OFFICIAL` for Betaflight developed Presets, `COMMUNITY` for user-contributed Presets, or `EXPERIMENTAL` for 'in-development' Presets |
 | KEYWORDS | Choose carefully.  Make it easy for your intended user to find your preset with keywords that you expect they will use.  Comma separate each entry. |
 | AUTHOR | Your Github name or nickname. |
 | DESCRIPTION| Clearly explain what will be changed, and, where relevant, what will not be changed. For example, if  filter setup requires RPM filtering, be sure to state this. Each ``#$ DESCRIPTION:` line results in a separate paragraph.  A blank `#$ DESCRIPTION:` line results in a blank line between paragraphs. All description text should be placed above any includes or options. |
@@ -121,7 +121,7 @@ All field tags must be:
 #$ FIRMWARE_VERSION: 4.2
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: TUNE
-#$ STATUS: true
+#$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: word1, word2, word3
 #$ AUTHOR: Name Lastname / Pilotname
 #$ DESCRIPTION: Description paragraph1
@@ -164,7 +164,7 @@ All presets must be assigned one of the following categories:
 | TUNE | PID parameters and sub-parameters like TPA, Antigravity, Thrust Linear, etc, including Filter parameters including RPM filtering.  May include motor_output_limit, throttle curve / scale, feedforward_boost, feedforward_transition or feedforward_limit, vbat_sag_compensation, Throttle Boost, and the like.  Should not include `RC_lINK` or `RC_SMOOTHING` settings unless provided in Regions that are set to unchecked by default. |
 | RATES | Rates type and the values that affect rates (rc_rate, expo and s_rate).  Throttle curve settings, rate limits, or level expo settings are changed, they should be provided in separate presets.  A Rates name may be provided in an optional default-off Region.  TPA should *not* be included in a Rates preset, it is a `TUNE` parameter.|
 | FILTERS | Filter settings optimised to suit a particular type of build.  Since filter optimisation depends greatly on whether or not RPM filtering is active, we must state the RPM filtering requirement be active in the name and in the description.  A region may be provided with alternate settings for the situation where RPM filtering is not available. |
-| RC_LINK | The type of link (serial, PPM), the protocol used (SBus, CRSF, Spektrum etc), including telemetry settings, units, precision settings, etc, and the feedforward_averaging and feedforward_smoothing, and feedforward_jitter settings that must be configured to suit the link speed.  Separate Presets, or Regions, may be used for RC links that can be set to different speeds.|
+| RC_LINK | The type of link (serial, PPM), the protocol used (SBus, CRSF, Spektrum etc), including telemetry settings, units, precision settings, etc, and the feedforward_averaging and feedforward_smooth_factor, and feedforward_jitter settings that must be configured to suit the link speed.  Separate Presets, or Regions, may be used for RC links that can be set to different speeds.|
 | RC_SMOOTHING | RC smoothing settings vary how reactive the stick is to sudden stick changes.  Auto configurations can provide anything from race to cinematic levels of smoothness, but the final amount of smoothness in an auto configuration also depends on the RC link speed.  Manual rc_smoothing configurations can provide more consistent smoothing across a wider range of RC Link speeds.  
 | OSD | Any collection of OSD related parameters.  May include report_cell_voltage, debug_mode or similar settings that affect what is shown on the OSD.  |
 | VTX | A VTx table or related settings.  The disclaimer below at note 1 must be included.|
@@ -176,6 +176,15 @@ All presets must be assigned one of the following categories:
 Note 1: The following disclaimer is MANDATORY for VTx presets:
 > The information provided in these presets is for educational and entertainment purposes only. Betaflight makes no representations as to the safety or legality of the use of any information provided herein. End users assume all responsibility and liability for ensuring they comply with all relevant laws and regulations.
 >Using these VTX tables may be in breach of your local RF laws. You as the end user must research and comply with your local regulations. In using these presets, the user assumes any and all liability associated with breaching local regulations.
+
+### Setting a motor protocol
+Preset authors are allowed to set motor protocol inside of these preset categoris: TUNE, FILTERS, OTHER, BNF even outside of the `#$ OPTIONS`.
+
+`set motor_pwm_protocol = .....`
+
+**However, a proper `#$ WARNING:` or `#$ INCLUDE_WARNING:` must be set in this case for safety.** Users and authors must understand that setting, for example, DSHOT with the ESCs that don't support DSHOT is dangerous and can spin up the motors right away without arming.
+
+Note: None of the default.txt files are resetting the motor protocol.
 
 ### INCLUDE
 Optional paths to other Presets that are to be included in the current Preset.

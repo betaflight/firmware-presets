@@ -56,8 +56,8 @@ set iterm_rotation = OFF
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): DMax settings
-set d_min_boost_gain = 37
-set d_min_advance = 20
+set d_max_gain = 37
+set d_max_advance = 20
 set simplified_dmax_gain = 100
 #$ OPTION END
 
@@ -76,8 +76,8 @@ set anti_gravity_gain = 3500
 #$ OPTION BEGIN (UNCHECKED): Feedforward
 set feedforward_boost = 18
 set feedforward_max_rate_limit = 95
-set feedforward_jitter_reduction = 5
-set feedforward_jitter_reduction = 7
+set feedforward_jitter_factor = 5
+set feedforward_jitter_factor = 7
 set feedforward_averaging = OFF
 #$ OPTION END
 

@@ -17,8 +17,8 @@
 feature RX_SERIAL
 set serialrx_provider = SBUS
 set feedforward_averaging = OFF
-set feedforward_smoothing = 25
-set feedforward_jitter_reduction = 7
+set feedforward_smooth_factor = 25
+set feedforward_jitter_factor = 7
 set frsky_vfas_precision = 1
 
 # we do not recommend disabling rc smoothing
@@ -62,20 +62,20 @@ set feedforward_smooth_factor = 35
 
 # sharper handling for racing:
 #$ OPTION BEGIN (UNCHECKED): Race
-set feedforward_smoothing = 20
-set feedforward_jitter_reduction = 5
+set feedforward_smooth_factor = 20
+set feedforward_jitter_factor = 5
 #$ OPTION END
 
 # stronger smoothing for HD freestyle (not for racing):
 #$ OPTION BEGIN (UNCHECKED): HD Freestyle
 set feedforward_averaging = 2_POINT
-set feedforward_smoothing = 45
-set feedforward_jitter_reduction = 12
+set feedforward_smooth_factor = 45
+set feedforward_jitter_factor = 12
 #$ OPTION END
 
 # stronger smoothing for Cinematic flying (not for racing):
 #$ OPTION BEGIN (UNCHECKED): Cinematic
 set feedforward_averaging = 2_POINT
-set feedforward_smoothing = 60
-set feedforward_jitter_reduction = 15
+set feedforward_smooth_factor = 60
+set feedforward_jitter_factor = 15
 #$ OPTION END

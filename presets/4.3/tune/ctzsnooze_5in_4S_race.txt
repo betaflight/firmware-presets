@@ -50,7 +50,7 @@ set iterm_relax_cutoff = 25
 # -- iTerm rotation (off, default) --
 
 # -- Dmax --
-set d_min_advance = 0
+set d_max_advance = 0
 
 # -- TPA --
 set tpa_rate = 65
@@ -59,9 +59,9 @@ set tpa_breakpoint = 1250
 # -- Feedforward --
 set feedforward_boost = 18
 set feedforward_max_rate_limit = 95
-set feedforward_jitter_reduction = 5
+set feedforward_jitter_factor = 5
 # -- Feedforward averaging (do not change)--
-set feedforward_jitter_reduction = 5
+set feedforward_jitter_factor = 5
 
 # -- PIDsum limits (default)--
 # -- Antigravity (default) --

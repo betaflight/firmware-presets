@@ -1,0 +1,1 @@
+This preset sets your motor protocol to DSHOT. If your ESC does not support DSHOT then using this preset is extremely DANGEROUS. It can spin up motors even before you arm a drone!!! DO NOT APPLY THIS PRESET IF YOU ARE NOT SURE!
