@@ -2,13 +2,14 @@
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: TUNE
 #$ STATUS: COMMUNITY
-#$ KEYWORDS: youtube, Fenix, freestyle, Pablo Flor
+#$ KEYWORDS: youtube, Fenix, freestyle, Pablo Flor, HD
 #$ AUTHOR: Pablo Flor
 #$ DESCRIPTION: Pablo Flor / Fenix Fpv Pid´s for 5inch Freestyle builds
 #$ DESCRIPTION:
-#$ DESCRIPTION: This configuartion is intended for freestyle quads, specially for setups around 730g AUW (with Gopro and Lipo)
-#$ DESCRIPTION:
-#$ DESCRIPTION: I have worked on this tune to minimize propwash and make the quad feel "on rails" which really helps for hitting gaps and general precission flying.
+#$ DESCRIPTION: This configuartion is intended for freestyle quads, specially for setups around 730g AUW (with Gopro and Lipo). It works the best for 6s quads with 1800-1900kv motors and medium pitch props (5143). Nevertheless I have tested this tune on other 4s quads and the result is great!! 
+#$ DESCRIPTION: if any high throttle vibration is noticed, lowering the master multiplier slider should solve it.
+#$ DESCRIPTION: 
+#$ DESCRIPTION: I have worked on this tune to minimize propwash and make the quad feel "on rails" which really helps for hitting gaps and general precission flying. It also makes for a very responsive flight characteristics which is perferct for agressive freestyle eventhough my main focus is smooth and flowy flights.
 #$ DESCRIPTION:
 #$ DESCRIPTION: Note: I also use the RPM Filtering for clean builds preset, so as a recommendation, load also that one if your quad supports it.
 #$ DESCRIPTION:
