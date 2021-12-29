@@ -10,7 +10,7 @@
 #$ DESCRIPTION: ----------
 #$ DESCRIPTION: Using the VTX tables as provided may be in breach of your local RF laws. It is up to the end user to research and comply with local regulations and in using these presets the user assumes all liability associated with breaching local regulations. 
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/89
-#$ INCLUDE: presets/4.3/vtx/defaults.txt
+#$ INCLUDE: presets/4.3/vtx/defaults_vtx_tables.txt
 #$ INCLUDE_DISCLAIMER: misc/disclaimer/en/vtxtable.txt
 
 
