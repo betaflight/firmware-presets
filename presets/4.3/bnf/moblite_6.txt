@@ -1,0 +1,121 @@
+#$ TITLE: HappyModel Moblite 6 settings
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: BNF
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: HappyModel, Moblite, bnf
+#$ AUTHOR: antony-weber
+#$ DESCRIPTION: Basic settings for a HappyModel Moblite 6 quadcopter
+#$ INCLUDE_DISCLAIMER: misc/disclaimer/en/vtxtable.txt
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/136
+
+defaults 
+
+# remap motors
+# resources
+resource MOTOR 1 NONE
+resource MOTOR 2 NONE
+resource MOTOR 3 NONE
+resource MOTOR 4 NONE
+
+resource MOTOR 1 B08
+resource MOTOR 2 B07
+resource MOTOR 3 B06
+resource MOTOR 4 B10
+
+# SA for internal VTX
+# serial
+serial 1 2048 115200 57600 0 115200
+
+# feature
+feature LED_STRIP
+
+# beacon
+beacon RX_LOST
+beacon RX_SET
+
+# some basic onboard LED setup
+# led
+led 0 0,0::CB:6
+led 1 1,0::CB:6
+
+# ARM on AUX1
+# aux
+aux 0 0 0 1950 2050 0 0
+
+# master
+set ibata_scale = 1175
+set small_angle = 180
+set align_board_yaw = 180
+set motor_pwm_protocol = DSHOT300
+set motor_poles = 12
+
+#$ INCLUDE: presets/4.3/vtx/Happymodel_built_in_vtx.txt
+
+#$ OPTION BEGIN (UNCHECKED): Reversed motors
+set yaw_motors_reversed = ON
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Bidirectional DSHOT
+set dshot_bidir = ON
+set rpm_filter_fade_range_hz = 100
+set dyn_notch_count = 1
+set dyn_idle_min_rpm = 70
+#$ OPTION END
+
+#$ OPTION_GROUP BEGIN: RC Protocol (select one):
+
+#$ OPTION BEGIN (CHECKED): SPI FrSky D8
+set rx_spi_protocol = FRSKY_D
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): SPI FrSky D16
+set rx_spi_protocol = FRSKY_X
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): REDPINE
+set rx_spi_protocol = REDPINE
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): CRSF
+serial 1 2048 115200 57600 0 115200
+feature RX_SERIAL
+feature TELEMETRY
+set serialrx_provider = CRSF
+#$ OPTION END
+
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: CPU owerclock (select one):
+
+#$ OPTION BEGIN (CHECKED): OFF
+set cpu_overclock = OFF
+#$ OPTION END
+#$ OPTION BEGIN (UNCHECKED): 108MHz
+set cpu_overclock = 108MHZ
+#$ OPTION END
+#$ OPTION BEGIN (UNCHECKED): 120MHz
+set cpu_overclock = 120MHZ
+#$ OPTION END
+
+#$ OPTION_GROUP END
+
+#$ OPTION BEGIN (UNCHECKED): Race settings (EXPERIMENTAL)
+profile 0
+set simplified_master_multiplier = 150
+set simplified_pi_gain = 140
+set simplified_feedforward_gain = 160
+set vbat_sag_compensation = 100
+set thrust_linear = 25
+set yaw_lowpass_hz = 0
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Extended VTX power levels
+vtxtable powerlevels 3
+vtxtable powervalues 0 1 2
+vtxtable powerlabels 25 100 200
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): VTX low band
+vtxtable bands 6
+vtxtable band 6 LOW      L CUSTOM  5362 5399 5436 5473 5510 5547 5584 5621
+#$ OPTION END
