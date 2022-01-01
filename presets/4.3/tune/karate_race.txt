@@ -125,11 +125,17 @@ set i_yaw = 80
 set d_yaw = 0
 set f_yaw = 80
 
-set d_min_roll = 30
-set d_min_pitch = 30
+set d_min_roll = 26
+set d_min_pitch = 26
 set d_max_gain = 25
 set d_max_advance = 0
 set simplified_pids_mode = OFF
+#$ OPTION END
+
+
+#$ OPTION BEGIN (UNCHECKED): Limons Super Spicy Dmin
+set d_min_roll = 30
+set d_min_pitch = 30
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): Noisy airframe (can be used with Spicy)
