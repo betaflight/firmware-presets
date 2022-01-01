@@ -11,7 +11,7 @@
 #$ INCLUDE_DISCLAIMER: misc/disclaimer/en/vtxtable.txt
 #$ DISCUSSION:  https://github.com/betaflight/firmware-presets/pull/78
 
-#$ INCLUDE: presets/4.3/vtx/defaults.txt
+#$ INCLUDE: presets/4.3/vtx/defaults_vtx_tables.txt
 vtxtable bands 5
 vtxtable channels 8
 vtxtable band 1 BAND_A   A CUSTOM  5865 5845 5825 5805 5785 5765 5745 5725
