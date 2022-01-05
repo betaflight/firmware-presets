@@ -40,7 +40,7 @@ class IndexContent
         }
 
         result = [...result];
-        result.sort();
+        result.sort((a, b) => a.localeCompare(b, undefined, {sensitivity: 'base'}));
         return result;
     }
 
