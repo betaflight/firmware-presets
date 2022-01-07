@@ -1,10 +1,10 @@
-#$ TITLE: Default rates
+#$ TITLE: subz3r0 rates
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: RATES
-#$ STATUS: OFFICIAL
+#$ STATUS: PRIVATE
 #$ KEYWORDS: defaults, rates, actual
-#$ AUTHOR: Betaflight
-#$ DESCRIPTION: Default Betaflight rates - ACTUAL
+#$ AUTHOR: oliver.eckel@binarystate.io
+#$ DESCRIPTION: subz3r0 Betaflight rates - ACTUAL
 #$ DESCRIPTION: Will be applied for the currently selected rate profile
 #$ DESCRIPTION: TPA values are not included
 #$ DESCRIPTION: Throttle limit and curve are not included
