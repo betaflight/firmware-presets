@@ -7,7 +7,7 @@
 #$ DESCRIPTION: setup for TBS Tacer CFV3
 #$ DESCRIPTION: WARNING: make ABSOLUTELY SURE that the Hardware > ADC Filter is un-checked! and both radio and the TX unit are all up to date with the latest EdgeTX, OpenTX or FreedomTX
 #$ DESCRIPTION: Please use RC smoothing presets for flying style required. Note base settings are for racing, there is a check box at the end for freestyle.
-#$ DESCRIPTION: There are 2 current types of Crossfire protocol, CFV2 and CFV3 this can be checked in your TBS lua.
+#$ DESCRIPTION: There are 2 current types of Crossfire protocol, CFV2 and CFV3 (CFV3 with TBS Firmware V6.07 and newer for Crossfire and Tracer) this can be checked in your TBS lua.
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/30
 
 feature RX_SERIAL
