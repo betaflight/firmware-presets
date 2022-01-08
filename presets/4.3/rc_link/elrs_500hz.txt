@@ -6,9 +6,9 @@
 #$ AUTHOR: ctzsnooze
 #$ DESCRIPTION: Basic RC link settings for a 500hz ELRS link via CRSF.
 #$ DESCRIPTION: WARNING: make ABSOLUTELY SURE that the OpenTx or EdgeTx Hardware ADC Filter is un-checked!
-#$ DESCRIPTION: WARNING: check that you are using a compatible version of EdgeTx or OpenTx!
+#$ DESCRIPTION: WARNING: Use a compatible version of EdgeTx or OpenTx!
 #$ DESCRIPTION: If a log shows excessive noise in your feedforward trace, most likely there is a Tx firmware issue.
-#$ DESCRIPTION: The Voltage option is for OpenTx telemetry back to the transmitter, default is per cell, option whole pack.
+#$ DESCRIPTION: Sends single cell voltage back to the transmitter, unless you choose the whole pack option.
 
 feature RX_SERIAL
 set serialrx_provider = CRSF
@@ -17,14 +17,8 @@ set serialrx_provider = CRSF
 set rc_smoothing = ON
 
 set feedforward_averaging = 2_POINT
-set feedforward_smooth_factor = 35
+set feedforward_smooth_factor = 65
 set feedforward_jitter_factor = 5
-
-# per cell or whole pack voltage readings back via telemetry to Tx:
-set report_cell_voltage = ON
-#$ OPTION BEGIN (UNCHECKED): Whole pack voltage readings to Tx
-set report_cell_voltage = OFF
-#$ OPTION END
 
 # sharper handling for racing:
 #$ OPTION BEGIN (UNCHECKED): Race feedforward settings
@@ -36,7 +30,7 @@ set feedforward_jitter_factor = 4
 #$ OPTION BEGIN (UNCHECKED): HD Freestyle feedforward settings
 set feedforward_averaging = 3_POINT
 set feedforward_smooth_factor = 70
-set feedforward_jitter_factor = 9
+set feedforward_jitter_factor = 8
 #$ OPTION END
 
 # stronger smoothing for Cinematic flying (not for racing):
@@ -44,4 +38,10 @@ set feedforward_jitter_factor = 9
 set feedforward_averaging = 3_POINT
 set feedforward_smooth_factor = 75
 set feedforward_jitter_factor = 12
+#$ OPTION END
+
+# per cell or whole pack voltage readings back via telemetry to Tx:
+set report_cell_voltage = ON
+#$ OPTION BEGIN (UNCHECKED): Whole pack voltage readings to Tx
+set report_cell_voltage = OFF
 #$ OPTION END

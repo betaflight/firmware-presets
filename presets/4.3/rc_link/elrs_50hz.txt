@@ -7,7 +7,7 @@
 #$ DESCRIPTION: Basic RC link settings for a 50hz ELRS link via CRSF.
 #$ DESCRIPTION: WARNING: make ABSOLUTELY SURE that the OpenTx or EdgeTx Hardware ADC Filter is un-checked!
 #$ DESCRIPTION: WARNING: check that you are using a compatible version of EdgeTx or OpenTx!
-#$ DESCRIPTION: The voltage option is for OpenTx telemetry back to the transmitter, default is per cell, option is whole pack.
+#$ DESCRIPTION: Sends single cell voltage back to the transmitter, unless you choose the whole pack option.
 
 feature RX_SERIAL
 set serialrx_provider = CRSF
@@ -18,12 +18,6 @@ set rc_smoothing = ON
 set feedforward_averaging = OFF
 set feedforward_smooth_factor = 0
 set feedforward_jitter_factor = 12
-
-# per cell or whole pack voltage readings:
-set report_cell_voltage = ON
-#$ OPTION BEGIN (UNCHECKED): Whole pack voltage readings
-set report_cell_voltage = OFF
-#$ OPTION END
 
 # sharper handling for racing - note that 50hz is too slow for racing
 #$ OPTION BEGIN (UNCHECKED): Race feedforward settings
@@ -40,4 +34,10 @@ set feedforward_jitter_factor = 15
 #$ OPTION BEGIN (UNCHECKED): Cinematic feedforward settings
 set feedforward_smooth_factor = 50
 set feedforward_jitter_factor = 20
+#$ OPTION END
+
+# per cell or whole pack voltage readings:
+set report_cell_voltage = ON
+#$ OPTION BEGIN (UNCHECKED): Whole pack voltage readings
+set report_cell_voltage = OFF
 #$ OPTION END
