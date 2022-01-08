@@ -159,7 +159,11 @@ set simplified_i_gain = 50
 set simplified_master_multiplier = 110
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED): Safer tune (normal builds)
+#$ OPTION BEGIN (UNCHECKED): Normal tune (normal builds)
+# do nothing, it's already applied
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Safer tune (older builds)
 # -- PID values --
 set p_pitch = 68
 set i_pitch = 60
