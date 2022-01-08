@@ -1,0 +1,246 @@
+#$ TITLE: Whoop race tune by Justice
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: TUNE
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: whoop, 65mm, 1S, race, acro, tune, justice, meteor
+#$ AUTHOR: Justice - Gary Kent
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/142
+#$ DESCRIPTION: Hot 65mm whoop tune for racing
+#$ DESCRIPTION:
+#$ DESCRIPTION: RPM filtering is STRONGLY RECOMMENDED!
+#$ DESCRIPTION: 
+#$ DESCRIPTION: PLEASE REVIEW THE OPTIONS IN THE LIST ABOVE!
+#$ DESCRIPTION: NOTE: Check ONE of the three FILTER options!
+#$ DESCRIPTION: The recommended options are what Gary uses, you should check all of them.
+#$ DESCRIPTION: By default, Vbat Sag Compensation is 100%, dynamic idle is off, and VBat warnings are set to default
+#$ DESCRIPTION:  
+#$ DESCRIPTION: Gary's suggested Rates are optional, as is dynamic idle and attenuated sag compensation.
+
+
+#$ INCLUDE: presets/4.3/tune/defaults.txt
+
+# -- PID values --
+set p_pitch = 75
+set i_pitch = 67
+set d_pitch = 68
+set d_min_pitch = 68
+set f_pitch = 250
+
+set p_roll = 71
+set i_roll = 63
+set d_roll = 60
+set d_min_roll = 60
+set f_roll = 240
+
+set p_yaw = 71
+set i_yaw = 63
+set d_yaw = 0
+set d_min_yaw = 0
+set f_yaw = 240
+
+# -- Sliders --
+set simplified_pids_mode = RPY
+set simplified_d_gain = 200
+set simplified_pi_gain = 160
+set simplified_feedforward_gain = 200
+set simplified_dmax_gain = 0
+set simplified_i_gain = 50
+set simplified_master_multiplier = 100
+
+# -- iTerm relax --
+set iterm_relax_cutoff = 20
+
+# -- iTerm windup (default)--
+# -- iTerm rotation (off, default) --
+
+# -- Dmax --
+set d_max_advance = 0
+
+# -- TPA --
+set tpa_rate = 65
+set tpa_breakpoint = 1250
+
+# -- Feedforward --
+set feedforward_boost = 18
+set feedforward_max_rate_limit = 95
+set feedforward_jitter_factor = 5
+# -- Feedforward averaging (do not change)--
+
+# -- PIDsum limits (default)--
+
+# -- Antigravity (default) --
+set anti_gravity_gain = 4500
+
+# -- Absolute control (off, default) --
+# -- Accecleration limits (off, default) --
+# -- Angle and Horizon mode tuning (default) --
+# -- PIDs active below min throttle (default) --
+# -- Set mixer type to default (legacy) --
+# -- Set yaw spin recovery to default, which is auto --
+# -- Set integrated yaw to off, so pitch and yaw are independent (default) --
+# -- Gyro cal on first arm (off, default) --
+# -- Transient throttle limit (off, default) --
+# -- Throttle limit (off, default) --
+
+# -- Thrust linear (default = off) --
+set thrust_linear = 20
+
+# -- Throttle boost (default = 5)
+
+# -- DShot Idle --
+set dshot_idle_value = 300
+
+
+# ------ UN-CHECKED OPTIONS ------
+
+# -- Filters --
+
+# Filter options
+#$ OPTION BEGIN (UNCHECKED): FILTER: RPM enabled, clean build
+#$ INCLUDE: presets/4.3/filters/default_rpm_clean.txt
+set dyn_idle_min_rpm = 50
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): FILTER: RPM enabled, normal build
+#$ INCLUDE: presets/4.3/filters/default_rpm_normal.txt
+set dyn_idle_min_rpm = 50
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): FILTER: RPM enabled, noisy build
+#$ INCLUDE: presets/4.3/filters/default_rpm_noisy.txt
+set dyn_idle_min_rpm = 50
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): FILTER: NON-RPM ESCs, normal build
+#$ INCLUDE: presets/4.3/filters/default_no_rpm_normal.txt
+#$ OPTION END
+
+# -- Fast Rx Link Options --
+
+#$ OPTION BEGIN (UNCHECKED): RC_LINK 250Hz
+set feedforward_averaging = 2_POINT
+set feedforward_smooth_factor = 40
+set feedforward_jitter_factor = 6
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): RC_LINK 500Hz
+set feedforward_averaging = 2_POINT
+set feedforward_smooth_factor = 65
+set feedforward_jitter_factor = 5
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Spicy tune (clean builds only)
+# -- PID values --
+set p_pitch = 77
+set i_pitch = 69
+set d_pitch = 74
+set d_min_pitch = 74
+set f_pitch = 261
+
+set p_roll = 74
+set i_roll = 66
+set d_roll = 66
+set d_min_roll = 66
+set f_roll = 250
+
+set p_yaw = 74
+set i_yaw = 66
+set d_yaw = 0
+set d_min_yaw = 0
+set f_yaw = 250
+
+# -- Sliders --
+set simplified_pids_mode = RPY
+set simplified_d_gain = 200
+set simplified_pi_gain = 150
+set simplified_feedforward_gain = 190
+set simplified_dmax_gain = 0
+set simplified_i_gain = 50
+set simplified_master_multiplier = 110
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Safer tune (normal builds)
+# -- PID values --
+set p_pitch = 68
+set i_pitch = 60
+set d_pitch = 69    
+set d_min_pitch = 61
+set f_pitch = 250
+
+set p_roll = 65
+set i_roll = 57
+set d_roll = 61
+set d_min_roll = 54
+set f_roll = 240
+
+set p_yaw = 65
+set i_yaw = 57
+set d_yaw = 0
+set d_min_yaw = 0
+set f_yaw = 240
+
+# -- Sliders --
+set simplified_pids_mode = RPY
+set simplified_d_gain = 180
+set simplified_pi_gain = 145
+set simplified_feedforward_gain = 200
+set simplified_dmax_gain = 40
+set simplified_i_gain = 50
+set simplified_master_multiplier = 100
+#$ OPTION END
+
+# -- RC_Smoothing --
+#$ OPTION BEGIN (UNCHECKED): Default RC_smoothing (recommended)
+#$ INCLUDE: presets/4.3/rc_smoothing/race.txt
+#$ OPTION END
+
+# -- VBat warning threshold --  
+#$ OPTION BEGIN (UNCHECKED): Default Battery voltage warnings (recommended)
+set vbat_min_cell_voltage = 330
+set vbat_warning_cell_voltage = 350
+#$ OPTION END
+
+# -- No deadband -- 
+#$ OPTION BEGIN (UNCHECKED): No deadband (recommended)
+set deadband = 0
+set yaw_deadband = 0
+#$ OPTION END
+
+# -- Startup and arming --
+#$ OPTION BEGIN (UNCHECKED): Arm at any angle (recommended)
+set small_angle = 180
+#$ OPTION END
+
+# -- VBat sag compensation --
+set vbat_sag_compensation = 100
+set vbat_sag_lpf_period = 2
+#$ OPTION BEGIN (UNCHECKED): 50% Sag compensation (optional)
+set vbat_sag_compensation = 50
+#$ OPTION END
+
+# -- Throttle curve --
+#$ OPTION BEGIN (UNCHECKED): Sharper throttle response curve (optional)
+set thr_mid = 100
+set thr_expo = 30
+#$ OPTION END
+
+# -- Throttle curve --
+set dyn_idle_min_rpm = 0
+#$ OPTION BEGIN (UNCHECKED): Enable dynamic idle at 40 (optional)
+set dyn_idle_min_rpm = 40
+#$ OPTION END
+
+# -- Rates --
+#$ OPTION BEGIN (UNCHECKED): Try Gary's race rates! (optional)
+set rates_type = ACTUAL
+set roll_rc_rate = 20
+set pitch_rc_rate = 20
+set yaw_rc_rate = 20
+set roll_expo = 50
+set pitch_expo = 50
+set yaw_expo = 25
+set roll_srate = 50
+set pitch_srate = 50
+set yaw_srate = 50
+#$ OPTION END
+
