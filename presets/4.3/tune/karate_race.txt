@@ -151,6 +151,47 @@ set dterm_lpf1_dyn_expo = 10
 set dterm_lpf1_type = BIQUAD
 #$ OPTION END
 
+#$ OPTION BEGIN (UNCHECKED): Tracer/ELRS 250hz
+
+# Tracer/ELRS 250hz
+feature RX_SERIAL
+set serialrx_provider = CRSF
+set feedforward_averaging = OFF
+set feedforward_smooth_factor = 35
+set feedforward_jitter_factor = 5
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): ELRS 500hz
+
+# ELRS 500hz
+feature RX_SERIAL
+set serialrx_provider = CRSF
+set feedforward_averaging = 2_POINT
+set feedforward_smooth_factor = 65
+set feedforward_jitter_factor = 5
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Ghost 250hz
+
+# Ghost 250hz
+feature RX_SERIAL
+set serialrx_provider = GHST
+set feedforward_averaging = OFF
+set feedforward_smooth_factor = 35
+set feedforward_jitter_factor = 5
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Ghost 500hz
+
+# Ghost 500hz
+feature RX_SERIAL
+set serialrx_provider = GHST
+set feedforward_averaging = 2_POINT
+set feedforward_smooth_factor = 65
+set feedforward_jitter_factor = 5
+#$ OPTION END
+
+
 #$ OPTION BEGIN (UNCHECKED): sugarK's rates
 set thr_mid = 25
 set thr_expo = 65
