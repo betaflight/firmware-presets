@@ -11,6 +11,7 @@
 #$ DESCRIPTION: 
 #$ DESCRIPTION: PLEASE CHECK THE OPTIONS IN THE LIST ABOVE!
 #$ DESCRIPTION: NOTE: You must choose ONE of the three FILTER options!
+#$ DESCRIPTION: NOTE: 250hz or 500hz RC Link users - check the right one!
 #$ DESCRIPTION: You should check all the (recommended) options
 #$ DESCRIPTION: 
 #$ DESCRIPTION: My suggested Rates are (optional)
@@ -101,6 +102,20 @@ set dyn_idle_p_gain = 40
 
 #$ OPTION BEGIN (UNCHECKED): FILTER: NON-RPM ESCs, normal build
 #$ INCLUDE: presets/4.3/filters/default_no_rpm_normal.txt
+#$ OPTION END
+
+# -- Fast Rx Link Options --
+
+#$ OPTION BEGIN (UNCHECKED): RC_LINK 250Hz
+set feedforward_averaging = 2_POINT
+set feedforward_smooth_factor = 40
+set feedforward_jitter_factor = 6
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): RC_LINK 500Hz
+set feedforward_averaging = 2_POINT
+set feedforward_smooth_factor = 65
+set feedforward_jitter_factor = 5
 #$ OPTION END
 
 # -- Recommended options --
