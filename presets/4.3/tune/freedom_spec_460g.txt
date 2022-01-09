@@ -60,9 +60,6 @@ set tpa_rate = 60
 # -- Feedforward --
 set feedforward_max_rate_limit = 100
 
-# -- DShot Idle (default)--
-set dshot_idle_value = 100
-
 # -- Dyn Idle --
 set dyn_idle_min_rpm = 30
 
