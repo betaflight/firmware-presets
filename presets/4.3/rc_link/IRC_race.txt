@@ -2,11 +2,11 @@
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: RC_LINK
 #$ STATUS: EXPERIMENTAL
-#$ KEYWORDS: defaults, rc link, ghost, IRC, GHST, 250hz, 500hz, racing, purerace, soild250, race250, race500, immersionRC, immersion
+#$ KEYWORDS: rc link, ghost, IRC, GHST, 250Hz, 500Hz, racing, purerace, soild250, race250, race500, immersionRC, immersion
 #$ AUTHOR: sugarK
 #$ DESCRIPTION: Setup for the various ImmersionRC modes via GHST protocol for racing.
 #$ DESCRIPTION: WARNING: Make ABSOLUTELY SURE that the Hardware > ADC Filter is un-checked! and both radio and the TX unit are all up-to-date with the latest EdgeTX, OpenTX or FreedomTX.
-#$ DESCRIPTION: For racing it makes sense to use one of the 250/500hz modes which the 'race' mode is only 166hz.
+#$ DESCRIPTION: For racing it makes sense to use one of the 250/500Hz modes which the 'race' mode is only 166hz.
 #$ INCLUDE_WARNING: misc/warnings/en/ADC.txt
 #$ INCLUDE: presets/4.3/rc_link/defaults.txt
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/156
