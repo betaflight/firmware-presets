@@ -18,7 +18,7 @@ set rc_smoothing = ON
 
 #$ OPTION BEGIN (UNCHECKED): SoildRace and PureRace
 
-# SoildRace and PureRace  
+# SoildRace and PureRace
 set feedforward_averaging = 2_POINT
 set feedforward_smooth_factor = 35
 set feedforward_jitter_factor = 10
@@ -26,7 +26,7 @@ set feedforward_jitter_factor = 10
 
 #$ OPTION BEGIN (UNCHECKED): Race250
 
-# Race250 
+# Race250
 set feedforward_averaging = 2_POINT
 set feedforward_smooth_factor = 35
 set feedforward_jitter_factor = 10

@@ -2,9 +2,9 @@
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: RC_LINK
 #$ STATUS: EXPERIMENTAL
-#$ KEYWORDS: Redpine, rc, link, 666hz
+#$ KEYWORDS: Redpine, rc, link, 666Hz
 #$ AUTHOR: ctzsnooze
-#$ DESCRIPTION: Basic RC link settings for a 666hz Redpine SPI link.
+#$ DESCRIPTION: Basic RC link settings for a 666Hz Redpine SPI link.
 #$ DESCRIPTION: WARNING: make ABSOLUTELY SURE that the Tx hardware ADC Filter is un-checked!
 #$ DESCRIPTION: If a log shows excessive noise in your feedforward trace, most likely there is a Tx firmware issue.
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/148

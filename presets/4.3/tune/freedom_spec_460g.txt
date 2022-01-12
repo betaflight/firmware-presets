@@ -5,7 +5,7 @@
 #$ KEYWORDS: sugarK, limon, ctzsnooze, freedom, freedom spec, headsup, five33, 533, racing, race, 5"
 #$ AUTHOR: Ivan Efimov (Limon)
 #$ DESCRIPTION: This tune works ONLY with bidirectional DSHOT 600/300. If your FC can't handle DSHOT600, pelase select DSHOT 300 in the options here.
-#$ DESCRIPTION: If your RC link is anything different from 250hz, please use corresponding preset from RC link category on top of this preset. 
+#$ DESCRIPTION: If your RC link is anything different from 250Hz, please use corresponding preset from RC link category on top of this preset.
 #$ DESCRIPTION: DO NOT try to fly this tune on any battery besides 3S!
 #$ DESCRIPTION: Freedom spec: 3S LiPo, Headsup 1960kv 2207 motors, HQ R38 5 inch props. Minimum weight with the battery: 460g.
 #$ DESCRIPTION:
