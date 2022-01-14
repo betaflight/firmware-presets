@@ -3395,7 +3395,7 @@
     },
     {
       "fullPath": "presets/4.3/vtx/NanoHawk.txt",
-      "hash": "06d515ae13d76291f0fb71ca18b4984e2efeac56d90d6684768e2b8ff8e358d8",
+      "hash": "a51e9a0e65b0cd745942e4fd499a90993d9a180f827030ca6b2f32a88b54c692",
       "options": [],
       "title": "Emax NanoHawk",
       "firmware_version": [
@@ -3413,7 +3413,11 @@
       "description": [
         "Resets VTx settings and table back to 4.3 Defaults",
         "Only the checked settings will be reset"
-      ]
+      ],
+      "include_disclaimer": [
+        "misc/disclaimer/en/vtxtable.txt"
+      ],
+      "discussion": "https://github.com/betaflight/firmware-presets/pull/161"
     },
     {
       "fullPath": "presets/4.3/vtx/OpenVTx.txt",

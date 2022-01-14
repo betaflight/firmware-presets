@@ -6,6 +6,8 @@
 #$ AUTHOR: Sjoer van der Ploeg
 #$ DESCRIPTION: Resets VTx settings and table back to 4.3 Defaults
 #$ DESCRIPTION: Only the checked settings will be reset
+#$ INCLUDE_DISCLAIMER: misc/disclaimer/en/vtxtable.txt
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/161
 
 # reset basic Vtx settings
 
