@@ -7,7 +7,8 @@
 #$ DESCRIPTION: Resets all Basic 4.3 Tune category parameters to defaults
 #$ DESCRIPTION: WARNING: Overwrites all settings mentioned below to defaults.  The User cannot retain their previous values.
 #$ DESCRIPTION: WARNING: Tune authors must explicitly set these values to something other than default, if needed for the tune.
-#$ DESCRIPTION: DOES NOT reset rates, filters, rc_smoothing, and many other parameters. 
+#$ DESCRIPTION: DOES NOT reset rates, filters, rc_smoothing, and many other parameters.
+#$ PRIORITY: 0
 
 
 # THE FOLLOWING PARAMETERS ARE CONTROLLED

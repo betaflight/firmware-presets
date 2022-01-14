@@ -8,6 +8,7 @@
 #$ DESCRIPTION: Will be applied for the currently selected rate profile
 #$ DESCRIPTION: TPA values are not included
 #$ DESCRIPTION: Throttle limit and curve are not included
+#$ PRIORITY: 0
 
 set rates_type = ACTUAL
 set quickrates_rc_expo = OFF

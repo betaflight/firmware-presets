@@ -5,6 +5,7 @@
 #$ KEYWORDS: defaults, reset, rc smoothing, rc_smoothing
 #$ AUTHOR: Betaflight
 #$ DESCRIPTION: Resets RC Smoothing settings to 4.3 defaults
+#$ PRIORITY: 0
 
 # NOTE TO AUTHORS: Always include all of the lines below in your Preset, even if keeping some at default
 

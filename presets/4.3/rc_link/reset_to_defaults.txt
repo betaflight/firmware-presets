@@ -7,6 +7,7 @@
 #$ DESCRIPTION: Resets all RC Link related parameters to 4.3 defaults.
 #$ DESCRIPTION: Does NOT reset serial port settings or Rx Link mode (TAER / AETR etc).
 #$ WARNING: This presets resets settings for ALL protocols and unbinds SPI receivers.
+#$ PRIORITY: 0
 
 set feedforward_averaging = OFF
 set feedforward_smooth_factor = 25
