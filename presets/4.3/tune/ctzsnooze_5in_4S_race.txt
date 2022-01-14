@@ -8,12 +8,12 @@
 #$ DESCRIPTION: Basic 5" 4S race setup for 4.3 by ctzsnooze, tolerates bad props.
 #$ DESCRIPTION:
 #$ DESCRIPTION: RPM filtering is STRONGLY RECOMMENDED!
-#$ DESCRIPTION: 
+#$ DESCRIPTION:
 #$ DESCRIPTION: PLEASE CHECK THE OPTIONS IN THE LIST ABOVE!
 #$ DESCRIPTION: NOTE: You must choose ONE of the three FILTER options!
-#$ DESCRIPTION: NOTE: 250hz or 500hz RC Link users - check the right one!
+#$ DESCRIPTION: NOTE: 250Hz or 500Hz RC Link users - check the right one!
 #$ DESCRIPTION: You should check all the (recommended) options
-#$ DESCRIPTION: 
+#$ DESCRIPTION:
 #$ DESCRIPTION: My suggested Rates are (optional)
 
 

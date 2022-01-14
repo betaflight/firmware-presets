@@ -1,12 +1,12 @@
-#$ TITLE: TBS CRSF longrange
+#$ TITLE: TBS Crossfire longrange
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: RC_LINK
 #$ STATUS: OFFICIAL
-#$ KEYWORDS: defaults, rc link, TBS, crossfire, longrange, 50hz
+#$ KEYWORDS: rc link, TBS, crossfire, longrange, 50Hz, CRSF
 #$ AUTHOR: sugarK
-#$ DESCRIPTION: setup fo the various TBS radio links via CRSF protocol for longrange
-#$ DESCRIPTION: WARNING: make ABSOLUTELY SURE that the Hardware > ADC Filter is un-checked! and both radio and the TX unit are all up to date with the latest EdgeTX, OpenTX or FreedomTX
-#$ DESCRIPTION: Dynamic Crossfire is not recommended, for longrange flying locked 50hz is best
+#$ DESCRIPTION: Setup fo the various TBS radio links via CRSF protocol for longrange.
+#$ DESCRIPTION: WARNING: make ABSOLUTELY SURE that the Hardware > ADC Filter is un-checked! and both radio and the TX unit are all up to date with the latest EdgeTX, OpenTX or FreedomTX.
+#$ DESCRIPTION: Dynamic Crossfire is not recommended, for longrange flying locked 50Hz is best.
 #$ INCLUDE_WARNING: misc/warnings/en/ADC.txt
 #$ INCLUDE: presets/4.3/rc_link/defaults.txt
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/153
@@ -27,9 +27,9 @@ set feedforward_smooth_factor = 50
 set feedforward_jitter_factor = 10
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED): Crossfire locked 50hz
+#$ OPTION BEGIN (UNCHECKED): Crossfire locked 50Hz
 
-# Crossfire locked 50hz
+# Crossfire locked 50Hz
 set feedforward_averaging = off
 set feedforward_smooth_factor = 50
 set feedforward_jitter_factor = 20

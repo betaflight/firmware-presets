@@ -1,10 +1,10 @@
-#$ TITLE: ELRS 150hz
+#$ TITLE: ExpressLRS 150Hz
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: RC_LINK
 #$ STATUS: OFFICIAL
-#$ KEYWORDS: ELRS, rc, link, rc_link, 150hz
+#$ KEYWORDS: ELRS, rc, link, rc_link, 150Hz, express
 #$ AUTHOR: ctzsnooze
-#$ DESCRIPTION: Basic RC link settings for a 150hz ELRS link via CRSF
+#$ DESCRIPTION: Basic RC link settings for a 150Hz ELRS link via CRSF.
 #$ DESCRIPTION: WARNING: make ABSOLUTELY SURE that the OpenTx or EdgeTx Hardware ADC Filter is un-checked!
 #$ DESCRIPTION: WARNING: check that you are using a compatible version of EdgeTx or OpenTx!
 #$ DESCRIPTION: Sends single cell voltage back to the transmitter, unless you choose the whole pack option.
