@@ -1,9 +1,17 @@
+<<<<<<< HEAD
 #$ TITLE: Emax NanoHawk 1S SmartAudio 2.0 VTX table
+=======
+#$ TITLE: Emax NanoHawk 1S VTX table
+>>>>>>> 6685e530c65ffb8fe663514a196609a1d561cb25
 #$ FIRMWARE_VERSION: 4.2
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: VTX
 #$ STATUS: COMMUNITY
+<<<<<<< HEAD
 #$ KEYWORDS: vtx, nanohawk, emax, smartaudio, sa, sa20, sa2.0
+=======
+#$ KEYWORDS: vtx, nanohawk, emax
+>>>>>>> 6685e530c65ffb8fe663514a196609a1d561cb25
 #$ AUTHOR: Sjoer van der Ploeg
 #$ DESCRIPTION: SA2.0 VTX table for the Emax NanoHawk 1S
 #$ INCLUDE_DISCLAIMER: misc/disclaimer/en/vtxtable.txt
