@@ -5,6 +5,7 @@
 #$ KEYWORDS: defaults, reset, rc link, rc_link, feedforward, ff
 #$ AUTHOR: Betaflight
 #$ DESCRIPTION: Resets RC_LINK feedforward smoothing/jitter/averaging parameters.
+#$ PRIORITY: 0
 
 set feedforward_averaging = OFF
 set feedforward_smooth_factor = 25
