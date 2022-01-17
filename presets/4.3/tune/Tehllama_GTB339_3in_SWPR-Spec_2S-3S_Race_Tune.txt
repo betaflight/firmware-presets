@@ -1,0 +1,146 @@
+#$ TITLE: 3in Lightweight Race GTB339 3S/2S Tune
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: TUNE
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: GTB339, Toothpick, Spec, Race, Llama, SWPR, MultiVoltage
+#$ AUTHOR: Daniel Appel / Tehllama
+#$ DESCRIPTION: This tune is intended for GTB339 3in 1105-5500KV Racers on on bidir DShot ESCs at 48kHz PWM with MedHigh timing. 
+#$ DESCRIPTION: These fly best on 2S-3S batteries in the 450-650mAh capacity range, resulting in an AUW to 95-105g on these motors.  Works with biblade and triblade props (e.g. Gemfan 3016/3018, HQ 3x1.8x3/3x1.5x3, etc.)
+#$ DISCLAIMER: This tune will auto-select profiles based on battery voltage at plugin for 2S and 3S packs.
+#$ WARNING: Requires 12-Pole Motors!!! Use at your own risk.  Extensive testing has been done across 54+ builds, however not every craft will run best on this tune.  13A ESCs may experience more failures on 3S batteries.
+#$ DISCUSSION: https://app.slack.com/client/T221J1F6J/C0228HK2MD4/
+
+#$ INCLUDE: presets/4.3/tune/defaults.txt
+
+# master
+set gyro_lpf1_static_hz = 400
+set gyro_lpf2_static_hz = 800
+set dyn_notch_q = 500
+set dyn_notch_min_hz = 100
+set dyn_notch_max_hz = 640
+set gyro_lpf1_dyn_min_hz = 400
+set gyro_lpf1_dyn_max_hz = 800
+
+set dshot_idle_value = 475
+set dshot_bidir = ON
+set motor_poles = 12
+
+set thrust_linear = 20
+set simplified_gyro_filter_multiplier = 160
+
+set rpm_filter_harmonics = 2
+set rpm_filter_q = 750
+set rpm_filter_min_hz = 115
+set rpm_filter_fade_range_hz = 100
+
+# profile 3:  3S
+profile 2
+
+set dterm_lpf1_dyn_min_hz = 120
+set dterm_lpf1_dyn_max_hz = 240
+set dterm_lpf1_dyn_expo = 8
+set dterm_lpf1_static_hz = 120
+set dterm_lpf2_static_hz = 240
+set vbat_sag_compensation = 77
+set anti_gravity_gain = 4400
+set iterm_rotation = ON
+set iterm_relax = RPY
+set iterm_relax_cutoff = 33
+set yaw_lowpass_hz = 125
+set p_pitch = 54
+set i_pitch = 72
+set d_pitch = 44
+set f_pitch = 99
+set p_roll = 49
+set i_roll = 66
+set f_roll = 90
+set p_yaw = 49
+set i_yaw = 66
+set f_yaw = 90
+set d_min_pitch = 33
+set d_max_advance = 0
+set auto_profile_cell_count = 3
+set feedforward_boost = 8
+set throttle_boost = 5
+set dyn_idle_min_rpm = 24
+set simplified_i_gain = 75
+set simplified_pi_gain = 110
+set simplified_feedforward_gain = 75
+set simplified_pitch_d_gain = 110
+set simplified_pitch_pi_gain = 110
+set simplified_dterm_filter_multiplier = 160
+
+# profile 1: 2S
+profile 1
+
+set dterm_lpf1_dyn_min_hz = 120
+set dterm_lpf1_dyn_max_hz = 240
+set dterm_lpf1_static_hz = 120
+set dterm_lpf2_static_hz = 240
+set vbat_sag_compensation = 77
+set anti_gravity_gain = 4400
+set iterm_rotation = ON
+set iterm_relax = RPY
+set iterm_relax_cutoff = 37
+set yaw_lowpass_hz = 125
+set p_pitch = 82
+set i_pitch = 110
+set d_pitch = 82
+set f_pitch = 165
+set p_roll = 78
+set i_roll = 105
+set d_roll = 78
+set f_roll = 157
+set p_yaw = 78
+set i_yaw = 105
+set f_yaw = 157
+set d_min_roll = 62
+set d_min_pitch = 66
+set d_max_advance = 0
+set auto_profile_cell_count = 2
+set feedforward_boost = 18
+set throttle_boost = 12
+set dyn_idle_min_rpm = 24
+set simplified_master_multiplier = 175
+set simplified_i_gain = 75
+set simplified_d_gain = 120
+set simplified_dmax_gain = 75
+set simplified_feedforward_gain = 75
+set simplified_pitch_d_gain = 105
+set simplified_dterm_filter_multiplier = 160
+
+
+#$ OPTION BEGIN (CHECKED): Apply TPA Settings to all rateprofiles (Will Select RateProfile #1)
+rateprofile 0
+set tpa_rate = 72
+set tpa_breakpoint = 1350
+
+rateprofile 1
+set tpa_rate = 72
+set tpa_breakpoint = 1350
+
+rateprofile 2
+set tpa_rate = 72
+set tpa_breakpoint = 1350
+
+rateprofile 3
+set tpa_rate = 72
+set tpa_breakpoint = 1350
+
+rateprofile 4
+set tpa_rate = 72
+set tpa_breakpoint = 1350
+
+rateprofile 5
+set tpa_rate = 72
+set tpa_breakpoint = 1350
+
+rateprofile 0
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Apply TPA Settings to current rateprofile only
+set tpa_rate = 72
+set tpa_breakpoint = 1350
+#$ OPTION END
+
+# save configuration
