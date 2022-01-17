@@ -4,7 +4,7 @@
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: frsky, sbus, rc, link
 #$ AUTHOR: ctzsnooze
-#$ DESCRIPTION: Basic RC link settings for a 111hz / 9ms FrSky Sbus link, with the Rx bound in D16 mode with no more than 8 channels.
+#$ DESCRIPTION: Basic RC link settings for a 111Hz / 9ms FrSky Sbus link, with the Rx bound in D16 mode with no more than 8 channels.
 #$ DESCRIPTION: These settings work best when used with a version of OpenTx with good module sync.
 #$ DESCRIPTION: Note: Telemetry requires smartPort (s.Port) and does not convey RSSI (use Lua or analog RSSI).
 #$ DESCRIPTION: Note: When more than 8 channels are bound, manual RC smoothing settings and two point averaging is required.
