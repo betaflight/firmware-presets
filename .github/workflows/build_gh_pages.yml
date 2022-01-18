@@ -24,7 +24,8 @@ jobs:
         run: ./scripts/build.sh
 
       - name: deploy to github pages
-        uses: JamesIves/github-pages-deploy-action@v4.2.2
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          branch: index
-          folder: output
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: index
+          publish_dir: ./output
