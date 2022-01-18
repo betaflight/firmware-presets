@@ -1,0 +1,22 @@
+name: CI - run checks
+
+on:
+  push:
+    branches-ignore: ["master", "main"]
+  pull_request: {}
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+
+    steps:
+      - name: git checkout
+        uses: actions/checkout@v2
+
+      - name: install node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 15.x
+
+      - name: check presets
+        run: ./scripts/check.sh

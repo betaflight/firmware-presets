@@ -1,40 +1,18 @@
 #!/usr/bin/env bash
-
 set -e
 
-basepath="${PWD}"
-artifacts="${basepath}/public"
+SCRIPT_DIR=$(cd $(dirname "${BASH_SOURCE[0]}") && pwd)
+export OUTPUT_DIR="${SCRIPT_DIR}/../output"
+export PRESETS_DIR="${SCRIPT_DIR}/../presets"
 
-echo "Artifacts: ${artifacts}"
-echo "Branch:    ${GITHUB_REF}"
-echo "Build:     ${GITHUB_RUN_NUMBER}"
+# this is where all final outputs will be saved/copied to
+mkdir -p "${OUTPUT_DIR}"
 
-node --version
-node indexer/check.js
+# this will generate the index files directly into $OUTPUT_DIR
+node "${SCRIPT_DIR}/indexer/index.js" build
 
-if [ "${1}" == "deploy" ]; then
-
-  if [ -d ${artifacts} ]; then
-    rm -R ${artifacts}
-  fi
-
-  mkdir -p ${artifacts}
-  mkdir -p ${artifacts}/presets
-  mkdir -p ${artifacts}/misc
-
-  echo "Running indexer"
-  node indexer/indexer.js
-
-  echo "Copying files to staging location: ${artifacts}"
-  cp ./index.json $artifacts
-  cp ./index_hash.txt $artifacts 
-  cp -r ./presets/* $artifacts/presets
-  if [ -d ./misc ]; then
-    cp -r ./misc/* $artifacts/misc
-  fi
-
-  echo "Deploying to AWS S3: ${AWS_REGION}/${AWS_BUCKET}"
-  aws configure set preview.cloudfront true
-  aws s3 sync ${artifacts} s3://${AWS_BUCKET}/firmware-presets --delete --region "${AWS_REGION}" --cache-control max-age=345600
-  aws cloudfront create-invalidation --distribution-id ${AWS_DISTRIBUTION_ID} --path "/firmware-presets/*"
+# copy the presets and misc directories
+cp -r "${SCRIPT_DIR}/../presets" "${OUTPUT_DIR}/presets"
+if [ -d "${SCRIPT_DIR}/../misc" ]; then
+  cp -r "${SCRIPT_DIR}/../misc" "${OUTPUT_DIR}/misc"
 fi

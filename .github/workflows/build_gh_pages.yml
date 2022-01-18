@@ -1,0 +1,30 @@
+name: CI - build github pages
+
+on:
+  push:
+    branches: ["master", "main"]
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+
+    steps:
+      - name: git checkout
+        uses: actions/checkout@v2
+
+      - name: install node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 15.x
+
+      - name: check presets
+        run: ./scripts/check.sh
+
+      - name: create index files
+        run: ./scripts/build.sh
+
+      - name: deploy to github pages
+        uses: JamesIves/github-pages-deploy-action@v4.2.2
+        with:
+          branch: index
+          folder: output
