@@ -1,11 +1,13 @@
 "use strict";
 
 const fs = require("fs");
+const path = require("path");
 const crypto = require("crypto");
 
 class PresetsFile {
-  constructor(fullPath, settings, errors) {
-    this.fullPath = fullPath;
+  constructor(baseDir, relativeFilePath, settings, errors) {
+    this._baseDir = baseDir;
+    this.fullPath = relativeFilePath;
     this.hash = "";
     this._presetsFileMetadata = settings.presetsFileMetadata;
     this._errors = errors;
@@ -15,7 +17,10 @@ class PresetsFile {
     this._currentOption = undefined;
     this._currentOptionGroup = undefined;
 
-    const binaryFileContent = fs.readFileSync(this.fullPath);
+    console.log(this._baseDir, this.fullPath);
+    const binaryFileContent = fs.readFileSync(
+      path.join(this._baseDir, this.fullPath)
+    );
     let sum = crypto.createHash("sha256");
     sum.update(binaryFileContent);
     this.hash = sum.digest("hex");
@@ -31,6 +36,7 @@ class PresetsFile {
   }
 
   _clearProperties() {
+    delete this._baseDir;
     delete this._presetsFileMetadata;
     delete this._errors;
     delete this._settings;
@@ -98,7 +104,7 @@ class PresetsFile {
     let isPropertyMissingSemicolon = false;
     let isOptionDirective = false;
 
-    for (const [property, value] of Object.entries(this._presetsFileMetadata)) {
+    for (const [property] of Object.entries(this._presetsFileMetadata)) {
       const lineBeginning = `${property.toLowerCase()}:`; // "TITLE:"
       const wrongLineBeginning = `${property.toLowerCase()}`; // "TITLE"
 

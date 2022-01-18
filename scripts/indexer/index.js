@@ -9,8 +9,7 @@ const Settings = require("./Settings");
 const IndexContent = require("./IndexContent");
 
 // where all output files will be saved to
-const presetsDir =
-  process.env.PRESETS_DIR || path.resolve(__dirname, "..", "..", "presets");
+const rootDir = path.resolve(__dirname, "..", "..");
 const outputDir = process.env.OUTPUT_DIR;
 
 // application state
@@ -18,7 +17,7 @@ const errors = [];
 const presetFilesArray = [];
 
 function analyzePresets() {
-  new PresetsFolder(presetsDir, Settings, presetFilesArray, errors);
+  new PresetsFolder(rootDir, "presets", Settings, presetFilesArray, errors);
   PresetsFolder.checkForIncludeLoops(presetFilesArray, errors);
 }
 
