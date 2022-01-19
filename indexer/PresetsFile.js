@@ -17,7 +17,6 @@ class PresetsFile {
 		this._currentOption = undefined;
 		this._currentOptionGroup = undefined;
 
-		console.log(this._baseDir, this.fullPath);
 		const binaryFileContent = fs.readFileSync(
 			path.join(this._baseDir, this.fullPath)
 		);
