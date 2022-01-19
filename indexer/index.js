@@ -9,7 +9,7 @@ const Settings = require("./Settings");
 const IndexContent = require("./IndexContent");
 
 // where all output files will be saved to
-const rootDir = path.resolve(__dirname, "..", "..");
+const rootDir = path.resolve(__dirname, "..");
 const outputDir = process.env.OUTPUT_DIR;
 
 // application state
