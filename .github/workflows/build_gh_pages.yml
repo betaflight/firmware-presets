@@ -18,10 +18,10 @@ jobs:
           node-version: 15.x
 
       - name: check presets
-        run: ./scripts/check.sh
+        run: ./indexer/check.sh
 
       - name: create index files
-        run: ./scripts/build.sh
+        run: ./indexer/build.sh
 
       - name: deploy to github pages
         uses: peaceiris/actions-gh-pages@v3

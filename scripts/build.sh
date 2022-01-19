@@ -9,7 +9,7 @@ export PRESETS_DIR="${SCRIPT_DIR}/../presets"
 mkdir -p "${OUTPUT_DIR}"
 
 # this will generate the index files directly into $OUTPUT_DIR
-node "${SCRIPT_DIR}/indexer/index.js" build
+node "${SCRIPT_DIR}/../indexer/index.js" build
 
 # copy the presets and misc directories
 cp -r "${SCRIPT_DIR}/../presets" "${OUTPUT_DIR}/presets"

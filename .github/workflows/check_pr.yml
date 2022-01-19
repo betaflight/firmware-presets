@@ -19,4 +19,4 @@ jobs:
           node-version: 15.x
 
       - name: check presets
-        run: ./scripts/check.sh
+        run: ./indexer/check.sh
