@@ -116,6 +116,10 @@
       "priority": {
         "type": "PRIORITY",
         "optional": true
+      },
+      "force_options_review": {
+        "type": "BOOLEAN",
+        "optional": true
       }
     }
   },
@@ -145,6 +149,7 @@
       "Directory",
       "DusKing1 (Hugo Chiang), Pitronic",
       "Evan Turner (Headsup)",
+      "FPVian",
       "IllusionFpv",
       "Ivan Efimov (Limon)",
       "Joshua Bardwell",
@@ -153,6 +158,7 @@
       "Mark Spatz (UAV Tech)",
       "MinChan Kim",
       "NemesisXB",
+      "Sjoer van der Ploeg",
       "sugarK",
       "SupaflyFPV"
     ],
@@ -164,7 +170,8 @@
       "3 inch",
       "3\"",
       "4S",
-      "5 inch",
+      "5 In",
+      "5 Inch",
       "5\"",
       "500Hz",
       "50Hz",
@@ -183,7 +190,9 @@
       "aggressive",
       "AlexFPV",
       "aux",
+      "bando",
       "bardwell",
+      "basher",
       "basic",
       "betaflight",
       "blackbox",
@@ -210,6 +219,7 @@
       "DShot telemetry",
       "E7082VM",
       "ELRS",
+      "emax",
       "EVO",
       "expert",
       "express",
@@ -219,6 +229,7 @@
       "filtering",
       "filters",
       "five33",
+      "fpvian",
       "freedom",
       "freedom spec",
       "freestyle",
@@ -261,6 +272,7 @@
       "MultiGP",
       "names",
       "nano",
+      "nanohawk",
       "no rpm",
       "noisy",
       "normal",
@@ -296,13 +308,17 @@
       "rush tank",
       "rushfpv",
       "russia",
+      "sa",
       "SA 2.0",
       "SA 2.0 lite",
       "SA 2.1",
+      "sa2.0",
+      "sa20",
       "sbus",
       "settings",
       "shames",
       "shark bite",
+      "smartaudio",
       "smooth",
       "smoothing",
       "soild250",
@@ -1534,6 +1550,27 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/4.3/tune/fpvian_basher_freestyle.txt",
+      "hash": "e11a86c61bcfe6ff08d9da43b07aa3c0763e2af2751684f9c40a26d7f53ed15a",
+      "title": "Basher Freestyle 6S 5\" by FPVian",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "basher",
+        "freestyle",
+        "5 Inch",
+        "5 In",
+        "5\"",
+        "bando",
+        "fpvian"
+      ],
+      "author": "FPVian",
+      "priority": 1000000000000
+    },
+    {
       "fullPath": "presets/4.3/tune/freedom_spec_460g.txt",
       "hash": "4c78aaef6d00df291b956cf5c3d53d7f789dd12b91094e81b7a37591c4bd8e95",
       "title": "Freedom Spec 460 - 500g",
@@ -1731,7 +1768,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/whoop_justice.txt",
-      "hash": "38bc13bceb6041cd0414181e15d09196da205a5f8aedeb4b1b0caa4b8994a52e",
+      "hash": "e380bdf6dd00f9bcce23fa4b10c3bdbd092afead4ffd7cb5a0eb492b5ed5eacc",
       "title": "Whoop race tune by Justice",
       "firmware_version": [
         "4.3"
@@ -1749,6 +1786,7 @@
         "meteor"
       ],
       "author": "Justice - Gary Kent",
+      "force_options_review": true,
       "priority": 1000000000000
     },
     {
@@ -1790,7 +1828,7 @@
     },
     {
       "fullPath": "presets/4.3/vtx/diatone_mamba_ultra_1000.txt",
-      "hash": "63f36e059b1991b90c79eecd7df8fb5a330aba52e04166faab51d712f9dbdcf0",
+      "hash": "f058b040995b0054977e5a70298cc26b699ea7c64d825e55fbf55905b3aac74e",
       "title": "Diatone Mamba Ultra 1000 VTX Tables",
       "firmware_version": [
         "4.2",
@@ -1829,6 +1867,28 @@
         "SA 2.1"
       ],
       "author": "sugarK",
+      "priority": 1000000
+    },
+    {
+      "fullPath": "presets/4.3/vtx/NanoHawk.txt",
+      "hash": "86e37f00a44c33cca95989a0ce78735c12744dbe230a373278aca86b3c159b19",
+      "title": "Emax NanoHawk 1S SmartAudio 2.0 VTX table",
+      "firmware_version": [
+        "4.2",
+        "4.3"
+      ],
+      "category": "VTX",
+      "status": "COMMUNITY",
+      "keywords": [
+        "vtx",
+        "nanohawk",
+        "emax",
+        "smartaudio",
+        "sa",
+        "sa20",
+        "sa2.0"
+      ],
+      "author": "Sjoer van der Ploeg",
       "priority": 1000000
     },
     {
@@ -1880,7 +1940,7 @@
     },
     {
       "fullPath": "presets/4.3/vtx/speedybee_tx800.txt",
-      "hash": "23b289a0b51770f8f6c0ba648ac0d7cc6685edf7216cb13041740a56c8f44bbf",
+      "hash": "6fc6fff69555a43b7fb37943479e868403cd571549ea6b4d905c0d633f5968ee",
       "title": "SpeedyBee TX800 VTX Tables",
       "firmware_version": [
         "4.2",
