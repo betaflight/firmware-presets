@@ -23,6 +23,7 @@
 #$ DESCRIPTION: - I-Term Relax: 20
 #$ DESCRIPTION:
 #$ DESCRIPTION: Gary's Race Rates are included too - give them a try!
+#$ FORCE_OPTIONS_REVIEW: TRUE
 
 
 #$ INCLUDE: presets/4.3/tune/defaults.txt

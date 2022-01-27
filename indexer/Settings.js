@@ -82,7 +82,8 @@ const settings = {
         disclaimer:           {type: MetadataTypes.STRING,           optional: true   },
         include_warning:      {type: MetadataTypes.FILE_PATH_ARRAY,  optional: true   },
         include_disclaimer:   {type: MetadataTypes.FILE_PATH_ARRAY,  optional: true   },
-        priority:             {type: MetadataTypes.PRIORITY,          optional: true   },
+        priority:             {type: MetadataTypes.PRIORITY,         optional: true   },
+        force_options_review: {type: MetadataTypes.BOOLEAN,          optional: true   },
     }),
 }
 
