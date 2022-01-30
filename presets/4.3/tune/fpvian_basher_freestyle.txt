@@ -18,6 +18,7 @@
 #$ DESCRIPTION: You MUST enable bidirectional DSHOT300 or DSHOT600 to use the filtering options.
 #$ INCLUDE_WARNING: misc/warnings/en/rpm_filters.txt
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/166
+#$ FORCE_OPTIONS_REVIEW: TRUE
 
 # Set to Defaults
 
