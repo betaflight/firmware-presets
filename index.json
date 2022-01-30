@@ -137,11 +137,15 @@
       "RATES",
       "RC_LINK",
       "RC_SMOOTHING",
+      "TUNE",
       "VTX"
     ],
     "author": [
       "Alex Campbell (Chief)",
       "Alex Vanover",
+      "AyyyKayyy - Anthony Knight",
+      "Bacon2002",
+      "Bacon2002 - David H",
       "Betaflight",
       "BMSThomas",
       "ctzsnooze",
@@ -151,6 +155,7 @@
       "IllusionFpv",
       "Ivan Efimov (Limon)",
       "Joshua Bardwell",
+      "Justice - Gary Kent",
       "Jye Smith",
       "Mark Spatz (UAV Tech)",
       "MinChan Kim",
@@ -161,22 +166,30 @@
     "keywords": [
       "\\\\GAS",
       "150Hz",
+      "1S",
       "250Hz",
+      "2S",
+      "3 inch",
+      "3\"",
       "5\"",
       "500Hz",
       "50Hz",
       "533",
+      "65mm",
+      "acro",
       "actual",
       "adjustments",
       "aggressive",
       "AlexFPV",
       "aux",
+      "AyyyKayyy",
       "bardwell",
       "basic",
       "betaflight",
       "blackbox",
       "BMI270",
       "BMSThomas",
+      "brushless",
       "camera",
       "camera_control",
       "Cgo",
@@ -197,6 +210,7 @@
       "ELRS",
       "emax",
       "EVO",
+      "expert",
       "express",
       "feedforward",
       "ff",
@@ -220,6 +234,7 @@
       "IllusionFpv",
       "IRC",
       "jitter",
+      "justice",
       "karate",
       "KarateBrot",
       "launch",
@@ -230,6 +245,7 @@
       "log",
       "logging",
       "mamba",
+      "meteor",
       "MinChan",
       "mode",
       "modes",
@@ -246,6 +262,8 @@
       "OSD",
       "OVX300",
       "OVX303",
+      "partial",
+      "pid",
       "pro32",
       "profile",
       "quaddiction",
@@ -273,10 +291,13 @@
       "sa2.0",
       "sa20",
       "settings",
+      "shames",
       "shark bite",
       "smartaudio",
       "smooth",
       "smoothing",
+      "some",
+      "spec",
       "speedybee",
       "stats",
       "suagrK",
@@ -286,9 +307,13 @@
       "tank ultimate",
       "tbs",
       "texas",
+      "tiny",
       "tiny tank",
+      "tinyTrainer",
+      "trainer",
       "TRAMP",
       "transition",
+      "tune",
       "tx800",
       "UAV Tech",
       "ultra",
@@ -302,6 +327,8 @@
       "vtx",
       "vtx table",
       "vtxtable",
+      "whoop",
+      "whooptopia",
       "youtube"
     ]
   },
@@ -652,6 +679,21 @@
         "switch"
       ],
       "author": "Betaflight",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/osd/BaconOSD.txt",
+      "hash": "3a260cc6e4f12db3e57d2eec248a5dfe6dc04eb13f9b9cce0c184e54fe65e263",
+      "title": "Default 4.3 OSD settings",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "OSD",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "OSD"
+      ],
+      "author": "Bacon2002",
       "priority": 0
     },
     {
@@ -1253,6 +1295,159 @@
       ],
       "author": "ctzsnooze",
       "priority": 100000000
+    },
+    {
+      "fullPath": "presets/4.3/tune/Bacon2002.txt",
+      "hash": "4760ae84b3e5d06ec69fd811b59b3ed87cc0a2df3e9083bb187cfb6c2344264b",
+      "title": "Whoop race tune by Justice",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "whoop",
+        "65mm",
+        "2S",
+        "race",
+        "acro",
+        "tune"
+      ],
+      "author": "Bacon2002 - David H",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.3/tune/defaults.txt",
+      "hash": "a34613c8541c3bf5611d5d3596ece890b902fd8d2378e7f6a03b60a59b61230b",
+      "title": "Tune defaults for Basic 4.3 TUNES",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "OFFICIAL",
+      "keywords": [
+        "defaults",
+        "reset",
+        "tune",
+        "pid",
+        "basic",
+        "default"
+      ],
+      "author": "Betaflight",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/tune/reset_all.txt",
+      "hash": "5b9d76fd857aa8637c394a13e86f4dc651173ca559afe3f61556ff2b0742f347",
+      "title": "Reset 4.3 Tune parameters, complete listing",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "OFFICIAL",
+      "keywords": [
+        "defaults",
+        "reset",
+        "tune",
+        "pid",
+        "expert",
+        "default"
+      ],
+      "author": "Betaflight",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/tune/reset_some.txt",
+      "hash": "3fa44efe126b5d69036e960559722306bce24c7f1176698a5ff6be21adc2996d",
+      "title": "Reset selected 4.3 Tune related settings.",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "OFFICIAL",
+      "keywords": [
+        "defaults",
+        "reset",
+        "tune",
+        "default",
+        "some",
+        "partial"
+      ],
+      "author": "Betaflight",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/tune/tiny_karate.txt",
+      "hash": "a417f87aae3f44caffc5fbf43a6b538053db73b74a94ecb762a362de739d32c5",
+      "title": "533 TinyTrainer Karate",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "karate",
+        "race",
+        "533",
+        "3 inch",
+        "3\"",
+        "sugarK",
+        "shames",
+        "tiny",
+        "trainer",
+        "spec",
+        "tinyTrainer"
+      ],
+      "author": "sugarK",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.3/tune/whoop_ayyykayyy.txt",
+      "hash": "18a0a21b675f4c2e4719bae8d448684e58b51981f657755fe4c2f95e7eaea2c7",
+      "title": "Whoop race tune by AyyyKayyy",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "whoop",
+        "65mm",
+        "1S",
+        "race",
+        "acro",
+        "tune",
+        "AyyyKayyy",
+        "meteor",
+        "whooptopia",
+        "brushless"
+      ],
+      "author": "AyyyKayyy - Anthony Knight",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.3/tune/whoop_justice.txt",
+      "hash": "e380bdf6dd00f9bcce23fa4b10c3bdbd092afead4ffd7cb5a0eb492b5ed5eacc",
+      "title": "Whoop race tune by Justice",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "whoop",
+        "65mm",
+        "1S",
+        "race",
+        "acro",
+        "tune",
+        "justice",
+        "meteor"
+      ],
+      "author": "Justice - Gary Kent",
+      "force_options_review": true,
+      "priority": 1000000000000
     },
     {
       "fullPath": "presets/4.3/vtx/defaults.txt",
