@@ -1,14 +1,14 @@
-#$ TITLE: Whoop race tune by Justice
+#$ TITLE: Toothpick tune by Bacon
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: TUNE
 #$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: whoop, 65mm, 2S, race, acro, tune,
 #$ AUTHOR: Bacon2002 - David H
-#$ DISCUSSION: https://github.com/Bacon2002
-#$ DESCRIPTION: 65mm whoop tune for racing
+#$ DISCUSSION: https://github.com/Bacon2002/Bacon2002-Presets-Live
+#$ DESCRIPTION: 65mm whoop tune
 #$ DESCRIPTION:
-#$ DESCRIPTION: RPM filtering is STRONGLY RECOMMENDED!
-#$ DESCRIPTION: PLEASE REVIEW THE OPTIONS IN THE LIST ABOVE!
+#$ DESCRIPTION: RPM filtering required
+#$ DESCRIPTION: PLEASE REVIEW THE OPTIONS
 #$ DESCRIPTION: Check ONE of the three FILTER options!
 #$ DESCRIPTION:
 #$ DESCRIPTION: The (recommended) options are what David uses, you should check all of them.
