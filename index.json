@@ -149,6 +149,7 @@
       "Betaflight",
       "BMSThomas",
       "ctzsnooze",
+      "David aka Bacon",
       "Directory",
       "DusKing1 (Hugo Chiang), Pitronic",
       "Evan Turner (Headsup)",
@@ -164,10 +165,12 @@
     ],
     "keywords": [
       "\\\\GAS",
+      "100mm",
       "150Hz",
       "1S",
       "250Hz",
       "2S",
+      "3S",
       "5\"",
       "500Hz",
       "50Hz",
@@ -302,6 +305,7 @@
       "tbs",
       "texas",
       "tiny tank",
+      "Toothpick",
       "TRAMP",
       "transition",
       "tune",
@@ -1367,6 +1371,28 @@
       ],
       "author": "Betaflight",
       "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/tune/Toothpick100.txt",
+      "hash": "4d7a8dcd4d90b569c060132a3aa9268768048a3df7cb9d0e91e5f681f261784e",
+      "title": "Toothpick 100mm",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "Toothpick",
+        "100mm",
+        "2S",
+        "3S",
+        "race",
+        "acro",
+        "tune"
+      ],
+      "author": "David aka Bacon",
+      "force_options_review": true,
+      "priority": 1000000000000
     },
     {
       "fullPath": "presets/4.3/tune/whoop_ayyykayyy.txt",
