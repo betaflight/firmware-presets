@@ -145,7 +145,7 @@
       "Alex Vanover",
       "AyyyKayyy - Anthony Knight",
       "Bacon2002",
-      "Bacon2002 - David H",
+      "Bacon2002 - David",
       "Betaflight",
       "BMSThomas",
       "ctzsnooze",
@@ -1289,7 +1289,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/Bacon2002.txt",
-      "hash": "bc9d2d6faa9297571b4585ecfe5a880d9943e10386c793298ca3ad5b1123d4bb",
+      "hash": "88485da31dbced9e6c0b0ee0f5f01ab0fd2ef493800849c6386dd4f7b5708ad6",
       "title": "Toothpick tune by Bacon",
       "firmware_version": [
         "4.3"
@@ -1304,7 +1304,7 @@
         "acro",
         "tune"
       ],
-      "author": "Bacon2002 - David H",
+      "author": "Bacon2002 - David",
       "force_options_review": true,
       "priority": 1000000000000
     },

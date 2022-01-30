@@ -3,7 +3,7 @@
 #$ CATEGORY: TUNE
 #$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: whoop, 65mm, 2S, race, acro, tune,
-#$ AUTHOR: Bacon2002 - David H
+#$ AUTHOR: Bacon2002 - David
 #$ DISCUSSION: https://github.com/Bacon2002/Bacon2002-Presets-Live
 #$ DESCRIPTION: 65mm whoop tune
 #$ DESCRIPTION:
@@ -17,9 +17,6 @@
 #$ DESCRIPTION: These settings are applied by this Preset:
 #$ DESCRIPTION: - Vbat Sag Compensation: 100%,
 #$ DESCRIPTION: - VBat warning voltage: 3.5V
-#$ DESCRIPTION: - DShot Idle: 6%
-#$ DESCRIPTION: - Dynamic Idle: OFF
-#$ DESCRIPTION: - Anti-Gravity: 45
 #$ DESCRIPTION: - I-Term Relax: 20
 #$ DESCRIPTION:
 #$ DESCRIPTION: David's rates are included - give them a try!
@@ -83,7 +80,7 @@ set tpa_breakpoint = 1350
 # set anti_gravity_gain = 4500
 
 # -- Absolute control (off, default) --
-# -- Accecleration limits (off, default) --
+# -- Acceleration limits (off, default) --
 # -- Angle and Horizon mode tuning (default) --
 # -- PIDs active below min throttle (default) --
 # -- Set mixer type to default (legacy) --
@@ -148,7 +145,7 @@ set tpa_breakpoint = 1350
 
 #$ OPTION_GROUP BEGIN: Tune
 
-#$ OPTION BEGIN (UNCHECKED): Bacon tune
+#$ OPTION BEGIN (UNCHECKED): David's tune
 # -- PID values --
 set p_pitch = 74
 set i_pitch = 132
@@ -247,19 +244,15 @@ set vbat_sag_compensation = 50
 #$ OPTION END
 
 # -- Throttle curve --
-#$ OPTION BEGIN (UNCHECKED): Sharper throttle response curve (optional)
-set thr_mid = 100
-set thr_expo = 30
+#$ OPTION BEGIN (UNCHECKED): Try throttle response curve (optional)
 #$ OPTION END
 
 # -- Dynamic idle --
-set dyn_idle_min_rpm = 0
-#$ OPTION BEGIN (UNCHECKED): Enable dynamic idle at 40 (optional)
-set dyn_idle_min_rpm = 40
+#$ OPTION BEGIN (UNCHECKED): Try dynamic idle (optional)
 #$ OPTION END
 
 # -- Rates --
-#$ OPTION BEGIN (UNCHECKED): Try Gary's race rates! (go on!)
+#$ OPTION BEGIN (UNCHECKED): Try David's rates
 set thr_mid = 40
 set thr_expo = 0
 set rates_type = ACTUAL
