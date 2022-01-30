@@ -1,0 +1,146 @@
+#$ TITLE: Whoop 65mm
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: TUNE
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: Whoop, 65mm, 2S, race, acro, tune
+#$ AUTHOR: David aka Bacon
+#$ DISCUSSION: https://github.com/Bacon2002/Bacon2002-Presets-Live
+#$ DESCRIPTION: 100mm toothpick tune
+#$ DESCRIPTION:
+#$ DESCRIPTION: RPM filtering required
+#$ DESCRIPTION: 
+#$ DESCRIPTION: David's rates are included
+#$ FORCE_OPTIONS_REVIEW: TRUE
+
+
+#$ INCLUDE: presets/4.3/tune/defaults.txt
+
+# name: Whoop HD
+
+# feature
+feature -RX_SPI
+feature RX_SERIAL
+feature TELEMETRY
+
+# serial
+serial 0 64 115200 57600 0 115200
+serial 1 1 115200 57600 0 115200
+
+# beacon
+beacon RX_LOST
+beacon RX_SET
+
+# map
+map AETR1234
+
+# aux
+aux 0 0 0 1800 2100 0 0
+aux 1 1 1 1300 1700 0 0
+aux 2 2 1 1700 2100 0 0
+aux 3 13 2 1300 2100 0 0
+aux 4 35 2 1800 2100 0 0
+
+# vtxtable
+vtxtable bands 1
+vtxtable channels 8
+vtxtable powerlevels 3
+
+# master
+set dyn_notch_q = 250
+set dyn_notch_max_hz = 500
+set acc_calibration = 13,18,-53,1
+set mag_hardware = NONE
+set baro_hardware = NONE
+set min_check = 860
+set max_check = 2150
+set serialrx_provider = CRSF
+set rx_min_usec = 750
+set rx_max_usec = 2250
+set dshot_bidir = ON
+set bat_capacity = 350
+set vbat_min_cell_voltage = 320
+set vbat_warning_cell_voltage = 330
+set pid_process_denom = 4
+set report_cell_voltage = ON
+set osd_warn_link_quality = ON
+set osd_vbat_pos = 2072
+set osd_rssi_pos = 33
+set osd_link_quality_pos = 2048
+set osd_rssi_dbm_pos = 2080
+set osd_tim_1_pos = 2136
+set osd_flymode_pos = 2540
+set osd_g_force_pos = 2496
+set osd_throttle_pos = 2528
+set osd_current_pos = 2112
+set osd_mah_drawn_pos = 2488
+set osd_craft_name_pos = 2060
+set osd_altitude_pos = 2464
+set osd_warnings_pos = 14761
+set osd_avg_cell_voltage_pos = 2104
+set osd_esc_tmp_pos = 2520
+set osd_core_temp_pos = 2552
+set osd_stat_max_spd = OFF
+set osd_stat_endbatt = ON
+set osd_stat_min_rssi = OFF
+set osd_stat_max_alt = ON
+set osd_stat_max_g_force = ON
+set osd_stat_max_esc_temp = ON
+set osd_stat_max_esc_rpm = ON
+set osd_stat_min_link_quality = ON
+set osd_stat_max_fft = ON
+set osd_stat_min_rssi_dbm = ON
+set osd_displayport_device = MSP
+set vtx_band = 1
+set vtx_channel = 1
+set vtx_power = 1
+set displayport_msp_serial = 1
+set name = Whoop HD
+
+profile 0
+
+profile 1
+
+profile 2
+
+# profile 2
+set anti_gravity_gain = 10000
+set iterm_relax_cutoff = 10
+set p_pitch = 69
+set d_pitch = 73
+set f_pitch = 143
+set p_roll = 63
+set d_roll = 67
+set f_roll = 135
+set p_yaw = 68
+set f_yaw = 135
+set d_min_roll = 0
+set d_min_pitch = 0
+set feedforward_averaging = 2_POINT
+set feedforward_smooth_factor = 45
+set feedforward_jitter_factor = 6
+
+# restore original profile selection
+profile 2
+
+rateprofile 0
+
+# rateprofile 0
+set roll_rc_rate = 20
+set pitch_rc_rate = 20
+set yaw_rc_rate = 20
+set roll_expo = 40
+set pitch_expo = 40
+set yaw_expo = 40
+set roll_srate = 95
+set pitch_srate = 95
+set yaw_srate = 95
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+rateprofile 4
+
+rateprofile 5

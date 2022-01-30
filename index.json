@@ -143,9 +143,7 @@
     "author": [
       "Alex Campbell (Chief)",
       "Alex Vanover",
-      "AyyyKayyy - Anthony Knight",
       "Bacon2002",
-      "Bacon2002 - David",
       "Betaflight",
       "BMSThomas",
       "ctzsnooze",
@@ -167,7 +165,6 @@
       "\\\\GAS",
       "100mm",
       "150Hz",
-      "1S",
       "250Hz",
       "2S",
       "3S",
@@ -182,14 +179,12 @@
       "aggressive",
       "AlexFPV",
       "aux",
-      "AyyyKayyy",
       "bardwell",
       "basic",
       "betaflight",
       "blackbox",
       "BMI270",
       "BMSThomas",
-      "brushless",
       "camera",
       "camera_control",
       "Cgo",
@@ -244,7 +239,6 @@
       "log",
       "logging",
       "mamba",
-      "meteor",
       "MinChan",
       "mode",
       "modes",
@@ -322,8 +316,7 @@
       "vtx",
       "vtx table",
       "vtxtable",
-      "whoop",
-      "whooptopia",
+      "Whoop",
       "youtube"
     ]
   },
@@ -1292,27 +1285,6 @@
       "priority": 100000000
     },
     {
-      "fullPath": "presets/4.3/tune/Bacon2002.txt",
-      "hash": "88485da31dbced9e6c0b0ee0f5f01ab0fd2ef493800849c6386dd4f7b5708ad6",
-      "title": "Toothpick tune by Bacon",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "TUNE",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "whoop",
-        "65mm",
-        "2S",
-        "race",
-        "acro",
-        "tune"
-      ],
-      "author": "Bacon2002 - David",
-      "force_options_review": true,
-      "priority": 1000000000000
-    },
-    {
       "fullPath": "presets/4.3/tune/defaults.txt",
       "hash": "a34613c8541c3bf5611d5d3596ece890b902fd8d2378e7f6a03b60a59b61230b",
       "title": "Tune defaults for Basic 4.3 TUNES",
@@ -1395,27 +1367,24 @@
       "priority": 1000000000000
     },
     {
-      "fullPath": "presets/4.3/tune/whoop_ayyykayyy.txt",
-      "hash": "18a0a21b675f4c2e4719bae8d448684e58b51981f657755fe4c2f95e7eaea2c7",
-      "title": "Whoop race tune by AyyyKayyy",
+      "fullPath": "presets/4.3/tune/Whoop.txt",
+      "hash": "284a456bb6b40e6f586fbb1e9ca6a5156127dfcb6f759dd8549ec1da6f178658",
+      "title": "Whoop 65mm",
       "firmware_version": [
         "4.3"
       ],
       "category": "TUNE",
       "status": "EXPERIMENTAL",
       "keywords": [
-        "whoop",
+        "Whoop",
         "65mm",
-        "1S",
+        "2S",
         "race",
         "acro",
-        "tune",
-        "AyyyKayyy",
-        "meteor",
-        "whooptopia",
-        "brushless"
+        "tune"
       ],
-      "author": "AyyyKayyy - Anthony Knight",
+      "author": "David aka Bacon",
+      "force_options_review": true,
       "priority": 1000000000000
     },
     {
