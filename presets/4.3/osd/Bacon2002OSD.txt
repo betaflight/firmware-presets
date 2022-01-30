@@ -1,3 +1,10 @@
+#$ TITLE: Default 4.3 OSD settings
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: OSD
+#$ STATUS: UNOFFIAL
+#$ KEYWORDS: defaults, reset, OSD
+#$ AUTHOR: Betaflight
+#$ DESCRIPTION: Bacon2002
 set osd_warn_link_quality = ON
 set osd_vbat_pos = 2072
 set osd_rssi_pos = 33
