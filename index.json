@@ -137,7 +137,6 @@
       "RATES",
       "RC_LINK",
       "RC_SMOOTHING",
-      "TUNE",
       "VTX"
     ],
     "author": [
@@ -149,50 +148,30 @@
       "Directory",
       "DusKing1 (Hugo Chiang), Pitronic",
       "Evan Turner (Headsup)",
-      "FPVian",
       "IllusionFpv",
       "Ivan Efimov (Limon)",
       "Joshua Bardwell",
-      "Justice - Gary Kent",
       "Jye Smith",
       "Mark Spatz (UAV Tech)",
       "MinChan Kim",
       "NemesisXB",
       "Sjoer van der Ploeg",
-      "sugarK",
-      "SupaflyFPV"
+      "sugarK"
     ],
     "keywords": [
       "\\\\GAS",
       "150Hz",
-      "1S",
       "250Hz",
-      "3 inch",
-      "3\"",
-      "4S",
-      "5 In",
-      "5 Inch",
       "5\"",
       "500Hz",
       "50Hz",
       "533",
-      "5in",
-      "6 Inch",
-      "6\"",
-      "65mm",
-      "666Hz",
-      "6S",
-      "7 Inch",
-      "7\"",
-      "acro",
       "actual",
       "adjustments",
       "aggressive",
       "AlexFPV",
       "aux",
-      "bando",
       "bardwell",
-      "basher",
       "basic",
       "betaflight",
       "blackbox",
@@ -200,15 +179,12 @@
       "BMSThomas",
       "camera",
       "camera_control",
-      "cfv2",
       "Cgo",
       "Chief",
       "cinematic",
       "clean",
       "clear",
       "control",
-      "crossfire",
-      "CRSF",
       "ctzsnooze",
       "CTZsoonze",
       "default",
@@ -221,7 +197,6 @@
       "ELRS",
       "emax",
       "EVO",
-      "expert",
       "express",
       "feedforward",
       "ff",
@@ -229,15 +204,9 @@
       "filtering",
       "filters",
       "five33",
-      "fpvian",
-      "freedom",
-      "freedom spec",
       "freestyle",
       "freestyle_HD",
       "freesytle",
-      "frsky",
-      "ghost",
-      "GHST",
       "GPS",
       "gyro",
       "gyros",
@@ -249,11 +218,8 @@
       "hot",
       "HV",
       "IllusionFpv",
-      "immersion",
-      "immersionRC",
       "IRC",
       "jitter",
-      "justice",
       "karate",
       "KarateBrot",
       "launch",
@@ -263,9 +229,7 @@
       "link",
       "log",
       "logging",
-      "longrange",
       "mamba",
-      "meteor",
       "MinChan",
       "mode",
       "modes",
@@ -282,17 +246,12 @@
       "OSD",
       "OVX300",
       "OVX303",
-      "partial",
-      "pid",
       "pro32",
       "profile",
-      "purerace",
       "quaddiction",
       "quick",
       "race",
       "race rates ctzsnooze actual",
-      "race250",
-      "race500",
       "racing",
       "rates",
       "rc",
@@ -300,7 +259,6 @@
       "rc smoothing",
       "rc_link",
       "rc_smoothing",
-      "Redpine",
       "reset",
       "reset statistics",
       "RPM",
@@ -314,35 +272,23 @@
       "SA 2.1",
       "sa2.0",
       "sa20",
-      "sbus",
       "settings",
-      "shames",
       "shark bite",
       "smartaudio",
       "smooth",
       "smoothing",
-      "soild250",
-      "some",
-      "spec",
       "speedybee",
       "stats",
       "suagrK",
       "sugarK",
-      "Supafly",
-      "SupaflyFPV",
       "switch",
       "tank solo",
       "tank ultimate",
-      "TBS",
+      "tbs",
       "texas",
-      "tiny",
       "tiny tank",
-      "tinyTrainer",
-      "tracer",
-      "trainer",
       "TRAMP",
       "transition",
-      "tune",
       "tx800",
       "UAV Tech",
       "ultra",
@@ -356,8 +302,6 @@
       "vtx",
       "vtx table",
       "vtxtable",
-      "whoop",
-      "world champion",
       "youtube"
     ]
   },
@@ -1209,206 +1153,6 @@
       "priority": 10000000000
     },
     {
-      "fullPath": "presets/4.3/rc_link/frsky_sbus.txt",
-      "hash": "c8eea0ae2ea506b7a4ab144c4d4dbbcdaa8d29e68814a7823bbfc66074fa58f7",
-      "title": "FrSky Sbus",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "RC_LINK",
-      "status": "OFFICIAL",
-      "keywords": [
-        "frsky",
-        "sbus",
-        "rc",
-        "link"
-      ],
-      "author": "ctzsnooze",
-      "priority": 10000000000
-    },
-    {
-      "fullPath": "presets/4.3/rc_link/IRC_freestyle.txt",
-      "hash": "cc5fd85c176ad1bb6474cfde8033b7fcd18ff87517b8e14d43b65974f92b61c7",
-      "title": "IRC Ghost Freestyle",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "RC_LINK",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "rc link",
-        "ghost",
-        "IRC",
-        "GHST",
-        "250Hz",
-        "500Hz",
-        "freestyle",
-        "purerace",
-        "soild250",
-        "race250",
-        "race500",
-        "race",
-        "normal",
-        "immersionRC",
-        "immersion"
-      ],
-      "author": "sugarK",
-      "priority": 10000000000
-    },
-    {
-      "fullPath": "presets/4.3/rc_link/IRC_longrange.txt",
-      "hash": "2a1985804125e2058d30c772be82847a51535d4cbd49614a1e123557ab573b29",
-      "title": "IRC Ghost Longrange",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "RC_LINK",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "rc link",
-        "ghost",
-        "IRC",
-        "GHST",
-        "longrange",
-        "race",
-        "normal",
-        "immersionRC",
-        "immersion"
-      ],
-      "author": "sugarK",
-      "priority": 10000000000
-    },
-    {
-      "fullPath": "presets/4.3/rc_link/IRC_race.txt",
-      "hash": "3181ecf360d46e602c8e026ad34e9b630529c86ba0343ee001a80731a4707c00",
-      "title": "IRC Ghost Racing",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "RC_LINK",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "rc link",
-        "ghost",
-        "IRC",
-        "GHST",
-        "250Hz",
-        "500Hz",
-        "racing",
-        "purerace",
-        "soild250",
-        "race250",
-        "race500",
-        "immersionRC",
-        "immersion"
-      ],
-      "author": "sugarK",
-      "priority": 10000000000
-    },
-    {
-      "fullPath": "presets/4.3/rc_link/redpine_666hz.txt",
-      "hash": "ac6528469adfa7742cff51220b91d70964a03b8a8b1bf1b7d0ca15f624650c3c",
-      "title": "Redpine 666Hz",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "RC_LINK",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "Redpine",
-        "rc",
-        "link",
-        "666Hz"
-      ],
-      "author": "ctzsnooze",
-      "priority": 10000000000
-    },
-    {
-      "fullPath": "presets/4.3/rc_link/reset_to_defaults.txt",
-      "hash": "8b88664102911f576820ad482c5680a61e1c3c0065df7be544d84ebeefe31362",
-      "title": "Reset ALL RC link related settings",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "RC_LINK",
-      "status": "OFFICIAL",
-      "keywords": [
-        "defaults",
-        "reset",
-        "rc link",
-        "rc_link"
-      ],
-      "author": "Betaflight",
-      "priority": 0
-    },
-    {
-      "fullPath": "presets/4.3/rc_link/TBS_freestyle.txt",
-      "hash": "06f19252c6d8abb331d39bec21868f6802506e2bc0b212b65daf7c28bb2634c6",
-      "title": "TBS Crossfire/Tracer freesyle",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "RC_LINK",
-      "status": "OFFICIAL",
-      "keywords": [
-        "rc link",
-        "tracer",
-        "TBS",
-        "cfv2",
-        "250Hz",
-        "crossfire",
-        "freestyle",
-        "150Hz",
-        "50Hz",
-        "CRSF"
-      ],
-      "author": "sugarK",
-      "priority": 10000000000
-    },
-    {
-      "fullPath": "presets/4.3/rc_link/TBS_longrange.txt",
-      "hash": "d12a7736b42b92f7de2fd945ac79c3f43ff112f3c3deab46990b4252851daf79",
-      "title": "TBS Crossfire longrange",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "RC_LINK",
-      "status": "OFFICIAL",
-      "keywords": [
-        "rc link",
-        "TBS",
-        "crossfire",
-        "longrange",
-        "50Hz",
-        "CRSF"
-      ],
-      "author": "sugarK",
-      "priority": 10000000000
-    },
-    {
-      "fullPath": "presets/4.3/rc_link/TBS_race.txt",
-      "hash": "69a246c3b18af439e198217f71bf14e5e6a43fbb426bfda695caf5e08fbd16b9",
-      "title": "TBS Crossfire/Tracer racing",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "RC_LINK",
-      "status": "OFFICIAL",
-      "keywords": [
-        "rc link",
-        "tracer",
-        "TBS",
-        "cfv2",
-        "250Hz",
-        "crossfire",
-        "racing",
-        "150Hz",
-        "CRSF"
-      ],
-      "author": "sugarK",
-      "priority": 10000000000
-    },
-    {
       "fullPath": "presets/4.3/rc_smoothing/cinematic.txt",
       "hash": "0205ecd295a55a87c9118042a7cf0bdbf750393b3493009d38e566206c8672be",
       "title": "Cinematic RC smoothing",
@@ -1509,285 +1253,6 @@
       ],
       "author": "ctzsnooze",
       "priority": 100000000
-    },
-    {
-      "fullPath": "presets/4.3/tune/ctzsnooze_5in_4S_race.txt",
-      "hash": "c500a27ae350ba2d79e3b4da57500ee20ff03de0e519bddbf73daf9f65a13c8b",
-      "title": "5\" 4S race by ctzsznooze",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "TUNE",
-      "status": "OFFICIAL",
-      "keywords": [
-        "5in",
-        "4S",
-        "race",
-        "tune",
-        "ctzsnooze"
-      ],
-      "author": "ctzsnooze",
-      "priority": 1000000000000
-    },
-    {
-      "fullPath": "presets/4.3/tune/defaults.txt",
-      "hash": "a34613c8541c3bf5611d5d3596ece890b902fd8d2378e7f6a03b60a59b61230b",
-      "title": "Tune defaults for Basic 4.3 TUNES",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "TUNE",
-      "status": "OFFICIAL",
-      "keywords": [
-        "defaults",
-        "reset",
-        "tune",
-        "pid",
-        "basic",
-        "default"
-      ],
-      "author": "Betaflight",
-      "priority": 0
-    },
-    {
-      "fullPath": "presets/4.3/tune/fpvian_basher_freestyle.txt",
-      "hash": "e11a86c61bcfe6ff08d9da43b07aa3c0763e2af2751684f9c40a26d7f53ed15a",
-      "title": "Basher Freestyle 6S 5\" by FPVian",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "TUNE",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "basher",
-        "freestyle",
-        "5 Inch",
-        "5 In",
-        "5\"",
-        "bando",
-        "fpvian"
-      ],
-      "author": "FPVian",
-      "priority": 1000000000000
-    },
-    {
-      "fullPath": "presets/4.3/tune/freedom_spec_460g.txt",
-      "hash": "4c78aaef6d00df291b956cf5c3d53d7f789dd12b91094e81b7a37591c4bd8e95",
-      "title": "Freedom Spec 460 - 500g",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "TUNE",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "sugarK",
-        "limon",
-        "ctzsnooze",
-        "freedom",
-        "freedom spec",
-        "headsup",
-        "five33",
-        "533",
-        "racing",
-        "race",
-        "5\""
-      ],
-      "author": "Ivan Efimov (Limon)",
-      "priority": 1000000000000
-    },
-    {
-      "fullPath": "presets/4.3/tune/karate_freestyle_5_inch.txt",
-      "hash": "f01d120cbd51bfee298a8ba8b78d9fb6577fbc20d2b36b699f9215d47135df31",
-      "title": "Freestyle 5\" Karate Style",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "TUNE",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "karate",
-        "6S",
-        "5 inch",
-        "5\"",
-        "sugarK",
-        "limon",
-        "ctzsnooze",
-        "karateBrot",
-        "freestyle"
-      ],
-      "author": "sugarK",
-      "priority": 1000000000000
-    },
-    {
-      "fullPath": "presets/4.3/tune/karate_race.txt",
-      "hash": "626e85505453bbfa17c2fa2ad2e87425acea943c6810992619a07382921ed42c",
-      "title": "Karate Race 6s 5\"",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "TUNE",
-      "status": "OFFICIAL",
-      "keywords": [
-        "karate",
-        "6S",
-        "race",
-        "world champion",
-        "5 inch",
-        "5\"",
-        "sugarK",
-        "limon",
-        "ctzsnooze",
-        "karateBrot"
-      ],
-      "author": "sugarK",
-      "priority": 1000000000000
-    },
-    {
-      "fullPath": "presets/4.3/tune/reset_all.txt",
-      "hash": "5b9d76fd857aa8637c394a13e86f4dc651173ca559afe3f61556ff2b0742f347",
-      "title": "Reset 4.3 Tune parameters, complete listing",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "TUNE",
-      "status": "OFFICIAL",
-      "keywords": [
-        "defaults",
-        "reset",
-        "tune",
-        "pid",
-        "expert",
-        "default"
-      ],
-      "author": "Betaflight",
-      "priority": 0
-    },
-    {
-      "fullPath": "presets/4.3/tune/reset_some.txt",
-      "hash": "3fa44efe126b5d69036e960559722306bce24c7f1176698a5ff6be21adc2996d",
-      "title": "Reset selected 4.3 Tune related settings.",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "TUNE",
-      "status": "OFFICIAL",
-      "keywords": [
-        "defaults",
-        "reset",
-        "tune",
-        "default",
-        "some",
-        "partial"
-      ],
-      "author": "Betaflight",
-      "priority": 0
-    },
-    {
-      "fullPath": "presets/4.3/tune/SupaflyFPV_Freestyle_5_Inch_EasyTune.txt",
-      "hash": "2d52fbbb8aeb22170459b74d5b788ed80bb5d9952f2e8009cb07b103117615d3",
-      "title": "SupaflyFPV Freestyle 5 Inch",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "TUNE",
-      "status": "OFFICIAL",
-      "keywords": [
-        "Supafly",
-        "SupaflyFPV",
-        "4S",
-        "6S",
-        "Freestyle",
-        "5 inch",
-        "5\""
-      ],
-      "author": "SupaflyFPV",
-      "priority": 1000000000000
-    },
-    {
-      "fullPath": "presets/4.3/tune/SupaflyFPV_Freestyle_6_and_EasyTune.txt",
-      "hash": "4411b1554066234acca3b0b812ca1c84f290096dcffb38f485a5fc8c112ddec7",
-      "title": "SupaflyFPV Freestyle 6 Inch",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "TUNE",
-      "status": "OFFICIAL",
-      "keywords": [
-        "Supafly",
-        "SupaflyFPV",
-        "Freestyle",
-        "6\"",
-        "6 Inch"
-      ],
-      "author": "SupaflyFPV",
-      "priority": 1000000000000
-    },
-    {
-      "fullPath": "presets/4.3/tune/SupaflyFPV_Freestyle_7_Inch_EasyTune.txt",
-      "hash": "36335f28e15ea1335625e4abd6174335f38ad53b97ec8de618a1d569554be520",
-      "title": "SupaflyFPV Freestyle 7 Inch",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "TUNE",
-      "status": "OFFICIAL",
-      "keywords": [
-        "Supafly",
-        "SupaflyFPV",
-        "Freestyle",
-        "7\"",
-        "7 Inch"
-      ],
-      "author": "SupaflyFPV",
-      "priority": 1000000000000
-    },
-    {
-      "fullPath": "presets/4.3/tune/tiny_karate.txt",
-      "hash": "a417f87aae3f44caffc5fbf43a6b538053db73b74a94ecb762a362de739d32c5",
-      "title": "533 TinyTrainer Karate",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "TUNE",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "karate",
-        "race",
-        "533",
-        "3 inch",
-        "3\"",
-        "sugarK",
-        "shames",
-        "tiny",
-        "trainer",
-        "spec",
-        "tinyTrainer"
-      ],
-      "author": "sugarK",
-      "priority": 1000000000000
-    },
-    {
-      "fullPath": "presets/4.3/tune/whoop_justice.txt",
-      "hash": "e380bdf6dd00f9bcce23fa4b10c3bdbd092afead4ffd7cb5a0eb492b5ed5eacc",
-      "title": "Whoop race tune by Justice",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "TUNE",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "whoop",
-        "65mm",
-        "1S",
-        "race",
-        "acro",
-        "tune",
-        "justice",
-        "meteor"
-      ],
-      "author": "Justice - Gary Kent",
-      "force_options_review": true,
-      "priority": 1000000000000
     },
     {
       "fullPath": "presets/4.3/vtx/defaults.txt",
