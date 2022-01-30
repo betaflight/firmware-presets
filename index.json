@@ -165,9 +165,12 @@
       "\\\\GAS",
       "100mm",
       "150Hz",
+      "2.5\"",
       "250Hz",
       "2S",
+      "3\"",
       "3S",
+      "4S",
       "5\"",
       "500Hz",
       "50Hz",
@@ -255,7 +258,6 @@
       "OSD",
       "OVX300",
       "OVX303",
-      "partial",
       "pid",
       "pro32",
       "profile",
@@ -288,15 +290,16 @@
       "smartaudio",
       "smooth",
       "smoothing",
-      "some",
       "speedybee",
       "stats",
       "suagrK",
       "sugarK",
       "switch",
+      "Tadpole",
       "tank solo",
       "tank ultimate",
       "tbs",
+      "Test",
       "texas",
       "tiny tank",
       "Toothpick",
@@ -1325,24 +1328,70 @@
       "priority": 0
     },
     {
-      "fullPath": "presets/4.3/tune/reset_some.txt",
-      "hash": "3fa44efe126b5d69036e960559722306bce24c7f1176698a5ff6be21adc2996d",
-      "title": "Reset selected 4.3 Tune related settings.",
+      "fullPath": "presets/4.3/tune/Tadpole2_5.txt",
+      "hash": "ba3b6fb23797604b76fc13983224a2aa514589bcfa44c0e5db87fff5a4872848",
+      "title": "Tadpole 2.5\"",
       "firmware_version": [
         "4.3"
       ],
       "category": "TUNE",
-      "status": "OFFICIAL",
+      "status": "EXPERIMENTAL",
       "keywords": [
-        "defaults",
-        "reset",
-        "tune",
-        "default",
-        "some",
-        "partial"
+        "Tadpole",
+        "2.5\"",
+        "2S",
+        "3S",
+        "4S",
+        "race",
+        "acro",
+        "tune"
       ],
-      "author": "Betaflight",
-      "priority": 0
+      "author": "David aka Bacon",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.3/tune/Tadpole3_5.txt",
+      "hash": "f7796615ab6093593dc1edac41e392346ec461a3f90cc01463042ddba24a592b",
+      "title": "Tadpole 3\"",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "Tadpole",
+        "3\"",
+        "2S",
+        "3S",
+        "4S",
+        "race",
+        "acro",
+        "tune"
+      ],
+      "author": "David aka Bacon",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.3/tune/Test.txt",
+      "hash": "a77ff9753c7cf7a0e23d04d39620c41220e2afa2e4e71044c858811d72b9e059",
+      "title": "Test",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "Test",
+        "2S",
+        "race",
+        "acro",
+        "tune"
+      ],
+      "author": "David aka Bacon",
+      "force_options_review": true,
+      "priority": 1000000000000
     },
     {
       "fullPath": "presets/4.3/tune/Toothpick100.txt",
