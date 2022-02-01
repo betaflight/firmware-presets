@@ -87,7 +87,7 @@ A Preset must include a field structure that complies with the specifications be
 
 **Optional fields**
 ```
-    KEYWORDS, AUTHOR, DESCRIPTION, INCLUDE, OPTION, DISCUSSION, DISCLAIMER, INCLUDE_DISCLAIMER, WARNING, INCLUDE_WARNING, HIDDEN
+    KEYWORDS, AUTHOR, DESCRIPTION, INCLUDE, OPTION, FORCE_OPTIONS_REVIEW, OPTION_GROUP BEGIN, DISCUSSION, DISCLAIMER, INCLUDE_DISCLAIMER, WARNING, INCLUDE_WARNING, HIDDEN
 ```
 All field tags must be:
 - preceded with `#$ `, 
@@ -105,8 +105,10 @@ All field tags must be:
 | KEYWORDS | Choose carefully.  Make it easy for your intended user to find your preset with keywords that you expect they will use.  Comma separate each entry. |
 | AUTHOR | Your Github name or nickname. |
 | DESCRIPTION| Clearly explain what will be changed, and, where relevant, what will not be changed. For example, if  filter setup requires RPM filtering, be sure to state this. Each ``#$ DESCRIPTION:` line results in a separate paragraph.  A blank `#$ DESCRIPTION:` line results in a blank line between paragraphs. All description text should be placed above any includes or options. |
+| FORCE_OPTIONS_REVIEW | Opens a dialog advising the user to review the options if they have not done so before applying the Preset.|
 | INCLUDE | Inserts data from one or more separate Presets ahead of the CLI commands of this Preset.  Useful to enforce defaults ahead of your commands. See details below.|
-| OPTION | Commands within `OPTION` tags present the user with a checkbox to apply, or not apply, the enclosed commands.  The default check-box behaviour can be specified.  Each `OPTION` group must have a unique name. For more info, [click here](https://github.com/betaflight/firmware-presets#OPTION). |
+| OPTION | Commands within `OPTION` tags present the user with a checkbox to apply, or not apply, the enclosed commands.  The default check-box behaviour can be specified.  Each `OPTION` must have a unique name. For more info, [click here](https://github.com/betaflight/firmware-presets#OPTION). |
+| OPTION_GROUP | Text to appear before a group of Options. |
 | DISCLAIMER | Field containing text for a disclaimer. |
 | INCLUDE_DISCLAIMER | path to file containing text for a disclaimer, starting from `presets/`` |
 | WARNING | Field containing text for a warning. Intended to be a final dialog before accepting the Preset |
@@ -129,6 +131,7 @@ All field tags must be:
 #$ DISCLAIMER: Text of disclaimer (mandatory for VTx Presets)
 #$ WARNING: Text of warning
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/nn
+#$ FORCE_OPTIONS_REVIEW
 
 #$ INCLUDE: presets/4.3/rates/defaults.txt
 
@@ -144,12 +147,17 @@ All field tags must be:
 <cli command m>
 #$ OPTION END
 
+#$ OPTION_GROUP BEGIN: This group name
 #$ OPTION BEGIN (UNCHECKED): Region 2 name
 <cli command m + 1>
 <cli command m + 2>
-...
-<cli command k>
 #$ OPTION END
+#$ OPTION BEGIN (UNCHECKED): Region 3 name
+<cli command j + 1>
+<cli command j + 2>
+<cli command j + 3>
+#$ OPTION END
+#$ OPTION_GROUP END
 ```
 
 ### Categories
@@ -203,7 +211,12 @@ Example:  `#$ INCLUDE: presets/4.3/category/preset_x.txt`
 
 The Preset author sets the checkbox default to be ticked or un-ticked, and specifies the label next to the checkbox.
 
-They work similar to the C# preprocessor directive `#region`.
+If the author wants to warn the user to review the options, they can make a dialog appear saying, "Please review the list of options" by including this line in the header:
+```
+#$ FORCE_OPTIONS_REVIEW: TRUE
+````
+
+Options work similar to the C# preprocessor directive `#region`.
 
 One example where `OPTION` may be useful is in a `BNF` or `TUNE` Preset. The Preset could provide different options for different radio protocols, eg SBUS, Crossfire, Ghost, etc. The user can then select the radio protocol to be used when the preset is applied.
 
@@ -211,15 +224,28 @@ Another example could be to provide different RC_Smoothing settings, to suit rac
 
 Another example is where a user may want to retain a personal setting, eg motor output limit, when applying a TUNE that might also like to set that value to some specific value.  Here the tuner can give an option to use their value, but allow the user to not accept that suggestion.
 
-An `OPTION` region starts with an `#$ OPTION BEGIN: <option name>` tag. 
+An `OPTION` region starts with an `#$ OPTION BEGIN: <option name>` tag, and must end with an `#$ OPTION END` tag.  The payload of CLI lines is put in-between these tags.  The `option name` appears with a checkbox to the left, and when selected, loads the CLI lines.
 
-The default state of the checkbox is set by including either `(CHECKED)` or `(UNCHECKED)` in the tag. Every `#$ OPTION` tag must be closed with `#$ OPTION END`. The CLI payload goes in the middle.
+The default state of the checkbox may be set to either `(CHECKED)` or `(UNCHECKED)` by default.  CLI values that are not reset to defaults earlier in the preset must be `UNCHECHKED`.
 
-Complete `OPTION` syntax looks like this:
+Options can be 'grouped' under a 'title' or 'group name' using this syntax:
+
 ```
-#$ OPTION BEGIN (UNCHECKED): <Option name>
+#$ OPTION_GROUP BEGIN: your group name
+<options>
+#$ OPTION_GROUP END
+````
+
+Complete `OPTION` example syntax looks like this:
+```
+#$ OPTION_GROUP BEGIN: this group name
+#$ OPTION BEGIN (UNCHECKED): <Option1 name>
 CLI payload strings
 #$ OPTION END
+#$ OPTION BEGIN (UNCHECKED): <Option2 name>
+CLI payload strings
+#$ OPTION END
+#$ OPTION_GROUP END
 ```
 
 Note 1: nested `OPTION` tags are not supported.
