@@ -19,6 +19,8 @@ set feedforward_averaging = 2_POINT
 set feedforward_smooth_factor = 45
 set feedforward_jitter_factor = 6
 
+#$ OPTION_GROUP BEGIN: Fine-tuning...
+
 # sharper handling for racing:
 #$ OPTION BEGIN (UNCHECKED): Race feedforward settings
 set feedforward_averaging = 2_POINT
@@ -29,19 +31,29 @@ set feedforward_jitter_factor = 5
 # stronger smoothing for HD freestyle (not for racing):
 #$ OPTION BEGIN (UNCHECKED): HD Freestyle feedforward settings
 set feedforward_averaging = 2_POINT
-set feedforward_smooth_factor = 50
+set feedforward_smooth_factor = 45
 set feedforward_jitter_factor = 9
 #$ OPTION END
 
-# stronger smoothing for Cinematic flying (not for racing):
+# very smooth for Cinematic flying (not for racing):
 #$ OPTION BEGIN (UNCHECKED): Cinematic feedforward settings
 set feedforward_averaging = 2_POINT
 set feedforward_smooth_factor = 65
 set feedforward_jitter_factor = 12
 #$ OPTION END
 
-# per cell or whole pack voltage readings back via telemetry to Tx:
+#$ OPTION_GROUP END
+
+
+#$ OPTION_GROUP BEGIN: Voltage readings (choose one):
+
+# per cell or whole pack voltage readings:
+#$ OPTION BEGIN (UNCHECKED): Single Cell values
 set report_cell_voltage = ON
-#$ OPTION BEGIN (UNCHECKED): Whole pack voltage readings to Tx
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Whole pack values
 set report_cell_voltage = OFF
 #$ OPTION END
+
+#$ OPTION_GROUP END

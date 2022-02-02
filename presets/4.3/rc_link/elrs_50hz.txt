@@ -18,26 +18,42 @@ set rc_smoothing = ON
 set feedforward_averaging = OFF
 set feedforward_smooth_factor = 0
 set feedforward_jitter_factor = 12
+set feedforward_boost = 5
+
+
+#$ OPTION_GROUP BEGIN: Fine-tuning...
 
 # sharper handling for racing - note that 50Hz is too slow for racing
-#$ OPTION BEGIN (UNCHECKED): Race feedforward settings
+#$ OPTION BEGIN (UNCHECKED): Race settings (50Hz isn't much good for racing)
+set feedforward_jitter_factor = 7
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Fast freestyle (better with locked 150hz)
 set feedforward_jitter_factor = 7
 #$ OPTION END
 
 # stronger smoothing for HD freestyle (not for racing):
 #$ OPTION BEGIN (UNCHECKED): HD Freestyle feedforward settings
-set feedforward_smooth_factor = 25
 set feedforward_jitter_factor = 15
 #$ OPTION END
 
 # stronger smoothing for Cinematic flying (not for racing):
 #$ OPTION BEGIN (UNCHECKED): Cinematic feedforward settings
-set feedforward_smooth_factor = 50
-set feedforward_jitter_factor = 20
+set feedforward_jitter_factor = 25
 #$ OPTION END
 
+#$ OPTION_GROUP END
+
+
+#$ OPTION_GROUP BEGIN: Voltage readings (choose one)
+
 # per cell or whole pack voltage readings:
+#$ OPTION BEGIN (UNCHECKED): Single Cell values
 set report_cell_voltage = ON
-#$ OPTION BEGIN (UNCHECKED): Whole pack voltage readings
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Whole pack values
 set report_cell_voltage = OFF
 #$ OPTION END
+
+#$ OPTION_GROUP END

@@ -30,35 +30,7 @@ set rc_smoothing = ON
 # set frsky_gps_format = ?
 # set smartport_use_extra_sensors = usually off unless you have extra sensors
 
-# per cell or whole pack voltage readings sent to Tx:
-set report_cell_voltage = ON
-#$ OPTION BEGIN (UNCHECKED): Whole pack voltage readings
-set report_cell_voltage = OFF
-#$ OPTION END
-
-# metric or imperial units:
-set frsky_unit = metric
-#$ OPTION BEGIN (UNCHECKED): Imperial units
-set frsky_unit = imperial
-#$ OPTION END
-
-# telemetry inverted:
-set tlm_inverted = OFF
-#$ OPTION BEGIN (UNCHECKED): Telemetry inverted
-set tlm_inverted = ON
-#$ OPTION END
-
-# telemetry halfduplex:
-set tlm_halfduplex = ON
-#$ OPTION BEGIN (UNCHECKED): Full duplex telemetry
-set tlm_halfduplex = OFF
-#$ OPTION END
-
-# if bound in D16 with more than 8 channels - sends duplicates all the time - too slow for racing
-#$ OPTION BEGIN (UNCHECKED): Bound with >8 channels
-set feedforward_averaging = 2_POINT
-set feedforward_smooth_factor = 35
-#$ OPTION END
+#$ OPTION_GROUP BEGIN: Fine-tuning...
 
 # sharper handling for racing:
 #$ OPTION BEGIN (UNCHECKED): Race
@@ -79,3 +51,56 @@ set feedforward_averaging = 2_POINT
 set feedforward_smooth_factor = 60
 set feedforward_jitter_factor = 15
 #$ OPTION END
+
+#$ OPTION_GROUP END
+
+
+#$ OPTION_GROUP BEGIN: Voltage readings (choose one):
+
+# per cell or whole pack voltage readings:
+#$ OPTION BEGIN (UNCHECKED): Single Cell values
+set report_cell_voltage = ON
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Whole pack values
+set report_cell_voltage = OFF
+#$ OPTION END
+
+#$ OPTION_GROUP END
+
+
+#$ OPTION_GROUP BEGIN: Metric or Imperial units
+
+# metric or imperial units:
+#$ OPTION BEGIN (UNCHECKED): Metric
+set frsky_unit = metric
+#$ OPTION END
+#$ OPTION BEGIN (UNCHECKED): Imperial
+set frsky_unit = imperial
+#$ OPTION END
+
+#$ OPTION_GROUP END
+
+
+#$ OPTION_GROUP BEGIN: Hardware options
+
+# telemetry inverted:
+set tlm_inverted = OFF
+#$ OPTION BEGIN (UNCHECKED): Telemetry inverted
+set tlm_inverted = ON
+#$ OPTION END
+
+# telemetry halfduplex:
+set tlm_halfduplex = ON
+#$ OPTION BEGIN (UNCHECKED): Full duplex telemetry
+set tlm_halfduplex = OFF
+#$ OPTION END
+
+# if bound in D16 with more than 8 channels - sends duplicates all the time - too slow for racing
+#$ OPTION BEGIN (UNCHECKED): Bound with >8 channels (not recommended)
+set feedforward_averaging = 2_POINT
+set feedforward_smooth_factor = 35
+#$ OPTION END
+
+#$ OPTION_GROUP END
+

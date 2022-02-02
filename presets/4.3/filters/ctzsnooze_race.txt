@@ -5,6 +5,7 @@
 #$ KEYWORDS: race, filter, filters, ctzsnooze, RPM
 #$ AUTHOR: Betaflight
 #$ DESCRIPTION: ctzsnooze's standard race filter setup.
+#$ DESCRIPTION: tolerates fairly worn setups
 #$ DESCRIPTION: Requires RPM filtering and DShot telemetry!
 
 #$ INCLUDE: presets/4.3/filters/defaults.txt
