@@ -1,0 +1,22 @@
+#$ TITLE: Gyroflow minimum settings
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: OTHER
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: gyroflow, blackbox, log, DDC, Acrobaix, Garban 
+#$ AUTHOR: Garban
+#$ DESCRIPTION: Minimum requirements settings for Gyroflow.
+
+set blackbox_sample_rate = 1/16
+set debug_mode = NONE
+set blackbox_disable_pids = ON
+set blackbox_disable_rc = ON
+set blackbox_disable_setpoint = ON
+set blackbox_disable_bat = ON
+set blackbox_disable_mag = ON
+set blackbox_disable_alt = ON
+set blackbox_disable_rssi = ON
+set blackbox_disable_gyro = OFF
+set blackbox_disable_acc = ON
+set blackbox_disable_debug = ON
+set blackbox_disable_motors = ON
+set blackbox_disable_gps = ON
