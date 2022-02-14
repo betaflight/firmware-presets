@@ -8,8 +8,9 @@
 #$ DESCRIPTION: [ Feisar freestyle rates ]
 #$ DESCRIPTION:
 #$ DESCRIPTION: Ideal for smooth freestyle
+#$ DESCRIPTION: 902 deg/sec for roll/pitch and 725 deg/sec for yaw
 #$ DESCRIPTION:
-#$ DESCRIPTION: (last preset update : 2022-02-13)
+#$ DESCRIPTION: (last preset update : 2022-02-14)
 #$ DESCRIPTION:
 #$ INCLUDE: presets/4.3/rates/defaults.txt
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/184
