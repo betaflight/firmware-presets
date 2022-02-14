@@ -4,11 +4,14 @@
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: aggressive, rc, smoothing, race, rc_smoothing, jitter
 #$ AUTHOR: ctzsnooze
-#$ DESCRIPTION: RC smoothing settings for racing that slightly increases stick responsiveness over defaults.
-#$ DESCRIPTION: Note: this preset workse best with a locked-frequency RC link.
-#$ DESCRIPTION: Uses automatic cutoff adjustment that will optimise the cutoff to the link frequency at arming. As a result, faster RC links will feel more responsive.
-#$ DESCRIPTION: If sticks are too sensitive, increase the auto smoothing factors in the CLI.
-#$ DESCRIPTION: Note: If motors feel warmer than usual after applying this preset, return the auto RC smoothing values back to default of 30.
+#$ DESCRIPTION: RC smoothing settings for racing.
+#$ DESCRIPTION: Slightly increased stick responsiveness over defaults.
+#$ DESCRIPTION: 
+#$ DESCRIPTION: Note: It's best to race with a fixed-frequency RC link.
+#$ DESCRIPTION: Warning: You must choose a Link Preset to match your radio's link speed!
+#$ DESCRIPTION:
+#$ DESCRIPTION: Uses automatic cutoff adjustment. Faster RC links will feel more responsive.
+#$ DESCRIPTION: If sticks are too sensitive, increase the auto smoothing numbers in Configurator > Receiver > RCSmoothing.
 
 set rc_smoothing = ON
 set feedforward_jitter_factor = 5

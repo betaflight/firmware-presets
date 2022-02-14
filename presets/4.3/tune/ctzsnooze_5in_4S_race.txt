@@ -1,21 +1,19 @@
-#$ TITLE: 5" 4S race by ctzsznooze
+#$ TITLE: 4S, 3" to 5" race tune by ctzsznooze
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: TUNE
 #$ STATUS: OFFICIAL
-#$ KEYWORDS: 5in, 4S, race, tune, ctzsnooze
+#$ KEYWORDS: 3in, 4in, 5in, twig, 4S, race, tune, ctzsnooze
 #$ AUTHOR: ctzsnooze
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/8
-#$ DESCRIPTION: Basic 5" 4S race setup for 4.3 by ctzsnooze, tolerates bad props.
+#$ DESCRIPTION: Basic 3" to 5" 4S race setup by ctzsnooze.
 #$ DESCRIPTION:
-#$ DESCRIPTION: RPM filtering is STRONGLY RECOMMENDED!
+#$ DESCRIPTION: RPM filtering is STRONGLY Recommended!
 #$ DESCRIPTION:
-#$ DESCRIPTION: PLEASE CHECK THE OPTIONS IN THE LIST ABOVE!
-#$ DESCRIPTION: NOTE: You must choose ONE of the three FILTER options!
-#$ DESCRIPTION: NOTE: 250Hz or 500Hz RC Link users - check the right one!
-#$ DESCRIPTION: You should check all the (recommended) options
+#$ DESCRIPTION: Choose ONE of the three FILTER options from the pop-up above!
 #$ DESCRIPTION:
-#$ DESCRIPTION: My suggested Rates are (optional)
-
+#$ DESCRIPTION: Choose your link speed!
+#$ DESCRIPTION:
+#$ FORCE_OPTIONS_REVIEW: TRUE
 
 #$ INCLUDE: presets/4.3/tune/defaults.txt
 
@@ -91,70 +89,90 @@ set dyn_idle_p_gain = 40
 
 # -- Filters --
 
-# Filter options
-#$ OPTION BEGIN (UNCHECKED): FILTER: RPM enabled, ctzsnooze race
+#$ OPTION_GROUP BEGIN: Choose ONE Filter option...
+
+#$ OPTION BEGIN (UNCHECKED): RPM enabled, normal build
 #$ INCLUDE: presets/4.3/filters/ctzsnooze_race.txt
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED): FILTER: RPM enabled, noisy build
+#$ OPTION BEGIN (UNCHECKED): RPM enabled, noisy build
 #$ INCLUDE: presets/4.3/filters/default_rpm_noisy.txt
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED): FILTER: NON-RPM ESCs, normal build
+#$ OPTION BEGIN (UNCHECKED): NON-RPM ESCs, normal build
 #$ INCLUDE: presets/4.3/filters/default_no_rpm_normal.txt
 #$ OPTION END
 
+#$ OPTION_GROUP END
+
 # -- Fast Rx Link Options --
 
-#$ OPTION BEGIN (UNCHECKED): RC_LINK 250Hz
+#$ OPTION_GROUP BEGIN: Choose your RC link speed!
+
+#$ OPTION BEGIN (UNCHECKED): 150Hz or less
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): 250Hz
 set feedforward_averaging = 2_POINT
 set feedforward_smooth_factor = 40
 set feedforward_jitter_factor = 6
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED): RC_LINK 500Hz
+#$ OPTION BEGIN (UNCHECKED): 500Hz
 set feedforward_averaging = 2_POINT
 set feedforward_smooth_factor = 65
 set feedforward_jitter_factor = 5
 #$ OPTION END
 
+#$ OPTION_GROUP END
+
 # -- Recommended options --
 
+#$ OPTION_GROUP BEGIN: Check all of these (recommended)
+
 # -- RC_Smoothing --
-#$ OPTION BEGIN (CHECKED): Default RC_smoothing (recommended)
+#$ OPTION BEGIN (UNCHECKED): Default RC_smoothing
 #$ INCLUDE: presets/4.3/rc_smoothing/race.txt
 #$ OPTION END
 
 # -- Throttle limit --
-#$ OPTION BEGIN (UNCHECKED): Throttle limit 96% (recommended)
+#$ OPTION BEGIN (UNCHECKED): Throttle limit 96%
 set throttle_limit_type = SCALE
 set throttle_limit_percent = 96
 #$ OPTION END
 
 # -- VBat sag compensation --
-#$ OPTION BEGIN (UNCHECKED): Full Sag compensation (recommended)
+#$ OPTION BEGIN (UNCHECKED): Full Sag compensation
 set vbat_sag_compensation = 100
 set vbat_sag_lpf_period = 2
 #$ OPTION END
 
 # -- Stick behaviour -- 
-#$ OPTION BEGIN (UNCHECKED): No deadband (recommended)
+#$ OPTION BEGIN (UNCHECKED): No deadband
 set deadband = 0
 set yaw_deadband = 0
 #$ OPTION END
 
 # -- Throttle curve --
-#$ OPTION BEGIN (UNCHECKED): Flat throttle curve (recommended)
+#$ OPTION BEGIN (UNCHECKED): Flat throttle curve
 set thr_mid = 50
 set thr_expo = 0
 #$ OPTION END
 
 # -- Startup and arming --
-#$ OPTION BEGIN (UNCHECKED): Arm at any angle (recommended)
+#$ OPTION BEGIN (UNCHECKED): Arm at any angle
 set small_angle = 180
 #$ OPTION END
 
+#$ OPTION_GROUP END
+
 # -- Rates --
-#$ OPTION BEGIN (UNCHECKED): Try ctzsnooze's race Rates (optional)
+#$ OPTION_GROUP BEGIN: My rates are optional:
+
+#$ OPTION BEGIN (UNCHECKED): Try ctzsnooze's race rates
 #$ INCLUDE: presets/4.3/rates/ctzsnooze_race.txt
 #$ OPTION END
+
+#$ OPTION_GROUP END
+
+simplified_tuning apply

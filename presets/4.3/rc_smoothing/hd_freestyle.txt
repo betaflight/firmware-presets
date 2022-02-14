@@ -11,16 +11,47 @@
 set rc_smoothing = ON
 set feedforward_jitter_factor = 13
 set feedforward_transition = 0
-set rc_smoothing_auto_factor = 40
+set rc_smoothing_auto_factor = 80
 set rc_smoothing_setpoint_cutoff = 25
 set rc_smoothing_feedforward_cutoff = 25
 set rc_smoothing_auto_factor_throttle = 30
 set rc_smoothing_throttle_cutoff = 0
 
-#$ DESCRIPTION:
-#$ DESCRIPTION: Option: Actual Rates, centre sensitivity 30 deg/s, max rate 750 deg/s, zero expo
-#$ OPTION BEGIN (UNCHECKED): Recommended Actual rates
-set rates_type = ACTUAL
+
+#$ OPTION_GROUP BEGIN: Check your RC link speed!
+
+#$ OPTION BEGIN (UNCHECKED): 50Hz
+set feedforward_boost = 5
+set feedforward_smooth_factor = 0
+set feedforward_jitter_factor = 16
+set rc_smoothing_setpoint_cutoff = 17
+set rc_smoothing_feedforward_cutoff = 17
+
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): 100-150Hz
+#$ OPTION END
+
+# for 250Hz RC links:
+#$ OPTION BEGIN (UNCHECKED): 250Hz 
+set feedforward_smooth_factor = 45
+set feedforward_jitter_factor = 10
+#$ OPTION END
+
+# for 500Hz RC links:
+#$ OPTION BEGIN (UNCHECKED): 500Hz
+set feedforward_smooth_factor = 65
+set feedforward_jitter_factor = 9
+set feedforward_boost = 18
+#$ OPTION END
+
+#$ OPTION_GROUP END
+
+
+#$ OPTION_GROUP BEGIN: Check for recommended Freestyle HD rates
+
+#$ OPTION BEGIN (UNCHECKED): Actual Rates, centre 30 max 750, no expo.
+rates_type = ACTUAL
 set roll_rc_rate = 3
 set pitch_rc_rate = 3
 set yaw_rc_rate = 3
@@ -31,3 +62,5 @@ set roll_srate = 75
 set pitch_srate = 75
 set yaw_srate = 75
 #$ OPTION END
+
+#$ OPTION_GROUP END
