@@ -176,6 +176,7 @@
       "50Hz",
       "533",
       "65mm",
+      "75mm",
       "acro",
       "actual",
       "adjustments",
@@ -242,6 +243,7 @@
       "log",
       "logging",
       "mamba",
+      "Micro",
       "MinChan",
       "mode",
       "modes",
@@ -1384,6 +1386,28 @@
       "status": "EXPERIMENTAL",
       "keywords": [
         "Test",
+        "2S",
+        "race",
+        "acro",
+        "tune"
+      ],
+      "author": "David aka Bacon",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.3/tune/TKS.txt",
+      "hash": "d6438e16445d26e9700689bce9f76e4b066ec5583c8b72bed425884dfc07bef0",
+      "title": "TKS-75",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "Whoop",
+        "Micro",
+        "75mm",
         "2S",
         "race",
         "acro",
