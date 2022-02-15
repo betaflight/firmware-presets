@@ -402,7 +402,7 @@
     },
     {
       "fullPath": "presets/4.2.9/bnf/Nazgul_F5X_ANALOG_SucceX.txt",
-      "hash": "be427d8333b0ae41f19abd1075323e3c9cfc749858ccf21c6140656d702f5659",
+      "hash": "b7cb5720b746b299a81bcc6b5fece00d47dc0ae3935397ac3ada6deb9992b0d4",
       "title": "Nazgul F5X Analog (SucceX Electronics)",
       "firmware_version": [
         "4.2.9"
@@ -438,7 +438,7 @@
     },
     {
       "fullPath": "presets/4.2.9/bnf/Nazgul_F5X_HD_SucceX.txt",
-      "hash": "3af471e3273f4de280b4ea42fd2f841c697dab33f3dbacaa703f56ff88f7e24b",
+      "hash": "ded63568777a501b33c30d72800e968b3f15ed4cf2d1a0d23d3b19e238487bb5",
       "title": "Nazgul F5X HD (SucceX Electronics)",
       "firmware_version": [
         "4.2.9"
