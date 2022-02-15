@@ -4,9 +4,10 @@
 #$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: iflight, nazgul, f5, evoque
 #$ AUTHOR: XING, iFlight
-#$ DESCRIPTION: BNF factory defaults for Nazgul F5X Evoque Analog with BLITZ Electronics.
-#$ DESCRIPTION: Please check the options for your setup.
-#$ DESCRIPTION: ALL your personal settings will be reset to iFlight defaults and can not be restored if not saved!
+#$ DESCRIPTION: Welcome to the iFlight Experience! 
+#$ DESCRIPTION: Looks like something went wrong with your Betaflight setup? 
+#$ DESCRIPTION: These are the iFlight BNF factory defaults for Nazgul F5X Evoque Analog with BLITZ Electronics. Please check in your Betaflight Configurator on the top left to confirm the target name contains BLITZ!
+#$ DESCRIPTION: Check the options for your individual setup. ALL your personal settings will be reset to iFlight defaults and can not be restored if not saved!
 
 board_name IFLIGHT_BLITZ_F722
 manufacturer_id IFRC

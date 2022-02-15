@@ -384,7 +384,7 @@
   "presets": [
     {
       "fullPath": "presets/4.2.9/bnf/Nazgul_F5X_ANALOG_BLITZ.txt",
-      "hash": "a14504bc8cdf21db5eb6e1c3c08c43941541e3170bf280ec9c2224ad9c1eb906",
+      "hash": "5a04c8068c92e0ea6f4b7fa92965f67a0a9214606e0c618405f857198612a2fa",
       "title": "Nazgul F5X Analog (BLITZ Electronics)",
       "firmware_version": [
         "4.2.9"
@@ -402,7 +402,7 @@
     },
     {
       "fullPath": "presets/4.2.9/bnf/Nazgul_F5X_HD_BLITZ.txt",
-      "hash": "d17a2ded4e149103957cc35d3279e3a281e73814dd562f1a1373253bddf71a49",
+      "hash": "d6363fb30990a18f636895fd7f84c1f95af35b85df3367c8280ddba12f1d6c88",
       "title": "Nazgul F5X HD (BLITZ Electronics)",
       "firmware_version": [
         "4.2.9"
