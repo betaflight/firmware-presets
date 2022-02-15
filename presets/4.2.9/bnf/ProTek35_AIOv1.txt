@@ -8,7 +8,7 @@
 #$ DESCRIPTION: Looks like something went wrong with your Betaflight setup? 
 #$ DESCRIPTION: These are the iFlight BNF factory defaults for ProTek35 with Beast AIO v1 Elektronics. Please check in your Betaflight Configurator on the top left to confirm the target name contains F745_AIO!
 #$ DESCRIPTION: Check the options for your individual setup. ALL your personal settings will be reset to iFlight defaults and can not be restored if not saved!
-
+#$ DISCUSSION: https://drive.google.com/drive/u/1/folders/1jQlSfYY74gaQku_EMYRsBpU7gqcCcCZK
 
 #$ OPTION BEGIN (UNCHECKED): 0a/DJI HD Version
 board_name IFLIGHT_F745_AIO
