@@ -125,24 +125,57 @@
   },
   "uniqueValues": {
     "firmware_version": [
-      "4.2.9"
+      "4.2",
+      "4.2.9",
+      "4.3"
     ],
     "category": [
-      "BNF"
+      "BNF",
+      "RATES",
+      "VTX"
     ],
     "author": [
+      "Betaflight",
       "XING, iFlight"
     ],
     "keywords": [
+      "actual",
+      "baby nazgul",
+      "chimera",
+      "clear",
+      "defaults",
       "evoque",
       "f5",
       "iflight",
       "nazgul",
       "protek",
-      "protek35"
+      "protek35",
+      "rates",
+      "reset",
+      "succex force",
+      "vtx",
+      "vtx table",
+      "vtxtable"
     ]
   },
   "presets": [
+    {
+      "fullPath": "presets/4.2.9/bnf/Chimera7.txt",
+      "hash": "fb55975eee03d11d58705d84c5a72267f4452ebfff48d9dce939bc0005393e67",
+      "title": "Chimera7",
+      "firmware_version": [
+        "4.2.9"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "iflight",
+        "nazgul",
+        "chimera"
+      ],
+      "author": "XING, iFlight",
+      "priority": 0
+    },
     {
       "fullPath": "presets/4.2.9/bnf/Nazgul_F5_ANALOG_BLITZ.txt",
       "hash": "75ace969f737386e3ff231d6e2a453c4038881a3c7a27801d8e1e6c9da77a30c",
@@ -265,6 +298,360 @@
       ],
       "author": "XING, iFlight",
       "priority": 0
+    },
+    {
+      "fullPath": "presets/4.2.9/rates/iFlight default rates.txt",
+      "hash": "b3e8d733bb4802d33891a34143bed43bd9c70d54da4c8b00c961475dbc68d59b",
+      "title": "iFlight Default rates",
+      "firmware_version": [
+        "4.2"
+      ],
+      "category": "RATES",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "defaults",
+        "rates",
+        "actual"
+      ],
+      "author": "XING, iFlight",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.2.9/vtx/Baby_Nazgul_50mW.txt",
+      "hash": "1c7ec1d5e09cb20ee4dfafb412c1547dd576b7dc0f994240d0b8f3f2fd16596e",
+      "title": "Baby Nazgul VTX 50mW",
+      "firmware_version": [
+        "4.2",
+        "4.3"
+      ],
+      "category": "VTX",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "vtx",
+        "vtx table",
+        "iflight",
+        "baby nazgul"
+      ],
+      "author": "XING, iFlight",
+      "priority": 1000000
+    },
+    {
+      "fullPath": "presets/4.2.9/vtx/SucceX_Force_1W.txt",
+      "hash": "267e3be23c7a23b2e3f72fdaa9786b3c3047661d34d62b003ea9dd1b18123ee2",
+      "title": "SucceX Force 1W 5.8G VTX",
+      "firmware_version": [
+        "4.2",
+        "4.3"
+      ],
+      "category": "VTX",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "vtx",
+        "vtx table",
+        "iflight",
+        "succex force"
+      ],
+      "author": "XING, iFlight",
+      "priority": 1000000
+    },
+    {
+      "fullPath": "presets/4.2.9/vtx/SucceX_Force_800mW.txt",
+      "hash": "75a74a91c555e87e05d5a96db172ddc06d6b4f69060b0a6ef6b4bba813c0aba6",
+      "title": "SucceX Force 800mW 5.8G VTX",
+      "firmware_version": [
+        "4.2",
+        "4.3"
+      ],
+      "category": "VTX",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "vtx",
+        "vtx table",
+        "iflight",
+        "succex force"
+      ],
+      "author": "XING, iFlight",
+      "priority": 1000000
+    },
+    {
+      "fullPath": "presets/4.2.9/vtx/SucceX_Micro_Force_300mW.txt",
+      "hash": "d3a3dbe94e2f3a7ef981a5e0c0266eb5f7f27b86e9248f3a78e225168d7fae4a",
+      "title": "SucceX Micro Force 300mW 5.8G VTX",
+      "firmware_version": [
+        "4.2",
+        "4.3"
+      ],
+      "category": "VTX",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "vtx",
+        "vtx table",
+        "iflight",
+        "succex force"
+      ],
+      "author": "XING, iFlight",
+      "priority": 1000000
+    },
+    {
+      "fullPath": "presets/4.2.9/vtx/SucceX_Micro_VTX_200mW.txt",
+      "hash": "c49c801c1353beb2a4e05c03e5b6563e6d2798e2e900c93191ac10704a0523a3",
+      "title": "SucceX Micro 200mW 5.8G VTX",
+      "firmware_version": [
+        "4.2",
+        "4.3"
+      ],
+      "category": "VTX",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "vtx",
+        "vtx table",
+        "iflight",
+        "succex force"
+      ],
+      "author": "XING, iFlight",
+      "priority": 1000000
+    },
+    {
+      "fullPath": "presets/4.2.9/vtx/SucceX_Mini_Force_600mW.txt",
+      "hash": "8c936ba76b7eafd3a1c352076a8eb5f793f7db80d1d0049924602493515501c4",
+      "title": "SucceX Mini Force 600mW 5.8G VTX",
+      "firmware_version": [
+        "4.2",
+        "4.3"
+      ],
+      "category": "VTX",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "vtx",
+        "vtx table",
+        "iflight",
+        "succex force"
+      ],
+      "author": "XING, iFlight",
+      "priority": 1000000
+    },
+    {
+      "fullPath": "presets/4.2.9/vtx/SucceX_Mini_VTX_500mW.txt",
+      "hash": "7cf323f1c10d6ee3614734c7f7ad30a427e9fde74ac2b823788bc83214622132",
+      "title": "SucceX Mini VTX 500mW 5.8G VTX",
+      "firmware_version": [
+        "4.2",
+        "4.3"
+      ],
+      "category": "VTX",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "vtx",
+        "vtx table",
+        "iflight",
+        "succex force"
+      ],
+      "author": "XING, iFlight",
+      "priority": 1000000
+    },
+    {
+      "fullPath": "presets/4.3/rates/defaults.txt",
+      "hash": "9d063433102e8340d3d0ad396f6dc998c7030c0b9ecc4bb2a6c5b86a5def07fe",
+      "title": "Default rates",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "RATES",
+      "status": "OFFICIAL",
+      "keywords": [
+        "defaults",
+        "rates",
+        "actual"
+      ],
+      "author": "Betaflight",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/rates/iFlight default rates.txt",
+      "hash": "aa7b5e76e96763290db5c6ea1c3edfcd0eda22bb262b49d7fac58c22657b4cea",
+      "title": "iFlight Default rates",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "RATES",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "defaults",
+        "rates",
+        "actual"
+      ],
+      "author": "XING, iFlight",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/vtx/Baby_Nazgul_50mW.txt",
+      "hash": "1c7ec1d5e09cb20ee4dfafb412c1547dd576b7dc0f994240d0b8f3f2fd16596e",
+      "title": "Baby Nazgul VTX 50mW",
+      "firmware_version": [
+        "4.2",
+        "4.3"
+      ],
+      "category": "VTX",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "vtx",
+        "vtx table",
+        "iflight",
+        "baby nazgul"
+      ],
+      "author": "XING, iFlight",
+      "priority": 1000000
+    },
+    {
+      "fullPath": "presets/4.3/vtx/defaults.txt",
+      "hash": "f771542d93f15f993d39d97f9004ede104ba7dfebff45f68863aa25f30275388",
+      "title": "Default 4.3 VTX settings",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "VTX",
+      "status": "OFFICIAL",
+      "keywords": [
+        "defaults",
+        "reset",
+        "clear",
+        "vtx"
+      ],
+      "author": "Betaflight",
+      "priority": 1000000
+    },
+    {
+      "fullPath": "presets/4.3/vtx/defaults_vtx_tables.txt",
+      "hash": "ca7751007ea115e4aef9cfc8051832205100ab4d0be45b9694d506f193cdb1d6",
+      "title": "Default 4.3 VTX table settings",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "VTX",
+      "status": "OFFICIAL",
+      "keywords": [
+        "defaults",
+        "reset",
+        "clear",
+        "vtx",
+        "vtxtable"
+      ],
+      "author": "Betaflight",
+      "priority": 1000000
+    },
+    {
+      "fullPath": "presets/4.3/vtx/SucceX_Force_1W.txt",
+      "hash": "267e3be23c7a23b2e3f72fdaa9786b3c3047661d34d62b003ea9dd1b18123ee2",
+      "title": "SucceX Force 1W 5.8G VTX",
+      "firmware_version": [
+        "4.2",
+        "4.3"
+      ],
+      "category": "VTX",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "vtx",
+        "vtx table",
+        "iflight",
+        "succex force"
+      ],
+      "author": "XING, iFlight",
+      "priority": 1000000
+    },
+    {
+      "fullPath": "presets/4.3/vtx/SucceX_Force_800mW.txt",
+      "hash": "75a74a91c555e87e05d5a96db172ddc06d6b4f69060b0a6ef6b4bba813c0aba6",
+      "title": "SucceX Force 800mW 5.8G VTX",
+      "firmware_version": [
+        "4.2",
+        "4.3"
+      ],
+      "category": "VTX",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "vtx",
+        "vtx table",
+        "iflight",
+        "succex force"
+      ],
+      "author": "XING, iFlight",
+      "priority": 1000000
+    },
+    {
+      "fullPath": "presets/4.3/vtx/SucceX_Micro_Force_300mW.txt",
+      "hash": "d3a3dbe94e2f3a7ef981a5e0c0266eb5f7f27b86e9248f3a78e225168d7fae4a",
+      "title": "SucceX Micro Force 300mW 5.8G VTX",
+      "firmware_version": [
+        "4.2",
+        "4.3"
+      ],
+      "category": "VTX",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "vtx",
+        "vtx table",
+        "iflight",
+        "succex force"
+      ],
+      "author": "XING, iFlight",
+      "priority": 1000000
+    },
+    {
+      "fullPath": "presets/4.3/vtx/SucceX_Micro_VTX_200mW.txt",
+      "hash": "c49c801c1353beb2a4e05c03e5b6563e6d2798e2e900c93191ac10704a0523a3",
+      "title": "SucceX Micro 200mW 5.8G VTX",
+      "firmware_version": [
+        "4.2",
+        "4.3"
+      ],
+      "category": "VTX",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "vtx",
+        "vtx table",
+        "iflight",
+        "succex force"
+      ],
+      "author": "XING, iFlight",
+      "priority": 1000000
+    },
+    {
+      "fullPath": "presets/4.3/vtx/SucceX_Mini_Force_600mW.txt",
+      "hash": "8c936ba76b7eafd3a1c352076a8eb5f793f7db80d1d0049924602493515501c4",
+      "title": "SucceX Mini Force 600mW 5.8G VTX",
+      "firmware_version": [
+        "4.2",
+        "4.3"
+      ],
+      "category": "VTX",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "vtx",
+        "vtx table",
+        "iflight",
+        "succex force"
+      ],
+      "author": "XING, iFlight",
+      "priority": 1000000
+    },
+    {
+      "fullPath": "presets/4.3/vtx/SucceX_Mini_VTX_500mW.txt",
+      "hash": "7cf323f1c10d6ee3614734c7f7ad30a427e9fde74ac2b823788bc83214622132",
+      "title": "SucceX Mini VTX 500mW 5.8G VTX",
+      "firmware_version": [
+        "4.2",
+        "4.3"
+      ],
+      "category": "VTX",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "vtx",
+        "vtx table",
+        "iflight",
+        "succex force"
+      ],
+      "author": "XING, iFlight",
+      "priority": 1000000
     }
   ]
 }
