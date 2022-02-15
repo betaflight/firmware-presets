@@ -125,21 +125,32 @@
   },
   "uniqueValues": {
     "firmware_version": [
-      "4.2.9"
+      "4.2",
+      "4.2.9",
+      "4.3"
     ],
     "category": [
-      "BNF"
+      "BNF",
+      "VTX"
     ],
     "author": [
+      "Betaflight",
       "XING, iFlight"
     ],
     "keywords": [
+      "baby nazgul",
+      "clear",
+      "defaults",
       "evoque",
       "f5",
       "iflight",
       "nazgul",
       "protek",
-      "protek35"
+      "protek35",
+      "reset",
+      "vtx",
+      "vtx table",
+      "vtxtable"
     ]
   },
   "presets": [
@@ -265,6 +276,62 @@
       ],
       "author": "XING, iFlight",
       "priority": 0
+    },
+    {
+      "fullPath": "presets/4.2.9/vtx/Baby_Nazgul_50mW.txt",
+      "hash": "1c7ec1d5e09cb20ee4dfafb412c1547dd576b7dc0f994240d0b8f3f2fd16596e",
+      "title": "Baby Nazgul VTX 50mW",
+      "firmware_version": [
+        "4.2",
+        "4.3"
+      ],
+      "category": "VTX",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "vtx",
+        "vtx table",
+        "iflight",
+        "baby nazgul"
+      ],
+      "author": "XING, iFlight",
+      "priority": 1000000
+    },
+    {
+      "fullPath": "presets/4.3/vtx/defaults.txt",
+      "hash": "f771542d93f15f993d39d97f9004ede104ba7dfebff45f68863aa25f30275388",
+      "title": "Default 4.3 VTX settings",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "VTX",
+      "status": "OFFICIAL",
+      "keywords": [
+        "defaults",
+        "reset",
+        "clear",
+        "vtx"
+      ],
+      "author": "Betaflight",
+      "priority": 1000000
+    },
+    {
+      "fullPath": "presets/4.3/vtx/defaults_vtx_tables.txt",
+      "hash": "ca7751007ea115e4aef9cfc8051832205100ab4d0be45b9694d506f193cdb1d6",
+      "title": "Default 4.3 VTX table settings",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "VTX",
+      "status": "OFFICIAL",
+      "keywords": [
+        "defaults",
+        "reset",
+        "clear",
+        "vtx",
+        "vtxtable"
+      ],
+      "author": "Betaflight",
+      "priority": 1000000
     }
   ]
 }
