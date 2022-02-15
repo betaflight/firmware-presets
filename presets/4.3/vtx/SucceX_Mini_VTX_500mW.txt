@@ -1,0 +1,42 @@
+#$ TITLE: SucceX Mini VTX 500mW 5.8G VTX
+#$ FIRMWARE_VERSION: 4.2
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: VTX
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS:  vtx, vtx table, iflight, succex force
+#$ AUTHOR: XING, iFlight
+#$ DESCRIPTION: VTX table for the iFlight SucceX Mini VTX 500mW 5.8G VTX
+#$ DESCRIPTION: The information provided on this preset is for educational and entertainment purposes only. Betaflight makes no representations as to the safety or legality of the use of any information provided herein. End users assume all responsibility and liability for ensuring they are complying with all relevant laws and regulations. 
+#$ DESCRIPTION: Apply our Betaflight presets or click on "Discussion..." to get to our Google Drive VTX table file folder.
+#$ DESCRIPTION: Using the VTX tables as provided may be in breach of your local RF laws. It is up to the end user to research and comply with local regulations and in using these presets the user assumes all liability associated with breaching local regulations. 
+#$ DISCUSSION: https://drive.google.com/drive/u/1/folders/1s7DSDoipPftdGA4QMj7ZKBYoKfOdYkyf
+#$ INCLUDE_DISCLAIMER: misc/disclaimer/en/vtxtable.txt
+
+#$ OPTION BEGIN (UNCHECKED): EU region
+# vtxtable
+vtxtable bands 4
+vtxtable channels 8
+vtxtable band 1 BOSCAM_A A FACTORY 5865 5845 5825 5805 5785 5765 5745 0
+vtxtable band 2 BOSCAM_B B FACTORY 5733 5752 5771 5790 5809 5828 5847 5866
+vtxtable band 3 FATSHARK F FACTORY 5740 5760 5780 5800 5820 5840 5860 5880
+vtxtable band 4 RACEBAND R FACTORY 0 0 5732 5769 5806 5843 0 0
+vtxtable powerlevels 5
+vtxtable powervalues 25 100 200 400 600
+vtxtable powerlabels 25 100 200 400 600
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): USA region
+# vtxtable
+vtxtable bands 5
+vtxtable channels 8
+vtxtable band 1 BOSCAM_A A FACTORY 5865 5845 5825 5805 5785 5765 5745 5725
+vtxtable band 2 BOSCAM_B B FACTORY 5733 5752 5771 5790 5809 5828 5847 5866
+vtxtable band 3 BOSCAM_E E FACTORY 5705 5685 5665 0 5885 5905 0 0
+vtxtable band 4 FATSHARK F FACTORY 5740 5760 5780 5800 5820 5840 5860 5880
+vtxtable band 5 RACEBAND R FACTORY 5658 5695 5732 5769 5806 5843 5880 5917
+vtxtable powerlevels 5
+vtxtable powervalues 25 100 200 400 600
+vtxtable powerlabels 25 100 200 400 600
+#$ OPTION END
+
+
