@@ -386,7 +386,7 @@
   "presets": [
     {
       "fullPath": "presets/4.2.9/bnf/Nazgul_F5_ANALOG_BLITZ.txt",
-      "hash": "731d6eeb013668e57393bda485818eba47d2ac9265526277ab8417ba1c202f35",
+      "hash": "75ace969f737386e3ff231d6e2a453c4038881a3c7a27801d8e1e6c9da77a30c",
       "title": "Nazgul F5 Analog (BLITZ Electronics)",
       "firmware_version": [
         "4.2.9"
@@ -404,7 +404,7 @@
     },
     {
       "fullPath": "presets/4.2.9/bnf/Nazgul_F5_ANALOG_SucceX.txt",
-      "hash": "2da3268cc8cb04034373a95b535fe51c2497bd5d6a7d5aad6bac8423c0707976",
+      "hash": "1836cb5389c1d7800579614fae549dbc3087e9ce9906c0f99fe5fd93af489bb3",
       "title": "Nazgul F5 Analog (SucceX Electronics)",
       "firmware_version": [
         "4.2.9"
@@ -422,7 +422,7 @@
     },
     {
       "fullPath": "presets/4.2.9/bnf/Nazgul_F5_HD_BLITZ.txt",
-      "hash": "9b4701b8591c5f6f3d91917ceb72c64708aedc5e0d7650f17d5c508c245f1c1b",
+      "hash": "117a9682e7091e63f4490e44d3fda227dddb8517416ca7b36c4bf715fd22c3cf",
       "title": "Nazgul F5 HD (BLITZ Electronics)",
       "firmware_version": [
         "4.2.9"
@@ -440,7 +440,7 @@
     },
     {
       "fullPath": "presets/4.2.9/bnf/Nazgul_F5_HD_SucceX.txt",
-      "hash": "2a5ca4eb0e7cd2192f49dcb3a29ea027b10b2f277c165b60719905ce2785cac2",
+      "hash": "3dd09aaef56cb95ba1182d28198a305fbdb4b2ebb8d98c8462e37b910d11becb",
       "title": "Nazgul F5 HD (SucceX Electronics)",
       "firmware_version": [
         "4.2.9"
@@ -458,7 +458,7 @@
     },
     {
       "fullPath": "presets/4.2.9/bnf/ProTek35_AIOv1.2.txt",
-      "hash": "a36ed77b11b2dd2f7f787f204f731231d2302f0d30289178b46e62f6941372f0",
+      "hash": "51cd7b81d1be09dafbcf7b7dbe21390d9ec4e3821613f997897f80431e817b0e",
       "title": "ProTek35 (Beast AIO v1.2 Electronics)",
       "firmware_version": [
         "4.2.9"
@@ -475,7 +475,7 @@
     },
     {
       "fullPath": "presets/4.2.9/bnf/ProTek35_AIOv1.txt",
-      "hash": "f657d66ab21cdab2f93d0409f200c654a86039f2c7df90dfc2dfcfb1bf9abe9f",
+      "hash": "82839ed8321dda2d4dcc2a79258bfce29c5dda72db6a15fc7b4a2ee4b6252239",
       "title": "ProTek35 (Beast AIO v1 Electronics)",
       "firmware_version": [
         "4.2.9"
@@ -492,7 +492,7 @@
     },
     {
       "fullPath": "presets/4.2.9/bnf/ProTek35_AIOv2.0.txt",
-      "hash": "f7f7873d4df6f75f9b25c0477b76dfd7524b0df95873d51dccd02c402f379d6f",
+      "hash": "27fb07c10606cc214a64caf304b009511a052182764e75143113e677c0ab67bf",
       "title": "ProTek35 (Beast AIO v2.0 Electronics)",
       "firmware_version": [
         "4.2.9"

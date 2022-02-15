@@ -5,7 +5,7 @@
 #$ KEYWORDS: iflight, protek, protek35
 #$ AUTHOR: XING, iFlight
 #$ DESCRIPTION: Welcome to the iFlight Experience! 
-#$ DESCRIPTION: Looks like something went wrong with your Betaflight setup? 
+#$ DESCRIPTION: Looks like something went wrong with your Betaflight setup? Apply our Betaflight presets or click on "Discussion..." to get to our Google Drive factory dump file folder.
 #$ DESCRIPTION: These are the iFlight BNF factory defaults for ProTek35 with Beast AIO v1.2 Elektronics. Please check in your Betaflight Configurator on the top left to confirm the target name contains F745_AIO!
 #$ DESCRIPTION: Check the options for your individual setup. ALL your personal settings will be reset to iFlight defaults and can not be restored if not saved!
 #$ DISCUSSION: https://drive.google.com/drive/u/1/folders/1jQlSfYY74gaQku_EMYRsBpU7gqcCcCZK

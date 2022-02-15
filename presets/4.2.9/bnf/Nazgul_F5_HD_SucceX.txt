@@ -5,7 +5,7 @@
 #$ KEYWORDS: iflight, nazgul, f5, evoque
 #$ AUTHOR: XING, iFlight
 #$ DESCRIPTION: Welcome to the iFlight Experience! 
-#$ DESCRIPTION: Looks like something went wrong with your Betaflight setup? 
+#$ DESCRIPTION: Looks like something went wrong with your Betaflight setup? Apply our Betaflight presets or click on "Discussion..." to get to our Google Drive factory dump file folder.
 #$ DESCRIPTION: These are the iFlight BNF factory defaults for Nazgul F5 Evoque HD with SucceX Electronics. Please check in your Betaflight Configurator on the top left to confirm the target name contains Succex! Due to the chip shortage Aug-Sept/2021, there have been mixed electronics rigs. If you have a BLITZ ESC and SucceX FC, please apply the option available to change the ibata_scale. This can be confirmed through the BLHeli Configurator or the packaging label. This factory dump was initially released with a custom firmware to allow the user to see Betaflight Warnings on the DJI OSD. If you want that, please flash the custom 4.2.9 firmware from https://github.com/mbilozub/fpv_custom_mods/wiki/DJI-warning-BetaFlight and use our custom option.
 #$ DESCRIPTION: Check the options for your individual setup. ALL your personal settings will be reset to iFlight defaults and can not be restored if not saved!
 #$ DISCUSSION: https://drive.google.com/drive/u/1/folders/1jQlSfYY74gaQku_EMYRsBpU7gqcCcCZK
