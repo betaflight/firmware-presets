@@ -475,7 +475,7 @@
     },
     {
       "fullPath": "presets/4.2.9/bnf/ProTek35_AIOv1.txt",
-      "hash": "50461d0b03887482db336eb3fcc22ff1f1c0cff01ba13fface52a0f6491b5ceb",
+      "hash": "70ccfbcce5a44c08b48d37a10f08b9cedfcad57841f19110a4a2339ddb8f85cf",
       "title": "ProTek35 (Beast AIO v1 Electronics)",
       "firmware_version": [
         "4.2.9"
@@ -492,7 +492,7 @@
     },
     {
       "fullPath": "presets/4.2.9/bnf/ProTek35_AIOv2.0.txt",
-      "hash": "308aeab8d07e5d1ed7da86280b27b721e6a02901c6c9cc15493d8da5e2451bd4",
+      "hash": "34f4c8108e7b35547b5b81ef6f6b8c02c0db0b552e836ce757ba4ff65eec9046",
       "title": "ProTek35 (Beast AIO v2.0 Electronics)",
       "firmware_version": [
         "4.2.9"

@@ -2344,10 +2344,21 @@ set yaw_rate_limit = 1998
 set serialrx_provider = CRSF
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED): 1b/DJI/Frsky Radio (SBUS)
+#$ OPTION BEGIN (UNCHECKED): 1b/DJI Radio (SBUS)
 set serialrx_provider = SBUS
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): 1bb/DJI sbus_baud_fast ON
 set sbus_baud_fast = ON
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): 1c/Frsky Radio (SBUS)
+serial 20 1 115200 57600 0 115200
+serial 0 1 115200 57600 0 115200
+serial 1 0 115200 57600 0 115200
+serial 2 64 115200 57600 0 115200
+serial 3 0 115200 57600 0 115200
+serial 5 0 115200 57600 0 115200
+serial 6 0 115200 57600 0 115200
+serial 7 0 115200 57600 0 115200
 #$ OPTION END
