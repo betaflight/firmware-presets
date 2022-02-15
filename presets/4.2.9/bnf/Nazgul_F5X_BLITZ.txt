@@ -6,10 +6,7 @@
 #$ AUTHOR: XING, iFlight
 #$ DESCRIPTION: BNF factory defaults for Nazgul F5X Evoque with BLITZ Electronics.
 #$ DESCRIPTION: Please check the options for your setup.
-#$ DESCRIPTION: 
-#$ DISCUSSION:: 
-
-#$ WARNING: ALL your personal settings will be reset to iFlight defaults and can not be restored if not saved!
+#$ DESCRIPTION: ALL your personal settings will be reset to iFlight defaults and can not be restored if not saved!
 
 board_name IFLIGHT_BLITZ_F722
 manufacturer_id IFRC
