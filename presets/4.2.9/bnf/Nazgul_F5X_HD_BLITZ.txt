@@ -1,10 +1,10 @@
-#$ TITLE: Nazgul F5X (BLITZ Electronics)
+#$ TITLE: Nazgul F5X HD (BLITZ Electronics)
 #$ FIRMWARE_VERSION: 4.2.9
 #$ CATEGORY: BNF
 #$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: iflight, nazgul, f5, evoque
 #$ AUTHOR: XING, iFlight
-#$ DESCRIPTION: BNF factory defaults for Nazgul F5X Evoque with BLITZ Electronics.
+#$ DESCRIPTION: BNF factory defaults for Nazgul F5X Evoque HD with BLITZ Electronics.
 #$ DESCRIPTION: Please check the options for your setup.
 #$ DESCRIPTION: ALL your personal settings will be reset to iFlight defaults and can not be restored if not saved!
 

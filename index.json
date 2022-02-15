@@ -383,9 +383,27 @@
   },
   "presets": [
     {
-      "fullPath": "presets/4.2.9/bnf/Nazgul_F5X_BLITZ.txt",
-      "hash": "533708bccdfb85e43dbd00765dbd9e7e1c27e51d92019cdf3b6881cf88633993",
-      "title": "Nazgul F5X (BLITZ Electronics)",
+      "fullPath": "presets/4.2.9/bnf/Nazgul_F5X_ANALOG_BLITZ.txt",
+      "hash": "a14504bc8cdf21db5eb6e1c3c08c43941541e3170bf280ec9c2224ad9c1eb906",
+      "title": "Nazgul F5X Analog (BLITZ Electronics)",
+      "firmware_version": [
+        "4.2.9"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "iflight",
+        "nazgul",
+        "f5",
+        "evoque"
+      ],
+      "author": "XING, iFlight",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.2.9/bnf/Nazgul_F5X_HD_BLITZ.txt",
+      "hash": "d17a2ded4e149103957cc35d3279e3a281e73814dd562f1a1373253bddf71a49",
+      "title": "Nazgul F5X HD (BLITZ Electronics)",
       "firmware_version": [
         "4.2.9"
       ],
