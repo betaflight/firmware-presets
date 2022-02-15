@@ -401,9 +401,45 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/4.2.9/bnf/Nazgul_F5X_ANALOG_SucceX.txt",
+      "hash": "be427d8333b0ae41f19abd1075323e3c9cfc749858ccf21c6140656d702f5659",
+      "title": "Nazgul F5X Analog (SucceX Electronics)",
+      "firmware_version": [
+        "4.2.9"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "iflight",
+        "nazgul",
+        "f5",
+        "evoque"
+      ],
+      "author": "XING, iFlight",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.2.9/bnf/Nazgul_F5X_HD_BLITZ.txt",
       "hash": "d6363fb30990a18f636895fd7f84c1f95af35b85df3367c8280ddba12f1d6c88",
       "title": "Nazgul F5X HD (BLITZ Electronics)",
+      "firmware_version": [
+        "4.2.9"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "iflight",
+        "nazgul",
+        "f5",
+        "evoque"
+      ],
+      "author": "XING, iFlight",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.2.9/bnf/Nazgul_F5X_HD_SucceX.txt",
+      "hash": "3af471e3273f4de280b4ea42fd2f841c697dab33f3dbacaa703f56ff88f7e24b",
+      "title": "Nazgul F5X HD (SucceX Electronics)",
       "firmware_version": [
         "4.2.9"
       ],
