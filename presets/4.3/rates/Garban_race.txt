@@ -7,7 +7,7 @@
 #$ DESCRIPTION: Racing rates from Josep de la Fuente (Garban), one of the fastest pilot in Catalonia.
 #$ DESCRIPTION: With 482 deg/sec on roll, same on pitch and 450 deg/sec on yaw 
 #$ DESCRIPTION: Also with a throttle curve in order to improve low throttle 
-#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/186
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/187
 #$ INCLUDE: presets/4.3/rates/defaults.txt
 
 
