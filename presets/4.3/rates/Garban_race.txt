@@ -6,6 +6,7 @@
 #$ AUTHOR: Garban
 #$ DESCRIPTION: Racing rates from Josep de la Fuente (Garban), fastest pilot in Catalonia.
 #$ DESCRIPTION: lols and yes he still uses BETAFLIGHT rates
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/186
 #$ INCLUDE: presets/4.3/rates/defaults.txt
 
 
