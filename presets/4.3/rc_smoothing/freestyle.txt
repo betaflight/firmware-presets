@@ -35,7 +35,7 @@ set rc_smoothing_feedforward_cutoff = 20
 # for 250Hz RC links:
 #$ OPTION BEGIN (UNCHECKED): 250Hz 
 set feedforward_smooth_factor = 45
-set feedforward_jitter_factor = 10
+set feedforward_jitter_factor = 8
 #$ OPTION END
 
 # for 500Hz RC links:
