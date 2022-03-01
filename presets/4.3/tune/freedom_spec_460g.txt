@@ -4,15 +4,31 @@
 #$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: sugarK, limon, ctzsnooze, freedom, freedom spec, headsup, five33, 533, racing, race, 5"
 #$ AUTHOR: Ivan Efimov (Limon)
-#$ DESCRIPTION: This tune works ONLY with bidirectional DSHOT 600/300. If your FC can't handle DSHOT600, pelase select DSHOT 300 in the options here.
-#$ DESCRIPTION: If your RC link is anything different from 250Hz, please use corresponding preset from RC link category on top of this preset.
-#$ DESCRIPTION: DO NOT try to fly this tune on any battery besides 3S!
-#$ DESCRIPTION: Freedom spec: 3S LiPo, Headsup 1960kv 2207 motors, HQ R38 5 inch props. Minimum weight with the battery: 460g.
+
+#$ PARSER: MARKED
+
+#$ DESCRIPTION:
+#$ DESCRIPTION: <img src="https://user-images.githubusercontent.com/2925027/156102810-87aadfd2-5910-4381-8930-189ff7aa4e87.png" width="250px" style="margin-left: auto; margin-right: auto; display: block;"/>
+#$ DESCRIPTION:
+#$ DESCRIPTION: Important
+#$ DESCRIPTION: ----------
+#$ DESCRIPTION: 1.  This tune works ONLY with **bidirectional** DSHOT 600/300. If your FC can't handle DSHOT600, pelase select DSHOT 300 in the options here.
+#$ DESCRIPTION: 2.  If your RC link is anything different from 250Hz, please use corresponding preset from RC link category on top of this preset.
+#$ DESCRIPTION: 3.  **Do NOT** try to fly this tune on any battery besides 3S!
+#$ DESCRIPTION:
+#$ DESCRIPTION: Information
+#$ DESCRIPTION: -----------
+#$ DESCRIPTION: Freedom spec most recent rules are listed [here](https://freedomspec.com/about-1).
 #$ DESCRIPTION:
 #$ DESCRIPTION: This tune prioritizes clean motor traces at full throttle to make sure your quad flies as fast as possible without loosing energy for heating the motors.
 #$ DESCRIPTION: The less noise the faster your quad flies at full throttle. Make sure your frame is solid, all screws are tight, RC link/OpenTX/EdgeTX is up to date.
 #$ DESCRIPTION:
-#$ DESCRIPTION: Credits: sugarK and ctzsnooze for helping with this preset. It is not done yet and there is some room for more impromements. Stay tuned!
+#$ DESCRIPTION: This preset is not done yet and there is some room for more impromements. Stay tuned!
+#$ DESCRIPTION:
+#$ DESCRIPTION: Credits:
+#$ DESCRIPTION: -------
+#$ DESCRIPTION: *  [sugarK](https://github.com/sugaarK)
+#$ DESCRIPTION: *  [ctzsnooze](https://github.com/ctzsnooze)
 
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/116
 #$ INCLUDE_WARNING: misc/warnings/en/dshot.txt
