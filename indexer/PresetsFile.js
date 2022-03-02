@@ -49,6 +49,7 @@ class PresetsFile
         delete this.disclaimer;
         delete this.include_warning;
         delete this.include_disclaimer;
+        delete this.parser;
     }
 
     _checkProperties()
@@ -304,6 +305,9 @@ class PresetsFile
             case this._settings.MetadataTypes.PRIORITY:
                 this._processPriorityProperty(property, line);
                 break;
+            case this._settings.MetadataTypes.PARSER:
+                this._processParserProperty(property, line);
+                break;
             default:
                 this._addError(`line ${this._currentLine}, unknown property type '${this._presetsFileMetadata[property].type}' for the property '${property}'`);
         }
@@ -316,11 +320,20 @@ class PresetsFile
         if (this._settings.PresetStatusEnum.includes(line)) {
             this[property] = line;
         } else {
-            this._addError(`line ${this._currentLine}, unknown ${property} values: '${line}'; available values: ${this._settings.PresetStatusEnum}`);
+            this._addError(`line ${this._currentLine}, unknown ${property} value: '${line}'; available values: ${this._settings.PresetStatusEnum}`);
         }
-
     }
 
+    _processParserProperty(property, line)
+    {
+        this._checkPropertyDublicated(property);
+
+        if (this._settings.ParserEnum.includes(line)) {
+            this[property] = line;
+        } else {
+            this._addError(`line ${this._currentLine}, unknown ${property} value: '${line}'; available values: ${this._settings.ParserEnum}`);
+        }
+    }
 
     _processWordsArrayProperty(property, line)
     {
