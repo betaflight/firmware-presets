@@ -106,10 +106,6 @@ set dshot_idle_value = 600
 #$ OPTION_GROUP BEGIN: Filters
 
 # Filter options
-#$ OPTION BEGIN (UNCHECKED): FILTER: RPM enabled, clean build
-#$ INCLUDE: presets/4.3/filters/default_rpm_clean.txt
-set dyn_idle_min_rpm = 50
-#$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): FILTER: RPM enabled, normal build
 #$ INCLUDE: presets/4.3/filters/default_rpm_normal.txt
@@ -129,7 +125,7 @@ set dyn_idle_min_rpm = 50
 
 # -- Fast Rx Link Options --
 
-#$ OPTION_GROUP BEGIN: RC Links
+#$ OPTION_GROUP BEGIN: Your RC link speed, if above 150
 
 
 #$ OPTION BEGIN (UNCHECKED): RC_LINK 250Hz
@@ -146,7 +142,12 @@ set feedforward_jitter_factor = 4
 
 #$ OPTION_GROUP END
 
-#$ OPTION_GROUP BEGIN: Tune
+
+#$ OPTION_GROUP BEGIN: Tune options, check only one
+
+#$ OPTION BEGIN (UNCHECKED): Normal tune (normal builds)
+# do nothing, it's already applied
+#$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): Spicy tune (clean builds only)
 # -- PID values --
@@ -178,10 +179,6 @@ set simplified_i_gain = 50
 set simplified_pitch_d_gain = 100
 set simplified_pitch_pi_gain = 100
 set simplified_master_multiplier = 110
-#$ OPTION END
-
-#$ OPTION BEGIN (UNCHECKED): Normal tune (normal builds)
-# do nothing, it's already applied
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): Safer tune (older builds)
@@ -218,48 +215,61 @@ set simplified_master_multiplier = 100
 
 #$ OPTION_GROUP END
 
+
+#$ OPTION_GROUP BEGIN: Recommended settings, please check all of them
+
 # -- RC_Smoothing --
-#$ OPTION BEGIN (UNCHECKED): Default RC_smoothing (recommended)
+#$ OPTION BEGIN (UNCHECKED): Default RC_smoothing
 #$ INCLUDE: presets/4.3/rc_smoothing/race.txt
 #$ OPTION END
 
 # -- VBat warning threshold --
-#$ OPTION BEGIN (UNCHECKED): Default warning voltage (recommended)
+#$ OPTION BEGIN (UNCHECKED): Default warning voltage
 set vbat_warning_cell_voltage = 350
 #$ OPTION END
 
 # -- No deadband --
-#$ OPTION BEGIN (UNCHECKED): No deadband (recommended)
+#$ OPTION BEGIN (UNCHECKED): No deadband
 set deadband = 0
 set yaw_deadband = 0
 #$ OPTION END
 
 # -- Startup and arming --
-#$ OPTION BEGIN (UNCHECKED): Arm at any angle (recommended)
+#$ OPTION BEGIN (UNCHECKED): Arm at any angle
 set small_angle = 180
 #$ OPTION END
+
+#$ OPTION_GROUP END
+
+
+#$ OPTION_GROUP BEGIN: Optional settings to experiment with
 
 # -- VBat sag compensation --
 set vbat_sag_compensation = 100
 set vbat_sag_lpf_period = 2
-#$ OPTION BEGIN (UNCHECKED): 50% Sag compensation (optional)
+#$ OPTION BEGIN (UNCHECKED): 50% Sag compensation
 set vbat_sag_compensation = 50
 #$ OPTION END
 
 # -- Throttle curve --
-#$ OPTION BEGIN (UNCHECKED): Sharper throttle response curve (optional)
+#$ OPTION BEGIN (UNCHECKED): Sharper throttle response curve
 set thr_mid = 100
 set thr_expo = 30
 #$ OPTION END
 
 # -- Dynamic idle --
 set dyn_idle_min_rpm = 0
-#$ OPTION BEGIN (UNCHECKED): Enable dynamic idle at 40 (optional)
+#$ OPTION BEGIN (UNCHECKED): Enable dynamic idle at 40
 set dyn_idle_min_rpm = 40
 #$ OPTION END
 
+#$ OPTION_GROUP END
+
+
+#$ OPTION_GROUP BEGIN: These are my race rates...   
+
 # -- Rates --
-#$ OPTION BEGIN (UNCHECKED): Try Gary's race rates! (go on!)
+#$ OPTION BEGIN (UNCHECKED): Try Gary's race rates - go on!
 set rates_type = ACTUAL
 set roll_rc_rate = 20
 set pitch_rc_rate = 20
@@ -271,4 +281,6 @@ set roll_srate = 50
 set pitch_srate = 50
 set yaw_srate = 50
 #$ OPTION END
+
+#$ OPTION_GROUP END
 
