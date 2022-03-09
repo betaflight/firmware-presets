@@ -2,7 +2,7 @@
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: RC_LINK
 #$ STATUS: EXPERIMENTAL
-#$ KEYWORDS: rc link, ghost, IRC, GHST, 250Hz, 500Hz, racing, purerace, soild250, race250, race500, immersionRC, immersion
+#$ KEYWORDS: rc link,smoothing, ghost, IRC, GHST, 250Hz, 300Hz 500Hz, racing, purerace, soild250, race250, race500, immersionRC, immersion
 #$ AUTHOR: sugarK
 #$ DESCRIPTION: Setup for the various ImmersionRC modes via GHST protocol for racing.
 #$ DESCRIPTION: WARNING: Make ABSOLUTELY SURE that the Hardware > ADC Filter is un-checked! and both radio and the TX unit are all up-to-date with the latest EdgeTX, OpenTX or FreedomTX.
@@ -10,6 +10,8 @@
 #$ INCLUDE_WARNING: misc/warnings/en/ADC.txt
 #$ INCLUDE: presets/4.3/rc_link/defaults.txt
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/156
+#$ FORCE_OPTIONS_REVIEW: TRUE
+
 
 feature RX_SERIAL
 set serialrx_provider = GHST
@@ -17,27 +19,35 @@ set serialrx_provider = GHST
 # We do not recommend disabling rc smoothing.
 set rc_smoothing = ON
 
-#$ OPTION BEGIN (UNCHECKED): SoildRace and PureRace
+#$ OPTION_GROUP BEGIN: 250-300Hz SoildRace, PureRace and Race250 modes
+#$ OPTION BEGIN (UNCHECKED): Select for 250-300Hz modes then add additional options 
 
-# SoildRace and PureRace
-set feedforward_averaging = off
 set feedforward_smooth_factor = 35
-set feedforward_jitter_factor = 5
-#$ OPTION END
-
-#$ OPTION BEGIN (UNCHECKED): Race250
-
-# Race250
-set feedforward_averaging = off
-set feedforward_smooth_factor = 35
-set feedforward_jitter_factor = 5
-feature TELEMETRY
-#$ OPTION END
-
-#$ OPTION BEGIN (UNCHECKED): Race500
-
-# Race500
-set feedforward_averaging = OFF
-set feedforward_smooth_factor = 70
 set feedforward_jitter_factor = 4
+set feedforward_boost = 18
+set rc_smoothing_auto_factor = 25
+set rc_smoothing_auto_factor_throttle = 25
 #$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Sharper
+
+set feedforward_averaging = off
+#$ OPTION END
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: 500Hz Race500 mode
+#$ OPTION BEGIN (UNCHECKED): Select for 500Hz mode then add additional options 
+
+set feedforward_smooth_factor = 65
+set feedforward_jitter_factor = 3
+set feedforward_boost = 18
+set rc_smoothing_auto_factor = 25
+set rc_smoothing_auto_factor_throttle = 25
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Sharper
+
+set feedforward_jitter_factor = 0
+#$ OPTION END
+#$ OPTION_GROUP END
+
