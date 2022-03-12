@@ -16,7 +16,7 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: WARNING:
 #$ DESCRIPTION: --------
-$# DESCRIPTION: *  For this Ghost mode use the GHST protocol between the R/C transmitter and the Ghost transmitter, and also between the Ghost receiver and the flight controller.
+#$ DESCRIPTION: *  For this Ghost mode use the GHST protocol between the R/C transmitter and the Ghost transmitter, and also between the Ghost receiver and the flight controller.
 #$ DESCRIPTION: *  Make **ABSOLUTELY** SURE that the OpenTx or EdgeTx Hardware ADC Filter is un-checked.
 #$ DESCRIPTION: *  Check that you are using a compatible version of EdgeTx or OpenTx.
 #$ DESCRIPTION: *  Cinematic settings are very smooth - there is noticeable delay in stick response.
