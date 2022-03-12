@@ -16,7 +16,7 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: WARNING:
 #$ DESCRIPTION: --------
-$# DESCRIPTION: *  This is a very slow mode, not for racing or regular freestyle.
+#$ DESCRIPTION: *  This is a very slow mode, not for racing or regular freestyle.
 #$ DESCRIPTION: *  Make **ABSOLUTELY** SURE that the OpenTx or EdgeTx Hardware ADC Filter is un-checked.
 #$ DESCRIPTION: *  Check that you are using a compatible version of EdgeTx or OpenTx.
 
