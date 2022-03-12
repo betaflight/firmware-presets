@@ -26,6 +26,7 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: Recommended motors for a 6″/7″ is 25xx+  |  Recommended motors for a 7″/8″ is 28xx+
 #$ DESCRIPTION: 
+#$ WARNING: **DO NOT** select the RPM Filter option unless your ESCs support DSHOT and Bi-Directional Communication.  If you are unsure, HIT CANCEL and de-select that option, OTHERWISE it can spin up motors even before you arm your quad!!!
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/202
 #$ INCLUDE: presets/4.3/tune/defaults.txt
 #$ INCLUDE: presets/4.3/filters/defaults.txt
@@ -63,8 +64,6 @@ set motor_pwm_protocol = DSHOT600
 set dshot_bidir = ON
 set rpm_filter_harmonics = 2
 set dyn_notch_count = 2
-#$ INCLUDE_WARNING: misc/warnings/en/dshot.txt
-#$ INCLUDE_WARNING: misc/warnings/en/rpm_filters.txt
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): Dynamic Idle
