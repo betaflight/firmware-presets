@@ -13,7 +13,7 @@
 #$ DESCRIPTION: Important
 #$ DESCRIPTION: ----------
 #$ DESCRIPTION: 1.  This tune works ONLY with **bidirectional** DSHOT 600/300. If your FC can't handle DSHOT600, pelase select DSHOT 300 in the options here.
-#$ DESCRIPTION: 2.  If your RC link is anything different from 250Hz, please use corresponding preset from RC link category on top of this preset.
+#$ DESCRIPTION: 2.  Please, use corresponding preset from RC link category on top of this preset.
 #$ DESCRIPTION: 3.  **Do NOT** try to fly this tune on any battery besides 3S!
 #$ DESCRIPTION:
 #$ DESCRIPTION: Information
