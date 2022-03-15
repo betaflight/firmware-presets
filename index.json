@@ -154,6 +154,8 @@
       "Betaflight",
       "BMSThomas",
       "ctzsnooze",
+      "Daniel Appel / Tehllama",
+      "Daniel Appel / Tehllama && Armando Gallegos / Mondo && Evan Turner / HeadsUp",
       "Directory",
       "DusKing1 (Hugo Chiang), Pitronic",
       "Evan Turner (Headsup)",
@@ -257,6 +259,7 @@
       "fpvian",
       "freedom",
       "freedom spec",
+      "FreedomSpec",
       "freestyle",
       "freesytle",
       "freetyle",
@@ -265,12 +268,14 @@
       "ghost",
       "GHST",
       "GPS",
+      "GTB339",
       "gyro",
       "gyros",
       "gyroscope",
       "HD",
       "HDzero",
       "Headsup",
+      "HighKV",
       "hot",
       "HV",
       "IllusionFpv",
@@ -285,6 +290,7 @@
       "leds",
       "Limon",
       "link",
+      "Llama",
       "log",
       "logging",
       "Long Range",
@@ -294,6 +300,7 @@
       "mode",
       "modes",
       "MultiGP",
+      "MultiVoltage",
       "names",
       "nano",
       "nanohawk",
@@ -338,6 +345,7 @@
       "SA 2.1",
       "sa2.0",
       "sa20",
+      "Safe",
       "sbus",
       "SBUS fast",
       "settings",
@@ -347,7 +355,7 @@
       "smoothing",
       "Solid250",
       "some",
-      "spec",
+      "Spec",
       "speedybee",
       "stats",
       "suagrK",
@@ -355,6 +363,7 @@
       "Supafly",
       "SupaflyFPV",
       "switch",
+      "SWPR",
       "tank solo",
       "tank ultimate",
       "TBS",
@@ -362,12 +371,13 @@
       "texas",
       "tiny",
       "tiny tank",
-      "tinyTrainer",
+      "TinyTrainer",
+      "Toothpick",
       "Tracer",
       "trainer",
       "TRAMP",
       "transmitter",
-      "tune",
+      "Tune",
       "twig",
       "tx800",
       "ultra",
@@ -966,6 +976,106 @@
         "stats"
       ],
       "author": "Betaflight",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/other/Tehllama_533_TinyTrainer_3in_3S_Tune.txt",
+      "hash": "894a4d6c04cae423b2d90bbab517aaf7a552f393dbbff3c865e75b3e51fcd6ea",
+      "title": "FlyFive33 3in TinyTrainer 3S Tune",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "OTHER",
+      "status": "COMMUNITY",
+      "keywords": [
+        "TinyTrainer",
+        "533",
+        "Spec",
+        "Race",
+        "Llama"
+      ],
+      "author": "Daniel Appel / Tehllama && Armando Gallegos / Mondo && Evan Turner / HeadsUp",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/other/Tehllama_5in_1700-2250KV_4S-5S-6S_Race_Tune.txt",
+      "hash": "fb0acf60e79255aee08d6710676fcc68781f33f222d562830ec4895ba3b9e09c",
+      "title": "5in Tehllama Race Tune 1800-2250KV on 4S/5S/6S",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "OTHER",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "Race",
+        "Llama",
+        "Safe",
+        "Tune",
+        "MultiVoltage"
+      ],
+      "author": "Daniel Appel / Tehllama",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/other/Tehllama_5in_1900-2250KV_FreedomSpec_3S-5S-6S_Race_Tune.txt",
+      "hash": "c64e3bf205b8477d57ad7ef7b0f6e9d0164823ad7d94a28aa1ba94794fbab23a",
+      "title": "5in FreedomSpec Race Tune 1900-2150KV on 3S (Spec) and 5S/6S (Open)",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "OTHER",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "533",
+        "FreedomSpec",
+        "Spec",
+        "Race",
+        "Llama",
+        "MultiVoltage"
+      ],
+      "author": "Daniel Appel / Tehllama",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/other/Tehllama_5in_2350-2750KV-Freedom_3S-4S-5S_Race_Tune.txt",
+      "hash": "1333450b6020ac864c108833b6caf12dc036ea0f64154dbfe76c522c44b1183e",
+      "title": "5in TexasSpec Freedom Race Tune 2350-2750KV on 3S (Spec) and 4S/5S (Open)",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "OTHER",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "533",
+        "HighKV",
+        "FreedomSpec",
+        "Spec",
+        "Race",
+        "Llama",
+        "MultiVoltage"
+      ],
+      "author": "Daniel Appel / Tehllama",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/other/Tehllama_GTB339_3in_SWPR-Spec_2S-3S_Race_Tune.txt",
+      "hash": "27a8535a1cb5fe51a382e69b9a7ce13db389fbd833c8ce6947c461e3e870a10c",
+      "title": "3in Lightweight Race GTB339 3S/2S Tune",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "OTHER",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "GTB339",
+        "Toothpick",
+        "Spec",
+        "Race",
+        "Llama",
+        "SWPR",
+        "MultiVoltage"
+      ],
+      "author": "Daniel Appel / Tehllama",
       "priority": 0
     },
     {
@@ -2341,6 +2451,87 @@
         "7 Inch"
       ],
       "author": "SupaflyFPV",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.3/tune/Tehllama_5in_1700-2250KV_4S-5S-6S_Race_Tune.txt",
+      "hash": "7247c554ff9b4a6fa0e32f68a3f73fafa0a0726d9d7a38be81dc5d0c34b3703a",
+      "title": "5in Tehllama Race Tune 1800-2250KV on 4S/5S/6S",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "OFFICIAL",
+      "keywords": [
+        "Race",
+        "Llama",
+        "Safe",
+        "Tune",
+        "MultiVoltage"
+      ],
+      "author": "Daniel Appel / Tehllama",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.3/tune/Tehllama_5in_1900-2250KV_FreedomSpec_3S-5S-6S_Race_Tune.txt",
+      "hash": "408e4c4d104ce2c79858dc856c465ba6c6ec2ee545213dbf026c2acb9efcb840",
+      "title": "5in FreedomSpec Race Tune 1900-2150KV on 3S (Spec) and 5S/6S (Open)",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "OFFICIAL",
+      "keywords": [
+        "533",
+        "FreedomSpec",
+        "Spec",
+        "Race",
+        "Llama",
+        "MultiVoltage"
+      ],
+      "author": "Daniel Appel / Tehllama",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.3/tune/Tehllama_5in_2350-2750KV-Freedom_3S-4S-5S_Race_Tune.txt",
+      "hash": "916daad428e84d08052aa9c3085f1a6dda7dd92392b8a349abaaa96d90dba4d7",
+      "title": "5in FreedomSpec Race Tune 2350-2750KV on 3S (Spec) and 4S/5S (Open)",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "533",
+        "HighKV",
+        "FreedomSpec",
+        "Spec",
+        "Race",
+        "Llama",
+        "MultiVoltage"
+      ],
+      "author": "Daniel Appel / Tehllama",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.3/tune/Tehllama_GTB339_3in_SWPR-Spec_2S-3S_Race_Tune.txt",
+      "hash": "6a010910b5f4d6ad10dbc79983cab84739eed5d9ebfeafb57cdc13ad5c990b69",
+      "title": "3in Lightweight Race GTB339 3S/2S Tune",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "GTB339",
+        "Toothpick",
+        "Spec",
+        "Race",
+        "Llama",
+        "SWPR",
+        "MultiVoltage"
+      ],
+      "author": "Daniel Appel / Tehllama",
       "priority": 1000000000000
     },
     {
