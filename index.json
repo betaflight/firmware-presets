@@ -980,13 +980,13 @@
     },
     {
       "fullPath": "presets/4.3/other/Tehllama_533_TinyTrainer_3in_3S_Tune.txt",
-      "hash": "894a4d6c04cae423b2d90bbab517aaf7a552f393dbbff3c865e75b3e51fcd6ea",
+      "hash": "12c257fea8a5294221e35aed36bb1e45f0482a8a362ced7ce376d800eae26767",
       "title": "FlyFive33 3in TinyTrainer 3S Tune",
       "firmware_version": [
         "4.3"
       ],
       "category": "OTHER",
-      "status": "COMMUNITY",
+      "status": "EXPERIMENTAL",
       "keywords": [
         "TinyTrainer",
         "533",

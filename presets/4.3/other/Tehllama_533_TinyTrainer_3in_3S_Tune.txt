@@ -1,7 +1,7 @@
 #$ TITLE: FlyFive33 3in TinyTrainer 3S Tune
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: OTHER
-#$ STATUS: COMMUNITY
+#$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: TinyTrainer, 533, Spec, Race, Llama
 #$ AUTHOR: Daniel Appel / Tehllama && Armando Gallegos / Mondo && Evan Turner / HeadsUp
 #$ DESCRIPTION: This is an adaptation of the 533 TinyTrainer tune, and expects bidirectional DShot ESCs at 48kHz PWM with MedHigh timing. 
