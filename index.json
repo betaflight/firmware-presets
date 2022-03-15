@@ -10,7 +10,6 @@
       "VTX": "VTX",
       "LEDS": "LEDS",
       "MODES": "MODES",
-      "RC_SMOOTHING": "RC_SMOOTHING",
       "FILTERS": "FILTERS",
       "RC_LINK": "RC_LINK",
       "BNF": "BNF",
@@ -145,7 +144,6 @@
       "OTHER",
       "RATES",
       "RC_LINK",
-      "RC_SMOOTHING",
       "TUNE",
       "VTX"
     ],
@@ -167,7 +165,6 @@
       "Joshua Bardwell",
       "Justice - Gary Kent",
       "Jye Smith",
-      "Mark Spatz (UAV Tech)",
       "MinChan Kim",
       "NemesisXB",
       "Sjoer van der Ploeg",
@@ -202,16 +199,18 @@
       "6\"",
       "65mm",
       "666Hz",
+      "6in",
       "6S",
       "7 Inch",
       "7\"",
+      "7in",
       "9ms",
       "acro",
       "Acrobaix",
       "actual",
       "adjustments",
-      "aggressive",
       "AlexFPV",
+      "analog",
       "aux",
       "AyyyKayyy",
       "bando",
@@ -259,8 +258,8 @@
       "freedom",
       "freedom spec",
       "freestyle",
-      "freestyle_HD",
       "freesytle",
+      "freetyle",
       "frsky",
       "Garban",
       "ghost",
@@ -270,7 +269,6 @@
       "gyros",
       "gyroscope",
       "HD",
-      "HD_freestyle",
       "HDzero",
       "Headsup",
       "hot",
@@ -279,7 +277,6 @@
       "immersion",
       "immersionRC",
       "IRC",
-      "jitter",
       "justice",
       "karate",
       "KarateBrot",
@@ -324,7 +321,6 @@
       "rates",
       "RC",
       "rc link",
-      "rc smoothing",
       "rc_link",
       "rc_smoothing",
       "Redpine",
@@ -348,7 +344,6 @@
       "shames",
       "shark bite",
       "smartaudio",
-      "smooth",
       "smoothing",
       "Solid250",
       "some",
@@ -371,12 +366,10 @@
       "Tracer",
       "trainer",
       "TRAMP",
-      "transition",
       "transmitter",
       "tune",
       "twig",
       "tx800",
-      "UAV Tech",
       "ultra",
       "ultra 1000",
       "unify",
@@ -784,6 +777,52 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/4.3/osd/UAV_tech_Analog.txt",
+      "hash": "b304bd4f3d0e6ab42840badced7e07847ca654c5fd048dba8c53b96128788763",
+      "title": "UAV Tech - Analog",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "OSD",
+      "status": "COMMUNITY",
+      "keywords": [
+        "analog"
+      ],
+      "author": "UAV Tech (Mark Spatz)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/osd/UAV_tech_DJI.txt",
+      "hash": "bc8e6e7c6811e7dc0c3dce503795e6ac263471b78de444c56c9bdb6dfc1c1821",
+      "title": "UAV Tech - DJI",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "OSD",
+      "status": "COMMUNITY",
+      "keywords": [
+        "DJI"
+      ],
+      "author": "UAV Tech (Mark Spatz)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/osd/UAV_tech_DJI_GPS.txt",
+      "hash": "71aa3f012c239248629894e48e5ce5d7e83fc4c4b3e6e166d835a73b8e8588e7",
+      "title": "UAV Tech - DJI with GPS",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "OSD",
+      "status": "COMMUNITY",
+      "keywords": [
+        "DJI",
+        "GPS"
+      ],
+      "author": "UAV Tech (Mark Spatz)",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.3/other/blackbox_disable.txt",
       "hash": "71fc4b4cc44366fbbd91ad1aaf882cddd103fae91c4230988a5ebbb67b6bac5d",
       "title": "4.3 Blackbox disable settings",
@@ -1165,21 +1204,20 @@
     },
     {
       "fullPath": "presets/4.3/rates/UAV_tech.txt",
-      "hash": "b446efe96a216241890e10e0308030dd02b4ca975df3d50ba6723039768c343e",
-      "title": "UAV Tech rates",
+      "hash": "b0ca5a2a097e8b90f0aa50cbc72936512b4adfdde9a83cff76bd05fc87d36e62",
+      "title": "UAV Tech Rates (w/ Cinematic/Whoop Options)",
       "firmware_version": [
         "4.3"
       ],
       "category": "RATES",
-      "status": "OFFICIAL",
+      "status": "COMMUNITY",
       "keywords": [
-        "UAV Tech",
-        "youtube",
-        "freestyle",
-        "HD",
-        "cinematic"
+        "whoop",
+        "freetyle",
+        "cinematic",
+        "HD"
       ],
-      "author": "Mark Spatz (UAV Tech)",
+      "author": "UAV Tech (Mark Spatz)",
       "priority": 10000
     },
     {
@@ -1226,7 +1264,7 @@
     },
     {
       "fullPath": "presets/4.3/rc_link/DJI_Normal.txt",
-      "hash": "502da7e4901758251bc6e239d5a48a5a1e2e8b8ff108092040948a2a0d7a5ab4",
+      "hash": "f6adb5f164fe234ee3e0f96747d629d548ac222fb7d7f658202a2bb60d786bdf",
       "title": "DJI Normal",
       "firmware_version": [
         "4.3"
@@ -1245,7 +1283,7 @@
     },
     {
       "fullPath": "presets/4.3/rc_link/DJI_SBUS_Fast.txt",
-      "hash": "8903a50237bdb9b735effce19ae351f4dc1709315f572a2620c198e600035302",
+      "hash": "47e4acedecf6c68c74f9fe664a8614f4a2d3517e0665030918a549ca34d623ad",
       "title": "DJI SBUS FAST",
       "firmware_version": [
         "4.3"
@@ -1765,8 +1803,8 @@
     },
     {
       "fullPath": "presets/4.3/rc_link/ghost/long_range.txt",
-      "hash": "f3e7692c910c73f728776b190406d6395afbdfcf4e867aaed8f99a412559e9c9",
-      "title": "IRC Ghost; Mode: Long Range",
+      "hash": "37bf52892ae6489822ac980577a60b81bf2762b87f0b5d18fce38855637f84d9",
+      "title": "IRC Ghost (Long Range)",
       "firmware_version": [
         "4.3"
       ],
@@ -1790,8 +1828,8 @@
     },
     {
       "fullPath": "presets/4.3/rc_link/ghost/normal.txt",
-      "hash": "f00c3298575744c10549dcaa46e11f1b9f47ad9d1ecea75fb1018254c1deeae4",
-      "title": "IRC Ghost; Mode: Normal",
+      "hash": "2c208ecec8ec21fe23a20c150d91b9debe94a3bbe85e8513730288bad2fdc221",
+      "title": "IRC Ghost (Mode: Normal)",
       "firmware_version": [
         "4.3"
       ],
@@ -1816,8 +1854,8 @@
     },
     {
       "fullPath": "presets/4.3/rc_link/ghost/pure_race.txt",
-      "hash": "774246459eb0f90d2a711f33629434a158e6901d4d9f151096e60a215176f97e",
-      "title": "IRC Ghost; Mode: Pure Race",
+      "hash": "02fa58697a85f4015a6727202565265dcd1d96119299ff7122a6a0827af42e79",
+      "title": "IRC Ghost (Pure Race)",
       "firmware_version": [
         "4.3"
       ],
@@ -1842,8 +1880,8 @@
     },
     {
       "fullPath": "presets/4.3/rc_link/ghost/race.txt",
-      "hash": "3ce22e7cbe17569b09ab5ffb2ed027d279400aeb40d76dcc8341a327b18662eb",
-      "title": "IRC Ghost; Mode: Race",
+      "hash": "604505e2bf18d7064bcd5579ef9f1c54817639605f0e413f20c863a2af271a6e",
+      "title": "IRC Ghost (Mode: Race)",
       "firmware_version": [
         "4.3"
       ],
@@ -1868,8 +1906,8 @@
     },
     {
       "fullPath": "presets/4.3/rc_link/ghost/race250.txt",
-      "hash": "c766372d2ac35962104ad3b62438b3b0d154483a793ea1c5499919aea3fbb59c",
-      "title": "IRC Ghost; Mode: Race250",
+      "hash": "594e3c6aac3387c98e601ad733ed1661a1cee9ea6f3118e7d9e42b7c7602b476",
+      "title": "IRC Ghost (Race250)",
       "firmware_version": [
         "4.3"
       ],
@@ -1894,8 +1932,8 @@
     },
     {
       "fullPath": "presets/4.3/rc_link/ghost/race500.txt",
-      "hash": "08e2901805cbd785b585fd1ea2b0c0a27cb81322a0df498732ab681a2ef2a01f",
-      "title": "IRC Ghost; Mode: Race500",
+      "hash": "a609358caf58090ece18d86916b19dc418a5d6321ac557a61f6d90827a0c8c2c",
+      "title": "IRC Ghost (Race500)",
       "firmware_version": [
         "4.3"
       ],
@@ -1920,8 +1958,8 @@
     },
     {
       "fullPath": "presets/4.3/rc_link/ghost/solid250.txt",
-      "hash": "9645822102017ac300fd5a72114a2bbd0c91550656dc5aa0677b52f8b57b6f1a",
-      "title": "IRC Ghost; Mode: Solid250",
+      "hash": "10e98599896fb36691557a0a09134139b9640055a8e7e58bc48d10e73dbffd95",
+      "title": "IRC Ghost (Solid250)",
       "firmware_version": [
         "4.3"
       ],
@@ -2002,7 +2040,7 @@
     },
     {
       "fullPath": "presets/4.3/rc_link/tbs/crossfire_150hz.txt",
-      "hash": "b85196050a49fe7ef7a6baa826b6043867fdd3fe81c61830629bb98dd7f8c77a",
+      "hash": "cc79b53a8abaf6413302d29c93daafdc51643e2268bd29b0ed369f93202c7af4",
       "title": "TBS Crossfire 150Hz",
       "firmware_version": [
         "4.3"
@@ -2025,7 +2063,7 @@
     },
     {
       "fullPath": "presets/4.3/rc_link/tbs/crossfire_50hz.txt",
-      "hash": "831ebad99ca3a77241177dacd9101dde7bcab7b10610d3a6a26149823eedb312",
+      "hash": "e4bfdca099a049bf525bb8fa236a4bd97168a59516db639f4936f47402ccbc50",
       "title": "TBS Crossfire 50Hz",
       "firmware_version": [
         "4.3"
@@ -2048,7 +2086,7 @@
     },
     {
       "fullPath": "presets/4.3/rc_link/tbs/tracer_250hz.txt",
-      "hash": "aa4919189a2e306adc8921c21c95fef3ac465b736921b6b0acfe13e5a2b21b45",
+      "hash": "7ae066ca7f02c9a14de85ed184e0dac160eb47123bb6467d127a0c4211ee0695",
       "title": "TBS Tracer 250Hz",
       "firmware_version": [
         "4.3"
@@ -2070,110 +2108,8 @@
       "priority": 10000000000
     },
     {
-      "fullPath": "presets/4.3/rc_smoothing/cinematic.txt",
-      "hash": "b3b220fca9bf07ad226b9f4347ed7e891d75649f860582936b664956bfc512e2",
-      "title": "Cinematic RC smoothing",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "RC_SMOOTHING",
-      "status": "OFFICIAL",
-      "keywords": [
-        "cinematic",
-        "rc",
-        "smoothing",
-        "rc_smoothing",
-        "jitter",
-        "transition",
-        "hd"
-      ],
-      "author": "ctzsnooze",
-      "priority": 100000000
-    },
-    {
-      "fullPath": "presets/4.3/rc_smoothing/defaults.txt",
-      "hash": "c91b7b93cf4a33a15d606a827e983f67441ac78a9b9a11f8ecfb36d772d62739",
-      "title": "Default 4.3 RC smoothing settings",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "RC_SMOOTHING",
-      "status": "OFFICIAL",
-      "keywords": [
-        "defaults",
-        "reset",
-        "rc smoothing",
-        "rc_smoothing"
-      ],
-      "author": "Betaflight",
-      "priority": 0
-    },
-    {
-      "fullPath": "presets/4.3/rc_smoothing/freestyle.txt",
-      "hash": "120bde850517f3d90edc988b2d9f459913e27b694e675036b7901086ecd64465",
-      "title": "Freestyle RC smoothing",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "RC_SMOOTHING",
-      "status": "OFFICIAL",
-      "keywords": [
-        "freestyle",
-        "rc",
-        "smooth",
-        "smoothing",
-        "rc_smoothing",
-        "jitter"
-      ],
-      "author": "ctzsnooze",
-      "priority": 100000000
-    },
-    {
-      "fullPath": "presets/4.3/rc_smoothing/hd_freestyle.txt",
-      "hash": "e1bd40e254fb9007be2f2dc944fa7384076113b38e8d03090cca622e121eb8ab",
-      "title": "Freestyle HD RC smoothing",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "RC_SMOOTHING",
-      "status": "OFFICIAL",
-      "keywords": [
-        "freestyle",
-        "rc",
-        "smooth",
-        "HD",
-        "freestyle_HD",
-        "HD_freestyle",
-        "smoothing",
-        "rc_smoothing",
-        "jitter"
-      ],
-      "author": "ctzsnooze",
-      "priority": 100000000
-    },
-    {
-      "fullPath": "presets/4.3/rc_smoothing/race.txt",
-      "hash": "d47f866a989e9d1a4bae748872f0cf13302987c27462d3b67bc23eb922717e9a",
-      "title": "Race RC smoothing",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "RC_SMOOTHING",
-      "status": "OFFICIAL",
-      "keywords": [
-        "aggressive",
-        "rc",
-        "smoothing",
-        "race",
-        "rc_smoothing",
-        "jitter"
-      ],
-      "author": "ctzsnooze",
-      "priority": 100000000
-    },
-    {
       "fullPath": "presets/4.3/tune/ctzsnooze_5in_4S_race.txt",
-      "hash": "681f93f549f7331f0b4b1e779dff4efa1bbc8d0e33a30f8539ca805d8c8b7766",
+      "hash": "ffab8a4f6a116e72b15a4f40eef954b393890d55792df7b3e3de4c684084e5c8",
       "title": "4S, 3\" to 5\" race tune by ctzsznooze",
       "firmware_version": [
         "4.3"
@@ -2238,7 +2174,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/freedom_spec_460g.txt",
-      "hash": "f3cf15cb439abc653735f014f30a940e02eb48eb06aa367bee73cfaeb4e020f0",
+      "hash": "4ab44d5ec889276c752cf496b9d04922da18ab369a2866c6e017d02698fd6bf2",
       "title": "Freedom Spec 460 - 500g",
       "firmware_version": [
         "4.3"
@@ -2433,6 +2369,47 @@
       "priority": 1000000000000
     },
     {
+      "fullPath": "presets/4.3/tune/UAV_tech_5in.txt",
+      "hash": "db11ec74fa5760f5b31c90197f79be79458248ea146f7a3ced7525519d4c9305",
+      "title": "UAV Tech - 5in (~630g AUW)",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "4S",
+        "6S",
+        "5in",
+        "5\"",
+        "freestyle"
+      ],
+      "author": "UAV Tech (Mark Spatz)",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.3/tune/UAV_tech_6-7in.txt",
+      "hash": "af9aaeaea38e9c44cd49214ae98d5d04859e9ab12588ce5dd342cfa3e1b0be37",
+      "title": "UAV Tech - 6-7in (~700g AUW)",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "4S",
+        "6S",
+        "6in",
+        "7in",
+        "6\"",
+        "7\"",
+        "freestyle",
+        "long range"
+      ],
+      "author": "UAV Tech (Mark Spatz)",
+      "priority": 1000000000000
+    },
+    {
       "fullPath": "presets/4.3/tune/whoop_ayyykayyy.txt",
       "hash": "18a0a21b675f4c2e4719bae8d448684e58b51981f657755fe4c2f95e7eaea2c7",
       "title": "Whoop race tune by AyyyKayyy",
@@ -2458,7 +2435,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/whoop_justice.txt",
-      "hash": "3a7fc98a781ab27d1ae77dd0678bfdbb4b5180b22d7fd595d476520322704b6e",
+      "hash": "8ffd94378502eb5498b290188345b98b9ad8c4d117d8f87edbedbfa179eb119b",
       "title": "Whoop race tune by Justice",
       "firmware_version": [
         "4.3"
