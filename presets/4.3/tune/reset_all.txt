@@ -4,10 +4,11 @@
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: defaults, reset, tune, pid, expert, default
 #$ AUTHOR: Betaflight
-#$ DESCRIPTION: Checked tune related parameters will be reset to defaults. 
+#$ DESCRIPTION: Checked tune related parameters will be reset to defaults.
 #$ DESCRIPTION: Un-check the parameters you want to keep at current values.
+#$ PRIORITY: 0
 
-#  -- PID settings -- 
+#  -- PID settings --
 
 #$ OPTION BEGIN (CHECKED): PID values
 set p_pitch = 44

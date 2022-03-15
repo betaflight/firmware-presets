@@ -6,8 +6,9 @@
 #$ AUTHOR: Betaflight
 #$ DESCRIPTION: Check the tune parameters that you want to reset to defaults.
 #$ DESCRIPTION: Un-checked parameters will remain at current values.
+#$ PRIORITY: 0
 
-#  -- PID settings -- 
+#  -- PID settings --
 
 #$ OPTION BEGIN (UNCHECKED): PID values
 set p_pitch = 44

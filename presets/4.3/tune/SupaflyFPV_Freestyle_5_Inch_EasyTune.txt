@@ -26,7 +26,6 @@
 
 set dshot_bidir = OFF
 set simplified_gyro_filter = OFF
-set simplified_gyro_filter_multiplier = 0
 set gyro_lpf2_static_hz = 1000
 set gyro_lpf1_dyn_min_hz = 300
 set gyro_lpf1_dyn_max_hz = 600
@@ -38,7 +37,6 @@ set dyn_notch_max_hz = 800
 # -- Dterm filtering --
 
 set simplified_dterm_filter = OFF
-set simplified_dterm_filter_multiplier = 0
 set dterm_lpf1_dyn_min_hz = 0
 set dterm_lpf1_dyn_max_hz = 0
 set dterm_lpf1_dyn_expo = 0
@@ -58,7 +56,6 @@ set feedforward_jitter_factor = 12
 set motor_pwm_protocol = DSHOT600
 set dshot_bidir = ON
 set simplified_gyro_filter = OFF
-set simplified_gyro_filter_multiplier = 0
 set rpm_filter_harmonics = 1
 set gyro_lpf2_static_hz = 1000
 set gyro_lpf1_dyn_min_hz = 300
