@@ -980,7 +980,7 @@
     },
     {
       "fullPath": "presets/4.3/other/Tehllama_533_TinyTrainer_3in_3S_Tune.txt",
-      "hash": "12c257fea8a5294221e35aed36bb1e45f0482a8a362ced7ce376d800eae26767",
+      "hash": "6e1419b3f4c6956b96ed59b177fb1ac1701f21039ce5b47e5b3c491fd2fb9ac6",
       "title": "FlyFive33 3in TinyTrainer 3S Tune",
       "firmware_version": [
         "4.3"
@@ -999,7 +999,7 @@
     },
     {
       "fullPath": "presets/4.3/other/Tehllama_5in_1700-2250KV_4S-5S-6S_Race_Tune.txt",
-      "hash": "fb0acf60e79255aee08d6710676fcc68781f33f222d562830ec4895ba3b9e09c",
+      "hash": "82276c9277bb1f40f6eee7c50e546b8268f326213d1b7d1d76aa37746408300c",
       "title": "5in Tehllama Race Tune 1800-2250KV on 4S/5S/6S",
       "firmware_version": [
         "4.3"
@@ -1018,7 +1018,7 @@
     },
     {
       "fullPath": "presets/4.3/other/Tehllama_5in_1900-2250KV_FreedomSpec_3S-5S-6S_Race_Tune.txt",
-      "hash": "c64e3bf205b8477d57ad7ef7b0f6e9d0164823ad7d94a28aa1ba94794fbab23a",
+      "hash": "4d5dc53759375b0d3c340f421134f88005cbca72ccf8e2e91497d91805f5e4bc",
       "title": "5in FreedomSpec Race Tune 1900-2150KV on 3S (Spec) and 5S/6S (Open)",
       "firmware_version": [
         "4.3"
@@ -1038,7 +1038,7 @@
     },
     {
       "fullPath": "presets/4.3/other/Tehllama_5in_2350-2750KV-Freedom_3S-4S-5S_Race_Tune.txt",
-      "hash": "1333450b6020ac864c108833b6caf12dc036ea0f64154dbfe76c522c44b1183e",
+      "hash": "30f91abe634ece21fab674471e0d238512191577081b0d065b442e49c3ff6228",
       "title": "5in TexasSpec Freedom Race Tune 2350-2750KV on 3S (Spec) and 4S/5S (Open)",
       "firmware_version": [
         "4.3"
@@ -1059,7 +1059,7 @@
     },
     {
       "fullPath": "presets/4.3/other/Tehllama_GTB339_3in_SWPR-Spec_2S-3S_Race_Tune.txt",
-      "hash": "27a8535a1cb5fe51a382e69b9a7ce13db389fbd833c8ce6947c461e3e870a10c",
+      "hash": "ee30c87fd2be6f5f8844160990f660a3a2f756e78a76d971a004fd4abdd8a3d6",
       "title": "3in Lightweight Race GTB339 3S/2S Tune",
       "firmware_version": [
         "4.3"

@@ -76,6 +76,7 @@ set simplified_pitch_d_gain = 110
 set simplified_pitch_pi_gain = 110
 set simplified_dterm_filter_multiplier = 140
 set simplified_dterm_filter = OFF
+simplified_tuning apply
 
 profile 1
 # profile 1
@@ -118,6 +119,7 @@ set simplified_pitch_d_gain = 110
 set simplified_pitch_pi_gain = 110
 set simplified_dterm_filter_multiplier = 140
 set simplified_dterm_filter = OFF
+simplified_tuning apply
 
 profile 2
 # profile 2
@@ -162,6 +164,7 @@ set simplified_pitch_d_gain = 110
 set simplified_pitch_pi_gain = 110
 set simplified_dterm_filter_multiplier = 135
 set simplified_dterm_filter = OFF
+simplified_tuning apply
 
 #$ OPTION BEGIN (CHECKED): Apply TPA Settings to all rateprofiles
 rateprofile 0
@@ -201,6 +204,7 @@ profile 0
 set motor_output_limit = 92
 profile 2
 set simplified_master_multiplier = 105
+simplified_tuning apply
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED):  2300KV 6S Motor Output Limit
@@ -208,6 +212,7 @@ profile 0
 set motor_output_limit = 93
 profile 2
 set simplified_master_multiplier = 105
+simplified_tuning apply
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED):  2250KV 6S Motor Output Limit
@@ -215,6 +220,7 @@ profile 0
 set motor_output_limit = 95
 profile 2
 set simplified_master_multiplier = 110
+simplified_tuning apply
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED):  2150KV 6S Motor Output Limit
@@ -222,6 +228,7 @@ profile 0
 set motor_output_limit = 98
 profile 2
 set simplified_master_multiplier = 115
+simplified_tuning apply
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED):  2050KV 6S Motor Output Limit
@@ -229,6 +236,7 @@ profile 0
 set motor_output_limit = 98
 profile 2
 set simplified_master_multiplier = 120
+simplified_tuning apply
 #$ OPTION END
 
 # save configuration

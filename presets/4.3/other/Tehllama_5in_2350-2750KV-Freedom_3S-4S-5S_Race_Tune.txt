@@ -75,6 +75,7 @@ set simplified_pitch_d_gain = 110
 set simplified_pitch_pi_gain = 110
 set simplified_dterm_filter = OFF
 set simplified_dterm_filter_multiplier = 140
+simplified_tuning apply
 
 profile 1
 # profile 1 - 5S
@@ -122,6 +123,7 @@ set simplified_pitch_d_gain = 110
 set simplified_pitch_pi_gain = 110
 set simplified_dterm_filter = OFF
 set simplified_dterm_filter_multiplier = 140
+simplified_tuning apply
 
 profile 2
 # profile 2 - 3S Spec
@@ -167,6 +169,7 @@ set simplified_feedforward_gain = 160
 set simplified_pitch_d_gain = 95
 set simplified_pitch_pi_gain = 105
 set simplified_dterm_filter = OFF
+simplified_tuning apply
 
 
 #$ OPTION BEGIN (UNCHECKED): Apply TPA Settings to all rateprofiles
@@ -218,6 +221,7 @@ set motor_output_limit = 98
 profile 2
 set motor_output_limit = 80
 set simplified_master_multiplier = 100
+simplified_tuning apply
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED):  2500KV Motor Output Limiting (3S and 5S)
@@ -226,6 +230,7 @@ set motor_output_limit = 96
 profile 2
 set motor_output_limit = 78
 set simplified_master_multiplier = 95
+simplified_tuning apply
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED):  2650KV Motor Output Limiting (3S and 5S)
@@ -234,6 +239,7 @@ set motor_output_limit = 94
 profile 2
 set motor_output_limit = 74
 set simplified_master_multiplier = 90
+simplified_tuning apply
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED):  2750KV Motor Output Limiting (3S and 5S)
@@ -242,4 +248,5 @@ set motor_output_limit = 90
 profile 2
 set motor_output_limit = 71
 set simplified_master_multiplier = 85
+simplified_tuning apply
 #$ OPTION END

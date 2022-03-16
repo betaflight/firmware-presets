@@ -74,6 +74,7 @@ set simplified_feedforward_gain = 160
 set simplified_pitch_d_gain = 110
 set simplified_pitch_pi_gain = 110
 set simplified_dterm_filter = OFF
+simplified_tuning apply
 
 profile 1
 # profile 1
@@ -111,6 +112,7 @@ set simplified_pi_gain = 125
 set simplified_feedforward_gain = 160
 set simplified_pitch_d_gain = 105
 set simplified_dterm_filter = OFF
+simplified_tuning apply
 
 profile 2
 # profile 2
@@ -152,6 +154,7 @@ set simplified_dmax_gain = 85
 set simplified_feedforward_gain = 135
 set simplified_pitch_pi_gain = 110
 set simplified_dterm_filter = OFF
+simplified_tuning apply
 
 #$ OPTION BEGIN (CHECKED): Apply TPA Settings to all rateprofiles
 rateprofile 0
