@@ -1,0 +1,11 @@
+#$ TITLE: Basic requirements for CRSF 
+#$ FIRMWARE_VERSION: 4.2
+#$ CATEGORY: RC_LINK
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: ExpressLRS, expresslrs, ELRS, elrs, CRSF, Crossfire, Tracer, crossfire, tracer
+#$ AUTHOR: MrAlucardDante
+#$ DESCRIPTION: RC link settings for a link via CRSF.
+
+# basic requirements for CRSF 
+feature RX_SERIAL
+set serialrx_provider = CRSF
