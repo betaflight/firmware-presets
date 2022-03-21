@@ -156,7 +156,7 @@ set dyn_idle_d_gain = 42
 
 #$ OPTION BEGIN (CHECKED): Apply Matching Multi Voltage Filters
 
-#$ INCLUDE presets/4.3/filters/defaults.txt
+#$ INCLUDE: presets/4.3/filters/defaults.txt
 
 set gyro_lpf1_static_hz = 0
 set gyro_lpf2_static_hz = 675

@@ -1,0 +1,97 @@
+#$ TITLE: 5in FreedomSpec Race Tune 1900-2150KV on 3S (Spec) and 5S/6S (Open)
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: FILTERS
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: 533, FreedomSpec, Spec, Race, Llama, MultiVoltage
+#$ AUTHOR: Daniel Appel / Tehllama
+#$ DESCRIPTION: Filter array for 5" Race Builds, tested on bidir DShot ESCs at 48kHz PWM with 27°/MedHigh timing
+#$ DISCLAIMER: This applies only one profile of filters if the 'Multiple Voltage Profile' option is deselected
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/168
+
+#$ INCLUDE: presets/4.3/filters/defaults.txt
+# master
+set gyro_lpf1_static_hz = 0
+set gyro_lpf2_static_hz = 675
+set dyn_notch_q = 333
+set dyn_notch_min_hz = 98
+set dyn_notch_max_hz = 674
+set gyro_lpf1_dyn_min_hz = 337
+set gyro_lpf1_dyn_max_hz = 675
+set gyro_lpf1_dyn_expo = 7
+
+set simplified_gyro_filter_multiplier = 135
+
+set rpm_filter_harmonics = 2
+set rpm_filter_q = 750
+set rpm_filter_min_hz = 125
+set rpm_filter_fade_range_hz = 100
+
+set dterm_lpf1_dyn_min_hz = 100
+set dterm_lpf1_dyn_max_hz = 244
+set dterm_lpf1_dyn_expo = 9
+set dterm_lpf1_static_hz = 0
+set dterm_lpf2_static_hz = 202
+
+set simplified_dterm_filter_multiplier = 135
+set simplified_dterm_filter = OFF
+simplified_tuning apply
+
+
+#$ OPTION BEGIN (CHECKED): Apply Multiple Voltage Filters
+#$ INCLUDE: presets/4.3/filters/defaults.txt
+# master
+set gyro_lpf1_static_hz = 0
+set gyro_lpf2_static_hz = 675
+set dyn_notch_q = 333
+set dyn_notch_min_hz = 98
+set dyn_notch_max_hz = 674
+set gyro_lpf1_dyn_min_hz = 337
+set gyro_lpf1_dyn_max_hz = 675
+set gyro_lpf1_dyn_expo = 7
+
+set simplified_gyro_filter_multiplier = 135
+
+set rpm_filter_harmonics = 2
+set rpm_filter_q = 750
+set rpm_filter_min_hz = 125
+set rpm_filter_fade_range_hz = 100
+
+simplified_tuning apply
+
+profile 0
+# profile 0
+set dterm_lpf1_dyn_min_hz = 100
+set dterm_lpf1_dyn_max_hz = 266
+set dterm_lpf1_dyn_expo = 10
+set dterm_lpf1_static_hz = 0
+set dterm_lpf2_static_hz = 202
+
+set simplified_dterm_filter_multiplier = 140
+set simplified_dterm_filter = OFF
+simplified_tuning apply
+
+profile 1
+# profile 1
+set dterm_lpf1_dyn_min_hz = 100
+set dterm_lpf1_dyn_max_hz = 244
+set dterm_lpf1_dyn_expo = 9
+set dterm_lpf1_static_hz = 0
+set dterm_lpf2_static_hz = 202
+
+set simplified_dterm_filter_multiplier = 140
+set simplified_dterm_filter = OFF
+simplified_tuning apply
+
+profile 2
+# profile 2
+set dterm_lpf1_dyn_min_hz = 101
+set dterm_lpf1_dyn_max_hz = 222
+set dterm_lpf1_dyn_expo = 7
+set dterm_lpf1_static_hz = 0
+set dterm_lpf2_static_hz = 202
+
+set simplified_dterm_filter_multiplier = 135
+set simplified_dterm_filter = OFF
+simplified_tuning apply
+
+#$ OPTION END
