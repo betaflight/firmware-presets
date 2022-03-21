@@ -1,6 +1,6 @@
 #$ TITLE: 3in Lightweight Race GTB339 3S/2S Tune
 #$ FIRMWARE_VERSION: 4.3
-#$ CATEGORY: OTHER
+#$ CATEGORY: TUNE
 #$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: GTB339, Toothpick, Spec, Race, Llama, SWPR, MultiVoltage
 #$ AUTHOR: Daniel Appel / Tehllama
@@ -11,37 +11,20 @@
 #$ DISCUSSION: https://app.slack.com/client/T221J1F6J/C0228HK2MD4/
 
 #$ INCLUDE: presets/4.3/tune/defaults.txt
-#$ INCLUDE: presets/4.3/filters/defaults.txt
+
 
 # master
-set gyro_lpf1_static_hz = 400
-set gyro_lpf2_static_hz = 800
-set dyn_notch_q = 500
-set dyn_notch_min_hz = 100
-set dyn_notch_max_hz = 640
-set gyro_lpf1_dyn_min_hz = 400
-set gyro_lpf1_dyn_max_hz = 800
-
-set dshot_idle_value = 475
 set dshot_bidir = ON
 set motor_poles = 12
 
-set thrust_linear = 20
-set simplified_gyro_filter_multiplier = 160
+set dshot_idle_value = 475
+# Fallback if dynamic idle does not work or is disabled
 
-set rpm_filter_harmonics = 2
-set rpm_filter_q = 750
-set rpm_filter_min_hz = 115
-set rpm_filter_fade_range_hz = 100
+set thrust_linear = 20
 
 # profile 3:  3S
 profile 2
 
-set dterm_lpf1_dyn_min_hz = 120
-set dterm_lpf1_dyn_max_hz = 240
-set dterm_lpf1_dyn_expo = 8
-set dterm_lpf1_static_hz = 120
-set dterm_lpf2_static_hz = 240
 set vbat_sag_compensation = 77
 set anti_gravity_gain = 4400
 set iterm_rotation = ON
@@ -63,22 +46,16 @@ set d_max_advance = 0
 set auto_profile_cell_count = 3
 set feedforward_boost = 8
 set throttle_boost = 5
-set dyn_idle_min_rpm = 24
 set simplified_i_gain = 75
 set simplified_pi_gain = 110
 set simplified_feedforward_gain = 75
 set simplified_pitch_d_gain = 110
 set simplified_pitch_pi_gain = 110
-set simplified_dterm_filter_multiplier = 160
 simplified_tuning apply
 
 # profile 1: 2S
 profile 1
 
-set dterm_lpf1_dyn_min_hz = 120
-set dterm_lpf1_dyn_max_hz = 240
-set dterm_lpf1_static_hz = 120
-set dterm_lpf2_static_hz = 240
 set vbat_sag_compensation = 77
 set anti_gravity_gain = 4400
 set iterm_rotation = ON
@@ -102,15 +79,62 @@ set d_max_advance = 0
 set auto_profile_cell_count = 2
 set feedforward_boost = 18
 set throttle_boost = 12
-set dyn_idle_min_rpm = 24
 set simplified_master_multiplier = 175
 set simplified_i_gain = 75
 set simplified_d_gain = 120
 set simplified_dmax_gain = 75
 set simplified_feedforward_gain = 75
 set simplified_pitch_d_gain = 105
+simplified_tuning apply
+
+
+#$ OPTION BEGIN (CHECKED): Apply Matching Filters
+
+#$ INCLUDE: presets/4.3/filters/defaults.txt
+
+set gyro_lpf1_static_hz = 400
+set gyro_lpf2_static_hz = 800
+set dyn_notch_q = 500
+set dyn_notch_min_hz = 100
+set dyn_notch_max_hz = 640
+set gyro_lpf1_dyn_min_hz = 400
+set gyro_lpf1_dyn_max_hz = 800
+set simplified_gyro_filter_multiplier = 160
+
+set rpm_filter_harmonics = 2
+set rpm_filter_q = 750
+set rpm_filter_min_hz = 115
+set rpm_filter_fade_range_hz = 100
+
+profile 0
+set dterm_lpf1_dyn_min_hz = 120
+set dterm_lpf1_dyn_max_hz = 240
+set dterm_lpf1_dyn_expo = 8
+set dterm_lpf1_static_hz = 120
+set dterm_lpf2_static_hz = 240
+
 set simplified_dterm_filter_multiplier = 160
 simplified_tuning apply
+
+profile 1
+set dterm_lpf1_dyn_min_hz = 120
+set dterm_lpf1_dyn_max_hz = 240
+set dterm_lpf1_static_hz = 120
+set dterm_lpf2_static_hz = 240
+set simplified_dterm_filter_multiplier = 160
+simplified_tuning apply
+
+#$ OPTION END
+
+
+#$ OPTION BEGIN (CHECKED): Apply Dynamic Idle
+
+profile 2
+set dyn_idle_min_rpm = 24
+profile 1
+set dyn_idle_min_rpm = 24
+
+#$ OPTION END
 
 
 #$ OPTION BEGIN (CHECKED): Apply TPA Settings to all rateprofiles (Will Select RateProfile #1)

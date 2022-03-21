@@ -1,45 +1,26 @@
 #$ TITLE: 5in TexasSpec Freedom Race Tune 2350-2750KV on 3S (Spec) and 4S/5S (Open)
 #$ FIRMWARE_VERSION: 4.3
-#$ CATEGORY: OTHER
+#$ CATEGORY: TUNE
 #$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: 533, HighKV, FreedomSpec, Spec, Race, Llama, MultiVoltage
 #$ AUTHOR: Daniel Appel / Tehllama
-#$ DESCRIPTION: Built for EMULATING 533 FreedomSpec and similar builds on bidir DShot ESCs at 48kHz PWM with 23°/MedHigh timing
+#$ DESCRIPTION: Built for EMULATING 533 FreedomSpec and similar builds on bidir DShot ESCs at 48kHz PWM with 23-27°/MedHigh timing
 #$ DESCRIPTION: 3S (2200mAh) will run a spec tune.  4S and 5S will run a conservative open race tune.
 #$ DISCLAIMER: This tune will auto-select profiles based on battery voltage at plugin, but only for 3S, 4S and 5S packs. Extensive testing has been done across 54+ builds, however not every craft will run best on this tune.
 #$ WARNING: Use at your own risk.  NO 6-cell tune or throttle limit is provided with this tune.  Plugging in a 6S pack with 3S profile active will likely cause damage.  
-#$ DISCUSSION: https://app.slack.com/client/T221J1F6J/C0228HK2MD4/
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/168
 
 #$ INCLUDE: presets/4.3/tune/defaults.txt
-#$ INCLUDE: presets/4.3/filters/defaults.txt
 
 # master
-set gyro_lpf1_static_hz = 0
-set gyro_lpf2_static_hz = 675
-set dyn_notch_q = 333
-set dyn_notch_min_hz = 98
-set dyn_notch_max_hz = 674
-set gyro_lpf1_dyn_min_hz = 337
-set gyro_lpf1_dyn_max_hz = 675
-set gyro_lpf1_dyn_expo = 7
-
-set simplified_gyro_filter_multiplier = 135
-
-set dshot_idle_value = 440
 set dshot_bidir = ON
 
-set rpm_filter_harmonics = 2
-set rpm_filter_q = 750
-set rpm_filter_min_hz = 125
-set rpm_filter_fade_range_hz = 100
+set dshot_idle_value = 440
+# Fallback value if dynamic idle does not work, or is deselected
 
 profile 0
 # profile 0 - 4S
-set dterm_lpf1_dyn_min_hz = 98
-set dterm_lpf1_dyn_max_hz = 244
-set dterm_lpf1_dyn_expo = 8
-set dterm_lpf1_static_hz = 0
-set dterm_lpf2_static_hz = 210
+
 set vbat_sag_compensation = 77
 set iterm_rotation = ON
 set iterm_relax = RPY
@@ -62,10 +43,7 @@ set auto_profile_cell_count = 4
 set feedforward_jitter_factor = 12
 set feedforward_boost = 12
 set throttle_boost = 12
-set dyn_idle_min_rpm = 24
-set dyn_idle_p_gain = 42
-set dyn_idle_i_gain = 42
-set dyn_idle_d_gain = 42
+
 set simplified_master_multiplier = 95
 set simplified_i_gain = 85
 set simplified_pi_gain = 115
@@ -73,17 +51,11 @@ set simplified_dmax_gain = 85
 set simplified_feedforward_gain = 135
 set simplified_pitch_d_gain = 110
 set simplified_pitch_pi_gain = 110
-set simplified_dterm_filter = OFF
-set simplified_dterm_filter_multiplier = 140
-simplified_tuning apply
+
 
 profile 1
 # profile 1 - 5S
-set dterm_lpf1_dyn_min_hz = 98
-set dterm_lpf1_dyn_max_hz = 277
-set dterm_lpf1_dyn_expo = 10
-set dterm_lpf1_static_hz = 0
-set dterm_lpf2_static_hz = 210
+
 set vbat_sag_compensation = 77
 set iterm_rotation = ON
 set iterm_relax_cutoff = 33
@@ -109,10 +81,7 @@ set feedforward_jitter_factor = 12
 set feedforward_boost = 8
 set throttle_boost = 5
 set feedforward_max_rate_limit = 103
-set dyn_idle_min_rpm = 24
-set dyn_idle_p_gain = 42
-set dyn_idle_i_gain = 42
-set dyn_idle_d_gain = 42
+
 set simplified_master_multiplier = 65
 set simplified_i_gain = 85
 set simplified_d_gain = 110
@@ -123,15 +92,10 @@ set simplified_pitch_d_gain = 110
 set simplified_pitch_pi_gain = 110
 set simplified_dterm_filter = OFF
 set simplified_dterm_filter_multiplier = 140
-simplified_tuning apply
 
 profile 2
 # profile 2 - 3S Spec
-set dterm_lpf1_dyn_min_hz = 98
-set dterm_lpf1_dyn_max_hz = 222
-set dterm_lpf1_dyn_expo = 7
-set dterm_lpf1_static_hz = 0
-set dterm_lpf2_static_hz = 210
+
 set vbat_sag_compensation = 99
 set iterm_relax = RPY
 set iterm_relax_cutoff = 33
@@ -156,10 +120,7 @@ set feedforward_jitter_factor = 12
 set feedforward_boost = 18
 set throttle_boost = 18
 set feedforward_max_rate_limit = 103
-set dyn_idle_min_rpm = 24
-set dyn_idle_p_gain = 42
-set dyn_idle_i_gain = 42
-set dyn_idle_d_gain = 42
+
 set simplified_master_multiplier = 105
 set simplified_i_gain = 85
 set simplified_d_gain = 105
@@ -168,8 +129,81 @@ set simplified_dmax_gain = 85
 set simplified_feedforward_gain = 160
 set simplified_pitch_d_gain = 95
 set simplified_pitch_pi_gain = 105
+
+
+#$ OPTION BEGIN (CHECKED): Apply Dynamic idle to all profiles
+
+profile 0
+set dyn_idle_min_rpm = 24
+set dyn_idle_p_gain = 42
+set dyn_idle_i_gain = 42
+set dyn_idle_d_gain = 42
+
+profile 1
+set dyn_idle_min_rpm = 24
+set dyn_idle_p_gain = 42
+set dyn_idle_i_gain = 42
+set dyn_idle_d_gain = 42
+
+profile 2
+set dyn_idle_min_rpm = 24
+set dyn_idle_p_gain = 42
+set dyn_idle_i_gain = 42
+set dyn_idle_d_gain = 42
+
+#$ OPTION END
+
+
+#$ OPTION BEGIN (CHECKED): Apply Matching Multi Voltage Filters
+
+#$ INCLUDE presets/4.3/filters/defaults.txt
+
+set gyro_lpf1_static_hz = 0
+set gyro_lpf2_static_hz = 675
+set dyn_notch_q = 333
+set dyn_notch_min_hz = 98
+set dyn_notch_max_hz = 674
+set gyro_lpf1_dyn_min_hz = 337
+set gyro_lpf1_dyn_max_hz = 675
+set gyro_lpf1_dyn_expo = 7
+
+set simplified_gyro_filter_multiplier = 135
+simplified_tuning apply
+
+set rpm_filter_harmonics = 2
+set rpm_filter_q = 750
+set rpm_filter_min_hz = 125
+set rpm_filter_fade_range_hz = 100
+
+profile 0
+set dterm_lpf1_dyn_min_hz = 98
+set dterm_lpf1_dyn_max_hz = 244
+set dterm_lpf1_dyn_expo = 8
+set dterm_lpf1_static_hz = 0
+set dterm_lpf2_static_hz = 210
 set simplified_dterm_filter = OFF
 simplified_tuning apply
+
+profile 1
+set dterm_lpf1_dyn_min_hz = 98
+set dterm_lpf1_dyn_max_hz = 277
+set dterm_lpf1_dyn_expo = 10
+set dterm_lpf1_static_hz = 0
+set dterm_lpf2_static_hz = 210
+set simplified_dterm_filter = OFF
+simplified_tuning apply
+
+
+profile 2
+set dterm_lpf1_dyn_min_hz = 98
+set dterm_lpf1_dyn_max_hz = 222
+set dterm_lpf1_dyn_expo = 7
+set dterm_lpf1_static_hz = 0
+set dterm_lpf2_static_hz = 210
+set simplified_dterm_filter = OFF
+simplified_tuning apply
+
+#$ OPTION END
 
 
 #$ OPTION BEGIN (UNCHECKED): Apply TPA Settings to all rateprofiles
