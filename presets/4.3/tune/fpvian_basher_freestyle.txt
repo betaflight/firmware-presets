@@ -1,7 +1,7 @@
 #$ TITLE: Basher Freestyle 6S 5" by FPVian
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: TUNE
-#$ STATUS: EXPERIMENTAL
+#$ STATUS: COMMUNITY
 #$ KEYWORDS: basher, freestyle, 5 Inch, 5 In, 5", bando, fpvian
 #$ AUTHOR: FPVian
 #$ DESCRIPTION: Want to be able to take your quad to the BANDO and still have it fly well?

@@ -5,6 +5,7 @@ A simple way to configure your Betaflight Flight Controller Firmware settings.
 - [Introduction](https://github.com/betaflight/firmware-presets#introduction)
 - [Applying and using Presets](https://github.com/betaflight/firmware-presets#applying-and-using-presets)
 - [Providing feedback](https://github.com/betaflight/firmware-presets#providing-feedback)
+- [Custom sources](https://github.com/betaflight/firmware-presets#custom-sources)
 - [Creating new presets](https://github.com/betaflight/firmware-presets#creating-new-presets)
 - [Modifying existing presets](https://github.com/betaflight/firmware-presets#modifying-existing-presets)
 - [Preset specifications](https://github.com/betaflight/firmware-presets#preset-specifications)
@@ -39,6 +40,27 @@ It is normal to need to reconnect to the Flight Controller after leaving the Pre
 Currently, the best way to provide feedback is by adding a comment to the Pull Request that generated the preset.  Use the `Discussion` button in the Apply Preset window to go to the Pull Request.
 
 Alternatively, search the [Firmware Presets Pull Request page](https://github.com/betaflight/firmware-presets/pulls).
+
+## Custom sources
+
+Developers and tuners can add a link in Configurator to their own Preset repository.  This allows developers to test their Presets locally before submitting PRs, allows tuners or board suppliers to develop and share custom Presets, and allows individuals to keep an online backup of their personal presets.
+
+Steps are:
+- clone the Presets repository to your GitHub account
+- make a separate branch from Master and create your own Presets there
+- run `node indexer/indexer.js` and `node indexer/check.js`
+- push your branch to Github
+
+To use a custom Preset source:
+- in Configurator, go to Presets > Preset Sources
+- set the URL field to `https://github.com/sourceGithubAccountName/firmware-presets/``
+- set the Github branch field to the branch name you pushed
+
+Any end-user can then apply your custom presets.
+
+Unless you rebase to master to ensure that this branch is up to date with Betaflight, any existing Presets may become out of date.  
+
+You may choose to remove all the other Presets, leaving only those you have made, and you may replace or remove the directory structure.  You must re-build the index file and push it to Github after file or directory changes.  
 
 ## Creating new presets
 

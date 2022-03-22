@@ -34,6 +34,7 @@ set dyn_notch_max_hz = 600
 set gyro_filter_debug_axis = ROLL
 
 # -- RPM filtering --
+set dshot_bidir = OFF
 set rpm_filter_harmonics = 3
 set rpm_filter_q = 500
 set rpm_filter_min_hz = 100

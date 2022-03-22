@@ -10,9 +10,11 @@ const MetadataTypes = {
         FILE_PATH_ARRAY:    "FILE_PATH_ARRAY", // array of path/to/file.ext and check if files exist
         PRESET_STATUS:      "PRESET_STATUS", // official/community/experimental
         PRIORITY:           "PRIORITY", // 0..99
+        PARSER:             "PARSER", // TEXT, MARKED
 }
 
 const PresetStatusEnum = ["OFFICIAL", "COMMUNITY", "EXPERIMENTAL"];
+const ParserEnum =       ["TEXT", "MARKED"];
 
 const PresetCategories = {
     TUNE:           "TUNE",
@@ -21,7 +23,6 @@ const PresetCategories = {
     VTX:            "VTX",
     LEDS:           "LEDS",
     MODES:          "MODES",
-    RC_SMOOTHING:   "RC_SMOOTHING",
     FILTERS:        "FILTERS",
     RC_LINK:        "RC_LINK",
     BNF:            "BNF",
@@ -63,6 +64,7 @@ const settings = {
     OptionsDirectives : Object.freeze(OptionsDirectives),
 
     PresetStatusEnum : Object.freeze(PresetStatusEnum),
+    ParserEnum : Object.freeze(ParserEnum),
 
     presetsDir: "presets",
     presetsFileEncoding: "utf-8",
@@ -84,6 +86,7 @@ const settings = {
         include_disclaimer:   {type: MetadataTypes.FILE_PATH_ARRAY,  optional: true   },
         priority:             {type: MetadataTypes.PRIORITY,         optional: true   },
         force_options_review: {type: MetadataTypes.BOOLEAN,          optional: true   },
+        parser:               {type: MetadataTypes.PARSER,           optional: true   },
     }),
 }
 
