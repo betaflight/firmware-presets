@@ -1,0 +1,101 @@
+#$ TITLE: Transmitter VTX freq change with 3pos/6pos Switch
+#$ FIRMWARE_VERSION: 4.2
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: VTX
+#$ STATUS: COMMUNITY
+#$ KEYWORDS:  vtx, vtx table, Japan, Japanese, JP, JA, Jumper-T16, TX16S
+#$ AUTHOR: ToshihiroMakuuchi
+#$ DESCRIPTION: ----------
+#$ DESCRIPTION: Use the 3pos and 6pos switches on the transmitter to set the VTX frequency to change.
+#$ DESCRIPTION: 
+#$ DESCRIPTION: -- Amateur Radio License in Japan --
+#$ DESCRIPTION: Radio communications most commonly available include amateur, civil, and personal radio communications.
+#$ DESCRIPTION: Amateur radio communications are authorized only for those who pass a national license examination or who complete JARD & other official training course and acquire the prescribed radio operator certificate.
+#$ DESCRIPTION: ----------
+
+#$ OPTION_GROUP BEGIN: Switch
+#$ OPTION BEGIN (CHECKED): 3POS(AUX3) vtx_power=1
+vtx 0 2 3 1 1 950 1300
+vtx 1 2 4 1 1 1300 1700
+vtx 2 2 4 4 1 1700 2050
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): 3POS(AUX3) vtx_power=2
+vtx 0 2 3 1 2 950 1300
+vtx 1 2 4 1 2 1300 1700
+vtx 2 2 4 4 2 1700 2050
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): 3POS(AUX4) vtx_power=1
+vtx 0 3 3 1 1 950 1300
+vtx 1 3 4 1 1 1300 1700
+vtx 2 3 4 4 1 1700 2050
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): 3POS(AUX4) vtx_power=2
+vtx 0 3 3 1 2 950 1300
+vtx 1 3 4 1 2 1300 1700
+vtx 2 3 4 4 2 1700 2050
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): 3POS(AUX5) vtx_power=1
+vtx 0 4 3 1 1 950 1300
+vtx 1 4 4 1 1 1300 1700
+vtx 2 4 4 4 1 1700 2050
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): 3POS(AUX5) vtx_power=2
+vtx 0 4 3 1 2 950 1300
+vtx 1 4 4 1 2 1300 1700
+vtx 2 4 4 4 2 1700 2050
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): 3POS(AUX6) vtx_power=1
+vtx 0 5 3 1 1 950 1300
+vtx 1 5 4 1 1 1300 1700
+vtx 2 5 4 4 1 1700 2050
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): 3POS(AUX6) vtx_power=2
+vtx 0 5 3 1 2 950 1300
+vtx 1 5 4 1 2 1300 1700
+vtx 2 5 4 4 2 1700 2050
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): 6POS(AUX3) vtx_power=1&2
+vtx 0 2 3 1 1 950 1100
+vtx 1 2 4 1 1 1100 1300
+vtx 2 2 4 4 1 1300 1500
+vtx 3 2 3 1 2 1500 1700
+vtx 4 2 4 1 2 1700 1900
+vtx 5 2 4 4 2 1900 2050
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): 6POS(AUX4) vtx_power=1&2
+vtx 0 3 3 1 1 950 1100
+vtx 1 3 4 1 1 1100 1300
+vtx 2 3 4 4 1 1300 1500
+vtx 3 3 3 1 2 1500 1700
+vtx 4 3 4 1 2 1700 1900
+vtx 5 3 4 4 2 1900 2050
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): 6POS(AUX5) vtx_power=1&2
+vtx 0 4 3 1 1 950 1100
+vtx 1 4 4 1 1 1100 1300
+vtx 2 4 4 4 1 1300 1500
+vtx 3 4 3 1 2 1500 1700
+vtx 4 4 4 1 2 1700 1900
+vtx 5 4 4 4 2 1900 2050
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): 6POS(AUX6) vtx_power=1&2
+vtx 0 5 3 1 1 950 1100
+vtx 1 5 4 1 1 1100 1300
+vtx 2 5 4 4 1 1300 1500
+vtx 3 5 3 1 2 1500 1700
+vtx 4 5 4 1 2 1700 1900
+vtx 5 5 4 4 2 1900 2050
+#$ OPTION END
+
+#$ OPTION_GROUP END
