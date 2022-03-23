@@ -125,10 +125,10 @@ set mixer_type = LEGACY
 # this is the optimal setting for all except radical LOS builds. .
 set yaw_spin_recovery = AUTO
 
-# -- Set integrated yaw to off, so pitch and yaw are independent (default) --
-# integrated yaw mixes yaw into roll to 'automatically' make coordinated turns
-# this will force a user preference for that linkage to be turned off.
-# for presets where someone may want this on, provide an option to do that
+# -- Set integrated yaw to off so yaw tuning is simpler (default) --
+# integrated yaw integrates yaw pidsum when calculating yaw pids
+# tuning is far different with integrated yaw on and should only
+# be set to on if you have tuned for it
 set use_integrated_yaw = OFF
 
 # -- Gyro cal on first arm (off, default) --
