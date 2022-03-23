@@ -1,7 +1,7 @@
 #$ TITLE: Freedom Spec 460 - 500g
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: TUNE
-#$ STATUS: EXPERIMENTAL
+#$ STATUS: COMMUNITY
 #$ KEYWORDS: sugarK, limon, ctzsnooze, freedom, freedom spec, headsup, five33, 533, racing, race, 5"
 #$ AUTHOR: Ivan Efimov (Limon)
 
@@ -40,7 +40,7 @@
 set motor_pwm_protocol = DSHOT600
 
 #$ OPTION BEGIN (UNCHECKED): Dshot300
-set motor_pwm_protocol = Dshot300
+    set motor_pwm_protocol = Dshot300
 #$ OPTION END
 
 # -- Gyro lowpass filters --
@@ -79,8 +79,13 @@ set feedforward_max_rate_limit = 100
 # -- Dyn Idle --
 set dyn_idle_min_rpm = 30
 
-#$ OPTION BEGIN (UNCHECKED): Force LiPo sell count = 3
-set force_battery_cell_count = 3
+#$ OPTION BEGIN (UNCHECKED): Noisy frames
+    set dyn_notch_count = 3
+    set dyn_notch_min_hz = 100
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Force LiPo cell count = 3
+    set force_battery_cell_count = 3
 #$ OPTION END
 
 simplified_tuning apply
