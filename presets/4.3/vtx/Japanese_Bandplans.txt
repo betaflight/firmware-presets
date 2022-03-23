@@ -13,7 +13,6 @@
 #$ DESCRIPTION: Radio communications most commonly available include amateur, civil, and personal radio communications.
 #$ DESCRIPTION: Amateur radio communications are authorized only for those who pass a national license examination or who complete JARD & other official training course and acquire the prescribed radio operator certificate.
 #$ DESCRIPTION: ----------
-#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/XX
 
 #$ OPTION_GROUP BEGIN: VTX_Select
 
