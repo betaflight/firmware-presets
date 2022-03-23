@@ -1,0 +1,42 @@
+#$ TITLE: VTX Japanese Bandplans
+#$ FIRMWARE_VERSION: 4.2
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: VTX
+#$ STATUS: COMMUNITY
+#$ KEYWORDS:  vtx, vtx table, Japan, Japanese, JP, JA, Bandplans
+#$ AUTHOR: ToshihiroMakuuchi
+#$ DESCRIPTION: ----------
+#$ DESCRIPTION: This VTX preset conforms to the Japanese band plans.
+#$ DESCRIPTION: However, it is not a perfect fit for all VTXs. Please use it only as a reference.
+#$ DESCRIPTION:
+#$ DESCRIPTION: -- Amateur Radio License in Japan --
+#$ DESCRIPTION: Radio communications most commonly available include amateur, civil, and personal radio communications.
+#$ DESCRIPTION: Amateur radio communications are authorized only for those who pass a national license examination or who complete JARD & other official training course and acquire the prescribed radio operator certificate.
+#$ DESCRIPTION: ----------
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/XX
+
+#$ OPTION_GROUP BEGIN: VTX_Select
+
+#$ OPTION BEGIN (CHECKED): Band-5 Channels-8 (40ch)
+# vtxtable
+vtxtable bands 5
+vtxtable channels 8
+vtxtable band 1 BOSCAM_A A FACTORY    0    0    0    0    0    0    0    0
+vtxtable band 2 BOSCAM_B B FACTORY    0    0    0    0    0    0    0    0
+vtxtable band 3 BOSCAM_E E FACTORY 5705    0    0    0    0    0    0    0
+vtxtable band 4 FATSHARK F FACTORY 5740    0    0 5800    0    0    0    0
+vtxtable band 5 RACEBAND R FACTORY    0    0    0    0    0    0    0    0
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Band-6 Channels-8 (48ch)
+vtxtable bands 6
+vtxtable channels 8
+vtxtable band 1 BOSCAM_A A FACTORY    0    0    0    0    0    0    0    0
+vtxtable band 2 BOSCAM_B B FACTORY    0    0    0    0    0    0    0    0
+vtxtable band 3 BOSCAM_E E FACTORY 5705    0    0    0    0    0    0    0
+vtxtable band 4 FATSHARK F FACTORY 5740    0    0 5800    0    0    0    0
+vtxtable band 5 RACEBAND R FACTORY    0    0    0    0    0    0    0    0
+vtxtable band 6 LOWRACE L FACTORY    0    0    0    0    0    0    0    0
+#$ OPTION END
+
+#$ OPTION_GROUP END
