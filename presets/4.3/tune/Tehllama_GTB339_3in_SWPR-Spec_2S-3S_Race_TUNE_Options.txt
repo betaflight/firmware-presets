@@ -8,7 +8,7 @@
 #$ DESCRIPTION: These fly best on 2S-3S batteries in the 450-650mAh capacity range, resulting in an AUW to 95-105g on these motors.  Works with biblade and triblade props (e.g. Gemfan 3016/3018, HQ 3x1.8x3/3x1.5x3, etc.)
 #$ DISCLAIMER: This tune will auto-select profiles based on battery voltage at plugin for 2S and 3S packs.
 #$ WARNING: Requires 12-Pole Motors!!! Use at your own risk.  Extensive testing has been done across 37+ builds, however not every craft will run best on this tune.  13A ESCs may experience failures on 3S batteries.
-#$ DISCUSSION: https://app.slack.com/client/T221J1F6J/C0228HK2MD4/
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/168
 
 #$ INCLUDE: presets/4.3/tune/defaults.txt
 
