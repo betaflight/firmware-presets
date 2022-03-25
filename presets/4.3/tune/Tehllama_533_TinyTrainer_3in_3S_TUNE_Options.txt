@@ -9,8 +9,6 @@
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/168
 
 #$ INCLUDE: presets/4.3/tune/defaults.txt
-#$ INCLUDE: presets/4.3/filters/defaults.txt
-
 # name: FIVE33
 
 # master
@@ -19,7 +17,6 @@ set dshot_idle_value = 700
 # Fallback if Dynamic Idle not working or not selected
 set dshot_bidir = ON
 
-set motor_poles = 12
 
 set small_angle = 180
 
@@ -28,7 +25,6 @@ set simplified_gyro_filter_multiplier = 130
 profile 0
 # profile 0
 
-set vbat_sag_compensation = 100
 set iterm_relax = RPY
 set iterm_relax_cutoff = 33
 
@@ -47,7 +43,7 @@ set f_yaw = 132
 set d_min_roll = 28
 set d_min_pitch = 29
 set d_max_advance = 0
-set auto_profile_cell_count = 3
+
 set thrust_linear = 10
 
 set simplified_i_gain = 65
@@ -60,7 +56,20 @@ set simplified_pitch_pi_gain = 105
 simplified_tuning apply
 
 
+#$ OPTION BEGIN (CHECKED): Set Motor Poles = 12
+set motor_poles = 12
+
+#$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): Set VBat Sag Compensation = 100
+set vbat_sag_compensation = 100
+
+#$ OPTION END
+
+
+
 #$ OPTION BEGIN (CHECKED): Apply Filters
+#$ INCLUDE: presets/4.3/filters/defaults.txt
 set gyro_lpf1_static_hz = 325
 set gyro_lpf2_static_hz = 650
 set dyn_notch_count = 2
@@ -83,7 +92,6 @@ set dterm_lpf1_dyn_expo = 8
 set dterm_lpf1_static_hz = 97
 set dterm_lpf2_static_hz = 195
 set simplified_dterm_filter_multiplier = 130
-
 
 #$ OPTION END
 
@@ -141,5 +149,3 @@ rateprofile 0
 set tpa_rate = 60
 set tpa_breakpoint = 1200
 #$ OPTION END
-
-# save configuration

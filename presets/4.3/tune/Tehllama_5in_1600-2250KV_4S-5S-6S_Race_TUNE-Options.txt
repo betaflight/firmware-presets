@@ -1,4 +1,4 @@
-#$ TITLE: 5in Tehllama Race Tune 1800-2250KV on 4S/5S/6S 
+#$ TITLE: 5in Tehllama Race Tune 1600-2250KV on 4S/5S/6S 
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: TUNE
 #$ STATUS: EXPERIMENTAL
@@ -7,23 +7,20 @@
 #$ DESCRIPTION: Built for Powerful Mid-KV racing builds on bidir DShot ESCs at 48kHz PWM with 27°/MedHigh timing
 #$ DESCRIPTION: Each battery setting will will run a conservative race tune that should withstand damaged props and bent motor shafts.
 #$ DISCLAIMER: This tune will auto-select profiles based on battery voltage at plugin, but only for 4S, 5S, and 6S packs.
-#$ WARNING: Use at your own risk.  Extensive testing has been done across 54+ builds, however not every craft will run best on this tune.
+#$ WARNING: Use at your own risk.  Extensive testing has been done across 64+ builds, however not every craft will run best on this tune.
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/168
 
 #$ INCLUDE: presets/4.3/tune/defaults.txt
 
-
+#$ OPTION BEGIN (CHECKED): Apply 6S Auto-Select Tune
 # master
 set dshot_bidir = ON
 
 set dshot_idle_value = 440
 # Fallback value if dynamic idle does not operate correctly or is deselected
 
-
 profile 0
 # profile 0
-
-set vbat_sag_compensation = 77
 set iterm_rotation = ON
 set iterm_relax = RPY
 set iterm_relax_cutoff = 33
@@ -60,10 +57,16 @@ set simplified_pitch_pi_gain = 110
 
 simplified_tuning apply
 
+#$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): Apply 5S Auto-Select Tune
+# master
+set dshot_bidir = ON
+
+set dshot_idle_value = 440
+# Fallback value if dynamic idle does not operate correctly or is deselected
 profile 1
 # profile 1
-
-set vbat_sag_compensation = 77
 set iterm_rotation = ON
 set iterm_relax = RPY
 set iterm_relax_cutoff = 33
@@ -98,10 +101,17 @@ set simplified_pitch_pi_gain = 110
 
 simplified_tuning apply
 
+#$ OPTION END
+
+
+#$ OPTION BEGIN (CHECKED): Apply 4S Auto-Select Tune
+# master
+set dshot_bidir = ON
+
+set dshot_idle_value = 440
+# Fallback value if dynamic idle does not operate correctly or is deselected
 profile 2
 # profile 2
-
-set vbat_sag_compensation = 77
 set iterm_rotation = ON
 set iterm_relax = RPY
 set iterm_relax_cutoff = 33
@@ -137,6 +147,8 @@ set simplified_pitch_d_gain = 110
 set simplified_pitch_pi_gain = 110
 
 simplified_tuning apply
+
+#$ OPTION END
 
 
 #% OPTION BEGIN (CHECKED): Apply Dynamic Idle
@@ -205,6 +217,16 @@ simplified_tuning apply
 
 #% OPTION END
 
+#$ OPTION BEGIN (CHECKED): Set VBat Sag Compensation = 88
+profile 0
+set vbat_sag_compensation = 88
+profile 1
+set vbat_sag_compensation = 88
+profile 2
+set vbat_sag_compensation = 88
+
+#$ OPTION END
+
 
 #$ OPTION BEGIN (CHECKED): Apply TPA Settings to all rateprofiles
 rateprofile 0
@@ -245,6 +267,9 @@ set motor_output_limit = 92
 profile 2
 set simplified_master_multiplier = 105
 simplified_tuning apply
+profile 1
+set simplified_master_multiplier = 90
+simplified_tuning apply
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED):  2300KV 6S Motor Output Limit
@@ -253,6 +278,9 @@ set motor_output_limit = 93
 profile 2
 set simplified_master_multiplier = 105
 simplified_tuning apply
+profile 1
+set simplified_master_multiplier = 90
+simplified_tuning apply
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED):  2250KV 6S Motor Output Limit
@@ -260,6 +288,9 @@ profile 0
 set motor_output_limit = 95
 profile 2
 set simplified_master_multiplier = 110
+simplified_tuning apply
+profile 1
+set simplified_master_multiplier = 90
 simplified_tuning apply
 #$ OPTION END
 

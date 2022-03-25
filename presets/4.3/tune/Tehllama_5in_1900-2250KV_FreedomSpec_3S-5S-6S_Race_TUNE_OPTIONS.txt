@@ -11,18 +11,16 @@
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/168
 
 #$ INCLUDE: presets/4.3/tune/defaults.txt
-
-
 # master
-
 set dshot_bidir = ON
 
 # Fallback if dynamic idle does not function or is deselected
 set dshot_idle_value = 440
 
+
+#$ OPTION BEGIN (CHECKED): Apply 6S Auto-Select Tune
 profile 0
 # profile 0 - 6S
-set vbat_sag_compensation = 77
 set iterm_rotation = ON
 set iterm_relax = RPY
 set iterm_relax_cutoff = 33
@@ -54,10 +52,11 @@ set simplified_pitch_d_gain = 110
 set simplified_pitch_pi_gain = 110
 simplified_tuning apply
 
+#$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): Apply 5S Auto-Select Tune
 profile 1
 # profile 1
-
-set vbat_sag_compensation = 77
 set iterm_relax = RPY
 set iterm_relax_cutoff = 33
 set yaw_lowpass_hz = 115
@@ -88,13 +87,15 @@ set simplified_feedforward_gain = 160
 set simplified_pitch_d_gain = 105
 simplified_tuning apply
 
+#$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): Apply 3S Freedom Spec Tune on Auto-Select
 profile 2
 # profile 2
 set dterm_lpf1_dyn_min_hz = 100
 set dterm_lpf1_dyn_max_hz = 222
 set dterm_lpf1_static_hz = 0
 set dterm_lpf2_static_hz = 175
-set vbat_sag_compensation = 99
 set iterm_rotation = ON
 set iterm_relax = RPY
 set iterm_relax_cutoff = 33
@@ -125,6 +126,19 @@ set simplified_dmax_gain = 85
 set simplified_feedforward_gain = 135
 set simplified_pitch_pi_gain = 110
 simplified_tuning apply
+
+#$ OPTION END
+
+
+#$ OPTION BEGIN (CHECKED): Set VBat Sag Compensation
+profile 0
+set vbat_sag_compensation = 88
+profile 1
+set vbat_sag_compensation = 88
+profile 2
+set vbat_sag_compensation = 99
+
+#$ OPTION END
 
 
 #% OPTION BEGIN (CHECKED): Apply Dynamic Idle
@@ -174,7 +188,6 @@ set dterm_lpf1_dyn_max_hz = 266
 set dterm_lpf1_dyn_expo = 10
 set dterm_lpf1_static_hz = 0
 set dterm_lpf2_static_hz = 175
-
 set simplified_dterm_filter = OFF
 simplified_tuning apply
 
@@ -185,7 +198,6 @@ set dterm_lpf1_dyn_max_hz = 244
 set dterm_lpf1_dyn_expo = 9
 set dterm_lpf1_static_hz = 0
 set dterm_lpf2_static_hz = 202
-
 set simplified_dterm_filter = OFF
 simplified_tuning apply
 
@@ -196,7 +208,6 @@ set dterm_lpf1_dyn_max_hz = 222
 set dterm_lpf1_dyn_expo = 7
 set dterm_lpf1_static_hz = 0
 set dterm_lpf2_static_hz = 202
-
 set simplified_dterm_filter = OFF
 simplified_tuning apply
 
@@ -236,27 +247,27 @@ set tpa_rate = 72
 set tpa_breakpoint = 1250
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED):  2000KV Motor Output Limit
+#$ OPTION BEGIN (UNCHECKED):  2000KV Motor Output Limit on 3S
 profile 2
 set motor_output_limit = 97
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED):  2050KV Motor Output Limit
+#$ OPTION BEGIN (UNCHECKED):  2050KV Motor Output Limit on 3S
 profile 2
 set motor_output_limit = 95
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED):  2100KV Motor Output Limit
+#$ OPTION BEGIN (UNCHECKED):  2100KV Motor Output Limit on 3S
 profile 2
 set motor_output_limit = 93
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED):  2150KV Motor Output Limit
+#$ OPTION BEGIN (UNCHECKED):  2150KV Motor Output Limit on 3S
 profile 2
 set motor_output_limit = 92
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED):  2250KV Motor Output Limit
+#$ OPTION BEGIN (UNCHECKED):  2250KV Motor Output Limit on 3S
 profile 2
 set motor_output_limit = 90
 #$ OPTION END

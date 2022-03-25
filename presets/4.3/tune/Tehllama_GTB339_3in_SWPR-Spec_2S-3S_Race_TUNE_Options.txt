@@ -6,16 +6,15 @@
 #$ AUTHOR: Daniel Appel / Tehllama
 #$ DESCRIPTION: This tune is intended for GTB339 3in 1105-5500KV Racers on on bidir DShot ESCs at 48kHz PWM with MedHigh timing. 
 #$ DESCRIPTION: These fly best on 2S-3S batteries in the 450-650mAh capacity range, resulting in an AUW to 95-105g on these motors.  Works with biblade and triblade props (e.g. Gemfan 3016/3018, HQ 3x1.8x3/3x1.5x3, etc.)
-#$ DISCLAIMER: This tune will auto-select profiles based on battery voltage at plugin for 2S and 3S packs.
-#$ WARNING: Requires 12-Pole Motors!!! Use at your own risk.  Extensive testing has been done across 37+ builds, however not every craft will run best on this tune.  13A ESCs may experience failures on 3S batteries.
+#$ DISCLAIMER: This tune will auto-select profiles based on battery voltage at plugin for 2S and 3S packs with default selections. Assumes 12-pole motors by default.
+#$ WARNING:Use at your own risk.  Extensive testing has been done across 37+ builds, however not every craft will run best on this tune.  13A ESCs may experience failures on 3S batteries.
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/168
 
 #$ INCLUDE: presets/4.3/tune/defaults.txt
 
-
+#$ OPTION BEGIN (CHECKED): Apply 3S Auto-Select Tune
 # master
 set dshot_bidir = ON
-set motor_poles = 12
 
 set dshot_idle_value = 475
 # Fallback if dynamic idle does not work or is disabled
@@ -24,8 +23,6 @@ set thrust_linear = 20
 
 # profile 3:  3S
 profile 2
-
-set vbat_sag_compensation = 77
 set anti_gravity_gain = 4400
 set iterm_rotation = ON
 set iterm_relax = RPY
@@ -53,10 +50,20 @@ set simplified_pitch_d_gain = 110
 set simplified_pitch_pi_gain = 110
 simplified_tuning apply
 
+#$ OPTION END
+
+
+#$ OPTION BEGIN (CHECKED): Apply 2S Auto-Select Tune
+
+set dshot_bidir = ON
+
+set dshot_idle_value = 475
+# Fallback if dynamic idle does not work or is disabled
+
+set thrust_linear = 20
+
 # profile 1: 2S
 profile 1
-
-set vbat_sag_compensation = 77
 set anti_gravity_gain = 4400
 set iterm_rotation = ON
 set iterm_relax = RPY
@@ -87,6 +94,15 @@ set simplified_feedforward_gain = 75
 set simplified_pitch_d_gain = 105
 simplified_tuning apply
 
+#$ OPTION END
+
+
+#$ OPTION BEGIN (CHECKED): Set Motor Poles = 12 (Mamba 1105 Motors)
+
+set motor_poles = 12
+
+#$ OPTION END
+
 
 #$ OPTION BEGIN (CHECKED): Apply Matching Filters
 
@@ -106,7 +122,7 @@ set rpm_filter_q = 750
 set rpm_filter_min_hz = 115
 set rpm_filter_fade_range_hz = 100
 
-profile 0
+profile 2
 set dterm_lpf1_dyn_min_hz = 120
 set dterm_lpf1_dyn_max_hz = 240
 set dterm_lpf1_dyn_expo = 8
@@ -124,15 +140,20 @@ set dterm_lpf2_static_hz = 240
 set simplified_dterm_filter_multiplier = 160
 simplified_tuning apply
 
-#$ OPTION END
-
-
-#$ OPTION BEGIN (CHECKED): Apply Dynamic Idle
-
 profile 2
 set dyn_idle_min_rpm = 24
 profile 1
 set dyn_idle_min_rpm = 24
+
+#$ OPTION END
+
+
+#$ OPTION BEGIN (CHECKED): Set VBat Sag Compensation = 88
+
+profile 2
+set vbat_sag_compensation = 88
+profile 1
+set vbat_sag_compensation = 88
 
 #$ OPTION END
 
@@ -169,5 +190,3 @@ rateprofile 0
 set tpa_rate = 72
 set tpa_breakpoint = 1350
 #$ OPTION END
-
-# save configuration
