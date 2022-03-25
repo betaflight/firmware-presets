@@ -5,37 +5,51 @@
 #$ STATUS: COMMUNITY
 #$ KEYWORDS:  vtx, vtx table, Japan, Japanese, JP, JA, Bandplans
 #$ AUTHOR: ToshihiroMakuuchi
+#$ DESCRIPTION: This VTX preset provides a VTXtable compliant with the Japanese band plans.
+#$ DESCRIPTION: In Japan, 7 freq are theoretically available, but only 3 freq can be used simultaneously due to radio interference.
+#$ DESCRIPTION: Simultaneous available freq: E1(5705) F1(5740) F4(5800)
 #$ DESCRIPTION: ----------
-#$ DESCRIPTION: This VTX preset conforms to the Japanese band plans.
-#$ DESCRIPTION: However, it is not a perfect fit for all VTXs. Please use it only as a reference.
-#$ DESCRIPTION:
-#$ DESCRIPTION: -- Amateur Radio License in Japan --
-#$ DESCRIPTION: Radio communications most commonly available include amateur, civil, and personal radio communications.
-#$ DESCRIPTION: Amateur radio communications are authorized only for those who pass a national license examination or who complete JARD & other official training course and acquire the prescribed radio operator certificate.
+#$ DESCRIPTION: The information provided on this preset is for educational and entertainment purposes only. Betaflight makes no representations as to the safety or legality of the use of any information provided herein. End users assume all responsibility and liability for ensuring they are complying with all relevant laws and regulations. 
 #$ DESCRIPTION: ----------
+#$ DESCRIPTION: Using the VTX tables as provided may be in breach of your local RF laws. It is up to the end user to research and comply with local regulations and in using these presets the user assumes all liability associated with breaching local regulations.
+#$ DESCRIPTION: Note: In Japan, 5.8GHz VTX cannot be used in principle without obtaining an amateur radio license and applying for station opening.
 
 #$ OPTION_GROUP BEGIN: VTX_Select
 
-#$ OPTION BEGIN (CHECKED): Band-5 Channels-8 (40ch)
+#$ OPTION BEGIN (CHECKED): BETAFPV M02/M03 (SmartAudio 2.0)
 # vtxtable
 vtxtable bands 5
 vtxtable channels 8
-vtxtable band 1 BOSCAM_A A FACTORY    0    0    0    0    0    0    0    0
-vtxtable band 2 BOSCAM_B B FACTORY    0    0    0    0    0    0    0    0
+vtxtable band 1 BOSCAM_A A FACTORY    0    0    0    0 5785    0 5745    0
+vtxtable band 2 BOSCAM_B B FACTORY    0    0    0 5790    0    0    0    0
 vtxtable band 3 BOSCAM_E E FACTORY 5705    0    0    0    0    0    0    0
-vtxtable band 4 FATSHARK F FACTORY 5740    0    0 5800    0    0    0    0
+vtxtable band 4 FATSHARK F FACTORY 5740    0 5780 5800    0    0    0    0
 vtxtable band 5 RACEBAND R FACTORY    0    0    0    0    0    0    0    0
+vtxtable powerlevels 4
+vtxtable powervalues 0 1 2 3
+vtxtable powerlabels 25 100 200 350
+set vtx_band = 4
+set vtx_channel = 1
+set vtx_power = 0
+set vtx_freq = 5740
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED): Band-6 Channels-8 (48ch)
+#$ OPTION BEGIN (UNCHECKED): Happymodel CrazybeeF4FR_lite/F4FS_lite (OpenVTX)
 vtxtable bands 6
 vtxtable channels 8
-vtxtable band 1 BOSCAM_A A FACTORY    0    0    0    0    0    0    0    0
-vtxtable band 2 BOSCAM_B B FACTORY    0    0    0    0    0    0    0    0
+vtxtable band 1 BOSCAM_A A FACTORY    0    0    0    0 5785    0 5745    0
+vtxtable band 2 BOSCAM_B B FACTORY    0    0    0 5790    0    0    0    0
 vtxtable band 3 BOSCAM_E E FACTORY 5705    0    0    0    0    0    0    0
-vtxtable band 4 FATSHARK F FACTORY 5740    0    0 5800    0    0    0    0
+vtxtable band 4 FATSHARK F FACTORY 5740    0 5780 5800    0    0    0    0
 vtxtable band 5 RACEBAND R FACTORY    0    0    0    0    0    0    0    0
 vtxtable band 6 LOWRACE L FACTORY    0    0    0    0    0    0    0    0
+vtxtable powerlevels 5
+vtxtable powervalues 10 2 14 20 26
+vtxtable powerlabels 0 RCE 25 100 400
+set vtx_band = 4
+set vtx_channel = 1
+set vtx_power = 0
+set vtx_freq = 5740
 #$ OPTION END
 
 #$ OPTION_GROUP END
