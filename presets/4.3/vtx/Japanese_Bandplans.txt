@@ -84,9 +84,9 @@ vtxtable band 2 BOSCAM_B B FACTORY    0    0    0 5790    0    0    0    0
 vtxtable band 3 BOSCAM_E E FACTORY 5705    0    0    0    0    0    0    0
 vtxtable band 4 FATSHARK F FACTORY 5740    0 5780 5800    0    0    0    0
 vtxtable band 5 RACEBAND R FACTORY    0    0    0    0    0    0    0    0
-vtxtable powerlevels 5
-vtxtable powervalues 25 100 200 400 600
-vtxtable powerlabels 25 100 200 400 600
+vtxtable powerlevels 4
+vtxtable powervalues 14 20 23 25
+vtxtable powerlabels 25 100 200 350
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): IRC Tramp NANO & HV
