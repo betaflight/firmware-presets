@@ -8,34 +8,50 @@
 #$ DESCRIPTION: on all rate profiles
 #$ PRIORITY: 0
 
+#$ FORCE_OPTIONS_REVIEW: TRUE
+
+#$ OPTION_GROUP BEGIN: Rate Profile Throttle Caps
+
+#$ OPTION BEGIN (CHECKED): Rate profile 1
 rateprofile 0
 
 set throttle_limit_type = SCALE
 set throttle_limit_percent = 75
+#$ OPTION END
 
+#$ OPTION BEGIN (CHECKED): Rate profile 2
 rateprofile 1
 
 set throttle_limit_type = SCALE
 set throttle_limit_percent = 75
+#$ OPTION END
 
+#$ OPTION BEGIN (CHECKED): Rate profile 3
 rateprofile 2
 
 set throttle_limit_type = SCALE
 set throttle_limit_percent = 75
+#$ OPTION END
 
+#$ OPTION BEGIN (CHECKED): Rate profile 4
 rateprofile 3
 
 set throttle_limit_type = SCALE
 set throttle_limit_percent = 75
+#$ OPTION END
 
+#$ OPTION BEGIN (CHECKED): Rate profile 5
 rateprofile 4
 
 set throttle_limit_type = SCALE
 set throttle_limit_percent = 75
+#$ OPTION END
 
+#$ OPTION BEGIN (CHECKED): Rate profile 6
 rateprofile 5
 
 set throttle_limit_type = SCALE
 set throttle_limit_percent = 75
+#$ OPTION END
 
 rateprofile 0
