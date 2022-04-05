@@ -1,8 +1,8 @@
 #$ TITLE: Street League Throttle Cap
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: RATES
-#$ STATUS: Street League Alpha
-#$ KEYWORDS: defaults, rates, throttle cap
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: throttle cap, Street League, StreetLeague, Street, League, LeadFingers
 #$ AUTHOR: LeadFingers
 #$ DESCRIPTION: set your throttle cap to 75%
 #$ DESCRIPTION: on all rate profiles
