@@ -1,4 +1,4 @@
-#$ TITLE: Street League Motor Output Limmit Settings
+#$ TITLE: Street League Motor Output Limit Settings
 #$ FIRMWARE_VERSION: 4.2
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: TUNE
