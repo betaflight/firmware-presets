@@ -1,0 +1,91 @@
+#$ TITLE: Street League Motor Output Limmit Settings
+#$ FIRMWARE_VERSION: 4.2
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: TUNE
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: Motor, output limmit, Street League, StreetLeague, Street, League, LeadFingers
+#$ AUTHOR: LeadFingers
+#$ DESCRIPTION: Use this tool to set your motor output limit for Street League Spec
+#$ DESCRIPTION: It will set your motor output limit on all 3 PID profiles and set the quad to profile 1
+#$ DESCRIPTION: https://discord.gg/rqGfKBbYbP
+#$ DISCLAIMER: Only select one check box
+#$ WARNING: Street League quads go BRRRRRRRRRR
+#$ DISCUSSION: [URL of pull request here]
+#$ FORCE_OPTIONS_REVIEW: True
+
+#$ OPTION_GROUP BEGIN: Select your specific motor if it is listed
+#$ OPTION BEGIN (UNCHECKED): Brother Hobby Avenger 2510 1250KV / DRSL motors
+profile 0
+motor_output_limit = 100
+profile 1
+motor_output_limit = 100
+profile 2
+motor_output_limit = 100
+profile 0
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Hyperlight 2807.5 1322KV
+profile 0
+motor_output_limit = 95
+profile 1
+motor_output_limit = 95
+profile 2
+motor_output_limit = 95
+profile 0
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): EMAX ECO II 2807 1300KV
+profile 0
+motor_output_limit = 95
+profile 1
+motor_output_limit = 95
+profile 2
+motor_output_limit = 95
+profile 0
+#$ OPTION END
+
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: Select your KV if your motor is not listed
+
+#$ OPTION BEGIN (UNCHECKED): Generic 1300KV motor
+profile 0
+motor_output_limit = 96
+profile 1
+motor_output_limit = 96
+profile 2
+motor_output_limit = 96
+profile 0
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Generic 1350KV motor
+profile 0
+motor_output_limit = 93
+profile 1
+motor_output_limit = 93
+profile 2
+motor_output_limit = 93
+profile 0
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Generic 1380KV motor
+profile 0
+motor_output_limit = 91
+profile 1
+motor_output_limit = 91
+profile 2
+motor_output_limit = 91
+profile 0
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Generic 1500KV motor
+profile 0
+motor_output_limit = 83
+profile 1
+motor_output_limit = 83
+profile 2
+motor_output_limit = 83
+profile 0
+#$ OPTION END
+
+#$ OPTION_GROUP END
