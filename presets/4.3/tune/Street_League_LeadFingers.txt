@@ -6,14 +6,15 @@
 #$ AUTHOR: LeadFingers
 
 #$ DESCRIPTION: Leadfingers tune for Street League quads
-#$ DESCRIPTION: Must be bi-directional Dshot ready
+#$ DESCRIPTION: ESC be bi-directional Dshot ready
 #$ DESCRIPTION: 
 #$ DESCRIPTION: 
-#$ WARNING: **DO NOT** Flash this preset to a quad that is not Street League Spec.
+#$ WARNING: **DO NOT** Flash this preset to a quad that is not Street League Spec. ESC protocol has been changed to Dshot300 + bi-directional Dshot
+#$ DISCUSSION: https://discord.gg/rqGfKBbYbP
 #$ INCLUDE: presets/4.3/tune/defaults.txt
 #$ INCLUDE: presets/4.3/filters/defaults.txt
 
-# -- Undo dumb default things --
+# -- Undo some default things --
 set pidsum_limit = 1000
 set pidsum_limit_yaw = 1000
 set small_angle = 180
