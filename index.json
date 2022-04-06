@@ -13,8 +13,7 @@
       "FILTERS": "FILTERS",
       "RC_LINK": "RC_LINK",
       "BNF": "BNF",
-      "OTHER": "OTHER",
-      "Street_League": "Street_League"
+      "OTHER": "OTHER"
     },
     "PresetCategoriesPriorities": {
       "TUNE": 1000000000000,
