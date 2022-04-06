@@ -2372,8 +2372,8 @@
     },
     {
       "fullPath": "presets/4.3/tune/Street_League_motor_outputs.txt",
-      "hash": "6efac4335ee65cafdec87b25e2fd49e7bbd053e0c09cdb87ba784da4a614ac36",
-      "title": "Street League Motor Output Limmit Settings",
+      "hash": "e40d1e06eb5782e174374c37a08a33b6009b82b83eec82f5d502d906ec6f4531",
+      "title": "Street League Motor Output Limit Settings",
       "firmware_version": [
         "4.2",
         "4.3"
