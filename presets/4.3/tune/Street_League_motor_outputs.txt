@@ -3,14 +3,18 @@
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: TUNE
 #$ STATUS: EXPERIMENTAL
-#$ KEYWORDS: Motor, output limmit, Street League, StreetLeague, Street, League, LeadFingers
+#$ KEYWORDS: Motor, output limit, Street League, StreetLeague, Street, League, LeadFingers
 #$ AUTHOR: LeadFingers
 #$ DESCRIPTION: Street League Spec Drone Racing Anti-NSB Presets
 #$ DESCRIPTION: Use this tool to set your motor output limit on all 3 PID profiles and set the quad to profile 1
 #$ DESCRIPTION: 
+#$ DESCRIPTION: Note for ECO II Users:
+#$ DESCRIPTION: Because of the KV variance of these motors the motor output limit has been set conservatively, to find the max motor output limit that you can use with your individual motors visit our discord
+#$ DESCRIPTION: 
+#$ DESCRIPTION: 
 #$ DESCRIPTION: Join our Discord!
 #$ DESCRIPTION: https://discord.gg/rqGfKBbYbP
-#$ DISCLAIMER: Only select one check box
+#$ DISCLAIMER: Only select one checkbox
 #$ DISCUSSION: [URL of pull request here]
 #$ FORCE_OPTIONS_REVIEW: True
 
@@ -38,11 +42,11 @@ profile 0
 
 #$ OPTION BEGIN (UNCHECKED): EMAX ECO II 2807 1300KV
 profile 0
-motor_output_limit = 95
+motor_output_limit = 89
 profile 1
-motor_output_limit = 95
+motor_output_limit = 89
 profile 2
-motor_output_limit = 95
+motor_output_limit = 89
 profile 0
 #$ OPTION END
 
