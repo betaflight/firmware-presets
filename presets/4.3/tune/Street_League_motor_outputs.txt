@@ -5,11 +5,12 @@
 #$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: Motor, output limmit, Street League, StreetLeague, Street, League, LeadFingers
 #$ AUTHOR: LeadFingers
-#$ DESCRIPTION: Use this tool to set your motor output limit for Street League Spec
-#$ DESCRIPTION: It will set your motor output limit on all 3 PID profiles and set the quad to profile 1
+#$ DESCRIPTION: Street League Spec Drone Racing Anti-NSB Presets
+#$ DESCRIPTION: Use this tool to set your motor output limit on all 3 PID profiles and set the quad to profile 1
+#$ DESCRIPTION: 
+#$ DESCRIPTION: Join our Discord!
 #$ DESCRIPTION: https://discord.gg/rqGfKBbYbP
 #$ DISCLAIMER: Only select one check box
-#$ WARNING: Street League quads go BRRRRRRRRRR
 #$ DISCUSSION: [URL of pull request here]
 #$ FORCE_OPTIONS_REVIEW: True
 
