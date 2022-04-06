@@ -325,6 +325,7 @@
       "OVX303",
       "partial",
       "pid",
+      "PIDtoolbox",
       "pro32",
       "profile",
       "Pure Race",
@@ -2347,6 +2348,27 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/4.3/tune/Street_League_LeadFingers.txt",
+      "hash": "d00b98c8b41d736e103f74fb3eaec60caaf44af07be323743ba628bec3fe8e20",
+      "title": "Street League LeadFingers PIDtoolbox tune",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "Street League",
+        "StreetLeague",
+        "Street",
+        "League",
+        "LeadFingers",
+        "PIDtoolbox",
+        "7\""
+      ],
+      "author": "LeadFingers",
+      "priority": 1000000000000
+    },
+    {
       "fullPath": "presets/4.3/tune/SupaflyFPV_Freestyle_5_Inch_EasyTune.txt",
       "hash": "3dc7346f137921b25a16da6b0aa70f500f2c0059edbbb67644f9c79eb94bb9d3",
       "title": "SupaflyFPV Freestyle 5 Inch",
@@ -2451,7 +2473,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/UAV_tech_6-7in.txt",
-      "hash": "af9aaeaea38e9c44cd49214ae98d5d04859e9ab12588ce5dd342cfa3e1b0be37",
+      "hash": "b30a8f44636bf3d73422266883cb54c8f80c3c922404652714bb8274606322a3",
       "title": "UAV Tech - 6-7in (~700g AUW)",
       "firmware_version": [
         "4.3"
