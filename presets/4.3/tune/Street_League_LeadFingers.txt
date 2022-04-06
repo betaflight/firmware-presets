@@ -5,13 +5,18 @@
 #$ KEYWORDS: Street League, StreetLeague, Street, League, LeadFingers, PIDtoolbox, 7"
 #$ AUTHOR: LeadFingers
 
-#$ DESCRIPTION: 
+#$ DESCRIPTION: Leadfingers tune for Street League quads
 #$ DESCRIPTION: 
 #$ DESCRIPTION: 
 #$ DESCRIPTION: 
 #$ WARNING: **DO NOT** Flash this preset to a quad that is not Street League Spec.
 #$ INCLUDE: presets/4.3/tune/defaults.txt
 #$ INCLUDE: presets/4.3/filters/defaults.txt
+
+# -- Undo dumb default things --
+set pidsum_limit = 1000
+set pidsum_limit_yaw = 1000
+set small_angle = 180
 
 # -- Filter Settings --
 set gyro_lpf1_static_hz = 0
@@ -27,8 +32,6 @@ set rpm_filter_q = 1000
 set dterm_lpf1_static_hz = 0
 
 # -- PID Settings --
-set pidsum_limit = 1000
-set pidsum_limit_yaw = 1000
 set p_pitch = 133
 set i_pitch = 119
 set d_pitch = 130
