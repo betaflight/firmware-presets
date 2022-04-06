@@ -5,8 +5,6 @@
 #$ KEYWORDS: Street League, StreetLeague, Street, League, LeadFingers, PIDtoolbox, 7"
 #$ AUTHOR: LeadFingers
 
-#$ PARSER: MARKED
-
 #$ DESCRIPTION: 
 #$ DESCRIPTION: 
 #$ DESCRIPTION: 
