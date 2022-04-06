@@ -322,7 +322,7 @@
       "OpenRacer",
       "OpenVTx",
       "OSD",
-      "output limmit",
+      "output limit",
       "OVX300",
       "OVX303",
       "partial",
@@ -2352,7 +2352,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/Street_League_LeadFingers.txt",
-      "hash": "6211dd4509e1e5a4bf7c387bd5418107359fa09df167e5d029c444a29fde1b41",
+      "hash": "a09cbdd647f8964a8d679460bcf228c7635bb4775e11bf447b374d457a67bf88",
       "title": "Street League LeadFingers PIDtoolbox tune",
       "firmware_version": [
         "4.3"
@@ -2373,7 +2373,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/Street_League_motor_outputs.txt",
-      "hash": "20bca601fc12764be917bc637d5b57aa6e5f37a6f138d4e7d2c4a232159968c8",
+      "hash": "4035e4923b7ac2a0473f16bb9fd2342465899c5223601817458bfcce01a04488",
       "title": "Street League Motor Output Limit Settings",
       "firmware_version": [
         "4.2",
@@ -2383,7 +2383,7 @@
       "status": "EXPERIMENTAL",
       "keywords": [
         "Motor",
-        "output limmit",
+        "output limit",
         "Street League",
         "StreetLeague",
         "Street",
