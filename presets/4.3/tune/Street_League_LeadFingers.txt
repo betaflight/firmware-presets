@@ -6,7 +6,7 @@
 #$ AUTHOR: LeadFingers
 
 #$ DESCRIPTION: Leadfingers tune for Street League quads
-#$ DESCRIPTION: 
+#$ DESCRIPTION: Must be bi-directional Dshot ready
 #$ DESCRIPTION: 
 #$ DESCRIPTION: 
 #$ WARNING: **DO NOT** Flash this preset to a quad that is not Street League Spec.
@@ -17,6 +17,8 @@
 set pidsum_limit = 1000
 set pidsum_limit_yaw = 1000
 set small_angle = 180
+set motor_pwm_protocol = DSHOT300
+set dshot_bidir = ON
 
 # -- Filter Settings --
 set gyro_lpf1_static_hz = 0
