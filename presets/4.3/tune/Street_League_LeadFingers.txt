@@ -6,7 +6,7 @@
 #$ AUTHOR: LeadFingers
 
 #$ DESCRIPTION: Leadfingers tune for Street League quads
-#$ DESCRIPTION: ESC be bi-directional Dshot ready
+#$ DESCRIPTION: ESC must be bi-directional Dshot ready
 #$ DESCRIPTION: 
 #$ DESCRIPTION: 
 #$ WARNING: **DO NOT** Flash this preset to a quad that is not Street League Spec. ESC protocol has been changed to Dshot300 + bi-directional Dshot
