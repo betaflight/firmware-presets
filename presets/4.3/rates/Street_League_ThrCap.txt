@@ -2,7 +2,7 @@
 #$ FIRMWARE_VERSION: 4.2
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: RATES
-#$ STATUS: COMMUNITY
+#$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: throttle cap, Street League, StreetLeague, Street, League, LeadFingers
 #$ AUTHOR: LeadFingers
 #$ DESCRIPTION: Street League Spec Drone Racing Anti-NSB Presets

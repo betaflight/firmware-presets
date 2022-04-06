@@ -1249,14 +1249,14 @@
     },
     {
       "fullPath": "presets/4.3/rates/Street_League_ThrCap.txt",
-      "hash": "4031120c24e3eab8333c6beac343ce88954dc93fa65b979c127fb4a7ddd662df",
+      "hash": "99707f49c614a9cf9612a1cdec81eba808b370c942f802ab05398a2cc136f3b0",
       "title": "Street League Throttle Cap",
       "firmware_version": [
         "4.2",
         "4.3"
       ],
       "category": "RATES",
-      "status": "COMMUNITY",
+      "status": "EXPERIMENTAL",
       "keywords": [
         "throttle cap",
         "Street League",
