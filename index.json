@@ -1245,6 +1245,26 @@
       "priority": 10000
     },
     {
+      "fullPath": "presets/4.3/rates/Street_League_ThrCap.txt",
+      "hash": "1a3c2b207471252d992a615878d99092d89633d0a5d9677c0ed404d06a968276",
+      "title": "Street League Throttle Cap",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "RATES",
+      "status": "COMMUNITY",
+      "keywords": [
+        "throttle cap",
+        "Street League",
+        "StreetLeague",
+        "Street",
+        "League",
+        "LeadFingers"
+      ],
+      "author": "LeadFingers",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.3/rates/UAV_tech.txt",
       "hash": "b0ca5a2a097e8b90f0aa50cbc72936512b4adfdde9a83cff76bd05fc87d36e62",
       "title": "UAV Tech Rates (w/ Cinematic/Whoop Options)",
@@ -2148,26 +2168,6 @@
       "author": "Ivan Efimov (Limon)",
       "force_options_review": true,
       "priority": 10000000000
-    },
-    {
-      "fullPath": "presets/4.3/Street_League/Street_League_ThrCap.txt",
-      "hash": "975b3129e24380535aa438e2618f76b343ae2b0f03096731ed0a80417b6ff877",
-      "title": "Street League Throttle Cap",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "RATES",
-      "status": "COMMUNITY",
-      "keywords": [
-        "throttle cap",
-        "Street League",
-        "StreetLeague",
-        "Street",
-        "League",
-        "LeadFingers"
-      ],
-      "author": "LeadFingers",
-      "priority": 0
     },
     {
       "fullPath": "presets/4.3/tune/ctzsnooze_5in_4S_race.txt",
