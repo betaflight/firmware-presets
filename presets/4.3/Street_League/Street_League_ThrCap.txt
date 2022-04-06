@@ -1,6 +1,6 @@
 #$ TITLE: Street League Throttle Cap
 #$ FIRMWARE_VERSION: 4.3
-#$ CATEGORY: RATES
+#$ CATEGORY: Street_League
 #$ STATUS: COMMUNITY
 #$ KEYWORDS: throttle cap, Street League, StreetLeague, Street, League, LeadFingers
 #$ AUTHOR: LeadFingers
