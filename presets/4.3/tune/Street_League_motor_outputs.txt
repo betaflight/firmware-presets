@@ -15,6 +15,7 @@
 #$ FORCE_OPTIONS_REVIEW: True
 
 #$ OPTION_GROUP BEGIN: Select your specific motor if it is listed
+
 #$ OPTION BEGIN (UNCHECKED): Brother Hobby Avenger 2510 1250KV / DRSL motors
 profile 0
 motor_output_limit = 100

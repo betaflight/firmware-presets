@@ -1249,9 +1249,10 @@
     },
     {
       "fullPath": "presets/4.3/rates/Street_League_ThrCap.txt",
-      "hash": "1a3c2b207471252d992a615878d99092d89633d0a5d9677c0ed404d06a968276",
+      "hash": "4031120c24e3eab8333c6beac343ce88954dc93fa65b979c127fb4a7ddd662df",
       "title": "Street League Throttle Cap",
       "firmware_version": [
+        "4.2",
         "4.3"
       ],
       "category": "RATES",
@@ -2372,7 +2373,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/Street_League_motor_outputs.txt",
-      "hash": "e40d1e06eb5782e174374c37a08a33b6009b82b83eec82f5d502d906ec6f4531",
+      "hash": "20bca601fc12764be917bc637d5b57aa6e5f37a6f138d4e7d2c4a232159968c8",
       "title": "Street League Motor Output Limit Settings",
       "firmware_version": [
         "4.2",
