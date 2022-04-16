@@ -1,0 +1,36 @@
+#$ TITLE: Tehllama 60 Degree Launch Stand Mode Enabled
+#$ FIRMWARE_VERSION: 4.2
+#$ FIRMWARE_VERSION: 4.3
+#$ STATUS: EXPERIMENTAL
+#$ CATEGORY: OTHER
+#$ KEYWORDS: Race, Launch, LaunchMode, Mode
+#$ AUTHOR: Daniel Appel / Tehllama
+#$ DESCRIPTION: This is a launch stand launch-mode option that enables first-takeoff only pitch-only launch behavior.
+#$ DESCRIPTION: In high winds, with poor idle performance, or some stands, this will result in the craft falling off the stand.
+#$ DISCUSSION: Accelerometer Integration Feature requires enabling accelerometer in the Configuration Tab for this feature to work.
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/238
+
+# FORCE_OPTIONS_REVIEW: TRUE
+
+
+#$ OPTION BEGIN (UNCHECKED): Apply to current RateProfile Only
+set launch_control_mode = PITCHONLY
+set launch_trigger_allow_reset = OFF
+set launch_angle_limit = 60
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Apply to ALL Profiles (Sets Profile #1)
+profile 0
+set launch_control_mode = PITCHONLY
+set launch_trigger_allow_reset = OFF
+set launch_angle_limit = 60
+profile 2
+set launch_control_mode = PITCHONLY
+set launch_trigger_allow_reset = OFF
+set launch_angle_limit = 60
+profile 1
+set launch_control_mode = PITCHONLY
+set launch_trigger_allow_reset = OFF
+set launch_angle_limit = 60
+profile 0
+#$ OPTION END
