@@ -1,7 +1,7 @@
 #$ TITLE: KMfpv default OSD 
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: OSD
-#$ STATUS: OFFICIAL
+#$ STATUS: COMMUNITY
 #$ KEYWORDS: defaults, reset, OSD
 #$ AUTHOR: KMfpv
 #$ DESCRIPTION: Resets the OSD values back to Betaflight 4.3 defaults
