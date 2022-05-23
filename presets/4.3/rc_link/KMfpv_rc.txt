@@ -4,7 +4,7 @@
 #$ CATEGORY: RC_LINK
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: defaults, Rx, RC, reset, rc link, rc_link, smoothing, rc_smoothing
-#$ AUTHOR: Betaflight
+#$ AUTHOR: KMfpv
 #$ DESCRIPTION: Resets RC related settings to defaults
 #$ PRIORITY: 0
 
