@@ -3,7 +3,7 @@
 #$ CATEGORY: MODES
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: defaults, reset, mode, modes, adjustments, aux, switch
-#$ AUTHOR: Betaflight
+#$ AUTHOR: KMfpv
 #$ DESCRIPTION: Resets modes and adjustment ranges to 4.3 defaults
 
 # aux switch settings
