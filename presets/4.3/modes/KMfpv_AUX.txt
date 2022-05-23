@@ -1,7 +1,7 @@
 #$ TITLE: KMfpv AUX Modes and Adjustment for OSD profile
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: MODES
-#$ STATUS: OFFICIAL
+#$ STATUS: COMMUNITY
 #$ KEYWORDS: defaults, reset, mode, modes, adjustments, aux, switch
 #$ AUTHOR: KMfpv
 #$ DESCRIPTION: Resets modes and adjustment ranges to 4.3 defaults
