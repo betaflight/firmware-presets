@@ -2,7 +2,7 @@
 #$ TITLE: KMfpv RC related settings
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: RC_LINK
-#$ STATUS: OFFICIAL
+#$ STATUS: COMMUNITY
 #$ KEYWORDS: radio
 #$ AUTHOR: KMfpv
 #$ DESCRIPTION: Resets RC related settings to defaults
