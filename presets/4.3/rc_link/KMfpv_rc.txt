@@ -1,9 +1,9 @@
 # 
-#$ TITLE: Reset RC related settings
+#$ TITLE: KMfpv RC related settings
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: RC_LINK
 #$ STATUS: OFFICIAL
-#$ KEYWORDS: defaults, Rx, RC, reset, rc link, rc_link, smoothing, rc_smoothing
+#$ KEYWORDS: radio
 #$ AUTHOR: KMfpv
 #$ DESCRIPTION: Resets RC related settings to defaults
 #$ PRIORITY: 0
