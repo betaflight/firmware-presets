@@ -1,0 +1,17 @@
+# 
+#$ TITLE: Reset RC related settings
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: RC_LINK
+#$ STATUS: OFFICIAL
+#$ KEYWORDS: defaults, Rx, RC, reset, rc link, rc_link, smoothing, rc_smoothing
+#$ AUTHOR: Betaflight
+#$ DESCRIPTION: Resets RC related settings to defaults
+#$ PRIORITY: 0
+
+# NOTE TO AUTHORS: Always include this Preset in any RC Preset
+
+set min_check = 1010
+set max_check = 1990
+set rc_interp_ch = RPY
+set deadband = 6
+set yaw_deadband = 7

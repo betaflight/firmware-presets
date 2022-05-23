@@ -1,0 +1,38 @@
+#$ TITLE: Default 4.3 OSD settings
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: OSD
+#$ STATUS: OFFICIAL
+#$ KEYWORDS: defaults, reset, OSD
+#$ AUTHOR: Betaflight
+#$ DESCRIPTION: Resets the OSD values back to Betaflight 4.3 defaults
+
+set osd_units = METRIC
+set osd_warn_core_temp = OFF
+set osd_warn_launch_control = OFF
+set osd_warn_no_gps_rescue = OFF
+set osd_warn_gps_rescue_disabled = OFF
+set osd_rssi_pos = 473
+set osd_link_quality_pos = 14839
+set osd_tim_2_pos = 2519
+set osd_flymode_pos = 2082
+set osd_g_force_pos = 2105
+set osd_throttle_pos = 2497
+set osd_vtx_channel_pos = 2091
+set osd_current_pos = 470
+set osd_mah_drawn_pos = 504
+set osd_craft_name_pos = 2504
+set osd_display_name_pos = 2538
+set osd_altitude_pos = 55
+set osd_avg_cell_voltage_pos = 14817
+set osd_disarmed_pos = 14603
+set osd_flip_arrow_pos = 14510
+set osd_stick_overlay_left_pos = 291
+set osd_stick_overlay_right_pos = 306
+set osd_stat_tim_1 = ON
+set osd_stat_max_spd = OFF
+set osd_stat_endbatt = ON
+set osd_stat_battery = ON
+set osd_stat_max_alt = ON
+set osd_stat_bbox = OFF
+set osd_stat_bb_no = OFF
+set osd_stat_max_g_force = ON
