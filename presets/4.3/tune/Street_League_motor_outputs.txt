@@ -24,7 +24,7 @@
 
 #$ OPTION_GROUP BEGIN:
 
-#$ OPTION BEGIN (CHECKED): Set my Street League Spec throttle limit on all rate profiles. Sets drone to rate profile 1
+#$ OPTION BEGIN (CHECKED): Set my Street League Spec throttle limit
 rateprofile 0
 set throttle_limit_type = scale
 set throttle_limit_percent = 75
@@ -46,7 +46,7 @@ set throttle_limit_percent = 75
 rateprofile 0 
 #$ OPTION END
 
-#$ OPTION BEGIN (CHECKED): Set my throttle boost settings to default on all profiles. Sets drone to Pid Profile 1
+#$ OPTION BEGIN (CHECKED): Set my throttle boost settings to default
 profile 0
 set throttle_boost = 5
 set throttle_boost_cutoff = 15
