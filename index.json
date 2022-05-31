@@ -167,6 +167,7 @@
       "Joshua Bardwell",
       "Justice - Gary Kent",
       "Jye Smith",
+      "KMfpv",
       "MinChan Kim",
       "MrAlucardDante",
       "NemesisXB",
@@ -336,6 +337,7 @@
       "Race250",
       "Race500",
       "racing",
+      "radio",
       "rates",
       "rc",
       "rc link",
@@ -760,13 +762,13 @@
     },
     {
       "fullPath": "presets/4.3/modes/KMfpv_AUX.txt",
-      "hash": "9f58591295727c4cb236a8e0dfdc5a5c0a88f2ac5f892f623b3b591adefcc4ff",
-      "title": "Default 4.3 Modes and Adjustment settings",
+      "hash": "4bcc8125eaefbb9ae089c35247947c134cc2f26433c9435900529c33e7b4d57a",
+      "title": "KMfpv AUX Modes and Adjustment for OSD profile",
       "firmware_version": [
         "4.3"
       ],
       "category": "MODES",
-      "status": "OFFICIAL",
+      "status": "COMMUNITY",
       "keywords": [
         "defaults",
         "reset",
@@ -776,7 +778,7 @@
         "aux",
         "switch"
       ],
-      "author": "Betaflight",
+      "author": "KMfpv",
       "priority": 0
     },
     {
@@ -802,19 +804,19 @@
     },
     {
       "fullPath": "presets/4.3/osd/KMfpv_OSD.txt",
-      "hash": "6d100da3b2a5a9756e8b60d8632a2989058b1c7c45e7107326f1e13c261dac49",
-      "title": "Default 4.3 OSD settings",
+      "hash": "820b03b9d34f5535cb7f9cb719d079d6e0e3cb4f793644bc077c96ec9dfd443f",
+      "title": "KMfpv default OSD",
       "firmware_version": [
         "4.3"
       ],
       "category": "OSD",
-      "status": "OFFICIAL",
+      "status": "COMMUNITY",
       "keywords": [
         "defaults",
         "reset",
         "OSD"
       ],
-      "author": "Betaflight",
+      "author": "KMfpv",
       "priority": 0
     },
     {
@@ -1378,24 +1380,17 @@
     },
     {
       "fullPath": "presets/4.3/rc_link/KMfpv_rc.txt",
-      "hash": "538a06634302b78d834222d3efad909f4e22e0a57c0089a17b6a44ba4aeea0d5",
-      "title": "Reset RC related settings",
+      "hash": "3034a1361946fd7cba36da35b5963d90ba7714f06e605709be35423a5d3b1bef",
+      "title": "KMfpv RC related settings",
       "firmware_version": [
         "4.3"
       ],
       "category": "RC_LINK",
-      "status": "OFFICIAL",
+      "status": "COMMUNITY",
       "keywords": [
-        "defaults",
-        "Rx",
-        "RC",
-        "reset",
-        "rc link",
-        "rc_link",
-        "smoothing",
-        "rc_smoothing"
+        "radio"
       ],
-      "author": "Betaflight",
+      "author": "KMfpv",
       "priority": 0
     },
     {
