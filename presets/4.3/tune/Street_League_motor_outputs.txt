@@ -65,31 +65,31 @@ profile 0
 
 #$ OPTION BEGIN (UNCHECKED): Brother Hobby Avenger 2510 1250KV / DRSL motors
 profile 0
-motor_output_limit = 95
+set motor_output_limit = 95
 profile 1
-motor_output_limit = 95
+set motor_output_limit = 95
 profile 2
-motor_output_limit = 95
+set motor_output_limit = 95
 profile 0
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): Hyperlight 2807.5 1322KV
 profile 0
-motor_output_limit = 90
+set motor_output_limit = 90
 profile 1
-motor_output_limit = 90
+set motor_output_limit = 90
 profile 2
-motor_output_limit = 90
+set motor_output_limit = 90
 profile 0
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): EMAX ECO II 2807 1300KV
 profile 0
-motor_output_limit = 89
+set motor_output_limit = 89
 profile 1
-motor_output_limit = 89
+set motor_output_limit = 89
 profile 2
-motor_output_limit = 89
+set motor_output_limit = 89
 profile 0
 #$ OPTION END
 
@@ -99,41 +99,41 @@ profile 0
 
 #$ OPTION BEGIN (UNCHECKED): Generic 1300KV motor
 profile 0
-motor_output_limit = 91
+set motor_output_limit = 91
 profile 1
-motor_output_limit = 91
+set motor_output_limit = 91
 profile 2
-motor_output_limit = 91
+set motor_output_limit = 91
 profile 0
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): Generic 1350KV motor
 profile 0
-motor_output_limit = 88
+set motor_output_limit = 88
 profile 1
-motor_output_limit = 88
+set motor_output_limit = 88
 profile 2
-motor_output_limit = 88
+set motor_output_limit = 88
 profile 0
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): Generic 1380KV motor
 profile 0
-motor_output_limit = 86
+set motor_output_limit = 86
 profile 1
-motor_output_limit = 86
+set motor_output_limit = 86
 profile 2
-motor_output_limit = 86
+set motor_output_limit = 86
 profile 0
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): Generic 1500KV motor
 profile 0
-motor_output_limit = 78
+set motor_output_limit = 78
 profile 1
-motor_output_limit = 78
+set motor_output_limit = 78
 profile 2
-motor_output_limit = 78
+set motor_output_limit = 78
 profile 0
 #$ OPTION END
 
