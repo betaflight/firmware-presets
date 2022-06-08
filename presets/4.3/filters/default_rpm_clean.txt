@@ -16,7 +16,7 @@
 set dshot_bidir = ON
 
 # -- Gyro filters --
-# Single static gyro lowpass at 1000Hz
+# Single static gyro lowpass at 875Hz
 set gyro_lpf1_dyn_min_hz = 0
 set gyro_lpf1_dyn_max_hz = 875
 set gyro_lpf1_static_hz = 0

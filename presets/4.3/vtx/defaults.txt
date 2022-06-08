@@ -15,7 +15,6 @@ set vtx_low_power_disarm = OFF
 set vtx_freq = 0
 set vtx_pit_mode_freq = 0
 set vtx_halfduplex = ON
-set vtx_spi_bus = 0
 
 # reset VTx table
 

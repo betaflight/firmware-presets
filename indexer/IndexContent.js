@@ -4,6 +4,8 @@ class IndexContent
 {
     constructor(presetFilesArray, settings)
     {
+        this.majorVersion = 1;
+        this.minorVersion = 0;
         this.settings = settings;
         this.uniqueValues = {};
         this.presets = presetFilesArray;
@@ -40,7 +42,7 @@ class IndexContent
         }
 
         result = [...result];
-        result.sort();
+        result.sort((a, b) => a.localeCompare(b, undefined, {sensitivity: 'base'}));
         return result;
     }
 
