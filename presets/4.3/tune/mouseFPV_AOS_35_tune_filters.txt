@@ -1,0 +1,170 @@
+#$ TITLE:  AOS 3.5 V1 4s Tune | mouseFPV
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: TUNE
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: AOS, 4s
+#$ AUTHOR: mouseFPV
+#$ DESCRIPTION: Tune for AOS 3.5 with FPVCycle 16mm motors, <250g 4s
+#$ DESCRIPTION: Tuned at 95% Motor Limit
+#$ DESCRIPTION: May be approproiate for v2 frame and/or different motors/cell counts
+#$ DESCRIPTION: Tune/Filters are aggressive, and may not be approproiate for non trussed/braced frames
+#$ DESCRIPTION: Recommended 48k PWM
+#$ DESCRIPTION: If you use the filters and are on an F4, use a 4k PID Loop
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/247
+#$ WARNING: Included Filters set motor poles to 12! Filters Require RPM filtering and DShot telemetry!
+#$ DISCLAIMER: Flash At Your Own Risk!
+#$ FORCE_OPTIONS_REVIEW: TRUE
+#$ INCLUDE: presets/4.3/tune/defaults.txt
+
+# ------- End Defaults --------
+# ----- Begin Mouse Tune-------
+
+# -- PID Sliders  --
+set simplified_pids_mode = RPY
+set simplified_d_gain = 130
+set simplified_pi_gain = 100
+set simplified_feedforward_gain = 60
+set simplified_dmax_gain = 000
+set simplified_i_gain = 80
+set simplified_pitch_d_gain = 105
+set simplified_pitch_pi_gain = 105
+set simplified_master_multiplier = 145
+simplified_tuning apply
+
+# -- iTerm relax --
+set iterm_relax = RP
+set iterm_relax_type = SETPOINT
+set iterm_relax_cutoff = 10
+
+# -- TPA  --
+set tpa_rate = 70
+
+# -- Feedforward --
+set feedforward_boost = 15
+
+# -- Feedforward Jitter Reduction --
+set feedforward_jitter_factor = 14
+
+# -- Antigravity --
+set anti_gravity_gain = 3500
+
+# -- Thrust linear --
+set thrust_linear = 20
+
+# -- DShot Idle (default)--
+# Commonly set lower when dynamic idle is active.
+set dshot_idle_value = 400
+
+# -- Dyn Idle (off, default) --
+set dyn_idle_min_rpm = 0
+
+
+# ------ OPTIONS GO BELOW THIS LINE ------
+
+
+# This is where the author includes options that require input from the User
+
+#$ OPTION BEGIN (CHECKED): Dynamic Idle
+set dshot_bidir = ON
+set dshot_idle_value = 150
+set dyn_idle_min_rpm = 25
+set dyn_idle_p_gain = 50
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): 95% Motor Limit? (Use this if its too spicy)
+set motor_output_limit = 95
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Enable Battery Sag Compensation?
+set vbat_sag_compensation = 100
+#$ OPTION END
+
+#$ OPTION_GROUP BEGIN: Filters (Choose One or None)
+
+#$ OPTION BEGIN (Unchecked): Include RPM Filter (F7)?
+#$ INCLUDE: presets/4.3/filters/defaults.txt
+
+# ------- End Defaults --------
+# ----- Begin Mouse Tune-------
+
+# enable dshot rpm telemetry
+set dshot_bidir = ON
+set motor_poles = 12
+
+# -- Gyro lowpass filters --
+# -- No Gyro Lowpass
+set gyro_lpf1_static_hz = 0
+set gyro_lpf1_dyn_min_hz = 0
+set gyro_lpf1_dyn_max_hz = 0
+set gyro_lpf2_static_hz = 0
+set simplified_gyro_filter = off
+
+# -- Gyro Dynamic Notches --
+set dyn_notch_count = 1
+set dyn_notch_q = 500
+set dyn_notch_min_hz = 150
+set dyn_notch_max_hz = 600
+
+# -- RPM filtering --
+set rpm_filter_q = 500
+set rpm_filter_min_hz = 125
+set rpm_filter_harmonics = 3
+
+# -- Dterm filtering --
+set dterm_lpf1_dyn_min_hz = 93
+set dterm_lpf1_dyn_max_hz = 187
+set dterm_lpf1_dyn_expo = 5
+set dterm_lpf1_static_hz = 93
+set dterm_lpf2_static_hz = 187
+set simplified_dterm_filter = on
+set simplified_dterm_filter_multiplier = 125
+
+# -- Yaw lowpass --
+set yaw_lowpass_hz = 100
+#$ OPTION END
+
+#$ OPTION BEGIN (Unchecked): Include RPM Filter (F4)?
+#$ INCLUDE: presets/4.3/filters/defaults.txt
+
+# ------- End Defaults --------
+# ----- Begin Mouse Tune-------
+
+# enable dshot rpm telemetry
+set dshot_bidir = ON
+set motor_poles = 12
+
+# -- Gyro lowpass filters --
+set gyro_lpf1_static_hz = 0
+set gyro_lpf1_dyn_min_hz = 0
+set gyro_lpf1_dyn_max_hz = 0
+set gyro_lpf2_static_hz = 1000
+set simplified_gyro_filter_multiplier = 200
+set simplified_gyro_filter = on
+
+# -- Gyro Dynamic Notches --
+set dyn_notch_count = 1
+set dyn_notch_q = 500
+set dyn_notch_min_hz = 150
+set dyn_notch_max_hz = 600
+
+# -- RPM filtering --
+set rpm_filter_q = 500
+set rpm_filter_min_hz = 125
+set rpm_filter_harmonics = 3
+
+# -- Dterm filtering --
+set dterm_lpf1_dyn_min_hz = 93
+set dterm_lpf1_dyn_max_hz = 187
+set dterm_lpf1_dyn_expo = 5
+set dterm_lpf1_static_hz = 93
+set dterm_lpf2_static_hz = 187
+set simplified_dterm_filter = on
+set simplified_dterm_filter_multiplier = 125
+
+
+# -- Yaw lowpass --
+set yaw_lowpass_hz = 100
+#$ OPTION END
+
+
+#$ OPTION_GROUP END
