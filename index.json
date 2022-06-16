@@ -2508,8 +2508,8 @@
     },
     {
       "fullPath": "presets/4.3/tune/mouseFPV_AOS_35_tune_filters.txt",
-      "hash": "67bb63a4f9dd34e8adad34e6b2bb349c8fb36491229f114be79358d0469a4957",
-      "title": "AOS 3.5",
+      "hash": "f336a6c83ccc4ae88b848e26cc498cf9604ce703f6fc9f902a0968f970e9912f",
+      "title": "AOS 3.5 Tune | mouseFPV",
       "firmware_version": [
         "4.3"
       ],
