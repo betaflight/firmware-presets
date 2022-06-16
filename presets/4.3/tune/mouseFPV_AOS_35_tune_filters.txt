@@ -1,13 +1,16 @@
-#$ TITLE:  AOS 3.5 Tune | mouseFPV
+#$ TITLE:  AOS 3.5 V1 4s Tune | mouseFPV
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: TUNE
-#$ STATUS: COMMUNITY
+#$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: AOS, 4s
 #$ AUTHOR: mouseFPV
 #$ DESCRIPTION: Tune for AOS 3.5 with FPVCycle 16mm motors, <250g 4s
+#$ DESCRIPTION: Tuned at 95% Motor Limit
+#$ DESCRIPTION: May be approproiate for v2 frame and/or different motors/cell counts
+#$ DESCRIPTION: Tune/Filters are aggressive, and may not be approproiate for non trussed/braced frames
 #$ DESCRIPTION: Recommended 48k PWM
-#$ DESCRIPTION: If you use the filters and are on an F4, use a 4k PID Loop.
-#$ DESCRIPTION:
+#$ DESCRIPTION: If you use the filters and are on an F4, use a 4k PID Loop
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/247
 #$ WARNING: Included Filters set motor poles to 12! Filters Require RPM filtering and DShot telemetry!
 #$ DISCLAIMER: Flash At Your Own Risk!
 #$ FORCE_OPTIONS_REVIEW: TRUE
@@ -55,18 +58,11 @@ set dshot_idle_value = 400
 # -- Dyn Idle (off, default) --
 set dyn_idle_min_rpm = 0
 
-# -- VBat sag compensation --
-set vbat_sag_compensation = 100
-
 
 # ------ OPTIONS GO BELOW THIS LINE ------
 
 
 # This is where the author includes options that require input from the User
-
-#$ OPTION BEGIN (CHECKED): FPVCycle 16mm Motors?
-set motor_output_limit = 95
-#$ OPTION END
 
 #$ OPTION BEGIN (CHECKED): Dynamic Idle
 set dshot_bidir = ON
@@ -75,7 +71,15 @@ set dyn_idle_min_rpm = 25
 set dyn_idle_p_gain = 50
 #$ OPTION END
 
-#$ OPTION_GROUP BEGIN: Tunes (Choose One or None)
+#$ OPTION BEGIN (UNCHECKED): 95% Motor Limit? (Use this if its too spicy)
+set motor_output_limit = 95
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Enable Battery Sag Compensation?
+set vbat_sag_compensation = 100
+#$ OPTION END
+
+#$ OPTION_GROUP BEGIN: Filters (Choose One or None)
 
 #$ OPTION BEGIN (Unchecked): Include RPM Filter (F7)?
 #$ INCLUDE: presets/4.3/filters/defaults.txt
@@ -93,7 +97,6 @@ set gyro_lpf1_static_hz = 0
 set gyro_lpf1_dyn_min_hz = 0
 set gyro_lpf1_dyn_max_hz = 0
 set gyro_lpf2_static_hz = 0
-set simplified_gyro_filter_multiplier = 200
 set simplified_gyro_filter = off
 
 # -- Gyro Dynamic Notches --
@@ -165,4 +168,3 @@ set yaw_lowpass_hz = 100
 
 
 #$ OPTION_GROUP END
-
