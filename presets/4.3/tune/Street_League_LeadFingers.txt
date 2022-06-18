@@ -5,11 +5,11 @@
 #$ KEYWORDS: Street League, StreetLeague, Street, League, LeadFingers, PIDtoolbox, 7"
 #$ AUTHOR: LeadFingers
 
-#$ DESCRIPTION: Leadfingers tune for Street League quads
+#$ DESCRIPTION: LeadFingers tune for Street League quads
 #$ DESCRIPTION: ESC must be bi-directional Dshot ready
 #$ DESCRIPTION: 
 #$ DESCRIPTION: 
-#$ WARNING: **DO NOT** Flash this preset to a quad that is not Street League Spec. ESC protocol has been changed to Dshot300 + bi-directional Dshot
+#$ WARNING: **DO NOT** Flash this preset to a quad that is not Street League Spec
 #$ DISCUSSION: https://discord.gg/rqGfKBbYbP
 #$ INCLUDE: presets/4.3/tune/defaults.txt
 #$ INCLUDE: presets/4.3/filters/defaults.txt
@@ -17,8 +17,6 @@
 # -- Undo some default things --
 set pidsum_limit = 1000
 set pidsum_limit_yaw = 1000
-set small_angle = 180
-set motor_pwm_protocol = DSHOT300
 set dshot_bidir = ON
 
 # -- Filter Settings --
@@ -63,3 +61,13 @@ set simplified_pitch_pi_gain = 105
 # -- spec settings --
 set throttle_boost = 5
 set throttle_boost_cutoff = 15
+
+#$ OPTION_GROUP BEGIN: Select Dshot 300 or 600
+
+#$ OPTION BEGIN (UNCHECKED): Dshot 300
+set motor_pwm_protocol = DSHOT300
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Dshot 600
+set motor_pwm_protocol = DSHOT600
+#$ OPTION END

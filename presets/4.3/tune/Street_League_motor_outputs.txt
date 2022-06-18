@@ -8,7 +8,7 @@
 #$ DESCRIPTION: Street League Spec Drone Racing Anti-NSB Presets
 #$ DESCRIPTION: Use this tool to help make your quad Street Legal
 #$ DESCRIPTION: 
-#$ DESCRIPTION: The pre checked boxes will set your throttle limit to 75% SCALED on all 6 profiles and leave your quad on profile 1
+#$ DESCRIPTION: The pre checked boxes will set your throttle limit to 75% SCALED on all 6 profiles and leave your quad on profile 1 and set your Throttle Boost settings to default
 #$ DESCRIPTION: 
 #$ DESCRIPTION: Choose your motor or KV and this will set your motor output limit on all 3 PID profiles and set the quad to profile 1
 #$ DESCRIPTION: 
@@ -18,7 +18,7 @@
 #$ DESCRIPTION: 
 #$ DESCRIPTION: Join our Discord!
 #$ DESCRIPTION: https://discord.gg/rqGfKBbYbP
-#$ DISCLAIMER: Only select one checkbox
+#$ DISCLAIMER: 
 #$ DISCUSSION: [URL of pull request here]
 #$ FORCE_OPTIONS_REVIEW: True
 
