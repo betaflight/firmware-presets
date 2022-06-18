@@ -5,10 +5,11 @@
 #$ STATUS: COMMUNITY
 #$ KEYWORDS:  vtx, vtx table, HDzero, divimath, SA 2.1, digital, whoop, whoop lite, race v1, race v2, freestyle, tx5m.1, karatebrot
 #$ AUTHOR: sugarK
+
 #$ PARSER: MARKED
 
 #$ DESCRIPTION: 
-#$ DESCRIPTION: <img src="https://static.wixstatic.com/media/967e02_82348b3d176249aea0926d07a2de0257~mv2_d_5559_3125_s_4_2.png" width="250px" style="margin-left: auto; margin-right: auto; display: block;"/>
+#$ DESCRIPTION: <img src="https://static.wixstatic.com/media/967e02_82348b3d176249aea0926d07a2de0257~mv2_d_5559_3125_s_4_2.png" width="300px" height="90" style="object-fit: cover; margin-left: auto; margin-right: auto; display: block;"/>
 #$ DESCRIPTION: 
 #$ DESCRIPTION: # VTX tables and Canvas mode setup
 #$ DESCRIPTION: ## for all HDzero digital systems
@@ -16,7 +17,9 @@
 #$ DESCRIPTION: The information provided on this preset is for educational and entertainment purposes only. Betaflight makes no representations as to the safety or legality of the use of any information provided herein. End users assume all responsibility and liability for ensuring they are complying with all relevant laws and regulations.
 #$ DESCRIPTION: <br><br>
 #$ DESCRIPTION: Using the VTX tables as provided may be in breach of your local RF laws. It is up to the end user to research and comply with local regulations and in using these presets the user assumes all liability associated with breaching local regulations.
+
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/89
+
 #$ INCLUDE: presets/4.3/vtx/defaults_vtx_tables.txt
 #$ INCLUDE_DISCLAIMER: misc/disclaimer/en/vtxtable.txt
 
