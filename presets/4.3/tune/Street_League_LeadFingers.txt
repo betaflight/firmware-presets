@@ -71,3 +71,5 @@ set motor_pwm_protocol = DSHOT300
 #$ OPTION BEGIN (UNCHECKED): Dshot 600
 set motor_pwm_protocol = DSHOT600
 #$ OPTION END
+
+#$ OPTION_GROUP END

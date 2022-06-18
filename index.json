@@ -383,7 +383,7 @@
       "TBS",
       "Team Black Sheep",
       "texas",
-      "throttle cap",
+      "Throttle cap",
       "tiny",
       "tiny tank",
       "tinyTrainer",
@@ -413,6 +413,21 @@
     ]
   },
   "presets": [
+    {
+      "fullPath": "presets/4.3/bnf/LeadFingers_rates.txt",
+      "hash": "7af6355b9da7dc389bd1c80306f6cee4f02f0a380f2343e90fb00c6c8ebe80eb",
+      "title": "LeadFingers quad setup",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "LeadFingers"
+      ],
+      "author": "LeadFingers",
+      "priority": 1000000000000
+    },
     {
       "fullPath": "presets/4.3/filters/BMI270.txt",
       "hash": "af69e3c94ef3dcdd2fca5906292a0dbcf4e4ac1cf74a35860d379cd9e5436c4f",
@@ -1246,27 +1261,6 @@
       ],
       "author": "MinChan Kim",
       "priority": 10000
-    },
-    {
-      "fullPath": "presets/4.3/rates/Street_League_ThrCap.txt",
-      "hash": "99707f49c614a9cf9612a1cdec81eba808b370c942f802ab05398a2cc136f3b0",
-      "title": "Street League Throttle Cap",
-      "firmware_version": [
-        "4.2",
-        "4.3"
-      ],
-      "category": "RATES",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "throttle cap",
-        "Street League",
-        "StreetLeague",
-        "Street",
-        "League",
-        "LeadFingers"
-      ],
-      "author": "LeadFingers",
-      "priority": 0
     },
     {
       "fullPath": "presets/4.3/rates/UAV_tech.txt",
@@ -2352,7 +2346,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/Street_League_LeadFingers.txt",
-      "hash": "a09cbdd647f8964a8d679460bcf228c7635bb4775e11bf447b374d457a67bf88",
+      "hash": "d1cd79052eac6d34929fbe2c0ae607de97dc6bfdb4de0edff52b21be3460bc31",
       "title": "Street League LeadFingers PIDtoolbox tune",
       "firmware_version": [
         "4.3"
@@ -2373,7 +2367,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/Street_League_motor_outputs.txt",
-      "hash": "4035e4923b7ac2a0473f16bb9fd2342465899c5223601817458bfcce01a04488",
+      "hash": "ef7be80e2c4f2ec8cdbf4a620d65a455812ae2daaf930e11e7878da507f99d57",
       "title": "Street League Motor Output Limit Settings",
       "firmware_version": [
         "4.2",
@@ -2388,7 +2382,8 @@
         "StreetLeague",
         "Street",
         "League",
-        "LeadFingers"
+        "LeadFingers",
+        "Throttle cap"
       ],
       "author": "LeadFingers",
       "force_options_review": true,
