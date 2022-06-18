@@ -22,7 +22,7 @@
 #$ DISCUSSION: [URL of pull request here]
 #$ FORCE_OPTIONS_REVIEW: True
 
-#$ OPTION_GROUP BEGIN:
+#$ OPTION_GROUP BEGIN: Universal anti-NSB settings
 
 #$ OPTION BEGIN (CHECKED): Set my Street League Spec throttle limit
 rateprofile 0

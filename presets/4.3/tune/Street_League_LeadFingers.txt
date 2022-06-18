@@ -7,7 +7,7 @@
 
 #$ DESCRIPTION: LeadFingers tune for Street League quads
 #$ DESCRIPTION: ESC must be bi-directional Dshot ready
-#$ DESCRIPTION: 
+#$ DESCRIPTION: This preset will reset your Feed Forward settings back to default. Reflash your RC link preset to fix.
 #$ DESCRIPTION: 
 #$ WARNING: **DO NOT** Flash this preset to a quad that is not Street League Spec
 #$ DISCUSSION: https://discord.gg/rqGfKBbYbP
