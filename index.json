@@ -414,21 +414,6 @@
   },
   "presets": [
     {
-      "fullPath": "presets/4.3/bnf/LeadFingers_rates.txt",
-      "hash": "7af6355b9da7dc389bd1c80306f6cee4f02f0a380f2343e90fb00c6c8ebe80eb",
-      "title": "LeadFingers quad setup",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "TUNE",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "LeadFingers"
-      ],
-      "author": "LeadFingers",
-      "priority": 1000000000000
-    },
-    {
       "fullPath": "presets/4.3/filters/BMI270.txt",
       "hash": "af69e3c94ef3dcdd2fca5906292a0dbcf4e4ac1cf74a35860d379cd9e5436c4f",
       "title": "4.3 Filter settings for BMI270 gyroscope",
