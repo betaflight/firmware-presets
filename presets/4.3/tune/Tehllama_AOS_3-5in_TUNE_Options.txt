@@ -1,0 +1,137 @@
+#$ TITLE: Tehllama 3.5" Tune for XKnight and AOS-3.5
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: TUNE
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: AOS, 35, Tune, Race, Llama
+#$ AUTHOR: Daniel Appel / Tehllama 
+#$ DESCRIPTION: This is a general tune for 3.5" quads with 1404, 1505, 1604, or 1207 motors.
+#$ DESCRIPTION: -------
+#$ DESCRIPTION: The KV/Voltage combinations tested include: 2S ~6000KV, 3S ~4000KV, or 4S ~3000KV.
+#$ DESCRIPTION: -------
+#$ DESCRIPTION: This tune works best with bidirectional DShot ESCs at 48kHz PWM with MedHigh or 23° timing. 
+#$ DESCRIPTION: -------
+#$ DESCRIPTION: This tune has only been validated on 9 build configurations, with 6 powertrain configurations.  Use at your own risk.
+#$ WARNING: This is an experimental tune. Using Bidirectional DSHOT Features Requires Correct Motor Magnet Count to be set.
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/255
+
+# FORCE_OPTIONS_REVIEW: TRUE
+
+#$ INCLUDE: presets/4.3/tune/defaults.txt
+
+
+set dshot_idle_value = 700
+# Fallback if Dynamic Idle not working or not selected
+
+set iterm_relax = RPY
+# master
+set simplified_gyro_filter_multiplier = 130
+
+# profile 
+set iterm_rotation = ON
+set iterm_relax = RPY
+set iterm_relax_cutoff = 25
+set yaw_lowpass_hz = 125
+set throttle_boost = 8
+set p_pitch = 51
+set i_pitch = 73
+set d_pitch = 50
+set f_pitch = 151
+set i_roll = 63
+set d_roll = 43
+set f_roll = 132
+set i_yaw = 63
+set f_yaw = 132
+set d_min_roll = 34
+set d_min_pitch = 39
+set d_max_advance = 0
+
+set thrust_linear = 10
+
+set simplified_i_gain = 80
+set simplified_d_gain = 115
+set simplified_dmax_gain = 80
+set simplified_feedforward_gain = 110
+set simplified_pitch_pi_gain = 110
+set simplified_dterm_filter_multiplier = 135
+
+simplified_tuning apply
+
+#$ OPTION BEGIN (CHECKED): Apply Matching Filters
+#$ INCLUDE: presets/4.3/filters/defaults.txt
+
+set dyn_notch_count = 3
+set dyn_notch_q = 250
+set dyn_notch_min_hz = 100
+set dyn_notch_max_hz = 640
+set gyro_lpf1_dyn_min_hz = 325
+set gyro_lpf1_dyn_max_hz = 650
+
+set yaw_lowpass_hz = 125
+
+set dterm_lpf1_dyn_min_hz = 101
+set dterm_lpf1_dyn_max_hz = 202
+set dterm_lpf1_dyn_expo = 8
+set dterm_lpf2_static_hz = 165
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Apply RPM Features (Strongly Recommended - Keep Matching Filters Required)
+set dshot_bidir = ON
+set rpm_filter_harmonics = 2
+set rpm_filter_q = 750
+set rpm_filter_min_hz = 150
+set rpm_filter_fade_range_hz = 75
+set dyn_notch_count = 2
+set dyn_notch_q = 350
+set dyn_idle_min_rpm = 32
+set dyn_idle_p_gain = 42
+set dyn_idle_i_gain = 42
+set dyn_idle_d_gain = 42
+
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Set Motor Poles = 12 (Required for RPM Features on 12 Magnet Motors)
+set motor_poles = 12
+
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Set VBat Sag Compensation = 100
+set vbat_sag_compensation = 100
+
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Set Small Angle to 180
+set small_angle = 180
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Apply TPA Settings to all rateprofiles (Will Select RateProfile #1)
+rateprofile 0
+set tpa_rate = 69
+set tpa_breakpoint = 1250
+
+rateprofile 1
+set tpa_rate = 69
+set tpa_breakpoint = 1250
+
+rateprofile 2
+set tpa_rate = 69
+set tpa_breakpoint = 1250
+
+rateprofile 3
+set tpa_rate = 69
+set tpa_breakpoint = 1250
+
+rateprofile 4
+set tpa_rate = 69
+set tpa_breakpoint = 1250
+
+rateprofile 5
+set tpa_rate = 69
+set tpa_breakpoint = 1250
+
+rateprofile 0
+#$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): Apply TPA Settings to current rateprofile only
+set tpa_rate = 69
+set tpa_breakpoint = 1250
+#$ OPTION END
