@@ -10,6 +10,8 @@
 
 #$ INCLUDE: presets/4.3/vtx/defaults.txt
 
+#VTx table
+
 #$ OPTION_GROUP BEGIN: choose your vtx
 
 #$ OPTION BEGIN (UNCHECKED): Eachine TX805
