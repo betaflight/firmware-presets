@@ -169,6 +169,7 @@
       "Jye Smith",
       "KMfpv",
       "MinChan Kim",
+      "mouseFPV",
       "MrAlucardDante",
       "NemesisXB",
       "Sjoer van der Ploeg",
@@ -223,6 +224,8 @@
       "adjustments",
       "AlexFPV",
       "analog",
+      "AOS",
+      "Audio TBS",
       "aux",
       "AyyyKayyy",
       "bando",
@@ -253,6 +256,7 @@
       "default",
       "defaults",
       "diatone",
+      "digital",
       "disable",
       "divimath",
       "DJI",
@@ -273,6 +277,7 @@
       "fpvian",
       "freedom",
       "freedom spec",
+      "FreedomSpec",
       "freestyle",
       "freesytle",
       "freetyle",
@@ -288,6 +293,7 @@
       "HD",
       "HDzero",
       "Headsup",
+      "HighKV",
       "hot",
       "HV",
       "IllusionFpv",
@@ -303,6 +309,7 @@
       "leds",
       "Limon",
       "link",
+      "Llama",
       "log",
       "logging",
       "Long Range",
@@ -312,6 +319,7 @@
       "mode",
       "modes",
       "MultiGP",
+      "MultiVoltage",
       "names",
       "nano",
       "nanohawk",
@@ -334,6 +342,8 @@
       "quick",
       "race",
       "race rates ctzsnooze actual",
+      "race v1",
+      "race v2",
       "Race250",
       "Race500",
       "racing",
@@ -358,16 +368,18 @@
       "SA 2.1",
       "sa2.0",
       "sa20",
+      "Safe",
       "sbus",
       "SBUS fast",
       "settings",
       "shames",
-      "shark bite",
+      "Smart",
+      "smart audio",
       "smartaudio",
       "smoothing",
       "Solid250",
       "some",
-      "spec",
+      "Spec",
       "speedybee",
       "stats",
       "suagrK",
@@ -378,18 +390,20 @@
       "tank solo",
       "tank ultimate",
       "TBS",
+      "tbs sa",
       "Team Black Sheep",
-      "texas",
+      "Texas",
       "tiny",
       "tiny tank",
-      "tinyTrainer",
+      "TinyTrainer",
       "toothpic",
       "Tracer",
       "trainer",
       "tramp",
       "transmitter",
-      "tune",
+      "Tune",
       "twig",
+      "tx5m.1",
       "tx800",
       "ultra",
       "ultra 1000",
@@ -404,6 +418,7 @@
       "vtx table",
       "vtxtable",
       "whoop",
+      "whoop lite",
       "whooptopia",
       "world champion",
       "youtube"
@@ -804,7 +819,7 @@
     },
     {
       "fullPath": "presets/4.3/osd/KMfpv_OSD.txt",
-      "hash": "820b03b9d34f5535cb7f9cb719d079d6e0e3cb4f793644bc077c96ec9dfd443f",
+      "hash": "e0923ec4c47c1012737f738523cd84010e64075e5d294fd8368cf14711d4c8e6",
       "title": "KMfpv default OSD",
       "firmware_version": [
         "4.3"
@@ -898,6 +913,69 @@
         "Passthrough",
         "Configure",
         "utility"
+      ],
+      "author": "Daniel Appel / Tehllama",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/other/Tehllama_5in_1900-2250KV_FreedomSpec_3S-5S-6S_Race_TUNE_OTHER.txt",
+      "hash": "dd53f9d5edb077c0929ac3252667f3d4d40000c444d48338ce569c85fc36e541",
+      "title": "5in FreedomSpec Race Tune 1900-2250KV on 3S (Spec) and 5S/6S (Open)",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "OTHER",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "533",
+        "FreedomSpec",
+        "Tune",
+        "Spec",
+        "Race",
+        "Llama",
+        "MultiVoltage"
+      ],
+      "author": "Daniel Appel / Tehllama",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/other/Tehllama_5in_2350-2750KV-TexasSpec_3S-4S-5S_Race_TUNE_OTHER.txt",
+      "hash": "3d238ca653d717035343a831b3d92ff954bd827f3f4140cf87b3062acde635a1",
+      "title": "5in TexasSpec Freedom Race Tune 2350-2750KV on 3S (Spec) and 4S/5S (Open)",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "OTHER",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "533",
+        "HighKV",
+        "FreedomSpec",
+        "Spec",
+        "Tune",
+        "Race",
+        "Llama",
+        "MultiVoltage",
+        "Texas"
+      ],
+      "author": "Daniel Appel / Tehllama",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/other/Tehllama_5in_BMS-Spec_1600-2350KV_4S-5S-6S_Race_TUNE-OTHER.txt",
+      "hash": "7ccd25a83a3f10f197d1c6b8ec9c5fbe495d514656c04aedb6e8f9b47a766340",
+      "title": "5in Tehllama Race Tune 1600-2350KV on 4S/5S/6S including BMS Spec",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "OTHER",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "Race",
+        "Llama",
+        "Safe",
+        "Tune",
+        "MultiVoltage"
       ],
       "author": "Daniel Appel / Tehllama",
       "priority": 0
@@ -1338,6 +1416,21 @@
         "MultiGP"
       ],
       "author": "Ivan Efimov (Limon)",
+      "priority": 10000
+    },
+    {
+      "fullPath": "presets/4.3/rates/mouseFreestyle.txt",
+      "hash": "46b34a3ddf5526a7f752f5e62971096ccb6c170195affe921f8b7b323fb3293d",
+      "title": "mouseFPV Freestyle Rates",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "RATES",
+      "status": "COMMUNITY",
+      "keywords": [
+        "freestyle"
+      ],
+      "author": "mouseFPV",
       "priority": 10000
     },
     {
@@ -2282,6 +2375,25 @@
       "priority": 1000000000000
     },
     {
+      "fullPath": "presets/4.3/tune/Tehllama_533_TinyTrainer_3in_3S_TUNE_Options.txt",
+      "hash": "d16893206254ce89e24740b3b3b932abd8cacf8427c4e811cb4aecf053d60a1f",
+      "title": "FlyFive33 3in TinyTrainer 3S Tune",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "TinyTrainer",
+        "533",
+        "Spec",
+        "Race",
+        "Llama"
+      ],
+      "author": "Daniel Appel / Tehllama",
+      "priority": 1000000000000
+    },
+    {
       "fullPath": "presets/4.3/tune/UAV_tech_5in.txt",
       "hash": "db11ec74fa5760f5b31c90197f79be79458248ea146f7a3ced7525519d4c9305",
       "title": "UAV Tech - 5in (~630g AUW)",
@@ -2555,6 +2667,23 @@
       "priority": 1000000000000
     },
     {
+      "fullPath": "presets/4.3/tune/mouseFPV_AOS_35_tune_filters.txt",
+      "hash": "195960fb564c4fc531874304256428d53d0015dbc3916cbccb6669eb7b6a66fe",
+      "title": "AOS 3.5 V1 4s Tune | mouseFPV",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "AOS",
+        "4s"
+      ],
+      "author": "mouseFPV",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
+    {
       "fullPath": "presets/4.3/tune/reset_all.txt",
       "hash": "5b9d76fd857aa8637c394a13e86f4dc651173ca559afe3f61556ff2b0742f347",
       "title": "Reset 4.3 Tune parameters, complete listing",
@@ -2694,9 +2823,9 @@
       "priority": 1000000
     },
     {
-      "fullPath": "presets/4.3/vtx/HDZero_race2.txt",
-      "hash": "0f0b8f7a8bfe4c48fe1897e58c3de4977a45550b4316aa856be00ffe97e0061a",
-      "title": "HDZero race 2",
+      "fullPath": "presets/4.3/vtx/HDZero.txt",
+      "hash": "802f5dab99316d7b0c22bd4813817eb7a207d3c401adfc6a90cd3966b64fd12f",
+      "title": "HDZero VTXs",
       "firmware_version": [
         "4.2",
         "4.3"
@@ -2708,8 +2837,15 @@
         "vtx table",
         "HDzero",
         "divimath",
-        "shark bite",
-        "SA 2.1"
+        "SA 2.1",
+        "digital",
+        "whoop",
+        "whoop lite",
+        "race v1",
+        "race v2",
+        "freestyle",
+        "tx5m.1",
+        "karatebrot"
       ],
       "author": "sugarK",
       "priority": 1000000
@@ -2968,6 +3104,40 @@
         "ultra 1000"
       ],
       "author": "NemesisXB",
+      "priority": 1000000
+    },
+    {
+      "fullPath": "presets/4.3/vtx/eachine_vtx.txt",
+      "hash": "59ca3e0ec1cce5ff3ddfceef9ba9fcecd668d66e9c812064fa9992ee1607df6d",
+      "title": "Eachine VTX Tables",
+      "firmware_version": [
+        "4.2",
+        "4.3"
+      ],
+      "category": "VTX",
+      "status": "COMMUNITY",
+      "keywords": [
+        "eachine",
+        "Eachine",
+        "nano",
+        "Nano",
+        "irc",
+        "IRC",
+        "tramp",
+        "TRAMP",
+        "Tramp",
+        "IRC Tramp",
+        "irc tramp",
+        "IRC TRAMP",
+        "tbs",
+        "sa",
+        "tbs sa",
+        "smartaudio",
+        "smart audio",
+        "Smart",
+        "Audio TBS"
+      ],
+      "author": "KMfpv",
       "priority": 1000000
     },
     {

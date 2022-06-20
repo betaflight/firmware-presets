@@ -9,6 +9,7 @@
 #$ INCLUDE_DISCLAIMER: misc/disclaimer/en/vtxtable.txt
 
 #$ INCLUDE: presets/4.3/vtx/defaults.txt
+#$ INCLUDE: presets/4.3/vtx/defaults_vtx_tables.txt
 
 #VTx table
 

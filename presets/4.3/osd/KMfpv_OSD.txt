@@ -141,6 +141,8 @@ set osd_stat_avg_cell_value = OFF
 set osd_framerate_hz = 12
 set osd_menu_background = TRANSPARENT
 
+
+#KMfpv prefered settings
 set osd_units = METRIC
 set osd_warn_core_temp = OFF
 set osd_warn_launch_control = OFF
