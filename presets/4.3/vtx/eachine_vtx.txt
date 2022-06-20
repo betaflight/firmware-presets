@@ -3,7 +3,7 @@
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: VTX
 #$ STATUS: COMMUNITY
-#$ KEYWORDS: eachine, Eachine, nano, Nano, irc, IRC, tramp, TRAMP, Tramp, IRC Tramp, irc tramp, IRC TRAMP
+#$ KEYWORDS: eachine, Eachine, nano, Nano, irc, IRC, tramp, TRAMP, Tramp, IRC Tramp, irc tramp, IRC TRAMP, tbs, sa, tbs sa, smartaudio, smart audio, Smart, Audio TBS
 #$ AUTHOR: KMfpv
 #$ DESCRIPTION: VTX Table for the Eachine VTX (SmartAudio & IRC Tramp)
 #$ INCLUDE_DISCLAIMER: misc/disclaimer/en/vtxtable.txt
