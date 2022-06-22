@@ -8,8 +8,7 @@
 #$ PARSER: MARKED
 
 #$ DESCRIPTION: 
-#$ DESCRIPTION: <img src="https://user-images.githubusercontent.com/19867640/174759844-ffd85f42-1f1c-42bf-9032-d9f96d4d9619.svg" width="90px" style="display: block; float: right; margin-right: 150px;"/>
-#$ DESCRIPTION: <br><br><br>
+#$ DESCRIPTION: <img src="https://user-images.githubusercontent.com/19867640/174759844-ffd85f42-1f1c-42bf-9032-d9f96d4d9619.svg" width="90px" style="display: block; float: left; margin-right: 10px; margin-top: 20px"/>
 #$ DESCRIPTION: <h1>Karate Race 6S 5"</h1>
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION: 
