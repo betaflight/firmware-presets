@@ -10,7 +10,7 @@
 #$ DESCRIPTION: Strongly recommend a full chip erase reflash if alternative tunes are desired.
 #$ DESCRIPTION: Extensive testing has been done across 57+ builds, however not every craft will run best on this tune.
 #$ DESCRIPTION: This tune will auto-select profiles based on battery voltage at plugin by default, but only for 3S, 4S and 5S packs. 
-#$ WARNING: Use at your own risk.  NO 6-cell tune or throttle limit is provided with this tune.  Plugging in a 6S pack with 3S profile active will likely cause SERIOUS damage.  
+#$ WARNING: Use at your own risk.  NO 6-cell tune or throttle limit is provided with this tune.  Plugging in a 6S pack with 3S profile active will likely cause SERIOUS damage.
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/236
 
 # FORCE_OPTIONS_REVIEW: TRUE
@@ -44,7 +44,6 @@ set d_min_roll = 28
 set d_min_pitch = 35
 set d_max_advance = 0
 set auto_profile_cell_count = 4
-set feedforward_jitter_factor = 12
 set feedforward_boost = 12
 set throttle_boost = 12
 
@@ -82,7 +81,6 @@ set d_min_pitch = 26
 set d_max_advance = 0
 set motor_output_limit = 92
 set auto_profile_cell_count = 5
-set feedforward_jitter_factor = 12
 set feedforward_boost = 8
 set throttle_boost = 5
 set feedforward_max_rate_limit = 103
@@ -121,7 +119,6 @@ set d_min_pitch = 35
 set d_max_advance = 0
 set motor_output_limit = 81
 set auto_profile_cell_count = 3
-set feedforward_jitter_factor = 12
 set feedforward_boost = 18
 set throttle_boost = 18
 set feedforward_max_rate_limit = 103

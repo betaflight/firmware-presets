@@ -61,9 +61,6 @@ set simplified_feedforward_gain = 105
 set simplified_pitch_d_gain = 95
 simplified_tuning apply
 
-# -- Feedforward --
-set feedforward_jitter_factor = 5
-
 # -- TPA --
 set tpa_rate = 70
 set tpa_breakpoint = 1250

@@ -75,14 +75,6 @@ set feedforward_max_rate_limit = 90
 # -- Feedforward averaging (do not change)--
 # needs to be set according to RC link type and speed, not changed in the tune
 
-# -- Feedforward jitter reduction (default)--
-# depends on RC link and flying style - default is 7
-set feedforward_jitter_factor = 7
-
-# Note: feedforward_jitter_factor is related to both RC link and flying style.
-# It is overwritten by this default
-# The Preset author should provide feedforward_jitter_factor options to set jitter reduction appropriately for different kinds of RC links
-
 # -- PIDsum limits (default) --
 set pidsum_limit = 500
 set pidsum_limit_yaw = 400
@@ -205,14 +197,9 @@ set motor_pwm_rate = 480
 # -- Rates --
 # One ore more un-checked 'OPTION' elements that 'Include' external Rates preset files.
 
-# -- RC_Smoothing --
-# One ore more un-checked 'RC_SMOOTHING' elements that 'Include' external rc_smoothing preset files.
-
 # -- Filters --
-# One ore more un-checked 'FILTERS elements that 'Include' external Filter preset files.
+# One ore more un-checked or checked 'FILTERS elements that 'Include' external Filter preset files.
 # It may be good to initialise to a non-RPM filter set, then provide your preferred RPM aware filter set as a checked uption.
-
-
 
 # -- Throttle limit (default) --
 # For least full throttle noise, use SCALE and values around 95-96-97

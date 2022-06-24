@@ -42,9 +42,6 @@ set tpa_rate = 70
 # -- Feedforward --
 set feedforward_boost = 15
 
-# -- Feedforward Jitter Reduction --
-set feedforward_jitter_factor = 14
-
 # -- Antigravity --
 set anti_gravity_gain = 3500
 

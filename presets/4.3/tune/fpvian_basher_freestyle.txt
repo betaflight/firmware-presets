@@ -48,10 +48,6 @@ simplified_tuning apply
 set dyn_idle_min_rpm = 30
 #$ OPTION END
 
-#$ OPTION BEGIN (CHECKED): Feedforward Jitter Reduction to 13 for HD Recording
-set feedforward_jitter_factor = 13
-#$ OPTION END
-
 #$ OPTION BEGIN (CHECKED): Disable Throttle Boost
 set throttle_boost = 0
 #$ OPTION END
