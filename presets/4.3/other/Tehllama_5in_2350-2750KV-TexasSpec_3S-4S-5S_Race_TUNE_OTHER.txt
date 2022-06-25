@@ -44,7 +44,6 @@ set d_min_roll = 28
 set d_min_pitch = 35
 set d_max_advance = 0
 set auto_profile_cell_count = 4
-set feedforward_boost = 12
 set throttle_boost = 12
 
 set simplified_master_multiplier = 95
@@ -81,7 +80,6 @@ set d_min_pitch = 26
 set d_max_advance = 0
 set motor_output_limit = 92
 set auto_profile_cell_count = 5
-set feedforward_boost = 8
 set throttle_boost = 5
 set feedforward_max_rate_limit = 103
 
@@ -119,7 +117,6 @@ set d_min_pitch = 35
 set d_max_advance = 0
 set motor_output_limit = 81
 set auto_profile_cell_count = 3
-set feedforward_boost = 18
 set throttle_boost = 18
 set feedforward_max_rate_limit = 103
 

@@ -43,7 +43,6 @@ set d_min_roll = 19
 set d_min_pitch = 21
 set d_max_advance = 0
 set auto_profile_cell_count = 6
-set feedforward_boost = 8
 set throttle_boost = 2
 
 set dyn_idle_p_gain = 42
@@ -87,7 +86,6 @@ set d_min_roll = 27
 set d_min_pitch = 29
 set d_max_advance = 0
 set auto_profile_cell_count = 5
-set feedforward_boost = 12
 set throttle_boost = 7
 
 set dyn_idle_p_gain = 42
@@ -134,7 +132,6 @@ set d_min_roll = 35
 set d_min_pitch = 39
 set d_max_advance = 0
 set auto_profile_cell_count = 4
-set feedforward_boost = 18
 set throttle_boost = 12
 
 set dyn_idle_p_gain = 42

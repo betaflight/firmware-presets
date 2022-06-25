@@ -39,9 +39,6 @@ set iterm_relax_cutoff = 10
 # -- TPA  --
 set tpa_rate = 70
 
-# -- Feedforward --
-set feedforward_boost = 15
-
 # -- Antigravity --
 set anti_gravity_gain = 3500
 

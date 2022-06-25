@@ -72,7 +72,6 @@ set tpa_rate = 65
 set tpa_breakpoint = 1250
 
 # -- Feedforward --
-set feedforward_boost = 18
 set feedforward_max_rate_limit = 95
 # -- Feedforward averaging (do not change)--
 
