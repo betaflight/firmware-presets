@@ -4,20 +4,51 @@
 #$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: AOS, 4s
 #$ AUTHOR: mouseFPV
-#$ DESCRIPTION: Tune for AOS 3.5 with FPVCycle 16mm motors, <250g 4s
-#$ DESCRIPTION: Tuned at 95% Motor Limit
-#$ DESCRIPTION: May be approproiate for v2 frame and/or different motors/cell counts
-#$ DESCRIPTION: Tune/Filters are aggressive, and may not be approproiate for non trussed/braced frames
-#$ DESCRIPTION: Recommended 48k PWM
-#$ DESCRIPTION: If you use the filters and are on an F4, use a 4k PID Loop
+#$ PARSER: MARKED
+#$ DESCRIPTION: <br>
+#$ DESCRIPTION: <img src="https://user-images.githubusercontent.com/19867640/174462482-28bdcfec-1c3a-43db-99d7-50688b92f050.svg" width="100px" style="margin-left: auto; margin-right: auto; display: block;"/>
+#$ DESCRIPTION:
+#$ DESCRIPTION: Tune for AOS 3.5
+#$ DESCRIPTION: ----------
+#$ DESCRIPTION:
+#$ DESCRIPTION: About:
+#$ DESCRIPTION: ----------
+#$ DESCRIPTION: * May be approproiate for v2 frame and/or different motors/cell counts
+#$ DESCRIPTION: * Tune/Filters are aggressive, and may not be approproiate for non trussed/braced frames
+#$ DESCRIPTION: * Recommended 48k PWM
+#$ DESCRIPTION: * Defaults to DShot600. Using DShot on Unsupported ESC's is Dangerous. See Warning.
+#$ DESCRIPTION:
+#$ DESCRIPTION: Options:
+#$ DESCRIPTION: ----------
+#$ DESCRIPTION: * **Use DShot300:** Should be used on F4 Flight controllers, as well as manually setting a 4k PID Loop
+#$ DESCRIPTION: * **Dynamic Idle:** Enables Dynamic Idle for Freestyle 3.5"
+#$ DESCRIPTION: * **95% Motor Limit:** Takes some of the spice out of powerful motors on 4s
+#$ DESCRIPTION: * **Enable Battery Sag Compensation:** Self Explanatory (see tooltip). Land at 3.5v/Cell or it's a bad time.
+#$ DESCRIPTION: * **Filters -> Include RPM Filter (F7):** Enables bi-directional dshot, sets motor poles to 12, and applies approproiate filter settings with no Gyro Lowpass
+#$ DESCRIPTION: * **Filters -> Include RPM Filter (F4):** Enables bi-directional dshot, sets motor poles to 12, and applies approproiate filter settings with Gyro LPF2 enabled. (F4 should use 4k PID loop and DShot300)
+#$ DESCRIPTION:
+#$ DESCRIPTION: Build Specs This Was Created on:
+#$ DESCRIPTION: ----------
+#$ DESCRIPTION: * **Frame:** AOS 3.5 V1
+#$ DESCRIPTION: * **Motors:** FPVCycle 16mm (4s 95% Motor Limit)
+#$ DESCRIPTION: * **FC/ESC:** Foxeer Reaper f7 AIO
+#$ DESCRIPTION: * **AUW:** 243g
+#$ DESCRIPTION:
+#$ DESCRIPTION: Fly Like mouseFPV | Recommendations outside of tune:
+#$ DESCRIPTION: ----------
+#$ DESCRIPTION: * Apply mouseFPV Freestyle Rates
+#$ DESCRIPTION: * Set Jitter Reduction (feedforward_jitter_factor) to 14
+#$ DESCRIPTION:
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/247
-#$ WARNING: Included Filters set motor poles to 12! Filters Require RPM filtering and DShot telemetry!
-#$ DISCLAIMER: Flash At Your Own Risk!
+#$ WARNING: Included Filters set motor poles to 12! Filters Require RPM filtering and DShot telemetry! This tune sets ESC protocol to DSHOT, it is extremely unsafe to even select it if your ESC does not support DSHOT (can spin the motors without arming)
+#$ DISCLAIMER: Flash At Your Own Risk! This tune sets ESC protocol to DSHOT! See Warning!
 #$ FORCE_OPTIONS_REVIEW: TRUE
 #$ INCLUDE: presets/4.3/tune/defaults.txt
 
 # ------- End Defaults --------
 # ----- Begin Mouse Tune-------
+
+set motor_pwm_protocol = DSHOT600
 
 # -- PID Sliders  --
 set simplified_pids_mode = RPY
@@ -39,9 +70,6 @@ set iterm_relax_cutoff = 10
 # -- TPA  --
 set tpa_rate = 70
 
-# -- Feedforward --
-set feedforward_boost = 15
-
 # -- Antigravity --
 set anti_gravity_gain = 3500
 
@@ -57,15 +85,19 @@ set dyn_idle_min_rpm = 0
 
 
 # ------ OPTIONS GO BELOW THIS LINE ------
-
-
 # This is where the author includes options that require input from the User
+
+#$ OPTION_GROUP BEGIN: General Options (Choose Many or None)
 
 #$ OPTION BEGIN (CHECKED): Dynamic Idle
 set dshot_bidir = ON
 set dshot_idle_value = 150
 set dyn_idle_min_rpm = 25
 set dyn_idle_p_gain = 50
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Use DShot300?
+set motor_pwm_protocol = DSHOT300
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): 95% Motor Limit? (Use this if its too spicy)
@@ -76,9 +108,11 @@ set motor_output_limit = 95
 set vbat_sag_compensation = 100
 #$ OPTION END
 
+#$ OPTION_GROUP END
+
 #$ OPTION_GROUP BEGIN: Filters (Choose One or None)
 
-#$ OPTION BEGIN (Unchecked): Include RPM Filter (F7)?
+#$ OPTION BEGIN (Unchecked): Include RPM Filter (F7)? (Dshot600 8k PID Loop Strongly Recommended)
 #$ INCLUDE: presets/4.3/filters/defaults.txt
 
 # ------- End Defaults --------
@@ -120,7 +154,7 @@ set simplified_dterm_filter_multiplier = 125
 set yaw_lowpass_hz = 100
 #$ OPTION END
 
-#$ OPTION BEGIN (Unchecked): Include RPM Filter (F4)?
+#$ OPTION BEGIN (Unchecked): Include RPM Filter (F4)? (Dshot300 and 4k PID Loop Strongly Recommended)
 #$ INCLUDE: presets/4.3/filters/defaults.txt
 
 # ------- End Defaults --------
