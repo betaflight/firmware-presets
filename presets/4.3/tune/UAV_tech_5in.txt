@@ -17,7 +17,7 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: Filters Tab Changes:
 #$ DESCRIPTION:
-#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/25570978/158019573-7b20ec30-b125-421f-8f5f-73db856a8273.png"><img src="https://user-images.githubusercontent.com/25570978/158019573-7b20ec30-b125-421f-8f5f-73db856a8273.png" width="500px" style="margin-left: auto; margin-right: auto; display: block;"/></a>
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/25570978/175781771-5adb9234-6f6b-4f42-8fbe-294699959dad.png"><img src="https://user-images.githubusercontent.com/25570978/175781771-5adb9234-6f6b-4f42-8fbe-294699959dad.png" width="500px" style="margin-left: auto; margin-right: auto; display: block;"/></a>
 #$ DESCRIPTION:
 #$ DESCRIPTION: Information:
 #$ DESCRIPTION: -----------
@@ -28,6 +28,10 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: Options (click for video):
 #$ DESCRIPTION: -----------
+#$ DESCRIPTION: - [Low Gyro Noise](https://youtu.be/WiWr0gP3AT0) <--CLICK for topic video
+#$ DESCRIPTION:
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/25570978/175781642-3e42c38b-2ca6-440a-928b-854dd4d32d2c.png"><img src="https://user-images.githubusercontent.com/25570978/175781642-3e42c38b-2ca6-440a-928b-854dd4d32d2c.png" width="500px" style="margin-left: auto; margin-right: auto; display: block;"/></a>
+#$ DESCRIPTION:
 #$ DESCRIPTION: - [48K ESC PWM](https://youtu.be/v3806Incpvo) <--CLICK for topic video
 #$ DESCRIPTION:
 #$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/25570978/158003506-357ef669-d03d-4b54-8509-e167c5f857ef.png"><img src="https://user-images.githubusercontent.com/25570978/158003506-357ef669-d03d-4b54-8509-e167c5f857ef.png" width="500px" style="margin-left: auto; margin-right: auto; display: block;"/></a>
@@ -47,12 +51,9 @@
 
 
 # -- Filter Settings --
-set simplified_gyro_filter = OFF
-set gyro_lpf1_static_hz = 0
-set gyro_lpf2_static_hz = 0
-set gyro_lpf1_dyn_min_hz = 0
-set gyro_lpf1_dyn_max_hz = 0
-set dyn_notch_count = 4
+set simplified_gyro_filter = ON
+set simplified_gyro_filter_multiplier = 60
+set dyn_notch_count = 3
 set dyn_notch_min_hz = 125
 set dyn_notch_max_hz = 650
 set simplified_dterm_filter = ON
@@ -73,12 +74,23 @@ set pidsum_limit_yaw = 1000
 
 simplified_tuning apply
 
-#$ OPTION BEGIN (UNCHECKED): 48k ESC PWM
-# -- ADDER: For 48khz PWM --
+#$ OPTION BEGIN (UNCHECKED): LOW GYRO NOISE BUILDS
+# -- ADDER: For low gyro noise builds --
+set simplified_gyro_filter = OFF
+set gyro_lpf1_static_hz = 0
+set gyro_lpf2_static_hz = 0
+set gyro_lpf1_dyn_min_hz = 0
+set gyro_lpf1_dyn_max_hz = 0
+set dyn_notch_count = 4
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): 48k+ ESC PWM
+# -- ADDER: For 48khz+ PWM --
 set thrust_linear = 20
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): RPM filtering
+# -- ADDER: Enabling RPM filtering --
 set motor_pwm_protocol = DSHOT600
 set dshot_bidir = ON
 set rpm_filter_harmonics = 2
@@ -86,5 +98,6 @@ set dyn_notch_count = 2
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): Dynamic Idle
+# -- ADDER: Enabling Dynamic Idle --
 set dyn_idle_min_rpm = 35
 #$ OPTION END
