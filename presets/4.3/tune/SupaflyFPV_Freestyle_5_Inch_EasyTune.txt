@@ -47,10 +47,6 @@ set dterm_lpf2_static_hz = 140
 
 set anti_gravity_gain = 4000
 
-# -- Feedforward jitter reduction --
-
-set feedforward_jitter_factor = 12
-
 #$ OPTION BEGIN (CHECKED): RPM filtering
 
 set motor_pwm_protocol = DSHOT600
