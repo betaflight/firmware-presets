@@ -7,13 +7,13 @@
 
 #$ PARSER: MARKED
 
-#$ DESCRIPTION: [<img src="https://supaflyfpv.com/wp-content/uploads/2022/06/Logo-Cropped192.svg" width="220px" style="margin-left: auto; margin-right: auto; display: block;"/>](https://supaflyfpv.com/betaflight-setup/)
+#$ DESCRIPTION: [<img src="https://supaflyfpv.com/wp-content/uploads/2022/06/Logo-Cropped192.svg" width="220px" style="margin-left: auto; margin-right: auto; display: block;"/>](https://supaflyfpv.com)
 #$ DESCRIPTION:
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION:
 #$ DESCRIPTION: ### SupaflyFPV 7 Inch Freestyle Preset
 #$ DESCRIPTION:
-$ DESCRIPTION: <br>
+#$ DESCRIPTION: <br>
 #$ DESCRIPTION:
 #$ DESCRIPTION: #### New Higher Performance! Pick your options from the drop-down:
 #$ DESCRIPTION:
@@ -22,8 +22,7 @@ $ DESCRIPTION: <br>
 #$ DESCRIPTION: * RC Link Option for fast or cinematic response
 #$ DESCRIPTION: * RPM Filtering recommended on Blheli32 esc or de-select if esc is Blheli-S
 #$ DESCRIPTION: * Apply 'Rough Motors' option if your motors or frame are old/beat up.
-#$ DESCRIPTION: * Pick broad PIDs option for 4s or 6s....
-#$ DESCRIPTION: * For further optimisation to your motor kv [use this custom PID calculator](https://supaflyfpv.com/betaflight-setup/)
+#$ DESCRIPTION: * For further optimisation to your specific motor kv [use this custom PID calculator](https://supaflyfpv.com/betaflight-setup/)
 #$ DESCRIPTION: 
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION:
@@ -31,7 +30,7 @@ $ DESCRIPTION: <br>
 #$ DESCRIPTION:
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION:
-#$ DESCRIPTION: Support, feedback and chilling:
+#$ DESCRIPTION: Support, feedback and chat:
 #$ DESCRIPTION:
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION:
@@ -39,7 +38,7 @@ $ DESCRIPTION: <br>
 #$ DESCRIPTION:
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION:
-#$ DESCRIPTION:*[DISCORD SUPPORT/FEEDBACK](https://discord.gg/jtCePA9W)
+#$ DESCRIPTION:*[DISCORD SUPPORT/FEEDBACK](https://discord.gg/Gs5nTx4rE2)
 #$ DESCRIPTION:
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION: 
@@ -48,6 +47,7 @@ $ DESCRIPTION: <br>
 #$ INCLUDE: presets/4.3/filters/defaults.txt
 
 # -- Logging --
+
 set blackbox_sample_rate = 1/4
 set debug_mode = GYRO_SCALED
 
@@ -56,7 +56,9 @@ set debug_mode = GYRO_SCALED
 set dshot_bidir = OFF
 set simplified_gyro_filter = OFF
 set gyro_lpf1_static_hz = 0
-set gyro_lpf2_static_hz = 400
+set gyro_lpf1_dyn_min_hz = 0
+set gyro_lpf1_dyn_max_hz = 0
+set gyro_lpf2_static_hz = 300
 set dyn_notch_count = 4
 set dyn_notch_q = 300
 set dyn_notch_min_hz = 90
@@ -73,25 +75,18 @@ set dterm_lpf2_static_hz = 150
 
 # -- Antigravity --
 
-set anti_gravity_gain = 4500
+set anti_gravity_gain = 5000
 
-#$ OPTION BEGIN (UNCHECKED): Fast RC settings
+#$ OPTION BEGIN (UNCHECKED): Supafly Fast&Smooth RC Link settings 
 
 set feedforward_boost = 20
-set rc_smoothing_auto_factor = 25
-set rc_smoothing_auto_factor_throttle = 30
-set feedforward_jitter_factor = 10
-
-#$ OPTION END 
-
-#$ OPTION BEGIN (UNCHECKED): Cinematic RC settings
-
-set feedforward_boost = 10
-set rc_smoothing_auto_factor = 60
+set rc_smoothing_auto_factor = 40
 set rc_smoothing_auto_factor_throttle = 40
-set feedforward_jitter_factor = 14
+set feedforward_jitter_factor = 10
+set feedforward_transition = 20
+set feedforward_smooth_factor = 25
 
-#$ OPTION END 
+#$ OPTION END  
 
 #$ OPTION BEGIN (CHECKED): RPM filtering
 
@@ -109,8 +104,7 @@ set rpm_filter_q = 600
 
 #$ OPTION BEGIN (UNCHECKED): Rough/Old Motors (More Filtering)
 
-set gyro_lpf2_static_hz = 300
-set dyn_notch_q = 120
+set gyro_lpf2_static_hz = 120
 set rpm_filter_q = 500
 
 #$ OPTION END 
@@ -118,11 +112,11 @@ set rpm_filter_q = 500
 # -- Sliders --
 
 set simplified_master_multiplier = 140
-set simplified_i_gain = 85
-set simplified_d_gain = 110
+set simplified_i_gain = 90
+set simplified_d_gain = 115
 set simplified_pi_gain = 115
 set simplified_dmax_gain = 0
 set simplified_feedforward_gain = 90
-set simplified_pitch_d_gain = 105
+set simplified_pitch_d_gain = 110
 set simplified_pitch_pi_gain = 110
 simplified_tuning apply

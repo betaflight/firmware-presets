@@ -7,7 +7,7 @@
 
 #$ PARSER: MARKED
 
-#$ DESCRIPTION: [<img src="https://supaflyfpv.com/wp-content/uploads/2022/06/Logo-Cropped192.svg" width="220px" style="margin-left: auto; margin-right: auto; display: block;"/>](https://supaflyfpv.com/betaflight-setup/)
+#$ DESCRIPTION: [<img src="https://supaflyfpv.com/wp-content/uploads/2022/06/Logo-Cropped192.svg" width="220px" style="margin-left: auto; margin-right: auto; display: block;"/>](https://supaflyfpv.com)
 #$ DESCRIPTION:
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION:
@@ -19,11 +19,11 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION:
-#$ DESCRIPTION: * RC Link Option for fast or cinematic response
-#$ DESCRIPTION: * RPM Filtering recommended on Blheli32 esc or de-select if esc is Blheli-S
-#$ DESCRIPTION: * Apply 'Rough Motors' option if your motors or frame are old/beat up.
-#$ DESCRIPTION: * Pick broad PIDs option for 4s or 6s....
-#$ DESCRIPTION: * For further optimisation to your motor kv [use this custom PID calculator](https://supaflyfpv.com/betaflight-setup/)
+#$ DESCRIPTION: * Option for custom RC Link flava
+#$ DESCRIPTION: * RPM Filtering recommended on Blheli32 esc or de-select if ESC is not compatible
+#$ DESCRIPTION: * Apply 'Rough Motors' option if your motors or frame are old/beat up
+#$ DESCRIPTION: * Pick starter PIDs option - 4s works for 2400-2700kv motors or 6s for 1750 - 1950kv
+#$ DESCRIPTION: * For further optimisation to your specific motor kv [use this custom PID calculator](https://supaflyfpv.com/betaflight-setup/)
 #$ DESCRIPTION: 
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION:
@@ -31,7 +31,7 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION:
-#$ DESCRIPTION: Support, feedback and chilling:
+#$ DESCRIPTION: Support, feedback and chat:
 #$ DESCRIPTION:
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION:
@@ -39,7 +39,7 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION:
-#$ DESCRIPTION:*[DISCORD SUPPORT/FEEDBACK](https://discord.gg/jtCePA9W)
+#$ DESCRIPTION:*[DISCORD SUPPORT/FEEDBACK](https://discord.gg/Gs5nTx4rE2)
 #$ DESCRIPTION:
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION: 
@@ -78,27 +78,18 @@ set dterm_lpf2_static_hz = 150
 
 # -- Antigravity --
 
-set anti_gravity_gain = 4500
+set anti_gravity_gain = 5000
 
-
-#$ OPTION BEGIN (UNCHECKED): Fast RC settings
+#$ OPTION BEGIN (UNCHECKED): Supafly Fast&Smooth RC Link settings 
 
 set feedforward_boost = 20
-set rc_smoothing_auto_factor = 25
-set rc_smoothing_auto_factor_throttle = 30
-set feedforward_jitter_factor = 10
-
-#$ OPTION END 
-
-
-#$ OPTION BEGIN (UNCHECKED): Cinematic RC settings
-
-set feedforward_boost = 10
-set rc_smoothing_auto_factor = 60
+set rc_smoothing_auto_factor = 40
 set rc_smoothing_auto_factor_throttle = 40
-set feedforward_jitter_factor = 14
+set feedforward_jitter_factor = 10
+set feedforward_transition = 20
+set feedforward_smooth_factor = 25
 
-#$ OPTION END 
+#$ OPTION END  
 
 #$ OPTION BEGIN (CHECKED): RPM filtering
 
@@ -127,8 +118,8 @@ set rpm_filter_q = 500
 # -- Sliders --
 
 set simplified_master_multiplier = 130
-set simplified_i_gain = 75
-set simplified_d_gain = 105
+set simplified_i_gain = 80
+set simplified_d_gain = 110
 set simplified_pi_gain = 110
 set simplified_dmax_gain = 0
 set simplified_feedforward_gain = 90
@@ -142,12 +133,12 @@ simplified_tuning apply
 # -- Sliders --
 
 set simplified_master_multiplier = 115
-set simplified_i_gain = 75
-set simplified_d_gain = 105
+set simplified_i_gain = 80
+set simplified_d_gain = 110
 set simplified_pi_gain = 110
 set simplified_dmax_gain = 0
 set simplified_feedforward_gain = 90
-set simplified_pitch_pi_gain = 120
+set simplified_pitch_pi_gain = 110
 simplified_tuning apply
 
 #$ OPTION END
