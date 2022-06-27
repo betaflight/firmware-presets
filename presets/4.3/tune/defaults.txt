@@ -69,7 +69,6 @@ set tpa_mode = D
 
 # -- Feedforward (default) --
 set feedforward_transition = 0
-set feedforward_boost = 15
 set feedforward_max_rate_limit = 90
 
 # -- Feedforward averaging (do not change)--
