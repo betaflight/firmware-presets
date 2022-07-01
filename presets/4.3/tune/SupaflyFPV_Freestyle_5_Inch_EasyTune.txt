@@ -9,39 +9,23 @@
 
 #$ DESCRIPTION: [<img src="https://supaflyfpv.com/wp-content/uploads/2022/06/Logo-Cropped192.svg" width="220px" style="margin-left: auto; margin-right: auto; display: block;"/>](https://supaflyfpv.com)
 #$ DESCRIPTION:
-#$ DESCRIPTION: <br>
-#$ DESCRIPTION:
 #$ DESCRIPTION: ### SupaflyFPV 5 Inch Freestyle Preset
 #$ DESCRIPTION:
-#$ DESCRIPTION: <br>
-#$ DESCRIPTION:
 #$ DESCRIPTION: #### New Higher Performance! Pick your options from the drop-down:
-#$ DESCRIPTION:
-#$ DESCRIPTION: <br>
 #$ DESCRIPTION:
 #$ DESCRIPTION: * RPM Filtering recommended on Blheli32 esc or de-select if ESC is not compatible
 #$ DESCRIPTION: * Apply 'Rough Motors' option if your motors or frame are old/beat up
 #$ DESCRIPTION: * Pick starter PIDs option - 4s works for 2400-2700kv motors or 6s for 1750 - 1950kv
 #$ DESCRIPTION: * For further optimisation to your specific motor kv [use this custom PID calculator](https://supaflyfpv.com/betaflight-setup/)
 #$ DESCRIPTION: 
-#$ DESCRIPTION: <br>
-#$ DESCRIPTION:
 #$ DESCRIPTION: Enjoy!
-#$ DESCRIPTION:
-#$ DESCRIPTION: <br>
 #$ DESCRIPTION:
 #$ DESCRIPTION: Support, feedback and chat:
 #$ DESCRIPTION:
-#$ DESCRIPTION: <br>
-#$ DESCRIPTION:
 #$ DESCRIPTION:*[FACEBOOK SUPPORT/FEEDBACK](https://www.facebook.com/groups/supaflyfpv/)
-#$ DESCRIPTION:
-#$ DESCRIPTION: <br>
 #$ DESCRIPTION:
 #$ DESCRIPTION:*[DISCORD SUPPORT/FEEDBACK](https://discord.gg/Gs5nTx4rE2)
 #$ DESCRIPTION:
-#$ DESCRIPTION: <br>
-#$ DESCRIPTION: 
 #$ INCLUDE_WARNING: misc/warnings/en/rpm_filters.txt
 #$ INCLUDE: presets/4.3/tune/defaults.txt
 #$ INCLUDE: presets/4.3/filters/defaults.txt
