@@ -22,7 +22,7 @@
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION:
 #$ DESCRIPTION: * RPM Filtering recommended on Blheli32 esc or de-select if ESC is not compatible
-#$ DESCRIPTION: * Default high performance filters, or apply 'Rough Motors' option if your motors or frame are old/beat up
+#$ DESCRIPTION: * Apply 'Rough Motors' option if your motors or frame are old/beat up
 #$ DESCRIPTION: * Pick starter PIDs option - 4s works for 2400-2700kv motors or 6s for 1750 - 1950kv
 #$ DESCRIPTION: * For optimisation to your specific motor kv and lipo [use this custom PID calculator](https://supaflyfpv.com/betaflight-setup/)
 #$ DESCRIPTION: 
