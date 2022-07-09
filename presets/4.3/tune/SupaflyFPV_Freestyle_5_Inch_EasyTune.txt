@@ -1,5 +1,5 @@
 #$ TITLE: SupaflyFPV Freestyle 5 Inch
-#$ FIRMWARE_VERSION: 4.3, 4.4
+#$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: TUNE
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: Supafly, SupaflyFPV, 4S, 6S, Freestyle, 5 inch, 5"
@@ -7,33 +7,50 @@
 
 #$ PARSER: MARKED
 
-#$ DESCRIPTION: [<img src="https://supaflyfpv.com/wp-content/uploads/2022/06/Logo-Cropped192.svg" width="220px" style="margin-left: auto; margin-right: auto; display: block;"/>](https://supaflyfpv.com)
+#$ DESCRIPTION: <a href="https://supaflyfpv.com"><img src="https://supaflyfpv.com/wp-content/uploads/2022/06/Logo-Cropped192.svg" width="220px" style="margin-left: auto; margin-right: auto; display: block;"/></a>
+#$ DESCRIPTION:
+#$ DESCRIPTION: <br>
 #$ DESCRIPTION:
 #$ DESCRIPTION: ### SupaflyFPV 5 Inch Freestyle Preset
 #$ DESCRIPTION:
-#$ DESCRIPTION: #### New Higher Performance! Pick your options from the drop-down:
+#$ DESCRIPTION: <br>
+#$ DESCRIPTION:
+#$ DESCRIPTION: #### New default Higher Performance! 
+#$ DESCRIPTION:
+#$ DESCRIPTION: Pick your options from the drop-down:
+#$ DESCRIPTION:
+#$ DESCRIPTION: <br>
 #$ DESCRIPTION:
 #$ DESCRIPTION: * RPM Filtering recommended on Blheli32 esc or de-select if ESC is not compatible
-#$ DESCRIPTION: * Apply 'Rough Motors' option if your motors or frame are old/beat up
+#$ DESCRIPTION: * Default high performance filters, or apply 'Rough Motors' option if your motors or frame are old/beat up
 #$ DESCRIPTION: * Pick starter PIDs option - 4s works for 2400-2700kv motors or 6s for 1750 - 1950kv
-#$ DESCRIPTION: * For further optimisation to your specific motor kv [use this custom PID calculator](https://supaflyfpv.com/betaflight-setup/)
+#$ DESCRIPTION: * For optimisation to your specific motor kv and lipo [use this custom PID calculator](https://supaflyfpv.com/betaflight-setup/)
 #$ DESCRIPTION: 
+#$ DESCRIPTION: <br>
+#$ DESCRIPTION:
 #$ DESCRIPTION: Enjoy!
+#$ DESCRIPTION:
+#$ DESCRIPTION: <br>
+#$ DESCRIPTION:
+#$ DESCRIPTION: * Remember to pick your RC Link preset from the RC_LINK category
+#$ DESCRIPTION:
+#$ DESCRIPTION: <br>
 #$ DESCRIPTION:
 #$ DESCRIPTION: Support, feedback and chat:
 #$ DESCRIPTION:
+#$ DESCRIPTION: <br>
+#$ DESCRIPTION:
 #$ DESCRIPTION:*[FACEBOOK SUPPORT/FEEDBACK](https://www.facebook.com/groups/supaflyfpv/)
+#$ DESCRIPTION:
+#$ DESCRIPTION: <br>
 #$ DESCRIPTION:
 #$ DESCRIPTION:*[DISCORD SUPPORT/FEEDBACK](https://discord.gg/Gs5nTx4rE2)
 #$ DESCRIPTION:
+#$ DESCRIPTION: <br>
+#$ DESCRIPTION: 
 #$ INCLUDE_WARNING: misc/warnings/en/rpm_filters.txt
 #$ INCLUDE: presets/4.3/tune/defaults.txt
 #$ INCLUDE: presets/4.3/filters/defaults.txt
-
-# -- Logging --
-
-set blackbox_sample_rate = 1/4
-set debug_mode = GYRO_SCALED
 
 # -- Non-RPM Filtering --
 
@@ -70,10 +87,10 @@ set anti_gravity_gain = 5000
 set dshot_bidir = ON
 set motor_pwm_protocol = DSHOT600
 set rpm_filter_harmonics = 1
-set rpm_filter_q = 800
-set rpm_filter_fade_range_hz = 100
+set rpm_filter_q = 1000
 set dyn_notch_count = 2
 set dyn_notch_q = 400
+set gyro_lpf2_static_hz = 800
 
 #$ OPTION END 
 

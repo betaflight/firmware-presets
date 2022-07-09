@@ -1,5 +1,5 @@
 #$ TITLE: SupaflyFPV Freestyle 6 Inch
-#$ FIRMWARE_VERSION: 4.3, 4.4
+#$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: TUNE
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: Supafly, SupaflyFPV, Freestyle, 6", 6 Inch
@@ -44,12 +44,6 @@
 #$ INCLUDE_WARNING: misc/warnings/en/rpm_filters.txt
 #$ INCLUDE: presets/4.3/tune/defaults.txt
 #$ INCLUDE: presets/4.3/filters/defaults.txt
-
-
-# -- Logging --
-
-set blackbox_sample_rate = 1/4
-set debug_mode = GYRO_SCALED
 
 # -- Non-RPM Filtering --
 
