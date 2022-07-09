@@ -32,10 +32,6 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION:
-#$ DESCRIPTION: * Remember to pick your RC Link preset from the RC_LINK category
-#$ DESCRIPTION:
-#$ DESCRIPTION: <br>
-#$ DESCRIPTION:
 #$ DESCRIPTION: Support, feedback and chat:
 #$ DESCRIPTION:
 #$ DESCRIPTION: <br>
