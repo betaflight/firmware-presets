@@ -15,11 +15,15 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION:
-#$ DESCRIPTION: #### New Higher Performance! Pick your options from the drop-down:
+#$ DESCRIPTION: #### New default Higher Performance! 
 #$ DESCRIPTION:
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION:
-#$ DESCRIPTION: * RPM Filtering recommended on Blheli32 esc or de-select if ESC is not compatible
+#$ DESCRIPTION: Pick your options from the drop-down:
+#$ DESCRIPTION:
+#$ DESCRIPTION: <br>
+#$ DESCRIPTION:
+#$ DESCRIPTION: * RPM Filtering recommended on compatible ESC or de-select if not available
 #$ DESCRIPTION: * Apply 'Rough Motors' option if your motors or frame are old/beat up
 #$ DESCRIPTION: * For optimisation to your specific motor kv and lipo [use this custom PID calculator](https://supaflyfpv.com/betaflight-setup/)
 #$ DESCRIPTION: 

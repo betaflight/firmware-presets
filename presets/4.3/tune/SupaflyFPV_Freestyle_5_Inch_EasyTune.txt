@@ -17,11 +17,13 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: #### New default Higher Performance! 
 #$ DESCRIPTION:
+#$ DESCRIPTION: <br>
+#$ DESCRIPTION:
 #$ DESCRIPTION: Pick your options from the drop-down:
 #$ DESCRIPTION:
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION:
-#$ DESCRIPTION: * RPM Filtering recommended on Blheli32 esc or de-select if ESC is not compatible
+#$ DESCRIPTION: * RPM Filtering recommended on compatible ESC or de-select if not available
 #$ DESCRIPTION: * Apply 'Rough Motors' option if your motors or frame are old/beat up
 #$ DESCRIPTION: * Pick starter PIDs option - 4s works for 2400-2700kv motors or 6s for 1750 - 1950kv
 #$ DESCRIPTION: * For optimisation to your specific motor kv and lipo [use this custom PID calculator](https://supaflyfpv.com/betaflight-setup/)
@@ -83,7 +85,7 @@ set anti_gravity_gain = 5000
 set dshot_bidir = ON
 set motor_pwm_protocol = DSHOT600
 set rpm_filter_harmonics = 1
-set rpm_filter_q = 1000
+set rpm_filter_q = 800
 set dyn_notch_count = 2
 set dyn_notch_q = 400
 set gyro_lpf2_static_hz = 800
