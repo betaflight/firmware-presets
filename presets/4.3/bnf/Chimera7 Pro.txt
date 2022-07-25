@@ -27,7 +27,7 @@
 #$ DESCRIPTION: * iFlight Fullsend LIPO 4.400mAh 6S (bottom mount) iFlight Fullsend Li-Ion 4.000mAh 6S (top mount)
 #$ DESCRIPTION:
 #$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/180727859-67edc609-7ae1-4b9c-9585-1d9db8eaa75e.png"><img src="https://user-images.githubusercontent.com/31681897/180727859-67edc609-7ae1-4b9c-9585-1d9db8eaa75e.png" width="200px" style="display: block; float: right;"/></a>
-#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/180725668-4f887ce9-6783-428a-8f95-373f30dcb01a.png"><img src="https://user-images.githubusercontent.com/31681897/180725668-4f887ce9-6783-428a-8f95-373f30dcb01a.png" width="200px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/180718929-6504b9d8-df78-4780-a4bc-c428b450d147.png"><img src="https://user-images.githubusercontent.com/31681897/180718929-6504b9d8-df78-4780-a4bc-c428b450d147.png" width="200px" style="display: block; float: right;"/></a>
 #$ DESCRIPTION:
 #$ DESCRIPTION: Radio Setup: 
 #$ DESCRIPTION: ------------
@@ -180,13 +180,13 @@ set simplified_pitch_pi_gain = 110
 set simplified_dterm_filter_multiplier = 120
 #$ OPTION END
 
-#$ OPTION BEGIN (CHECKED): iFlight Default Angle Mode
+#$ OPTION BEGIN (CHECKED): Default Angle Mode ALWAYS-ON
 # aux
 aux 0 0 0 1700 2100 0 0
 aux 1 1 1 1300 1700 0 0
 #$ OPTION END
 
-#$ OPTION BEGIN (CHECKED): iFlight Default Rates
+#$ OPTION BEGIN (CHECKED): Default Rates
 rateprofile 0
 
 # rateprofile 0
