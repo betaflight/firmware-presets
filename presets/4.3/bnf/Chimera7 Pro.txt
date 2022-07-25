@@ -25,7 +25,8 @@
 #$ DESCRIPTION: * Default HQ 7.5 inch props, GoPro Hero8 incl. battery installed
 #$ DESCRIPTION: * iFlight Fullsend LIPO 4.400mAh 6S (bottom mount) iFlight Fullsend Li-Ion 4.000mAh 6S (top mount)
 #$ DESCRIPTION:
-#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/180718929-6504b9d8-df78-4780-a4bc-c428b450d147.png"><img src="https://user-images.githubusercontent.com/31681897/180718929-6504b9d8-df78-4780-a4bc-c428b450d147.png" width="250px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/180718929-6504b9d8-df78-4780-a4bc-c428b450d147.png"><img src="https://user-images.githubusercontent.com/31681897/180718929-6504b9d8-df78-4780-a4bc-c428b450d147.png" width="200px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/180725668-4f887ce9-6783-428a-8f95-373f30dcb01a.png"><img src="https://user-images.githubusercontent.com/31681897/180725668-4f887ce9-6783-428a-8f95-373f30dcb01a.png" width="200px" style="display: block; float: right;"/></a>
 #$ DESCRIPTION:
 #$ DESCRIPTION: Radio Setup: 
 #$ DESCRIPTION: ------------
@@ -40,10 +41,10 @@
 #$ DESCRIPTION: * Responsive performance without jitter, Freestyle (faster moves) capability
 #$ DESCRIPTION: * Priorized flight performance over flight time
 #$ DESCRIPTION:
-#$ DESCRIPTION:
-#$ DESCRIPTION: GPS Rescue option:
+#$ DESCRIPTION: GPS Rescue options:
 #$ DESCRIPTION: --------
 #$ DESCRIPTION: * GPS Rescue is **NOT** a RTH (return to home) function!
+#$ DESCRIPTION: * Minimum 5 Sats for 3D fix to arm the quad (GPS Rescue active)!
 #$ DESCRIPTION: * Make sure you understand what this feature does before using it!
 #$ DESCRIPTION: * Always make sure to do a test flight in confined area!
 #$ DESCRIPTION:
@@ -58,7 +59,7 @@
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/201
 
 
-#$ OPTION BEGIN (UNCHECKED): Complete Factory Dump
+#$ OPTION BEGIN (CHECKED): Complete Factory Dump
 board_name IFLIGHT_BLITZ_F722
 manufacturer_id IFRC
 
@@ -95,7 +96,6 @@ set dyn_notch_count = 2
 set dyn_notch_q = 500
 set dyn_notch_min_hz = 100
 set dyn_notch_max_hz = 500
-set acc_calibration = 4,2,-14,1
 set mag_hardware = NONE
 set rssi_channel = 12
 set rc_smoothing_auto_factor = 35
@@ -108,14 +108,9 @@ set blackbox_sample_rate = 1/2
 set dshot_idle_value = 650
 set dshot_bidir = ON
 set motor_pwm_protocol = DSHOT600
-set failsafe_delay = 4
-set failsafe_procedure = GPS-RESCUE
 set yaw_motors_reversed = ON
 set small_angle = 180
 set gps_provider = UBLOX
-set gps_rescue_sanity_checks = RESCUE_SANITY_FS_ONLY
-set gps_rescue_min_sats = 5
-set gps_rescue_allow_arming_without_fix = ON
 set yaw_deadband = 5
 set osd_warn_core_temp = OFF
 set osd_warn_rssi = ON
@@ -172,7 +167,7 @@ set f_roll = 61
 set p_yaw = 72
 set i_yaw = 64
 set f_yaw = 61
-set angle_level_strength = 100
+set angle_level_strength = 50
 set d_min_roll = 66
 set d_min_pitch = 78
 set thrust_linear = 20
@@ -201,4 +196,14 @@ set pitch_expo = 54
 set yaw_expo = 54
 set tpa_rate = 50
 save
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): GPS Rescue ON (min. 5 Sats)
+set failsafe_procedure = GPS-RESCUE
+set gps_rescue_sanity_checks = RESCUE_SANITY_FS_ONLY
+set gps_rescue_min_sats = 5
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Arm without GPS fix ON
+set gps_rescue_allow_arming_without_fix = ON
 #$ OPTION END
