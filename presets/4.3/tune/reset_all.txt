@@ -75,11 +75,7 @@ set anti_gravity_gain = 3500
 #$ OPTION END
 
 #$ OPTION BEGIN (CHECKED): Feedforward
-set feedforward_boost = 18
 set feedforward_max_rate_limit = 95
-set feedforward_jitter_factor = 5
-set feedforward_jitter_factor = 7
-set feedforward_averaging = OFF
 #$ OPTION END
 
 #$ OPTION BEGIN (CHECKED): PID Sum Limit
