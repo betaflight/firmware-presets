@@ -9,7 +9,7 @@
 
 #$ DESCRIPTION: I am a Betaflight contributor, Youtube content creator, and professional tuner [www.theuavtech.com](https://www.theuavtech.com)
 #$ DESCRIPTION: 
-#$ DESCRIPTION: <a href="https://www.youtube.com/c/spatzengr-uav_tech"><img src="https://i0.wp.com/theuavtech.com/wp-content/uploads/2020/10/icon-150x150-1.png" width="125px" style="margin-left: auto; margin-right: auto; display: block;"/></a>
+#$ DESCRIPTION: <a href="https://shop.iflight-rc.com/"><img src="https://user-images.githubusercontent.com/31681897/180714478-44bcd30e-8c78-4c6d-b295-8dbeb0d263f4.png" width="500px" style="margin-left: auto; margin-right: auto; display: block;"/></a>
 #$ DESCRIPTION: 
 #$ DESCRIPTION: PIDs Tab Changes:
 #$ DESCRIPTION:
