@@ -180,13 +180,13 @@ set simplified_pitch_pi_gain = 110
 set simplified_dterm_filter_multiplier = 120
 #$ OPTION END
 
-#$ OPTION BEGIN (CHECKED): Default Angle Mode ALWAYS-ON
+#$ OPTION BEGIN (CHECKED): Angle Mode ALWAYS-ON (Safety Feature)
 # aux
 aux 0 0 0 1700 2100 0 0
-aux 1 1 1 1300 1700 0 0
+aux 1 1 1 1000 2100 0 0
 #$ OPTION END
 
-#$ OPTION BEGIN (CHECKED): Default Rates
+#$ OPTION BEGIN (CHECKED): Default Smooth Rates
 rateprofile 0
 
 # rateprofile 0
@@ -214,6 +214,6 @@ set gps_rescue_allow_arming_without_fix = ON
 set dyn_idle_min_rpm = 40
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED): 48kHz PWM Speed (optional)
+#$ OPTION BEGIN (UNCHECKED): 48kHz ESC PWM Speed (optional)
 set thrust_linear = 40
 #$ OPTION END
