@@ -7,7 +7,7 @@
 
 #$ PARSER: MARKED
 
-#$ DESCRIPTION: <a href="https://shop.iflight-rc.com/"><img src="https://user-images.githubusercontent.com/31681897/180714478-44bcd30e-8c78-4c6d-b295-8dbeb0d263f4.png" width="200px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION: <a href="https://shop.iflight-rc.com/"><img src="https://user-images.githubusercontent.com/31681897/180714478-44bcd30e-8c78-4c6d-b295-8dbeb0d263f4.png" width="150px" style="display: block; float: right;"/></a>
 #$ DESCRIPTION:
 #$ DESCRIPTION: This is the official iFlight factory tune (4.3 XINGtune) for the Chimera7 Pro!
 #$ DESCRIPTION: Please read instructions carefully! All factory default options have been selected automatically!
