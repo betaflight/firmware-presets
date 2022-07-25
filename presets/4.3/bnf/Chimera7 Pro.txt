@@ -7,11 +7,13 @@
 
 #$ PARSER: MARKED
 
+#$ DESCRIPTION: <a href="https://shop.iflight-rc.com/"><img src="https://user-images.githubusercontent.com/31681897/180714478-44bcd30e-8c78-4c6d-b295-8dbeb0d263f4.png" width="200px" style="display: block; float: right;"/>
+#$ DESCRIPTION:
 #$ DESCRIPTION: This is the official iFlight factory tune (4.3 XINGtune) for the Chimera7 Pro
-#$ DESCRIPTION: 
-#$ DESCRIPTION: <a href="https://shop.iflight-rc.com/"><img src="https://user-images.githubusercontent.com/31681897/180714478-44bcd30e-8c78-4c6d-b295-8dbeb0d263f4.png" width="250px" style="margin-left: auto; margin-right: auto; display: block;"/></a>
-#$ DESCRIPTION: 
+#$ DESCRIPTION: -------------
+#$ DESCRIPTION:
 #$ DESCRIPTION: Recommended BLHeli32 Settings:
+#$ DESCRIPTION:-------------
 #$ DESCRIPTION:
 #$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/180703619-a3398589-6557-4f1a-bc5d-2a5bd4ccc136.JPG"><img src="https://user-images.githubusercontent.com/31681897/180703619-a3398589-6557-4f1a-bc5d-2a5bd4ccc136.JPG" width="500px" style="margin-left: auto; margin-right: auto; display: block;"/></a>
 #$ DESCRIPTION:
@@ -22,12 +24,13 @@
 #$ DESCRIPTION: iFlight Fullsend LIPO 4.400mAh 6S (bottom mount) iFlight Fullsend Li-Ion 4.000mAh 6S (top mount)
 #$ DESCRIPTION: If you don't know what these features mean, click the links below for videos on each topic.
 #$ DESCRIPTION:
-#$ DESCRIPTION: <img src="https://user-images.githubusercontent.com/31681897/180718929-6504b9d8-df78-4780-a4bc-c428b450d147.png" width="200px" style="display: block; float: right;"/>
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/180718929-6504b9d8-df78-4780-a4bc-c428b450d147.png"><img src="https://user-images.githubusercontent.com/31681897/180718929-6504b9d8-df78-4780-a4bc-c428b450d147.png" width="250px" style="display: block; float: right;"/>
 #$ DESCRIPTION:
 #$ DESCRIPTION: Radio Setup: 
 #$ DESCRIPTION: ------------
 #$ DESCRIPTION: TBS Tango2 Crossfire (firmware 6.17), Nano RX locked to 50hz (Don't use dynamic mode!)
 #$ DESCRIPTION: Betaflight 4.3 CRSF 50hz preset
+#$ DESCRIPTION:
 #$ DESCRIPTION:
 #$ DESCRIPTION: Tuning aspects:
 #$ DESCRIPTION: ---------------
