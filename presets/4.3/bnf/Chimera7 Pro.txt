@@ -14,8 +14,9 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: Recommended BLHeli32 Settings:
 #$ DESCRIPTION:-------------
+#$ DESCRIPTION: Use 24khHz PWM Speed for maximumg performance.
 #$ DESCRIPTION:
-#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/180703619-a3398589-6557-4f1a-bc5d-2a5bd4ccc136.JPG"><img src="https://user-images.githubusercontent.com/31681897/180703619-a3398589-6557-4f1a-bc5d-2a5bd4ccc136.JPG" width="500px" style="margin-left: auto; margin-right: auto; display: block;"/></a>
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/180703619-a3398589-6557-4f1a-bc5d-2a5bd4ccc136.JPG"><img src="https://user-images.githubusercontent.com/31681897/180703619-a3398589-6557-4f1a-bc5d-2a5bd4ccc136.JPG" width="250px" style="display: block; float: rightk;"/></a>
 #$ DESCRIPTION:
 #$ DESCRIPTION: Tuning setup:
 #$ DESCRIPTION: -------------
