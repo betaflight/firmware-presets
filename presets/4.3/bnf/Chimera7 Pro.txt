@@ -9,49 +9,49 @@
 
 #$ DESCRIPTION: <a href="https://shop.iflight-rc.com/"><img src="https://user-images.githubusercontent.com/31681897/180714478-44bcd30e-8c78-4c6d-b295-8dbeb0d263f4.png" width="200px" style="display: block; float: right;"/></a>
 #$ DESCRIPTION:
-#$ DESCRIPTION: **This is the official iFlight factory tune (4.3 XINGtune) for the Chimera7 Pro**
+#$ DESCRIPTION: This is the official iFlight factory tune (4.3 XINGtune) for the Chimera7 Pro!
 #$ DESCRIPTION:
 #$ DESCRIPTION: Recommended BLHeli32 Settings:
 #$ DESCRIPTION:-------------
-#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/180703619-a3398589-6557-4f1a-bc5d-2a5bd4ccc136.JPG"><img src="https://user-images.githubusercontent.com/31681897/180703619-a3398589-6557-4f1a-bc5d-2a5bd4ccc136.JPG" width="250px" style="display: block; float: rightk;"/></a>
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/180703619-a3398589-6557-4f1a-bc5d-2a5bd4ccc136.JPG"><img src="https://user-images.githubusercontent.com/31681897/180703619-a3398589-6557-4f1a-bc5d-2a5bd4ccc136.JPG" width="250px" style="display: block; float: right;"/></a>
 #$ DESCRIPTION:
-#$ DESCRIPTION: Use 24khHz/byRPM PWM Speed for maximumg performance and setpoint tracking
-#$ DESCRIPTION: You can use PWM Low/High locked 48kHz/48kHz for a little longer flight times
-#$ DESCRIPTION: Add mode thrust_linear (24kHz 20%, 48kHz 30-50%)
+#$ DESCRIPTION: * Use 24khHz/byRPM PWM Speed for maximumg performance and setpoint tracking
+#$ DESCRIPTION: * You can use PWM Low/High locked 48kHz/48kHz for a little longer flight times
+#$ DESCRIPTION: * Add mode thrust_linear (24kHz 20%, 48kHz 30-50%)
 #$ DESCRIPTION:
 #$ DESCRIPTION: Tuning setup:
 #$ DESCRIPTION: -------------
-#$ DESCRIPTION: **FC:** iFlight Blitz F722 // BMI270 Gyro and **ESC:** iFlight Blitz E55 4in1 ESC
-#$ DESCRIPTION: Default HQ 7.5 inch props, GoPro Hero8 incl. battery installed
-#$ DESCRIPTION: iFlight Fullsend LIPO 4.400mAh 6S (bottom mount) iFlight Fullsend Li-Ion 4.000mAh 6S (top mount)
+#$ DESCRIPTION: * **FC:** iFlight Blitz F722 // BMI270 Gyro and **ESC:** iFlight Blitz E55 4in1 ESC
+#$ DESCRIPTION: * Default HQ 7.5 inch props, GoPro Hero8 incl. battery installed
+#$ DESCRIPTION: * iFlight Fullsend LIPO 4.400mAh 6S (bottom mount) iFlight Fullsend Li-Ion 4.000mAh 6S (top mount)
 #$ DESCRIPTION:
 #$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/180718929-6504b9d8-df78-4780-a4bc-c428b450d147.png"><img src="https://user-images.githubusercontent.com/31681897/180718929-6504b9d8-df78-4780-a4bc-c428b450d147.png" width="250px" style="display: block; float: right;"/></a>
 #$ DESCRIPTION:
 #$ DESCRIPTION: Radio Setup: 
 #$ DESCRIPTION: ------------
-#$ DESCRIPTION: TBS Tango2 Crossfire (firmware 6.17), Nano RX locked to 50hz (Do **NOT** use dynamic mode!)
-#$ DESCRIPTION: Betaflight 4.3 CRSF 50hz preset
+#$ DESCRIPTION: * TBS Tango2 Crossfire (firmware 6.17), Nano RX locked to 50hz (Do **NOT** use dynamic mode!)
+#$ DESCRIPTION: * Betaflight 4.3 CRSF 50hz preset
 #$ DESCRIPTION:
 #$ DESCRIPTION:
 #$ DESCRIPTION: Tuning aspects:
 #$ DESCRIPTION: ---------------
-#$ DESCRIPTION: PID tuning with minimal overshoot, minimum Setpoint delay
-#$ DESCRIPTION: Smooth forward flights with bigger batteries
-#$ DESCRIPTION: Responsive performance without jitter, Freestyle (faster moves) capability
-#$ DESCRIPTION: Priorized flight performance over flight time
+#$ DESCRIPTION: * PID tuning with minimal overshoot, minimum Setpoint delay
+#$ DESCRIPTION: * Smooth forward flights with bigger batteries
+#$ DESCRIPTION: * Responsive performance without jitter, Freestyle (faster moves) capability
+#$ DESCRIPTION: * Priorized flight performance over flight time
 #$ DESCRIPTION:
 #$ DESCRIPTION:
 #$ DESCRIPTION: GPS Rescue option:
 #$ DESCRIPTION: --------
-#$ DESCRIPTION: GPS Rescue is **NOT** a RTH (return to home) function!
-#$ DESCRIPTION: Make sure you understand what this feature does before using it!
-#$ DESCRIPTION: Always make sure to do a test flight in confined area!
+#$ DESCRIPTION: * GPS Rescue is **NOT** a RTH (return to home) function!
+#$ DESCRIPTION: * Make sure you understand what this feature does before using it!
+#$ DESCRIPTION: * Always make sure to do a test flight in confined area!
 #$ DESCRIPTION:
 #$ DESCRIPTION: Motor temperature:
 #$ DESCRIPTION: ------------------
-#$ DESCRIPTION: Big batteries can output high amps at high throttle
-#$ DESCRIPTION: Motors do get warm in aggressive flights
-#$ DESCRIPTION: If your motors are getting too hot, reduce the Master slider by 0.1 in the Betaflight "PID Tuning" tab
+#$ DESCRIPTION: * Big batteries can output high amps at high throttle
+#$ DESCRIPTION: * Motors do get warm in aggressive flights
+#$ DESCRIPTION: * If your motors are getting too hot, reduce the Master slider by 0.1 in the Betaflight "PID Tuning" tab
 #$ DESCRIPTION:
 #$ DESCRIPTION:
 #$ WARNING: TBS Crossfire users should NOT use dynamic RF mode, lock at 50hz for max. range! Don't forget to apply RC_LINK preset (CRSF,ELRS,SBUS, etc)!
