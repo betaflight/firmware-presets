@@ -756,8 +756,8 @@
       "priority": 1000000
     },
     {
-      "fullPath": "presets/4.3/bnf/UAV_tech_5in.txt",
-      "hash": "1203bf31eb887d7c2561bc23a7fd20e78fe6afcf4695e7488dab72b496e2dfe5",
+      "fullPath": "presets/4.3/bnf/Chimera7 Pro.txt",
+      "hash": "3e378f72124486cfaed41f0b2b109286a75c12fad1cbfa073045c0c82bc106d2",
       "title": "Chimera7 Pro",
       "firmware_version": [
         "4.3"
