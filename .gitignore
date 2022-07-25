@@ -56,3 +56,4 @@ eeprom.bin
 
 # NPM packages folder
 /node_modules
+.gitattributes
