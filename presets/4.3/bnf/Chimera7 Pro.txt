@@ -33,7 +33,8 @@
 #$ DESCRIPTION: ------------
 #$ DESCRIPTION: * Tuned with TBS Tango2 Crossfire (firmware 6.17), Nano RX 50hz locked, CRSF 50hz preset
 #$ DESCRIPTION: * **Do NOT** use CRSF dynamic RF-mode!
-#$ DESCRIPTION: * Apply the BF 4.3 RC_LINK preset for your protocol and packet rate!
+#$ DESCRIPTION: * **Do NOT forget to manually apply** the BF 4.3 RC_LINK preset for your protocol and packet rate!
+#$ DESCRIPTION: * Wrong configuration for your packet rate can cause noisy inputs or issues with your gyro setpoint!
 #$ DESCRIPTION:
 #$ DESCRIPTION: Tuning aspects:
 #$ DESCRIPTION: ---------------
@@ -47,7 +48,7 @@
 #$ DESCRIPTION: * GPS Rescue is **NOT** a RTH (return to home) function!
 #$ DESCRIPTION: * **Minimum 5 Sats** for 3D fix to arm the quad (GPS Rescue active)!
 #$ DESCRIPTION: * Make sure you understand what this feature does before using it!
-#$ DESCRIPTION: * Always make sure to do a test flight in confined area!
+#$ DESCRIPTION: * Always test GPS Rescue in confined area!
 #$ DESCRIPTION:
 #$ DESCRIPTION: Motor temperature:
 #$ DESCRIPTION: ------------------
