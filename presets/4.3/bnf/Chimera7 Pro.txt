@@ -15,17 +15,18 @@
 #$ DESCRIPTION:-------------
 #$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/180703619-a3398589-6557-4f1a-bc5d-2a5bd4ccc136.JPG"><img src="https://user-images.githubusercontent.com/31681897/180703619-a3398589-6557-4f1a-bc5d-2a5bd4ccc136.JPG" width="250px" style="display: block; float: right;"/></a>
 #$ DESCRIPTION:
-#$ DESCRIPTION: * Use 24khHz/byRPM PWM Speed for maximumg performance and setpoint tracking
+#$ DESCRIPTION: * Use 24khHz/byRPM PWM Speed for maximum performance and setpoint tracking
 #$ DESCRIPTION: * You can use PWM Low/High locked 48kHz/48kHz for a little longer flight times
 #$ DESCRIPTION: * Add mode thrust_linear (24kHz 20%, 48kHz 30-50%)
 #$ DESCRIPTION:
 #$ DESCRIPTION: Tuning setup:
 #$ DESCRIPTION: -------------
-#$ DESCRIPTION: * **FC:** iFlight Blitz F722 // BMI270 Gyro and **ESC:** iFlight Blitz E55 4in1 ESC
+#$ DESCRIPTION: * **FC:** iFlight Blitz F722 // BMI270 Gyro
+#$ DESCRIPTION: * **ESC:** iFlight Blitz E55 4in1 ESC
 #$ DESCRIPTION: * Default HQ 7.5 inch props, GoPro Hero8 incl. battery installed
 #$ DESCRIPTION: * iFlight Fullsend LIPO 4.400mAh 6S (bottom mount) iFlight Fullsend Li-Ion 4.000mAh 6S (top mount)
 #$ DESCRIPTION:
-#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/180718929-6504b9d8-df78-4780-a4bc-c428b450d147.png"><img src="https://user-images.githubusercontent.com/31681897/180718929-6504b9d8-df78-4780-a4bc-c428b450d147.png" width="200px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/180727859-67edc609-7ae1-4b9c-9585-1d9db8eaa75e.png"><img src="https://user-images.githubusercontent.com/31681897/180727859-67edc609-7ae1-4b9c-9585-1d9db8eaa75e.png" width="200px" style="display: block; float: right;"/></a>
 #$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/180725668-4f887ce9-6783-428a-8f95-373f30dcb01a.png"><img src="https://user-images.githubusercontent.com/31681897/180725668-4f887ce9-6783-428a-8f95-373f30dcb01a.png" width="200px" style="display: block; float: right;"/></a>
 #$ DESCRIPTION:
 #$ DESCRIPTION: Radio Setup: 
@@ -59,7 +60,7 @@
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/201
 
 
-#$ OPTION BEGIN (CHECKED): Complete Factory Dump
+#$ OPTION BEGIN (CHECKED): Factory Default Tune
 board_name IFLIGHT_BLITZ_F722
 manufacturer_id IFRC
 
@@ -79,13 +80,6 @@ beacon RX_SET
 
 # led
 led 0 0,0::L:0
-
-# aux
-aux 0 0 0 1700 2100 0 0
-aux 1 1 1 1300 1700 0 0
-aux 2 46 1 1700 2100 0 0
-aux 3 13 3 1700 2100 0 0
-aux 4 35 3 1700 2100 0 0
 
 # rxfail
 rxfail 5 s 1500
@@ -184,7 +178,15 @@ set simplified_feedforward_gain = 30
 set simplified_pitch_d_gain = 105
 set simplified_pitch_pi_gain = 110
 set simplified_dterm_filter_multiplier = 120
+#$ OPTION END
 
+#$ OPTION BEGIN (CHECKED): iFlight Default Angle Mode
+# aux
+aux 0 0 0 1700 2100 0 0
+aux 1 1 1 1300 1700 0 0
+#$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): iFlight Default Rates
 rateprofile 0
 
 # rateprofile 0
@@ -206,4 +208,12 @@ set gps_rescue_min_sats = 5
 
 #$ OPTION BEGIN (UNCHECKED): Arm without GPS fix ON
 set gps_rescue_allow_arming_without_fix = ON
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Dynamic Idle (optional)
+set dyn_idle_min_rpm = 40
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): 48kHz PWM Speed (optional)
+set thrust_linear = 40
 #$ OPTION END
