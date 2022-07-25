@@ -31,9 +31,9 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: Radio Setup: 
 #$ DESCRIPTION: ------------
-#$ DESCRIPTION: * TBS Tango2 Crossfire (firmware 6.17), Nano RX locked to 50hz (Do **NOT** use dynamic mode!)
-#$ DESCRIPTION: * Betaflight 4.3 CRSF 50hz preset
-#$ DESCRIPTION:
+#$ DESCRIPTION: * Tuned with TBS Tango2 Crossfire (firmware 6.17), Nano RX 50hz locked, CRSF 50hz preset
+#$ DESCRIPTION: * **Do NOT** use CRSF dynamic RF-mode!
+#$ DESCRIPTION: * Apply the BF 4.3 RC_LINK preset for your protocol and packet rate!
 #$ DESCRIPTION:
 #$ DESCRIPTION: Tuning aspects:
 #$ DESCRIPTION: ---------------
@@ -45,7 +45,7 @@
 #$ DESCRIPTION: GPS Rescue options:
 #$ DESCRIPTION: --------
 #$ DESCRIPTION: * GPS Rescue is **NOT** a RTH (return to home) function!
-#$ DESCRIPTION: * Minimum 5 Sats for 3D fix to arm the quad (GPS Rescue active)!
+#$ DESCRIPTION: * **Minimum 5 Sats** for 3D fix to arm the quad (GPS Rescue active)!
 #$ DESCRIPTION: * Make sure you understand what this feature does before using it!
 #$ DESCRIPTION: * Always make sure to do a test flight in confined area!
 #$ DESCRIPTION:
@@ -55,8 +55,7 @@
 #$ DESCRIPTION: * Motors do get warm in aggressive flights
 #$ DESCRIPTION: * If your motors are getting too hot, reduce the Master slider by 0.1 in the Betaflight "PID Tuning" tab
 #$ DESCRIPTION:
-#$ DESCRIPTION:
-#$ WARNING: TBS Crossfire users should NOT use dynamic RF mode, lock at 50hz for max. range! Don't forget to apply RC_LINK preset (CRSF,ELRS,SBUS, etc)!
+#$ WARNING: You've read the information attached to these factory defaults and take full responsibility for your own gear! Do a test flight in confined area after updating!
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/201
 
 
