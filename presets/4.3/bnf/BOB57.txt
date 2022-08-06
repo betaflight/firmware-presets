@@ -11,7 +11,7 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: This is the official iFlight factory tune (4.3 XINGtune) for the BOB57!
 #$ DESCRIPTION: Please read instructions carefully! All factory default options have been selected automatically!
-#$ DESCRIPTION: Version: 2022.07.22-V2.0 (BMI270)
+#$ DESCRIPTION: Version: 2022.07.14-V1.3
 #$ DESCRIPTION:
 #$ DESCRIPTION: Recommended BLHeli32 Settings:
 #$ DESCRIPTION:-------------
