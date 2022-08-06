@@ -15,11 +15,11 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: Recommended BLHeli32 Settings:
 #$ DESCRIPTION:-------------
-#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/183232135-89c55343-7ed5-4eb3-95d3-f3422cb52f22.png"><img src="https://user-images.githubusercontent.com/31681897/183232135-89c55343-7ed5-4eb3-95d3-f3422cb52f22.png" width="250px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/183232272-5c56265d-3d31-45aa-95c0-cff88fb3a9f6.png"><img src="https://user-images.githubusercontent.com/31681897/183232272-5c56265d-3d31-45aa-95c0-cff88fb3a9f6.png" width="250px" style="display: block; float: right;"/></a>
 #$ DESCRIPTION:
 #$ DESCRIPTION:
 #$ WARNING: You've read the information attached to these factory defaults and take full responsibility for your own gear! Do a test flight in confined area after updating!
-#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/201
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/277
 
 #$ OPTION BEGIN (CHECKED): Reset defaults before update
 defaults nosave
