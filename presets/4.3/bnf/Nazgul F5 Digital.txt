@@ -15,7 +15,7 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: Recommended BLHeli32 Settings:
 #$ DESCRIPTION:-------------
-#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/183231820-4a03ae91-e963-4492-b8d2-da4d254e6fd7.png"><img src="https://user-images.githubusercontent.com/31681897/183231820-4a03ae91-e963-4492-b8d2-da4d254e6fd7.png" width="250px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/183231921-b4f3f315-a259-4e1c-a315-b9ed5dc0c11b.png"><img src="https://user-images.githubusercontent.com/31681897/183231921-b4f3f315-a259-4e1c-a315-b9ed5dc0c11b.png" width="250px" style="display: block; float: right;"/></a>
 #$ DESCRIPTION:
 #$ DESCRIPTION:
 #$ WARNING: You've read the information attached to these factory defaults and take full responsibility for your own gear! Do a test flight in confined area after updating!
