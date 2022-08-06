@@ -1,4 +1,4 @@
-#$ TITLE: Nazgul F5 Analog
+#$ TITLE: Nazgul F5 HD
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: BNF
 #$ STATUS: EXPERIMENTAL
@@ -9,7 +9,7 @@
 
 #$ DESCRIPTION: <a href="https://shop.iflight-rc.com/"><img src="https://user-images.githubusercontent.com/31681897/180714478-44bcd30e-8c78-4c6d-b295-8dbeb0d263f4.png" width="150px" style="display: block; float: right;"/></a>
 #$ DESCRIPTION:
-#$ DESCRIPTION: This is the official iFlight factory tune (4.3 XINGtune) for the Nazgul F5 Analog!
+#$ DESCRIPTION: This is the official iFlight factory tune (4.3 XINGtune) for the Nazgul F5 HD!
 #$ DESCRIPTION: Please read instructions carefully! All factory default options have been selected automatically!
 #$ DESCRIPTION: Version: 2022.07.22-V2.0 (BMI270)
 #$ DESCRIPTION:
@@ -261,7 +261,7 @@ feature ANTI_GRAVITY
 
 # serial
 serial 20 1 115200 57600 0 115200
-serial 0 8192 115200 57600 0 115200
+serial 0 1 115200 57600 0 115200
 serial 1 64 115200 57600 0 115200
 serial 2 0 115200 57600 0 115200
 serial 3 2 115200 115200 0 115200
@@ -484,16 +484,11 @@ rxrange 2 1000 2000
 rxrange 3 1000 2000
 
 # vtxtable
-vtxtable bands 5
-vtxtable channels 8
-vtxtable band 1 BOSCAM_A A CUSTOM  5865 5845 5825 5805 5785 5765 5745 5725
-vtxtable band 2 BOSCAM_B B CUSTOM  5733 5752 5771 5790 5809 5828 5847 5866
-vtxtable band 3 BOSCAM_E E CUSTOM  5705 5685 5665    0 5885 5905    0    0
-vtxtable band 4 FATSHARK F CUSTOM  5740 5760 5780 5800 5820 5840 5860 5880
-vtxtable band 5 RACEBAND R CUSTOM  5658 5695 5732 5769 5806 5843 5880 5917
-vtxtable powerlevels 4
-vtxtable powervalues 25 200 400 600
-vtxtable powerlabels 25 200 400 600
+vtxtable bands 0
+vtxtable channels 0
+vtxtable powerlevels 0
+vtxtable powervalues
+vtxtable powerlabels
 
 # vtx
 vtx 0 0 0 0 0 900 900
@@ -646,13 +641,13 @@ set motor_poles = 14
 set motor_output_reordering = 0,1,2,3,4,5,6,7
 set thr_corr_value = 0
 set thr_corr_angle = 800
-set failsafe_delay = 4
+set failsafe_delay = 15
 set failsafe_off_delay = 10
 set failsafe_throttle = 1000
 set failsafe_switch_mode = STAGE1
 set failsafe_throttle_low_delay = 100
 set failsafe_procedure = DROP
-set failsafe_recovery_delay = 20
+set failsafe_recovery_delay = 10
 set failsafe_stick_threshold = 30
 set align_board_roll = 0
 set align_board_pitch = 0
@@ -740,7 +735,7 @@ set gps_rescue_ascend_rate = 500
 set gps_rescue_descend_rate = 150
 set gps_rescue_throttle_hover = 1280
 set gps_rescue_sanity_checks = RESCUE_SANITY_ON
-set gps_rescue_min_sats = 5
+set gps_rescue_min_sats = 8
 set gps_rescue_min_dth = 100
 set gps_rescue_allow_arming_without_fix = OFF
 set gps_rescue_alt_mode = MAX_ALT
@@ -818,9 +813,9 @@ set osd_warn_launch_control = ON
 set osd_warn_no_gps_rescue = ON
 set osd_warn_gps_rescue_disabled = ON
 set osd_warn_rssi = ON
-set osd_warn_link_quality = ON
+set osd_warn_link_quality = OFF
 set osd_warn_rssi_dbm = OFF
-set osd_warn_over_cap = OFF
+set osd_warn_over_cap = ON
 set osd_rssi_alarm = 20
 set osd_link_quality_alarm = 80
 set osd_rssi_dbm_alarm = -60
@@ -839,47 +834,47 @@ set osd_logo_on_arming_duration = 5
 set osd_tim1 = 2560
 set osd_tim2 = 2561
 set osd_vbat_pos = 234
-set osd_rssi_pos = 2390
-set osd_link_quality_pos = 2358
+set osd_rssi_pos = 2459
+set osd_link_quality_pos = 311
 set osd_link_tx_power_pos = 234
 set osd_rssi_dbm_pos = 299
 set osd_tim_1_pos = 234
-set osd_tim_2_pos = 2421
+set osd_tim_2_pos = 405
 set osd_remaining_time_estimate_pos = 234
-set osd_flymode_pos = 2381
+set osd_flymode_pos = 2478
 set osd_anti_gravity_pos = 234
 set osd_g_force_pos = 234
-set osd_throttle_pos = 234
-set osd_vtx_channel_pos = 2272
+set osd_throttle_pos = 245
+set osd_vtx_channel_pos = 373
 set osd_crosshairs_pos = 205
 set osd_ah_sbar_pos = 206
 set osd_ah_pos = 78
-set osd_current_pos = 2369
-set osd_mah_drawn_pos = 2401
+set osd_current_pos = 2401
+set osd_mah_drawn_pos = 2433
 set osd_motor_diag_pos = 234
-set osd_craft_name_pos = 2410
+set osd_craft_name_pos = 2542
 set osd_display_name_pos = 234
-set osd_gps_speed_pos = 342
+set osd_gps_speed_pos = 313
 set osd_gps_lon_pos = 234
 set osd_gps_lat_pos = 234
-set osd_gps_sats_pos = 2326
-set osd_home_dir_pos = 2347
-set osd_home_dist_pos = 2350
+set osd_gps_sats_pos = 2426
+set osd_home_dir_pos = 2511
+set osd_home_dist_pos = 2512
 set osd_flight_dist_pos = 234
 set osd_compass_bar_pos = 234
-set osd_altitude_pos = 2293
+set osd_altitude_pos = 2391
 set osd_pid_roll_pos = 234
 set osd_pid_pitch_pos = 234
 set osd_pid_yaw_pos = 234
 set osd_debug_pos = 234
-set osd_power_pos = 234
+set osd_power_pos = 388
 set osd_pidrate_profile_pos = 234
-set osd_warnings_pos = 14538
-set osd_avg_cell_voltage_pos = 2337
+set osd_warnings_pos = 14732
+set osd_avg_cell_voltage_pos = 2369
 set osd_pit_ang_pos = 234
 set osd_rol_ang_pos = 234
 set osd_battery_usage_pos = 234
-set osd_disarmed_pos = 2304
+set osd_disarmed_pos = 2336
 set osd_nheading_pos = 234
 set osd_up_down_reference_pos = 205
 set osd_nvario_pos = 234
@@ -943,12 +938,12 @@ set rate_6pos_switch = OFF
 set cpu_overclock = OFF
 set pwr_on_arm_grace = 5
 set enable_stick_arming = OFF
-set vtx_band = 5
-set vtx_channel = 3
-set vtx_power = 1
+set vtx_band = 0
+set vtx_channel = 0
+set vtx_power = 0
 set vtx_low_power_disarm = OFF
 set vtx_softserial_alt = OFF
-set vtx_freq = 5732
+set vtx_freq = 0
 set vtx_pit_mode_freq = 0
 set vtx_halfduplex = ON
 set vcd_video_system = AUTO
