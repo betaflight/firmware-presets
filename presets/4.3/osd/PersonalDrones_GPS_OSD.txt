@@ -9,7 +9,7 @@
 
 #$ DESCRIPTION: PersonalDrones standard OSD With GPS
 #$ DESCRIPTION: 
-#$ DESCRIPTION: Negozio FPV [www.PersonalDrones.it](https://www.personaldrones.it)
+#$ DESCRIPTION: [www.PersonalDrones.it](https://www.personaldrones.it)
 #$ DESCRIPTION: 
 #$ DESCRIPTION: <img src="https://www.webatwork.it/personaldrones/logo.png" width="250px" style="margin-left: auto; margin-right: auto; display: block;"/>
 
