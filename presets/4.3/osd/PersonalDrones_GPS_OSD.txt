@@ -4,12 +4,14 @@
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: defaults DJI OSD
 #$ AUTHOR: bgiovanny PersonalDrones
+
+#$ PARSER: MARKED
+
 #$ DESCRIPTION: PersonalDrones standard OSD With GPS
 #$ DESCRIPTION: 
-#$ DESCRIPTION: [www.PersonalDrones.it](https://www.personaldrones.it)
+#$ DESCRIPTION: Negozio FPV [www.PersonalDrones.it](https://www.personaldrones.it)
 #$ DESCRIPTION: 
 #$ DESCRIPTION: <img src="https://www.webatwork.it/personaldrones/logo.png" width="125px" style="margin-left: auto; margin-right: auto; display: block;"/>
-
 
 set osd_vbat_pos = 2063
 set osd_rssi_pos = 2497
