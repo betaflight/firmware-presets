@@ -1,4 +1,4 @@
-#$ TITLE: PersonalDrones_OSD
+#$ TITLE: PersonalDrones_GPS_OSD
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: OSD
 #$ STATUS: OFFICIAL

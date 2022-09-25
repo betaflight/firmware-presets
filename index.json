@@ -264,8 +264,8 @@
     },
     {
       "fullPath": "presets/4.3/osd/PersonalDrones_GPS_OSD.txt",
-      "hash": "3bfdc5974cdcdd5137db7cb6aa471c83f90f8e8db78ae1fe293cd2e5f57de993",
-      "title": "PersonalDrones_OSD",
+      "hash": "1fb5b79d54749a9fb9c8cf83fd40f542b79cbdc4f18ac4e61ddacee50f97820f",
+      "title": "PersonalDrones_GPS_OSD",
       "firmware_version": [
         "4.3"
       ],
