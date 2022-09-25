@@ -2,8 +2,8 @@
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: OSD
 #$ STATUS: OFFICIAL
-#$ KEYWORDS: defaults, reset, OSD
-#$ AUTHOR: bgiovanny
+#$ KEYWORDS: defaults DJI OSD
+#$ AUTHOR: bgiovanny PersonalDrones
 #$ DESCRIPTION: PersonalDrones standard OSD With GPS
 
 set osd_vbat_pos = 2063

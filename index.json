@@ -147,7 +147,7 @@
     ],
     "author": [
       "Betaflight",
-      "bgiovanny",
+      "bgiovanny PersonalDrones",
       "Ivan Efimov (Limon)"
     ],
     "keywords": [
@@ -169,6 +169,7 @@
       "CRSF",
       "default",
       "defaults",
+      "defaults DJI OSD",
       "filter",
       "filters",
       "ghost",
@@ -182,7 +183,6 @@
       "mode",
       "modes",
       "Normal",
-      "OSD",
       "pid",
       "Pure Race",
       "Race",
@@ -263,25 +263,8 @@
       "priority": 0
     },
     {
-      "fullPath": "presets/4.3/osd/defaults.txt",
-      "hash": "36eb8ae097d0362030b297477c971280aad5562ac512a3f7ffa91949ed56db82",
-      "title": "Default 4.3 OSD settings",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "OSD",
-      "status": "OFFICIAL",
-      "keywords": [
-        "defaults",
-        "reset",
-        "OSD"
-      ],
-      "author": "Betaflight",
-      "priority": 0
-    },
-    {
       "fullPath": "presets/4.3/osd/PersonalDrones_GPS_OSD.txt",
-      "hash": "34c1c28a2433204613e2a964653270680de881d6c2104ff55bfa26ec15c7adf8",
+      "hash": "3bfdc5974cdcdd5137db7cb6aa471c83f90f8e8db78ae1fe293cd2e5f57de993",
       "title": "PersonalDrones_OSD",
       "firmware_version": [
         "4.3"
@@ -289,16 +272,14 @@
       "category": "OSD",
       "status": "OFFICIAL",
       "keywords": [
-        "defaults",
-        "reset",
-        "OSD"
+        "defaults DJI OSD"
       ],
-      "author": "bgiovanny",
+      "author": "bgiovanny PersonalDrones",
       "priority": 0
     },
     {
       "fullPath": "presets/4.3/osd/PersonalDrones_OSD.txt",
-      "hash": "5bbc6c00de57c7c808c1bd56bcba7326060b91f6e3198be0ec4a383adef48867",
+      "hash": "eedbd977a123759644c527ad1ae183cb7ef754d882546a41c78276b0dad5feb3",
       "title": "PersonalDrones_OSD",
       "firmware_version": [
         "4.3"
@@ -306,11 +287,9 @@
       "category": "OSD",
       "status": "OFFICIAL",
       "keywords": [
-        "defaults",
-        "reset",
-        "OSD"
+        "defaults DJI OSD"
       ],
-      "author": "bgiovanny",
+      "author": "bgiovanny PersonalDrones",
       "priority": 0
     },
     {
