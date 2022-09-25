@@ -1,0 +1,24 @@
+#$ TITLE: PersonalDrones_GPS_OSD
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: OSD
+#$ STATUS: OFFICIAL
+#$ KEYWORDS: defaults DJI OSD
+#$ AUTHOR: bgiovanny PersonalDrones
+#$ DESCRIPTION: PersonalDrones standard OSD With GPS
+
+set osd_vbat_pos = 2063
+set osd_rssi_pos = 2497
+set osd_flymode_pos = 2057
+set osd_crosshairs_pos = 2286
+set osd_ah_sbar_pos = 2254
+set osd_mah_drawn_pos = 2059
+set osd_gps_speed_pos = 2264
+set osd_gps_lon_pos = 384
+set osd_gps_lat_pos = 352
+set osd_gps_sats_pos = 2074
+set osd_home_dir_pos = 2073
+set osd_home_dist_pos = 2069
+set osd_altitude_pos = 2326
+set osd_warnings_pos = 329
+set osd_avg_cell_voltage_pos = 2061
+set osd_disarmed_pos = 2540

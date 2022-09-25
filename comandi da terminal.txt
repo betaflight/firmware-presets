@@ -1,0 +1,4 @@
+C:\Users\bgiov\Documenti\github\firmware-presets>
+
+node indexer/check.js
+node indexer/indexer.js
