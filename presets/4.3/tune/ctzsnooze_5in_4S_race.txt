@@ -92,11 +92,11 @@ set dyn_idle_p_gain = 40
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): RPM enabled, noisy build
-#$ INCLUDE: presets/4.3/filters/default_rpm_noisy.txt
+#$ INCLUDE: presets/4.3/filters/basic_rpm_noisy.txt
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): NON-RPM ESCs, normal build
-#$ INCLUDE: presets/4.3/filters/default_no_rpm_normal.txt
+#$ INCLUDE: presets/4.3/filters/basic_no_rpm_normal.txt
 #$ OPTION END
 
 #$ OPTION_GROUP END

@@ -2,7 +2,7 @@
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: FILTERS
 #$ STATUS: OFFICIAL
-#$ KEYWORDS: rpm, filter, filters, filtering, very, noisy, very noisy, hot, basic, default, betaflight
+#$ KEYWORDS: rpm, filter, filters, filtering, very, noisy, very noisy, hot, basic, betaflight
 #$ AUTHOR: Betaflight
 #$ DESCRIPTION: WARNING: Requires RPM filtering - ensure that DShot Telemetry is working properly!
 #$ DESCRIPTION: WARNING: Too much filtering may cause wobbling.
@@ -21,7 +21,7 @@ set gyro_lpf1_dyn_min_hz = 0
 set gyro_lpf1_dyn_max_hz = 250
 set gyro_lpf1_static_hz = 0
 set gyro_lpf2_static_hz = 125
- 
+
 # -- Gyro Sliders (on by default) --
 # only lpf2 is active
 set simplified_gyro_filter_multiplier = 25
