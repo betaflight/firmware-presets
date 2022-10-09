@@ -2,7 +2,7 @@
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: FILTERS
 #$ STATUS: OFFICIAL
-#$ KEYWORDS: no rpm, filter, filters, filtering, very clean, very, clean, basic, default, betaflight
+#$ KEYWORDS: no rpm, filter, filters, filtering, very clean, very, clean, basic, betaflight
 #$ AUTHOR: Betaflight
 #$ DESCRIPTION: WARNING: Likely to cause motor overheating on many builds!
 #$ DESCRIPTION: Intended only for rock hard frames, motors with good bearings and true shafts, and perfectly balanced props.
