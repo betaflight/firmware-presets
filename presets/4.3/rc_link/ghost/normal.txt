@@ -1,7 +1,7 @@
 #$ TITLE: IRC Ghost (Mode: Normal)
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: RC_LINK
-#$ STATUS: EXPERIMENTAL
+#$ STATUS: OFFICIAL
 #$ KEYWORDS: 55Hz, Normal, ghost, rc, rx , link, ghost, IRC, GHST, immersionRC, immersion
 #$ AUTHOR: Ivan Efimov (Limon)
 
