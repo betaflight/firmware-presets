@@ -1,7 +1,7 @@
 #$ TITLE: Karate 'Viper Lite' Race  5"
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: TUNE
-#$ STATUS: EXPERIMENTAL
+#$ STATUS: COMMUNITY
 #$ KEYWORDS: karate, race, 5 inch, 5", sugarK, limon, ctzsnooze, KarateBrot, ultralite, viper, viper lite
 #$ AUTHOR: sugarK
 
