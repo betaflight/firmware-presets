@@ -1,6 +1,7 @@
 #$ TITLE: Diatone Mamba Ultra 1000 VTX Tables
 #$ FIRMWARE_VERSION: 4.2
 #$ FIRMWARE_VERSION: 4.3
+#$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: VTX
 #$ STATUS: COMMUNITY
 #$ KEYWORDS:  vtx, vtx table, vtxtable, diatone, mamba, ultra, ultra 1000

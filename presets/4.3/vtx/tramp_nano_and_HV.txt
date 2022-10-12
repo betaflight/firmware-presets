@@ -1,6 +1,7 @@
 #$ TITLE: IRC Tramp Nano and HV
 #$ FIRMWARE_VERSION: 4.2
 #$ FIRMWARE_VERSION: 4.3
+#$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: VTX
 #$ STATUS: COMMUNITY
 #$ KEYWORDS:  vtx, vtx table, IRC, tramp, HV, nano
