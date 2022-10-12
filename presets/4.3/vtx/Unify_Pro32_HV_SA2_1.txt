@@ -1,6 +1,7 @@
 #$ TITLE: TBS Unify Pro32 HV SA 2.1
 #$ FIRMWARE_VERSION: 4.2
 #$ FIRMWARE_VERSION: 4.3
+#$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: VTX
 #$ STATUS: COMMUNITY
 #$ KEYWORDS:  vtx, vtx table, tbs, unify , pro32, HV, SA 2.1

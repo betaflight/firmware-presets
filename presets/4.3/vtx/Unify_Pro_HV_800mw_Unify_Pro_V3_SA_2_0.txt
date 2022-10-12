@@ -1,6 +1,7 @@
 #$ TITLE: TBS Unify Pro HV 800mw / TBS Unify Pro V3 (5v) SA 2.0
 #$ FIRMWARE_VERSION: 4.2
 #$ FIRMWARE_VERSION: 4.3
+#$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: VTX
 #$ STATUS: COMMUNITY
 #$ KEYWORDS:  vtx, vtx table, tbs, unify pro, HV, SA 2.0

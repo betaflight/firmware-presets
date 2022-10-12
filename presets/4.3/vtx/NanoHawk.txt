@@ -1,6 +1,7 @@
 #$ TITLE: Emax NanoHawk 1S SmartAudio 2.0 VTX table
 #$ FIRMWARE_VERSION: 4.2
 #$ FIRMWARE_VERSION: 4.3
+#$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: VTX
 #$ STATUS: COMMUNITY
 #$ KEYWORDS: vtx, nanohawk, emax, smartaudio, sa, sa20, sa2.0
