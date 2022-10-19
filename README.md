@@ -102,6 +102,7 @@ If you want to add your presets to the **official Betaflight Presets Repo**, and
 6. Always self-check your PR in the GitHub web-view. Do it **every** time when you make a new PR, or if you update it. Respect the review team. If you don't check the web-view of your PR upon updates, why would they check. The main things to check in the web view: number of commits (should be one) and double check the code changes (Files changed tab).
 7. Don't forget about `#$ DISCUSSION: link/to/your/pr`
 8. If you messed up your PR and would like to start from scratch, do **not** close your existing PR. You can alwas start from scratch without closing your PR. Just save your preset somewhere locally on your PC, then remove your local branch and create a branch with the same name. When you done adding your preset to the branch just force-push it to the `origin`. Your PR is connected with your branch name.
+9. Use indentation for the code inside `#$ OPTION` and `#$ OPTION_GROUP`. 4 spaces for each level of nesting (see examples below).
 
 And remember - a new preset file needs a new PR. Modification for the existing preset also requires a new PR.
 
@@ -178,22 +179,22 @@ All field tags must be:
 <cli command n>
 
 #$ OPTION BEGIN (CHECKED): Region 1 name
-<cli command n + 1>
-<cli command n + 2>
-...
-<cli command m>
+    <cli command n + 1>
+    <cli command n + 2>
+    ...
+    <cli command m>
 #$ OPTION END
 
 #$ OPTION_GROUP BEGIN: This group name
-#$ OPTION BEGIN (UNCHECKED): Region 2 name
-<cli command m + 1>
-<cli command m + 2>
-#$ OPTION END
-#$ OPTION BEGIN (UNCHECKED): Region 3 name
-<cli command j + 1>
-<cli command j + 2>
-<cli command j + 3>
-#$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Region 2 name
+        <cli command m + 1>
+        <cli command m + 2>
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Region 3 name
+        <cli command j + 1>
+        <cli command j + 2>
+        <cli command j + 3>
+    #$ OPTION END
 #$ OPTION_GROUP END
 ```
 
@@ -269,19 +270,19 @@ Options can be 'grouped' under a 'title' or 'group name' using this syntax:
 
 ```
 #$ OPTION_GROUP BEGIN: your group name
-<options>
+    <options>
 #$ OPTION_GROUP END
 ````
 
 Complete `OPTION` example syntax looks like this:
 ```
 #$ OPTION_GROUP BEGIN: this group name
-#$ OPTION BEGIN (UNCHECKED): <Option1 name>
-CLI payload strings
-#$ OPTION END
-#$ OPTION BEGIN (UNCHECKED): <Option2 name>
-CLI payload strings
-#$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): <Option1 name>
+        CLI payload strings
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): <Option2 name>
+        CLI payload strings
+    #$ OPTION END
 #$ OPTION_GROUP END
 ```
 
