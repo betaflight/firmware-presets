@@ -1,0 +1,1 @@
+WARNING: Make ABSOLUTELY SURE that the Hardware > ADC Filter is un-checked! And both radio and the TX unit are all up-to-date with the latest EdgeTX, OpenTX or FreedomTX.

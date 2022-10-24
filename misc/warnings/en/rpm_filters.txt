@@ -1,0 +1,1 @@
+This tune works ONLY with DSHOT 600 or DSHOT 300. Using anything else is extremely unsafe.
