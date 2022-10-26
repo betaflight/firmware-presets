@@ -2,11 +2,11 @@
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: FILTERS
 #$ STATUS: OFFICIAL
-#$ KEYWORDS: rpm, DShot telemetry, filter, filters, clean, basic, default, betaflight
+#$ KEYWORDS: rpm, DShot telemetry, filter, filters, clean, basic, betaflight
 #$ AUTHOR: Betaflight
 #$ DESCRIPTION: WARNING: Required RPM filtering.  Ensure that DShot Telemetry is working properly!
 #$ DESCRIPTION: WARNING: May cause motor overheating!
-#$ DESCRIPTION: Intended for solid frames, motors with good bearings and clean props.  
+#$ DESCRIPTION: Intended for solid frames, motors with good bearings and clean props.
 #$ DESCRIPTION: If motors get hot, try a filter set for normal or noisy motors.
 #$ DESCRIPTION: If motors grind or make noise at idle, lower the D filter slider.
 

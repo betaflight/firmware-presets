@@ -79,6 +79,9 @@ set feedforward_max_rate_limit = 100
 # -- Dyn Idle --
 set dyn_idle_min_rpm = 30
 
+# -- Antigravity --
+set anti_gravity_gain = 2000
+
 #$ OPTION BEGIN (UNCHECKED): Noisy frames
     set dyn_notch_count = 3
     set dyn_notch_min_hz = 100

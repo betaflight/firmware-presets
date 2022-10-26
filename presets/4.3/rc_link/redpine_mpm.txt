@@ -1,7 +1,7 @@
 #$ TITLE: Redpine MPM
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: RC_LINK
-#$ STATUS: EXPERIMENTAL
+#$ STATUS: OFFICIAL
 #$ KEYWORDS: Redpine, rc, link, 666Hz
 #$ AUTHOR: ctzsnooze
 #$ DESCRIPTION: Basic RC link settings Redpine in a multiprotocol module for OpenTx

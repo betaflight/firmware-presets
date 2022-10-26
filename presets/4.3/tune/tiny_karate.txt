@@ -1,7 +1,7 @@
 #$ TITLE: 533 TinyTrainer Karate
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: TUNE
-#$ STATUS: EXPERIMENTAL
+#$ STATUS: COMMUNITY
 #$ KEYWORDS: karate, race, 533, 3 inch, 3", sugarK, shames, tiny, trainer, spec, tinyTrainer
 #$ AUTHOR: sugarK
 #$ DESCRIPTION: This racing tune was developed for the 533 TinyTrainer spec class with @Shames throwing his quad out the window of his office and sending me logs.

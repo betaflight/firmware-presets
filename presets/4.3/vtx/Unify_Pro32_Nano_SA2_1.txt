@@ -1,6 +1,7 @@
 #$ TITLE: TBS Unify Pro32 Nano - SA 2.1
 #$ FIRMWARE_VERSION: 4.2
 #$ FIRMWARE_VERSION: 4.3
+#$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: VTX
 #$ STATUS: COMMUNITY
 #$ KEYWORDS:  vtx, vtx table, tbs, unify, pro32, nano, SA 2.1

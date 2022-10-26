@@ -108,7 +108,7 @@ simplified_tuning apply
 #$ OPTION_GROUP BEGIN: Filters and RPM Features
 
 #$ OPTION BEGIN (UNCHECKED): Apply Default non-RPM Filters
-#$ INCLUDE: presets/4.3/filters/default_no_rpm_clean.txt
+#$ INCLUDE: presets/4.3/filters/basic_no_rpm_clean.txt
 #$ OPTION END
 
 #$ OPTION BEGIN (CHECKED): Apply Matching RPM Filters (Strongly Recommended)

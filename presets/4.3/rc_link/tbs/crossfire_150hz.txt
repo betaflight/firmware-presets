@@ -1,7 +1,7 @@
 #$ TITLE: TBS Crossfire 150Hz
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: RC_LINK
-#$ STATUS: EXPERIMENTAL
+#$ STATUS: OFFICIAL
 #$ KEYWORDS: 150Hz, TBS, Crossfire, Team Black Sheep, CRSF, rc, rx , link
 #$ AUTHOR: Ivan Efimov (Limon)
 

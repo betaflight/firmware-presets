@@ -119,6 +119,7 @@ set d_min_pitch = 51
 set d_max_advance = 0
 set auto_profile_cell_count = 3
 set throttle_boost = 12
+set vbat_sag_compensation = 0
 
 set simplified_master_multiplier = 135
 set simplified_i_gain = 85
@@ -214,17 +215,16 @@ set dyn_idle_i_gain = 42
 set dyn_idle_d_gain = 42
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED): Set VBat Sag Compensation = 77 for ALL Profiles
+#$ OPTION BEGIN (UNCHECKED): Set VBat Sag Compensation = 77 for OPEN  Profiles
 profile 0
 set vbat_sag_compensation = 77
 profile 1
 set vbat_sag_compensation = 77
-profile 2
-set vbat_sag_compensation = 77
+
 
 #$ OPTION END
 
-#$ OPTION BEGIN (CHECKED): Apply TPA Settings to all rateprofiles
+#$ OPTION BEGIN (CHECKED): Apply TPA Settings to all rateprofiles (Selects Rateprofile #1)
 rateprofile 0
 set tpa_rate = 72
 set tpa_breakpoint = 1250
@@ -257,6 +257,10 @@ set tpa_rate = 72
 set tpa_breakpoint = 1250
 #$ OPTION END
 
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: Motor Output Limiting using TexasSpec Calculator
+
 #$ OPTION BEGIN (UNCHECKED):  2000KV Motor Output Limit on 3S
 profile 2
 set motor_output_limit = 97
@@ -267,6 +271,11 @@ profile 2
 set motor_output_limit = 95
 #$ OPTION END
 
+#$ OPTION BEGIN (UNCHECKED):  2070KV Motor Output Limit on 3S
+profile 2
+set motor_output_limit = 94
+#$ OPTION END
+
 #$ OPTION BEGIN (UNCHECKED):  2100KV Motor Output Limit on 3S
 profile 2
 set motor_output_limit = 93
@@ -275,6 +284,11 @@ set motor_output_limit = 93
 #$ OPTION BEGIN (UNCHECKED):  2150KV Motor Output Limit on 3S
 profile 2
 set motor_output_limit = 92
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED):  2222KV Motor Output Limit on 3S
+profile 2
+set motor_output_limit = 91
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED):  2250KV Motor Output Limit on 3S

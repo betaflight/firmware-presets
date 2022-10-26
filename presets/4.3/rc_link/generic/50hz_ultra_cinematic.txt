@@ -1,7 +1,7 @@
 #$ TITLE: Generic 50Hz Ultra Cinematic
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: RC_LINK
-#$ STATUS: EXPERIMENTAL
+#$ STATUS: OFFICIAL
 #$ KEYWORDS: 50Hz, 20ms, rc, rx, link, smoothing
 #$ AUTHOR: Ivan Efimov (Limon)
 #$ DESCRIPTION: Generic RC link settings for ultra smooth cinematic flying with 50Hz RC link.
