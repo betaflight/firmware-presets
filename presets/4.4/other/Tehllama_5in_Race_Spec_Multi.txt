@@ -1,7 +1,7 @@
 #$ TITLE: Tehllama 5" Race Spec ONLY Multivoltage
 #$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: OTHER
-#$ STATUS: COMMUNITY
+#$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: 533, Freedom, FreedomSpec, Tune, Spec, Race, Llama, MultiVoltage, Texas, BMS, 3S, 5in, AutoSelect, MM, Omni
 #$ AUTHOR: Daniel Appel / Tehllama
 #$ DESCRIPTION: This is a multi-voltage SPEC tune built for 5in Race Builds in the 400-575g AUW range. 
