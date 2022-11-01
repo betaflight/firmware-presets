@@ -1,11 +1,12 @@
 #$ TITLE: TBS Unify Pro HV 800mw / TBS Unify Pro V3 (5v) SA 2.0
 #$ FIRMWARE_VERSION: 4.2
 #$ FIRMWARE_VERSION: 4.3
+#$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: VTX
 #$ STATUS: COMMUNITY
 #$ KEYWORDS:  vtx, vtx table, tbs, unify pro, HV, SA 2.0
 #$ AUTHOR: sugarK
-#$ DESCRIPTION: VTX table for both the TBS Unify Pro HV 800mw and TBS Unify Pro V3 (5v) SA 2.0. Note this table is as provided by the manufacture.
+#$ DESCRIPTION: VTX table for both the TBS Unify Pro HV 800mw and TBS Unify Pro V3 (5v) SA 2.0. Note this table is as provided by the manufacturer.
 #$ DESCRIPTION: The information provided on this preset is for educational and entertainment purposes only. Betaflight makes no representations as to the safety or legality of the use of any information provided herein. End users assume all responsibility and liability for ensuring they are complying with all relevant laws and regulations. 
 #$ DESCRIPTION: ----------
 #$ DESCRIPTION: Using the VTX tables as provided may be in breach of your local RF laws. It is up to the end user to research and comply with local regulations and in using these presets the user assumes all liability associated with breaching local regulations.

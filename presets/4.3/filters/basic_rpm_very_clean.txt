@@ -2,7 +2,7 @@
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: FILTERS
 #$ STATUS: OFFICIAL
-#$ KEYWORDS: rpm, filter, filters, filtering, very clean, very, clean, basic, default, betaflight
+#$ KEYWORDS: rpm, filter, filters, filtering, very clean, very, clean, basic, betaflight
 #$ AUTHOR: Betaflight
 #$ DESCRIPTION: WARNING: Ensure that DShot Telemetry is working properly!
 #$ DESCRIPTION: WARNING: Likely to cause motor overheating on many builds!

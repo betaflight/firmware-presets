@@ -1,7 +1,7 @@
 #$ TITLE: IRC Ghost (Long Range)
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: RC_LINK
-#$ STATUS: EXPERIMENTAL
+#$ STATUS: OFFICIAL
 #$ KEYWORDS: 15Hz, Long Range, ghost, rc, rx , link, ghost, IRC, GHST, immersionRC, immersion
 #$ AUTHOR: Ivan Efimov (Limon)
 

@@ -2,7 +2,7 @@
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: FILTERS
 #$ STATUS: OFFICIAL
-#$ KEYWORDS: filter, filters, filtering, noisy, no rpm, basic, default, betaflight
+#$ KEYWORDS: filter, filters, filtering, noisy, no rpm, basic, betaflight
 #$ AUTHOR: Betaflight
 #$ DESCRIPTION: Intended for slightly beaten up, or larger (7" and above), builds.
 #$ DESCRIPTION: If motors get hot, try a filter set for very noisy motors, or try lowering the D filter slider.

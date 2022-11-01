@@ -1,21 +1,36 @@
 #$ TITLE: OpenVTx
 #$ FIRMWARE_VERSION: 4.2
 #$ FIRMWARE_VERSION: 4.3
+#$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: VTX
 #$ STATUS: COMMUNITY
-#$ KEYWORDS:  vtx, vtx table, OpenVTx, TRAMP, SA 2.1, E7082VM, OVX300, OVX303, OP400
+#$ KEYWORDS:  vtx, vtx table, OpenVTx, TRAMP, SA 2.1, MSP
 #$ AUTHOR: Jye Smith
+
+#$ PARSER: MARKED
+
+#$ DESCRIPTION: 
+#$ DESCRIPTION: <img src="https://raw.githubusercontent.com/OpenVTx/Openvtx-configurator/master/src/assets/logo.png" width="235px" height="64" style="object-fit: cover; margin-left: auto; margin-right: auto; display: block;"/>
+#$ DESCRIPTION: 
 #$ DESCRIPTION: VTx tables for OpenVTx capable video transmitters.
-#$ DESCRIPTION:
-#$ DESCRIPTION: https://github.com/OpenVTx/OpenVTx
-#$ DESCRIPTION: ----------
+#$ DESCRIPTION: <br>
+#$ DESCRIPTION: MSP control is supported from OpenVTx v0.2.
+#$ DESCRIPTION: <br>
+#$ DESCRIPTION: Update using the online Configurator https://OpenVTx.org/
+#$ DESCRIPTION: <br>
+#$ DESCRIPTION: Source code can be found on GitHub https://github.com/OpenVTx/
+#$ DESCRIPTION: <br><br>
 #$ DESCRIPTION: The information provided on this preset is for educational and entertainment purposes only. Betaflight makes no representations as to the safety or legality of the use of any information provided herein. End users assume all responsibility and liability for ensuring they are complying with all relevant laws and regulations. 
-#$ DESCRIPTION: ----------
+#$ DESCRIPTION: <br><br>
 #$ DESCRIPTION: Using the VTX tables as provided may be in breach of your local RF laws. It is up to the end user to research and comply with local regulations and in using these presets the user assumes all liability associated with breaching local regulations.
+
 #$ DISCUSSION:  https://github.com/betaflight/firmware-presets/pull/157
+
 #$ INCLUDE_DISCLAIMER: misc/disclaimer/en/vtxtable.txt
 
-#$ OPTION BEGIN (CHECKED): TRAMP
+#$ FORCE_OPTIONS_REVIEW: TRUE
+
+#$ OPTION BEGIN (UNCHECKED): TRAMP (Betaflight 4.2+)
 vtxtable bands 7
 vtxtable channels 8
 vtxtable band 1 BOSCAM_A A CUSTOM  5865 5845 5825 5805 5785 5765 5745 5725
@@ -30,7 +45,7 @@ vtxtable powervalues 1 2 25 100 400
 vtxtable powerlabels 0 RCE 25 100 400
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED): SmartAudio 2.1
+#$ OPTION BEGIN (UNCHECKED): SmartAudio 2.1 (Betaflight 4.2+)
 vtxtable bands 6
 vtxtable channels 8
 vtxtable band 1 BOSCAM_A A FACTORY 5865 5845 5825 5805 5785 5765 5745 5725
@@ -43,3 +58,57 @@ vtxtable powerlevels 5
 vtxtable powervalues 1 2 14 20 26
 vtxtable powerlabels 0 RCE 25 100 400
 #$ OPTION END
+
+#$ OPTION_GROUP BEGIN: MSP (Betaflight 4.4+)
+
+    #$ OPTION BEGIN (UNCHECKED): UART 1
+		serial 0 131073 9600 57600 0 115200
+		set serialmsp_halfduplex = ON
+    #$ OPTION END
+	
+    #$ OPTION BEGIN (UNCHECKED): UART 2
+		serial 1 131073 9600 57600 0 115200
+		set serialmsp_halfduplex = ON
+    #$ OPTION END
+	
+    #$ OPTION BEGIN (UNCHECKED): UART 3
+		serial 2 131073 9600 57600 0 115200
+		set serialmsp_halfduplex = ON
+    #$ OPTION END
+	
+    #$ OPTION BEGIN (UNCHECKED): UART 4
+		serial 3 131073 9600 57600 0 115200
+		set serialmsp_halfduplex = ON
+    #$ OPTION END
+	
+    #$ OPTION BEGIN (UNCHECKED): UART 5
+		serial 4 131073 9600 57600 0 115200
+		set serialmsp_halfduplex = ON
+    #$ OPTION END
+	
+    #$ OPTION BEGIN (UNCHECKED): UART 6
+		serial 5 131073 9600 57600 0 115200
+		set serialmsp_halfduplex = ON
+    #$ OPTION END
+	
+    #$ OPTION BEGIN (UNCHECKED): UART 7
+		serial 6 131073 9600 57600 0 115200
+		set serialmsp_halfduplex = ON
+    #$ OPTION END
+	
+    #$ OPTION BEGIN (UNCHECKED): UART 8
+		serial 7 131073 9600 57600 0 115200
+		set serialmsp_halfduplex = ON
+    #$ OPTION END
+	
+    #$ OPTION BEGIN (UNCHECKED): UART 9
+		serial 8 131073 9600 57600 0 115200
+		set serialmsp_halfduplex = ON
+    #$ OPTION END
+	
+    #$ OPTION BEGIN (UNCHECKED): UART 10
+		serial 9 131073 9600 57600 0 115200
+		set serialmsp_halfduplex = ON
+    #$ OPTION END
+
+#$ OPTION_GROUP END

@@ -1,5 +1,6 @@
 #$ TITLE: 4.3 Blackbox disable settings
 #$ FIRMWARE_VERSION: 4.3
+#$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: OTHER
 #$ STATUS: OFFICIAL
 #$ KEYWORDS:  blackbox, logging, log, disable, sugarK

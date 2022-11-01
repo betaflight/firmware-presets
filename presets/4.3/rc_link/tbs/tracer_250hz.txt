@@ -1,7 +1,7 @@
 #$ TITLE: TBS Tracer 250Hz
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: RC_LINK
-#$ STATUS: EXPERIMENTAL
+#$ STATUS: OFFICIAL
 #$ KEYWORDS: 250Hz, TBS, Tracer, Team Black Sheep, CRSF, rc, rx , link
 #$ AUTHOR: Ivan Efimov (Limon)
 
