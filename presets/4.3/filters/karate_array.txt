@@ -1,13 +1,14 @@
-#$ TITLE: the Karate array 
+#$ TITLE: the Karate array
 #$ FIRMWARE_VERSION: 4.3
+#$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: FILTERS
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: filter, filters, karate, race, freesytle, suagrK, CTZsoonze, KarateBrot, 5"
 #$ AUTHOR: sugarK
 #$ DESCRIPTION: the Karate fitler array as developed by @CTZsoonze and @sugarK for 4.3 using @karateBrot's rpm cross fade code.
 #$ DESCRIPTION: NOTE this needs bidirectional Dshot support and RPM filtering active to use. DO NOT ATEMPT TO USE WITH OUT RPM FILTERING!
-#$ DESCRIPTION: This filtering array will work with most 5" race and freesytle builds that have a solid airframe and motors in good condition. 
-#$ DESCRIPTION: Follow the usual process of hover testing and safely checking out your tune before using. USE AT YOUR OWN RISK. 
+#$ DESCRIPTION: This filtering array will work with most 5" race and freesytle builds that have a solid airframe and motors in good condition.
+#$ DESCRIPTION: Follow the usual process of hover testing and safely checking out your tune before using. USE AT YOUR OWN RISK.
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/51
 #$ INCLUDE_WARNING: misc/warnings/en/rpm_filters.txt
 #$ INCLUDE: presets/4.3/filters/defaults.txt
@@ -36,9 +37,9 @@ set dterm_lpf1_dyn_expo = 7
 
 
 # OPTION BEGIN (UNCHECKED): Dshot300
-set motor_pwm_protocol = Dshot300
+    set motor_pwm_protocol = Dshot300
 # OPTION END
 
 # OPTION BEGIN (UNCHECKED): Dshot600
-set motor_pwm_protocol = DSHOT600
+    set motor_pwm_protocol = DSHOT600
 # OPTION END
