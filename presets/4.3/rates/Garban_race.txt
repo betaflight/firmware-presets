@@ -1,12 +1,13 @@
 #$ TITLE: Garban Official race rates
 #$ FIRMWARE_VERSION: 4.3
+#$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: RATES
 #$ STATUS: COMMUNITY
 #$ KEYWORDS: racing, rates, DDC, Acrobaix, Garban
 #$ AUTHOR: Garban
 #$ DESCRIPTION: Racing rates from Josep de la Fuente (Garban), one of the fastest pilot in Catalonia.
-#$ DESCRIPTION: With 482 deg/sec on roll, pitch and yaw. 
-#$ DESCRIPTION: Garban's throttle curve is available as an option here. Check it out! 
+#$ DESCRIPTION: With 482 deg/sec on roll, pitch and yaw.
+#$ DESCRIPTION: Garban's throttle curve is available as an option here. Check it out!
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/188
 #$ INCLUDE: presets/4.3/rates/defaults.txt
 
@@ -23,6 +24,6 @@ set yaw_srate = 56
 
 # improved curve:
 #$ OPTION BEGIN (UNCHECKED): Improved throttle curve
-set thr_mid = 30
-set thr_expo = 18
+    set thr_mid = 30
+    set thr_expo = 18
 #$ OPTION END
