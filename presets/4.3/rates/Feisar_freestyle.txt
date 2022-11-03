@@ -1,5 +1,6 @@
 #$ TITLE: Feisar freestyle rates
 #$ FIRMWARE_VERSION: 4.3
+#$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: RATES
 #$ STATUS: COMMUNITY
 #$ KEYWORDS: rates, betaflight, feisar
@@ -14,9 +15,6 @@
 #$ DESCRIPTION:
 #$ INCLUDE: presets/4.3/rates/defaults.txt
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/184
-
-
-
 
 set rates_type = BETAFLIGHT
 set roll_rc_rate = 206

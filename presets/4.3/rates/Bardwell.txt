@@ -1,5 +1,6 @@
 #$ TITLE: Joshua Bardwell rates
 #$ FIRMWARE_VERSION: 4.3
+#$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: RATES
 #$ STATUS: COMMUNITY
 #$ KEYWORDS: youtube, bardwell, freestyle
@@ -21,14 +22,14 @@ set pitch_srate = 72
 set yaw_srate = 75
 
 #$ OPTION BEGIN (UNCHECKED): Actual rates analogue
-set rates_type = ACTUAL
-set roll_rc_rate = 15
-set pitch_rc_rate = 15
-set yaw_rc_rate = 20
-set roll_expo = 76
-set pitch_expo = 76
-set yaw_expo = 64
-set roll_srate = 91
-set pitch_srate = 91
-set yaw_srate = 80
+    set rates_type = ACTUAL
+    set roll_rc_rate = 15
+    set pitch_rc_rate = 15
+    set yaw_rc_rate = 20
+    set roll_expo = 76
+    set pitch_expo = 76
+    set yaw_expo = 64
+    set roll_srate = 91
+    set pitch_srate = 91
+    set yaw_srate = 80
 #$ OPTION END

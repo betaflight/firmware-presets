@@ -1,5 +1,6 @@
 #$ TITLE: BMSThomas racing/freestyle rates
 #$ FIRMWARE_VERSION: 4.3
+#$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: RATES
 #$ STATUS: COMMUNITY
 #$ KEYWORDS: racing, BMSThomas, rates, MultiGP
@@ -8,7 +9,6 @@
 #$ DESCRIPTION: ACTUAL rates with 720 degrees/sec max.
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/10
 #$ INCLUDE: presets/4.3/rates/defaults.txt
-
 
 set rates_type = ACTUAL
 set roll_rc_rate = 19
@@ -22,6 +22,6 @@ set pitch_srate = 72
 set yaw_srate = 72
 
 #$ OPTION BEGIN (UNCHECKED): Throttle curve
-set thr_mid = 45
-set thr_expo = 30
+    set thr_mid = 45
+    set thr_expo = 30
 #$ OPTION END
