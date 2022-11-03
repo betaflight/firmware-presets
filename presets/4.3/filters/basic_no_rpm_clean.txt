@@ -1,11 +1,12 @@
 #$ TITLE: 4.3 Filter settings for CLEAN build WITH NO RPM FILTERING.
 #$ FIRMWARE_VERSION: 4.3
+#$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: FILTERS
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: filter, filters, filtering, clean, no rpm, basic, betaflight
 #$ AUTHOR: Betaflight
-#$ DESCRIPTION: WARNING: Too much filtering may cause wobbling.  
-#$ DESCRIPTION: Intended for solid frames, motors with good bearings and clean props.  
+#$ DESCRIPTION: WARNING: Too much filtering may cause wobbling.
+#$ DESCRIPTION: Intended for solid frames, motors with good bearings and clean props.
 #$ DESCRIPTION: If motors get hot, try lowering the gyro or D filter sliders.   If motors remain hot despite strong filtering, it may not be a filtering problem.
 #$ DESCRIPTION: If motors grind or make noise at idle, lower the D filter slider.
 

@@ -1,5 +1,6 @@
 #$ TITLE: 4.3 Filter settings for CLEAN build with RPM FILTERING.
 #$ FIRMWARE_VERSION: 4.3
+#$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: FILTERS
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: rpm, DShot telemetry, filter, filters, clean, basic, betaflight

@@ -1,5 +1,6 @@
 #$ TITLE: 4.3 Filter settings for VERY CLEAN build WITHOUT RPM FILTERING.
 #$ FIRMWARE_VERSION: 4.3
+#$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: FILTERS
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: no rpm, filter, filters, filtering, very clean, very, clean, basic, betaflight

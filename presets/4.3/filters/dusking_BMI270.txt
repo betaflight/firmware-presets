@@ -1,5 +1,6 @@
 #$ TITLE: DusKing's BMI270 filter settings
 #$ FIRMWARE_VERSION: 4.3
+#$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: FILTERS
 #$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: BMI270, filter, filters, gyroscope, gyro, gyros, settings, RPM
@@ -20,33 +21,33 @@ set pid_process_denom = 1
 set simplified_gyro_filter = OFF
 
 #$ OPTION BEGIN (UNCHECKED): BMI270 Clean build without RPM filters
-set gyro_lpf1_static_hz = 0
-set gyro_lpf2_type = PT2
-set gyro_lpf2_static_hz = 135
-set gyro_lpf1_dyn_min_hz = 0
-set gyro_lpf1_dyn_max_hz = 0
+    set gyro_lpf1_static_hz = 0
+    set gyro_lpf2_type = PT2
+    set gyro_lpf2_static_hz = 135
+    set gyro_lpf1_dyn_min_hz = 0
+    set gyro_lpf1_dyn_max_hz = 0
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): BMI270 Clean build with RPM filters DSHOT300
-set gyro_lpf1_static_hz = 0
-set gyro_lpf2_type = PT2
-set gyro_lpf2_static_hz = 135
-set dyn_notch_count = 1
-set dyn_notch_q = 500
-set gyro_lpf1_dyn_min_hz = 0
-set gyro_lpf1_dyn_max_hz = 0
-set dshot_bidir = ON
-set motor_pwm_protocol = DSHOT300
+    set gyro_lpf1_static_hz = 0
+    set gyro_lpf2_type = PT2
+    set gyro_lpf2_static_hz = 135
+    set dyn_notch_count = 1
+    set dyn_notch_q = 500
+    set gyro_lpf1_dyn_min_hz = 0
+    set gyro_lpf1_dyn_max_hz = 0
+    set dshot_bidir = ON
+    set motor_pwm_protocol = DSHOT300
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): BMI270 Clean build with RPM filters DSHOT600
-set gyro_lpf1_static_hz = 0
-set gyro_lpf2_type = PT2
-set gyro_lpf2_static_hz = 135
-set dyn_notch_count = 1
-set dyn_notch_q = 500
-set gyro_lpf1_dyn_min_hz = 0
-set gyro_lpf1_dyn_max_hz = 0
-set dshot_bidir = ON
-set motor_pwm_protocol = DSHOT600
+    set gyro_lpf1_static_hz = 0
+    set gyro_lpf2_type = PT2
+    set gyro_lpf2_static_hz = 135
+    set dyn_notch_count = 1
+    set dyn_notch_q = 500
+    set gyro_lpf1_dyn_min_hz = 0
+    set gyro_lpf1_dyn_max_hz = 0
+    set dshot_bidir = ON
+    set motor_pwm_protocol = DSHOT600
 #$ OPTION END

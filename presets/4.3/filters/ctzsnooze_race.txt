@@ -1,5 +1,6 @@
 #$ TITLE: ctzsnooze's race filter settings
 #$ FIRMWARE_VERSION: 4.3
+#$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: FILTERS
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: race, filter, filters, ctzsnooze, RPM
