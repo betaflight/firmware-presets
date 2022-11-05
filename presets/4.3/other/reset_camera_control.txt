@@ -1,5 +1,6 @@
 #$ TITLE: Reset Camera Control settings
 #$ FIRMWARE_VERSION: 4.3
+#$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: OTHER
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: defaults, reset, names, camera, control, camera_control

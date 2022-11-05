@@ -1,5 +1,6 @@
 #$ TITLE: Reset 4.3 Blackbox settings
 #$ FIRMWARE_VERSION: 4.3
+#$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: OTHER
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: defaults, reset, blackbox, logging, log
