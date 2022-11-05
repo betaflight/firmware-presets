@@ -1,8 +1,9 @@
 #$ TITLE: Gyroflow minimum settings
 #$ FIRMWARE_VERSION: 4.3
+#$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: OTHER
 #$ STATUS: EXPERIMENTAL
-#$ KEYWORDS: gyroflow, blackbox, log, DDC, Acrobaix, Garban 
+#$ KEYWORDS: gyroflow, blackbox, log, DDC, Acrobaix, Garban
 #$ AUTHOR: Garban
 
 #$ PARSER: MARKED
