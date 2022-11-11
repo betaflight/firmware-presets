@@ -5,7 +5,10 @@
 #$ KEYWORDS: 5inch, freestyle, beginner,
 #$ AUTHOR: Parik
 #$ DESCRIPTION: Freestyle rates for testing 
-#$ DESCRIPTION: Parik's rate for testing freestyle 5inch quad 
+#$ DESCRIPTION: Parik's rate for testing freestyle 5inch quad
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/84
+#$ INCLUDE: presets/4.3/rates/defaults.txt
+
 
 
 rateprofile 0
