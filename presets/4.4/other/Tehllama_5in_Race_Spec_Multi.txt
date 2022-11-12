@@ -157,7 +157,7 @@
 			set rpm_filter_harmonics = 2
 			set rpm_filter_q = 750
 			set rpm_filter_min_hz = 133
-			set rpm_filter_fade_range_hz = 111
+			set rpm_filter_fade_range_hz = 77
 	#$ OPTION END
 
 	#$ OPTION BEGIN (UNCHECKED): Use Non-RPM Filters on All Profiles (Not Recommended)
