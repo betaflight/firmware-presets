@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #$ TITLE: Parik Modes
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: MODES
