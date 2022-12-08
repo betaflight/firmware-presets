@@ -54,69 +54,32 @@ vtxtable powerlabels 25 200 500 0
 #$ OPTION END
 
 
-#$ OPTION_GROUP BEGIN: use displayport and MSP VTX on uart 1
-#$ OPTION BEGIN (UNCHECKED): use displayport only on uart 1 
-serial 0 1 115200 57600 0 115200
-set displayport_msp_serial = 0
-#$ OPTION END
+#$ OPTION_GROUP BEGIN: set displayport and MSP VTX on uarts
+
 #$ OPTION BEGIN (UNCHECKED): use displayport and MSP VTX on uart 1 
 serial 0 131073 115200 57600 0 115200
-set displayport_msp_serial = 0
 #$ OPTION END
-#$ OPTION_GROUP END
 
-#$ OPTION_GROUP BEGIN: use displayport and MSP VTX on uart 2
-#$ OPTION BEGIN (UNCHECKED): use displayport only on uart 2
-serial 1 1 115200 57600 0 115200
-set displayport_msp_serial = 1
-#$ OPTION END
 #$ OPTION BEGIN (UNCHECKED): use displayport and MSP VTX on uart 2 
 serial 1 131073 115200 57600 0 115200
-set displayport_msp_serial = 1
 #$ OPTION END
-#$ OPTION_GROUP END
 
-#$ OPTION_GROUP BEGIN: use displayport and MSP VTX on uart 3
-#$ OPTION BEGIN (UNCHECKED): use displayport only on uart 3
-serial 2 1 115200 57600 0 115200
-set displayport_msp_serial = 2
-#$ OPTION END
 #$ OPTION BEGIN (UNCHECKED): use displayport and MSP VTX on uart 3 
 serial 2 131073 115200 57600 0 115200
-set displayport_msp_serial = 2
 #$ OPTION END
-#$ OPTION_GROUP END
 
-#$ OPTION_GROUP BEGIN: use displayport and MSP VTX on uart 4
-#$ OPTION BEGIN (UNCHECKED): use displayport only on uart 4
-serial 3 1 115200 57600 0 115200
-set displayport_msp_serial = 3
-#$ OPTION END
 #$ OPTION BEGIN (UNCHECKED): use displayport and MSP VTX on uart 4
 serial 3 131073 115200 57600 0 115200
 set displayport_msp_serial = 3
 #$ OPTION END
-#$ OPTION_GROUP END
 
-#$ OPTION_GROUP BEGIN: use displayport and MSP VTX on uart 5
-#$ OPTION BEGIN (UNCHECKED): use displayport only on uart 5
-serial 4 1 115200 57600 0 115200
-set displayport_msp_serial = 4
-#$ OPTION END
 #$ OPTION BEGIN (UNCHECKED): use displayport and MSP VTX on uart 5 
 serial 4 131073 115200 57600 0 115200
 set displayport_msp_serial = 4
 #$ OPTION END
-#$ OPTION_GROUP END
 
-#$ OPTION_GROUP BEGIN: use displayport and MSP VTX on uart 6
-#$ OPTION BEGIN (UNCHECKED): use displayport only on uart 6
-serial 5 1 115200 57600 0 115200
-set displayport_msp_serial = 5
-#$ OPTION END
 #$ OPTION BEGIN (UNCHECKED): use displayport and MSP VTX on uart 6 
 serial 5 131073 115200 57600 0 115200
-set displayport_msp_serial = 5
 #$ OPTION END
 #$ OPTION_GROUP END
 
