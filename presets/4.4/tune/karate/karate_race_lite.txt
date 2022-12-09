@@ -2,7 +2,7 @@
 #$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: TUNE
 #$ STATUS: EXPERIMENTAL
-#$ KEYWORDS: karate, race, 5 inch, 5", sugarK, limon, ctzsnooze, KarateBrot, ultralite, viper, viper lite
+#$ KEYWORDS: karate, race, 5 inch, 5", sugarK, limon, ctzsnooze, KarateBrot, ultralite, viper, viper lite, sliders
 #$ AUTHOR: sugarK
 
 #$ PARSER: MARKED
@@ -16,7 +16,8 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION:
-#$ DESCRIPTION: This tune should be used with 48khz PWM settings or firmware and it 'SHOULD' work with other ultralite 5" frames eg the ET-5 but use at your own risk.
+#$ DESCRIPTION: This tune should be used with 48khz PWM settings or firmware and it 'SHOULD' work with other ultralite 5" frames eg the ET-5.
+#$ DESCRIPTION: The 4.4 version is slider based to make it easier to adjust for personal taste but use at your own risk.
 #$ DESCRIPTION:
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION:
@@ -34,7 +35,7 @@
 #$ DESCRIPTION: 1. Make sure your **ADC Filter is OFF** in the hardware page
 #$ DESCRIPTION: 1. Go to the radio (RC_LINK) presets and apply the correct setup for your system and link speed
 
-#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/272
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/332
 
 #$ INCLUDE_WARNING: misc/warnings/en/rpm_filters.txt
 #$ INCLUDE: presets/4.4/tune/defaults.txt
@@ -73,20 +74,23 @@ set pidsum_limit_yaw = 1000
 
 
 # -- PID values --
-set p_pitch = 42
-set i_pitch = 85
-set d_pitch = 34
-set f_pitch = 135
-set p_roll = 37
-set d_roll = 30
-set f_yaw = 80
-
+set p_pitch = 43
+set i_pitch = 90
+set d_pitch = 33
+set f_pitch = 137
+set p_roll = 38
+set i_roll = 78
+set d_roll = 31
 set d_min_roll = 22
 set d_min_pitch = 22
-set d_max_gain = 35
-set d_max_advance = 0
 
-set simplified_pids_mode = OFF
+set simplified_pids_mode = RP
+set simplified_i_gain = 115
+set simplified_d_gain = 75
+set simplified_pi_gain = 85
+set simplified_dmax_gain = 125
+set simplified_pitch_d_gain = 90
+set simplified_pitch_pi_gain = 110
 
 # -- Feedforward --
 set feedforward_max_rate_limit = 100
@@ -107,25 +111,12 @@ set tpa_breakpoint = 1250
 
 #$ OPTION BEGIN (UNCHECKED): Dynamic idle for 4s 2850-3000kv
     #dynamic idle for 4s 2850-3000kv
-   set dyn_idle_min_rpm = 50
-   set dyn_idle_p_gain = 35
+    set dyn_idle_min_rpm = 50
+    set dyn_idle_p_gain = 35
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): Vbat Sag Compensation
     set vbat_sag_compensation = 100
-  #$ OPTION END
-
-#$ OPTION BEGIN (UNCHECKED): Noisy airframe
-
-    # -- Gyro lowpass filters --
-    set gyro_lpf1_static_hz = 0
-    set gyro_lpf2_static_hz = 0
-    set gyro_lpf1_dyn_min_hz = 0
-    set gyro_lpf1_dyn_max_hz = 0
-
-    # -- Dterm filtering --
-    set dterm_lpf1_dyn_expo = 10
-    set dterm_lpf1_type = BIQUAD
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): Bosch (BMI) gyro - EXPERIMANTAL
@@ -175,7 +166,6 @@ set tpa_breakpoint = 1250
         set feedforward_smooth_factor = 35
         set feedforward_jitter_factor = 4
         set feedforward_boost = 18
-
         set rc_smoothing_auto_factor = 25
         set rc_smoothing_auto_factor_throttle = 25
     #$ OPTION END
