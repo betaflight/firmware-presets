@@ -73,24 +73,27 @@ set pidsum_limit_yaw = 1000
 
 
 # -- PID values --
-set p_pitch = 79
-set i_pitch = 71
-set d_pitch = 45
-set f_pitch = 127
-set p_roll = 76
-set i_roll = 68
-set d_roll = 43
-set f_roll = 122
-set p_yaw = 76
-set i_yaw = 68
-set f_yaw = 122
-set d_min_pitch = 31
-set simplified_master_multiplier = 170
-set simplified_i_gain = 50
-set simplified_d_gain = 60
-set simplified_dmax_gain = 130
+set p_pitch = 41
+set i_pitch = 70
+set d_pitch = 37
+set f_pitch = 110
+set p_roll = 41
+set i_roll = 70
+set d_roll = 37
+set f_roll = 111
+set p_yaw = 41
+set i_yaw = 70
+set f_yaw = 111
+set d_min_roll = 37
+set d_min_pitch = 37
+set simplified_master_multiplier = 155
+set simplified_i_gain = 95
+set simplified_d_gain = 80
+set simplified_pi_gain = 60
+set simplified_dmax_gain = 0
 set simplified_feedforward_gain = 60
 set simplified_pitch_d_gain = 90
+set simplified_pitch_pi_gain = 95
 
 #$ OPTION BEGIN (UNCHECKED): Dshot600
     set dshot_bidir = ON
