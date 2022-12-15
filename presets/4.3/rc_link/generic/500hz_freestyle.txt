@@ -1,5 +1,6 @@
 #$ TITLE: Generic 500Hz Freestyle
 #$ FIRMWARE_VERSION: 4.3
+#$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: RC_LINK
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: 500Hz, 2ms, rc, rx, link, smoothing
