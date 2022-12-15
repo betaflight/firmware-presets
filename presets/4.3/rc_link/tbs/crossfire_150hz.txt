@@ -1,5 +1,6 @@
 #$ TITLE: TBS Crossfire 150Hz
 #$ FIRMWARE_VERSION: 4.3
+#$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: RC_LINK
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: 150Hz, TBS, Crossfire, Team Black Sheep, CRSF, rc, rx , link

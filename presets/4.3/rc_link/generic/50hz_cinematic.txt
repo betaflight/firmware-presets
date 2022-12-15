@@ -1,5 +1,6 @@
 #$ TITLE: Generic 50Hz Cinematic
 #$ FIRMWARE_VERSION: 4.3
+#$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: RC_LINK
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: 50Hz, 20ms, rc, rx, link, smoothing
