@@ -6,7 +6,7 @@
 #$ AUTHOR: sugarK
 #$ DESCRIPTION: This racing tune was developed for the 533 TinyTrainer spec class with @Shames throwing his quad out the window of his office and sending me logs.
 #$ DESCRIPTION: 
-#$ DESCRIPTION: Things to note.. YOU HAVE TO USE RPM FILTERING WITH THIS TUNE, failure to do so might result in fire and regarding Dshot600,  if your setup has errors in the motor tab using bidirectional Dshot then change to 8k/4k and dshot300.
+#$ DESCRIPTION: Things to note.. YOU HAVE TO USE RPM FILTERING WITH THIS TUNE, failure to do so might result in fire and regarding Dshot600, if your setup has errors in the motor tab using bidirectional Dshot then change to 8k/4k and dshot300. Preset sets motor poles count to 12 to match with the Tiny Trainer Headsup motors.
 #$ DESCRIPTION: SECOND NOTE.... Radio links.. 1. Make sure your radio system is totally up to date using either Edgetx or Opentx and your ADC in the hardware page is OFF 2. Go to the radio presets and apply the correct setup for your system and link speed.
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/81
 #$ INCLUDE_WARNING: misc/warnings/en/rpm_filters.txt
@@ -33,6 +33,7 @@ set dyn_notch_max_hz = 700
 # -- RPM filtering --
 set dshot_bidir = ON
 set rpm_filter_fade_range_hz = 100
+set motor_poles = 12
 
 # -- Misc --
 set yaw_spin_recovery = AUTO
