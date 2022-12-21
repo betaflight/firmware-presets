@@ -70,12 +70,10 @@ serial 2 131073 115200 57600 0 115200
 
 #$ OPTION BEGIN (UNCHECKED): use displayport and MSP VTX on uart 4
 serial 3 131073 115200 57600 0 115200
-set displayport_msp_serial = 3
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): use displayport and MSP VTX on uart 5 
 serial 4 131073 115200 57600 0 115200
-set displayport_msp_serial = 4
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): use displayport and MSP VTX on uart 6 
