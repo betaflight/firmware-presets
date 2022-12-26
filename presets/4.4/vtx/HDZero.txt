@@ -36,51 +36,52 @@ vtxtable band 5 RACEBAND R FACTORY 5658 5695 5732 5769 5806 5843 5880 5917
 vtxtable band 6 IMD6     I CUSTOM     0    0    0    0    0    0    0    0
 
 #$ OPTION BEGIN (UNCHECKED): all VTXs except unlocked Freestyle and TX5M.1
-vtxtable powerlevels 3
-vtxtable powervalues 14 23 0
-vtxtable powerlabels 25 200 0
+    vtxtable powerlevels 3
+    vtxtable powervalues 14 23 0
+    vtxtable powerlabels 25 200 0
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): unlocked Freestyle
-vtxtable powerlevels 5
-vtxtable powervalues 14 23 27 30 0
-vtxtable powerlabels 25 200 500 MAX 0
+    vtxtable powerlevels 5
+    vtxtable powervalues 14 23 27 30 0
+    vtxtable powerlabels 25 200 500 MAX 0
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): TX5M.1
-vtxtable powerlevels 4
-vtxtable powervalues 14 23 27 0
-vtxtable powerlabels 25 200 500 0
+    vtxtable powerlevels 4
+    vtxtable powervalues 14 23 27 0
+    vtxtable powerlabels 25 200 500 0
 #$ OPTION END
 
+#$ OPTION BEGIN (CHECKED): map to displayport 
+    set osd_displayport_device = MSP
+#$ OPTION END
 
 #$ OPTION_GROUP BEGIN: set displayport and MSP VTX on uarts
 
-#$ OPTION BEGIN (UNCHECKED): use displayport and MSP VTX on uart 1 
-serial 0 131073 115200 57600 0 115200
-#$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): use displayport and MSP VTX on uart 1 
+        serial 0 131073 115200 57600 0 115200
+    #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED): use displayport and MSP VTX on uart 2 
-serial 1 131073 115200 57600 0 115200
-#$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): use displayport and MSP VTX on uart 2 
+         serial 1 131073 115200 57600 0 115200
+    #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED): use displayport and MSP VTX on uart 3 
-serial 2 131073 115200 57600 0 115200
-#$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): use displayport and MSP VTX on uart 3 
+        serial 2 131073 115200 57600 0 115200
+    #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED): use displayport and MSP VTX on uart 4
-serial 3 131073 115200 57600 0 115200
-#$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): use displayport and MSP VTX on uart 4
+        serial 3 131073 115200 57600 0 115200
+    #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED): use displayport and MSP VTX on uart 5 
-serial 4 131073 115200 57600 0 115200
-#$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): use displayport and MSP VTX on uart 5 
+        serial 4 131073 115200 57600 0 115200
+    #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED): use displayport and MSP VTX on uart 6 
-serial 5 131073 115200 57600 0 115200
-#$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): use displayport and MSP VTX on uart 6 
+        serial 5 131073 115200 57600 0 115200
+    #$ OPTION END
 #$ OPTION_GROUP END
 
-#$ OPTION BEGIN (CHECKED): map to displayport 
-set osd_displayport_device = MSP
-#$ OPTION END
+
