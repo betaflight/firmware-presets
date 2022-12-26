@@ -2,7 +2,7 @@
 #$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: VTX
 #$ STATUS: COMMUNITY
-#$ KEYWORDS:  vtx, dji, 03 air unit, avatar, walksnail,HD, HD video, vista, air unit, fpv.wtf, wtfos, msp-osd, displayport, msp
+#$ KEYWORDS:  vtx, dji, O3 air unit, O3, 03, avatar, walksnail,HD, HD video, vista, air unit, fpv.wtf, wtfos, msp-osd, displayport, msp
 #$ AUTHOR: benlumley
 
 #$ PARSER: MARKED
@@ -21,10 +21,6 @@
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/298
 
 set osd_displayport_device = MSP
-
-#$ OPTION BEGIN (UNCHECKED): Use HD OSD option
-    set vcd_video_system = HD
-#$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): use displayport on uart 1
     serial 0 131073 115200 57600 0 115200
