@@ -12,7 +12,8 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION:
 #$ DESCRIPTION: Sets up MSP displayport on selected UART for use with MSP-OSD
-#$ DESCRIPTION: For DJi O3 Air Uint, Walksnail Avatar and DJI FPV.WTF
+#$ DESCRIPTION:
+#$ DESCRIPTION: For DJi O3 Air Unit, Walksnail Avatar and DJI FPV.WTF
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION: The information provided on this preset is for educational and entertainment purposes only. Betaflight makes no representations as to the safety or legality of the use of any information provided herein. End users assume all responsibility and liability for ensuring they are complying with all relevant laws and regulations.
