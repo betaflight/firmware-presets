@@ -1,7 +1,7 @@
 #$ TITLE: Karate brushless whoop
 #$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: TUNE
-#$ STATUS: EXPERIMENTAL
+#$ STATUS:  COMMUNITY
 #$ KEYWORDS: karate, 2s, 1S, race, brushless, whoop, 65mm, sugarK, KarateBrot
 #$ AUTHOR: sugarK
 

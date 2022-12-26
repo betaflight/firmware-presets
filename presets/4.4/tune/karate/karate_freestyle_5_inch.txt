@@ -1,7 +1,7 @@
 #$ TITLE: Freestyle 5" Karate Style
 #$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: TUNE
-#$ STATUS: EXPERIMENTAL
+#$ STATUS: OFFICIAL
 #$ KEYWORDS: karate, 6S,5 inch, 5", sugarK, limon, ctzsnooze, karateBrot, freestyle
 #$ AUTHOR: sugarK
 
