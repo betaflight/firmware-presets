@@ -1,4 +1,4 @@
-#$ TITLE: Default 4.3 OSD settings
+#$ TITLE: Lucanix_OSD_with_GPS_DJI
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: OSD
 #$ STATUS: OFFICIAL

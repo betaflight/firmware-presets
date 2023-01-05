@@ -819,8 +819,8 @@
     },
     {
       "fullPath": "presets/4.3/osd/Lucanix_OSD_with_GPS_DJI.txt",
-      "hash": "49d9369829871bf9b567b0b6acafce5468abf564c9325fb5adb3cb0643440d94",
-      "title": "Default 4.3 OSD settings",
+      "hash": "d0fbb17a01b96277043d4fb5c14c7d53acfdc9db903817c33bdaad9f3e4a1c3b",
+      "title": "Lucanix_OSD_with_GPS_DJI",
       "firmware_version": [
         "4.3"
       ],
