@@ -1,0 +1,20 @@
+#$ TITLE: Recyclops rates
+#$ FIRMWARE_VERSION: 4.3
+#$ FIRMWARE_VERSION: 4.4
+#$ CATEGORY: RATES
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: freestyle
+#$ AUTHOR: Recyclops
+#$ DESCRIPTION: The rates for the Recyclops
+#$ INCLUDE: presets/4.3/rates/defaults.txt
+
+set rates_type = ACTUAL
+set roll_rc_rate = 2
+set pitch_rc_rate = 2
+set yaw_rc_rate = 2
+set roll_expo = 70
+set pitch_expo = 70
+set yaw_expo = 70
+set roll_srate = 75
+set pitch_srate = 75
+set yaw_srate = 75
