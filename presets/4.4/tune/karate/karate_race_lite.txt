@@ -174,7 +174,7 @@ set tpa_breakpoint = 1250
 
          #$ INCLUDE: presets/4.3/rc_link/generic/500hz_race.txt
     #$ OPTION END
-    
+
 #$ OPTION_GROUP END
 
 #$ OPTION_GROUP BEGIN: Optional rates
