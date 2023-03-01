@@ -6,7 +6,7 @@
 #$ KEYWORDS: 1000Hz, 1ms, rc, rx, link, smoothing
 #$ AUTHOR: Sugar K
 #$ DESCRIPTION: Generic RC link settings for racing with 1000Hz RC link. 
-#$ DESCRIPTION: The reason for 2 smoothing values is the released code at the time of making this preset would not allow the higher smoothing factor.
+#$ DESCRIPTION: The reason for 2 smoothing values is the released code at the time of making this preset would not allow the higher smoothing factor.\
 #$ DESCRIPTION: WARNING: make ABSOLUTELY SURE that the OpenTx or EdgeTx Hardware ADC Filter is un-checked!
 #$ DESCRIPTION: WARNING: check that you are using a compatible version of EdgeTx or OpenTx!
 
