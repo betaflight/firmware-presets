@@ -128,62 +128,53 @@ set tpa_breakpoint = 1250
 
     #$ OPTION BEGIN (UNCHECKED): Tracer/ELRS 250Hz
         # Tracer/ELRS 250Hz
-        #$ INCLUDE: presets/4.3/rc_link/defaults.txt
+        
         feature RX_SERIAL
         set serialrx_provider = CRSF
 
-        set feedforward_averaging = 2_POINT
-        set feedforward_smooth_factor = 35
-        set feedforward_jitter_factor = 4
-        set feedforward_boost = 18
+        #$ INCLUDE: presets/4.3/rc_link/generic/250hz_race.txt
 
-        set rc_smoothing_auto_factor = 25
-        set rc_smoothing_auto_factor_throttle = 25
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): ELRS 500Hz
         # ERLS 500Hz
-        #$ INCLUDE: presets/4.3/rc_link/defaults.txt
+        
         feature RX_SERIAL
         set serialrx_provider = CRSF
 
-        set feedforward_averaging = 2_POINT
-        set feedforward_smooth_factor = 65
-        set feedforward_jitter_factor = 0
-        set feedforward_boost = 18
+        #$ INCLUDE: presets/4.3/rc_link/generic/500hz_race.txt
 
-        set rc_smoothing_auto_factor = 25
-        set rc_smoothing_auto_factor_throttle = 25
     #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): ELRS 1000Hz
+        # ELRS 1000Hz
+       
+        feature RX_SERIAL
+        set serialrx_provider = CRSF
 
+         #$ INCLUDE: presets/4.3/rc_link/generic/1000hz_race.txt
+         
+    #$ OPTION END
+    
     #$ OPTION BEGIN (UNCHECKED): Ghost 250Hz
         # Ghost 250Hz
-        #$ INCLUDE: presets/4.3/rc_link/defaults.txt
+      
         feature RX_SERIAL
         set serialrx_provider = GHST
 
-        set feedforward_averaging = 2_POINT
-        set feedforward_smooth_factor = 35
-        set feedforward_jitter_factor = 4
-        set feedforward_boost = 18
-        set rc_smoothing_auto_factor = 25
-        set rc_smoothing_auto_factor_throttle = 25
+         #$ INCLUDE:presets/4.3/rc_link/generic/250hz_race.txt
+
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): Ghost 500Hz
         # Ghost 500Hz
-        #$ INCLUDE: presets/4.3/rc_link/defaults.txt
+       
         feature RX_SERIAL
+        set serialrx_provider = GHST
 
-        set feedforward_averaging = 2_POINT
-        set feedforward_smooth_factor = 65
-        set feedforward_jitter_factor = 0
-        set feedforward_boost = 18
-
-        set rc_smoothing_auto_factor = 25
-        set rc_smoothing_auto_factor_throttle = 25
+         #$ INCLUDE: presets/4.3/rc_link/generic/500hz_race.txt
     #$ OPTION END
-
+    
 #$ OPTION_GROUP END
 
 #$ OPTION_GROUP BEGIN: Optional rates
@@ -194,8 +185,8 @@ set tpa_breakpoint = 1250
         set roll_expo = 54
         set pitch_expo = 54
         set yaw_expo = 54
-        set roll_srate = 40
-        set pitch_srate = 40
+        set roll_srate = 37
+        set pitch_srate = 37
         set yaw_srate = 42
     #$ OPTION END
 
