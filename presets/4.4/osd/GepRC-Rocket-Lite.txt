@@ -1,0 +1,186 @@
+#$ TITLE: GepRC Rocket Lite
+#$ FIRMWARE_VERSION: 4.4
+#$ CATEGORY: OSD
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: GepRC, Rocket, Lite, HD, Crossfire, Tango 2
+#$ AUTHOR: hoizheisler
+
+#$ DESCRIPTION:
+
+#board_name GEPRCF411
+#manufacturer_id GEPR
+#mcu_id 004f005a3030511937393838
+#signature 
+
+# name: Rocket
+
+# timer
+timer B08 AF3
+# pin B08: TIM10 CH1 (AF3)
+timer B09 AF2
+# pin B09: TIM4 CH4 (AF2)
+timer B00 AF2
+# pin B00: TIM3 CH3 (AF2)
+timer B01 AF2
+# pin B01: TIM3 CH4 (AF2)
+timer A01 AF2
+# pin A01: TIM5 CH2 (AF2)
+timer A09 AF1
+# pin A09: TIM1 CH2 (AF1)
+timer A10 AF1
+# pin A10: TIM1 CH3 (AF1)
+
+# dma
+dma pin B00 0
+# pin B00: DMA1 Stream 7 Channel 5
+dma pin B01 0
+# pin B01: DMA1 Stream 2 Channel 5
+dma pin A01 0
+# pin A01: DMA1 Stream 4 Channel 6
+dma pin A09 0
+# pin A09: DMA2 Stream 6 Channel 0
+dma pin A10 0
+# pin A10: DMA2 Stream 6 Channel 0
+
+# beeper
+beeper -GYRO_CALIBRATED
+beeper -RX_LOST
+beeper -RX_LOST_LANDING
+beeper -DISARMING
+beeper -ARMING
+beeper -ARMING_GPS_FIX
+beeper -GPS_STATUS
+beeper -RX_SET
+beeper -ACC_CALIBRATION_FAIL
+beeper -READY_BEEP
+beeper -DISARM_REPEAT
+beeper -ARMED
+beeper -SYSTEM_INIT
+beeper -ON_USB
+beeper -BLACKBOX_ERASE
+beeper -CRASH_FLIP
+beeper -CAM_CONNECTION_OPEN
+beeper -CAM_CONNECTION_CLOSE
+beeper -RC_SMOOTHING_INIT_FAIL
+
+# map
+map TAER1234
+
+# serial
+serial 0 1 115200 57600 0 115200
+serial 1 64 115200 57600 0 115200
+
+# led
+led 0 5,6::CTOB:0
+led 1 6,6::CTOB:0
+led 2 7,6::CTOB:0
+led 3 8,6::CTOB:0
+led 4 5,7::CTOB:0
+led 5 6,7::CTOB:0
+led 6 7,7::CTOB:0
+led 7 8,7::CTOB:0
+led 8 5,8::CTOB:0
+led 9 6,8::CTOB:0
+led 10 7,8::CTOB:0
+led 11 8,8::CTOB:0
+
+# aux
+aux 0 0 0 1250 1675 0 0
+aux 1 1 2 1725 2075 0 0
+aux 2 13 2 1250 1750 0 0
+aux 3 0 255 900 900 0 0
+aux 4 0 255 900 900 0 0
+aux 5 0 255 900 900 0 0
+aux 6 0 255 900 900 0 0
+aux 7 0 255 900 900 0 0
+aux 8 0 255 900 900 0 0
+aux 9 0 255 900 900 0 0
+aux 10 0 255 900 900 0 0
+aux 11 0 255 900 900 0 0
+aux 12 0 255 900 900 0 0
+aux 13 0 255 900 900 0 0
+aux 14 0 255 900 900 0 0
+aux 15 0 255 900 900 0 0
+aux 16 0 255 900 900 0 0
+aux 17 0 255 900 900 0 0
+aux 18 0 255 900 900 0 0
+aux 19 0 255 900 900 0 0
+
+# vtxtable
+vtxtable bands 5
+vtxtable channels 8
+vtxtable band 1 BOSCAM_A A CUSTOM  5865 5845 5825 5805 5785 5765 5745 5725
+vtxtable band 2 BOSCAM_B B CUSTOM  5733 5752 5771 5790 5809 5828 5847 5866
+vtxtable band 3 BOSCAM_E E CUSTOM  5705 5685 5665 5665 5885 5905 5905 5905
+vtxtable band 4 FATSHARK F CUSTOM  5740 5760 5780 5800 5820 5840 5860 5880
+vtxtable band 5 RACEBAND R CUSTOM  5658 5695 5732 5769 5806 5843 5880 5917
+vtxtable powerlevels 5
+vtxtable powervalues 25 100 200 400 600
+vtxtable powerlabels 25 100 200 400 600
+
+# master
+set acc_calibration = 20,0,200
+set serialrx_provider = CRSF
+set align_board_yaw = 45
+set vbat_min_cell_voltage = 360
+set vbat_warning_cell_voltage = 360
+set vbat_scale = 219
+set vbat_multiplier = 2
+set ibata_scale = 140
+set yaw_motors_reversed = ON
+set small_angle = 180
+set osd_tim1 = 46083
+###ERROR: CORRUPTED CONFIG: osd_tim1 = 46083###
+set osd_vbat_pos = 2423
+set osd_rssi_pos = 2464
+set osd_link_quality_pos = 2496
+set osd_rssi_dbm_pos = 2432
+set osd_tim_1_pos = 2507
+set osd_flymode_pos = 2074
+set osd_throttle_pos = 2297
+set osd_current_pos = 2487
+set osd_mah_drawn_pos = 2393
+set osd_power_pos = 2169
+set osd_warnings_pos = 14634
+set osd_avg_cell_voltage_pos = 2328
+set osd_battery_usage_pos = 2513
+set osd_disarmed_pos = 2379
+set osd_esc_tmp_pos = 2137
+set osd_core_temp_pos = 2105
+set vtx_band = 5
+set vtx_channel = 1
+set vtx_power = 1
+set vtx_freq = 5658
+set name = Rocket
+
+profile 0
+
+# profile 0
+set anti_gravity_gain = 3500
+set feedforward_transition = 20
+set throttle_boost = 13
+set p_pitch = 50
+set p_roll = 46
+
+profile 1
+
+profile 2
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+rateprofile 4
+
+rateprofile 5
+
+# restore original rateprofile selection
+rateprofile 0
+
