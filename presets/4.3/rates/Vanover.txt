@@ -1,5 +1,6 @@
 #$ TITLE: Vanover racing/freestyle rates
 #$ FIRMWARE_VERSION: 4.3
+#$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: RATES
 #$ STATUS: COMMUNITY
 #$ KEYWORDS: racing, race, vanover, rates, MultiGP, freestyle
