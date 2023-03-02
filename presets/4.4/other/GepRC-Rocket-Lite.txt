@@ -111,6 +111,10 @@ vtxtable powerlevels 5
 vtxtable powervalues 25 100 200 400 600
 vtxtable powerlabels 25 100 200 400 600
 
+
+
+# -- OSD Betaflight Settings --
+
 # master
 set acc_calibration = 20,0,200
 set serialrx_provider = CRSF
