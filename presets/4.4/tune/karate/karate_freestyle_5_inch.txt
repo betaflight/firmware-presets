@@ -63,3 +63,11 @@ simplified_tuning apply
     set dyn_idle_min_rpm = 35
     set dyn_idle_p_gain = 35
 #$ OPTION END
+
+#$ OPTION_GROUP BEGIN: Optional rates
+    #$ OPTION BEGIN (UNCHECKED): sugarK's rates
+        #$ INCLUDE: presets/4.3/rates/SugarK.txt
+    #$ OPTION END
+
+#$ OPTION_GROUP END
+
