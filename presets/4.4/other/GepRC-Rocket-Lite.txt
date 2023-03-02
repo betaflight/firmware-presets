@@ -7,12 +7,12 @@
 
 #$ DESCRIPTION:
 
-#board_name GEPRCF411
-#manufacturer_id GEPR
-#mcu_id 004f005a3030511937393838
-#signature 
+#$board_name GEPRCF411
+#$manufacturer_id GEPR
+#$mcu_id 004f005a3030511937393838
+#$signature 
 
-# name: Rocket
+#$ name: Rocket
 
 # timer
 timer B08 AF3
