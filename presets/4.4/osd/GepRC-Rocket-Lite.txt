@@ -5,14 +5,6 @@
 #$ KEYWORDS: GepRC, Rocket, Lite, HD, Crossfire, Tango 2
 #$ AUTHOR: hoizheisler
 
-#$ DESCRIPTION:
-
-#$board_name GEPRCF411
-#$manufacturer_id GEPR
-#$mcu_id 004f005a3030511937393838
-#$signature 
-
-#$ name: Rocket
 
 # timer
 timer B08 AF3
@@ -130,7 +122,6 @@ set ibata_scale = 140
 set yaw_motors_reversed = ON
 set small_angle = 180
 set osd_tim1 = 46083
-###ERROR: CORRUPTED CONFIG: osd_tim1 = 46083###
 set osd_vbat_pos = 2423
 set osd_rssi_pos = 2464
 set osd_link_quality_pos = 2496
@@ -162,25 +153,5 @@ set throttle_boost = 13
 set p_pitch = 50
 set p_roll = 46
 
-profile 1
 
-profile 2
-
-# restore original profile selection
-profile 0
-
-rateprofile 0
-
-rateprofile 1
-
-rateprofile 2
-
-rateprofile 3
-
-rateprofile 4
-
-rateprofile 5
-
-# restore original rateprofile selection
-rateprofile 0
 
