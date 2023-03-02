@@ -83,6 +83,20 @@ serial 5 1 115200 57600 0 115200
 set displayport_msp_serial = 5
 #$ OPTION END
 
+#$ OPTION BEGIN (UNCHECKED): use displayport on uart 7
+serial 6 1 115200 57600 0 115200
+set displayport_msp_serial = 6
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): use displayport on uart 8
+serial 7 1 115200 57600 0 115200
+set displayport_msp_serial = 7
+#$ OPTION END
+
 #$ OPTION BEGIN (CHECKED): map to displayport 
 set osd_displayport_device = MSP
+#$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): HD OSD 
+set vcd_video_system = HD
 #$ OPTION END
