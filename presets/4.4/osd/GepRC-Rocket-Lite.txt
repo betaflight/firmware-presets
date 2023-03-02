@@ -5,6 +5,7 @@
 #$ KEYWORDS: GepRC, Rocket, Lite, HD, Crossfire, Tango 2
 #$ AUTHOR: hoizheisler
 
+#$ DESCRIPTION:
 
 # timer
 timer B08 AF3
