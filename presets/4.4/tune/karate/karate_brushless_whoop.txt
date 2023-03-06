@@ -146,7 +146,7 @@ set simplified_pitch_pi_gain = 95
         feature RX_SERIAL
         set serialrx_provider = CRSF
 
-         #$ INCLUDE: presets/4.3/rc_link/generic/1000hz_race.txt
+        #$ INCLUDE: presets/4.3/rc_link/generic/1000hz_race.txt
          
     #$ OPTION END
     
