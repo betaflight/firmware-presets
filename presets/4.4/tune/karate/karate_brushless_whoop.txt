@@ -167,6 +167,7 @@ set simplified_pitch_pi_gain = 95
         set serialrx_provider = GHST
 
          #$ INCLUDE: presets/4.3/rc_link/generic/500hz_race.txt
+
     #$ OPTION END
 
 #$ OPTION_GROUP END
@@ -175,7 +176,7 @@ set simplified_pitch_pi_gain = 95
     #$ OPTION BEGIN (UNCHECKED): sugarK's rates
         #$ INCLUDE: presets/4.3/rates/SugarK.txt
         set thr_expo = 80
-        set roll_expo = 54
+
     #$ OPTION END
 
 #$ OPTION_GROUP END
