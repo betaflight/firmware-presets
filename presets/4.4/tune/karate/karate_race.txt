@@ -1,7 +1,7 @@
 #$ TITLE: Karate Race 6s 5"
 #$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: TUNE
-#$ STATUS: OFFICIAL
+#$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: karate, 6S, race, world champion, 5 inch, 5", sugarK, limon, ctzsnooze, KarateBrot
 #$ AUTHOR: sugarK
 
@@ -82,22 +82,16 @@ set pidsum_limit_yaw = 1000
 
 
 # -- PID values --
-set p_pitch = 42
-set i_pitch = 85
-set d_pitch = 42
-set f_pitch = 135
-
-set p_roll = 37
-set d_roll = 36
-
-set f_yaw = 80
-
-set d_min_roll = 22
-set d_min_pitch = 22
-set d_max_gain = 35
-set d_max_advance = 0
-set simplified_pids_mode = OFF
-
+set simplified_pids_mode = RP
+set simplified_i_gain = 120
+set simplified_d_gain = 70
+set simplified_pi_gain = 85
+set simplified_dmax_gain = 200
+set simplified_feedforward_gain = 105
+set simplified_pitch_pi_gain = 105
+simplified_tuning apply
+ 
+ 
 # -- Feedforward --
 set feedforward_max_rate_limit = 100
 
@@ -138,113 +132,73 @@ set tpa_breakpoint = 1250
     set rpm_filter_min_hz = 150
 
     # -- PID values --
-    set p_pitch = 42
-    set i_pitch = 85
-    set d_pitch = 42
-    set f_pitch = 135
-    set p_roll = 37
-    set i_roll = 80
-    set d_roll = 36
-    set f_roll = 120
-    set p_yaw = 45
-    set i_yaw = 80
-    set d_yaw = 0
-    set f_yaw = 80
-
-    set d_min_roll = 26
-    set d_min_pitch = 26
-    set d_max_gain = 25
-    set d_max_advance = 0
-    set simplified_pids_mode = OFF
-#$ OPTION END
-
-#$ OPTION BEGIN (UNCHECKED): Noisy airframe (can be used with Spicy)
-
-    # -- Gyro lowpass filters --
-    set gyro_lpf1_static_hz = 0
-    set gyro_lpf2_static_hz = 0
-    set gyro_lpf1_dyn_min_hz = 0
-    set gyro_lpf1_dyn_max_hz = 0
-
-    # -- Dterm filtering --
-    set dterm_lpf1_dyn_expo = 10
-    set dterm_lpf1_type = BIQUAD
+    set simplified_pids_mode = RP
+    set simplified_i_gain = 115
+    set simplified_d_gain = 85
+    set simplified_pi_gain = 85
+    set simplified_dmax_gain = 140
+    set simplified_feedforward_gain = 105
+    set simplified_pitch_d_gain = 95
+    set simplified_pitch_pi_gain = 105
+    simplified_tuning apply
 #$ OPTION END
 
 #$ OPTION_GROUP BEGIN: Some popular RC Links
 
     #$ OPTION BEGIN (UNCHECKED): Tracer/ELRS 250Hz
         # Tracer/ELRS 250Hz
-        #$ INCLUDE: presets/4.3/rc_link/defaults.txt
+        
         feature RX_SERIAL
         set serialrx_provider = CRSF
 
-        set feedforward_averaging = 2_POINT
-        set feedforward_smooth_factor = 35
-        set feedforward_jitter_factor = 4
-        set feedforward_boost = 18
+        #$ INCLUDE: presets/4.3/rc_link/generic/250hz_race.txt
 
-        set rc_smoothing_auto_factor = 25
-        set rc_smoothing_auto_factor_throttle = 25
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): ELRS 500Hz
         # ERLS 500Hz
-        #$ INCLUDE: presets/4.3/rc_link/defaults.txt
+        
         feature RX_SERIAL
         set serialrx_provider = CRSF
 
-        set feedforward_averaging = 2_POINT
-        set feedforward_smooth_factor = 65
-        set feedforward_jitter_factor = 3
-        set feedforward_boost = 18
+        #$ INCLUDE: presets/4.3/rc_link/generic/500hz_race.txt
 
-        set rc_smoothing_auto_factor = 25
-        set rc_smoothing_auto_factor_throttle = 25
     #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): ELRS 1000Hz
+        # ELRS 1000Hz
+       
+        feature RX_SERIAL
+        set serialrx_provider = CRSF
 
+         #$ INCLUDE: presets/4.3/rc_link/generic/1000hz_race.txt
+         
+    #$ OPTION END
+    
     #$ OPTION BEGIN (UNCHECKED): Ghost 250Hz
         # Ghost 250Hz
-        #$ INCLUDE: presets/4.3/rc_link/defaults.txt
+      
         feature RX_SERIAL
         set serialrx_provider = GHST
 
-        set feedforward_averaging = 2_POINT
-        set feedforward_smooth_factor = 35
-        set feedforward_jitter_factor = 4
-        set feedforward_boost = 18
+         #$ INCLUDE: presets/4.3/rc_link/generic/250hz_race.txt
 
-        set rc_smoothing_auto_factor = 25
-        set rc_smoothing_auto_factor_throttle = 25
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): Ghost 500Hz
         # Ghost 500Hz
-        #$ INCLUDE: presets/4.3/rc_link/defaults.txt
+       
         feature RX_SERIAL
+        set serialrx_provider = GHST
 
-        set feedforward_averaging = 2_POINT
-        set feedforward_smooth_factor = 65
-        set feedforward_jitter_factor = 3
-        set feedforward_boost = 18
-
-        set rc_smoothing_auto_factor = 25
-        set rc_smoothing_auto_factor_throttle = 25
+         #$ INCLUDE: presets/4.3/rc_link/generic/500hz_race.txt
     #$ OPTION END
 
 #$ OPTION_GROUP END
 
 #$ OPTION_GROUP BEGIN: Optional rates
-
     #$ OPTION BEGIN (UNCHECKED): sugarK's rates
-        set thr_mid = 25
-        set thr_expo = 65
-        set roll_expo = 54
-        set pitch_expo = 54
-        set yaw_expo = 54
-        set roll_srate = 40
-        set pitch_srate = 40
-        set yaw_srate = 42
+        #$ INCLUDE: presets/4.3/rates/SugarK.txt
     #$ OPTION END
 
 #$ OPTION_GROUP END

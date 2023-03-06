@@ -121,26 +121,63 @@ set simplified_pitch_pi_gain = 95
 #$ OPTION_GROUP BEGIN: Some popular RC Links
 
     #$ OPTION BEGIN (UNCHECKED): Tracer/ELRS 250Hz
-        feature RX_SERIAL 
-        set serialrx_provider = CRSF 
+        # Tracer/ELRS 250Hz
+        
+        feature RX_SERIAL
+        set serialrx_provider = CRSF
+
         #$ INCLUDE: presets/4.3/rc_link/generic/250hz_race.txt
+
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): ELRS 500Hz
-        feature RX_SERIAL 
-        set serialrx_provider = CRSF 
+        # ERLS 500Hz
+        
+        feature RX_SERIAL
+        set serialrx_provider = CRSF
+
         #$ INCLUDE: presets/4.3/rc_link/generic/500hz_race.txt
+
     #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): ELRS 1000Hz
+        # ELRS 1000Hz
+       
+        feature RX_SERIAL
+        set serialrx_provider = CRSF
+
+        #$ INCLUDE: presets/4.3/rc_link/generic/1000hz_race.txt
+         
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): Ghost 250Hz
+        # Ghost 250Hz
+      
+        feature RX_SERIAL
+        set serialrx_provider = GHST
+
+        #$ INCLUDE:presets/4.3/rc_link/generic/250hz_race.txt
+
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): Ghost 500Hz
+        # Ghost 500Hz
+       
+        feature RX_SERIAL
+        set serialrx_provider = GHST
+
+        #$ INCLUDE: presets/4.3/rc_link/generic/500hz_race.txt
+
+    #$ OPTION END
+
 #$ OPTION_GROUP END
 
 #$ OPTION_GROUP BEGIN: Optional rates
-
-    #$ OPTION BEGIN (UNCHECKED): sugarK's whoop rates
+    #$ OPTION BEGIN (UNCHECKED): sugarK's rates
+        #$ INCLUDE: presets/4.3/rates/SugarK.txt
         set thr_expo = 80
-        set roll_expo = 54
-        set yaw_expo = 54
-        set roll_srate = 30
-        set pitch_srate = 30
-        set yaw_srate = 42
+
     #$ OPTION END
+
 #$ OPTION_GROUP END
+
