@@ -166,7 +166,7 @@ set simplified_pitch_pi_gain = 95
         feature RX_SERIAL
         set serialrx_provider = GHST
 
-         #$ INCLUDE: presets/4.3/rc_link/generic/500hz_race.txt
+        #$ INCLUDE: presets/4.3/rc_link/generic/500hz_race.txt
 
     #$ OPTION END
 
