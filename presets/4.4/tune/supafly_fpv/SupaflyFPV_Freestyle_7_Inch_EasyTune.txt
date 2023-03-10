@@ -1,5 +1,5 @@
 #$ TITLE: SupaflyFPV Freestyle 7 Inch
-#$ FIRMWARE_VERSION: 4.3
+#$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: TUNE
 #$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: Supafly, SupaflyFPV, Freestyle, 7 inch, 7"
@@ -45,7 +45,7 @@
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION: 
 
-#$ INCLUDE: presets/4.3/tune/defaults.txt
+#$ INCLUDE: presets/4.4/tune/defaults.txt
 
 set anti_gravity_gain = 100
 
@@ -98,7 +98,7 @@ set dterm_lpf1_dyn_min_hz = 0
 set dterm_lpf1_dyn_max_hz = 0
 set dterm_lpf1_dyn_expo = 0
 
-#$ OPTION_GROUP BEGIN: Filters (default to MPU6000/BMI/ICM206xx Gyro)
+#$ OPTION_GROUP BEGIN: Filters
 
     #$ OPTION BEGIN (CHECKED): RPM filtering (Uncheck for Dynamic Notch Filter Setup)
 
@@ -108,20 +108,6 @@ set dterm_lpf1_dyn_expo = 0
         set rpm_filter_q = 700
         set dyn_notch_count = 2
         set rpm_filter_min_hz = 70
-
-    #$ OPTION END 
-
-    #$ OPTION BEGIN (UNCHECKED): ICM42688 Gyro setup
-
-        set gyro_hardware_lpf = OPTION_2
-        set simplified_gyro_filter_multiplier = 100
-        set gyro_lpf1_dyn_min_hz = 0
-        set dterm_lpf1_dyn_min_hz = 0
-        set dterm_lpf1_dyn_max_hz = 0
-        set dterm_lpf1_dyn_expo = 0
-        set dterm_lpf1_static_hz = 0
-        set dterm_lpf2_static_hz = 90
-        set dterm_lpf2_type = BIQUAD
 
     #$ OPTION END 
 
