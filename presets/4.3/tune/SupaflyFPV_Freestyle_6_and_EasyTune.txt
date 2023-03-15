@@ -1,7 +1,7 @@
 #$ TITLE: SupaflyFPV Freestyle 6 Inch
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: TUNE
-#$ STATUS: EXPERIMENTAL
+#$ STATUS: OFFICIAL
 #$ KEYWORDS: Supafly, SupaflyFPV, Freestyle, 6 inch, 6"
 #$ AUTHOR: SupaflyFPV
 
@@ -21,7 +21,6 @@
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION:
 #$ DESCRIPTION: * For optimisation and tips [use this custom PID calculator](https://supaflyfpv.com/betaflight-setup/)
-#$ DESCRIPTION: * Check what gyro your flight controller is using
 #$ DESCRIPTION: * RPM Filtering recommended on compatible ESC or de-select if not available
 #$ DESCRIPTION: * Pick your Radio Link or search in presets if not found
 #$ DESCRIPTION: * Try some freestyle rates...
@@ -56,8 +55,8 @@ set anti_gravity_gain = 5000
     #$ OPTION BEGIN (CHECKED):With HD Cam
 
         set simplified_master_multiplier = 130
-        set simplified_i_gain = 100
-        set simplified_d_gain = 110
+        set simplified_i_gain = 90
+        set simplified_d_gain = 100
         set simplified_pi_gain = 115
         set simplified_dmax_gain = 0
         set simplified_feedforward_gain = 100
@@ -69,8 +68,8 @@ set anti_gravity_gain = 5000
     #$ OPTION BEGIN (UNCHECKED):No HD Cam
 
         set simplified_master_multiplier = 125
-        set simplified_i_gain = 100
-        set simplified_d_gain = 110
+        set simplified_i_gain = 90
+        set simplified_d_gain = 100
         set simplified_pi_gain = 115
         set simplified_dmax_gain = 0
         set simplified_feedforward_gain = 100
@@ -103,9 +102,9 @@ set dterm_lpf1_dyn_expo = 0
 set dterm_lpf1_static_hz = 105
 set dterm_lpf2_static_hz = 210
         
-#$ OPTION_GROUP BEGIN: Filters (default to MPU6000/BMI/ICM206xx Gyro)
+#$ OPTION_GROUP BEGIN: Filters
 
-    #$ OPTION BEGIN (CHECKED): RPM filtering (Uncheck for Dynamic Notch Filter Setup)
+    #$ OPTION BEGIN (CHECKED): RPM filtering - Uncheck for Dynamic Notch Filter Setup
 
         set dshot_bidir = ON
         set motor_pwm_protocol = DSHOT600
@@ -113,22 +112,6 @@ set dterm_lpf2_static_hz = 210
         set rpm_filter_q = 800
         set dyn_notch_count = 2
         set rpm_filter_min_hz = 80
-
-    #$ OPTION END 
-
-    #$ OPTION BEGIN (UNCHECKED): ICM42688 Gyro setup
-
-        set gyro_hardware_lpf = OPTION_2
-        set simplified_gyro_filter_multiplier = 100
-        set gyro_lpf1_static_hz = 250
-        set gyro_lpf2_static_hz = 500
-        set gyro_lpf1_dyn_min_hz = 0
-        set dterm_lpf1_dyn_min_hz = 0
-        set dterm_lpf1_dyn_max_hz = 0
-        set dterm_lpf1_dyn_expo = 0
-        set dterm_lpf1_static_hz = 0
-        set dterm_lpf2_static_hz = 110
-        set dterm_lpf2_type = BIQUAD
 
     #$ OPTION END 
 
