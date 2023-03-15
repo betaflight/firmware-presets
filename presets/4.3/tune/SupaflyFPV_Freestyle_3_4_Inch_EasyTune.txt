@@ -20,7 +20,6 @@
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION:
 #$ DESCRIPTION: * For optimisation and tips [use this custom PID calculator](https://supaflyfpv.com/betaflight-setup/)
-#$ DESCRIPTION: * Check what gyro your flight controller is using
 #$ DESCRIPTION: * RPM Filtering recommended on compatible ESC or de-select if not available
 #$ DESCRIPTION: * Pick your Radio Link or search in presets if not found
 #$ DESCRIPTION: * Try some freestyle rates modeled on the 3 main styles...
@@ -97,6 +96,7 @@ set dterm_lpf1_dyn_max_hz = 0
 set dterm_lpf1_dyn_expo = 0
 
 #$ OPTION_GROUP BEGIN: Filters
+
     #$ OPTION BEGIN (CHECKED): RPM filtering - Uncheck for Dynamic Notch Filter Setup
     #$ INCLUDE_WARNING: misc/warnings/en/rpm_filters.txt
 
@@ -106,7 +106,6 @@ set dterm_lpf1_dyn_expo = 0
         set rpm_filter_q = 1000
         set dyn_notch_count = 2
         set rpm_filter_fade_range_hz = 100
-        #$ OPTION END 
 
     #$ OPTION END 
 
