@@ -1,7 +1,7 @@
 #$ TITLE: SupaflyFPV Freestyle 3/4 Inch
 #$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: TUNE
-#$ STATUS: EXPERIMENTAL
+#$ STATUS: OFFICIAL
 #$ KEYWORDS: Supafly, SupaflyFPV, 4S, 6S, Freestyle, 3 inch, 4 inch, 3", 4"
 #$ AUTHOR: SupaflyFPV
 
@@ -20,7 +20,6 @@
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION:
 #$ DESCRIPTION: * For optimisation and tips [use this custom PID calculator](https://supaflyfpv.com/betaflight-setup/)
-#$ DESCRIPTION: * Check what gyro your flight controller is using
 #$ DESCRIPTION: * RPM Filtering recommended on compatible ESC or de-select if not available
 #$ DESCRIPTION: * Pick your Radio Link or search in presets if not found
 #$ DESCRIPTION: * Try some freestyle rates modeled on the 3 main styles...
@@ -51,11 +50,12 @@
 set anti_gravity_gain = 100
 
 #$ OPTION_GROUP BEGIN:PIDs
+
     #$ OPTION BEGIN (CHECKED):With HD Cam
 
         set simplified_master_multiplier = 100
         set simplified_i_gain = 75
-        set simplified_d_gain = 110
+        set simplified_d_gain = 90
         set simplified_pi_gain = 110
         set simplified_dmax_gain = 0
         set simplified_feedforward_gain = 90
@@ -65,15 +65,16 @@ set anti_gravity_gain = 100
 
     #$ OPTION BEGIN (UNCHECKED):No HD Cam
 
-        set simplified_master_multiplier = 100
+        set simplified_master_multiplier = 95
         set simplified_i_gain = 75
-        set simplified_d_gain = 110
+        set simplified_d_gain = 90
         set simplified_pi_gain = 110
         set simplified_dmax_gain = 0
         set simplified_feedforward_gain = 90
         set simplified_pitch_pi_gain = 105
 
     #$ OPTION END
+
 #$ OPTION_GROUP END
 
 # ---- Filters Base Setup -------
@@ -95,8 +96,9 @@ set dterm_lpf1_dyn_min_hz = 0
 set dterm_lpf1_dyn_max_hz = 0
 set dterm_lpf1_dyn_expo = 0
 
-#$ OPTION_GROUP BEGIN: Filters (default to MPU6000/BMI/ICM206xx Gyro setup)
-    #$ OPTION BEGIN (CHECKED): RPM filtering (Uncheck for Dynamic Notch Filter Setup)
+#$ OPTION_GROUP BEGIN: Filters
+
+    #$ OPTION BEGIN (CHECKED): RPM filtering  - Uncheck for Dynamic Notch Filter Setup
     #$ INCLUDE_WARNING: misc/warnings/en/rpm_filters.txt
 
         set dshot_bidir = ON
@@ -108,29 +110,13 @@ set dterm_lpf1_dyn_expo = 0
 
     #$ OPTION END 
 
-    #$ OPTION BEGIN (UNCHECKED): ICM42688 Gyro setup
-
-        set gyro_hardware_lpf = OPTION_2
-        set simplified_gyro_filter_multiplier = 120
-        set gyro_lpf1_dyn_min_hz = 0
-        simplified_tuning apply
-
-        set simplified_dterm_filter = OFF
-        set dterm_lpf1_dyn_min_hz = 0
-        set dterm_lpf1_dyn_max_hz = 0
-        set dterm_lpf1_dyn_expo = 0
-        set dterm_lpf1_static_hz = 0
-        set dterm_lpf2_static_hz = 110
-        set dterm_lpf2_type = BIQUAD
-
-    #$ OPTION END 
-
 #$ OPTION_GROUP END
 
 #$ OPTION_GROUP BEGIN: Choose RC Link
 
     #$ OPTION BEGIN (UNCHECKED): Crossfire Dynamic
         #$ INCLUDE: presets/4.3/rc_link/defaults.txt
+
         feature RX_SERIAL
         set serialrx_provider = CRSF
 
@@ -146,6 +132,7 @@ set dterm_lpf1_dyn_expo = 0
 
     #$ OPTION BEGIN (UNCHECKED): Crossfire 50Hz Locked
         #$ INCLUDE: presets/4.3/rc_link/defaults.txt
+
         feature RX_SERIAL
         set serialrx_provider = CRSF
 
@@ -161,6 +148,7 @@ set dterm_lpf1_dyn_expo = 0
 
     #$ OPTION BEGIN (UNCHECKED): Crossfire 150Hz Locked
         #$ INCLUDE: presets/4.3/rc_link/defaults.txt
+
         feature RX_SERIAL
         set serialrx_provider = CRSF
 
@@ -174,8 +162,8 @@ set dterm_lpf1_dyn_expo = 0
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): Tracer/ELRS 250Hz
-        # Tracer/ELRS 250Hz
         #$ INCLUDE: presets/4.3/rc_link/defaults.txt
+
         feature RX_SERIAL
         set serialrx_provider = CRSF
 
@@ -191,6 +179,7 @@ set dterm_lpf1_dyn_expo = 0
 
     #$ OPTION BEGIN (UNCHECKED): ELRS 500Hz
         #$ INCLUDE: presets/4.3/rc_link/defaults.txt
+        
         feature RX_SERIAL
         set serialrx_provider = CRSF
 
