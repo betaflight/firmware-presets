@@ -1,7 +1,7 @@
 #$ TITLE: SupaflyFPV Freestyle 7 Inch
 #$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: TUNE
-#$ STATUS: EXPERIMENTAL
+#$ STATUS: OFFICIAL
 #$ KEYWORDS: Supafly, SupaflyFPV, Freestyle, 7 inch, 7"
 #$ AUTHOR: SupaflyFPV
 
@@ -21,7 +21,6 @@
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION:
 #$ DESCRIPTION: * For optimisation and tips [use this custom PID calculator](https://supaflyfpv.com/betaflight-setup/)
-#$ DESCRIPTION: * Check what gyro your flight controller is using
 #$ DESCRIPTION: * RPM Filtering recommended on compatible ESC or de-select if not available
 #$ DESCRIPTION: * Pick your Radio Link or search in presets if not found
 #$ DESCRIPTION: * Try some freestyle rates...
@@ -54,8 +53,8 @@ set anti_gravity_gain = 100
     #$ OPTION BEGIN (CHECKED):With HD Cam
 
         set simplified_master_multiplier = 140
-        set simplified_i_gain = 90
-        set simplified_d_gain = 110
+        set simplified_i_gain = 100
+        set simplified_d_gain = 115
         set simplified_pi_gain = 115
         set simplified_dmax_gain = 0
         set simplified_feedforward_gain = 100
@@ -67,8 +66,8 @@ set anti_gravity_gain = 100
     #$ OPTION BEGIN (UNCHECKED):No HD Cam
 
         set simplified_master_multiplier = 135
-        set simplified_i_gain = 90
-        set simplified_d_gain = 110
+        set simplified_i_gain = 100
+        set simplified_d_gain = 115
         set simplified_pi_gain = 115
         set simplified_dmax_gain = 0
         set simplified_feedforward_gain = 100
