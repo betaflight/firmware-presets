@@ -1,7 +1,7 @@
 #$ TITLE: Braced Toothpick/Digipick 3s/4s | mouseFPV
 #$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: TUNE
-#$ STATUS: EXPERIMENTAL
+#$ STATUS: COMMUNITY
 #$ KEYWORDS: FPVCycle TP3, Digipick, Toothpick, 3s, 3 Inch, 4s, AOS T3, T3
 #$ AUTHOR: mouseFPV
 #$ PARSER: MARKED
@@ -27,8 +27,8 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: ## Options:
 #$ DESCRIPTION: ###  Filters:
-#$ DESCRIPTION: * **RPM Filters DShot600 (F7 & Up)**: Enables RPM filtering. ESCs must support bi-directional. For F7 or better, sets Dshot600, 8k pidloop recommended (set manually).
-#$ DESCRIPTION: * **RPM Filters DShot300 (F4)**: Enables RPM filtering. ESCs must support bi-directional. For F4, sets Dshot300, 4k pidloop recommended (set manually).
+#$ DESCRIPTION: * **RPM Filters DShot600**: Enables RPM filtering. ESCs must support bi-directional. Sets Dshot600.
+#$ DESCRIPTION: * **RPM Filters DShot300**: Enables RPM filtering. ESCs must support bi-directional. Sets Dshot300, enables gyro LPF 2 Due to DSHOT300 often run on half loop rate.
 #$ DESCRIPTION:
 #$ DESCRIPTION: ### Additional Options:
 #$ DESCRIPTION: * **Dynamic Idle:** Enables Dynamic Idle for Freestyle 3"
@@ -131,7 +131,7 @@ set yaw_lowpass_hz = 100
 # ------ OPTIONS GO BELOW THIS LINE ------
 #$ OPTION_GROUP BEGIN: Filters (Choose One or None)
 
-    #$ OPTION BEGIN (CHECKED): RPM Filters DShot600 (F7 & Up)
+    #$ OPTION BEGIN (CHECKED): RPM Filters DShot600
         # -- End Defaults --
         # -- Begin Mouse Tune --
 
@@ -171,7 +171,7 @@ set yaw_lowpass_hz = 100
 
     #$ OPTION END
 
-    #$ OPTION BEGIN (UNCHECKED): RPM Filters DShot300 (F4)
+    #$ OPTION BEGIN (UNCHECKED): RPM Filters DShot300
         # -- End Defaults --
         # -- Begin Mouse Tune --
 
