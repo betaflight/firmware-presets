@@ -1,7 +1,7 @@
 #$ TITLE:  FPVCycle Sonicare 6s Tune | mouseFPV 
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: TUNE
-#$ STATUS: EXPERIMENTAL
+#$ STATUS: COMMUNITY
 #$ KEYWORDS: FPVCycle
 #$ AUTHOR: mouseFPV
 #$ PARSER: MARKED
@@ -17,8 +17,8 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: ## Options:
 #$ DESCRIPTION: ### **Filters:**
-#$ DESCRIPTION: * **RPM Filters (F7 & Up):** Enables RPM filtering. ESCs must support bi-directional. Sets motor poles to 14, For F7 or better, sets Dshot600, 8k pidloop recommended (set manually).
-#$ DESCRIPTION: * **RPM Filters (F4):** Enables RPM filtering. ESCs must support bi-directional. Sets motor poles to 14, For F4 or better, sets Dshot300, 4k pidloop recommended (set manually). Enables gyro LPF 2.
+#$ DESCRIPTION: * **RPM Filters DShot300:** Enables RPM filtering. ESCs must support bi-directional. Sets motor poles to 14, Sets Dshot600.
+#$ DESCRIPTION: * **RPM Filters DShot600:** Enables RPM filtering. ESCs must support bi-directional. Sets motor poles to 14, Sets Dshot300, enables gyro LPF 2 Due to DSHOT300 often run on half loop rate.
 #$ DESCRIPTION:
 #$ DESCRIPTION: ### **Additional Options:**
 #$ DESCRIPTION: * **Dynamic Idle:** Enables Dynamic Idle for Freestyle 5"
@@ -104,7 +104,7 @@ set yaw_lowpass_hz = 100
 
 #$ OPTION_GROUP BEGIN: Filters (Choose One or None)
 
-    #$ OPTION BEGIN (CHECKED): RPM Filters DShot600 (F7 & Up)
+    #$ OPTION BEGIN (CHECKED): RPM Filters DShot600
         #$ INCLUDE: presets/4.3/filters/defaults.txt
 
         # -- End Defaults --
@@ -142,7 +142,7 @@ set yaw_lowpass_hz = 100
     #$ OPTION END
 
 
-    #$ OPTION BEGIN (UNCHECKED): RPM Filters DShot300 (F4)
+    #$ OPTION BEGIN (UNCHECKED): RPM Filters DShot300
         #$ INCLUDE: presets/4.3/filters/defaults.txt
 
         # -- End Defaults --
