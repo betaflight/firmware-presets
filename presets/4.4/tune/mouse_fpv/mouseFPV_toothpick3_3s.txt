@@ -1,7 +1,7 @@
 #$ TITLE:  FPVCycle Toothpick 3 3s | mouseFPV
 #$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: TUNE
-#$ STATUS: EXPERIMENTAL
+#$ STATUS: COMMUNITY
 #$ KEYWORDS: FPVCycle TP3, Toothpick, 3s, 3 inch
 #$ AUTHOR: mouseFPV
 #$ PARSER: MARKED
@@ -18,8 +18,8 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: ## Options:
 #$ DESCRIPTION: ### **Filters:**
-#$ DESCRIPTION: * **RPM Filters DShot600 (F7 & Up)**: Enables RPM filtering. ESCs must support bi-directional. For F7 or better, sets Dshot600, 8k pidloop recommended (set manually).
-#$ DESCRIPTION: * **RPM Filters DShot300 (F4)**: Enables RPM filtering. ESCs must support bi-directional. For F4, sets Dshot300, 4k pidloop recommended (set manually).
+#$ DESCRIPTION: * **RPM Filters DShot600**: Enables RPM filtering. ESCs must support bi-directional. Sets Dshot600.
+#$ DESCRIPTION: * **RPM Filters DShot300**: Enables RPM filtering. ESCs must support bi-directional. Sets Dshot300.
 #$ DESCRIPTION:
 #$ DESCRIPTION: ### **Additional Options:**
 #$ DESCRIPTION: * **Dynamic Idle:** Enables Dynamic Idle for Freestyle 3"
@@ -57,7 +57,7 @@ set simplified_dmax_gain = 000
 set simplified_i_gain = 80
 set simplified_pitch_d_gain = 75
 set simplified_pitch_pi_gain = 80
-set simplified_master_multiplier = 135
+set simplified_master_multiplier = 125
 simplified_tuning apply
 
 
@@ -79,7 +79,6 @@ set dshot_idle_value = 400
 # -- Filters for non bi-directional setups as a base--
 
 # -- Gyro lowpass filters --
-# -- No Gyro Lowpass
 set simplified_gyro_filter = on
 set simplified_gyro_filter_multiplier = 150
 simplified_tuning apply
@@ -108,7 +107,7 @@ set yaw_lowpass_hz = 100
 
 # This is where the author includes options that require input from the User
     #$ OPTION_GROUP BEGIN: Filters (Choose One or None)
-    #$ OPTION BEGIN (CHECKED): RPM Filters DShot600 (F7 & Up)
+    #$ OPTION BEGIN (CHECKED): RPM Filters DShot600
         # -- Filter Settings --
 
         #$ INCLUDE: presets/4.3/filters/defaults.txt
@@ -147,7 +146,7 @@ set yaw_lowpass_hz = 100
         set yaw_lowpass_hz = 100
     #$ OPTION END
 
-    #$ OPTION BEGIN (UNCHECKED): RPM Filters DShot300 (F4)
+    #$ OPTION BEGIN (UNCHECKED): RPM Filters DShot300)
         # -- Filter Settings --
 
         #$ INCLUDE: presets/4.3/filters/defaults.txt
@@ -208,7 +207,7 @@ set yaw_lowpass_hz = 100
         set simplified_i_gain = 95
         set simplified_pitch_d_gain = 105
         set simplified_pitch_pi_gain = 115
-        set simplified_master_multiplier = 115
+        set simplified_master_multiplier = 105
         simplified_tuning apply
     #$ OPTION END
 #$ OPTION_GROUP END
