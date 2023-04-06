@@ -1,7 +1,7 @@
 #$ TITLE: Karate Race 6s 5"
 #$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: TUNE
-#$ STATUS: EXPERIMENTAL
+#$ STATUS: OFFICIAL
 #$ KEYWORDS: karate, 6S, race, world champion, 5 inch, 5", sugarK, limon, ctzsnooze, KarateBrot
 #$ AUTHOR: sugarK
 
@@ -35,8 +35,13 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: ## Second note... Radio links:
 #$ DESCRIPTION: 1. Make sure your radio firmware is up to date using either EdgeTX or OpenTX
-#$ DESCRIPTION: 1. Make sure your **ADC Filter is OFF** in the hardware page
-#$ DESCRIPTION: 1. Go to the radio (RC_LINK) presets and apply the correct setup for your system and link speed
+#$ DESCRIPTION: 2. Make sure your **ADC Filter is OFF** in the hardware page
+#$ DESCRIPTION: 3. Go to the radio (RC_LINK) presets and apply the correct setup for your system and link speed
+#$ DESCRIPTION:
+#$ DESCRIPTION: <br>
+#$ DESCRIPTION: 
+#$ DESCRIPTION: ## Third note... ESC settings:
+#$ DESCRIPTION: - For best performance set PWM frequency to 48Khz locked and timing to 23 degrees.
 
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/41
 
@@ -58,7 +63,7 @@ set simplified_gyro_filter = OFF
 # -- Gyro Dynamic Notches --
 set dyn_notch_count = 2
 set dyn_notch_q = 450
-set dyn_notch_min_hz = 200
+set dyn_notch_min_hz = 125
 set dyn_notch_max_hz = 650
 
 # -- Dterm filtering --
@@ -121,7 +126,7 @@ set tpa_breakpoint = 1250
     # -- Gyro Dynamic Notches --
     set dyn_notch_count = 1
     set dyn_notch_q = 600
-    set dyn_notch_min_hz = 250
+    set dyn_notch_min_hz = 200
     set dyn_notch_max_hz = 650
 
     # -- Dterm filtering --
