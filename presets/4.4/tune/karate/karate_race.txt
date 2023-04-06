@@ -126,7 +126,7 @@ set tpa_breakpoint = 1250
     # -- Gyro Dynamic Notches --
     set dyn_notch_count = 1
     set dyn_notch_q = 600
-    set dyn_notch_min_hz = 250
+    set dyn_notch_min_hz = 200
     set dyn_notch_max_hz = 650
 
     # -- Dterm filtering --
