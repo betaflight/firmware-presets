@@ -1,7 +1,7 @@
 #$ TITLE: UAV Tech - 5" Freestyle with GoPro (650-750g AUW)
 #$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: TUNE
-#$ STATUS: EXPERIMENTAL
+#$ STATUS: COMMUNITY
 #$ KEYWORDS: 4S, 6S, 5in, 5", freestyle
 #$ AUTHOR: UAV Tech (Mark Spatz)
 
@@ -29,18 +29,18 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION:   (Recommendation: 24k for 5" | make sure to adjust in ESC settings)
 #$ DESCRIPTION:
-#$ DESCRIPTION: - [What is the RPM Filter?](https://youtu.be/ve_TNB0D87U)
+#$ DESCRIPTION: - [What is the RPM Filter?](https://youtu.be/Y_fIJ7-c0_A)
 #$ DESCRIPTION: - [RPM vs. Dynamic Notch ONLY](https://youtu.be/ve_TNB0D87U)
 #$ DESCRIPTION:
-#$ DESCRIPTION: - [What is Dynamic Idle?](https://youtu.be/2Mr-AP7K8YE)
+#$ DESCRIPTION: - [What is Dynamic Idle?](https://youtu.be/ynHsoQXifdU)
 #$ DESCRIPTION:
 #$ DESCRIPTION: Need more HELP?
 #$ DESCRIPTION: -----------
 #$ DESCRIPTION: - [UAV Tech Discord](https://discordapp.com/invite/rCCzgeT)
 #$ DESCRIPTION: - [Take it to the NEXT LEVEL!](https://theuavtech.com/tuning)
 #$ DESCRIPTION:
-#$ WARNING: **DO NOT** select the RPM Filter option unless your ESCs support DSHOT and Bi-Directional Communication.  If you are unsure, HIT CANCEL and de-select that option, OTHERWISE it can spin up motors even before you arm your quad!!!
-#$ DISCUSSION: hhttps://github.com/betaflight/firmware-presets/pull/346
+#$ WARNING: Prior to selecting the "RPM Filter" or "Dynamic Idle" options, Bi-Directional DSHOT must be setup for your quad.  If you have not setup yet, click "CANCEL" and setup first (PROPS OFF to test).  If you have NOT selected the "RPM Filter" or "Dynamic Idle" options, YOU CAN IGNORE THIS MESSAGE.
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/346
 #$ INCLUDE: presets/4.4/tune/defaults.txt
 #$ INCLUDE: presets/4.3/filters/defaults.txt
 
@@ -54,9 +54,19 @@ set simplified_pitch_d_gain = 100
 set simplified_pitch_pi_gain = 100
 set simplified_master_multiplier = 160
 
-set anti_gravity_gain = 80
+set anti_gravity_gain = 120
 set pidsum_limit = 1000
 set pidsum_limit_yaw = 1000
+
+#$ OPTION_GROUP BEGIN: Prop Wash Performance Booster ...
+    #$ OPTION BEGIN (UNCHECKED): Dynamic Idle
+    	# -- ADDER: Enabling Dynamic Idle --
+ 	set motor_pwm_protocol = DSHOT600
+ 	set dshot_bidir = ON
+	set rpm_filter_harmonics = 0
+  	set dyn_idle_min_rpm = 30
+    #$ OPTION END
+#$ OPTION_GROUP END
 
 #$ OPTION_GROUP BEGIN: Choose ONE Filter option (+ RPM filter if desired)
     #$ OPTION BEGIN (UNCHECKED): low Build Quality
@@ -116,13 +126,6 @@ set pidsum_limit_yaw = 1000
     #$ OPTION BEGIN (UNCHECKED): 48k+ ESC PWM Settings
     	# -- ADDER: For 48k+ ESC PWM Settings --
   	set thrust_linear = 20
-    #$ OPTION END
-#$ OPTION_GROUP END
-
-#$ OPTION_GROUP BEGIN: Prop Wash Performance Booster ...
-    #$ OPTION BEGIN (UNCHECKED): Dynamic Idle
-    	# -- ADDER: Enabling Dynamic Idle --
-  	set dyn_idle_min_rpm = 35
     #$ OPTION END
 #$ OPTION_GROUP END
 
