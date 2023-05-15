@@ -4202,8 +4202,8 @@
     },
     {
       "fullPath": "presets/4.4/tune/aos_rc/aos_ul5_tune.txt",
-      "hash": "6a371ec04a012f51673cbdd9f5d33772cc1a3f5e000831fc097d3de4660916dd",
-      "title": "AOS LR5 tune by Chris Rosser",
+      "hash": "49830f5dfd108999c24649f7d6e9f5b236580317a869a2bc7dc62b8315943fe9",
+      "title": "AOS UL5 tune by Chris Rosser",
       "firmware_version": [
         "4.4",
         "4.3"
