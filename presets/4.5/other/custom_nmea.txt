@@ -2,7 +2,7 @@
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: OTHER
 #$ STATUS: COMMUNITY
-#$ KEYWORDS: 
+#$ KEYWORDS: gps, custom commands, nmea
 #$ AUTHOR: KMfpv
 #$ DESCRIPTION: GPS with NMEA protocol only (most non-UBLOX Modules) based on MediaTek or GoTop Chipsets
 #$ DESCRIPTION: (like the MediaTek MT33xx Series or GoTop GK95xx Series) mostly don't have a 
