@@ -33,6 +33,9 @@
 
 #$ INCLUDE: presets/4.5/other/reset_gps.txt
 
+#disable gps auto config
+set gps_auto_config = OFF
+
 #$ OPTION_GROUP BEGIN: OUTPUT messages (needed once)
 	#$ OPTION BEGIN (UNCHECKED): Mediatek 
 		set gps_nmea_custom_command = $PMTK314,0,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0*28

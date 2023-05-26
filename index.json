@@ -4615,7 +4615,7 @@
     },
     {
       "fullPath": "presets/4.5/other/custom_nmea.txt",
-      "hash": "e7c596464eb9d22773a96f1c8a5efcbb95bac57827c7a5fa076581aaa887c998",
+      "hash": "9297698f941635dbf3f437b52160fbb93397fa187e3f912744519b05afa65980",
       "title": "Custom NMEA commands",
       "firmware_version": [
         "4.5"
