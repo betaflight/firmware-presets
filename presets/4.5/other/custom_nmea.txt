@@ -35,63 +35,63 @@
 
 #$ OPTION_GROUP BEGIN: OUTPUT messages (needed once)
 	#$ OPTION BEGIN (UNCHECKED): Mediatek 
-		gps_nmea_custom_command = $PMTK314,0,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0*28
+		set gps_nmea_custom_command = $PMTK314,0,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0*28
 	#$ OPTION END
 
 	#$ OPTION BEGIN (UNCHECKED): GoTop
-		gps_nmea_custom_command = $PGKC242,0,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0*37
+		set gps_nmea_custom_command = $PGKC242,0,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0*37
 	#$ OPTION END
 #$ OPTION_GROUP END
 
 #$ OPTION_GROUP BEGIN: BAUDRATE/UPDATE (38400/5Hz)
 	#$ OPTION BEGIN (UNCHECKED): Mediatek MTK 
-		gps_nmea_custom_command = $PMTK251,38400*27 $PMTK220,200*2C
+		set gps_nmea_custom_command = $PMTK251,38400*27 $PMTK220,200*2C
 	#$ OPTION END
 
 	#$ OPTION BEGIN (UNCHECKED): GoTop
-		gps_nmea_custom_command = $PMTK251,38400*27 $PGKC101,200*31
+		set gps_nmea_custom_command = $PMTK251,38400*27 $PGKC101,200*31
 
 	#$ OPTION END
 #$ OPTION_GROUP END
 
 #$ OPTION_GROUP BEGIN: BAUDRATE/UPDATE (57600/5Hz)
 	#$ OPTION BEGIN (UNCHECKED): Mediatek MTK 
-		gps_nmea_custom_command = $PMTK251,57600*2C $PMTK220,200*2C
+		set gps_nmea_custom_command = $PMTK251,57600*2C $PMTK220,200*2C
 	#$ OPTION END
 
 	#$ OPTION BEGIN (UNCHECKED): GoTop
-		gps_nmea_custom_command = $PGKC147,57600*35 $PGKC101,200*31
+		set gps_nmea_custom_command = $PGKC147,57600*35 $PGKC101,200*31
 
 	#$ OPTION END
 #$ OPTION_GROUP END
 
 #$ OPTION_GROUP BEGIN: BAUDRATE/UPDATE (57600/10Hz)
 	#$ OPTION BEGIN (UNCHECKED): Mediatek MTK 
-		gps_nmea_custom_command = $PMTK251,57600*2C $PMTK220,100*2F
+		set gps_nmea_custom_command = $PMTK251,57600*2C $PMTK220,100*2F
 	#$ OPTION END
 
 	#$ OPTION BEGIN (UNCHECKED): GoTop
-		gps_nmea_custom_command = $PGKC147,57600*35 $PGKC101,100*32
+		set gps_nmea_custom_command = $PGKC147,57600*35 $PGKC101,100*32
 	#$ OPTION END
 #$ OPTION_GROUP END
 
 #$ OPTION_GROUP BEGIN: BAUDRATE/UPDATE (115200/5Hz)
 	#$ OPTION BEGIN (UNCHECKED): Mediatek MTK 
-		gps_nmea_custom_command = $PMTK251,115200*1F $PMTK220,200*2C
+		set gps_nmea_custom_command = $PMTK251,115200*1F $PMTK220,200*2C
 	#$ OPTION END
 
 	#$ OPTION BEGIN (UNCHECKED): GoTop
-		gps_nmea_custom_command = $PGKC147,115200*06 $PGKC101,200*31
+		set gps_nmea_custom_command = $PGKC147,115200*06 $PGKC101,200*31
 
 	#$ OPTION END
 #$ OPTION_GROUP END
 
 #$ OPTION_GROUP BEGIN: BAUDRATE/UPDATE (115200/10Hz)
 	#$ OPTION BEGIN (UNCHECKED): Mediatek MTK 
-		gps_nmea_custom_command = $PMTK251,115200*1F $PMTK220,100*2F
+		set gps_nmea_custom_command = $PMTK251,115200*1F $PMTK220,100*2F
 	#$ OPTION END
 
 	#$ OPTION BEGIN (UNCHECKED): GoTop
-		gps_nmea_custom_command = $PGKC147,115200*06 $PGKC101,100*32
+		set gps_nmea_custom_command = $PGKC147,115200*06 $PGKC101,100*32
 	#$ OPTION END
 #$ OPTION_GROUP END
