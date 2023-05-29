@@ -9,7 +9,8 @@
 
 # led designations
 
-led 0# led
+# led
+led 0
 led 0 2,3::COV:1
 led 1 3,3::COV:1
 led 2 4,3::COV:1
