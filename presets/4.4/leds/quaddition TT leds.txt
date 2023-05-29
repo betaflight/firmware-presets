@@ -43,7 +43,7 @@ color 5 0,0,0
 # color 6 blue (R5, F4, F5) [>5789<=5829]
 color 6 240,0,255
 # color 7 (not in use)
-color 7 0,0,255
+color 7 0,0,0
 # color 8 (not in use)
 color 8 0,0,255
 # color 9 (not in use)
