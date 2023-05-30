@@ -4,12 +4,34 @@
 #$ STATUS:  COMMUNITY
 #$ KEYWORDS: karate, race, 533, 3 inch, 3", sugarK, shames, tiny, trainer, spec, tinyTrainer
 #$ AUTHOR: sugarK
-#$ DESCRIPTION: This racing tune was developed for the 533 TinyTrainer spec class with @Shames throwing his quad out the window of his office and sending me logs. 
+
+#$ PARSER: MARKED
+
+#$ DESCRIPTION:
+#$ DESCRIPTION: <a href="https://flyfive33.com/product/tinytrainer-frame-kit"><img src="https://github.com/betaflight/firmware-presets/assets/19867640/8914662e-121a-4ab0-b5ad-1fe7705cb801" alt="533" width="50%" style="display: block; margin-left: auto; margin-right: auto; margin-top: 20px;"/></a>
+#$ DESCRIPTION: <h1>533 TinyTrainer “spec” Karate</h1>
+#$ DESCRIPTION: <br>
+#$ DESCRIPTION:
+#$ DESCRIPTION: This racing tune was developed for the <a href="https://flyfive33.com/product/tinytrainer-frame-kit">533 TinyTrainer</a> spec class with @Shames throwing his quad out the window of his office and sending me logs.
+#$ DESCRIPTION:
+#$ DESCRIPTION: <br>
+#$ DESCRIPTION:
 #$ DESCRIPTION: The revised tune was developed thanks to the 533 team sending me a Tiny Trainer any my local gang going hard on TT spec racing.
-#$ DESCRIPTION: 
-#$ DESCRIPTION: Things to note.. please use Betaflight 4.4.2 or newer.
-#$ DESCRIPTION: SECOND NOTE...YOU HAVE TO USE RPM FILTERING WITH THIS TUNE, failure to do so might result in fire and regarding Dshot600, if your setup has errors in the motor tab using bidirectional Dshot then change to 8k/4k and dshot300. Preset sets motor poles count to 12 to match with the Tiny Trainer Headsup motors.
-#$ DESCRIPTION: THIRD NOTE.... Radio links.. 1. Make sure your radio system is totally up to date using either Edgetx or Opentx and your ADC in the hardware page is OFF 2. Go to the radio presets and apply the correct setup for your system and link speed.
+#$ DESCRIPTION:
+#$ DESCRIPTION: <br>
+#$ DESCRIPTION:
+#$ DESCRIPTION: ## Things to note:
+#$ DESCRIPTION: - Please use Betaflight 4.4.2 or newer
+#$ DESCRIPTION: - **YOU HAVE TO USE RPM FILTERING WITH THIS TUNE!** Failure to do so might result in fire 🔥
+#$ DESCRIPTION: - This preset sets the **motor pole count to 12** to match the Tiny Trainer Headsup motors
+#$ DESCRIPTION: - Regarding DShot600: if your setup has errors in the motor tab using bidirectional DShot, change to **8k/4k and DShot300**
+#$ DESCRIPTION:
+#$ DESCRIPTION: <br>
+#$ DESCRIPTION:
+#$ DESCRIPTION: ## Second note... Radio links:
+#$ DESCRIPTION: 1. Make sure your radio firmware is up to date using either EdgeTX or OpenTX
+#$ DESCRIPTION: 2. Make sure your **ADC Filter is OFF** in the hardware page
+#$ DESCRIPTION: 3. Go to the radio presets (RC_LINK) and apply the correct setup for your system and link speed
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/81
 #$ INCLUDE_WARNING: misc/warnings/en/rpm_filters.txt
 #$ INCLUDE: presets/4.4/tune/defaults.txt
