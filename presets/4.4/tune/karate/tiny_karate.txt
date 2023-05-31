@@ -110,7 +110,7 @@ set tpa_breakpoint = 1250
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): Quaddiction LED channel mapping
-    #$ INCLUDE: presets/4.4/LEDS/quaddition_TT_leds.txt 
+    #$ INCLUDE: presets/4.4/leds/quaddition_TT_LEDS.txt 
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): sugarK's rates
