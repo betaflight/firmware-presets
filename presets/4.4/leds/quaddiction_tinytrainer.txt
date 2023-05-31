@@ -1,4 +1,3 @@
-<<<<<<< HEAD:presets/4.4/leds/quaddiction_tinytrainer.txt
 #$ TITLE: Quaddiction TinyTrainer LED settings
 #$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: LEDS
@@ -11,18 +10,6 @@
 
 # --- LED Designations ---
 
-=======
-#$ TITLE: Quaddiction Tiny Trainer LED settings
-#$ FIRMWARE_VERSION: 4.4
-#$ CATEGORY: LEDS
-#$ STATUS: OFFICIAL
-#$ KEYWORDS: leds, 533, quaddiction, sugarK, spec, spec racing, tiny trainer
-#$ AUTHOR: suagrK
-#$ DESCRIPTION: Sets LED settings to suit used VTX channels used by the Quaddiction Tiny Trainer spec team 
-#$ DESCRIPTION: 
-
-# led# led
->>>>>>> d6745c4 (fixed up white space and errors):presets/4.4/leds/quaddition_TT_leds.txt
 led 0 2,3::COV:1
 led 1 3,3::COV:1
 led 2 4,3::COV:1
