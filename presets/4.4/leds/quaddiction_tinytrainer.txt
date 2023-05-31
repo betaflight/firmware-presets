@@ -1,16 +1,15 @@
-#$ TITLE: Default 4.3 LED settings
+#$ TITLE: Quaddiction TinyTrainer LED settings
 #$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: LEDS
 #$ STATUS: OFFICIAL
-#$ KEYWORDS: defaults, reset, leds, 533, spec, quaddiction, sugarK
-#$ AUTHOR: suagrK
-#$ DESCRIPTION: Resets LED settings to suit used VTX channels used by7 the quaddiction Tiny Trainer spec team 
-#$ DESCRIPTION: Options: LED, colour or mode_color resets.
+#$ KEYWORDS: leds, 533, five33, quaddiction, sugarK, spec, spec racing, tinytrainer, tiny
+#$ AUTHOR: sugarK
 
-# led designations
+#$ DESCRIPTION: Sets LED settings to suit used VTX channels used by the Quaddiction TinyTrainer spec team
 
-# led
-led 0
+
+# --- LED Designations ---
+
 led 0 2,3::COV:1
 led 1 3,3::COV:1
 led 2 4,3::COV:1
@@ -28,6 +27,8 @@ led 13 13,11::COV:1
 led 14 14,12::COV:1
 
 
+# --- Color Tables ---
+
 # color
 color 0 0,0,0
 # color 1 red (R1) [<=5672]
@@ -43,7 +44,7 @@ color 5 0,0,0
 # color 6 blue (R5, F4, F5) [>5789<=5829]
 color 6 240,0,255
 # color 7 (not in use)
-color 7 0,0,0
+color 7 0,0,255
 # color 8 (not in use)
 color 8 0,0,255
 # color 9 (not in use)
