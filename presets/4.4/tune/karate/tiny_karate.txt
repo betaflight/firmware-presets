@@ -108,3 +108,11 @@ set tpa_breakpoint = 1250
     set dyn_idle_min_rpm = 60
     set dyn_idle_p_gain = 35
 #$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Quaddiction LED channel mapping
+    #$ INCLUDE: presets/4.4/leds/quaddiction_tinytrainer.txt
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): sugarK's rates
+    #$ INCLUDE: presets/4.3/rates/SugarK.txt
+#$ OPTION END
