@@ -34,7 +34,7 @@ color 0 0,0,0
 # color 1 red (R1) [<=5672]
 color 1 0,0,255
 # color 2 orange (R2) [>5672<=5711]
-color 2 30,0,255
+color 2 21,0,255
 # color 3 green (R3, F1) [>5711<=5750]
 color 3 120,0,255
 #color 4 cyan (R4, F2, F3) [>5750<=5789]
