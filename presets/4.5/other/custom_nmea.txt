@@ -26,7 +26,7 @@
 #$ DESCRIPTION: You can use this tool to test settings as needed, but remember, that betaflight only
 #$ DESCRIPTION: uses GGA/RMC/GSV/GSA so don't enable more, as it doesn't help with performance.
 #$ DESCRIPTION: 
-#$ WARNING: Use at your own risk. 
+#$ WARNING: hint by sugaarK: if you wana use the new rescue mode you can't use less than 57600 or 10 hz and have good results
 #$ DISCUSSION: https://github.com/betaflight/betaflight/issues/12239; https://github.com/betaflight/betaflight/pull/12591
 
 #$ INCLUDE_DISCLAIMER: misc/disclaimer/en/gps.txt
