@@ -30,6 +30,8 @@
 #$ INCLUDE: presets/4.3/tune/defaults.txt
 #$ INCLUDE: presets/4.3/filters/defaults.txt
 
+set motor_poles = 12
+
 # -- Filter Settings --
 set simplified_dterm_filter = ON
 set simplified_gyro_filter = ON
