@@ -27,6 +27,8 @@
 
 #$ INCLUDE: presets/4.4/tune/defaults.txt
 
+set motor_poles = 12
+
 # -- PID values --
 set p_pitch = 71
 set i_pitch = 63

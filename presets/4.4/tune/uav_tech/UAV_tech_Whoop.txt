@@ -46,6 +46,8 @@
 #$ INCLUDE: presets/4.4/tune/defaults.txt
 #$ INCLUDE: presets/4.3/filters/defaults.txt
 
+set motor_poles = 12
+
 # -- PID Settings --
 set simplified_d_gain = 140
 set simplified_pi_gain = 100
