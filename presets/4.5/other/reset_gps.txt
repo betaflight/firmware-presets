@@ -1,5 +1,5 @@
 #$ TITLE: Reset GPS settings
-#$ FIRMWARE_VERSION: 4.3
+#$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: OTHER
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: defaults, reset, GPS
