@@ -1,3 +1,16 @@
+#$ TITLE: 4 inch
+#$ FIRMWARE_VERSION: 4.4
+#$ CATEGORY: BNF
+#$ STATUS: COMMUNITY
+#$ KEYWORDS:  dump
+#$ AUTHOR: Alessandro by NeverDisarm
+
+
+#$ DESCRIPTION: # Betaflight VTX Config file for the Eachine TXC23
+#$ DESCRIPTION: Information set correct uart TX port with IRC Trump protocol
+
+
+
 # 
 
 # dump
