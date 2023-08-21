@@ -1,0 +1,204 @@
+{
+  "majorVersion": 1,
+  "minorVersion": 0,
+  "settings": {
+    "MetapropertyDirective": "#$",
+    "PresetCategories": {
+      "TUNE": "TUNE",
+      "RATES": "RATES",
+      "OSD": "OSD",
+      "VTX": "VTX",
+      "LEDS": "LEDS",
+      "MODES": "MODES",
+      "FILTERS": "FILTERS",
+      "RC_LINK": "RC_LINK",
+      "BNF": "BNF",
+      "OTHER": "OTHER"
+    },
+    "PresetCategoriesPriorities": {
+      "TUNE": 1000000000000,
+      "RATES": 10000,
+      "OSD": 0,
+      "VTX": 1000000,
+      "LEDS": 0,
+      "MODES": 0,
+      "RC_SMOOTHING": 100000000,
+      "FILTERS": 100,
+      "RC_LINK": 10000000000,
+      "BNF": 0,
+      "OTHER": 0
+    },
+    "MetadataTypes": {
+      "STRING": "STRING",
+      "STRING_ARRAY": "STRING_ARRAY",
+      "PRESET_CATEGORY": "PRESET_CATEGORY",
+      "FILE_PATH": "FILE_PATH",
+      "BOOLEAN": "BOOLEAN",
+      "WORDS_ARRAY": "WORDS_ARRAY",
+      "FILE_PATH_ARRAY": "FILE_PATH_ARRAY",
+      "PRESET_STATUS": "PRESET_STATUS",
+      "PRIORITY": "PRIORITY",
+      "PARSER": "PARSER"
+    },
+    "OptionsDirectives": {
+      "OPTION_DIRECTIVE": "option",
+      "BEGIN_OPTION_DIRECTIVE": "option begin",
+      "END_OPTION_DIRECTIVE": "option end",
+      "OPTION_CHECKED": "(checked)",
+      "OPTION_UNCHECKED": "(unchecked)",
+      "BEGIN_OPTION_GROUP_DIRECTIVE": "option_group begin",
+      "END_OPTION_GROUP_DIRECTIVE": "option_group end"
+    },
+    "PresetStatusEnum": [
+      "OFFICIAL",
+      "COMMUNITY",
+      "EXPERIMENTAL"
+    ],
+    "ParserEnum": [
+      "TEXT",
+      "MARKED"
+    ],
+    "presetsDir": "presets",
+    "presetsFileEncoding": "utf-8",
+    "presetsFileMetadata": {
+      "title": {
+        "type": "STRING",
+        "optional": false
+      },
+      "firmware_version": {
+        "type": "STRING_ARRAY",
+        "optional": false
+      },
+      "category": {
+        "type": "PRESET_CATEGORY",
+        "optional": false
+      },
+      "status": {
+        "type": "PRESET_STATUS",
+        "optional": false
+      },
+      "author": {
+        "type": "STRING",
+        "optional": true
+      },
+      "description": {
+        "type": "STRING_ARRAY",
+        "optional": true
+      },
+      "include": {
+        "type": "FILE_PATH_ARRAY",
+        "optional": true
+      },
+      "keywords": {
+        "type": "WORDS_ARRAY",
+        "optional": true
+      },
+      "hidden": {
+        "type": "BOOLEAN",
+        "optional": true
+      },
+      "discussion": {
+        "type": "STRING",
+        "optional": true
+      },
+      "warning": {
+        "type": "STRING",
+        "optional": true
+      },
+      "disclaimer": {
+        "type": "STRING",
+        "optional": true
+      },
+      "include_warning": {
+        "type": "FILE_PATH_ARRAY",
+        "optional": true
+      },
+      "include_disclaimer": {
+        "type": "FILE_PATH_ARRAY",
+        "optional": true
+      },
+      "priority": {
+        "type": "PRIORITY",
+        "optional": true
+      },
+      "force_options_review": {
+        "type": "BOOLEAN",
+        "optional": true
+      },
+      "parser": {
+        "type": "PARSER",
+        "optional": true
+      }
+    }
+  },
+  "uniqueValues": {
+    "firmware_version": [
+      "4.3",
+      "4.4"
+    ],
+    "category": [
+      "OSD",
+      "VTX"
+    ],
+    "author": [
+      "Alessandro by NeverDisarm",
+      "Betaflight"
+    ],
+    "keywords": [
+      "defaults",
+      "eachine",
+      "freestyle",
+      "IRC Tramp",
+      "OSD",
+      "race v1",
+      "race v2",
+      "reset",
+      "vtx",
+      "vtx table",
+      "whoop",
+      "whoop lite"
+    ]
+  },
+  "presets": [
+    {
+      "fullPath": "presets/4.3/osd/defaults.txt",
+      "hash": "36eb8ae097d0362030b297477c971280aad5562ac512a3f7ffa91949ed56db82",
+      "title": "Default 4.3 OSD settings",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "OSD",
+      "status": "OFFICIAL",
+      "keywords": [
+        "defaults",
+        "reset",
+        "OSD"
+      ],
+      "author": "Betaflight",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.4/vtx/vtx table EACHINE TXC23.txt",
+      "hash": "b652bcbb6f44ca52146059702fbdd969f3b35b0d39d31e2e19759cd0ec762a62",
+      "title": "VTX Table Eachine TXC23",
+      "firmware_version": [
+        "4.4"
+      ],
+      "category": "VTX",
+      "status": "COMMUNITY",
+      "keywords": [
+        "vtx",
+        "vtx table",
+        "whoop",
+        "whoop lite",
+        "race v1",
+        "race v2",
+        "freestyle",
+        "IRC Tramp",
+        "eachine"
+      ],
+      "author": "Alessandro by NeverDisarm",
+      "priority": 1000000
+    }
+  ]
+}
