@@ -2,7 +2,7 @@
 #$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: VTX
 #$ STATUS: COMMUNITY
-#$ KEYWORDS:  vtx, vtx table, whoop, whoop lite, race v1, race v2, freestyle, IRC Tramp
+#$ KEYWORDS:  vtx, vtx table, whoop, whoop lite, race v1, race v2, freestyle, IRC Tramp, eachine
 #$ AUTHOR: Alessandro by NeverDisarm
 
 
