@@ -137,6 +137,7 @@
       "4.4"
     ],
     "category": [
+      "BNF",
       "OSD",
       "VTX"
     ],
@@ -146,6 +147,7 @@
     ],
     "keywords": [
       "defaults",
+      "dump",
       "eachine",
       "freestyle",
       "IRC Tramp",
@@ -175,6 +177,21 @@
         "OSD"
       ],
       "author": "Betaflight",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.4/bnf/BTFL_cli_vtx eachine txc23 4 inch 4S.txt",
+      "hash": "0e0afa5d1b1839909a9d7a6c6b32a3edf7be6142a05e6d0fd4afcc09049e665a",
+      "title": "4 inch",
+      "firmware_version": [
+        "4.4"
+      ],
+      "category": "BNF",
+      "status": "COMMUNITY",
+      "keywords": [
+        "dump"
+      ],
+      "author": "Alessandro by NeverDisarm",
       "priority": 0
     },
     {
