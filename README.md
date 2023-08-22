@@ -97,12 +97,11 @@ If you want to add your presets to the **official Betaflight Presets Repo**, and
 1. Do **not** include index files updates in the PR. You can run check.js locally or run indexer in a separate branch, or just don't `git add` it to the commit.
 2. Split the separate presets into separate PRs. Especially if your presets are not connected with each other.
 3. Don't create multiple PRs if you are just starting, start with just one PR. Check it time-to-time if there are any corrections suggested, wait for it to be merged and then proceed with the next presets you wanted to add.
-4. PR must include only one commit. Exceptions are very rare. If you happen to have multiple commits, there are multiple ways to make 1 commit out of them (squash, soft reset etc).
-5. Make sure `#$ DESCRIPTION` explains nicely what the preset is doing. You can even include pictures of modes/osd if you use `#$ PARSER: MARKED`. User must know what he is getting.
-6. Always self-check your PR in the GitHub web-view. Do it **every** time when you make a new PR, or if you update it. Respect the review team. If you don't check the web-view of your PR upon updates, why would they check. The main things to check in the web view: number of commits (should be one) and double check the code changes (Files changed tab).
-7. Don't forget about `#$ DISCUSSION: link/to/your/pr`
-8. If you messed up your PR and would like to start from scratch, do **not** close your existing PR. You can alwas start from scratch without closing your PR. Just save your preset somewhere locally on your PC, then remove your local branch and create a branch with the same name. When you done adding your preset to the branch just force-push it to the `origin`. Your PR is connected with your branch name.
-9. Use indentation for the code inside `#$ OPTION` and `#$ OPTION_GROUP`. 4 spaces for each level of nesting (see examples below).
+4. Make sure `#$ DESCRIPTION` explains nicely what the preset is doing. You can even include pictures of modes/osd if you use `#$ PARSER: MARKED`. User must know what he is getting.
+5. Always self-check your PR in the GitHub web-view. Do it **every** time when you make a new PR, or if you update it. Respect the review team. If you don't check the web-view of your PR upon updates, why would they check. The main thing to check in the web view: Files changed tab.
+6. Don't forget about `#$ DISCUSSION: link/to/your/pr`
+7. If you messed up your PR and would like to start from scratch, do **not** close your existing PR. You can alwas start from scratch without closing your PR. Just save your preset somewhere locally on your PC, then remove your local branch and create a branch with the same name. When you done adding your preset to the branch just force-push it to the `origin`. Your PR is connected with your branch name.
+8. Use indentation for the code inside `#$ OPTION` and `#$ OPTION_GROUP`. 4 spaces for each level of nesting (see examples below).
 
 And remember - a new preset file needs a new PR. Modification for the existing preset also requires a new PR.
 
