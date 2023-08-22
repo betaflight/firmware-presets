@@ -6,13 +6,13 @@
 #$ AUTHOR: Alessandro by NeverDisarm
 
 #$ DESCRIPTION: DUMP of my project ZERO 4 inch deadcat quadcopter analog version.
-
+#$ DESCRIPTION:
 #$ DESCRIPTION: Electronics: HIFIONRC aio 25A 4S, CADDAX TURTLE V2 camera, VTX Eachine TXC23, TBS CROSSFIRE, HQ4X2X3 ,MOTOR EMAX1306B 2700KV
-
+#$ DESCRIPTION:
 #$ DESCRIPTION: Betaflight VTX Config file for the Eachine TXC23
-
+#$ DESCRIPTION:
 #$ DESCRIPTION: Information set correct uart TX port with IRC Trump protocol
-
+#$ DESCRIPTION:
 #$ DESCRIPTION: MY OWN VTX TABLE FOR Eachine TXC23 
 
 
