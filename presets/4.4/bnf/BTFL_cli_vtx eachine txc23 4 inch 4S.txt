@@ -5,6 +5,8 @@
 #$ KEYWORDS:  dump
 #$ AUTHOR: Alessandro by NeverDisarm
 
+#$ DESCRIPTION: Betaflight version 4.4.2
+#$ DESCRIPTION: 
 #$ DESCRIPTION: DUMP of my project ZERO 4 inch deadcat quadcopter analog version.
 #$ DESCRIPTION:
 #$ DESCRIPTION: Electronics: HIFIONRC aio 25A 4S, CADDAX TURTLE V2 camera, VTX Eachine TXC23, TBS CROSSFIRE, HQ4X2X3 ,MOTOR EMAX1306B 2700KV
