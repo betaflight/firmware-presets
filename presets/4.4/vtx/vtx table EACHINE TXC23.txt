@@ -6,7 +6,7 @@
 #$ AUTHOR: Alessandro by NeverDisarm
 
 
-#$ DESCRIPTION: # Betaflight VTX Config file for the Eachine TXC23
+#$ DESCRIPTION: Betaflight VTX Config file for the Eachine TXC23
 #$ DESCRIPTION: Information set correct uart TX port with IRC Trump protocol
 
 
