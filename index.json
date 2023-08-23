@@ -133,8 +133,10 @@
   },
   "uniqueValues": {
     "firmware_version": [
+      "4.2",
       "4.3",
-      "4.4"
+      "4.4",
+      "4.4, 4.3, 4.2"
     ],
     "category": [
       "BNF",
@@ -152,11 +154,16 @@
       "dump",
       "eachine",
       "freestyle",
+      "HV",
       "IRC Tramp",
       "OSD",
+      "pro32",
       "race v1",
       "race v2",
       "reset",
+      "SA 2.1",
+      "tbs",
+      "unify",
       "vtx",
       "vtx table",
       "whoop",
@@ -199,11 +206,34 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/4.4/vtx/TBS Unify Pro32 HV SmartAudio 2.1.txt",
+      "hash": "a5cc20347efd9ede16477647cad04abc4dd0153c816b2e45d11380ed6d6120bc",
+      "title": "TBS Unify Pro32 HV SA 2.1",
+      "firmware_version": [
+        "4.2",
+        "4.3",
+        "4.4"
+      ],
+      "category": "VTX",
+      "status": "COMMUNITY",
+      "keywords": [
+        "vtx",
+        "vtx table",
+        "tbs",
+        "unify",
+        "pro32",
+        "HV",
+        "SA 2.1"
+      ],
+      "author": "Alessandro by NeverDisarm",
+      "priority": 1000000
+    },
+    {
       "fullPath": "presets/4.4/vtx/vtx table EACHINE TXC23.txt",
-      "hash": "75aec7ad4f91bb8aca454bceedf89bfc8c7d7e91844aef7ed97348615ffdeda8",
+      "hash": "71697a057aca2b0242b833dec92734f8f3a9d9edc9be4034f2adc066f2d40d80",
       "title": "VTX Table Eachine TXC23",
       "firmware_version": [
-        "4.4"
+        "4.4, 4.3, 4.2"
       ],
       "category": "VTX",
       "status": "COMMUNITY",

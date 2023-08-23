@@ -1,5 +1,5 @@
 #$ TITLE: VTX Table Eachine TXC23
-#$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.4, 4.3, 4.2
 #$ CATEGORY: VTX
 #$ STATUS: COMMUNITY
 #$ KEYWORDS:  vtx, vtx table, whoop, whoop lite, race v1, race v2, freestyle, IRC Tramp, eachine
