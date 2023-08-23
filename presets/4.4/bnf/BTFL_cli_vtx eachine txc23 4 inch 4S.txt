@@ -328,7 +328,7 @@ rxrange 2 1000 2000
 rxrange 3 1000 2000
 
 #$ OPTION_GROUP BEGIN: Choose VTX table for EACHINE TXC23
-    #$ OPTION BEGIN (CHECKED): low Build Quality
+    #$ OPTION BEGIN (CHECKED): ONLY For VTX EACHINE TXC23!
     	# -- ADDER: For VTX EACHINE TXC23 --
     
 # vtxtable
