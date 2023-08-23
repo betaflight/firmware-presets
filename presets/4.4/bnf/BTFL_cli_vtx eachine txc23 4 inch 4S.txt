@@ -19,7 +19,7 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: Betaflight VTX Config file for the Eachine TXC23
 #$ DESCRIPTION:
-#$ DESCRIPTION: Information set correct uart TX port with IRC Trump protocol
+#$ DESCRIPTION: Information set correct uart TX port with IRC Tramp protocol
 #$ DESCRIPTION:
 #$ DESCRIPTION: MY OWN VTX TABLE FOR Eachine TXC23 
 
@@ -327,7 +327,7 @@ rxrange 1 1000 2000
 rxrange 2 1000 2000
 rxrange 3 1000 2000
 
-#$ OPTION_GROUP BEGIN: Choose VTX table for EACHINE TXC23
+#$ OPTION_GROUP BEGIN: Choose 
     #$ OPTION BEGIN (CHECKED): ONLY For VTX EACHINE TXC23!
     	# -- ADDER: PAY ATTENTION THIS VTX TABLE IS ONLY For VTX EACHINE TXC23 --
     
