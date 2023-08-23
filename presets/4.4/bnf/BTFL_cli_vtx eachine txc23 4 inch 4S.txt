@@ -327,6 +327,10 @@ rxrange 1 1000 2000
 rxrange 2 1000 2000
 rxrange 3 1000 2000
 
+#$ OPTION_GROUP BEGIN: Choose VTX table for EACHINE TXC23
+    #$ OPTION BEGIN (CHECKED): low Build Quality
+    	# -- ADDER: For VTX EACHINE TXC23 --
+    
 # vtxtable
 vtxtable bands 6
 vtxtable channels 8
@@ -339,6 +343,9 @@ vtxtable band 6 LOW BAND L CUSTOM  5362 5399 5436 5473 5510 5547 5584 5621
 vtxtable powerlevels 4
 vtxtable powervalues 25 200 600 800
 vtxtable powerlabels 25 200 600 800
+
+    #$ OPTION END
+#$ OPTION_GROUP END
 
 # vtx
 vtx 0 0 0 0 0 900 900
