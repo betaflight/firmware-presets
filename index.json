@@ -146,6 +146,8 @@
       "Betaflight"
     ],
     "keywords": [
+      "4in",
+      "4S",
       "defaults",
       "dump",
       "eachine",
@@ -181,7 +183,7 @@
     },
     {
       "fullPath": "presets/4.4/bnf/BTFL_cli_vtx eachine txc23 4 inch 4S.txt",
-      "hash": "030d2af7cd5f0eaf6b6135179f66ae0b2fbb2d4bc0424be9e4443f6d029e61ab",
+      "hash": "d92e0ba2ffba048aae76e94fbdc6bd172fc44b4cfbdc3afde96941c6bed8da0d",
       "title": "4 inch deadcat quadcopter",
       "firmware_version": [
         "4.4"
@@ -189,7 +191,9 @@
       "category": "BNF",
       "status": "COMMUNITY",
       "keywords": [
-        "dump"
+        "dump",
+        "4in",
+        "4S"
       ],
       "author": "Alessandro by NeverDisarm",
       "priority": 0

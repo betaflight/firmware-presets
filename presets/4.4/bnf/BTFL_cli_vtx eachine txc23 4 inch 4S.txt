@@ -2,17 +2,18 @@
 #$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: BNF
 #$ STATUS: COMMUNITY
-#$ KEYWORDS:  dump
+#$ KEYWORDS:  dump, 4in, 4S 
 #$ AUTHOR: Alessandro by NeverDisarm
 
 #$ PARSER: MARKED
 
-
+#$ DESCRIPTION: Description:
+#$ DESCRIPTION: -----------
 #$ DESCRIPTION: Betaflight version 4.4.2
 #$ DESCRIPTION: 
-#$ DESCRIPTION: DUMP of my project ZERO 4 inch deadcat quadcopter analog version.
+#$ DESCRIPTION: DUMP of my project ZERO 4 inch deadcat quadcopter analog version FULLY TESTED !
 #$ DESCRIPTION:
-#$ DESCRIPTION: Electronics: HIFIONRC aio 25A 4S, CADDAX TURTLE V2 camera, VTX Eachine TXC23, TBS CROSSFIRE, HQ4X2X3 ,MOTOR EMAX1306B 2700KV
+#$ DESCRIPTION: Electronics: HIFIONRC aio 25A 4S, CADDAX TURTLE V2 camera, VTX Eachine TXC23, TBS CROSSFIRE, HQ4X2X3 ,MOTOR EMAX1306B 2700KV, IFlight GPS
 #$ DESCRIPTION:
 #$ DESCRIPTION: Betaflight VTX Config file for the Eachine TXC23
 #$ DESCRIPTION:
