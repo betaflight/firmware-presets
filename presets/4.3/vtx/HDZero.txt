@@ -13,12 +13,15 @@
 #$ DESCRIPTION: 
 #$ DESCRIPTION: # VTX tables and Canvas mode setup
 #$ DESCRIPTION: ## for all HDzero digital systems
+#$ DESCRIPTION: 
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION: The information provided on this preset is for educational and entertainment purposes only. Betaflight makes no representations as to the safety or legality of the use of any information provided herein. End users assume all responsibility and liability for ensuring they are complying with all relevant laws and regulations.
 #$ DESCRIPTION: <br><br>
 #$ DESCRIPTION: Using the VTX tables as provided may be in breach of your local RF laws. It is up to the end user to research and comply with local regulations and in using these presets the user assumes all liability associated with breaching local regulations.
 
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/89
+
+#$ FORCE_OPTIONS_REVIEW: TRUE
 
 #$ INCLUDE: presets/4.3/vtx/defaults_vtx_tables.txt
 #$ INCLUDE_DISCLAIMER: misc/disclaimer/en/vtxtable.txt
@@ -34,69 +37,79 @@ vtxtable band 4 FATSHARK F FACTORY    0 5760    0 5800    0    0    0    0
 vtxtable band 5 RACEBAND R FACTORY 5658 5695 5732 5769 5806 5843 5880 5917
 vtxtable band 6 IMD6     I CUSTOM     0    0    0    0    0    0    0    0
 
-#$ OPTION BEGIN (UNCHECKED): all VTXs except unlocked Freestyle and TX5M.1
-vtxtable powerlevels 3
-vtxtable powervalues 14 23 0
-vtxtable powerlabels 25 200 0
-#$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED): unlocked Freestyle
-vtxtable powerlevels 5
-vtxtable powervalues 14 23 27 30 0
-vtxtable powerlabels 25 200 500 MAX 0
-#$ OPTION END
+#$ OPTION_GROUP BEGIN: Select VTX model
 
-#$ OPTION BEGIN (UNCHECKED): TX5M.1
-vtxtable powerlevels 4
-vtxtable powervalues 14 23 27 0
-vtxtable powerlabels 25 200 500 0
-#$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): All VTXs (except unlocked Freestyle and TX5M.1)
+        vtxtable powerlevels 3
+        vtxtable powervalues 14 23 0
+        vtxtable powerlabels 25 200 0
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): Unlocked Freestyle
+        vtxtable powerlevels 5
+        vtxtable powervalues 14 23 27 30 0
+        vtxtable powerlabels 25 200 500 MAX 0
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): TX5M.1
+        vtxtable powerlevels 4
+        vtxtable powervalues 14 23 27 0
+        vtxtable powerlabels 25 200 500 0
+    #$ OPTION END
+
+#$ OPTION_GROUP END
 
 
-#$ OPTION BEGIN (UNCHECKED): use displayport on uart 1
-serial 0 1 115200 57600 0 115200
-set displayport_msp_serial = 0
-#$ OPTION END
+#$ OPTION_GROUP BEGIN: VTX options
 
-#$ OPTION BEGIN (UNCHECKED): use displayport on uart 2
-serial 1 1 115200 57600 0 115200
-set displayport_msp_serial = 1
-#$ OPTION END
+    #$ OPTION BEGIN (CHECKED): Map to displayport 
+        set osd_displayport_device = MSP
+    #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED): use displayport on uart 3
-serial 2 1 115200 57600 0 115200
-set displayport_msp_serial = 2
-#$ OPTION END
+#$ OPTION_GROUP END
 
-#$ OPTION BEGIN (UNCHECKED): use displayport on uart 4
-serial 3 1 115200 57600 0 115200
-set displayport_msp_serial = 3
-#$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED): use displayport on uart 5
-serial 4 1 115200 57600 0 115200
-set displayport_msp_serial = 4
-#$ OPTION END
+#$ OPTION_GROUP BEGIN: Select port for VTX
 
-#$ OPTION BEGIN (UNCHECKED): use displayport on uart 6
-serial 5 1 115200 57600 0 115200
-set displayport_msp_serial = 5
-#$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): UART 1
+        serial 0 1 115200 57600 0 115200
+        set displayport_msp_serial = 0
+    #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED): use displayport on uart 7
-serial 6 1 115200 57600 0 115200
-set displayport_msp_serial = 6
-#$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): UART 2
+        serial 1 1 115200 57600 0 115200
+        set displayport_msp_serial = 1
+    #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED): use displayport on uart 8
-serial 7 1 115200 57600 0 115200
-set displayport_msp_serial = 7
-#$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): UART 3
+        serial 2 1 115200 57600 0 115200
+        set displayport_msp_serial = 2
+    #$ OPTION END
 
-#$ OPTION BEGIN (CHECKED): map to displayport 
-set osd_displayport_device = MSP
-#$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): UART 4
+        serial 3 1 115200 57600 0 115200
+        set displayport_msp_serial = 3
+    #$ OPTION END
 
-#$ OPTION BEGIN (CHECKED): HD OSD 
-set vcd_video_system = HD
-#$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): UART 5
+        serial 4 1 115200 57600 0 115200
+        set displayport_msp_serial = 4
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): UART 6
+        serial 5 1 115200 57600 0 115200
+        set displayport_msp_serial = 5
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): UART 7
+        serial 6 1 115200 57600 0 115200
+        set displayport_msp_serial = 6
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): UART 8
+        serial 7 1 115200 57600 0 115200
+        set displayport_msp_serial = 7
+    #$ OPTION END
+
+#$ OPTION_GROUP END
