@@ -168,6 +168,41 @@ set tpa_breakpoint = 1250
 
 #$ OPTION_GROUP END
 
+#$ OPTION_GROUP BEGIN: Spicy Tune
+    #$ OPTION BEGIN (UNCHECKED): Spicy Filters
+        
+        # -- Gyro lowpass filters --
+        set gyro_lpf2_static_hz = 650
+        
+        # -- Gyro Dynamic Notches --
+        set dyn_notch_count = 1
+        set dyn_notch_q = 500
+        
+        # -- RPM filtering --
+        set rpm_filter_harmonics = 2
+        
+        # -- Dterm filtering --
+        set dterm_lpf1_dyn_expo = 10
+        
+     #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Spicy PIDs (not for 6s)
+        
+        # -- PID values --
+        set simplified_pids_mode = RP
+        set simplified_master_multiplier = 110
+        set simplified_i_gain = 115
+        set simplified_d_gain = 75
+        set simplified_pi_gain = 85
+        set simplified_dmax_gain = 125
+        set simplified_pitch_d_gain = 90
+        set simplified_pitch_pi_gain = 110
+        simplified_tuning apply
+        
+    #$ OPTION END
+
+#$ OPTION_GROUP END
+
+
 #$ OPTION_GROUP BEGIN: Optional rates
     #$ OPTION BEGIN (UNCHECKED): sugarK's rates
         #$ INCLUDE: presets/4.3/rates/SugarK.txt
