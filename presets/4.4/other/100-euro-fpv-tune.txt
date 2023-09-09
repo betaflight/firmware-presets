@@ -58,7 +58,7 @@
 #$ DESCRIPTION: In using these presets, the user assumes any and all liability associated with breaching local regulations.
 #$ DESCRIPTION: 
 
-#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/310
+#$ DISCUSSION: 
 
 #$ INCLUDE_WARNING: misc/warnings/en/dshot.txt
 #$ INCLUDE_WARNING: misc/warnings/en/rpm_filters.txt
