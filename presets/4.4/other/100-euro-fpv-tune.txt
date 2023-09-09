@@ -7,9 +7,12 @@
 
 #$ PARSER: MARKED
 
+#$ DESCRIPTION: The following parameters will be modified: FILTERS, PIDS incl. limits, FF, ACC/BARO/BB/telemetry, thrust/throttle/limit, UARTs, motor protocol/dshot, checks, dyn idle, rc smoothing, vtx table, osd, rates 
 #$ DESCRIPTION:
+#$ DESCRIPTION: <br>
+#$ DESCRIPTION: 
 #$ DESCRIPTION: This is a 6S 5" racing tune created by antonig specifically for the 100Euro racing frame [www.100-euro-fpv.com] - a 6s 5" AUW=480gr quad with a stiff frame.
-#$ DESCRIPTION:
+#$ DESCRIPTION: 
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION:
 #$ DESCRIPTION: !CAUTION! This worked on various lower and mid-tier setups with various gear - the tune was installed at multiple race days on mutliple quads and all reported
@@ -36,6 +39,13 @@
 #$ DESCRIPTION: - HDZero V2/V3 vTx and Nano 90cam
 #$ DESCRIPTION: - ELRS nano RXs
 #$ DESCRIPTION: - Genuine Panasonic 35V 470mf capacitor, 12AWG battery leads, genuine Amass XT60H
+#$ DESCRIPTION:
+#$ DESCRIPTION: <br>
+#$ DESCRIPTION:
+#$ DESCRIPTION: ## BlHeli32 settings:
+#$ DESCRIPTION: - Motor Timing = 27 or 28
+#$ DESCRIPTION: - Demag compensation = OFF
+#$ DESCRIPTION: - PWM min = 48, PWM max = 48
 #$ DESCRIPTION:
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION:
