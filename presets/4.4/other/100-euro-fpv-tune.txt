@@ -149,7 +149,7 @@ set thrust_linear = 25
 #$ OPTION END
 
 #$ OPTION BEGIN (CHECKED): Min/max check 1000/2000
-    set min_check = 1000
+    set min_check = 1010
     set max_check = 2000
 #$ OPTION END
 
