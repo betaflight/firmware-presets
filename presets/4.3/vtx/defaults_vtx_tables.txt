@@ -1,10 +1,12 @@
 #$ TITLE: Default 4.3 VTX table settings
 #$ FIRMWARE_VERSION: 4.3
+#$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: VTX
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: defaults, reset, clear, vtx, vtxtable
 #$ AUTHOR: Betaflight
-#$ DESCRIPTION: Resets only the VTX table back to 4.3 Defaults
+#$ DESCRIPTION: Resets only the VTX table back to 4.X Defaults
 #$ DESCRIPTION: Only the checked settings will be reset
 
 # reset VTXtable
