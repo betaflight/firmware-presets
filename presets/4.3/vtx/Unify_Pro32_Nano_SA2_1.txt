@@ -2,6 +2,7 @@
 #$ FIRMWARE_VERSION: 4.2
 #$ FIRMWARE_VERSION: 4.3
 #$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: VTX
 #$ STATUS: COMMUNITY
 #$ KEYWORDS:  vtx, vtx table, tbs, unify, pro32, nano, SA 2.1
@@ -22,5 +23,5 @@ vtxtable band 3 BOSCAM_E E FACTORY 5705 5685 5665 5645 5885 5905 5925 5945
 vtxtable band 4 FATSHARK F FACTORY 5740 5760 5780 5800 5820 5840 5860 5880
 vtxtable band 5 RACEBAND R FACTORY 5658 5695 5732 5769 5806 5843 5880 5917
 vtxtable powerlevels 4
-vtxtable powervalues 14 20 26 28
+vtxtable powervalues 14 20 26 36
 vtxtable powerlabels 25 100 400 MAX
