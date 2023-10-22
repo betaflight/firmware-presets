@@ -1,7 +1,7 @@
 #$ TITLE: UAV Tech - Whoop (1S & 2S)
 #$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: TUNE
-#$ STATUS: EXPERIMENTAL
+#$ STATUS: COMMUNITY
 #$ KEYWORDS: whoop
 #$ AUTHOR: UAV Tech (Mark Spatz)
 
