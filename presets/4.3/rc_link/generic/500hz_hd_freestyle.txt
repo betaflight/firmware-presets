@@ -1,7 +1,7 @@
 #$ TITLE: Generic 500Hz HD Freestyle
 #$ FIRMWARE_VERSION: 4.3
 #$ FIRMWARE_VERSION: 4.4
-#$ CATEGORY: RC_LINK
+#$ FIRMWARE_VERSION: 4.5
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: 500Hz, 2ms, rc, rx, link, smoothing
 #$ AUTHOR: Ivan Efimov (Limon)

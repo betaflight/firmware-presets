@@ -1,5 +1,7 @@
 #$ TITLE: Reset RC related settings
 #$ FIRMWARE_VERSION: 4.3
+#$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: RC_LINK
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: defaults, Rx, RC, reset, rc link, rc_link, smoothing, rc_smoothing
