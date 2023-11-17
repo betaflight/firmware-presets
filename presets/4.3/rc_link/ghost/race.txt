@@ -1,6 +1,7 @@
 #$ TITLE: IRC Ghost (Mode: Race)
 #$ FIRMWARE_VERSION: 4.3
 #$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: RC_LINK
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: 166Hz, Race, ghost, rc, rx , link, ghost, IRC, GHST, immersionRC, immersion
