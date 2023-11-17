@@ -1,5 +1,6 @@
 #$ TITLE: SupaflyFPV Freestyle 6 Inch
 #$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: TUNE
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: Supafly, SupaflyFPV, Freestyle, 6 inch, 6"
