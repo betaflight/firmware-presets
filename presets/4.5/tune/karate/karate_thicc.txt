@@ -122,7 +122,7 @@ set thrust_linear = 15
         #$ INCLUDE: presets/4.3/rc_link/generic/150hz_cinematic.txt
     #$ OPTION END
     
-    #$ OPTION BEGIN (UNCHECKED): ELRS 250hz ( don’t recommend faster rates for cinematic flying)
+    #$ OPTION BEGIN (UNCHECKED): ELRS 250hz ( don’t recommend faster rates for cinematic flying )
         # ELRS 250Hz
        
         feature RX_SERIAL
