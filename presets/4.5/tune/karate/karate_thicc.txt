@@ -17,7 +17,7 @@
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION:
 #$ DESCRIPTION: This tune should be used with 48khz PWM settings, it SHOULD work with any stiff 6-7” frame if the build is nice and clean.
-#$ DESCRIPTION: The tun is slider based to make it easier to adjust for personal taste but use at your OWN risk.
+#$ DESCRIPTION: The tune is slider based to make it easier to adjust for personal taste but use at your OWN risk.
 #$ DESCRIPTION: To test arm the quad with props on, it should **sound clean with no grinding**. If it passes that then hover test and check motor temps.
 #$ DESCRIPTION: - **If anything is off, don't fly it!!**
 #$ DESCRIPTION:
