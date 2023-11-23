@@ -8,7 +8,7 @@
 #$ PARSER: MARKED
 
 #$ DESCRIPTION:
-#$ DESCRIPTION: <img src="https://rotorbuilds.com/pictures/f_3582_LMgAwVZXAoKmuHEE4qSKF2RFo.gif" style="max-width: 100%; margin-left: auto; margin-right: auto; display: block;"/>
+#$ DESCRIPTION: <img src="https://github.com/betaflight/firmware-presets/assets/83344205/e69b70c7-f443-4f2f-807f-0f4030d894a9" style="max-width: 50%; margin-left: auto; margin-right: auto; display: block;"/>
 #$ DESCRIPTION: <h1>Karate Viper Racing</h1>
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION:
