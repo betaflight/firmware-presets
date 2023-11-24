@@ -26,7 +26,7 @@
 #$ DESCRIPTION: ## Things to note:
 #$ DESCRIPTION: - **YOU HAVE TO USE RPM FILTERING WITH THIS TUNE!** Failure to do so might result in fire 🔥
 #$ DESCRIPTION: - Regarding DShot600: if your setup has errors in the motor tab using bidirectional DShot, change to **8k/4k and DShot300**
-#$ DESCRIPTION: - ALSO 4.5 GPS rescue does require at this stage to run 8k/4k so the FC has time to process the data from the GPS unit at 10hz refresh rate ( needed for good performance )
+#$ DESCRIPTION: - ALSO 4.5 GPS rescue does require at this stage to run 8k/4k so the FC has time to process the data from the GPS unit at 10hz refresh rate (needed for good performance)
 #$ DESCRIPTION: - The critical value for GPS rescue to work effectively is your hover throttle. If this isn't correct GPS rescue will not be reliable.
 #$ DESCRIPTION: - Also this should be tested on a switch in a park over grass MANY times to ensure your settings work for your build. 
 #$ DESCRIPTION: - Advice from me, sugarK buy a good gps unit from a company like matek, like every thing in this hobby you get what you pay for.
