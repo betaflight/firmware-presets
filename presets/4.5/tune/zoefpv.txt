@@ -75,15 +75,21 @@ set pidsum_limit_yaw = 1000
     set yaw_deadband = 3
 #$ OPTION END
 
-#$ OPTION BEGIN (CHECKED): Dshot600
-    set dshot_bidir = ON
-    set motor_pwm_protocol = DSHOT600
-#$ OPTION END
+#$ OPTION_GROUP BEGIN: Dshot and Bidirectional RPM
+    
+    #$ OPTION BEGIN (CHECKED): Bidirectional RPM
+        set dshot_bidir = ON
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (CHECKED): Dshot600
+        set motor_pwm_protocol = DSHOT600
+    #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED): Dshot300
-    set dshot_bidir = ON
-    set motor_pwm_protocol = Dshot300
-#$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Dshot300
+        set motor_pwm_protocol = Dshot300
+    #$ OPTION END
+
+#$ OPTION_GROUP END
 
 #$ OPTION BEGIN (UNCHECKED): Dynamic idle 3500rpm
     #dynamic idle for 3500rpm
@@ -94,6 +100,10 @@ set pidsum_limit_yaw = 1000
     set vbat_sag_compensation = 100
 #$ OPTION END
 
+#$ OPTION BEGIN (CHECKED): Arm at any angle
+    set small_angle = 180
+#$ OPTION END
+
 #$ OPTION_GROUP BEGIN: 4s tune
     
     #$ OPTION BEGIN (CHECKED): set to profile 1
@@ -101,6 +111,7 @@ set pidsum_limit_yaw = 1000
     #$ OPTION END
     
     #$ OPTION BEGIN (CHECKED):4s tune
+    set profile_name = Aeon 4s
     set auto_profile_cell_count = 4
     set simplified_master_multiplier = 160
     set simplified_i_gain = 90
