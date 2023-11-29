@@ -3,7 +3,7 @@
 #$ FIRMWARE_VERSION: 4.4
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: RATES
-#$ STATUS: COMMUNITY
+#$ STATUS: OFFICIAL
 #$ KEYWORDS: whoop, freetyle, cinematic, HD
 #$ AUTHOR: UAV Tech (Mark Spatz)
 

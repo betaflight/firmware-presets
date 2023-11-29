@@ -1,7 +1,8 @@
 #$ TITLE: UAV Tech - 6"/7" (750-1000g AUW)
 #$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: TUNE
-#$ STATUS: COMMUNITY
+#$ STATUS: OFFICIAL
 #$ KEYWORDS: 4S, 6S, 6in, 7in, 6", 7", freestyle, long range
 #$ AUTHOR: UAV Tech (Mark Spatz)
 
