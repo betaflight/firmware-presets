@@ -9,7 +9,7 @@
 
 #$ PARSER: MARKED
 
-#$ DESCRIPTION:<img src="https://cdn.discordapp.com/attachments/1175277085321863188/1178779293376057425/ZoeClearBackground.png?ex=657762c4&is=6564edc4&hm=1c6b4d99f7a96c8c27ff8af42383848f5c5109bb9cff46e1d7a3a08204779557&" style="max-width: 50%; margin-left: auto; margin-right: auto; display: block;"/>
+#$ DESCRIPTION:<img src="https://private-user-images.githubusercontent.com/83344205/286465879-f2649e30-4df1-498c-ba82-122e3195dec7.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDEyMjgzODksIm5iZiI6MTcwMTIyODA4OSwicGF0aCI6Ii84MzM0NDIwNS8yODY0NjU4NzktZjI2NDllMzAtNGRmMS00OThjLWJhODItMTIyZTMxOTVkZWM3LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFJV05KWUFYNENTVkVINTNBJTJGMjAyMzExMjklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjMxMTI5VDAzMjEyOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTAzZjFlMGI3Mjg0NmMxZWU5YWMyMDRhZTQ0OGI3NzcyNWI3YjFlYjVkZThlY2Q0NmQzOTdlZjAxMjljMGFiODImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.GjmLy0jZcVcv2b9X0LjU1MKW8DOfeJlyhzugDMhRH5g" style="max-width: 50%; margin-left: auto; margin-right: auto; display: block;"/>
 #$ DESCRIPTION: -----------
 #$ DESCRIPTION: [YouTube](www.youtube.com/@ZoeFPV)
 #$ DESCRIPTION: [Instagram] (https://www.instagram.com/zoefpv/)
