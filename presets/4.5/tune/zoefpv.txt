@@ -142,7 +142,7 @@ set pidsum_limit_yaw = 1000
 
 #$ OPTION_GROUP BEGIN: ZoeFPV 3D rate bomb
     #$ OPTION BEGIN (UNCHECKED): Zoes rates
-        #$ INCLUDE: presets/4.3/rates/ZoeFPV_3D_rates.txt
+        #$ INCLUDE: presets/4.5/rates/ZoeFPV_3D_rates.txt
     #$ OPTION END
 
 #$ OPTION_GROUP END
