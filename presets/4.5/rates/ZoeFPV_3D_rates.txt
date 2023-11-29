@@ -5,7 +5,7 @@
 #$ CATEGORY: RATES
 #$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: rates, freestyle, juicy, sbang, zoeFPV, zoe, 3d, upside down, sugarK
-#$ AUTHOR: ZoeFPV (co authored sugarK)
+#$ AUTHOR: ZoeFPV
 
 #$ PARSER: MARKED
 
@@ -22,6 +22,7 @@
 #$ DESCRIPTION: Each rate has been tested for it’s ability to do chaotic 3D maneuvers, and for tight tic-tocs.
 #$ DESCRIPTION: 
 #$ DESCRIPTION: <br /><br />
+#$ DESCRIPTION: Co authored by sugarK
 #$ DESCRIPTION:
 #$ WARNING: This rate preset will overwrite all the rate profiles 
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/424
