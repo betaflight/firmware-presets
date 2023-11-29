@@ -16,7 +16,7 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: Included PID Presets are for 4s, 5s, and 6s on a Unicorn airframe, running 2208-1950kv motors. 
 #$ DESCRIPTION: Have been tested on 2207-2450kv motors. 
-#$ DESCRIPTION
+#$ DESCRIPTION:
 #$ DESCRIPTION: Special thanks to Aeon, Allie aka KittFPV, and Devin Davis" - Blurb if possible. Gonna get some fresh blackbox data today, thanks again for everything- I am extremely excited for people to get access to this 😄
 #$ DESCRIPTION:
 #$ DESCRIPTION: [YouTube](www.youtube.com/@ZoeFPV)
