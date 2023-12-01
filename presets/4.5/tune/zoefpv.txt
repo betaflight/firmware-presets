@@ -111,13 +111,13 @@ set pidsum_limit_yaw = 1000
     #$ OPTION END
     
     #$ OPTION BEGIN (CHECKED):4s tune
-    set profile_name = Aeon 4s
-    set auto_profile_cell_count = 4
+    set thrust_linear = 30
+    set profile_name = 4s
+    set simplified_pids_mode = RP
     set simplified_master_multiplier = 160
-    set simplified_i_gain = 90
-    set simplified_pi_gain = 110
+    set simplified_i_gain = 75
     set simplified_dmax_gain = 0
-    set simplified_feedforward_gain = 130
+    set simplified_feedforward_gain = 75
     simplified_tuning apply
     #$ OPTION END
     
