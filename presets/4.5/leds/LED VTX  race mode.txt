@@ -8,7 +8,7 @@
 #$ DESCRIPTION: Sets LED settings to change colours when VTX channel is changed.
 #$ DESCRIPTION: This preset is required with HDzero VTX firmware 1.30 and above. See BF pr here https://github.com/betaflight/betaflight/pull/13096#discussion_r1411284423
 #$ DESCRIPTION:
-#$ WARNING: This preset will not work with HDzero firmware 1.20 or older
+
 
 #--- Set up Race mode ---
 
