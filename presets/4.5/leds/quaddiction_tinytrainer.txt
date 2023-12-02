@@ -1,12 +1,20 @@
 #$ TITLE: Quaddiction TinyTrainer LED settings
-#$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: LEDS
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: leds, 533, five33, quaddiction, sugarK, spec, spec racing, tinytrainer, tiny
 #$ AUTHOR: sugarK
 
 #$ DESCRIPTION: Sets LED settings to suit used VTX channels used by the Quaddiction TinyTrainer spec team
-#$ WARNING: This preset will not work with HDzero firmware 1.30 or newer
+#$ DESCRIPTION: This preset is required with HDzero VTX firmware 1.30 and above. See BF PR here https://github.com/betaflight/betaflight/pull/13096
+#$ DESCRIPTION:
+
+
+#--- Set up Race mode ---
+
+set ledstrip_profile = RACE
+set ledstrip_race_color = BLACK
+
 
 # --- LED Designations ---
 
