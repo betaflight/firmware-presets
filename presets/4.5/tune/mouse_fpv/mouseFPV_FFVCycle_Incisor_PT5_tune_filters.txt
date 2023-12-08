@@ -1,5 +1,5 @@
 #$ TITLE:  FPVCycle Incisor/Prototype 5 6s Tune | mouseFPV
-#$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: TUNE
 #$ STATUS: COMMUNITY
 #$ KEYWORDS: FPVCycle, 5 inch, 5in, 6S, freestyle, GoPro, mouse fpv
@@ -46,8 +46,8 @@
 #$ INCLUDE_WARNING: misc/warnings/en/dshot.txt
 #$ FORCE_OPTIONS_REVIEW: TRUE
 
-#$ INCLUDE: presets/4.4/tune/defaults.txt
-#$ INCLUDE: presets/4.3/filters/defaults.txt
+#$ INCLUDE: presets/4.5/tune/defaults.txt
+#$ INCLUDE: presets/4.5/filters/defaults.txt
 
 # -- End Defaults --
 # -- Begin Mouse Tune --
@@ -120,7 +120,7 @@ set yaw_lowpass_hz = 100
     #$ OPTION BEGIN (CHECKED): RPM Filters DShot600
         # -- Filter Settings --
 
-        #$ INCLUDE: presets/4.3/filters/defaults.txt
+        #$ INCLUDE: presets/4.5/filters/defaults.txt
 
         # -- End Defaults --
         # -- Begin Mouse Filters --
@@ -168,7 +168,7 @@ set yaw_lowpass_hz = 100
     #$ OPTION BEGIN (UNCHECKED): RPM Filters DShot300
         # -- Filter Settings --
 
-        #$ INCLUDE: presets/4.3/filters/defaults.txt
+        #$ INCLUDE: presets/4.5/filters/defaults.txt
 
         # -- End Defaults --
         # -- Begin Mouse Filters --

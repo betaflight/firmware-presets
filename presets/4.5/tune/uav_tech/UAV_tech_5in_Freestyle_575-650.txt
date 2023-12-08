@@ -1,5 +1,5 @@
 #$ TITLE: UAV Tech - 5" Freestyle withOUT GoPro (575-650g AUW)
-#$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.5
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: TUNE
 #$ STATUS: OFFICIAL
@@ -42,8 +42,8 @@
 #$ DESCRIPTION:
 #$ WARNING: **DO NOT** select the RPM Filter option unless your ESCs support DSHOT and Bi-Directional Communication.  If you are unsure, HIT CANCEL and de-select that option, OTHERWISE it can spin up motors even before you arm your quad!!!
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/201
-#$ INCLUDE: presets/4.4/tune/defaults.txt
-#$ INCLUDE: presets/4.3/filters/defaults.txt
+#$ INCLUDE: presets/4.5/tune/defaults.txt
+#$ INCLUDE: presets/4.5/filters/defaults.txt
 
 # -- PID Settings --
 set simplified_d_gain = 100

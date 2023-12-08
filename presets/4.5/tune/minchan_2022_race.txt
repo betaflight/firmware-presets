@@ -1,5 +1,5 @@
 #$ TITLE: MinChan 2022 Race 6s 5"
-#$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: TUNE
 #$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: 6S, race, world champion, 5 inch, 5", mck, minchan, kim, 2022, multigp
@@ -48,8 +48,8 @@
 
 #$ INCLUDE_WARNING: misc/warnings/en/dshot.txt
 #$ INCLUDE_WARNING: misc/warnings/en/rpm_filters.txt
-#$ INCLUDE: presets/4.4/tune/defaults.txt
-#$ INCLUDE: presets/4.3/filters/defaults.txt
+#$ INCLUDE: presets/4.5/tune/defaults.txt
+#$ INCLUDE: presets/4.5/filters/defaults.txt
 
 set motor_pwm_protocol = DSHOT600
 

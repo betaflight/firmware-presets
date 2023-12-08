@@ -1,5 +1,5 @@
 #$ TITLE: Freedom Spec 460 - 500g
-#$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: TUNE
 #$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: sugarK, limon, ctzsnooze, freedom, freedom spec, headsup, five33, 533, racing, race, 5"
@@ -34,8 +34,8 @@
 #$ INCLUDE_WARNING: misc/warnings/en/dshot.txt
 #$ INCLUDE_WARNING: misc/warnings/en/rpm_filters.txt
 
-#$ INCLUDE: presets/4.4/tune/defaults.txt
-#$ INCLUDE: presets/4.3/filters/defaults.txt
+#$ INCLUDE: presets/4.5/tune/defaults.txt
+#$ INCLUDE: presets/4.5/filters/defaults.txt
 
 set motor_pwm_protocol = DSHOT600
 

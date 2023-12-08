@@ -1,5 +1,5 @@
 #$ TITLE:  ImpulseRC Apex 5" | mouseFPV
-#$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: TUNE
 #$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: Apex, ImpulseRC, 5", 5in, 5 inch
@@ -46,8 +46,8 @@
 #$ INCLUDE_WARNING: misc/warnings/en/dshot.txt
 #$ FORCE_OPTIONS_REVIEW: TRUE
 
-#$ INCLUDE: presets/4.4/tune/defaults.txt
-#$ INCLUDE: presets/4.3/filters/defaults.txt
+#$ INCLUDE: presets/4.5/tune/defaults.txt
+#$ INCLUDE: presets/4.5/filters/defaults.txt
 
 # -- End Defaults --
 # -- Begin Mouse Tune --
@@ -107,7 +107,7 @@ set yaw_lowpass_hz = 100
 #$ OPTION_GROUP BEGIN: Filters (Choose One or None)
 
     #$ OPTION BEGIN (CHECKED): RPM Filters DShot600
-        #$ INCLUDE: presets/4.3/filters/defaults.txt
+        #$ INCLUDE: presets/4.5/filters/defaults.txt
 
         # -- End Defaults --
         # -- Begin Mouse Filters --
@@ -145,7 +145,7 @@ set yaw_lowpass_hz = 100
 
 
     #$ OPTION BEGIN (UNCHECKED): RPM Filters DShot300
-        #$ INCLUDE: presets/4.3/filters/defaults.txt
+        #$ INCLUDE: presets/4.5/filters/defaults.txt
 
         # -- End Defaults --
         # -- Begin Mouse Filters --

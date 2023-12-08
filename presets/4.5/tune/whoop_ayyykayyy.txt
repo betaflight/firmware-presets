@@ -1,5 +1,5 @@
 #$ TITLE: Whoop race tune by AyyyKayyy
-#$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: TUNE
 #$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: whoop, 65mm, 1S, race, acro, tune, AyyyKayyy, meteor, whooptopia, brushless
@@ -19,14 +19,14 @@
 #$ DESCRIPTION: AyyyKayyy - Whooptopia winner 2019, 2020, and 2021. Whooptopia - biggest and the most intense whoop race in the USA.
 
 # ---------- TUNE DEFAULTS:
-#$ INCLUDE: presets/4.4/tune/defaults.txt
+#$ INCLUDE: presets/4.5/tune/defaults.txt
 # ---------- END TUNE DEFAULTS
 
 set motor_poles = 12
 
 #$ OPTION BEGIN (CHECKED): Filters
     # ---------- FILTERS DEFAULTS:
-    #$ INCLUDE: presets/4.3/filters/defaults.txt
+    #$ INCLUDE: presets/4.5/filters/defaults.txt
     # ---------- END FILTERS DEFAULTS
 
     # -- Gyro Dynamic Notches --

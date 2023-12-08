@@ -1,5 +1,5 @@
 #$ TITLE: UAV Tech - Micro (2" to 4")
-#$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.5
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: TUNE
 #$ STATUS: OFFICIAL
@@ -42,8 +42,8 @@
 #$ DESCRIPTION:
 #$ WARNING: Prior to selecting the "RPM Filter" or "Dynamic Idle" options, Bi-Directional DSHOT must be setup for your quad.  If you have not setup yet, click "CANCEL" and setup first (PROPS OFF to test).  If you have NOT selected the "RPM Filter" or "Dynamic Idle" options, YOU CAN IGNORE THIS MESSAGE.
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/209
-#$ INCLUDE: presets/4.4/tune/defaults.txt
-#$ INCLUDE: presets/4.3/filters/defaults.txt
+#$ INCLUDE: presets/4.5/tune/defaults.txt
+#$ INCLUDE: presets/4.5/filters/defaults.txt
 
 # -- PID Settings --
 set simplified_d_gain = 90

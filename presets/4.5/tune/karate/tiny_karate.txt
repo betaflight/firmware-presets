@@ -35,7 +35,7 @@
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/81
 #$ INCLUDE_WARNING: misc/warnings/en/rpm_filters.txt
 #$ INCLUDE: presets/4.5/tune/defaults.txt
-#$ INCLUDE: presets/4.3/filters/defaults.txt
+#$ INCLUDE: presets/4.5/filters/defaults.txt
 
 # -- Gyro lowpass filters --
 set gyro_lpf2_static_hz = 600

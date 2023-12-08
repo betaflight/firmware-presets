@@ -1,5 +1,4 @@
 #$ TITLE: Basher Freestyle 6S 5" by FPVian
-#$ FIRMWARE_VERSION: 4.4
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: TUNE
 #$ STATUS: COMMUNITY
@@ -23,7 +22,7 @@
 
 # Set to Defaults
 
-#$ INCLUDE: presets/4.4/tune/defaults.txt
+#$ INCLUDE: presets/4.5/tune/defaults.txt
 
 # Defaults end
 
@@ -74,7 +73,7 @@ simplified_tuning apply
     #$ OPTION BEGIN (UNCHECKED): Filtering for NOISY builds
         # Set filters to default
 
-        #$ INCLUDE: presets/4.3/filters/defaults.txt
+        #$ INCLUDE: presets/4.5/filters/defaults.txt
 
         # Defaults end
 
@@ -92,7 +91,7 @@ simplified_tuning apply
     #$ OPTION BEGIN (UNCHECKED): Filtering for AVERAGE builds
         # Set filters to default
 
-        #$ INCLUDE: presets/4.3/filters/defaults.txt
+        #$ INCLUDE: presets/4.5/filters/defaults.txt
 
         # Defaults end
 
@@ -113,7 +112,7 @@ simplified_tuning apply
     #$ OPTION BEGIN (UNCHECKED): Filtering for CLEAN builds (recommended)
         # Set filters to default
 
-        #$ INCLUDE: presets/4.3/filters/defaults.txt
+        #$ INCLUDE: presets/4.5/filters/defaults.txt
 
         # Defaults end
 
@@ -136,7 +135,7 @@ simplified_tuning apply
     #$ OPTION BEGIN (UNCHECKED): Filtering for VERY CLEAN builds
         # Set filters to default
 
-        #$ INCLUDE: presets/4.3/filters/defaults.txt
+        #$ INCLUDE: presets/4.5/filters/defaults.txt
 
         # Defaults end
 

@@ -1,5 +1,5 @@
 #$ TITLE: Street League LeadFingers PIDtoolbox tune
-#$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: TUNE
 #$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: Street League, StreetLeague, Street, League, LeadFingers, PIDtoolbox, 7"
@@ -9,8 +9,8 @@
 #$ DESCRIPTION: ESC must be bi-directional Dshot ready
 #$ WARNING: **DO NOT** Flash this preset to a quad that is not Street League Spec
 #$ DISCUSSION: https://discord.gg/rqGfKBbYbP
-#$ INCLUDE: presets/4.4/tune/defaults.txt
-#$ INCLUDE: presets/4.3/filters/defaults.txt
+#$ INCLUDE: presets/4.5/tune/defaults.txt
+#$ INCLUDE: presets/4.5/filters/defaults.txt
 
 # -- Undo some default things --
 set pidsum_limit = 1000

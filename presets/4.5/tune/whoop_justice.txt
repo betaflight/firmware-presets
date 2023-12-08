@@ -1,5 +1,5 @@
 #$ TITLE: Whoop race tune by Justice
-#$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: TUNE
 #$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: whoop, 65mm, 1S, race, acro, tune, justice, meteor
@@ -25,7 +25,7 @@
 #$ DESCRIPTION: Gary's Race Rates are included too - give them a try!
 #$ FORCE_OPTIONS_REVIEW: TRUE
 
-#$ INCLUDE: presets/4.4/tune/defaults.txt
+#$ INCLUDE: presets/4.5/tune/defaults.txt
 
 set motor_poles = 12
 

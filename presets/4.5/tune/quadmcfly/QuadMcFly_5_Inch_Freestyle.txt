@@ -1,5 +1,5 @@
 #$ TITLE: QuadMcFly - 5" Freestyle with GoPro (Mid-Weight)
-#$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: TUNE
 #$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: 4S, 6S, 5in, 5", freestyle
@@ -41,8 +41,8 @@
 
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/387
 
-#$ INCLUDE: presets/4.4/tune/defaults.txt
-#$ INCLUDE: presets/4.3/filters/defaults.txt
+#$ INCLUDE: presets/4.5/tune/defaults.txt
+#$ INCLUDE: presets/4.5/filters/defaults.txt
 
 # -- QuadMcFly PID Settings --
 set simplified_master_multiplier = 115

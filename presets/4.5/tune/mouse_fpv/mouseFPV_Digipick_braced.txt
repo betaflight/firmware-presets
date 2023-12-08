@@ -1,5 +1,5 @@
 #$ TITLE: Braced Toothpick/Digipick 3s/4s | mouseFPV
-#$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: TUNE
 #$ STATUS: COMMUNITY
 #$ KEYWORDS: FPVCycle TP3, Digipick, Toothpick, 3s, 3 Inch, 4s, AOS T3, T3
@@ -68,8 +68,8 @@
 #$ INCLUDE_WARNING: misc/warnings/en/dshot.txt
 #$ FORCE_OPTIONS_REVIEW: TRUE
 
-#$ INCLUDE: presets/4.4/tune/defaults.txt
-#$ INCLUDE: presets/4.3/filters/defaults.txt
+#$ INCLUDE: presets/4.5/tune/defaults.txt
+#$ INCLUDE: presets/4.5/filters/defaults.txt
 
 # -- End Defaults --
 # -- Begin Mouse Tune --

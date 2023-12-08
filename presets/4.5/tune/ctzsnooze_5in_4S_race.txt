@@ -1,5 +1,5 @@
 #$ TITLE: 4S, 3" to 5" race tune by ctzsznooze
-#$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: TUNE
 #$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: 3in, 4in, 5in, twig, 4S, race, tune, ctzsnooze
@@ -15,7 +15,7 @@
 #$ DESCRIPTION:
 #$ FORCE_OPTIONS_REVIEW: TRUE
 
-#$ INCLUDE: presets/4.4/tune/defaults.txt
+#$ INCLUDE: presets/4.5/tune/defaults.txt
 
 # -- PID values --
 set p_pitch = 44

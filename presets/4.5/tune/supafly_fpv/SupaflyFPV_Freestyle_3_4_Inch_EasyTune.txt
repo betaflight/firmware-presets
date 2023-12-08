@@ -1,5 +1,4 @@
 #$ TITLE: SupaflyFPV Freestyle 3/4 Inch
-#$ FIRMWARE_VERSION: 4.4
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: TUNE
 #$ STATUS: OFFICIAL
@@ -44,7 +43,7 @@
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION: 
 
-#$ INCLUDE: presets/4.4/tune/defaults.txt
+#$ INCLUDE: presets/4.5/tune/defaults.txt
 
 # -- Antigravity --
 
@@ -81,7 +80,7 @@ set feedforward_transition = 30
 
 # ---- Filters Base Setup -------
 
-#$ INCLUDE: presets/4.3/filters/defaults.txt
+#$ INCLUDE: presets/4.5/filters/defaults.txt
 
 set dshot_bidir = OFF
 set simplified_gyro_filter_multiplier = 160
