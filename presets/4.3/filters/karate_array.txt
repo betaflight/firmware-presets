@@ -1,7 +1,6 @@
 #$ TITLE: the Karate array
 #$ FIRMWARE_VERSION: 4.3
 #$ FIRMWARE_VERSION: 4.4
-#$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: FILTERS
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: filter, filters, karate, race, freesytle, suagrK, CTZsoonze, KarateBrot, 5"
