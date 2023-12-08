@@ -39,7 +39,7 @@
 
 #$ INCLUDE_WARNING: misc/warnings/en/rpm_filters.txt
 #$ INCLUDE: presets/4.5/tune/defaults.txt
-#$ INCLUDE: presets/4.3/filters/defaults.txt
+#$ INCLUDE: presets/4.5/filters/defaults.txt
 
 # -- Gyro lowpass filters --
 set gyro_lpf1_static_hz = 0
