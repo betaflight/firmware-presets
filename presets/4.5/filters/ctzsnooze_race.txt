@@ -1,6 +1,5 @@
 #$ TITLE: ctzsnooze's race filter settings
-#$ FIRMWARE_VERSION: 4.3
-#$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: FILTERS
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: race, filter, filters, ctzsnooze, RPM
@@ -9,7 +8,7 @@
 #$ DESCRIPTION: tolerates fairly worn setups
 #$ DESCRIPTION: Requires RPM filtering and DShot telemetry!
 
-#$ INCLUDE: presets/4.3/filters/defaults.txt
+#$ INCLUDE: presets/4.5/filters/defaults.txt
 
 # -- Gyro filters --
 # Single static gyro lowpass at 500hz

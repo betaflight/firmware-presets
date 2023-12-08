@@ -1,6 +1,5 @@
-#$ TITLE: 4.3 Filter settings for VERY NOISY build WITH NO RPM FILTERING.
-#$ FIRMWARE_VERSION: 4.3
-#$ FIRMWARE_VERSION: 4.4
+#$ TITLE: 4.5 Filter settings for VERY NOISY build WITH NO RPM FILTERING.
+#$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: FILTERS
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: filter, filters, very noisy, very, noisy, no rpm, basic, betaflight
@@ -9,7 +8,7 @@
 #$ DESCRIPTION: If motors get hot, they may simply be being asked to do too much.
 #$ DESCRIPTION: May cause 5" or smaller quads to wobble due to lag.
 
-#$ INCLUDE: presets/4.3/filters/defaults.txt
+#$ INCLUDE: presets/4.5/filters/defaults.txt
 
 # disable dshot rpm telemetry
 set dshot_bidir = OFF

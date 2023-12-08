@@ -1,6 +1,4 @@
 #$ TITLE: the Karate array
-#$ FIRMWARE_VERSION: 4.3
-#$ FIRMWARE_VERSION: 4.4
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: FILTERS
 #$ STATUS: OFFICIAL
@@ -12,7 +10,7 @@
 #$ DESCRIPTION: Follow the usual process of hover testing and safely checking out your tune before using. USE AT YOUR OWN RISK.
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/51
 #$ INCLUDE_WARNING: misc/warnings/en/rpm_filters.txt
-#$ INCLUDE: presets/4.3/filters/defaults.txt
+#$ INCLUDE: presets/4.5/filters/defaults.txt
 
 
 # -- Gyro lowpass filters --
