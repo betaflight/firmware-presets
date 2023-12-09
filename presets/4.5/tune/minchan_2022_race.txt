@@ -15,11 +15,6 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION:
-#$ DESCRIPTION: Original tune comes from 4.3 (KAACK mod), but 4.4 tuning parameters are identical to 4.3, except Anti Gravity.
-#$ DESCRIPTION: This tune leaves AG gains at defaults.
-#$ DESCRIPTION:
-#$ DESCRIPTION: <br>
-#$ DESCRIPTION:
 #$ DESCRIPTION: This tune is pretty aggressive and there are chances it's not going to work well on your average drone.
 #$ DESCRIPTION: <br>**YOU HAVE TO USE RPM FILTERING WITH THIS TUNE!**
 #$ DESCRIPTION: <br>Failure to do so might result in fire 🔥
