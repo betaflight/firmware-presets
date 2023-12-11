@@ -1,5 +1,6 @@
 #$ TITLE: OSD for Fpv.wtf, DJI O3, Avatar HD
 #$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: VTX
 #$ STATUS: COMMUNITY
 #$ KEYWORDS:  vtx, dji, O3 air unit, O3, 03, avatar, walksnail,HD, HD video, vista, air unit, fpv.wtf, wtfos, msp-osd, displayport, msp, sugarK
