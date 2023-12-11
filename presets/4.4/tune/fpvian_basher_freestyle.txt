@@ -1,6 +1,5 @@
 #$ TITLE: Basher Freestyle 6S 5" by FPVian
 #$ FIRMWARE_VERSION: 4.4
-#$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: TUNE
 #$ STATUS: COMMUNITY
 #$ KEYWORDS: basher, freestyle, 5 Inch, 5 In, 5", bando, fpvian

@@ -1,6 +1,5 @@
 #$ TITLE: SupaflyFPV Freestyle 3/4 Inch
 #$ FIRMWARE_VERSION: 4.4
-#$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: TUNE
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: Supafly, SupaflyFPV, 4S, 6S, Freestyle, 3 inch, 4 inch, 3", 4"
