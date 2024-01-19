@@ -12,14 +12,14 @@
 #$ DESCRIPTION: ZoeFPV 3D setup and tunes
 #$ DESCRIPTION: <br /><br />
 #$ DESCRIPTION: This preset has everything you need for a smooth 3D flying experience, no longer guess if you have BetaFlight setup right! Includes my legendary rate profile that I’ve used for years, along with 2 variations of it depending on your own style and feel, plus KittFPV’s rates for a more linear and locked in experience.
-#$ DESCRIPTION: Each rate has been tested for it’s ability to do chaotic 3D maneuvers, and for tight tic-tocs.
+#$ DESCRIPTION: Each rate has been tested for it’s ability to do chaotic 3D manoeuvres, and for tight tic-tocs.
 #$ DESCRIPTION:
-#$ DESCRIPTION: Included PID Presets are for 4s, on a Unicorn airframe, running 2208-1950kv motors. Should work with any well made frame in good condtion. 
+#$ DESCRIPTION: Included PID Presets are for 4s, on a Unicorn airframe, running 2208-1950kv motors. Should work with any well made frame in good condition. 
 #$ DESCRIPTION: Have been tested on 2207-2450kv motors. 
 #$ DESCRIPTION:
 #$ DESCRIPTION: Will add 5s and 6s tune to this preset in the near future. And yes this has airmode on and should be kept on.
 #$ DESCRIPTION:
-#$ DESCRIPTION: Special thanks to Aeon, Allie aka KittFPV, and Devin Davis" - Blurb if possible. Gonna get some fresh blackbox data today, thanks again for everything- I am extremely excited for people to get access to this 😄
+#$ DESCRIPTION: Special thanks to Aeon, Allie aka KittFPV, and Devin Davis
 #$ DESCRIPTION:
 #$ DESCRIPTION: <br /><br />
 #$ DESCRIPTION: [YouTube](www.youtube.com/@ZoeFPV)
