@@ -140,7 +140,7 @@ set pidsum_limit_yaw = 1000
     #$ OPTION BEGIN (UNCHECKED): DJI SBUS fast
         # DJI SBUS fast
 
-        #$ INCLUDE: presets/4.3/rc_link/DJI_SBUS_fast.txt
+        #$ INCLUDE: presets/4.3/rc_link/DJI_SBUS_Fast.txt
     #$ OPTION END
     
     #$ OPTION BEGIN (UNCHECKED): ELRS 250hz
