@@ -120,20 +120,20 @@ set pidsum_limit_yaw = 1000
 #$ OPTION END
 
 #$ OPTION_GROUP BEGIN: 4s tune
-    
+
     #$ OPTION BEGIN (CHECKED): set to profile 1
         profile 0
     #$ OPTION END
     
     #$ OPTION BEGIN (CHECKED):4s tune
-    set thrust_linear = 30
-    set profile_name = 4s
-    set simplified_pids_mode = RP
-    set simplified_master_multiplier = 160
-    set simplified_i_gain = 75
-    set simplified_dmax_gain = 0
-    set simplified_feedforward_gain = 75
-    simplified_tuning apply
+        set thrust_linear = 30
+        set profile_name = 4s
+        set simplified_pids_mode = RP
+        set simplified_master_multiplier = 160
+        set simplified_i_gain = 75
+        set simplified_dmax_gain = 0
+        set simplified_feedforward_gain = 75
+        simplified_tuning apply
     #$ OPTION END
     
 #$ OPTION_GROUP END
