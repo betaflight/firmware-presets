@@ -23,7 +23,7 @@
 #$ DESCRIPTION: - Set low and high frequency to 48
 #$ DESCRIPTION: - Rampup power 25%
 #$ DESCRIPTION: - Motor timing 16 deg
-
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/442
 #$ INCLUDE_WARNING: misc/warnings/en/dshot.txt
 #$ INCLUDE: presets/4.4/tune/defaults.txt
 
