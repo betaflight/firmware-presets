@@ -61,7 +61,7 @@ simplified_tuning apply
     #$ OPTION BEGIN (UNCHECKED): ELRS 500Hz Race setup
         feature RX_SERIAL
         set serialrx_provider = CRSF
-        #$ INCLUDE: presets/4.3/rc_link/generic/250hz_race.txt
+        #$ INCLUDE: presets/4.3/rc_link/generic/500hz_race.txt
 
     #$ OPTION END
 
