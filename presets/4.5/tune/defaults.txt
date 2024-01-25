@@ -105,3 +105,6 @@ set tpa_breakpoint = 1350
 set tpa_low_rate = 20
 set tpa_low_breakpoint = 1050
 set tpa_low_always = OFF
+
+set ez_landing_threshold = 25
+set ez_landing_limit = 5
