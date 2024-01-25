@@ -46,8 +46,6 @@ set simplified_i_gain = 110
 set simplified_dmax_gain = 0
 set simplified_feedforward_gain = 80
 
-
-
 simplified_tuning apply
 
 #$ OPTION_GROUP BEGIN: Recommended Race RC Links
