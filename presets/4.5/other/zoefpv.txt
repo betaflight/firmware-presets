@@ -123,11 +123,15 @@ set pidsum_limit_yaw = 1000
 
     #$ OPTION BEGIN (CHECKED): set to profile 1
         profile 0
+        set profile_name = 4s
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (CHECKED): auto set 4s tune
+        set auto_profile_cell_count = 4
     #$ OPTION END
     
     #$ OPTION BEGIN (CHECKED):4s tune
         set thrust_linear = 30
-        set profile_name = 4s
         set simplified_pids_mode = RP
         set simplified_master_multiplier = 160
         set simplified_i_gain = 75
@@ -135,7 +139,51 @@ set pidsum_limit_yaw = 1000
         set simplified_feedforward_gain = 75
         simplified_tuning apply
     #$ OPTION END
+#$ OPTION_GROUP END
     
+#$ OPTION_GROUP BEGIN: 5s tune
+
+    #$ OPTION BEGIN (CHECKED): set to profile 2
+        profile 1
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (CHECKED): auto set 5s tune
+        set auto_profile_cell_count = 5
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (CHECKED):5s tune
+        set thrust_linear = 30
+        set simplified_pids_mode = RP
+        set simplified_master_multiplier = 145
+        set simplified_i_gain = 85
+        set simplified_d_gain = 90
+        set simplified_dmax_gain = 80
+        set simplified_feedforward_gain = 80
+        simplified_tuning apply
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: 6s tune
+
+    #$ OPTION BEGIN (CHECKED): set to profile 3
+        profile 2
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (CHECKED): auto set 6s tune
+        set auto_profile_cell_count = 6
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (CHECKED):6s tune
+        set thrust_linear = 15
+        set simplified_pids_mode = RP
+        set simplified_master_multiplier = 110
+        set simplified_i_gain = 110
+        set simplified_d_gain = 95
+        set simplified_dmax_gain = 65
+        set simplified_feedforward_gain = 110
+        set simplified_dterm_filter_multiplier = 110
+        simplified_tuning apply
+    #$ OPTION END
 #$ OPTION_GROUP END
 
 #$ OPTION_GROUP BEGIN: Some popular RC Links
