@@ -1,7 +1,7 @@
 #$ TITLE: Barracuda Racer Tune
 #$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: TUNE
-#$ STATUS: EXPERIMENTAL
+#$ STATUS: COMMUNITY
 #$ KEYWORDS: 6S, race, racing, beginner, 5 inch, 5", viki, 2024
 #$ AUTHOR: Viki Baarathi
 
