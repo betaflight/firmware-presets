@@ -1,5 +1,5 @@
 #$ TITLE: Barracuda Racer Tune
-#$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: TUNE
 #$ STATUS: COMMUNITY
 #$ KEYWORDS: 6S, race, racing, beginner, 5 inch, 5", viki, 2024
@@ -27,7 +27,7 @@
 #$ INCLUDE_WARNING: misc/warnings/en/dshot.txt
 
 #$ OPTION BEGIN (CHECKED): Recommended Barracuda Filters
-    #$ INCLUDE: presets/4.3/filters/defaults.txt
+    #$ INCLUDE: presets/4.5/filters/defaults.txt
     set simplified_gyro_filter_multiplier = 140
     set gyro_lpf2_static_hz = 0
     set dyn_notch_count = 1
@@ -36,7 +36,7 @@
     set motor_pwm_protocol = DSHOT600
 #$ OPTION END
 
-#$ INCLUDE: presets/4.4/tune/defaults.txt
+#$ INCLUDE: presets/4.5/tune/defaults.txt
 set pidsum_limit = 1000
 set pidsum_limit_yaw = 1000
 set simplified_pids_mode = RPY
