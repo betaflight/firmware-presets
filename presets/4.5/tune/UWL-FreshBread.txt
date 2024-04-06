@@ -6,7 +6,7 @@
 #$ AUTHOR: FPV_Cam
 #$ DESCRIPTION: A tune for Underground Whoop League 75mm 1S whoop racing by FreshBread
 #$ WARNING: You will need to ensure your ESC firmware supports Bidirectional DSHOT for the RPM limiter
-#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/nn
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/454 
 #$ FORCE_OPTIONS_REVIEW: true
 
 #$ INCLUDE: presets/4.5/tune/defaults.txt
