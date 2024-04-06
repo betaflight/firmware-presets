@@ -1,0 +1,69 @@
+#$ TITLE: UWL Tune by FreshBread
+#$ FIRMWARE_VERSION: 4.5
+#$ CATEGORY: TUNE
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: UWL, underground, Whoop, 75mm, tune, acro, 1S, FreshBread
+#$ AUTHOR: FPV_Cam
+#$ DESCRIPTION: A tune for Underground Whoop League 75mm 1S whoop racing by FreshBread
+#$ WARNING: You will need to ensure your ESC firmware supports Bidirectional DSHOT for the RPM limiter
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/nn
+#$ FORCE_OPTIONS_REVIEW: true
+
+#$ INCLUDE: presets/4.5/tune/defaults.txt
+
+# Tune begin
+
+set gyro_lpf1_static_hz = 0
+set gyro_lpf2_static_hz = 0
+set dyn_notch_count = 2
+set dyn_notch_q = 500
+set dyn_notch_max_hz = 650
+set gyro_lpf1_dyn_min_hz = 0
+set gyro_lpf1_dyn_max_hz = 300
+set acc_lpf_hz = 10
+
+set simplified_gyro_filter_multiplier = 60
+set dterm_lpf1_dyn_min_hz = 100
+set dterm_lpf1_dyn_max_hz = 125
+set dterm_lpf1_type = BIQUAD
+set dterm_lpf1_static_hz = 71
+set dterm_lpf2_static_hz = 0
+set anti_gravity_gain = 45
+set iterm_relax_cutoff = 30
+set p_pitch = 82
+set i_pitch = 29
+set d_pitch = 71
+set f_pitch = 168
+set p_roll = 87
+set i_roll = 31
+set d_roll = 62
+set f_roll = 180
+set p_yaw = 87
+set i_yaw = 31
+set f_yaw = 180
+set d_min_roll = 62
+set d_min_pitch = 71
+set dyn_idle_min_rpm = 94
+set simplified_master_multiplier = 150
+set simplified_i_gain = 20
+set simplified_d_gain = 140
+set simplified_pi_gain = 130
+set simplified_dmax_gain = 0
+set simplified_pitch_pi_gain = 90
+set simplified_dterm_filter = OFF
+set simplified_dterm_filter_multiplier = 95
+
+# End of tune
+
+
+#$ OPTION BEGIN (CHECKED): UWL RPM Limiter Settings
+    set dshot_bidir = ON
+    set motor_poles = 12
+    set rpm_limit = ON
+    set rpm_limit_value = 31500
+#$ OPTION END
+
+
+#$ OPTION BEGIN (CHECKED): BMI270 gyro
+    set pid_process_denom = 1
+#$ OPTION END
