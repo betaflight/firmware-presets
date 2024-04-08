@@ -7,9 +7,10 @@
 #$ STATUS: COMMUNITY
 #$ KEYWORDS:  vtx, vtx table, vtxtable, darwin, darwinfpv, TinyApe, CineApe
 #$ AUTHOR: Utka v tapkah
-#$ DESCRIPTION: <a href="https://darwinfpv.com/products/25-200-400-600mw-tinyape-vtx"><img src="https://darwinfpv.com/cdn/shop/products/IMG_1815_334fbc0c-77c9-472c-b9ce-e8532f0c3747.png?v=1668762061&width=300" width="300px" style="margin-left: auto; margin-right: auto; display: block;"/></a>
-#$ DESCRIPTION: VTX tables for DarwinFPV 25/200/400/600mW VTX (SmartAudio) TinyApe/CineApe
-#$ DESCRIPTION: [link to product manufacturer](https://darwinfpv.com/products/25-200-400-600mw-tinyape-vtx)
+#$ PARSER: MARKED
+#$ DESCRIPTION: <a href="https://darwinfpv.com/products/25-200-400-600mw-tinyape-vtx"><img src="https://darwinfpv.com/cdn/shop/products/IMG_1816_a50eec27-38b0-4062-a0a2-b4f90e9bc87c.png?v=1668762061&width=200" width="200px" style="margin-left: auto; margin-right: auto; display: block;"/></a>
+#$ DESCRIPTION: <p style="text-align: center">VTX tables for DarwinFPV 25/200/400/600mW VTX (SmartAudio) <i>TinyApe/CineApe</i></p>
+#$ DESCRIPTION: <p style="text-align: center"><b>Link to product manufacturer:</b> <a href="https://darwinfpv.com/products/25-200-400-600mw-tinyape-vtx">darwinfpv.com</a></p>
 #$ DISCUSSION:  https://github.com/betaflight/firmware-presets/pull/451
 #$ DISCLAIMER: All previous VTX Table settings will be reset.
 #$ INCLUDE_DISCLAIMER: misc/disclaimer/en/vtxtable.txt

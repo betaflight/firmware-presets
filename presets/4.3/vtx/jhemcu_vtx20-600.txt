@@ -7,9 +7,10 @@
 #$ STATUS: COMMUNITY
 #$ KEYWORDS:  vtx, vtx table, vtxtable, jhemcu,
 #$ AUTHOR: Utka v tapkah
+#$ PARSER: MARKED
 #$ DESCRIPTION: <a href="https://www.jhemcu.com/e_productshow/?63-JHEMCU-VTX20-600-58GHZ-Wireless-Video-Transmission-Module-600MW-63.html"><img src="https://www.jhemcu.com/pic/big/63_0.jpg" width="200px" style="margin-left: auto; margin-right: auto; display: block;"/></a>
-#$ DESCRIPTION: VTX tables for JHEMCU VTX20-600 5.8GHZ 600MW (IRC Tramp)
-#$ DESCRIPTION: [link to product manufacturer](https://www.jhemcu.com/e_productshow/?63-JHEMCU-VTX20-600-58GHZ-Wireless-Video-Transmission-Module-600MW-63.html)
+#$ DESCRIPTION: <p style="text-align: center">VTX tables for JHEMCU VTX20-600 5.8GHZ 600MW (IRC Tramp)</p>
+#$ DESCRIPTION: <p style="text-align: center"><b>Link to product manufacturer:</b> <a href="https://www.jhemcu.com/e_productshow/?63-JHEMCU-VTX20-600-58GHZ-Wireless-Video-Transmission-Module-600MW-63.html">jhemcu.com</a></p>
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/452
 #$ DISCLAIMER: All previous VTX Table settings will be reset.
 #$ INCLUDE_DISCLAIMER: misc/disclaimer/en/vtxtable.txt
