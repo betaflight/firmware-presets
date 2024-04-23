@@ -218,16 +218,27 @@ class PresetsFile
     _getOptionGroup(line)
     {
         const directiveRemoved = line.slice(this._settings.OptionsDirectives.BEGIN_OPTION_GROUP_DIRECTIVE.length).trim();
+        const isExclusiveGroup = this._isExclusiveGroup(directiveRemoved.toLowerCase());
 
-        if (0 == directiveRemoved.length || directiveRemoved[0] != ":") {
-                this._addError(`line ${this._currentLine}, OPTION_GROUP BEGIN directive should be followed by ":". Example: #$ OPTION_GROUP BEGIN: My Group Name`);
+        const exclusiveOptionGroupRegex = new RegExp(this._escapeRegex(this._settings.OptionsDirectives.EXCLUSIVE_OPTION_GROUP), 'gi');
+
+        const optionGroupName = directiveRemoved.replace(exclusiveOptionGroupRegex, "");
+
+        if (0 == optionGroupName.length || optionGroupName[0] != ":") {
+            this._addError(`line ${this._currentLine}, OPTION_GROUP BEGIN directive should be followed by ":". Example: #$ OPTION_GROUP BEGIN: My Group Name or if its exclusive: #$ OPTION_GROUP BEGIN (Exclusive): My Exclusive Group`);
         }
 
         let optionGroup = {
-            name: directiveRemoved.slice(1).trim(),
+            name: optionGroupName.slice(1).trim(),
+            exclusive: isExclusiveGroup,
         }
 
         return optionGroup;
+    }
+
+    _isExclusiveGroup(lowercaseLine)
+    {
+        return lowercaseLine.includes(this._settings.OptionsDirectives.EXCLUSIVE_OPTION_GROUP)
     }
 
     _getOption(line)
