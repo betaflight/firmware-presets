@@ -5,7 +5,7 @@
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: VTX
 #$ STATUS: COMMUNITY
-#$ KEYWORDS:  vtx, vtx table, vtxtable, geprc,
+#$ KEYWORDS:  vtx, vtx table, vtxtable, geprc
 #$ AUTHOR: Utka v tapkah
 #$ PARSER: MARKED
 #$ DESCRIPTION: <a href="https://geprc.com/product/geprc-maten-5-8g-2-5w-vtx-pro/"><img src="https://geprc.com/wp-content/uploads/2023/11/1_Main_0000-12.jpg" width="200px" style="margin-left: auto; margin-right: auto; display: block;"/></a>
