@@ -12,6 +12,7 @@
 #$ DESCRIPTION: <p style="text-align: center">VTX tables for GEPRC MATEN 5.8G 2.5W VTX PRO (IRC Tramp)</p>
 #$ DESCRIPTION: <p style="text-align: center"><b>Link to product manufacturer:</b> <a href="https://geprc.com/product/geprc-maten-5-8g-2-5w-vtx-pro/">geprc.com</a></p>
 #$ DISCLAIMER: All previous VTX Table settings will be reset.
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/457
 #$ INCLUDE_DISCLAIMER: misc/disclaimer/en/vtxtable.txt
 #$ INCLUDE: presets/4.3/vtx/defaults_vtx_tables.txt
 
