@@ -10,48 +10,51 @@
 #$ FORCE_OPTIONS_REVIEW: true
 
 #$ INCLUDE: presets/4.5/tune/defaults.txt
+#$ INCLUDE: presets/4.5/filters/defaults.txt
 
 # Tune begin
 
-set gyro_lpf1_static_hz = 0
-set gyro_lpf2_static_hz = 0
+set simplified_gyro_filter = OFF
+
 set dyn_notch_count = 2
 set dyn_notch_q = 500
 set dyn_notch_max_hz = 650
+
+set gyro_notch1_hz = 0
+set gyro_notch1_cutoff = 0
+set gyro_notch2_hz = 0
+set gyro_notch2_cutoff = 0
+
+set gyro_lpf1_static_hz = 0
 set gyro_lpf1_dyn_min_hz = 0
 set gyro_lpf1_dyn_max_hz = 300
+
+set gyro_lpf2_type = PT1
+set gyro_lpf2_static_hz = 0
+
 set acc_lpf_hz = 10
 
-set simplified_gyro_filter_multiplier = 60
+set simplified_dterm_filter = OFF
 set dterm_lpf1_dyn_min_hz = 100
 set dterm_lpf1_dyn_max_hz = 125
 set dterm_lpf1_type = BIQUAD
-set dterm_lpf1_static_hz = 71
+#set dterm_lpf1_static_hz = 71
 set dterm_lpf2_static_hz = 0
-set anti_gravity_gain = 45
-set iterm_relax_cutoff = 30
-set p_pitch = 82
-set i_pitch = 29
-set d_pitch = 71
-set f_pitch = 168
-set p_roll = 87
-set i_roll = 31
-set d_roll = 62
-set f_roll = 180
-set p_yaw = 87
-set i_yaw = 31
-set f_yaw = 180
-set d_min_roll = 62
-set d_min_pitch = 71
-set dyn_idle_min_rpm = 94
+
+set simplified_pids_mode = RPY
 set simplified_master_multiplier = 150
+set simplified_pi_gain = 130
 set simplified_i_gain = 20
 set simplified_d_gain = 140
-set simplified_pi_gain = 130
 set simplified_dmax_gain = 0
 set simplified_pitch_pi_gain = 90
-set simplified_dterm_filter = OFF
-set simplified_dterm_filter_multiplier = 95
+set simplified_pitch_d_gain = 100
+
+set anti_gravity_gain = 45
+set iterm_relax_cutoff = 30
+set dyn_idle_min_rpm = 94
+
+simplified_tuning apply
 
 # End of tune
 
