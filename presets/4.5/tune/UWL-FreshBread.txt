@@ -5,7 +5,7 @@
 #$ KEYWORDS: UWL, underground, Whoop, 75mm, tune, acro, 1S, FreshBread
 #$ AUTHOR: FPV_Cam
 #$ DESCRIPTION: A tune for Underground Whoop League 75mm 1S whoop racing by FreshBread
-#$ WARNING: You will need to ensure your ESC firmware supports Bidirectional DSHOT for the RPM limiter
+#$ WARNING: You will need to ensure your ESC firmware supports Bidirectional DSHOT for the RPM limiter as well as use the KAACK firmware.
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/454 
 #$ FORCE_OPTIONS_REVIEW: true
 
@@ -53,6 +53,7 @@ set simplified_pitch_d_gain = 100
 set anti_gravity_gain = 45
 set iterm_relax_cutoff = 30
 set dyn_idle_min_rpm = 94
+set tpa_breakpoint = 1650
 
 simplified_tuning apply
 
