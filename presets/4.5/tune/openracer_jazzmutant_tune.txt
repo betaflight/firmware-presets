@@ -5,20 +5,23 @@
 #$ KEYWORDS: openracer, race, 5 Inch, 5 In, 5", JazzMutant
 #$ AUTHOR: JazzMutant
 #$ PARSER: MARKED
-#$ DESCRIPTION: This tune was specially developed by **@JazzMutant** for 6S [OpenRacer](https://github.com/OpenRacer/OpenRacer/tree/master)
+#$ DESCRIPTION: This tune was specially developed by **@JazzMutant** for 6S [OpenRacer](https://github.com/OpenRacer/OpenRacer/tree/master) with 1900-2050kv motors.
 #$ DESCRIPTION: 
 #$ DESCRIPTION: ## Important notes:
 #$ DESCRIPTION: - Be sure you're using ESC with bidirectional DShot support (BLHeli32, AM32, BlueJay)
 #$ DESCRIPTION: - Select "Clean builds" filters option only if your build is perfect and props are always not very damaged
 #$ DESCRIPTION: - Test your quad after applying preset by flying slow for 30 seconds. Motors shoud stay cool or slightly warm. Quad should sound clean
 #$ DESCRIPTION: - **If anything is off, don't fly it!**
-#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/460
 #$ FORCE_OPTIONS_REVIEW: TRUE
 
 # Apply defaults
 #$ INCLUDE_WARNING: misc/warnings/en/rpm_filters.txt
 #$ INCLUDE: presets/4.5/tune/defaults.txt
 #$ INCLUDE: presets/4.5/filters/defaults.txt
+
+set motor_pwm_protocol = DSHOT600
+set dshot_bidir = ON
 
 set simplified_master_multiplier = 95
 set simplified_i_gain = 90
@@ -29,7 +32,6 @@ set simplified_feedforward_gain = 100
 set simplified_pitch_d_gain = 85
 set simplified_pitch_pi_gain = 85
 set simplified_gyro_filter = ON
-simplified_tuning apply
 
 set gyro_lpf2_static_hz = 0
 
@@ -37,17 +39,9 @@ set tpa_mode = D
 set tpa_rate = 65
 set tpa_breakpoint = 1650
 
-#$ OPTION_GROUP BEGIN: DSHOT Options (select one)
-    #$ OPTION BEGIN (UNCHECKED): Dshot600
-        set motor_pwm_protocol = DSHOT600
-        set dshot_bidir = ON
-    #$ OPTION END
-
-    #$ OPTION BEGIN (UNCHECKED): Dshot300
-        set motor_pwm_protocol = Dshot300
-        set dshot_bidir = ON
-    #$ OPTION END
-#$ OPTION_GROUP END
+#$ OPTION BEGIN (UNCHECKED): DShot300 (instead of DShot600)
+    set motor_pwm_protocol = Dshot300
+#$ OPTION END
 
 #$ OPTION_GROUP BEGIN: Tuning Options
     #$ OPTION BEGIN (CHECKED): Set Dynamic Idle to 30
@@ -58,13 +52,13 @@ set tpa_breakpoint = 1650
         set throttle_boost = 0
     #$ OPTION END
 
-    #$ OPTION BEGIN (CHECKED): Enable full Battery Sag Compensation
+    #$ OPTION BEGIN (UNCHECKED): Enable full Battery Sag Compensation
         set vbat_sag_compensation = 100
     #$ OPTION END
 #$ OPTION_GROUP END
 
 #$ OPTION_GROUP BEGIN: Filters (select one)
-    #$ OPTION BEGIN (UNCHECKED): Normal builds 
+    #$ OPTION BEGIN (CHECKED): Normal builds 
         set dyn_notch_count = 2
         set dyn_notch_q = 500
         set dyn_notch_min_hz = 150
@@ -73,7 +67,6 @@ set tpa_breakpoint = 1650
         set rpm_filter_harmonics = 3
         set rpm_filter_weights = 100,50,50
         set simplified_dterm_filter_multiplier = 110
-        simplified_tuning apply
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): Clean builds (be careful)
@@ -86,9 +79,10 @@ set tpa_breakpoint = 1650
         set rpm_filter_weights = 100,50,50
         set simplified_dterm_filter_multiplier = 130
         set dterm_lpf1_dyn_expo = 7
-        simplified_tuning apply
     #$ OPTION END
 #$ OPTION_GROUP END
+
+simplified_tuning apply
 
 #$ OPTION BEGIN (UNCHECKED): 533 rates (Actual)
     #$ INCLUDE: presets/4.3/rates/defaults.txt
