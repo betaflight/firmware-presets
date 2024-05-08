@@ -1,7 +1,7 @@
 #$ TITLE: UAV Tech - Cinewhoop
 #$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: TUNE
-#$ STATUS: EXPERIMENTAL
+#$ STATUS: OFFICIAL
 #$ KEYWORDS: cinewhoop
 #$ AUTHOR: UAV Tech (Mark Spatz)
 

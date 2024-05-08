@@ -40,6 +40,8 @@
 #$ INCLUDE: presets/4.4/tune/defaults.txt
 #$ INCLUDE: presets/4.3/filters/defaults.txt
 
+set motor_poles = 12
+
 # -- Gyro lowpass filters --
 set gyro_lpf1_static_hz = 0
 set gyro_lpf1_dyn_min_hz = 500

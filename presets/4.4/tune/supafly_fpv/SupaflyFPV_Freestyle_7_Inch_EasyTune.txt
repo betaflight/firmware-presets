@@ -46,24 +46,25 @@
 
 #$ INCLUDE: presets/4.4/tune/defaults.txt
 
-set anti_gravity_gain = 100
+set anti_gravity_gain = 120
+set feedforward_transition = 30
 
 #$ OPTION_GROUP BEGIN:PIDs
 
-    #$ OPTION BEGIN (CHECKED):With HD Cam
+    #$ OPTION BEGIN (CHECKED):With Action Camera
 
         set simplified_master_multiplier = 140
         set simplified_i_gain = 100
         set simplified_d_gain = 115
-        set simplified_pi_gain = 115
+        set simplified_pi_gain = 110
         set simplified_dmax_gain = 0
         set simplified_feedforward_gain = 100
         set simplified_pitch_d_gain = 115
-        set simplified_pitch_pi_gain = 115
+        set simplified_pitch_pi_gain = 110
 
     #$ OPTION END 
 
-    #$ OPTION BEGIN (UNCHECKED):No HD Cam
+    #$ OPTION BEGIN (UNCHECKED):No Action Camera
 
         set simplified_master_multiplier = 135
         set simplified_i_gain = 100
@@ -87,8 +88,8 @@ set simplified_gyro_filter_multiplier = 80
 set gyro_lpf1_static_hz = 0
 set gyro_lpf1_dyn_min_hz = 0
 set gyro_lpf1_dyn_max_hz = 0
-set dyn_notch_count = 5
-set dyn_notch_q = 400
+set dyn_notch_count = 4
+set dyn_notch_q = 300
 set dyn_notch_min_hz = 70
 set dyn_notch_max_hz = 800
 
@@ -106,6 +107,7 @@ set dterm_lpf1_dyn_expo = 0
         set rpm_filter_harmonics = 3
         set rpm_filter_q = 700
         set dyn_notch_count = 2
+        set dyn_notch_q = 300
         set rpm_filter_min_hz = 70
 
     #$ OPTION END 

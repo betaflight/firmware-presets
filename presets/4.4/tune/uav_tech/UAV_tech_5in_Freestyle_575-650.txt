@@ -1,7 +1,7 @@
 #$ TITLE: UAV Tech - 5" Freestyle withOUT GoPro (575-650g AUW)
 #$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: TUNE
-#$ STATUS: EXPERIMENTAL
+#$ STATUS: OFFICIAL
 #$ KEYWORDS: 4S, 6S, 5in, 5", freestyle
 #$ AUTHOR: UAV Tech (Mark Spatz)
 

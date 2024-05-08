@@ -1,7 +1,7 @@
 #$ TITLE: UAV Tech - 8"/9" (1000-1400 AUW)
 #$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: TUNE
-#$ STATUS: EXPERIMENTAL
+#$ STATUS: OFFICIAL
 #$ KEYWORDS: 4S, 6S, 8in, 9in, 8", 9", freestyle, long range
 #$ AUTHOR: UAV Tech (Mark Spatz)
 

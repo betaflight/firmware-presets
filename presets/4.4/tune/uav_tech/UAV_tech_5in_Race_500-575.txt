@@ -1,7 +1,7 @@
 #$ TITLE: UAV Tech - 5" Race (500-550g AUW)
 #$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: TUNE
-#$ STATUS: EXPERIMENTAL
+#$ STATUS: OFFICIAL
 #$ KEYWORDS: 4S, 6S, 5in, 5", race, racing
 #$ AUTHOR: UAV Tech (Mark Spatz)
 

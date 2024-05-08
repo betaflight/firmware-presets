@@ -1,0 +1,4 @@
+Be careful with the settings, you can permanently damage your GPS module.
+
+sugaarK says:
+if you wana use the new rescue mode you can't use less than 57600 or 10 hz and have good results

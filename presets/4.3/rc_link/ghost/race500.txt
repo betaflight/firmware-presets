@@ -1,6 +1,7 @@
 #$ TITLE: IRC Ghost (Race500)
 #$ FIRMWARE_VERSION: 4.3
 #$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: RC_LINK
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: 500Hz, Race500, ghost, rc, rx , link, ghost, IRC, GHST, immersionRC, immersion

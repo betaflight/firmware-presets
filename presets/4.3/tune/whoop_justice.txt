@@ -25,8 +25,9 @@
 #$ DESCRIPTION: Gary's Race Rates are included too - give them a try!
 #$ FORCE_OPTIONS_REVIEW: TRUE
 
-
 #$ INCLUDE: presets/4.3/tune/defaults.txt
+
+set motor_poles = 12
 
 # -- PID values --
 set p_pitch = 71

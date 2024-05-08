@@ -47,15 +47,16 @@
 
 # -- Antigravity --
 
-set anti_gravity_gain = 100
+set anti_gravity_gain = 120
+set feedforward_transition = 30
 
 #$ OPTION_GROUP BEGIN:PIDs
 
-    #$ OPTION BEGIN (CHECKED):With HD Cam
+    #$ OPTION BEGIN (CHECKED):With Action Camera
 
         set simplified_master_multiplier = 100
-        set simplified_i_gain = 75
-        set simplified_d_gain = 90
+        set simplified_i_gain = 90
+        set simplified_d_gain = 100
         set simplified_pi_gain = 110
         set simplified_dmax_gain = 0
         set simplified_feedforward_gain = 90
@@ -63,11 +64,11 @@ set anti_gravity_gain = 100
 
     #$ OPTION END 
 
-    #$ OPTION BEGIN (UNCHECKED):No HD Cam
+    #$ OPTION BEGIN (UNCHECKED):No Action Camera
 
         set simplified_master_multiplier = 95
-        set simplified_i_gain = 75
-        set simplified_d_gain = 90
+        set simplified_i_gain = 90
+        set simplified_d_gain = 100
         set simplified_pi_gain = 110
         set simplified_dmax_gain = 0
         set simplified_feedforward_gain = 90
@@ -82,13 +83,13 @@ set anti_gravity_gain = 100
 #$ INCLUDE: presets/4.3/filters/defaults.txt
 
 set dshot_bidir = OFF
-set simplified_gyro_filter_multiplier = 120
+set simplified_gyro_filter_multiplier = 160
 set gyro_lpf1_static_hz = 0
 set gyro_lpf1_dyn_min_hz = 0
 set gyro_lpf1_dyn_max_hz = 0
-set dyn_notch_count = 5
-set dyn_notch_q = 400
-set dyn_notch_min_hz = 100
+set dyn_notch_count = 3
+set dyn_notch_q = 300
+set dyn_notch_min_hz = 90
 set dyn_notch_max_hz = 800
 
 set simplified_dterm_filter_multiplier = 140
@@ -106,6 +107,7 @@ set dterm_lpf1_dyn_expo = 0
         set rpm_filter_harmonics = 3
         set rpm_filter_q = 1000
         set dyn_notch_count = 2
+        set dyn_notch_q = 400
         set rpm_filter_fade_range_hz = 100
 
     #$ OPTION END 

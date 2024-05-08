@@ -1,6 +1,7 @@
 #$ TITLE: Default rates
 #$ FIRMWARE_VERSION: 4.3
 #$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: RATES
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: defaults, rates, actual

@@ -1,6 +1,7 @@
 #$ TITLE: QuadMcFly Rates - Snappy Freestyle
 #$ FIRMWARE_VERSION: 4.3
 #$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: RATES
 #$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: rates, freestyle, snappy, juicy, sbang

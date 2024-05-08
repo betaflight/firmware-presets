@@ -1,7 +1,7 @@
 #$ TITLE: UAV Tech - Whoop (1S & 2S)
 #$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: TUNE
-#$ STATUS: EXPERIMENTAL
+#$ STATUS: OFFICIAL
 #$ KEYWORDS: whoop
 #$ AUTHOR: UAV Tech (Mark Spatz)
 
@@ -45,6 +45,8 @@
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/210
 #$ INCLUDE: presets/4.4/tune/defaults.txt
 #$ INCLUDE: presets/4.3/filters/defaults.txt
+
+set motor_poles = 12
 
 # -- PID Settings --
 set simplified_d_gain = 140

@@ -1,6 +1,7 @@
 #$ TITLE: BMSThomas racing/freestyle rates
 #$ FIRMWARE_VERSION: 4.3
 #$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: RATES
 #$ STATUS: COMMUNITY
 #$ KEYWORDS: racing, BMSThomas, rates, MultiGP

@@ -1,7 +1,7 @@
 #$ TITLE: UAV Tech - 10" (1400-1700g | 31xx motors)
 #$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: TUNE
-#$ STATUS: EXPERIMENTAL
+#$ STATUS: OFFICIAL
 #$ KEYWORDS: 4S, 6S, 10in, 10", freestyle
 #$ AUTHOR: UAV Tech (Mark Spatz)
 

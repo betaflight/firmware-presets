@@ -22,6 +22,8 @@
 #$ INCLUDE: presets/4.4/tune/defaults.txt
 # ---------- END TUNE DEFAULTS
 
+set motor_poles = 12
+
 #$ OPTION BEGIN (CHECKED): Filters
     # ---------- FILTERS DEFAULTS:
     #$ INCLUDE: presets/4.3/filters/defaults.txt

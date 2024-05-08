@@ -1,7 +1,7 @@
 #$ TITLE: UAV Tech - Cinelifter (8"/9" >2,000g AUW)
 #$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: TUNE
-#$ STATUS: EXPERIMENTAL
+#$ STATUS: OFFICIAL
 #$ KEYWORDS: 6S, 8S, 8in, 9in, 8", 9", cinelifter
 #$ AUTHOR: UAV Tech (Mark Spatz)
 
