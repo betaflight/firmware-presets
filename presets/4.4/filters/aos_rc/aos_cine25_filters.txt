@@ -2,7 +2,7 @@
 #$ FIRMWARE_VERSION: 4.4
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: FILTERS
-#$ STATUS: EXPERIMENTAL
+#$ STATUS: COMMUNITY
 #$ KEYWORDS: filter, filters, aos, chris, rosser, cine25
 #$ AUTHOR: Chris Rosser
 #$ DESCRIPTION: Developed for the AOS Cine25

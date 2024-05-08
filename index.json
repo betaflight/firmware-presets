@@ -4063,14 +4063,14 @@
     },
     {
       "fullPath": "presets/4.4/filters/aos_rc/aos_3.5_filters.txt",
-      "hash": "3da283abc4a307009d39f256ae6ef220c3d5d6b9288e87874f02cd882c7e4a13",
+      "hash": "7e6093be6d2aec003d2e8aa2d5662c2685fc89ee8ec1f31bf4b637913acc9d30",
       "title": "AOS 3.5 Filters",
       "firmware_version": [
         "4.4",
         "4.3"
       ],
       "category": "FILTERS",
-      "status": "EXPERIMENTAL",
+      "status": "COMMUNITY",
       "keywords": [
         "filter",
         "filters",
@@ -4084,14 +4084,14 @@
     },
     {
       "fullPath": "presets/4.4/filters/aos_rc/aos_5.5_filters.txt",
-      "hash": "4a63ee7c381a6fcece1269800bb7c4abf3ff2c2418cad891d1b80b03bdf7e852",
+      "hash": "706a03ddc9cefb81198b5642f16f1ff0cd448429a0ac591424882d517b312e40",
       "title": "AOS 5.5 Filters",
       "firmware_version": [
         "4.4",
         "4.3"
       ],
       "category": "FILTERS",
-      "status": "EXPERIMENTAL",
+      "status": "COMMUNITY",
       "keywords": [
         "filter",
         "filters",
@@ -4105,14 +4105,14 @@
     },
     {
       "fullPath": "presets/4.4/filters/aos_rc/aos_5_filters.txt",
-      "hash": "1350ae4f145f81cfd92850d2a1041b6fb8b67916867fcecd46a0bce77ca49d67",
+      "hash": "2d5b7cc9f0ec936c67cfe276f67789ffa35ae59d1bb98c46c39862b51e402535",
       "title": "AOS 5 Filters",
       "firmware_version": [
         "4.4",
         "4.3"
       ],
       "category": "FILTERS",
-      "status": "EXPERIMENTAL",
+      "status": "COMMUNITY",
       "keywords": [
         "filter",
         "filters",
@@ -4126,14 +4126,14 @@
     },
     {
       "fullPath": "presets/4.4/filters/aos_rc/aos_7_filters.txt",
-      "hash": "62c9d033f06ac81e18d6965d90eb5a933b0a3c0ba1ae9cfb29e855785e50da50",
+      "hash": "261b05b7a82bb3789aed282c5e1c82aa36b8a1b9dfd6eedc5c3d070071887bb8",
       "title": "AOS 7 Filters",
       "firmware_version": [
         "4.4",
         "4.3"
       ],
       "category": "FILTERS",
-      "status": "EXPERIMENTAL",
+      "status": "COMMUNITY",
       "keywords": [
         "filter",
         "filters",
@@ -4147,14 +4147,14 @@
     },
     {
       "fullPath": "presets/4.4/filters/aos_rc/aos_cine25_filters.txt",
-      "hash": "462021cd62768d3e87eab8a30436aacabccdd80f6ae5c436ce52488c63c24b0f",
+      "hash": "3a16c36d90b8fc6bbee0af46ad2b9b6602251bc9bb076f171ad563ab712b9f8a",
       "title": "AOS Cine25 Filters",
       "firmware_version": [
         "4.4",
         "4.3"
       ],
       "category": "FILTERS",
-      "status": "EXPERIMENTAL",
+      "status": "COMMUNITY",
       "keywords": [
         "filter",
         "filters",
@@ -4168,14 +4168,14 @@
     },
     {
       "fullPath": "presets/4.4/filters/aos_rc/aos_cine35_filters.txt",
-      "hash": "fbbe4912fcf6c5492c78d078e1f9f0e2ab8260ba9494393388eab8b7cc4fd85c",
+      "hash": "015b4ea9eeee939f3f5fd3a943e348358205d8c1beca6d5aa59927cbefee37a5",
       "title": "AOS Cine35 Filters",
       "firmware_version": [
         "4.4",
         "4.3"
       ],
       "category": "FILTERS",
-      "status": "EXPERIMENTAL",
+      "status": "COMMUNITY",
       "keywords": [
         "filter",
         "filters",
@@ -4189,14 +4189,14 @@
     },
     {
       "fullPath": "presets/4.4/filters/aos_rc/aos_cine80_filters.txt",
-      "hash": "14b8308332422fc1edabfef2241260a075d2b6de04bb59e2ab46e4c852ff27d2",
+      "hash": "3f28a69eac20f7c08ffb7f8b9f5d9c6d4250f59747ddd289113ba31973dbda7a",
       "title": "AOS Cine80 Filters",
       "firmware_version": [
         "4.4",
         "4.3"
       ],
       "category": "FILTERS",
-      "status": "EXPERIMENTAL",
+      "status": "COMMUNITY",
       "keywords": [
         "filter",
         "filters",
@@ -4210,14 +4210,14 @@
     },
     {
       "fullPath": "presets/4.4/filters/aos_rc/aos_lr5_filters.txt",
-      "hash": "3293f7c9ecad763f4ec4854362c28c704568d0095229feed4b4a21c7de1cd240",
+      "hash": "ff22f0927d164d2e2da9af1b15fe34df77a5b449258fef5b6e067d7addc8a1ee",
       "title": "AOS LR5 Filters",
       "firmware_version": [
         "4.4",
         "4.3"
       ],
       "category": "FILTERS",
-      "status": "EXPERIMENTAL",
+      "status": "COMMUNITY",
       "keywords": [
         "filter",
         "filters",
@@ -4231,14 +4231,14 @@
     },
     {
       "fullPath": "presets/4.4/filters/aos_rc/aos_ul5_filters.txt",
-      "hash": "c35bfe9276a5283c3a98188a4dd12473448bd8d0b9c5894558f33eccbdf073cc",
+      "hash": "2ef55826a5e6f09874728710bc2b71705f8990cf68dcfcf181adecd07875f8d5",
       "title": "AOS UL5 Filters",
       "firmware_version": [
         "4.4",
         "4.3"
       ],
       "category": "FILTERS",
-      "status": "EXPERIMENTAL",
+      "status": "COMMUNITY",
       "keywords": [
         "filter",
         "filters",
@@ -4252,14 +4252,14 @@
     },
     {
       "fullPath": "presets/4.4/filters/aos_rc/aos_ul7_filters.txt",
-      "hash": "f8d894af1397d1837c6d64ef4a5762c9530a924f9c409a5569baa0ad26458add",
+      "hash": "e56a37902cfc9e4f0ea2bcf6b7a68e6465e92195ce4ce38ef04f78392573ae41",
       "title": "AOS UL7 Filters",
       "firmware_version": [
         "4.4",
         "4.3"
       ],
       "category": "FILTERS",
-      "status": "EXPERIMENTAL",
+      "status": "COMMUNITY",
       "keywords": [
         "filter",
         "filters",
@@ -4520,14 +4520,14 @@
     },
     {
       "fullPath": "presets/4.4/tune/aos_rc/aos_3.5_tune.txt",
-      "hash": "58b31e7417f6e17de5852c1738bf513e2d5d4f059568253253d945a38c6880ac",
+      "hash": "9f47e9798b02ca02b554c9a98f231b13a6e82d1c883484ad0e6797cc289f95e4",
       "title": "AOS 3.5 tune by Chris Rosser",
       "firmware_version": [
         "4.4",
         "4.3"
       ],
       "category": "TUNE",
-      "status": "EXPERIMENTAL",
+      "status": "COMMUNITY",
       "keywords": [
         "aos",
         "chris",
@@ -4542,14 +4542,14 @@
     },
     {
       "fullPath": "presets/4.4/tune/aos_rc/aos_5.5_tune.txt",
-      "hash": "578a33e913d881e5d7fbba292c4b52c534309f2ea605273ee841693729e50e7d",
+      "hash": "b229ae3eb9052cf8fedffdbbaa02ecd1d1a562a762153f1aef2217e12979a155",
       "title": "AOS 5.5 tune by Chris Rosser",
       "firmware_version": [
         "4.4",
         "4.3"
       ],
       "category": "TUNE",
-      "status": "EXPERIMENTAL",
+      "status": "COMMUNITY",
       "keywords": [
         "aos",
         "chris",
@@ -4564,14 +4564,14 @@
     },
     {
       "fullPath": "presets/4.4/tune/aos_rc/aos_5_tune.txt",
-      "hash": "e848362bb3d7e28a507c4f8d5ceb3b4767589d6184493420e5294a5be6ad64b5",
+      "hash": "b62b71c0bbbeb974b22ecfdbd44fb5ea1c82d357370d2b5de1fefb97dd2c0853",
       "title": "AOS 5 tune by Chris Rosser",
       "firmware_version": [
         "4.4",
         "4.3"
       ],
       "category": "TUNE",
-      "status": "EXPERIMENTAL",
+      "status": "COMMUNITY",
       "keywords": [
         "aos",
         "chris",
@@ -4586,14 +4586,14 @@
     },
     {
       "fullPath": "presets/4.4/tune/aos_rc/aos_7_tune.txt",
-      "hash": "04ad262a1396767070b15381a9e416a2e38fd5a6259618ac717d279896d836ba",
+      "hash": "1e35066c0dc9f61e59bb74d127011d3fdeffd9b05153a5958888b6e5c6ab0a77",
       "title": "AOS 7 tune by Chris Rosser",
       "firmware_version": [
         "4.4",
         "4.3"
       ],
       "category": "TUNE",
-      "status": "EXPERIMENTAL",
+      "status": "COMMUNITY",
       "keywords": [
         "aos",
         "chris",
@@ -4608,14 +4608,14 @@
     },
     {
       "fullPath": "presets/4.4/tune/aos_rc/aos_cine25_tune.txt",
-      "hash": "ae4b03986e9544246d80eaef05242ffe0d03930046fc2f653f4ab4ae1c5ca8b9",
+      "hash": "e853d63ac6580a1ddfb884f83148294b4313b064088c37535615184432c4a9a6",
       "title": "AOS Cine25 tune by Chris Rosser",
       "firmware_version": [
         "4.4",
         "4.3"
       ],
       "category": "TUNE",
-      "status": "EXPERIMENTAL",
+      "status": "COMMUNITY",
       "keywords": [
         "aos",
         "chris",
@@ -4630,14 +4630,14 @@
     },
     {
       "fullPath": "presets/4.4/tune/aos_rc/aos_cine35_tune.txt",
-      "hash": "9a252e113c180a4d30dbd031538bfde975e4b1e6b05ed9d7c128e4ef7419a5b9",
+      "hash": "9ed85dc6e0cd63797a5f2860c2f0d5f3f2f17bdf83547e470bfb4b34fce9c21b",
       "title": "AOS Cine35 tune by Chris Rosser",
       "firmware_version": [
         "4.4",
         "4.3"
       ],
       "category": "TUNE",
-      "status": "EXPERIMENTAL",
+      "status": "COMMUNITY",
       "keywords": [
         "aos",
         "chris",
@@ -4652,14 +4652,14 @@
     },
     {
       "fullPath": "presets/4.4/tune/aos_rc/aos_cine80_tune.txt",
-      "hash": "b3657bea00ab89386695576ba6741b05be6252477dc48496b7bc337111f0b037",
+      "hash": "07f2a40680739b1e58bcce7706cf8e68bc123311e4441dc88a39aef7177a2a93",
       "title": "AOS Cine80 tune by Chris Rosser",
       "firmware_version": [
         "4.4",
         "4.3"
       ],
       "category": "TUNE",
-      "status": "EXPERIMENTAL",
+      "status": "COMMUNITY",
       "keywords": [
         "aos",
         "chris",
@@ -4674,14 +4674,14 @@
     },
     {
       "fullPath": "presets/4.4/tune/aos_rc/aos_lr5_tune.txt",
-      "hash": "00b6d3f3dc53428961c96740cf46df6a41032c109e32c029a3ec9381df6381df",
+      "hash": "40295d19f2fdca73359457e8281bc4b90ef80a150cc8b0454385c3f80eb70318",
       "title": "AOS LR5 tune by Chris Rosser",
       "firmware_version": [
         "4.4",
         "4.3"
       ],
       "category": "TUNE",
-      "status": "EXPERIMENTAL",
+      "status": "COMMUNITY",
       "keywords": [
         "aos",
         "chris",
@@ -4696,14 +4696,14 @@
     },
     {
       "fullPath": "presets/4.4/tune/aos_rc/aos_ul5_tune.txt",
-      "hash": "49830f5dfd108999c24649f7d6e9f5b236580317a869a2bc7dc62b8315943fe9",
+      "hash": "a060a2c849f4574a698b376991ee7a54c801f398393a9c806f060602d4b094d8",
       "title": "AOS UL5 tune by Chris Rosser",
       "firmware_version": [
         "4.4",
         "4.3"
       ],
       "category": "TUNE",
-      "status": "EXPERIMENTAL",
+      "status": "COMMUNITY",
       "keywords": [
         "aos",
         "chris",
@@ -4718,14 +4718,14 @@
     },
     {
       "fullPath": "presets/4.4/tune/aos_rc/aos_ul7_tune.txt",
-      "hash": "d70b3da96b39859e7f4f3e2d65ab6703f60d7aa78dc411d122e8cbb591574000",
+      "hash": "5a69c0723d2fd091bb5aa90b7d8a95d17b51e06c4e6da00ec3fedfbc8ca5b23d",
       "title": "AOS UL7 tune by Chris Rosser",
       "firmware_version": [
         "4.4",
         "4.3"
       ],
       "category": "TUNE",
-      "status": "EXPERIMENTAL",
+      "status": "COMMUNITY",
       "keywords": [
         "aos",
         "chris",

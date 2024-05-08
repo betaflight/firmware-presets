@@ -2,7 +2,7 @@
 #$ FIRMWARE_VERSION: 4.4
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: FILTERS
-#$ STATUS: EXPERIMENTAL
+#$ STATUS: COMMUNITY
 #$ KEYWORDS: filter, filters, aos, chris, rosser, 5
 #$ AUTHOR: Chris Rosser
 #$ DESCRIPTION: Developed for the AOS 5
