@@ -1,7 +1,7 @@
 #$ TITLE: AOS UL5 Filters
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: FILTERS
-#$ STATUS: EXPERIMENTAL
+#$ STATUS: COMMUNITY
 #$ KEYWORDS: filter, filters, aos, chris, rosser, ul5
 #$ AUTHOR: Chris Rosser
 #$ DESCRIPTION: Developed for the AOS UL5
@@ -29,7 +29,6 @@ set dshot_bidir = ON
 set rpm_filter_harmonics = 3
 set rpm_filter_fade_range_hz = 50
 set rpm_filter_min_hz = 100
-set rpm_filter_weights = 100, 0, 80
 
 # -- Dterm filtering --
 set dterm_lpf1_dyn_min_hz = 75
@@ -37,3 +36,17 @@ set dterm_lpf1_dyn_max_hz = 110
 set dterm_lpf1_type = BIQUAD
 set dterm_lpf2_static_hz = 0
 set simplified_dterm_filter = OFF
+
+# ------ OPIONS GO BELOW THIS LINE ------
+
+# -- RPM Filter Weights --
+
+#$ OPTION_GROUP BEGIN: Props
+    #$ OPTION BEGIN (CHECKED): RPM Filter Weights for triblade props
+        set rpm_filter_weights = 100, 0, 80
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): RPM Filter Weights for other props
+        set rpm_filter_weights = 100, 100, 100
+    #$ OPTION END
+#$ OPTION_GROUP END

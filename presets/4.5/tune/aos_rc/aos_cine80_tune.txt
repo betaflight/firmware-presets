@@ -1,7 +1,7 @@
 #$ TITLE: AOS Cine80 tune by Chris Rosser
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: TUNE
-#$ STATUS: EXPERIMENTAL
+#$ STATUS: COMMUNITY
 #$ KEYWORDS: aos, chris, rosser, pid, tune, cine80
 #$ AUTHOR: Chris Rosser
 #$ DISCUSSION: https://www.aos-rc.com
@@ -86,6 +86,14 @@ set dyn_idle_p_gain = 40
 #$ OPTION_GROUP BEGIN: Filters
     #$ OPTION BEGIN (CHECKED): AOS Filters (Recommended)
     #$ INCLUDE: presets/4.5/filters/aos_rc/aos_7_filters.txt
+    #$ OPTION END
+
+    #$ OPTION BEGIN (CHECKED): RPM Filter Weights for triblade props
+        set rpm_filter_weights = 100, 0, 80
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): RPM Filter Weights for other props
+        set rpm_filter_weights = 100, 100, 100
     #$ OPTION END
 
 #$ OPTION_GROUP END
