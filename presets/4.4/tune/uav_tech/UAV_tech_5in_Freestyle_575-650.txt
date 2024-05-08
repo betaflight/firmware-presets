@@ -58,7 +58,7 @@ set anti_gravity_gain = 80
 set pidsum_limit = 1000
 set pidsum_limit_yaw = 1000
 
-#$ OPTION_GROUP BEGIN: Choose ONE Filter option (+ RPM filter if desired)
+#$ OPTION_GROUP BEGIN (Exclusive): Choose ONE Filter option (+ RPM filter if desired)
     #$ OPTION BEGIN (UNCHECKED): low Build Quality
 	# -- ADDER: For HIGH gyro vibration builds --
     	set simplified_gyro_filter = ON
@@ -107,7 +107,7 @@ set pidsum_limit_yaw = 1000
     #$ OPTION END
 #$ OPTION_GROUP END
 
-#$ OPTION_GROUP BEGIN: ESC PWM Options ...
+#$ OPTION_GROUP BEGIN (Exclusive): ESC PWM Options ...
     #$ OPTION BEGIN (CHECKED): 16 & 24k ESC PWM Settings
     	# -- ADDER: For 16 & 24k ESC PWM Settings --
  	set thrust_linear = 0

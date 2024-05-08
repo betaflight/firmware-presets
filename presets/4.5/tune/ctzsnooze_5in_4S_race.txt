@@ -85,7 +85,7 @@ set dyn_idle_p_gain = 40
 
 # -- Filters --
 
-#$ OPTION_GROUP BEGIN: Choose ONE Filter option...
+#$ OPTION_GROUP BEGIN (Exclusive): Choose ONE Filter option...
     #$ OPTION BEGIN (UNCHECKED): RPM enabled, normal build
     #$ INCLUDE: presets/4.3/filters/ctzsnooze_race.txt
     #$ OPTION END

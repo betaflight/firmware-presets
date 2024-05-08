@@ -75,7 +75,7 @@ set rc_smoothing_throttle_cutoff = 20
 #$ OPTION_GROUP END
 
 
-#$ OPTION_GROUP BEGIN: ELRS Rx connection method (choose one):
+#$ OPTION_GROUP BEGIN (Exclusive): ELRS Rx connection method (choose one):
 
 #$ OPTION BEGIN (UNCHECKED): Serial, separate Rx
 #$ OPTION END
@@ -89,7 +89,7 @@ set rx_spi_protocol = EXPRESSLRS
 #$ OPTION_GROUP END
 
 
-#$ OPTION_GROUP BEGIN: Voltage telemtry readings (choose one):
+#$ OPTION_GROUP BEGIN (Exclusive): Voltage telemtry readings (choose one):
 
 # per cell or whole pack voltage readings:
 #$ OPTION BEGIN (UNCHECKED): Single Cell values

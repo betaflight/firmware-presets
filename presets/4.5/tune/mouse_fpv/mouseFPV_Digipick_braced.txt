@@ -129,7 +129,7 @@ set yaw_lowpass_hz = 100
 
 
 # ------ OPTIONS GO BELOW THIS LINE ------
-#$ OPTION_GROUP BEGIN: Filters (Choose One or None)
+#$ OPTION_GROUP BEGIN (Exclusive): Filters (Choose One or None)
 
     #$ OPTION BEGIN (CHECKED): RPM Filters DShot600
         # -- End Defaults --
@@ -230,7 +230,7 @@ set yaw_lowpass_hz = 100
 #$ OPTION_GROUP END
 
 
-#$ OPTION_GROUP BEGIN: PID Options (Choose One or None)
+#$ OPTION_GROUP BEGIN (Exclusive): PID Options (Choose One or None)
 
     #$ OPTION BEGIN (UNCHECKED): Standard Lipo 4s
         # -- PID Sliders  --
@@ -281,7 +281,7 @@ set yaw_lowpass_hz = 100
 #$ OPTION_GROUP END
 
 
-#$ OPTION_GROUP BEGIN: Auto Profiles (Choose One or None)
+#$ OPTION_GROUP BEGIN (Exclusive): Auto Profiles (Choose One or None)
     #$ OPTION BEGIN (UNCHECKED): Auto Switch 3s Profile
         set auto_profile_cell_count = 3
     #$ OPTION END
