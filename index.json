@@ -6207,6 +6207,28 @@
       "priority": 1000000000000
     },
     {
+      "fullPath": "presets/4.5/rates/AOS_rates.txt",
+      "hash": "7ad7cb13a002cf2f867c9f0325dcf619f9a11d4b4e5d73e2ef51571f9796ed73",
+      "title": "AOS Rates",
+      "firmware_version": [
+        "4.3",
+        "4.4",
+        "4.5"
+      ],
+      "category": "RATES",
+      "status": "COMMUNITY",
+      "keywords": [
+        "youtube",
+        "aos",
+        "freestyle",
+        "cinematic",
+        "chris",
+        "rosser"
+      ],
+      "author": "Chris Rosser",
+      "priority": 10000
+    },
+    {
       "fullPath": "presets/4.5/rates/ZoeFPV_3D_rates.txt",
       "hash": "0e6a717400f59ff9e6e94f7738235b75d5158d1171ea53556ac114d76f63c3f3",
       "title": "ZoeFPV 3D Rate Bomb",
