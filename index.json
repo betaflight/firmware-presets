@@ -230,6 +230,7 @@
       "3d",
       "3in",
       "3S",
+      "4",
       "4 inch",
       "4\"",
       "4in",
@@ -4083,6 +4084,27 @@
       "priority": 100
     },
     {
+      "fullPath": "presets/4.4/filters/aos_rc/aos_4_filters.txt",
+      "hash": "f7c316d49ca2c7a529e917ba844fb71cb0a80002e22d5f8289fac929186a7e36",
+      "title": "AOS 4 Filters",
+      "firmware_version": [
+        "4.4",
+        "4.3"
+      ],
+      "category": "FILTERS",
+      "status": "COMMUNITY",
+      "keywords": [
+        "filter",
+        "filters",
+        "aos",
+        "chris",
+        "rosser",
+        "4"
+      ],
+      "author": "Chris Rosser",
+      "priority": 100
+    },
+    {
       "fullPath": "presets/4.4/filters/aos_rc/aos_5.5_filters.txt",
       "hash": "706a03ddc9cefb81198b5642f16f1ff0cd448429a0ac591424882d517b312e40",
       "title": "AOS 5.5 Filters",
@@ -4535,6 +4557,28 @@
         "pid",
         "tune",
         "3.5"
+      ],
+      "author": "Chris Rosser",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.4/tune/aos_rc/aos_4_tune.txt",
+      "hash": "02f2711e09da9c9aaba0ed94a100d576628336089904e3e756a3bd9f39ee0137",
+      "title": "AOS 4 tune by Chris Rosser",
+      "firmware_version": [
+        "4.4",
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "aos",
+        "chris",
+        "rosser",
+        "pid",
+        "tune",
+        "4"
       ],
       "author": "Chris Rosser",
       "force_options_review": true,
@@ -5574,6 +5618,26 @@
       "priority": 100
     },
     {
+      "fullPath": "presets/4.5/filters/aos_rc/aos_4_filters.txt",
+      "hash": "62a0de08898745a6cf5eda062c878f2d5d7a42024f2d5bde1b0b4b73f91fe176",
+      "title": "AOS 4 Filters",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "FILTERS",
+      "status": "COMMUNITY",
+      "keywords": [
+        "filter",
+        "filters",
+        "aos",
+        "chris",
+        "rosser",
+        "4"
+      ],
+      "author": "Chris Rosser",
+      "priority": 100
+    },
+    {
       "fullPath": "presets/4.5/filters/aos_rc/aos_5.5_filters.txt",
       "hash": "ee5ce1221991daad5ee8a79450cca13a21c6ac5d636284ccc63189b3d600d53d",
       "title": "AOS 5.5 Filters",
@@ -6208,7 +6272,7 @@
     },
     {
       "fullPath": "presets/4.5/rates/AOS_rates.txt",
-      "hash": "7ad7cb13a002cf2f867c9f0325dcf619f9a11d4b4e5d73e2ef51571f9796ed73",
+      "hash": "6bd60e5e6ad280d84fbf45c218b310884bd1565d745660b756c2110b04c4ecbf",
       "title": "AOS Rates",
       "firmware_version": [
         "4.3",
@@ -6290,6 +6354,27 @@
         "pid",
         "tune",
         "3.5"
+      ],
+      "author": "Chris Rosser",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.5/tune/aos_rc/aos_4_tune.txt",
+      "hash": "b7a3b9614aeb1fa363f3968dc2ed26e2b0f54bcd2ad5fcd69af32580d860176c",
+      "title": "AOS 4 tune by Chris Rosser",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "TUNE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "aos",
+        "chris",
+        "rosser",
+        "pid",
+        "tune",
+        "4"
       ],
       "author": "Chris Rosser",
       "force_options_review": true,
