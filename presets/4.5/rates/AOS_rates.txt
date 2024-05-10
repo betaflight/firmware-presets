@@ -12,6 +12,12 @@
 #$ DESCRIPTION:To use tick ONE rate option and optionally tick ONE of the following match yaw options closest to your camera uptilt
 #$ INCLUDE: presets/4.3/rates/defaults.txt
 
+#$ OPTION_GROUP BEGIN: Improve low throttle control for powerful motors (AOS Supernova)
+    #$ OPTION BEGIN (UNCHECKED): Throttle Expo 0.33
+        set thr_mid = 0
+        set thr_expo = 33
+    #$ OPTION END
+
 #$ OPTION_GROUP BEGIN: Default Freestyle 700 deg/s
     #$ OPTION BEGIN (UNCHECKED): Default Freestyle 700 deg/s
         set rates_type = ACTUAL

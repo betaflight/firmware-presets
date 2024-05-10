@@ -94,8 +94,10 @@ set dyn_idle_p_gain = 40
 #$ OPTION_GROUP END
 
 #$ OPTION_GROUP BEGIN: Motors
-    #$ OPTION BEGIN (UNCHECKED): Supernova Motors
+    #$ OPTION BEGIN (UNCHECKED): Supernova Motors (reduce master and add throttle expo)
         set simplified_master_multiplier = 100
+        set thr_mid = 0
+        set thr_expo = 33
     #$ OPTION END
 #$ OPTION_GROUP END
 
