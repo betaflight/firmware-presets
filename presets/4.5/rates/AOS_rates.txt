@@ -17,6 +17,7 @@
         set thr_mid = 0
         set thr_expo = 33
     #$ OPTION END
+#$ OPTION_GROUP END
 
 #$ OPTION_GROUP BEGIN: Default Freestyle 700 deg/s
     #$ OPTION BEGIN (UNCHECKED): Default Freestyle 700 deg/s
