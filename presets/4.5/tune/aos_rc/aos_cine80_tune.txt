@@ -131,13 +131,13 @@ set dyn_idle_p_gain = 40
 #$ OPTION_GROUP BEGIN: Check all of these (recommended)
 
     # -- VBat sag compensation --
-    #$ OPTION BEGIN (CHECKED): Full battery sag compensation
+    #$ OPTION BEGIN (UNCHECKED): Full battery sag compensation
         set vbat_sag_compensation = 100
         set vbat_sag_lpf_period = 2
     #$ OPTION END
 
     # -- Stick behaviour --
-    #$ OPTION BEGIN (CHECKED): No stick deadband
+    #$ OPTION BEGIN (UNCHECKED): No stick deadband
         set deadband = 0
         set yaw_deadband = 0
     #$ OPTION END
