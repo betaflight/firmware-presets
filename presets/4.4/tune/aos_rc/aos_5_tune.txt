@@ -1,0 +1,145 @@
+#$ TITLE: AOS 5 tune by Chris Rosser
+#$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: TUNE
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: aos, chris, rosser, pid, tune, 5
+#$ AUTHOR: Chris Rosser
+#$ DISCUSSION: https://www.aos-rc.com
+#$ DESCRIPTION: Custom Tune for the AOS 5. Based on a 1100mAh 6S build with 1800KV Motors.
+#$ DESCRIPTION:
+#$ DESCRIPTION: Master multiplier is set to 1.2 for safety. Increase it carefully to further improve flight performance.
+#$ DESCRIPTION:
+#$ DESCRIPTION: RPM filtering is MANDATORY!
+#$ DESCRIPTION:
+#$ DESCRIPTION: Please carefully review the options above and tick any that are relevant.
+#$ DESCRIPTION:
+#$ DESCRIPTION: Choose your RC link speed.
+#$ DESCRIPTION:
+#$ FORCE_OPTIONS_REVIEW: TRUE
+
+#$ INCLUDE: presets/4.4/tune/defaults.txt
+
+# -- PID values --
+
+set p_pitch = 70
+set i_pitch = 125
+set d_pitch = 55
+set f_pitch = 194
+set p_roll = 67
+set i_roll = 119
+set d_roll = 47
+set f_roll = 187
+set p_yaw = 67
+set i_yaw = 119
+set f_yaw = 187
+set d_min_roll = 35
+set d_min_pitch = 40
+set d_max_advance = 0
+set simplified_master_multiplier = 120
+set simplified_pi_gain = 125
+set simplified_feedforward_gain = 130
+
+# -- iTerm relax (default)--
+# -- iTerm windup (default)--
+# -- iTerm rotation (off, default) --
+
+# -- Dmax --
+set d_max_advance = 0
+
+# -- TPA --
+
+# -- Feedforward --
+set feedforward_max_rate_limit = 95
+
+# -- PIDsum limits (default)--
+# -- Antigravity (default) --
+# -- Absolute control (off, default) --
+# -- Accecleration limits (off, default) --
+# -- Angle and Horizon mode tuning (default) --
+# -- PIDs active below min throttle (default) --
+# -- Set mixer type to default (legacy) --
+# -- Set yaw spin recovery to default, which is auto --
+# -- Set integrated yaw to off, so pitch and yaw are independent (default) --
+# -- Gyro cal on first arm (off, default) --
+# -- Transient throttle limit (off, default) --
+# -- Thrust linear (off, default) --
+# -- Throttle boost (default, 5)
+# -- VBat warning threshold --
+
+# -- DShot Idle --
+set dshot_idle_value = 300
+
+# -- Dynamic idle ON at 3000 rpm --
+set dyn_idle_min_rpm = 30
+set dyn_idle_p_gain = 40
+
+
+# ------ OPIONS GO BELOW THIS LINE ------
+
+# -- Filters --
+
+#$ OPTION_GROUP BEGIN: Filters
+    #$ OPTION BEGIN (CHECKED): AOS Filters (Recommended)
+    #$ INCLUDE: presets/4.4/filters/aos_rc/aos_5_filters.txt
+    #$ OPTION END
+
+#$ OPTION_GROUP END
+
+# -- Fast Rx Link Options --
+
+#$ OPTION_GROUP BEGIN: Choose your RC link (or apply another preset separately)
+    #$ OPTION BEGIN (UNCHECKED): ELRS_250HZ (Recommended)
+        #$ INCLUDE: presets/4.3/rc_link/elrs_250hz.txt
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): ELRS_500HZ
+        #$ INCLUDE: presets/4.3/rc_link/elrs_500hz.txt
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): DJI Normal
+        #$ INCLUDE: presets/4.3/rc_link/DJI_Normal.txt
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): DJI SBUS FAST
+        #$ INCLUDE: presets/4.3/rc_link/DJI_SBUS_Fast.txt
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): Crossfire 50Hz
+        #$ INCLUDE: presets/4.3/rc_link/tbs/crossfire_50hz.txt
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): Crossfire 150Hz
+        #$ INCLUDE: presets/4.3/rc_link/tbs/crossfire_150hz.txt
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+# -- Recommended options --
+
+#$ OPTION_GROUP BEGIN: Check all of these (recommended)
+
+    # -- VBat sag compensation --
+    #$ OPTION BEGIN (UNCHECKED): Full battery sag compensation
+        set vbat_sag_compensation = 100
+        set vbat_sag_lpf_period = 2
+    #$ OPTION END
+
+    # -- Stick behaviour --
+    #$ OPTION BEGIN (UNCHECKED): No stick deadband
+        set deadband = 0
+        set yaw_deadband = 0
+    #$ OPTION END
+
+    # -- Startup and arming --
+    #$ OPTION BEGIN (UNCHECKED): Arm at any angle
+        set small_angle = 180
+    #$ OPTION END
+
+    # -- Prop direction --
+    #$ OPTION BEGIN (UNCHECKED): Props out (check motor direction!)
+        set yaw_motors_reversed = ON
+    #$ OPTION END
+
+#$ OPTION_GROUP END
+
+simplified_tuning apply
