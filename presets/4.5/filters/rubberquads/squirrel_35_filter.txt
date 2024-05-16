@@ -21,18 +21,13 @@
 
 #$ INCLUDE: presets/4.5/filters/defaults.txt
 
-# enable dshot rpm telemetry
+# enable dshot with rpm telemetry
+set motor_pwm_protocol = Dshot600
 set dshot_bidir = ON
 
 # -- Gyro filters --
 # Standard dynamic gyro lowpass cascade
-set gyro_lpf1_dyn_min_hz = 500
-set gyro_lpf1_dyn_max_hz = 1000
 set gyro_lpf1_dyn_expo = 5
-set gyro_lpf1_type = PT1
-set gyro_lpf1_static_hz = 500
-set gyro_lpf2_type = PT1
-set gyro_lpf2_static_hz = 1000
 
 # -- Gyro Sliders (on by default) --
 # 

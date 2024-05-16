@@ -52,7 +52,6 @@ set tpa_low_breakpoint = 1050
 set tpa_low_always = OFF
 
 set vbat_sag_compensation = 80
-pid_at_min_throttle = ON
 set anti_gravity_gain = 65
 set anti_gravity_cutoff_hz = 5
 set anti_gravity_p_gain = 70
