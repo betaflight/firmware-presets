@@ -49,6 +49,8 @@ set dyn_notch_max_hz = 600
 #$ INCLUDE_WARNING: misc/warnings/en/rpm_filters.txt
 set dshot_bidir = ON
 set rpm_filter_q = 650
+set rpm_filter_min_hz = 120
+set rpm_filter_fade_range_hz = 30
 
 #$ OPTION_GROUP BEGIN: Count your magnets (in one bell)
   #$ OPTION BEGIN (CHECKED): a lot (14)
