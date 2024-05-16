@@ -1,7 +1,7 @@
 #$ TITLE: 4.5 Filter settings for the RubberQuads Squirrel 35 (with RPM FILTERING).
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: FILTERS
-#$ STATUS: COMMUNITY
+#$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: rubberquads, squirrel, DShot telemetry, filter, filters, clean, basic, betaflight
 #$ AUTHOR: Volker Göschl-Covrljan
 #$ DISCUSSION: https://discord.gg/RqbQBuh7pu
@@ -86,6 +86,7 @@ set dterm_lpf2_static_hz = 217
 # -- Dterm sliders 140 --
 set simplified_dterm_filter = ON
 set simplified_dterm_filter_multiplier = 140
+simplified_tuning apply
 
 # -- Yaw lowpass  --
 set yaw_lowpass_hz = 110

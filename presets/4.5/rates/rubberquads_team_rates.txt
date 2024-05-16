@@ -3,7 +3,7 @@
 #$ FIRMWARE_VERSION: 4.4
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: RATES
-#$ STATUS: COMMUNITY
+#$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: rates, freestyle, race, der_V, settek, rubberquads
 #$ AUTHOR: Volker Göschl-Covrljan
 

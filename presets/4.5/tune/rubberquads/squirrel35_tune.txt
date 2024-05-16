@@ -1,7 +1,7 @@
 #$ TITLE: Squirrel 3.5 tune
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: TUNE
-#$ STATUS: COMMUNITY
+#$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: rubberquads, squirrel, 3.5, pid, tune,
 #$ AUTHOR: Volker Göschl-Covrljan
 #$ DISCUSSION: https://discord.gg/RqbQBuh7pu
