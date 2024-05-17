@@ -38,7 +38,7 @@
 
 #$ OPTION_GROUP BEGIN: I want:
     #$ OPTION BEGIN (CHECKED): Volkers freestyle rates
-        set rateprofile_name = der_V_free
+        set rateprofile_name = derVfree
         set thr_mid = 20
         set thr_expo = 30
         set rates_type = ACTUAL
@@ -54,7 +54,7 @@
         set yaw_srate = 55
     #$ OPTION END
     #$ OPTION BEGIN (UNCHECKED): Volkers race rates
-        set rateprofile_name = der_V_race
+        set rateprofile_name = derVrace
         set thr_mid = 70
         set thr_expo = 20
         set rates_type = ACTUAL
