@@ -24,6 +24,18 @@
 
 #$ INCLUDE: presets/4.3/rates/defaults.txt
 
+#$ OPTION_GROUP BEGIN: load rates into (if not selected it will load into the currently active slot):
+    #$ OPTION BEGIN (UNCHECKED): profile 1
+        rateprofile 0
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): profile 2
+        rateprofile 1
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): profile 3
+        rateprofile 2
+    #$ OPTION END
+#$ OPTION_GROUP END
+
 #$ OPTION_GROUP BEGIN: I want:
     #$ OPTION BEGIN (CHECKED): Volkers freestyle rates
         set rateprofile_name = der_V_free
@@ -75,15 +87,5 @@
     #$ OPTION END
 #$ OPTION_GROUP END   
 
-#$ OPTION_GROUP BEGIN: loaded rates into:
-    #$ OPTION BEGIN (UNCHECKED): profile 1
-        rateprofile 0
-    #$ OPTION END
-    #$ OPTION BEGIN (UNCHECKED): profile 2
-        rateprofile 1
-    #$ OPTION END
-    #$ OPTION BEGIN (UNCHECKED): profile 3
-        rateprofile 2
-    #$ OPTION END
-#$ OPTION_GROUP END
+
 
