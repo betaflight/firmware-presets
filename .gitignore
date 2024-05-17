@@ -56,5 +56,3 @@ eeprom.bin
 
 # NPM packages folder
 /node_modules
-index_hash.txt
-index.json
