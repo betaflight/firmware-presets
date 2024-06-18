@@ -73,8 +73,10 @@ set rpm_filter_fade_range_hz = 100
 set rpm_filter_fade_range_hz = 100
 
 # -- Misc --
-set thrust_linear = 30
+set thrust_linear = 20
 
+# -- iTerm  --
+set iterm_relax_cutoff = 30
 
 # -- PIDsum limits --
 set iterm_limit = 500
