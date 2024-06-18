@@ -79,7 +79,7 @@ set thrust_linear = 0
 set throttle_boost = 2
 
 # -- iTerm  --
-set iterm_relax_cutoff = 20
+set iterm_relax_cutoff = 45
 
 # -- PIDsum limits --
 set iterm_limit = 500
@@ -120,7 +120,7 @@ set tpa_breakpoint = 1250
     set dyn_idle_p_gain = 35
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED): Spicy tune
+#$ OPTION BEGIN (UNCHECKED): Old Spice
 
     #spicy tune use with care
     # -- Gyro Dynamic Notches --
@@ -134,6 +134,38 @@ set tpa_breakpoint = 1250
 
     # -- RPM filtering --
     set rpm_filter_harmonics = 2
+    set rpm_filter_min_hz = 150
+
+    # -- PID values --
+    set simplified_pids_mode = RP
+    set simplified_i_gain = 115
+    set simplified_d_gain = 85
+    set simplified_pi_gain = 85
+    set simplified_dmax_gain = 140
+    set simplified_feedforward_gain = 105
+    set simplified_pitch_d_gain = 95
+    set simplified_pitch_pi_gain = 105
+    simplified_tuning apply
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): New Spice ( mid 2024)
+    #spicy tune use with care
+    
+    # -- Gyro Lowpass Filters --
+       set gyro_lpf1_dyn_min_hz = 0
+       
+    # -- Gyro Dynamic Notches --
+    set dyn_notch_count = 1
+    set dyn_notch_q = 600
+    set dyn_notch_min_hz = 200
+    set dyn_notch_max_hz = 650
+
+    # -- Dterm filtering --
+    set dterm_lpf1_dyn_expo = 10
+
+    # -- RPM Filtering --
+    set rpm_filter_harmonics = 3
+    set rpm_filter_weights = 100,50,100
     set rpm_filter_min_hz = 150
 
     # -- PID values --

@@ -64,9 +64,16 @@ set dterm_lpf1_dyn_expo = 7
 # -- RPM filtering --
 set dshot_bidir = ON
 set rpm_filter_fade_range_hz = 100
+#$ OPTION BEGIN (CHECKED): 3 blade prop
+    set rpm_filter_weights = 100,50,100
+#$ OPTION END
+#$ OPTION BEGIN (UNCHECKED): 2 blade prop
+    set rpm_filter_weights = 100,100,50
+#$ OPTION END
+set rpm_filter_fade_range_hz = 100
 
 # -- Misc --
-set thrust_linear = 20
+set thrust_linear = 30
 
 
 # -- PIDsum limits --
@@ -75,19 +82,6 @@ set pidsum_limit_yaw = 1000
 
 
 # -- PID values --
-set p_pitch = 41
-set i_pitch = 70
-set d_pitch = 37
-set f_pitch = 110
-set p_roll = 41
-set i_roll = 70
-set d_roll = 37
-set f_roll = 111
-set p_yaw = 41
-set i_yaw = 70
-set f_yaw = 111
-set d_min_roll = 37
-set d_min_pitch = 37
 set simplified_master_multiplier = 155
 set simplified_i_gain = 95
 set simplified_d_gain = 80
@@ -96,6 +90,7 @@ set simplified_dmax_gain = 0
 set simplified_feedforward_gain = 60
 set simplified_pitch_d_gain = 90
 set simplified_pitch_pi_gain = 95
+simplified_tuning apply
 
 #$ OPTION BEGIN (UNCHECKED): Dshot600
     set dshot_bidir = ON
