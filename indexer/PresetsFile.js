@@ -225,7 +225,7 @@ class PresetsFile
         const optionGroupName = directiveRemoved.replace(exclusiveOptionGroupRegex, "");
 
         if (0 == optionGroupName.length || optionGroupName[0] != ":") {
-            this._addError(`line ${this._currentLine}, OPTION_GROUP BEGIN directive should be followed by ":". Example: #$ OPTION_GROUP BEGIN: My Group Name or if its exclusive: #$ OPTION_GROUP BEGIN (Exclusive): My Exclusive Group`);
+            this._addError(`line ${this._currentLine}, OPTION_GROUP BEGIN directive should be followed by ":". Example: #$ OPTION_GROUP BEGIN: My Group Name or if its exclusive: #$ OPTION_GROUP BEGIN: (Exclusive) My Exclusive Group`);
         }
 
         let optionGroup = {

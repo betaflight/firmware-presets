@@ -145,7 +145,7 @@ All field tags must be:
 | FORCE_OPTIONS_REVIEW | Opens a dialog advising the user to review the options if they have not done so before applying the Preset.|
 | INCLUDE | Inserts data from one or more separate Presets ahead of the CLI commands of this Preset.  Useful to enforce defaults ahead of your commands. See details below.|
 | OPTION | Commands within `OPTION` tags present the user with a checkbox to apply, or not apply, the enclosed commands.  The default check-box behaviour can be specified.  Each `OPTION` must have a unique name. For more info, [click here](https://github.com/betaflight/firmware-presets#OPTION). |
-| OPTION_GROUP | Text to appear before a group of Options. The group can be made mutually exclusive by adding the (Exclusive) directive |
+| OPTION_GROUP | Text to appear before a group of Options. The group can be made mutually exclusive by prepending the (Exclusive) directive to the name of the group |
 | DISCLAIMER | Field containing text for a disclaimer. |
 | INCLUDE_DISCLAIMER | path to file containing text for a disclaimer, starting from `presets/`` |
 | WARNING | Field containing text for a warning. Intended to be a final dialog before accepting the Preset |
@@ -287,7 +287,7 @@ Complete `OPTION` example syntax looks like this:
 
 You can also make a set of options mutually exclusive, i.e. only one option can be checked within the group at once.
 ```
-#$ OPTION_GROUP BEGIN (Exclusive): A Mutually Exclusive set of options
+#$ OPTION_GROUP BEGIN: (Exclusive) A Mutually Exclusive set of options
     #$ OPTION BEGIN (UNCHECKED): Option the first
         CLI payload strings
     #$ OPTION END
