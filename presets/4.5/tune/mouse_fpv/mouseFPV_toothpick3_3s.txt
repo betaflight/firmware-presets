@@ -106,7 +106,7 @@ set yaw_lowpass_hz = 100
 
 
 # This is where the author includes options that require input from the User
-    #$ OPTION_GROUP BEGIN (Exclusive): Filters (Choose One or None)
+    #$ OPTION_GROUP BEGIN: (Exclusive) Filters (Choose One or None)
     #$ OPTION BEGIN (CHECKED): RPM Filters DShot600
         # -- Filter Settings --
 
