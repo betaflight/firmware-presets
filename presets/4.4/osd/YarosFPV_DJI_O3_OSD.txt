@@ -1,0 +1,113 @@
+#$ TITLE: Yaros FPV HD OSD
+#$ FIRMWARE_VERSION: 4.4
+#$ CATEGORY: OSD
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: DJI, HD, HDOSD, OSD, YAROSFPV
+#$ AUTHOR: YarosFPV (Yaroslav Syubayev) 
+
+#$ DESCRIPTION: Yaros FPV HD OSD Settings
+#$ DESCRIPTION: Intended to be used with the DJI O3 FPV system.
+#$ DESCRIPTION: -----------
+#$ DESCRIPTION:
+#$ DESCRIPTION: Turn on HD mode in your DJI Goggles
+#$ DESCRIPTION:
+#$ DESCRIPTION: Information
+#$ DESCRIPTION: -----------
+#$ DESCRIPTION: 
+#$ DESCRIPTION: DJI HD OSD setup without GPS. Set the OSD mode set to HD in your DJI Goggles for Betaflight elements to display. You will also need to select "VTX (MSP + Displayport) on the appropriate port in the ports tab.
+#$ DESCRIPTION: 
+#$ DESCRIPTION: Preview:
+#$ DESCRIPTION: -----------
+#$ DESCRIPTION: <img src="https://i.ibb.co/GtD9WMm/Screenshot-2024-06-20-195831.jpg" style="width:100%"/>
+#$ DESCRIPTION: 
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/472
+
+set osd_tim1 = 2560
+set osd_tim2 = 2561
+set osd_vbat_pos = 2562
+set osd_rssi_pos = 341
+set osd_link_quality_pos = 7692
+set osd_link_tx_power_pos = 341
+set osd_rssi_dbm_pos = 3565
+set osd_rsnr_pos = 341
+set osd_tim_1_pos = 33
+set osd_tim_2_pos = 6210
+set osd_remaining_time_estimate_pos = 131
+set osd_flymode_pos = 3630
+set osd_anti_gravity_pos = 341
+set osd_g_force_pos = 341
+set osd_throttle_pos = 2498
+set osd_vtx_channel_pos = 341
+set osd_crosshairs_pos = 345
+set osd_ah_sbar_pos = 313
+set osd_ah_pos = 185
+set osd_current_pos = 2529
+set osd_mah_drawn_pos = 6242
+set osd_wh_drawn_pos = 341
+set osd_motor_diag_pos = 341
+set osd_craft_name_pos = 21
+set osd_pilot_name_pos = 3118
+set osd_gps_speed_pos = 1103
+set osd_gps_lon_pos = 29
+set osd_gps_lat_pos = 1
+set osd_gps_sats_pos = 1071
+set osd_home_dir_pos = 1200
+set osd_home_dist_pos = 1134
+set osd_flight_dist_pos = 189
+set osd_compass_bar_pos = 341
+set osd_altitude_pos = 17550
+set osd_pid_roll_pos = 341
+set osd_pid_pitch_pos = 341
+set osd_pid_yaw_pos = 341
+set osd_debug_pos = 341
+set osd_power_pos = 341
+set osd_pidrate_profile_pos = 341
+set osd_warnings_pos = 6548
+set osd_avg_cell_voltage_pos = 6690
+set osd_pit_ang_pos = 341
+set osd_rol_ang_pos = 341
+set osd_battery_usage_pos = 34947
+set osd_disarmed_pos = 6614
+set osd_nheading_pos = 341
+set osd_up_down_reference_pos = 312
+set osd_ready_mode_pos = 341
+set osd_nvario_pos = 341
+set osd_esc_tmp_pos = 341
+set osd_esc_rpm_pos = 341
+set osd_esc_rpm_freq_pos = 341
+set osd_rtc_date_time_pos = 341
+set osd_adjustment_range_pos = 341
+set osd_flip_arrow_pos = 341
+set osd_core_temp_pos = 341
+set osd_log_status_pos = 341
+set osd_stick_overlay_left_pos = 341
+set osd_stick_overlay_right_pos = 341
+set osd_stick_overlay_radio_mode = 2
+set osd_rate_profile_name_pos = 2103
+set osd_pid_profile_name_pos = 341
+set osd_profile_name_pos = 341
+set osd_rcchannels_pos = 341
+set osd_camera_frame_pos = 142
+set osd_efficiency_pos = 341
+set osd_total_flights_pos = 341
+set osd_aux_pos = 341
+set osd_sys_goggle_voltage_pos = 341
+set osd_sys_vtx_voltage_pos = 341
+set osd_sys_bitrate_pos = 341
+set osd_sys_delay_pos = 341
+set osd_sys_distance_pos = 341
+set osd_sys_lq_pos = 341
+set osd_sys_goggle_dvr_pos = 341
+set osd_sys_vtx_dvr_pos = 341
+set osd_sys_warnings_pos = 341
+set osd_sys_vtx_temp_pos = 341
+set osd_sys_fan_speed_pos = 341
+set osd_stat_bitmask = 2297448
+set osd_gps_sats_show_pdop = OFF
+set osd_displayport_device = MSP
+set osd_camera_frame_width = 24
+set osd_camera_frame_height = 11
+set osd_stat_avg_cell_value = OFF
+set osd_menu_background = TRANSPARENT
+set osd_canvas_width = 53
+set osd_canvas_height = 20
