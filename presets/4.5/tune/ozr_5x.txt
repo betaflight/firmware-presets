@@ -45,17 +45,14 @@ set dterm_lpf1_dyn_expo = 7
 
 # -- RPM filtering --
 set dshot_bidir = ON
-set rpm_filter_harmonics = 1
+set rpm_filter_weights = 100,50,100
 set rpm_filter_fade_range_hz = 100
 
 # -- Misc --
-set yaw_spin_recovery = AUTO
-set thrust_linear = 0
 set throttle_boost = 0
-set ez_landing_limit = 5
 
 # -- iTerm  --
-set iterm_relax_cutoff = 20
+set iterm_relax_cutoff = 45
 
 # -- PIDsum limits --
 set iterm_limit = 500
