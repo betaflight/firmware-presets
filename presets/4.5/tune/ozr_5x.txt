@@ -9,7 +9,7 @@
 
 #$ DESCRIPTION: <h1>DinDrones OZR-5X tune</h1>
 #$ DESCRIPTION: <br>
-#$ DESCRIPTION: This 6S racing tune is based on Karate Race 6s 5" (non spicy) by KarateBrot with very minor changes.
+#$ DESCRIPTION: This 6S racing tune is based on Karate Race 6s 5" (non spicy) by sugarK with very minor changes.
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION: Tested on DinDrones OZR-5X frame with Foxeer F722 v4 MPU6000 flight controller and default ESC settings.
 #$ DESCRIPTION: <br>
