@@ -38,12 +38,7 @@
 #$ INCLUDE: presets/4.5/filters/defaults.txt
 
 # -- Gyro lowpass filters --
-set gyro_lpf2_static_hz = 600
-set gyro_lpf1_dyn_min_hz = 500
-set gyro_lpf1_dyn_max_hz = 1000
-set acc_lpf_hz = 10
-set simplified_gyro_filter = OFF
-set simplified_gyro_filter_multiplier = 200
+set gyro_lpf1_static_hz = 0
 
 # -- Gyro Dynamic Notches --
 set dyn_notch_count = 1
@@ -56,6 +51,7 @@ set dterm_lpf1_dyn_expo = 10
 
 # -- RPM filtering --
 set dshot_bidir = ON
+set rpm_filter_weights = 100,50,100
 set rpm_filter_fade_range_hz = 100
 set motor_poles = 12
 
@@ -65,7 +61,7 @@ set thrust_linear = 0
 set throttle_boost = 7
 
 # -- iTerm  --
-set iterm_relax_cutoff = 20
+set iterm_relax_cutoff = 45
 
 # -- PIDsum limits --
 set iterm_limit = 500
