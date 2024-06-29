@@ -287,7 +287,7 @@ Complete `OPTION` example syntax looks like this:
 
 You can also make a set of options mutually exclusive, i.e. only one option can be checked within the group at once.
 ```
-#$ OPTION_GROUP BEGIN: (Exclusive) A Mutually Exclusive set of options
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) A Mutually Exclusive set of options
     #$ OPTION BEGIN (UNCHECKED): Option the first
         CLI payload strings
     #$ OPTION END
