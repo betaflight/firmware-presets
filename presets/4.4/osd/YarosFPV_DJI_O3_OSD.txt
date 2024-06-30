@@ -30,7 +30,6 @@ set osd_craft_name_pos = 21
 set osd_crosshairs_pos = 345
 set osd_current_pos = 2529
 set osd_disarmed_pos = 6614
-set osd_displayport_device = MSP
 set osd_flymode_pos = 3630
 set osd_link_quality_pos = 7692
 set osd_mah_drawn_pos = 6242
