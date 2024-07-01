@@ -44,11 +44,8 @@ set motor_poles = 12
 
 # -- Gyro lowpass filters --
 set gyro_lpf1_static_hz = 0
-set gyro_lpf1_dyn_min_hz = 500
-set gyro_lpf1_dyn_max_hz = 1000
-set simplified_gyro_filter = OFF
 
-#$ OPTION BEGIN (UNCHECKED): Bosch (BMI) gyro - experimantal
+#$ OPTION BEGIN (UNCHECKED): Bosch (BMI) gyro - EXPERIMANTAL
     set gyro_lpf1_dyn_min_hz = 0
     set gyro_lpf1_dyn_max_hz = 0
 #$ OPTION END
@@ -64,13 +61,18 @@ set dterm_lpf1_dyn_expo = 7
 # -- RPM filtering --
 set dshot_bidir = ON
 set rpm_filter_fade_range_hz = 100
-#$ OPTION BEGIN (CHECKED): 3 blade prop
-    set rpm_filter_weights = 100,50,100
-#$ OPTION END
-#$ OPTION BEGIN (UNCHECKED): 2 blade prop
-    set rpm_filter_weights = 100,100,50
-#$ OPTION END
-set rpm_filter_fade_range_hz = 100
+
+#$ OPTION_GROUP BEGIN: RPM filter harmonic dimming
+
+    #$ OPTION BEGIN (CHECKED): 3 blade prop
+        set rpm_filter_weights = 100,50,100
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): 2 blade prop
+        set rpm_filter_weights = 100,100,50
+    #$ OPTION END
+    
+#$ OPTION_GROUP END
 
 # -- Misc --
 set thrust_linear = 20
@@ -104,14 +106,30 @@ simplified_tuning apply
     set motor_pwm_protocol = Dshot300
 #$ OPTION END
 
-#$ OPTION BEGIN (CHECKED): Set 12 poles for whoop motors
-    set motor_poles = 12
-#$ OPTION END
+#$ OPTION_GROUP BEGIN: Whoop stuff
+    #$ OPTION BEGIN (CHECKED): Set 12 poles for whoop motors
+        set motor_poles = 12
+    #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED): Dynamic idle for 11000kv 2s
-    set dyn_idle_min_rpm = 150
-    set dyn_idle_p_gain = 35
-#$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Over clock f411 ONLY
+        set cpu_overclock = 120MHZ
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): Crash recovery
+        set crash_recovery = ON
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): Dynamic idle for 2s 15000rpm 
+        set dyn_idle_min_rpm = 150
+        set dyn_idle_p_gain = 35
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): Dynamic idle for 1s 20000rpm
+        set dyn_idle_min_rpm = 200
+        set dyn_idle_p_gain = 35
+    #$ OPTION END
+    
+#$ OPTION_GROUP END
 
 #$ OPTION BEGIN (CHECKED): Vbat sag compensation
     set vbat_sag_compensation = 100
