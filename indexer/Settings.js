@@ -51,6 +51,7 @@ const OptionsDirectives = {
     OPTION_UNCHECKED: "(unchecked)",
     BEGIN_OPTION_GROUP_DIRECTIVE: "option_group begin",
     END_OPTION_GROUP_DIRECTIVE: "option_group end",
+    EXCLUSIVE_OPTION_GROUP: "(exclusive)",
 }
 
 const settings = {

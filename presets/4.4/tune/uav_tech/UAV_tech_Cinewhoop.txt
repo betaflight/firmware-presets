@@ -109,7 +109,7 @@ set pidsum_limit_yaw = 1000
     #$ OPTION END
 #$ OPTION_GROUP END
 
-#$ OPTION_GROUP BEGIN: ESC PWM Options ...
+#$ OPTION_GROUP BEGIN: (Exclusive) ESC PWM Options ...
     #$ OPTION BEGIN (UNCHECKED): 16 & 24k ESC PWM Settings
     	# -- ADDER: For 16 & 24k ESC PWM Settings --
     	set thrust_linear = 0

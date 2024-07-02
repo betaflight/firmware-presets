@@ -85,7 +85,7 @@ set dyn_idle_p_gain = 40
 
 # -- Filters --
 
-#$ OPTION_GROUP BEGIN: Choose ONE Filter option...
+#$ OPTION_GROUP BEGIN: (Exclusive) Choose ONE Filter option...
     #$ OPTION BEGIN (UNCHECKED): RPM enabled, normal build
     #$ INCLUDE: presets/4.3/filters/ctzsnooze_race.txt
     #$ OPTION END
@@ -101,7 +101,7 @@ set dyn_idle_p_gain = 40
 
 # -- Fast Rx Link Options --
 
-#$ OPTION_GROUP BEGIN: Choose your RC link speed!
+#$ OPTION_GROUP BEGIN: (Exclusive) Choose your RC link speed!
     #$ OPTION BEGIN (UNCHECKED): 150Hz or less
         #$ INCLUDE: presets/4.3/rc_link/generic/150hz_race.txt
     #$ OPTION END
