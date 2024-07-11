@@ -65,7 +65,7 @@ set rpm_filter_fade_range_hz = 100
 #$ OPTION_GROUP BEGIN: RPM filter harmonic dimming
 
     #$ OPTION BEGIN (CHECKED): 3 blade prop
-        set rpm_filter_weights = 100,50,100
+        set rpm_filter_weights = 100,20,100
     #$ OPTION END
     
     #$ OPTION BEGIN (UNCHECKED): 2 blade prop
@@ -111,7 +111,7 @@ simplified_tuning apply
         set motor_poles = 12
     #$ OPTION END
 
-    #$ OPTION BEGIN (UNCHECKED): Over clock f411 ONLY
+    #$ OPTION BEGIN (UNCHECKED): Over clock f411 ONLY ( DON’T USE WITH BMI GYROS )
         set cpu_overclock = 120MHZ
     #$ OPTION END
 
@@ -186,15 +186,25 @@ simplified_tuning apply
         #$ INCLUDE: presets/4.3/rc_link/generic/500hz_race.txt
 
     #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): Secret sauce stick feel 
+        set feedforward_jitter_factor = 0
+        
+    #$ OPTION END
 
 #$ OPTION_GROUP END
 
 #$ OPTION_GROUP BEGIN: Optional rates
     #$ OPTION BEGIN (UNCHECKED): sugarK's rates
         #$ INCLUDE: presets/4.3/rates/SugarK.txt
-        set thr_expo = 80
 
     #$ OPTION END
+    
+     #$ OPTION BEGIN (UNCHECKED): Throttle curve for whoop racer
+        set thr_mid = 45
+        set thr_expo = 65
+        
+     #$ OPTION END
 
 #$ OPTION_GROUP END
 
