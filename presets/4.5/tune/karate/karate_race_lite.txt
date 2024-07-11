@@ -164,8 +164,14 @@ set tpa_breakpoint = 1250
         set serialrx_provider = GHST
 
          #$ INCLUDE: presets/4.3/rc_link/generic/500hz_race.txt
+         
     #$ OPTION END
 
+    #$ OPTION BEGIN (UNCHECKED): Secret sauce stick feel 
+        set feedforward_jitter_factor = 0
+        
+    #$ OPTION END
+    
 #$ OPTION_GROUP END
 
 #$ OPTION_GROUP BEGIN: Old Spice
@@ -216,7 +222,7 @@ set tpa_breakpoint = 1250
         
         # -- RPM Filtering --
         set rpm_filter_harmonics = 3
-        set rpm_filter_weights = 100,50,100
+        set rpm_filter_weights = 100,20,100
         set rpm_filter_fade_range_hz = 100
         
     #$ OPTION END
@@ -261,9 +267,16 @@ set tpa_breakpoint = 1250
 #$ OPTION_GROUP END
 
 
-#$ OPTION_GROUP BEGIN: Optional Rates
-    #$ OPTION BEGIN (UNCHECKED): sugarK's Rates
+#$ OPTION_GROUP BEGIN: Optional rates
+    #$ OPTION BEGIN (UNCHECKED): sugarK's rates
         #$ INCLUDE: presets/4.3/rates/SugarK.txt
+        
     #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): Throttle curve for 6s ultralite racer
+        set thr_mid = 25
+        set thr_expo = 65
+        
+     #$ OPTION END
 
 #$ OPTION_GROUP END
