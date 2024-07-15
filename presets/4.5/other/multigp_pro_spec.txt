@@ -24,6 +24,10 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION:
+#$ DESCRIPTION: For best performance try using fixed 48KHz PWM frequency in the ESC settings (BLheli_32). 
+#$ DESCRIPTION:
+#$ DESCRIPTION: <br>
+#$ DESCRIPTION:
 #$ DESCRIPTION: ## Miscellaneous option
 #$ DESCRIPTION: is checked by default, and includes several usefull settings:
 #$ DESCRIPTION: - Accelerometer and barometer OFF
