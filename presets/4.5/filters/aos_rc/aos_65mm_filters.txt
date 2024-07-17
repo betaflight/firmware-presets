@@ -1,7 +1,7 @@
 #$ TITLE: AOS 65mm Filters
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: FILTERS
-#$ STATUS: COMMUNITY
+#$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: filter, filters, aos, chris, rosser, 65mm, tiny, whoop
 #$ AUTHOR: Chris Rosser
 #$ DESCRIPTION: Developed for a 65mm Tiny whoop. Based on a 300mAh 1S build with 23000KV Motors.
@@ -34,4 +34,4 @@ set dterm_lpf1_dyn_min_hz = 75
 set dterm_lpf1_dyn_max_hz = 150
 set dterm_lpf1_type = PT1
 set dterm_lpf2_static_hz = 150
-set simplified_dterm_filter = OFF
+set simplified_dterm_filter = ON

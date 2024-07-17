@@ -1,7 +1,7 @@
 #$ TITLE: 65mm Tiny whoop tune by Chris Rosser
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: TUNE
-#$ STATUS: COMMUNITY
+#$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: aos, chris, rosser, pid, tune, 65mm, tiny, whoop
 #$ AUTHOR: Chris Rosser
 #$ DISCUSSION: https://www.aos-rc.com
@@ -21,19 +21,6 @@
 
 # -- PID values --
 set profile_name = AOS 65mm
-set p_pitch = 95
-set i_pitch = 170
-set d_pitch = 44
-set f_pitch = 194
-set p_roll = 76
-set i_roll = 135
-set d_roll = 39
-set f_roll = 156
-set p_yaw = 76
-set i_yaw = 135
-set f_yaw = 156
-set d_min_roll = 39
-set d_min_pitch = 44
 set angle_p_gain = 100
 set simplified_master_multiplier = 130
 set simplified_pi_gain = 130
@@ -69,10 +56,9 @@ set feedforward_max_rate_limit = 95
 # -- Throttle boost (default, 5)
 # -- VBat warning threshold --
 
-# -- Dynamic idle ON at 5000 rpm --
-set dyn_idle_min_rpm = 50
+# -- Dynamic idle ON at 10000 rpm --
+set dyn_idle_min_rpm = 100
 set dyn_idle_p_gain = 40
-
 
 # ------ OPIONS GO BELOW THIS LINE ------
 
@@ -80,7 +66,7 @@ set dyn_idle_p_gain = 40
 
 #$ OPTION_GROUP BEGIN: Filters
     #$ OPTION BEGIN (CHECKED): AOS 65mm Filters (Recommended)
-    #$ INCLUDE: presets/4.5/filters/aos_rc/aos_65mm_filters.txt
+        #$ INCLUDE: presets/4.5/filters/aos_rc/aos_65mm_filters.txt
     #$ OPTION END
 
 #$ OPTION_GROUP END
