@@ -5,7 +5,7 @@
 #$ KEYWORDS: filter, filters, aos, chris, rosser, 65mm, tiny, whoop
 #$ AUTHOR: Chris Rosser
 #$ DESCRIPTION: Developed for a 65mm Tiny whoop. Based on a 300mAh 1S build with 23000KV Motors.
-#$ DESCRIPTION: NOTE this needs bidirectional Dshot support and RPM filtering active to use. DO NOT ATEMPT TO USE WITH OUT RPM FILTERING!
+#$ DESCRIPTION: NOTE this needs bidirectional Dshot support and RPM filtering active to use. DO NOT ATTEMPT TO USE WITH OUT RPM FILTERING!
 #$ DESCRIPTION: Follow the usual process of hover testing and safely checking out your tune before using. USE AT YOUR OWN RISK.
 #$ DISCUSSION: https://www.aos-rc.com
 #$ INCLUDE_WARNING: misc/warnings/en/rpm_filters.txt
