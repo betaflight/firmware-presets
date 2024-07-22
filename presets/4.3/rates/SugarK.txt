@@ -11,8 +11,6 @@
 #$ INCLUDE: presets/4.3/rates/defaults.txt
 
 
-set thr_mid = 25
-set thr_expo = 65
 set roll_expo = 54
 set pitch_expo = 54
 set yaw_expo = 54
