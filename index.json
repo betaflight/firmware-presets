@@ -6881,8 +6881,8 @@
     },
     {
       "fullPath": "presets/4.5/tune/barelyfly/barelyfly_8-9in.txt",
-      "hash": "d81bcbf39ff60326a0bb68d158d8b04ff415d50147657389f0cee20fd5367573",
-      "title": "UAV Tech preset modified for drones that Barely Fly 8\"/9\" (1500-3000g AUW)",
+      "hash": "ff5c759344fed01cd0f5613df8d7cad1e83236cf62023ee57ae54ed5cc5a3a5c",
+      "title": "Barely Fly preset for drones that Barely Fly 8\"/9\" (1500-3000g AUW)",
       "firmware_version": [
         "4.5",
         "4.5"

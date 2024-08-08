@@ -1,4 +1,4 @@
-#$ TITLE: UAV Tech preset modified for drones that Barely Fly 8"/9" (1500-3000g AUW)
+#$ TITLE: Barely Fly preset for drones that Barely Fly 8"/9" (1500-3000g AUW)
 #$ FIRMWARE_VERSION: 4.5
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: TUNE
@@ -75,7 +75,7 @@ set pidsum_limit_yaw = 400
     	set yaw_lowpass_hz = 100
     #$ OPTION END
 
-    #$ OPTION BEGIN (UNCHECKED): ... + enable RPM filter (if supported)
+    #$ OPTION BEGIN (CHECKED): ... + enable RPM filter (if supported)
     	# -- ADDER: Enabled RPM filtering --
     	set motor_pwm_protocol = DSHOT300
     	set dshot_bidir = ON
