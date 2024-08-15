@@ -7,7 +7,7 @@
 #$ DISCUSSION: https://www.aos-rc.com
 #$ DESCRIPTION: Custom Tune for the AOS HS5. Based on a 1800mAh 6S build with 2808 1950KV Motors.
 #$ DESCRIPTION:
-#$ DESCRIPTION: Master multiplier is set to 1.0 for safety. Increase it carefully to further improve flight performance. If running 8S on 2808 1950KV motors Master multiplier may neede to be decreased slightly.
+#$ DESCRIPTION: Master multiplier is set to 1.0 for safety. Increase it carefully to further improve flight performance. If running 8S on 2808 1950KV motors Master multiplier may need to be decreased slightly.
 #$ DESCRIPTION:
 #$ DESCRIPTION: RPM filtering is MANDATORY!
 #$ DESCRIPTION:
