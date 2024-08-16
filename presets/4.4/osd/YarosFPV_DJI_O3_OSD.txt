@@ -1,9 +1,10 @@
 #$ TITLE: Yaros FPV HD OSD
 #$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: OSD
-#$ STATUS: EXPERIMENTAL
+#$ STATUS: COMMUNITY
 #$ KEYWORDS: DJI, HD, HDOSD, OSD, YAROSFPV
-#$ AUTHOR: YarosFPV (Yaroslav Syubayev) 
+#$ AUTHOR: YarosFPV (Yaroslav Syubayev)
 
 #$ DESCRIPTION: Yaros FPV HD OSD Settings
 #$ DESCRIPTION: Intended to be used with the DJI O3 FPV system.
@@ -13,13 +14,13 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: Information
 #$ DESCRIPTION: -----------
-#$ DESCRIPTION: 
+#$ DESCRIPTION:
 #$ DESCRIPTION: DJI HD OSD setup without GPS. Set the OSD mode set to HD in your DJI Goggles for Betaflight elements to display. You will also need to select "VTX (MSP + Displayport) on the appropriate port in the ports tab.
-#$ DESCRIPTION: 
+#$ DESCRIPTION:
 #$ DESCRIPTION: Preview:
 #$ DESCRIPTION: -----------
-#$ DESCRIPTION: <img src="https://i.ibb.co/GtD9WMm/Screenshot-2024-06-20-195831.jpg" style="width:100%"/>
-#$ DESCRIPTION: 
+#$ DESCRIPTION: <img src="https://i.ibb.co/GtD9WMm/Screenshot-2024-06-20-195831.jpg" width="400px" style="margin-left: auto; margin-right: auto; display: block;"/>
+#$ DESCRIPTION:
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/474
 
 #$ INCLUDE: presets/4.4/osd/defaults.txt
