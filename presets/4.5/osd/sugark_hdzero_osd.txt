@@ -4,7 +4,7 @@
 #$ CATEGORY: OSD
 #$ STATUS: COMMUNITY
 #$ KEYWORDS:hdzero, HD, HDOSD, OSD, sugarK, racing
-#$ AUTHOR: YarosFPV (Yaroslav Syubayev) 
+#$ AUTHOR: sugarK 
 
 #$ DESCRIPTION: sugarKs HD OSD race settings
 #$ DESCRIPTION: Intended to be used with the HDzero race cameras using 4.3 aspect ratio.
