@@ -6,6 +6,7 @@
 #$ KEYWORDS: DJI, HD, HDOSD, OSD, YAROSFPV
 #$ AUTHOR: YarosFPV (Yaroslav Syubayev)
 
+#$ PARSER: MARKED
 #$ DESCRIPTION: Yaros FPV HD OSD Settings
 #$ DESCRIPTION: Intended to be used with the DJI O3 FPV system.
 #$ DESCRIPTION: -----------
