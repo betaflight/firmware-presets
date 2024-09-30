@@ -5,7 +5,7 @@
 #$ KEYWORDS: bnf, diff, betafpv, air75
 #$ AUTHOR: YarosFPV (Yaroslav Syubayev)
 #$ DESCRIPTION: Resets to default 4.5.0 diff that the BetaFPV Air75 ships with.
-#$ DESCRIPTION: Inludes Tune, VTX Table, Aux Modes, default OSD, and Rates
+#$ DESCRIPTION: Includes Tune, VTX Table, Aux Modes, default OSD, and Rates
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/issues/488
 
 # feature
