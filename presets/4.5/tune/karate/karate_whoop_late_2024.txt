@@ -1,5 +1,5 @@
 #$ TITLE: Karate whoop late 2024
-#$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: TUNE
 #$ STATUS:  EXPERIMENTAL
 #$ KEYWORDS: karate, 1S, race, brushless, whoop, 65mm, sugarK, KarateBrot
