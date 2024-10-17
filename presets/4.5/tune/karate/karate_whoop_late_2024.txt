@@ -1,7 +1,7 @@
 #$ TITLE: Karate whoop late 2024
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: TUNE
-#$ STATUS:  EXPERIMENTAL
+#$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: karate, 1S, race, brushless, whoop, 65mm, sugarK, KarateBrot
 #$ AUTHOR: sugarK
 
@@ -37,6 +37,7 @@
 
 #$ INCLUDE_WARNING: misc/warnings/en/rpm_filters.txt
 #$ INCLUDE: presets/4.4/tune/defaults.txt
+#$ INCLUDE: presets/4.5/filters/defaults.txt
 
 # --DSHOT --
 set motor_pwm_protocol = Dshot300
@@ -57,7 +58,7 @@ set dterm_lpf1_dyn_expo = 7
 # -- RPM filtering --
 set motor_poles = 12
 set dshot_bidir = ON
-set rpm_filter_fade_range_hz = 150
+set rpm_filter_fade_range_hz = 120
 set rpm_filter_harmonics = 1
 
 # -- iTerm  --
@@ -68,7 +69,7 @@ set thrust_linear = 20
 set vbat_max_cell_voltage = 445
 
 #$ OPTION BEGIN (CHECKED): Dynamic idle for sub 20g whoop ( recommended )
-    set dyn_idle_min_rpm = 150
+    set dyn_idle_min_rpm = 120
     set dyn_idle_p_gain = 35
     set dyn_idle_start_increase = 60
 #$ OPTION END
@@ -78,7 +79,7 @@ set vbat_max_cell_voltage = 445
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): Over clock f411 with ICM42688p only
-        set cpu_overclock = 120MHZ
+    set cpu_overclock = 120MHZ
 #$ OPTION END
 
 
