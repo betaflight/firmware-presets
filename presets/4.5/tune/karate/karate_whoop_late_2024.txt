@@ -82,7 +82,6 @@ set vbat_max_cell_voltage = 445
     set cpu_overclock = 120MHZ
 #$ OPTION END
 
-
 # -- PID values --
 set simplified_pids_mode = RP
 set simplified_i_gain = 110
@@ -93,8 +92,6 @@ set simplified_feedforward_gain = 115
 set simplified_pitch_d_gain = 105
 set simplified_dterm_filter_multiplier = 90
 simplified_tuning apply
-
-
 
 #$ OPTION_GROUP BEGIN: Some popular RC Links
 
@@ -179,6 +176,4 @@ simplified_tuning apply
         set thr_expo = 65
     #$ OPTION END
     
-
 #$ OPTION_GROUP END
-
