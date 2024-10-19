@@ -1,4 +1,4 @@
-#$ TITLE: Karate whoop late 2024
+#$ TITLE: Karate RACE Whoop late2024
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: TUNE
 #$ STATUS: EXPERIMENTAL
@@ -67,12 +67,23 @@ set iterm_relax_cutoff = 45
 # -- Misc --
 set thrust_linear = 20
 set vbat_max_cell_voltage = 445
+set cpu_late_limit_permille = 15
 
-#$ OPTION BEGIN (CHECKED): Dynamic idle for sub 20g whoop ( recommended )
-    set dyn_idle_min_rpm = 120
-    set dyn_idle_p_gain = 35
-    set dyn_idle_start_increase = 60
-#$ OPTION END
+#$ OPTION_GROUP BEGIN: Dynamic Idle
+
+    #$ OPTION BEGIN (CHECKED): 12k race 15-18g whoop ( recommended )
+        set dyn_idle_min_rpm = 120
+        set dyn_idle_p_gain = 35
+        set dyn_idle_start_increase = 60
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): 18k FS 18g+ whoop
+        set dyn_idle_min_rpm = 180
+        set dyn_idle_p_gain = 35
+        set dyn_idle_start_increase = 60
+    #$ OPTION END
+    
+#$ OPTION_GROUP END
 
 #$ OPTION BEGIN (CHECKED): Vbat sag compensation ( recommended )
     set vbat_sag_compensation = 100
@@ -159,6 +170,11 @@ simplified_tuning apply
     #$ OPTION END
 
 #$ OPTION_GROUP END
+
+#$ OPTION BEGIN (UNCHECKED): Set RX to SPI ELRS
+        set rx_spi_protocol = EXPRESSLRS
+        
+    #$ OPTION END
 
 #$ OPTION_GROUP BEGIN: Optional rates
     #$ OPTION BEGIN (UNCHECKED): sugarK's rates
