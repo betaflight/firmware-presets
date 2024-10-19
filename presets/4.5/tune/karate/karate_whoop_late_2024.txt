@@ -77,7 +77,7 @@ set cpu_late_limit_permille = 15
         set dyn_idle_start_increase = 60
     #$ OPTION END
     
-    #$ OPTION BEGIN (CHECKED): 18k FS 18g+ whoop
+    #$ OPTION BEGIN (UNCHECKED): 18k FS 18g+ whoop
         set dyn_idle_min_rpm = 180
         set dyn_idle_p_gain = 35
         set dyn_idle_start_increase = 60
