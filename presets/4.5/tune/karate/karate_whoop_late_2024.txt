@@ -172,9 +172,8 @@ simplified_tuning apply
 #$ OPTION_GROUP END
 
 #$ OPTION BEGIN (UNCHECKED): Set RX to SPI ELRS
-        set rx_spi_protocol = EXPRESSLRS
-        
-    #$ OPTION END
+    set rx_spi_protocol = EXPRESSLRS   
+#$ OPTION END
 
 #$ OPTION_GROUP BEGIN: Optional rates
     #$ OPTION BEGIN (UNCHECKED): sugarK's rates
