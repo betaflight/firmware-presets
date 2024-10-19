@@ -1,4 +1,4 @@
-#$ TITLE: Karate whoop race late2024
+#$ TITLE: Karate RACE Whoop late2024
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: TUNE
 #$ STATUS: EXPERIMENTAL
