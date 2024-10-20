@@ -36,7 +36,7 @@
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/490
 
 #$ INCLUDE_WARNING: misc/warnings/en/rpm_filters.txt
-#$ INCLUDE: presets/4.4/tune/defaults.txt
+#$ INCLUDE: presets/4.5/tune/defaults.txt
 #$ INCLUDE: presets/4.5/filters/defaults.txt
 
 # --DSHOT --
