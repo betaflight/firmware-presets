@@ -1,13 +1,13 @@
-#$ TITLE: AOS Cine25 tune by Chris Rosser
+#$ TITLE: AOS Cine30 tune by Chris Rosser
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: TUNE
 #$ STATUS: COMMUNITY
-#$ KEYWORDS: aos, chris, rosser, pid, tune, cine25
+#$ KEYWORDS: aos, chris, rosser, pid, tune, cine30
 #$ AUTHOR: Chris Rosser
 #$ DISCUSSION: https://www.aos-rc.com
-#$ DESCRIPTION: Custom Tune for the AOS Cine25. Based on a 1000mAh 6S build with 2750KV Motors.
+#$ DESCRIPTION: Custom Tune for the AOS Cine30. Based on a 4S build with 1507 3800KV Motors.
 #$ DESCRIPTION:
-#$ DESCRIPTION: Master multiplier is set to 1.3 for safety. Increase it carefully to further improve flight performance.
+#$ DESCRIPTION: Master multiplier is set to 1.0 for safety. Increase it carefully to further improve flight performance.
 #$ DESCRIPTION:
 #$ DESCRIPTION: RPM filtering is MANDATORY!
 #$ DESCRIPTION:
@@ -21,21 +21,23 @@
 
 # -- PID values --
 
-set d_pitch = 59
+set p_pitch = 61
+set i_pitch = 110
+set d_pitch = 40
 set f_pitch = 0
-set p_roll = 40
-set i_roll = 72
-set d_roll = 52
+set p_roll = 47
+set i_roll = 84
+set d_roll = 30
 set f_roll = 0
-set p_yaw = 40
-set i_yaw = 72
+set p_yaw = 47
+set i_yaw = 84
 set f_yaw = 0
-set d_min_roll = 39
-set d_min_pitch = 44
-set simplified_master_multiplier = 130
-set simplified_pi_gain = 70
+set d_min_pitch = 40
+set simplified_pi_gain = 105
+set simplified_dmax_gain = 0
 set simplified_feedforward_gain = 0
-set simplified_pitch_pi_gain = 110
+set simplified_pitch_d_gain = 120
+set simplified_pitch_pi_gain = 125
 
 # -- iTerm relax (default)--
 # -- iTerm windup (default)--
@@ -67,8 +69,8 @@ set feedforward_max_rate_limit = 95
 # -- DShot Idle --
 set dshot_idle_value = 300
 
-# -- Dynamic idle ON at 7500 rpm --
-set dyn_idle_min_rpm = 75
+# -- Dynamic idle ON at 6000 rpm --
+set dyn_idle_min_rpm = 60
 set dyn_idle_p_gain = 40
 
 
@@ -78,7 +80,7 @@ set dyn_idle_p_gain = 40
 
 #$ OPTION_GROUP BEGIN: Filters
     #$ OPTION BEGIN (UNCHECKED): AOS Filters (Recommended)
-    #$ INCLUDE: presets/4.5/filters/aos_rc/aos_cine25_filters.txt
+    #$ INCLUDE: presets/4.5/filters/aos_rc/aos_cine30_filters.txt
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): RPM Filter Weights for triblade props
@@ -100,8 +102,12 @@ set dyn_idle_p_gain = 40
     set beeper_dshot_beacon_tone = 3
     #$ OPTION END
 
-    #$ OPTION BEGIN (UNCHECKED): 12 pole motors (Most 1404 motors have 12 poles)
+    #$ OPTION BEGIN (UNCHECKED): 12 pole motors (Some 15-16mm motors have 12 poles)
     set motor_poles = 12
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): 14 pole motors (Some 15-16mm motors have 14 poles)
+    set motor_poles = 14
     #$ OPTION END
 
 #$ OPTION_GROUP END
