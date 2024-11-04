@@ -2,7 +2,7 @@
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: TUNE
 #$ STATUS: COMMUNITY
-#$ KEYWORDS: aos, chris, rosser, pid, tune, cine30
+#$ KEYWORDS: aos, chris, rosser, pid, tune, cine, 30
 #$ AUTHOR: Chris Rosser
 #$ DISCUSSION: https://www.aos-rc.com
 #$ DESCRIPTION: Custom Tune for the AOS Cine30. Based on a 4S build with 1507 3800KV Motors.
@@ -79,8 +79,8 @@ set dyn_idle_p_gain = 40
 # -- Filters --
 
 #$ OPTION_GROUP BEGIN: Filters
-    #$ OPTION BEGIN (UNCHECKED): AOS Filters (Recommended)
-    #$ INCLUDE: presets/4.5/filters/aos_rc/aos_cine30_filters.txt
+    #$ OPTION BEGIN (CHECKED): AOS Filters (Recommended)
+        #$ INCLUDE: presets/4.5/filters/aos_rc/aos_cine30_filters.txt
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): RPM Filter Weights for triblade props
@@ -97,17 +97,17 @@ set dyn_idle_p_gain = 40
 
 #$ OPTION_GROUP BEGIN: Motor Settings
     #$ OPTION BEGIN (UNCHECKED): DShot Motor Beeping (Recommended)
-    beacon RX_LOST
-    beacon RX_SET
-    set beeper_dshot_beacon_tone = 3
+        beacon RX_LOST
+        beacon RX_SET
+        set beeper_dshot_beacon_tone = 3
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): 12 pole motors (Some 15-16mm motors have 12 poles)
-    set motor_poles = 12
+        set motor_poles = 12
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): 14 pole motors (Some 15-16mm motors have 14 poles)
-    set motor_poles = 14
+        set motor_poles = 14
     #$ OPTION END
 
 #$ OPTION_GROUP END
@@ -116,12 +116,12 @@ set dyn_idle_p_gain = 40
 
 #$ OPTION_GROUP BEGIN: Rates
     #$ OPTION BEGIN (UNCHECKED): Cinematic Rates (Recommended)
-    set roll_rc_rate = 4
-    set pitch_rc_rate = 4
-    set yaw_rc_rate = 4
-    set roll_srate = 40
-    set pitch_srate = 40
-    set yaw_srate = 40
+        set roll_rc_rate = 4
+        set pitch_rc_rate = 4
+        set yaw_rc_rate = 4
+        set roll_srate = 40
+        set pitch_srate = 40
+        set yaw_srate = 40
     #$ OPTION END
 
 #$ OPTION_GROUP END
@@ -130,15 +130,15 @@ set dyn_idle_p_gain = 40
 
 #$ OPTION_GROUP BEGIN: Typical Board Alignment for 25mm AIO
     #$ OPTION BEGIN (UNCHECKED): Typical Board Alignment for 25mm AIO (Test in setup tab BEFORE take-off!)
-    set align_board_pitch = 180
-    set align_board_yaw = -45
+        set align_board_pitch = 180
+        set align_board_yaw = -45
     #$ OPTION END
 
 #$ OPTION_GROUP END
 
 # -- Fast Rx Link Options --
 
-#$ OPTION_GROUP BEGIN: Choose your RC link (or apply another preset separately)
+#$ OPTION_GROUP BEGIN (EXCLUSIVE): Choose your RC link (or apply another preset separately)
     #$ OPTION BEGIN (UNCHECKED): ELRS_250HZ (Recommended)
         #$ INCLUDE: presets/4.3/rc_link/elrs_250hz.txt
     #$ OPTION END
@@ -169,7 +169,7 @@ set dyn_idle_p_gain = 40
 #$ OPTION_GROUP BEGIN: Check all of these (recommended)
 
     # -- VBat sag compensation --
-    #$ OPTION BEGIN (UNCHECKED): Full battery sag compensation
+    #$ OPTION BEGIN (CHECKED): Full battery sag compensation
         set vbat_sag_compensation = 100
         set vbat_sag_lpf_period = 2
     #$ OPTION END
