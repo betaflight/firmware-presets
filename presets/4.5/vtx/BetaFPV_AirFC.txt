@@ -7,9 +7,12 @@
 #$ STATUS: COMMUNITY
 #$ KEYWORDS:  vtx, vtx table, vtxtable, betafpv, 4in1, air
 #$ AUTHOR: YarosFPV (Yaroslav Syubayev)
+#$ PARSER: MARKED
 #$ DESCRIPTION: VTX tables for BetaFPV Air Brushless FC 4in1 VTX
 #$ DESCRIPTION: This Flight Controller is used on the Air65 and Air75 whoops by BetaFPV.
-#$ DESCRIPTION: <a href="https://betafpv.com/products/air-brushless-flight-controller">BetaFPV Air Brushless FC</a>
+#$ DESCRIPTION:
+#$ DESCRIPTION: [BetaFPV Air Brushless FC](https://betafpv.com/products/air-brushless-flight-controller)
+#$ DESCRIPTION:
 #$ DISCLAIMER: All previous VTX Table settings will be reset.
 #$ INCLUDE_DISCLAIMER: misc/disclaimer/en/vtxtable.txt
 
