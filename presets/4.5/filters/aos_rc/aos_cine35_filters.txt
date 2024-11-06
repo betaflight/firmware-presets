@@ -50,3 +50,5 @@ set simplified_dterm_filter = OFF
         set rpm_filter_weights = 100, 100, 100
     #$ OPTION END
 #$ OPTION_GROUP END
+
+simplified_tuning apply

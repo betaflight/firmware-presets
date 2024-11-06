@@ -35,3 +35,5 @@ set dterm_lpf1_dyn_max_hz = 110
 set dterm_lpf1_type = BIQUAD
 set dterm_lpf2_static_hz = 0
 set simplified_dterm_filter = OFF
+
+simplified_tuning apply
