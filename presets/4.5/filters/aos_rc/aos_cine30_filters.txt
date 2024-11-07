@@ -1,10 +1,10 @@
-#$ TITLE: AOS Cine25 Filters
+#$ TITLE: AOS Cine30 Filters
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: FILTERS
 #$ STATUS: COMMUNITY
-#$ KEYWORDS: filter, filters, aos, chris, rosser, cine, 25
+#$ KEYWORDS: filter, filters, aos, chris, rosser, cine, 30
 #$ AUTHOR: Chris Rosser
-#$ DESCRIPTION: Developed for the AOS Cine25
+#$ DESCRIPTION: Developed for the AOS Cine30 based on a build with 1507 3800KV motors on 4S.
 #$ DESCRIPTION: NOTE this needs bidirectional Dshot support and RPM filtering active to use. DO NOT ATEMPT TO USE WITHOUT RPM FILTERING!
 #$ DESCRIPTION: Follow the usual process of hover testing and safely checking out your tune before using. USE AT YOUR OWN RISK.
 #$ DISCUSSION: https://www.aos-rc.com
