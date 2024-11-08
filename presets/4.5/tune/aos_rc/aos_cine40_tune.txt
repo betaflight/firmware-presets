@@ -1,11 +1,11 @@
-#$ TITLE: AOS Cine35 tune by Chris Rosser
+#$ TITLE: AOS Cine40 tune by Chris Rosser
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: TUNE
 #$ STATUS: COMMUNITY
-#$ KEYWORDS: aos, chris, rosser, pid, tune, cine35
+#$ KEYWORDS: aos, chris, rosser, pid, tune, cine, 40
 #$ AUTHOR: Chris Rosser
 #$ DISCUSSION: https://www.aos-rc.com
-#$ DESCRIPTION: Custom Tune for the AOS Cine35. Based on a 1100mAh 6S build with 2000KV Motors.
+#$ DESCRIPTION: Custom Tune for the AOS Cine40. Based on a 1100mAh 6S build with 2000KV Motors.
 #$ DESCRIPTION:
 #$ DESCRIPTION: Master multiplier is set to 1.0 for safety. Increase it carefully to further improve flight performance.
 #$ DESCRIPTION:
@@ -21,24 +21,24 @@
 
 # -- PID values --
 
-set p_pitch = 67
-set i_pitch = 120
+set p_pitch = 61
+set i_pitch = 110
 set d_pitch = 40
 set f_pitch = 0
-set p_roll = 49
-set i_roll = 88
+set p_roll = 47
+set i_roll = 84
 set d_roll = 30
 set f_roll = 0
-set p_yaw = 49
-set i_yaw = 88
+set p_yaw = 47
+set i_yaw = 84
 set f_yaw = 0
 set d_min_pitch = 40
 set thrust_linear = 20
-set simplified_pi_gain = 110
+set simplified_pi_gain = 105
 set simplified_dmax_gain = 0
 set simplified_feedforward_gain = 0
 set simplified_pitch_d_gain = 120
-set simplified_pitch_pi_gain = 130
+set simplified_pitch_pi_gain = 125
 
 # -- iTerm relax (default)--
 # -- iTerm windup (default)--
@@ -70,8 +70,8 @@ set feedforward_max_rate_limit = 95
 # -- DShot Idle --
 set dshot_idle_value = 300
 
-# -- Dynamic idle ON at 5000 rpm --
-set dyn_idle_min_rpm = 50
+# -- Dynamic idle ON at 4500 rpm --
+set dyn_idle_min_rpm = 45
 set dyn_idle_p_gain = 40
 
 
@@ -81,7 +81,7 @@ set dyn_idle_p_gain = 40
 
 #$ OPTION_GROUP BEGIN: Filters
     #$ OPTION BEGIN (CHECKED): AOS Filters (Recommended)
-        #$ INCLUDE: presets/4.5/filters/aos_rc/aos_cine35_filters.txt
+        #$ INCLUDE: presets/4.5/filters/aos_rc/aos_cine40_filters.txt
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): RPM Filter Weights for triblade props
@@ -119,16 +119,6 @@ set dyn_idle_p_gain = 40
         set roll_srate = 40
         set pitch_srate = 40
         set yaw_srate = 40
-    #$ OPTION END
-
-#$ OPTION_GROUP END
-
-# -- Board Alignment --
-
-#$ OPTION_GROUP BEGIN: Typical Board Alignment for 25mm AIO
-    #$ OPTION BEGIN (UNCHECKED): Typical Board Alignment for 25mm AIO (Test in setup tab BEFORE take-off!)
-        set align_board_pitch = 180
-        set align_board_yaw = -45
     #$ OPTION END
 
 #$ OPTION_GROUP END
