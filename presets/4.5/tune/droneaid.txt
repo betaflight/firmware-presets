@@ -2,8 +2,8 @@
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: TUNE
 #$ STATUS: EXPERIMENTAL
-#$ KEYWORDS: openracer, race, 5 Inch, 5 In, 5", JazzMutant
-#$ AUTHOR: JazzMutant
+#$ KEYWORDS: DroneAid, Slava Ukraini
+#$ AUTHOR: Vladyslav, Yevhen, Dmytro
 #$ PARSER: MARKED
 #$ DESCRIPTION: This tune was specially developed by **@JazzMutant** for 6S [OpenRacer](https://github.com/OpenRacer/OpenRacer/tree/master) with 1900-2050kv motors.
 #$ DESCRIPTION: 

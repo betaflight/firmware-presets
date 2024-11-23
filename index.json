@@ -201,6 +201,7 @@
       "UAV Tech (Mark Spatz)",
       "Utka v tapkah",
       "Viki Baarathi",
+      "Vladyslav, Yevhen, Dmytro",
       "Volker Göschl-Covrljan",
       "YarosFPV (Yaroslav Syubayev)",
       "ZoeFPV"
@@ -359,6 +360,7 @@
       "divimath",
       "DJI",
       "dominator",
+      "DroneAid",
       "DShot telemetry",
       "eachine",
       "ELRS",
@@ -518,6 +520,7 @@
       "shames",
       "Sharjah",
       "shitpilot",
+      "Slava Ukraini",
       "sliders",
       "Smart",
       "smart audio",
@@ -7220,7 +7223,7 @@
     },
     {
       "fullPath": "presets/4.5/tune/droneaid.txt",
-      "hash": "08048f026e6a53fc557b08d1a212497624dbb1c0d1cd504fb4a37a9aee74963e",
+      "hash": "73825d28be053334eed8dfd9aa6620783497f8f93ec024ad8d7bf01c76305d25",
       "title": "DroneAid 7\", 8\", 10\"",
       "firmware_version": [
         "4.5"
@@ -7228,14 +7231,10 @@
       "category": "TUNE",
       "status": "EXPERIMENTAL",
       "keywords": [
-        "openracer",
-        "race",
-        "5 Inch",
-        "5 In",
-        "5\"",
-        "JazzMutant"
+        "DroneAid",
+        "Slava Ukraini"
       ],
-      "author": "JazzMutant",
+      "author": "Vladyslav, Yevhen, Dmytro",
       "force_options_review": true,
       "priority": 1000000000000
     },
