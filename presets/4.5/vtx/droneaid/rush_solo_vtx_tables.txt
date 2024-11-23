@@ -1,3 +1,8 @@
+#$ TITLE: DroneAid - VTX Solo
+#$ FIRMWARE_VERSION: 4.5
+#$ CATEGORY: VTX
+#$ STATUS: EXPERIMENTAL
+
 # vtxtable
 vtxtable bands 6
 vtxtable channels 8

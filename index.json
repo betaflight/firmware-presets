@@ -5767,6 +5767,23 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/4.5/bnf/droneaid.txt",
+      "hash": "0eb51fe22fcbe7b24cf33bf38641565e295d91e4fd38212126c77825980a623c",
+      "title": "DroneAid 7\", 8\", 10\"",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "DroneAid",
+        "Slava Ukraini"
+      ],
+      "author": "Vladyslav, Yevhen, Dmytro",
+      "force_options_review": true,
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.5/filters/aos_rc/aos_3.5_filters.txt",
       "hash": "207b31c1473442c3585da774337eb8b7417d5300fc2229750561b998ac503040",
       "title": "AOS 3.5 Filters",
@@ -7222,23 +7239,6 @@
       "priority": 1000000000000
     },
     {
-      "fullPath": "presets/4.5/tune/droneaid.txt",
-      "hash": "73825d28be053334eed8dfd9aa6620783497f8f93ec024ad8d7bf01c76305d25",
-      "title": "DroneAid 7\", 8\", 10\"",
-      "firmware_version": [
-        "4.5"
-      ],
-      "category": "TUNE",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "DroneAid",
-        "Slava Ukraini"
-      ],
-      "author": "Vladyslav, Yevhen, Dmytro",
-      "force_options_review": true,
-      "priority": 1000000000000
-    },
-    {
       "fullPath": "presets/4.5/tune/fpvian_basher_freestyle.txt",
       "hash": "763018fe6435f1ccaf5c51573955b9362aaa29459ad616980f82efbecd1be5ff",
       "title": "Basher Freestyle 6S 5\" by FPVian",
@@ -8078,6 +8078,17 @@
       ],
       "author": "sugarK",
       "force_options_review": true,
+      "priority": 1000000
+    },
+    {
+      "fullPath": "presets/4.5/vtx/droneaid/rush_solo_vtx_tables.txt",
+      "hash": "803895c179d4dbced2a7132c6b03e69c307d944f48ad2d68aa916a0fe9019519",
+      "title": "DroneAid - VTX Solo",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "VTX",
+      "status": "EXPERIMENTAL",
       "priority": 1000000
     }
   ]
