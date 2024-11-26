@@ -1,11 +1,11 @@
-#$ TITLE: 65mm Tiny whoop tune by Chris Rosser
+#$ TITLE: HDZERO AIO5 65mm Whoop tune by Chris Rosser
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: TUNE
 #$ STATUS: EXPERIMENTAL
-#$ KEYWORDS: aos, chris, rosser, pid, tune, 65mm, tiny, whoop
+#$ KEYWORDS: aos, chris, rosser, pid, tune, 65mm, tiny, whoop, hdzero, aio, aio5
 #$ AUTHOR: Chris Rosser
 #$ DISCUSSION: https://www.aos-rc.com
-#$ DESCRIPTION: Custom Tune for a 65mm Tiny whoop. Based on a 300mAh 1S build with 23000KV Motors.
+#$ DESCRIPTION: Custom Tune for a 65mm Whoop usign the HDZero AIO5. Based on a 300mAh 1S build with 30000KV Motors.
 #$ DESCRIPTION:
 #$ DESCRIPTION: Master multiplier is set to 1.3 for safety. Increase it carefully to further improve flight performance.
 #$ DESCRIPTION:
@@ -25,7 +25,7 @@ set angle_p_gain = 100
 set simplified_master_multiplier = 130
 set simplified_pi_gain = 130
 set simplified_dmax_gain = 0
-set simplified_pitch_pi_gain = 120
+set simplified_pitch_pi_gain = 90
 set tpa_mode = PD
 set tpa_rate = 55
 
@@ -90,7 +90,7 @@ set dyn_idle_p_gain = 40
 #$ OPTION_GROUP BEGIN: Check all of these (recommended)
 
     # -- VBat sag compensation --
-    #$ OPTION BEGIN (UNCHECKED): Full battery sag compensation
+    #$ OPTION BEGIN (CHECKED): Full battery sag compensation
         set vbat_sag_compensation = 100
         set vbat_sag_lpf_period = 2
     #$ OPTION END
