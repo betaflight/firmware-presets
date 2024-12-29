@@ -54,6 +54,16 @@ aux 5 36 3 1300 2100 0 0
         #$ INCLUDE: presets/4.3/vtx/rush_sa2.1_vtx_tables.txt
     #$ OPTION END
 
+    #$ OPTION BEGIN (UNCHECKED): Pilotix 3.3-3.6GHz
+        vtxtable bands 2
+        vtxtable channels 7
+        vtxtable band 1 A        A CUSTOM  3360 3380 3400 3420 3440 3460 3480
+        vtxtable band 2 B        B CUSTOM  3200 3220 3240 3260 3280 3300 3320
+        vtxtable powerlevels 4
+        vtxtable powervalues 0 1 2 3
+        vtxtable powerlabels 025 0.4 1W 2.5
+    #$ OPTION END
+
 #$ OPTION_GROUP END
 
 # vtx
