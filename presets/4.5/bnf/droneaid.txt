@@ -103,7 +103,7 @@ aux 5 36 3 1300 2100 0 0
         set osd_nvario_pos = 119
         set osd_esc_tmp_pos = 481
         set osd_core_temp_pos = 2529
-        set osd_log_status_pos = 2368
+        set osd_log_status_pos = 2369
         set osd_camera_frame_pos = 99
         set osd_stat_bitmask = 14254
         set osd_displayport_device = AUTO
