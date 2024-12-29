@@ -129,45 +129,69 @@ set vcd_video_system = PAL
 set rpm_filter_min_hz = 80
 set craft_name = DA0000
 
-profile 0
 
-# profile 0
-set dterm_lpf1_dyn_min_hz = 60
-set dterm_lpf1_dyn_max_hz = 120
-set dterm_lpf1_static_hz = 60
-set dterm_lpf2_static_hz = 120
-set yaw_lowpass_hz = 80
-set p_pitch = 57
-set i_pitch = 39
-set f_pitch = 95
-set p_roll = 58
-set i_roll = 38
-set f_roll = 95
-set p_yaw = 49
-set i_yaw = 36
-set f_yaw = 95
-set d_min_roll = 22
-set d_min_pitch = 24
-set d_max_gain = 0
-set d_max_advance = 0
-set thrust_linear = 20
-set feedforward_smooth_factor = 40
-set feedforward_jitter_factor = 16
-set simplified_pids_mode = OFF
-set simplified_dterm_filter_multiplier = 80
 
-profile 1
+#$ OPTION_GROUP BEGIN: Drone size
+    #$ OPTION BEGIN (UNCHECKED): 7"
 
-profile 2
+        profile 0
+        
+        # profile 0
+        set dterm_lpf1_dyn_min_hz = 60
+        set dterm_lpf1_dyn_max_hz = 120
+        set dterm_lpf1_static_hz = 60
+        set dterm_lpf2_static_hz = 120
+        set yaw_lowpass_hz = 80
+        set p_pitch = 57
+        set i_pitch = 39
+        set f_pitch = 95
+        set p_roll = 58
+        set i_roll = 38
+        set f_roll = 95
+        set p_yaw = 49
+        set i_yaw = 36
+        set f_yaw = 95
+        set d_min_roll = 22
+        set d_min_pitch = 24
+        set d_max_gain = 0
+        set d_max_advance = 0
+        set thrust_linear = 20
+        set feedforward_smooth_factor = 40
+        set feedforward_jitter_factor = 16
+        set simplified_pids_mode = OFF
+        set simplified_dterm_filter_multiplier = 80
 
-# profile 2
-set dterm_lpf1_dyn_min_hz = 60
-set dterm_lpf1_dyn_max_hz = 120
-set dterm_lpf1_static_hz = 60
-set dterm_lpf2_static_hz = 120
-set simplified_dterm_filter_multiplier = 80
+    #$ OPTION END
 
-profile 3
+    #$ OPTION BEGIN (UNCHECKED): 10"
+        set anti_gravity_gain = 110
+        set iterm_relax_cutoff = 5
+        set pidsum_limit = 1000
+        set pidsum_limit_yaw = 1000
+        set yaw_lowpass_hz = 90
+        set p_pitch = 56
+        set i_pitch = 100
+        set d_pitch = 66
+        set f_pitch = 149
+        set p_roll = 53
+        set i_roll = 95
+        set d_roll = 57
+        set f_roll = 143
+        set p_yaw = 53
+        set i_yaw = 95
+        set f_yaw = 143
+        set d_min_roll = 43
+        set d_min_pitch = 48
+        set thrust_linear = 20
+        set feedforward_smooth_factor = 40
+        set feedforward_jitter_factor = 16
+        set dyn_idle_min_rpm = 37
+        set simplified_master_multiplier = 120
+        set simplified_d_gain = 120
+        set simplified_feedforward_gain = 110
+        set ez_landing_limit = 5
+    #$ OPTION END
+#$ OPTION_GROUP END
 
 # restore original profile selection
 profile 0
