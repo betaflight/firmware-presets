@@ -30,6 +30,17 @@ feature TELEMETRY
 feature OSD
 feature ESC_SENSOR
 
+# ELRS 
+feature RX_SERIAL
+set serialrx_provider = CRSF
+
+# 50hz default settings in case no tuning option is selected
+set feedforward_averaging = OFF
+set feedforward_smooth_factor = 0
+set feedforward_jitter_factor = 7
+set feedforward_boost = 5
+set report_cell_voltage = ON
+
 # serial
 serial 0 8192 115200 57600 0 115200
 serial 1 0 115200 57600 0 115200
