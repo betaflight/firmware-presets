@@ -77,6 +77,42 @@ aux 5 36 3 1300 2100 0 0
 
 #$ OPTION_GROUP END
 
+#$ OPTION_GROUP BEGIN: VTX Protocol (select one)
+    #$ OPTION BEGIN (CHECKED): PAL
+        set report_cell_voltage = ON
+        set osd_link_quality_alarm = 95
+        set osd_cap_alarm = 8000
+        set osd_vbat_pos = 2465
+        set osd_link_quality_pos = 2487
+        set osd_rssi_dbm_pos = 2519
+        set osd_tim_1_pos = 2423
+        set osd_tim_2_pos = 2455
+        set osd_flymode_pos = 2393
+        set osd_throttle_pos = 2433
+        set osd_vtx_channel_pos = 2548
+        set osd_crosshairs_pos = 2286
+        set osd_ah_sbar_pos = 239
+        set osd_ah_pos = 2159
+        set osd_current_pos = 2401
+        set osd_mah_drawn_pos = 2540
+        set osd_craft_name_pos = 2081
+        set osd_altitude_pos = 2102
+        set osd_warnings_pos = 14634
+        set osd_avg_cell_voltage_pos = 2497
+        set osd_battery_usage_pos = 33153
+        set osd_nvario_pos = 119
+        set osd_esc_tmp_pos = 481
+        set osd_core_temp_pos = 2529
+        set osd_log_status_pos = 2368
+        set osd_camera_frame_pos = 99
+        set osd_stat_bitmask = 14254
+        set osd_displayport_device = AUTO
+        set osd_canvas_width = 30
+        set osd_canvas_height = 16
+    #$ OPTION END
+
+#$ OPTION_GROUP END
+
 # vtx
 vtx 0 2 0 0 1 900 1100
 vtx 1 2 0 0 2 1400 1600
@@ -215,6 +251,8 @@ set craft_name = DA0000
         set ez_landing_limit = 5
     #$ OPTION END
 #$ OPTION_GROUP END
+
+set vtx_power = 0
 
 # restore original profile selection
 profile 0
