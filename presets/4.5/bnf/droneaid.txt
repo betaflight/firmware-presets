@@ -209,6 +209,7 @@ set motor_pwm_protocol = DSHOT300
 set vbat_max_cell_voltage = 420
 set vbat_min_cell_voltage = 340
 set vbat_warning_cell_voltage = 360
+set force_battery_cell_count = 6
 set yaw_motors_reversed = ON
 set small_angle = 180
 set simplified_gyro_filter_multiplier = 80
