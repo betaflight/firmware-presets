@@ -55,14 +55,9 @@ aux 2 13 3 1700 2100 0 0
 aux 4 35 3 1700 2100 0 0
 aux 5 36 3 1300 2100 0 0
 
-# vtx
-vtx 0 2 0 0 1 900 1100
-vtx 1 2 0 0 2 1400 1600
-vtx 2 2 0 0 4 1900 2100
-
 #$ OPTION_GROUP BEGIN: VTX (select one)
 
-    #$ OPTION BEGIN (CHECKED): Foxeer Reaper
+    #$ OPTION BEGIN (UNCHECKED): Foxeer Reaper
         vtxtable bands 5
         vtxtable channels 8
         vtxtable band 1 BOSCAM_A A CUSTOM  5865 5845 5825 5805 5785 5765 5745 5725
@@ -118,8 +113,13 @@ vtx 2 2 0 0 4 1900 2100
 
 #$ OPTION_GROUP END
 
+# vtx
+vtx 0 2 0 0 1 900 1100
+vtx 1 2 0 0 2 1400 1600
+vtx 2 2 0 0 4 1900 2100
+
 #$ OPTION_GROUP BEGIN: VTX Protocol (select one)
-    #$ OPTION BEGIN (CHECKED): PAL
+    #$ OPTION BEGIN (UNCHECKED): PAL
         set report_cell_voltage = ON
         set osd_link_quality_alarm = 95
         set osd_cap_alarm = 8000
@@ -157,7 +157,7 @@ vtx 2 2 0 0 4 1900 2100
 # master
 
 #$ OPTION_GROUP BEGIN: Flight controller (select one)
-    #$ OPTION BEGIN (CHECKED): SpeedyBee F405 V3
+    #$ OPTION BEGIN (UNCHECKED): SpeedyBee F405 V3
         board_name SPEEDYBEEF405V3
         set acc_calibration = -11,57,12,1
         set osd_warn_bitmask = 270207
@@ -189,7 +189,7 @@ vtx 2 2 0 0 4 1900 2100
         aux 3 26 0 1700 2100 0 0
     #$ OPTION END
 
-    #$ OPTION BEGIN (UNCHECKED): SpeedyBee F405 V4
+    #$ OPTION BEGIN (CHECKED): SpeedyBee F405 V4
         board_name SPEEDYBEEF405V4
         set acc_calibration = 55,0,13,1
         set pid_process_denom = 2
@@ -228,7 +228,7 @@ set craft_name = DA0000
 
 
 #$ OPTION_GROUP BEGIN: Drone size (select one)
-    #$ OPTION BEGIN (UNCHECKED): 7"
+    #$ OPTION BEGIN (UNCHECKED): 7"/8"
 
         profile 0
         
