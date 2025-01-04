@@ -119,7 +119,7 @@ vtx 1 2 0 0 2 1400 1600
 vtx 2 2 0 0 4 1900 2100
 
 #$ OPTION_GROUP BEGIN: VTX Protocol (select one)
-    #$ OPTION BEGIN (UNCHECKED): PAL
+    #$ OPTION BEGIN (CHECKED): PAL
         set report_cell_voltage = ON
         set osd_link_quality_alarm = 95
         set osd_cap_alarm = 8000
