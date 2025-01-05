@@ -55,28 +55,7 @@ aux 2 13 3 1700 2100 0 0
 aux 4 35 3 1700 2100 0 0
 aux 5 36 3 1300 2100 0 0
 
-# vtx
-vtx 0 2 0 0 1 900 1100
-vtx 1 2 0 0 2 1400 1600
-vtx 2 2 0 0 4 1900 2100
-
 #$ OPTION_GROUP BEGIN: VTX (select one)
-
-    #$ OPTION BEGIN (CHECKED): Foxeer Reaper
-        vtxtable bands 5
-        vtxtable channels 8
-        vtxtable band 1 BOSCAM_A A CUSTOM  5865 5845 5825 5805 5785 5765 5745 5725
-        vtxtable band 2 BOSCAM_B B CUSTOM  5733 5752 5771 5790 5809 5828 5847 5866
-        vtxtable band 3 BOSCAM_E E CUSTOM  5705 5685 5665 5645 5885 5905 5925 5945
-        vtxtable band 4 FATSHARK F CUSTOM  5740 5760 5780 5800 5820 5840 5860 5880
-        vtxtable band 5 RACEBAND R CUSTOM  5658 5695 5732 5769 5806 5843 5880 5917
-        vtxtable powerlevels 5
-        vtxtable powervalues 25 100 200 400 600
-        vtxtable powerlabels 25 200 500 1.5 2.5
-
-        vtx 2 2 0 0 5 1900 2100
-
-    #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): Rush Solo with low band
         vtxtable channels 8
@@ -90,6 +69,12 @@ vtx 2 2 0 0 4 1900 2100
         vtxtable bands 6
         vtxtable band 3 BAND_E   E CUSTOM  5705 5685 5665 5645 5885 5905 5925 5945
         vtxtable band 6 LOWRACE  L CUSTOM  5362 5399 5436 5473 5510 5547 5584 5621
+
+        # vtx
+        vtx 0 2 0 0 1 900 1100
+        vtx 1 2 0 0 2 1400 1600
+        vtx 2 2 0 0 4 1900 2100
+
      #$ OPTION END
 
      #$ OPTION BEGIN (UNCHECKED): Rush Solo without low band
@@ -101,6 +86,51 @@ vtx 2 2 0 0 4 1900 2100
         vtxtable band 4 AIRWAVE  F CUSTOM  5740 5760 5780 5800 5820 5840 5860 5880
         vtxtable band 5 RACEBAND R CUSTOM  5658 5695 5732 5769 5806 5843 5880 5917
         vtxtable powerlevels 4
+
+        # vtx
+        vtx 0 2 0 0 1 900 1100
+        vtx 1 2 0 0 2 1400 1600
+        vtx 2 2 0 0 4 1900 2100
+
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): Pilotix 3W
+        vtxtable bands 6
+        vtxtable channels 8
+        vtxtable band 1 BOSCAM_A A CUSTOM  5865 5845 5825 5805 5785 5765 5745 5725
+        vtxtable band 2 BOSCAM_B B CUSTOM  5733 5752 5771 5790 5809 5828 5847 5866
+        vtxtable band 3 BOSCAM_E E CUSTOM  5705 5685 5665 5665 5885 5905 5925 5945
+        vtxtable band 4 FATSHARK F CUSTOM  5740 5760 5780 5800 5820 5840 5860 5880
+        vtxtable band 5 RACEBAND R CUSTOM  5658 5695 5732 5769 5806 5843 5880 5917
+        vtxtable band 6 LOWRACE  L CUSTOM  5362 5399 5436 5473 5510 5547 5584 5621
+        vtxtable powerlevels 5
+        vtxtable powervalues 0 1 2 3 4
+        vtxtable powerlabels 25 1.6 2.0 2.5 MAX
+
+        # vtx 
+        vtx 0 2 0 0 1 900 1100
+        vtx 1 2 0 0 2 1400 1600
+        vtx 2 2 0 0 5 1900 2100
+
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): Foxeer Reaper
+        vtxtable bands 5
+        vtxtable channels 8
+        vtxtable band 1 BOSCAM_A A CUSTOM  5865 5845 5825 5805 5785 5765 5745 5725
+        vtxtable band 2 BOSCAM_B B CUSTOM  5733 5752 5771 5790 5809 5828 5847 5866
+        vtxtable band 3 BOSCAM_E E CUSTOM  5705 5685 5665 5645 5885 5905 5925 5945
+        vtxtable band 4 FATSHARK F CUSTOM  5740 5760 5780 5800 5820 5840 5860 5880
+        vtxtable band 5 RACEBAND R CUSTOM  5658 5695 5732 5769 5806 5843 5880 5917
+        vtxtable powerlevels 5
+        vtxtable powervalues 25 100 200 400 600
+        vtxtable powerlabels 25 200 500 1.5 2.5
+
+        # vtx
+        vtx 0 2 0 0 1 900 1100
+        vtx 1 2 0 0 2 1400 1600
+        vtx 2 2 0 0 5 1900 2100
+
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): Pilotix 3.3-3.6GHz
@@ -111,15 +141,24 @@ vtx 2 2 0 0 4 1900 2100
         vtxtable powerlevels 4
         vtxtable powervalues 0 1 2 3
         vtxtable powerlabels 025 0.4 1W 2.5
+
+        # vtx
+        vtx 0 2 0 0 1 900 1100
+        vtx 1 2 0 0 2 1400 1600
+        vtx 2 2 0 0 4 1900 2100
+
     #$ OPTION END
 
 #$ OPTION_GROUP END
 
+set report_cell_voltage = ON
+set osd_link_quality_alarm = 95
+set osd_cap_alarm = 8000
+set osd_displayport_device = AUTO
+
 #$ OPTION_GROUP BEGIN: VTX Protocol (select one)
     #$ OPTION BEGIN (CHECKED): PAL
-        set report_cell_voltage = ON
-        set osd_link_quality_alarm = 95
-        set osd_cap_alarm = 8000
+        set vcd_video_system = PAL
         set osd_vbat_pos = 2465
         set osd_link_quality_pos = 2487
         set osd_rssi_dbm_pos = 2519
@@ -144,7 +183,38 @@ vtx 2 2 0 0 4 1900 2100
         set osd_log_status_pos = 2369
         set osd_camera_frame_pos = 99
         set osd_stat_bitmask = 14254
-        set osd_displayport_device = AUTO
+        set osd_canvas_width = 30
+        set osd_canvas_height = 16
+
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): NTSC
+        set vcd_video_system = NTSC
+        set osd_vbat_pos = 2305
+        set osd_link_quality_pos = 2391
+        set osd_rssi_dbm_pos = 2424
+        set osd_tim_1_pos = 2327
+        set osd_tim_2_pos = 2359
+        set osd_flymode_pos = 2297
+        set osd_throttle_pos = 2401
+        set osd_vtx_channel_pos = 2452
+        set osd_crosshairs_pos = 2253
+        set osd_ah_sbar_pos = 239
+        set osd_ah_pos = 2095
+        set osd_current_pos = 2368
+        set osd_mah_drawn_pos = 2444
+        set osd_craft_name_pos = 2081
+        set osd_altitude_pos = 2102
+        set osd_warnings_pos = 14473
+        set osd_avg_cell_voltage_pos = 2337
+        set osd_battery_usage_pos = 33153
+        set osd_nvario_pos = 119
+        set osd_esc_tmp_pos = 481
+        set osd_flip_arrow_pos = 2222
+        set osd_core_temp_pos = 2433
+        set osd_log_status_pos = 2273
+        set osd_camera_frame_pos = 99
+        set osd_stat_bitmask = 18890468
         set osd_canvas_width = 30
         set osd_canvas_height = 16
     #$ OPTION END
@@ -154,44 +224,20 @@ vtx 2 2 0 0 4 1900 2100
 # master
 
 #$ OPTION_GROUP BEGIN: Flight controller (select one)
-    #$ OPTION BEGIN (CHECKED): SpeedyBee F405 V3
-        board_name SPEEDYBEEF405V3
-        set acc_calibration = -11,57,12,1
-        set osd_warn_bitmask = 270207
-        set osd_core_temp_pos = 2529
-        set osd_log_status_pos = 2369
-        set osd_stat_bitmask = 18890468
-        set osd_displayport_device = AUTO
-        set osd_canvas_width = 30
-        set osd_canvas_height = 16
-
-        # @FIXME: WEIRD OSD
-        set osd_vbat_pos = 2401
-        set osd_link_quality_pos = 2487
-        set osd_rssi_dbm_pos = 2520
-        set osd_tim_1_pos = 2423
-        set osd_tim_2_pos = 2455
-        set osd_flymode_pos = 2393
-        set osd_throttle_pos = 2497
-        set osd_vtx_channel_pos = 2548
-        set osd_current_pos = 2464
-        set osd_mah_drawn_pos = 2539
-        set osd_craft_name_pos = 2081
-        set osd_altitude_pos = 2102
-        set osd_warnings_pos = 14569
-        set osd_avg_cell_voltage_pos = 2433
-        set osd_battery_usage_pos = 33153
-        set osd_esc_tmp_pos = 481
-        set osd_flip_arrow_pos = 2318
-        aux 3 26 0 1700 2100 0 0
-    #$ OPTION END
-
-    #$ OPTION BEGIN (UNCHECKED): SpeedyBee F405 V4
+    
+    #$ OPTION BEGIN (CHECKED): SpeedyBee F405 V4
         board_name SPEEDYBEEF405V4
         set acc_calibration = 55,0,13,1
         set pid_process_denom = 2
         aux 3 26 0 1800 2100 0 0
     #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): SpeedyBee F405 V3
+        board_name SPEEDYBEEF405V3
+        set acc_calibration = -11,57,12,1
+        aux 3 26 0 1700 2100 0 0
+    #$ OPTION END
+
 #$ OPTION_GROUP END
 
 set gyro_lpf1_static_hz = 0
@@ -218,18 +264,14 @@ set vtx_band = 5
 set vtx_channel = 8
 set vtx_power = 1
 set vtx_freq = 5917
-set vcd_video_system = PAL
 set rpm_filter_min_hz = 80
 set craft_name = DA0000
 
 
-
 #$ OPTION_GROUP BEGIN: Drone size (select one)
-    #$ OPTION BEGIN (UNCHECKED): 7"
+    #$ OPTION BEGIN (UNCHECKED): 7"/8"
 
         profile 0
-        
-        # profile 0
         set dterm_lpf1_dyn_min_hz = 60
         set dterm_lpf1_dyn_max_hz = 120
         set dterm_lpf1_static_hz = 60
