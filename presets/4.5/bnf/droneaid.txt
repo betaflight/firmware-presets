@@ -113,7 +113,7 @@ feature ESC_SENSOR
         vtxtable band 1 BAND_A   A CUSTOM  5865 5845 5825 5805 5785 5765 5745 5725
         vtxtable band 2 BAND_B   B CUSTOM  5733 5752 5771 5790 5809 5828 5847 5866
         vtxtable band 3 BAND_E   E CUSTOM  5705 5685 5665 5645 5885 5905 5925 5945
-        vtxtable band 4 AIRWAVE  F CUSTOM  5740 5760 5780 5800 5820 5840 5860 5880
+        vtxtable band 4 FATSHARK F CUSTOM  5740 5760 5780 5800 5820 5840 5860 5880
         vtxtable band 5 RACEBAND R CUSTOM  5658 5695 5732 5769 5806 5843 5880 5917
         vtxtable band 6 LOWRACE  L CUSTOM  5362 5399 5436 5473 5510 5547 5584 5621
 
@@ -138,10 +138,9 @@ feature ESC_SENSOR
         vtxtable band 1 BAND_A   A CUSTOM  5865 5845 5825 5805 5785 5765 5745 5725
         vtxtable band 2 BAND_B   B CUSTOM  5733 5752 5771 5790 5809 5828 5847 5866
         vtxtable band 3 BAND_E   E CUSTOM  5705 5685 5665 5665 5885 5905 5905 5905
-        vtxtable band 4 AIRWAVE  F CUSTOM  5740 5760 5780 5800 5820 5840 5860 5880
+        vtxtable band 4 FATSHARK F CUSTOM  5740 5760 5780 5800 5820 5840 5860 5880
         vtxtable band 5 RACEBAND R CUSTOM  5658 5695 5732 5769 5806 5843 5880 5917
 
-        vtxtable powerlevels 4
         vtxtable powerlevels 4
         vtxtable powervalues 14 27 30 34
         vtxtable powerlabels 25mW 200mW 1W 2.5W
@@ -157,12 +156,33 @@ feature ESC_SENSOR
         set vtx_channel = 8
     #$ OPTION END
 
-    #$ OPTION BEGIN (UNCHECKED): Pilotix 3W
+    #$ OPTION BEGIN (UNCHECKED): Pilotix 3.3GHz 2.5W
+        vtxtable bands 2
+        vtxtable channels 7
+        vtxtable band 1 BAND_A A CUSTOM  3360 3380 3400 3420 3440 3460 3480
+        vtxtable band 2 BAND_B B CUSTOM  3200 3220 3240 3260 3280 3300 3320
+
+        vtxtable powerlevels 4
+        vtxtable powervalues 0 1 2 3
+        vtxtable powerlabels 25mW 400mW 1W 2.5W
+
+        # vtx
+        vtx 0 2 0 0 1 900 1100
+        vtx 1 2 0 0 2 1400 1600
+        vtx 2 2 0 0 4 1900 2100
+
+        # default frequency A1
+        set vtx_freq = 3360
+        set vtx_band = 1
+        set vtx_channel = 1
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): Pilotix 5.8GHz 3W
         vtxtable bands 6
         vtxtable channels 8
-        vtxtable band 1 BOSCAM_A A CUSTOM  5865 5845 5825 5805 5785 5765 5745 5725
-        vtxtable band 2 BOSCAM_B B CUSTOM  5733 5752 5771 5790 5809 5828 5847 5866
-        vtxtable band 3 BOSCAM_E E CUSTOM  5705 5685 5665 5665 5885 5905 5925 5945
+        vtxtable band 1 BAND_A   A CUSTOM  5865 5845 5825 5805 5785 5765 5745 5725
+        vtxtable band 2 BAND_B   B CUSTOM  5733 5752 5771 5790 5809 5828 5847 5866
+        vtxtable band 3 BAND_E   E CUSTOM  5705 5685 5665 5665 5885 5905 5925 5945
         vtxtable band 4 FATSHARK F CUSTOM  5740 5760 5780 5800 5820 5840 5860 5880
         vtxtable band 5 RACEBAND R CUSTOM  5658 5695 5732 5769 5806 5843 5880 5917
         vtxtable band 6 LOWRACE  L CUSTOM  5362 5399 5436 5473 5510 5547 5584 5621
@@ -182,12 +202,12 @@ feature ESC_SENSOR
         set vtx_channel = 8
     #$ OPTION END
 
-    #$ OPTION BEGIN (UNCHECKED): Foxeer Reaper
+    #$ OPTION BEGIN (UNCHECKED): Foxeer Reaper 2.5W
         vtxtable bands 5
         vtxtable channels 8
-        vtxtable band 1 BOSCAM_A A CUSTOM  5865 5845 5825 5805 5785 5765 5745 5725
-        vtxtable band 2 BOSCAM_B B CUSTOM  5733 5752 5771 5790 5809 5828 5847 5866
-        vtxtable band 3 BOSCAM_E E CUSTOM  5705 5685 5665 5645 5885 5905 5925 5945
+        vtxtable band 1 BAND_A   A CUSTOM  5865 5845 5825 5805 5785 5765 5745 5725
+        vtxtable band 2 BAND_B   B CUSTOM  5733 5752 5771 5790 5809 5828 5847 5866
+        vtxtable band 3 BAND_E   E CUSTOM  5705 5685 5665 5645 5885 5905 5925 5945
         vtxtable band 4 FATSHARK F CUSTOM  5740 5760 5780 5800 5820 5840 5860 5880
         vtxtable band 5 RACEBAND R CUSTOM  5658 5695 5732 5769 5806 5843 5880 5917
 
@@ -206,14 +226,17 @@ feature ESC_SENSOR
         set vtx_channel = 8
     #$ OPTION END
 
-    #$ OPTION BEGIN (UNCHECKED): Pilotix 3.3-3.6GHz
-        vtxtable bands 2
-        vtxtable channels 7
-        vtxtable band 1 A        A CUSTOM  3360 3380 3400 3420 3440 3460 3480
-        vtxtable band 2 B        B CUSTOM  3200 3220 3240 3260 3280 3300 3320
+     #$ OPTION BEGIN (UNCHECKED): BLITZ 2.5W
+        vtxtable bands 5
+        vtxtable channels 8
+        vtxtable band 1 BAND_A   A CUSTOM  5865 5845 5825 5805 5785 5765 5745 5725
+        vtxtable band 2 BAND_B   B CUSTOM  5733 5752 5771 5790 5809 5828 5847 5866
+        vtxtable band 3 BAND_E   E CUSTOM  5705 5685 5665 5645 5885 5905 5925 5945
+        vtxtable band 4 AIRWAVE  F CUSTOM  5740 5760 5780 5800 5820 5840 5860 5880
+        vtxtable band 5 RACEBAND R CUSTOM  5658 5695 5732 5769 5806 5843 5880 5917
 
         vtxtable powerlevels 4
-        vtxtable powervalues 0 1 2 3
+        vtxtable powervalues 25 400 1000 2500
         vtxtable powerlabels 25mW 400mW 1W 2.5W
 
         # vtx
@@ -221,10 +244,10 @@ feature ESC_SENSOR
         vtx 1 2 0 0 2 1400 1600
         vtx 2 2 0 0 4 1900 2100
 
-        # default frequency A1
-        set vtx_freq = 3360
-        set vtx_band = 1
-        set vtx_channel = 1
+        # default frequency R8
+        set vtx_freq = 5917
+        set vtx_band = 5
+        set vtx_channel = 8
     #$ OPTION END
 #$ OPTION_GROUP END
 
@@ -333,7 +356,7 @@ feature ESC_SENSOR
         set osd_displayport_device = AUTO
     #$ OPTION END
 
-    #$ OPTION BEGIN (CHECKED): Gyro filters, Bidirecrional DSHOT300
+    #$ OPTION BEGIN (CHECKED): Gyro filters, Bidirectional DSHOT300
         set gyro_lpf1_static_hz = 0
         set gyro_lpf2_static_hz = 400
         set dyn_notch_q = 500
