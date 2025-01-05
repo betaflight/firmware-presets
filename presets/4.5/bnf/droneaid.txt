@@ -1,4 +1,4 @@
-#$ TITLE: DroneAid 7", 8", 10" 
+#$ TITLE: DroneAid 7", 8", 10"
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: BNF
 #$ STATUS: EXPERIMENTAL
@@ -30,7 +30,7 @@ feature TELEMETRY
 feature OSD
 feature ESC_SENSOR
 
-# ELRS 
+# ELRS
 feature RX_SERIAL
 set serialrx_provider = CRSF
 
@@ -50,13 +50,11 @@ serial 5 64 115200 57600 0 115200
 aux 0 0 0 1700 2100 0 0
 aux 1 1 3 1300 1700 0 0
 aux 2 13 3 1700 2100 0 0
-# defined in SpeedyBee version selection
-# aux 3 26 0 1800 2100 0 0
+aux 3 26 0 1700 2100 0 0
 aux 4 35 3 1700 2100 0 0
 aux 5 36 3 1300 2100 0 0
 
 #$ OPTION_GROUP BEGIN: VTX (select one)
-
     #$ OPTION BEGIN (UNCHECKED): Rush Solo with low band
         vtxtable channels 8
         vtxtable band 1 BAND_A   A CUSTOM  5865 5845 5825 5805 5785 5765 5745 5725
@@ -65,7 +63,7 @@ aux 5 36 3 1300 2100 0 0
         vtxtable band 4 AIRWAVE  F CUSTOM  5740 5760 5780 5800 5820 5840 5860 5880
         vtxtable band 5 RACEBAND R CUSTOM  5658 5695 5732 5769 5806 5843 5880 5917
         vtxtable powerlevels 4
-        
+
         vtxtable bands 6
         vtxtable band 3 BAND_E   E CUSTOM  5705 5685 5665 5645 5885 5905 5925 5945
         vtxtable band 6 LOWRACE  L CUSTOM  5362 5399 5436 5473 5510 5547 5584 5621
@@ -74,7 +72,6 @@ aux 5 36 3 1300 2100 0 0
         vtx 0 2 0 0 1 900 1100
         vtx 1 2 0 0 2 1400 1600
         vtx 2 2 0 0 4 1900 2100
-
      #$ OPTION END
 
      #$ OPTION BEGIN (UNCHECKED): Rush Solo without low band
@@ -91,7 +88,6 @@ aux 5 36 3 1300 2100 0 0
         vtx 0 2 0 0 1 900 1100
         vtx 1 2 0 0 2 1400 1600
         vtx 2 2 0 0 4 1900 2100
-
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): Pilotix 3W
@@ -107,11 +103,10 @@ aux 5 36 3 1300 2100 0 0
         vtxtable powervalues 0 1 2 3 4
         vtxtable powerlabels 25 1.6 2.0 2.5 MAX
 
-        # vtx 
+        # vtx
         vtx 0 2 0 0 1 900 1100
         vtx 1 2 0 0 2 1400 1600
         vtx 2 2 0 0 5 1900 2100
-
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): Foxeer Reaper
@@ -130,7 +125,6 @@ aux 5 36 3 1300 2100 0 0
         vtx 0 2 0 0 1 900 1100
         vtx 1 2 0 0 2 1400 1600
         vtx 2 2 0 0 5 1900 2100
-
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): Pilotix 3.3-3.6GHz
@@ -146,9 +140,7 @@ aux 5 36 3 1300 2100 0 0
         vtx 0 2 0 0 1 900 1100
         vtx 1 2 0 0 2 1400 1600
         vtx 2 2 0 0 4 1900 2100
-
     #$ OPTION END
-
 #$ OPTION_GROUP END
 
 set report_cell_voltage = ON
@@ -185,7 +177,6 @@ set osd_displayport_device = AUTO
         set osd_stat_bitmask = 14254
         set osd_canvas_width = 30
         set osd_canvas_height = 16
-
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): NTSC
@@ -218,26 +209,21 @@ set osd_displayport_device = AUTO
         set osd_canvas_width = 30
         set osd_canvas_height = 16
     #$ OPTION END
-
 #$ OPTION_GROUP END
 
 # master
 
 #$ OPTION_GROUP BEGIN: Flight controller (select one)
-    
     #$ OPTION BEGIN (CHECKED): SpeedyBee F405 V4
         board_name SPEEDYBEEF405V4
         set acc_calibration = 55,0,13,1
         set pid_process_denom = 2
-        aux 3 26 0 1800 2100 0 0
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): SpeedyBee F405 V3
         board_name SPEEDYBEEF405V3
         set acc_calibration = -11,57,12,1
-        aux 3 26 0 1700 2100 0 0
     #$ OPTION END
-
 #$ OPTION_GROUP END
 
 set gyro_lpf1_static_hz = 0
@@ -270,7 +256,6 @@ set craft_name = DA0000
 
 #$ OPTION_GROUP BEGIN: Drone size (select one)
     #$ OPTION BEGIN (UNCHECKED): 7"/8"
-
         profile 0
         set dterm_lpf1_dyn_min_hz = 60
         set dterm_lpf1_dyn_max_hz = 120
@@ -295,7 +280,6 @@ set craft_name = DA0000
         set feedforward_jitter_factor = 16
         set simplified_pids_mode = OFF
         set simplified_dterm_filter_multiplier = 80
-
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): 10"
