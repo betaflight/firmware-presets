@@ -8,19 +8,19 @@
 #$ DESCRIPTION: Configuration of the drones of DroneAid
 #$ FORCE_OPTIONS_REVIEW: TRUE
 
-
-defaults nosave
 # version
 # Betaflight / STM32F405 (S405) 4.5.0 Apr 28 2024 / 12:25:20 (c155f5830) MSP API: 1.46
 # config rev: 3068e6e
+
+# name: DroneAid_NL
 
 # start the command batch
 batch start
 
 # reset configuration to default settings
-defaults nosave
-
-# name: DroneAid_NL
+#$ OPTION BEGIN (CHECKED): Reset all to default (leave selected)
+    defaults nosave
+#$ OPTION END
 
 # feature
 feature TELEMETRY
