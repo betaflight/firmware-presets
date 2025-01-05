@@ -108,6 +108,17 @@ feature ESC_SENSOR
         board_name SPEEDYBEEF405V3
         set acc_calibration = -19,-39,48,1
     #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): Moonshine HGLRCF405 V2 (Experimental)
+        manufacturer_id HGLRC
+        mcu_id 0023004d3532510135343631
+        signature
+        board_name HGLRCF405V2
+        set acc_calibration = -8,56,-1,1
+        set blackbox_sample_rate = 1/2
+        set gyro_1_sensor_align = CW90
+        set gyro_1_align_yaw = 900
+    #$ OPTION END
 #$ OPTION_GROUP END
 
 
