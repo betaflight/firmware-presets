@@ -317,10 +317,6 @@ feature ESC_SENSOR
 
 
 #$ OPTION_GROUP BEGIN: Other options (leave selected)
-    #$ OPTION BEGIN (CHECKED): Reset craft name to DA0000
-        set craft_name = DA0000
-    #$ OPTION END
-
     #$ OPTION BEGIN (CHECKED): ELRS 50Hz
         feature RX_SERIAL
         set serialrx_provider = CRSF
@@ -409,6 +405,10 @@ feature ESC_SENSOR
 
         # restore original rateprofile selection
         rateprofile 0
+    #$ OPTION END
+
+    #$ OPTION BEGIN (CHECKED): Craft name DA0000
+        set craft_name = DA0000
     #$ OPTION END
 #$ OPTION_GROUP END
 
