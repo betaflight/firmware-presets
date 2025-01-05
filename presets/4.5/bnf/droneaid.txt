@@ -17,10 +17,15 @@
 # start the command batch
 batch start
 
-# reset configuration to default settings
-#$ OPTION BEGIN (CHECKED): Reset all to default (leave selected)
-    defaults nosave
-#$ OPTION END
+
+#$ OPTION_GROUP BEGIN: Reset
+    #$ OPTION BEGIN (CHECKED): Reset all to default before flashing preset (leave selected)
+        defaults nosave
+    #$ OPTION END
+    #$ OPTION BEGIN (CHECKED): Reset craft name to DA0000 (works unchecked only without upper option)
+        set craft_name = DA0000
+    #$ OPTION END
+#$ OPTION_GROUP END
 
 # feature
 feature TELEMETRY
@@ -405,10 +410,6 @@ feature ESC_SENSOR
 
         # restore original rateprofile selection
         rateprofile 0
-    #$ OPTION END
-
-    #$ OPTION BEGIN (CHECKED): Craft name DA0000
-        set craft_name = DA0000
     #$ OPTION END
 #$ OPTION_GROUP END
 
