@@ -101,7 +101,7 @@ feature ESC_SENSOR
         mcu_id 003e00333133471533353636
         signature
         board_name SPEEDYBEEF405V3
-        set acc_calibration = -11,57,12,1
+        set acc_calibration = -19,-39,48,1
     #$ OPTION END
 #$ OPTION_GROUP END
 
@@ -119,7 +119,7 @@ feature ESC_SENSOR
 
         vtxtable powerlevels 4
         vtxtable powervalues 14 27 30 34
-        vtxtable powerlabels 25mW 200mW 1W 2.5W
+        vtxtable powerlabels 25 200 1W 2W5
 
         # vtx
         vtx 0 2 0 0 1 900 1100
@@ -143,7 +143,7 @@ feature ESC_SENSOR
 
         vtxtable powerlevels 4
         vtxtable powervalues 14 27 30 34
-        vtxtable powerlabels 25mW 200mW 1W 2.5W
+        vtxtable powerlabels 25 200 1W 2W5
 
         # vtx
         vtx 0 2 0 0 1 900 1100
@@ -164,7 +164,7 @@ feature ESC_SENSOR
 
         vtxtable powerlevels 4
         vtxtable powervalues 0 1 2 3
-        vtxtable powerlabels 25mW 400mW 1W 2.5W
+        vtxtable powerlabels 25 400 1W 2W5
 
         # vtx
         vtx 0 2 0 0 1 900 1100
@@ -189,7 +189,7 @@ feature ESC_SENSOR
 
         vtxtable powerlevels 5
         vtxtable powervalues 0 1 2 3 4
-        vtxtable powerlabels 25mW 1.6W 2W 2.5W MAX
+        vtxtable powerlabels 25 1.6W 2W 2W5 MAX
 
         # vtx
         vtx 0 2 0 0 1 900 1100
@@ -213,7 +213,7 @@ feature ESC_SENSOR
 
         vtxtable powerlevels 5
         vtxtable powervalues 25 100 200 400 600
-        vtxtable powerlabels 25mW 200mW 500mW 1.5W 2.5W
+        vtxtable powerlabels 25 200 500 1W5 2W5
 
         # vtx
         vtx 0 2 0 0 1 900 1100
@@ -237,7 +237,7 @@ feature ESC_SENSOR
 
         vtxtable powerlevels 4
         vtxtable powervalues 25 400 1000 2500
-        vtxtable powerlabels 25mW 400mW 1W 2.5W
+        vtxtable powerlabels 25 400 1W 2W5
 
         # vtx
         vtx 0 2 0 0 1 900 1100
