@@ -1,0 +1,24 @@
+#$ TITLE: IM Walksnail OSD
+#$ FIRMWARE_VERSION: 4.5
+#$ CATEGORY: OSD
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: OSD
+
+set osd_vbat_pos = 2592
+set osd_tim_2_pos = 2100
+set osd_flymode_pos = 3633
+set osd_throttle_pos = 3569
+set osd_current_pos = 2528
+set osd_mah_drawn_pos = 2491
+set osd_gps_speed_pos = 2616
+set osd_gps_lon_pos = 18528
+set osd_gps_lat_pos = 18496
+set osd_gps_sats_pos = 2080
+set osd_home_dir_pos = 2519
+set osd_home_dist_pos = 2521
+set osd_flight_dist_pos = 2109
+set osd_altitude_pos = 3534
+set osd_power_pos = 2560
+set osd_warnings_pos = 14709
+set osd_avg_cell_voltage_pos = 2485
+set osd_sys_vtx_temp_pos = 1072
