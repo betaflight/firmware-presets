@@ -124,6 +124,9 @@ feature ESC_SENSOR
 
 #$ OPTION_GROUP BEGIN: VTX (select one)
     #$ OPTION BEGIN (UNCHECKED): Rush Solo with low band
+        # TBS Smart Audio Control Port
+        serial 0 2048 115200 57600 0 115200
+
         vtxtable channels 8
         vtxtable bands 6
         vtxtable band 1 BAND_A   A CUSTOM  5865 5845 5825 5805 5785 5765 5745 5725
@@ -149,6 +152,9 @@ feature ESC_SENSOR
      #$ OPTION END
 
      #$ OPTION BEGIN (UNCHECKED): Rush Solo without low band
+        # TBS Smart Audio Control Port
+        serial 0 2048 115200 57600 0 115200
+
         vtxtable bands 5
         vtxtable channels 8
         vtxtable band 1 BAND_A   A CUSTOM  5865 5845 5825 5805 5785 5765 5745 5725
@@ -173,6 +179,9 @@ feature ESC_SENSOR
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): Pilotix 3.3GHz 2.5W
+        # TBS Smart Audio Control Port
+        serial 0 2048 115200 57600 0 115200
+
         vtxtable bands 2
         vtxtable channels 7
         vtxtable band 1 BAND_A A CUSTOM  3360 3380 3400 3420 3440 3460 3480
@@ -194,6 +203,9 @@ feature ESC_SENSOR
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): Pilotix 5.8GHz 3W
+        # TBS Smart Audio Control Port
+        serial 0 2048 115200 57600 0 115200
+
         vtxtable bands 6
         vtxtable channels 8
         vtxtable band 1 BAND_A   A CUSTOM  5865 5845 5825 5805 5785 5765 5745 5725
@@ -219,6 +231,9 @@ feature ESC_SENSOR
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): Foxeer Reaper 2.5W
+        # IRC Tramp Control Port
+        serial 0 8192 115200 57600 0 115200
+
         vtxtable bands 5
         vtxtable channels 8
         vtxtable band 1 BAND_A   A CUSTOM  5865 5845 5825 5805 5785 5765 5745 5725
@@ -243,6 +258,9 @@ feature ESC_SENSOR
     #$ OPTION END
 
      #$ OPTION BEGIN (UNCHECKED): BLITZ 2.5W
+        # IRC Tramp Control Port
+        serial 0 8192 115200 57600 0 115200
+
         vtxtable bands 5
         vtxtable channels 8
         vtxtable band 1 BAND_A   A CUSTOM  5865 5845 5825 5805 5785 5765 5745 5725
@@ -347,7 +365,6 @@ feature ESC_SENSOR
 
     #$ OPTION BEGIN (CHECKED): Ports (UARTS)
         # serial
-        serial 0 8192 115200 57600 0 115200
         serial 1 0 115200 57600 0 115200
         serial 5 64 115200 57600 0 115200
     #$ OPTION END
