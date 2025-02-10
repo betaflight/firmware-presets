@@ -99,6 +99,10 @@ feature ESC_SENSOR
         board_name SPEEDYBEEF405V4
         set acc_calibration = 55,0,13,1
         set pid_process_denom = 2
+
+        # Ports (UARTS)
+        serial 1 0 115200 57600 0 115200
+        serial 5 64 115200 57600 0 115200
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): SpeedyBee F405 V3
@@ -107,6 +111,10 @@ feature ESC_SENSOR
         signature
         board_name SPEEDYBEEF405V3
         set acc_calibration = -19,-39,48,1
+
+        # Ports (UARTS)
+        serial 1 0 115200 57600 0 115200
+        serial 5 64 115200 57600 0 115200
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): Moonshine HGLRCF405 V2 (Experimental)
@@ -118,6 +126,10 @@ feature ESC_SENSOR
         set blackbox_sample_rate = 1/2
         set gyro_1_sensor_align = CW90
         set gyro_1_align_yaw = 900
+
+        # Ports (UARTS)
+        serial 0 2048 115200 57600 0 115200
+        serial 1 64 115200 57600 0 115200
     #$ OPTION END
 #$ OPTION_GROUP END
 
@@ -361,12 +373,6 @@ feature ESC_SENSOR
         set feedforward_jitter_factor = 7
         set feedforward_boost = 5
         set report_cell_voltage = ON
-    #$ OPTION END
-
-    #$ OPTION BEGIN (CHECKED): Ports (UARTS)
-        # serial
-        serial 1 0 115200 57600 0 115200
-        serial 5 64 115200 57600 0 115200
     #$ OPTION END
 
     #$ OPTION BEGIN (CHECKED): AUX Modes (Controller Switches)
