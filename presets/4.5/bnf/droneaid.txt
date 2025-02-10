@@ -122,9 +122,9 @@ profile 0
      #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): Pilotix 3.3GHz 2.5W
-        # TBS Smart Audio Control Port
-        serial 0 2048 115200 57600 0 115200
-        serial 2 2048 115200 57600 0 115200 # moonshine fc related vtx serial port
+        # IRC Tramp Control Port
+        serial 0 8192 115200 57600 0 115200
+        serial 2 8192 115200 57600 0 115200 # moonshine fc related vtx serial port
 
         vtxtable bands 2
         vtxtable channels 7
