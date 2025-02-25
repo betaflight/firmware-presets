@@ -343,7 +343,7 @@ profile 0
         mcu_id 003c001d3034510934353331
         signature
         board_name PILOTIXF405V3
-        set acc_calibration = 67,2,10,1
+        set acc_calibration = -33,28,0,1
 
         # resources
         resource BEEPER 1 B08
@@ -442,7 +442,9 @@ profile 0
         serial 0 2 115200 57600 0 115200
         serial 1 64 115200 57600 0 115200
         serial 2 0 115200 57600 0 115200 # moonshine fc related vtx serial reset
-        serial 3 8192 115200 57600 0 115200
+        # TBS SmartAudio protocol overwrite as more popular
+        # Will not work with other IRC Trump unless changed in ports tab manually
+        serial 3 2048 115200 57600 0 115200
         serial 4 1 115200 57600 0 115200
 
         # led
