@@ -1,0 +1,227 @@
+#$ TITLE: JeNo 6" (FR)
+#$ FIRMWARE_VERSION: 4.5
+#$ CATEGORY: TUNE
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: JeNo, 6S, Freestyle, 6 pouces, 6", Cinematic
+#$ AUTHOR: Tarpoon @tarpoon
+#$ FORCE_OPTIONS_REVIEW: TRUE
+
+#$ PARSER: MARKED
+
+#$ DESCRIPTION: ### Preset pour le JeNo 6
+#$ DESCRIPTION: Ces presets sont en ligne pour me permettre de changer de configuration en fonction de mon usage entre :
+#$ DESCRIPTION: * Cinematic
+#$ DESCRIPTION: * Freestyle
+#$ DESCRIPTION: * Batterie Li-Ion ou Li-Po en prenant en compte le poid
+#$ DESCRIPTION: * Bipales ou Tripales.
+#$ DESCRIPTION: Les composant de ce drone sont : SPEEDYBEEF405V4
+
+# ----- Props selection -----
+#$ OPTION_GROUP BEGIN: Choisir le type d'hélice :
+
+    #$ OPTION BEGIN (UNCHECKED): <b>Tripales</b> HQProp 6x2.5x3
+	
+		set simplified_master_multiplier = 90
+		
+	#$ OPTION END
+	
+	#$ OPTION BEGIN (UNCHECKED): <b>Bipales</b> APC 6x6Ex2
+	
+		set simplified_master_multiplier = 70
+		
+	#$ OPTION END
+
+#$ OPTION_GROUP END
+
+# ----- Profile selection -----
+#$ OPTION_GROUP BEGIN: Choisir le type de profile :
+
+    #$ OPTION BEGIN (UNCHECKED): <b>Cinematic</b>
+	
+		rateprofile 1
+		
+	#$ OPTION END
+	
+	#$ OPTION BEGIN (UNCHECKED): <b>Freestyle</b>
+	
+		rateprofile 0
+		
+	#$ OPTION END
+
+#$ OPTION_GROUP END
+
+# ----- Batterie selection -----
+#$ OPTION_GROUP BEGIN: Choisir le type de batterie :
+
+    #$ OPTION BEGIN (UNCHECKED): <b>Li-Ion</b>
+	
+		vbat_min_cell_voltage = 300
+		vbat_warning_cell_voltage = 330
+		
+	#$ OPTION END
+	
+	#$ OPTION BEGIN (UNCHECKED): <b>Li-Po</b>
+	
+		vbat_min_cell_voltage = 330
+		vbat_warning_cell_voltage = 350
+		
+	#$ OPTION END
+
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: Partir sur la derniere sauvegarde ?
+
+    #$ OPTION BEGIN (UNCHECKED): <b>Oui</b>
+	
+		# feature
+		feature -AIRMODE
+		feature SERVO_TILT
+		feature GPS
+		feature DISPLAY
+		feature OSD
+		feature CHANNEL_FORWARDING
+		feature ESC_SENSOR
+
+		# serial
+		serial 0 131073 115200 57600 0 115200
+		serial 5 2 9600 9600 0 115200
+
+		# aux
+		aux 0 0 0 1300 2100 0 0
+		aux 1 1 0 1700 2100 0 0
+		aux 2 27 1 1700 2100 0 0
+		aux 3 28 1 1300 1700 0 0
+
+		# rxfail
+		rxfail 3 s 1500
+		rxfail 4 s 1800
+
+		# master
+		set gyro_lpf1_static_hz = 0
+		set gyro_lpf2_static_hz = 700
+		set dyn_notch_count = 1
+		set dyn_notch_q = 500
+		set gyro_lpf1_dyn_min_hz = 0
+		set gyro_lpf1_dyn_max_hz = 0
+		set acc_calibration = -27,-4,25,1
+		set align_mag = CW270FLIP
+		set mag_align_pitch = 1800
+		set mag_align_yaw = 2700
+		set mag_calibration = 3024,4872,-389
+		set sbus_baud_fast = ON
+		set dshot_bidir = ON
+		set motor_pwm_protocol = DSHOT300
+		set motor_output_reordering = 3,2,1,0,4,5,6,7
+		set failsafe_delay = 12
+		set failsafe_throttle_low_delay = 300
+		set failsafe_procedure = GPS-RESCUE
+		set gps_sbas_mode = AUTO
+		set gps_ublox_use_galileo = ON
+		set gps_set_home_point_once = ON
+		set gps_rescue_alt_mode = CURRENT_ALT
+		set gps_rescue_ascend_rate = 1000
+		set gps_rescue_ground_speed = 2500
+		set gps_rescue_max_angle = 50
+		set gps_rescue_allow_arming_without_fix = ON
+		set pid_process_denom = 2
+		set simplified_gyro_filter_multiplier = 140
+		set osd_rssi_alarm = 3
+		set osd_cap_alarm = 1000
+		set osd_alt_alarm = 120
+		set osd_vbat_pos = 2368
+		set osd_flymode_pos = 2048
+		set osd_throttle_pos = 2131
+		set osd_vtx_channel_pos = 576
+		set osd_ah_sbar_pos = 2362
+		set osd_ah_pos = 2234
+		set osd_current_pos = 2304
+		set osd_mah_drawn_pos = 2400
+		set osd_gps_speed_pos = 2141
+		set osd_gps_lon_pos = 2624
+		set osd_gps_lat_pos = 2656
+		set osd_gps_sats_pos = 2136
+		set osd_home_dir_pos = 2585
+		set osd_home_dist_pos = 2580
+		set osd_compass_bar_pos = 2070
+		set osd_altitude_pos = 2587
+		set osd_warnings_pos = 14773
+		set osd_avg_cell_voltage_pos = 2336
+		set osd_battery_usage_pos = 256
+		set osd_disarmed_pos = 2294
+		set osd_esc_tmp_pos = 1103
+		set osd_core_temp_pos = 3119
+		set osd_sys_distance_pos = 601
+		set osd_stat_bitmask = 16793388
+		set craft_name = JeNo5
+		set pilot_name = Tarpoon
+
+		profile 0
+
+		# profile 0
+		set dterm_lpf1_dyn_min_hz = 105
+		set dterm_lpf1_dyn_max_hz = 210
+		set dterm_lpf1_static_hz = 105
+		set dterm_lpf2_static_hz = 210
+		set iterm_relax_cutoff = 17
+		set yaw_lowpass_hz = 0
+		set p_pitch = 56
+		set i_pitch = 100
+		set d_pitch = 45
+		set f_pitch = 84
+		set p_roll = 53
+		set i_roll = 95
+		set d_roll = 38
+		set f_roll = 81
+		set p_yaw = 53
+		set i_yaw = 95
+		set f_yaw = 81
+		set angle_limit = 40
+		set d_min_roll = 38
+		set d_min_pitch = 45
+		set thrust_linear = 20
+		set dyn_idle_min_rpm = 30
+		set simplified_master_multiplier = 80
+		set simplified_d_gain = 160
+		set simplified_pi_gain = 150
+		set simplified_dmax_gain = 0
+		set simplified_feedforward_gain = 85
+		set simplified_pitch_d_gain = 105
+		set simplified_dterm_filter_multiplier = 140
+
+		profile 1
+
+		profile 2
+
+		profile 3
+
+		# restore original profile selection
+		profile 0
+
+		rateprofile 0
+
+		rateprofile 1
+
+		# rateprofile 1
+		set roll_rc_rate = 1
+		set pitch_rc_rate = 1
+		set yaw_rc_rate = 1
+		set roll_expo = 50
+		set pitch_expo = 50
+		set yaw_expo = 50
+		set roll_srate = 40
+		set pitch_srate = 40
+		set yaw_srate = 30
+
+		rateprofile 2
+
+		rateprofile 3
+		
+	#$ OPTION END
+	
+	#$ OPTION BEGIN (UNCHECKED): <b>Freestyle</b>
+	
+		rateprofile 0
+		
+	#$ OPTION END
+
+#$ OPTION_GROUP END
