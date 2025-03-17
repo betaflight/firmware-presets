@@ -62,8 +62,8 @@
 	
 	#$ OPTION BEGIN (UNCHECKED): <b>Li-Po</b>
 	
-		vbat_min_cell_voltage = 330
-		vbat_warning_cell_voltage = 350
+		set vbat_min_cell_voltage = 330
+		set vbat_warning_cell_voltage = 350
 		
 	#$ OPTION END
 
