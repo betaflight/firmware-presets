@@ -55,7 +55,7 @@
 
     #$ OPTION BEGIN (UNCHECKED): <b>Li-Ion</b>
 	
-		set bat_min_cell_voltage = 300
+		set vbat_min_cell_voltage = 300
 		set vbat_warning_cell_voltage = 330
 		
 	#$ OPTION END
