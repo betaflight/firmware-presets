@@ -5,7 +5,7 @@
 #$ KEYWORDS: filter, filters, aos, chris, rosser, ul8
 #$ AUTHOR: Chris Rosser
 #$ DESCRIPTION: Developed for the AOS UL8
-#$ DESCRIPTION: NOTE this needs bidirectional Dshot support and RPM filtering active to use. DO NOT ATEMPT TO USE WITHOUT RPM FILTERING!
+#$ DESCRIPTION: NOTE this needs bidirectional Dshot support and RPM filtering active to use. DO NOT ATTEMPT TO USE WITHOUT RPM FILTERING!
 #$ DESCRIPTION: Follow the usual process of hover testing and safely checking out your tune before using. USE AT YOUR OWN RISK.
 #$ DISCUSSION: https://www.aos-rc.com
 #$ INCLUDE_WARNING: misc/warnings/en/rpm_filters.txt
