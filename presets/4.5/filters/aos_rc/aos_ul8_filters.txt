@@ -1,10 +1,10 @@
-#$ TITLE: AOS UL10 Filters
+#$ TITLE: AOS UL8 Filters
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: FILTERS
 #$ STATUS: COMMUNITY
-#$ KEYWORDS: filter, filters, aos, chris, rosser, ul10
+#$ KEYWORDS: filter, filters, aos, chris, rosser, ul8
 #$ AUTHOR: Chris Rosser
-#$ DESCRIPTION: Developed for the AOS UL10
+#$ DESCRIPTION: Developed for the AOS UL8
 #$ DESCRIPTION: NOTE this needs bidirectional Dshot support and RPM filtering active to use. DO NOT ATTEMPT TO USE WITHOUT RPM FILTERING!
 #$ DESCRIPTION: Follow the usual process of hover testing and safely checking out your tune before using. USE AT YOUR OWN RISK.
 #$ DISCUSSION: https://www.aos-rc.com
@@ -12,25 +12,30 @@
 #$ INCLUDE: presets/4.5/filters/defaults.txt
 
 
-# -- Gyro lowpass filters (default) --
+# -- Gyro lowpass filters --
+set gyro_lpf1_dyn_min_hz = 0
+set gyro_lpf1_dyn_max_hz = 0
+set gyro_lpf1_static_hz = 0
+set gyro_lpf2_static_hz = 1000
+set simplified_gyro_filter = OFF
 
 # -- Gyro Dynamic Notches --
 set dyn_notch_count = 1
 set dyn_notch_q = 500
-set dyn_notch_min_hz = 70
+set dyn_notch_min_hz = 125
 
 # -- RPM filtering --
 set dshot_bidir = ON
 set rpm_filter_harmonics = 3
 set rpm_filter_fade_range_hz = 50
-set rpm_filter_min_hz = 70
+set rpm_filter_min_hz = 85
 
 # -- Dterm filtering --
-set dterm_lpf1_dyn_min_hz = 60
-set dterm_lpf1_dyn_max_hz = 120
-set dterm_lpf1_static_hz = 60
-set dterm_lpf2_static_hz = 120
-set simplified_dterm_filter_multiplier = 80
+set dterm_lpf1_dyn_min_hz = 67
+set dterm_lpf1_dyn_max_hz = 135
+set dterm_lpf1_static_hz = 67
+set dterm_lpf2_static_hz = 135
+set simplified_dterm_filter_multiplier = 90
 
 # ------ OPIONS GO BELOW THIS LINE ------
 
