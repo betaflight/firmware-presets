@@ -16,10 +16,6 @@
 
 #$ INCLUDE: presets/4.3/rc_link/defaults.txt
 
-# basic requirements for ExpressLRS 
-feature RX_SERIAL
-set serialrx_provider = CRSF
-
 # 500hz default settings in case no-one selects a tuning option
 set feedforward_averaging = 2_POINT
 set feedforward_smooth_factor = 65
@@ -79,10 +75,11 @@ set rc_smoothing_throttle_cutoff = 20
 #$ OPTION_GROUP BEGIN: (EXCLUSIVE) ELRS Rx connection method (choose one):
 
 #$ OPTION BEGIN (UNCHECKED): Serial, separate Rx
+feature RX_SERIAL
+set serialrx_provider = CRSF
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): SPI, on the FC
-feature -RX_SERIAL
 feature RX_SPI
 set rx_spi_protocol = EXPRESSLRS
 #$ OPTION END
@@ -120,4 +117,3 @@ set yaw_srate = 50
 #$ OPTION END
 
 #$ OPTION_GROUP END
-
