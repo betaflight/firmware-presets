@@ -1,20 +1,6 @@
 'use strict';
 
 class IndexContent
-{
-    constructor(presetFilesArray, settings)
-    {
-        this.majorVersion = 1;
-        this.minorVersion = 0;
-        this.settings = settings;
-        this.uniqueValues = {};
-        this.presets = presetFilesArray;
-
-        this.uniqueValues.firmware_version = this._getUniqueValues(presetFilesArray, "firmware_version");
-        this.uniqueValues.category = this._getUniqueValues(presetFilesArray, "category");
-        this.uniqueValues.author = this._getUniqueValues(presetFilesArray, "author");
-        this.uniqueValues.keywords = this._getUniqueValues(presetFilesArray, "keywords");
-    }
 
     _getUniqueValues(presetFilesArray, property)
     {
