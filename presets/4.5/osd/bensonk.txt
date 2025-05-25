@@ -104,6 +104,11 @@ set osd_aux_symbol = 65
 set osd_craftname_msgs = OFF
 set scheduler_relax_osd = 25
 
+#$ OPTION BEGIN (CHECKED): Use Craftname Messages
+# -- ADDER: For quads using an OSD with BrainFPV extensions --
+set osd_craftname_msgs = ON
+#$ OPTION END
+
 # Analog
 
 set osd_link_quality_pos = 14711
