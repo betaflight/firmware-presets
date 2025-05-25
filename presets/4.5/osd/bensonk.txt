@@ -1,6 +1,5 @@
 #$ TITLE: bensonk standard OSD config
 #$ FIRMWARE_VERSION: 4.5
-#$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: OSD
 #$ STATUS: COMMUNITY
 #$ KEYWORDS: OSD, TBS, TBS Core, GPS, navigation, longrange, mountain surfing, MtnSurf
