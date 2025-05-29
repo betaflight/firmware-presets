@@ -7,6 +7,7 @@
 #$ DESCRIPTION: Standard controller channel settings used by bensonk
 
 # aux
+# NOTE: we set all the aux values here to avoid any unexpected surprises.
 
 aux 0 0 1 1950 2100 0 0
 aux 1 1 0 1300 2100 0 0
@@ -30,6 +31,7 @@ aux 18 0 0 900 900 0 0
 aux 19 0 0 900 900 0 0
 
 # adjrange
+# NOTE: likewise, we set these all back to defaults to avoid any surprises.
 
 adjrange 0 0 0 900 900 0 0 0 0
 adjrange 1 0 0 900 900 0 0 0 0
