@@ -1,0 +1,180 @@
+#$ TITLE: bensonk standard OSD config
+#$ FIRMWARE_VERSION: 4.5
+#$ CATEGORY: OSD
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: OSD, TBS, TBS Core, GPS, navigation, longrange, mountain surfing, MtnSurf
+#$ AUTHOR: bensonk
+
+#$ DESCRIPTION: I lay out my OSD the same way on every rig, so I always know
+#$ DESCRIPTION: where to find things. Perhaps my layout will make sense to you
+#$ DESCRIPTION: too! This configuration is based on the layout of the TBS Core
+#$ DESCRIPTION: Pro OSD, which I used before betaflight had OSD support.
+
+# Common settings
+
+set osd_units = METRIC
+set osd_warn_bitmask = 24575
+set osd_rssi_alarm = 20
+set osd_link_quality_alarm = 70
+set osd_rssi_dbm_alarm = -95
+set osd_rsnr_alarm = -1
+set osd_cap_alarm = 7500
+set osd_alt_alarm = 200
+set osd_distance_alarm = 0
+set osd_esc_temp_alarm = 0
+set osd_esc_rpm_alarm = -1
+set osd_esc_current_alarm = -1
+set osd_core_temp_alarm = 85
+set osd_ah_max_pit = 20
+set osd_ah_max_rol = 40
+set osd_ah_invert = OFF
+set osd_logo_on_arming = ON
+set osd_logo_on_arming_duration = 10
+set osd_tim1 = 0
+set osd_tim2 = 1
+set osd_rssi_pos = 375
+set osd_rsnr_pos = 234
+set osd_tim_1_pos = 54
+set osd_remaining_time_estimate_pos = 234
+set osd_anti_gravity_pos = 234
+set osd_g_force_pos = 234
+set osd_throttle_pos = 234
+set osd_vtx_channel_pos = 234
+set osd_crosshairs_pos = 206
+set osd_ah_sbar_pos = 206
+set osd_ah_pos = 8270
+set osd_wh_drawn_pos = 234
+set osd_motor_diag_pos = 234
+set osd_pilot_name_pos = 234
+set osd_flight_dist_pos = 234
+set osd_compass_bar_pos = 234
+set osd_pid_roll_pos = 234
+set osd_pid_pitch_pos = 234
+set osd_pid_yaw_pos = 234
+set osd_debug_pos = 234
+set osd_power_pos = 234
+set osd_pidrate_profile_pos = 234
+set osd_avg_cell_voltage_pos = 79
+set osd_pit_ang_pos = 234
+set osd_rol_ang_pos = 234
+set osd_battery_usage_pos = 33002
+set osd_disarmed_pos = 234
+set osd_nheading_pos = 234
+set osd_up_down_reference_pos = 205
+set osd_ready_mode_pos = 234
+set osd_esc_tmp_pos = 234
+set osd_esc_rpm_pos = 234
+set osd_esc_rpm_freq_pos = 234
+set osd_rtc_date_time_pos = 234
+set osd_adjustment_range_pos = 234
+set osd_core_temp_pos = 234
+set osd_log_status_pos = 12352
+set osd_stick_overlay_left_pos = 234
+set osd_stick_overlay_right_pos = 234
+set osd_stick_overlay_radio_mode = 2
+set osd_rate_profile_name_pos = 234
+set osd_pid_profile_name_pos = 234
+set osd_profile_name_pos = 234
+set osd_rcchannels_pos = 234
+set osd_camera_frame_pos = 132
+set osd_total_flights_pos = 234
+set osd_aux_pos = 234
+set osd_sys_goggle_voltage_pos = 234
+set osd_sys_vtx_voltage_pos = 234
+set osd_sys_bitrate_pos = 234
+set osd_sys_delay_pos = 234
+set osd_sys_distance_pos = 234
+set osd_sys_lq_pos = 234
+set osd_sys_goggle_dvr_pos = 234
+set osd_sys_vtx_dvr_pos = 234
+set osd_sys_warnings_pos = 234
+set osd_sys_vtx_temp_pos = 234
+set osd_sys_fan_speed_pos = 234
+set osd_stat_bitmask = 14316
+set osd_profile = 1
+set osd_profile_1_name = -
+set osd_profile_2_name = -
+set osd_profile_3_name = -
+set osd_rcchannels = -1,-1,-1,-1
+set osd_camera_frame_width = 24
+set osd_camera_frame_height = 11
+set osd_stat_avg_cell_value = OFF
+set osd_framerate_hz = 12
+set osd_menu_background = TRANSPARENT
+set osd_aux_channel = 1
+set osd_aux_scale = 200
+set osd_aux_symbol = 65
+set osd_craftname_msgs = OFF
+set scheduler_relax_osd = 25
+
+#$ OPTION BEGIN (CHECKED): Use Craftname Messages
+    # -- ADDER: Enable if you'd like to use craftname messages --
+    set osd_craftname_msgs = ON
+#$ OPTION END
+
+# Analog
+
+set osd_link_quality_pos = 14711
+set osd_link_tx_power_pos = 14679
+set osd_rssi_dbm_pos = 2455
+set osd_tim_2_pos = 14720
+set osd_flymode_pos = 14656
+set osd_current_pos = 14368
+set osd_mah_drawn_pos = 14343
+set osd_craft_name_pos = 14688
+set osd_gps_speed_pos = 2096
+set osd_gps_lon_pos = 18825
+set osd_gps_lat_pos = 18793
+set osd_gps_sats_pos = 2103
+set osd_home_dir_pos = 2062
+set osd_home_dist_pos = 2071
+set osd_altitude_pos = 2064
+set osd_warnings_pos = 14633
+set osd_nvario_pos = 2135
+set osd_flip_arrow_pos = 2220
+set osd_efficiency_pos = 2088
+set osd_gps_sats_show_hdop = OFF
+set osd_displayport_device = AUTO
+set osd_canvas_width = 30
+set osd_canvas_height = 15
+
+#$ OPTION BEGIN (UNCHECKED): BrainFPV FC
+    # -- ADDER: For quads using an OSD with BrainFPV extensions --
+    set brainfpv_osd_sync_thresh_mode = 1
+    set brainfpv_osd_sync_thresh = 150
+    set brainfpv_osd_invert = 1
+    set brainfpv_osd_x_offset = 0
+    set brainfpv_osd_x_scale_diff = 0
+    set brainfpv_osd_sbs3d = 0
+    set brainfpv_osd_sbs3d_roff = 30
+    set brainfpv_osd_font = 0
+    set brainfpv_osd_ahi_steps = 2
+    set brainfpv_dji_osd_warnings_info = 1
+    set brainfpv_dji_osd_rssi_use_lq = 1
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): HD / Digital System
+    # -- ADDER: For quads using DJI's Digital OSD --
+    set osd_link_quality_pos = 15853
+    set osd_link_tx_power_pos = 15821
+    set osd_rssi_dbm_pos = 3597
+    set osd_tim_2_pos = 14882
+    set osd_flymode_pos = 14850
+    set osd_current_pos = 14433
+    set osd_mah_drawn_pos = 14379
+    set osd_craft_name_pos = 14818
+    set osd_gps_speed_pos = 2110
+    set osd_gps_lon_pos = 19037
+    set osd_gps_lat_pos = 19027
+    set osd_gps_sats_pos = 3148
+    set osd_home_dir_pos = 2170
+    set osd_home_dist_pos = 3117
+    set osd_altitude_pos = 3108
+    set osd_warnings_pos = 14805
+    set osd_nvario_pos = 3181
+    set osd_flip_arrow_pos = 2362
+    set osd_efficiency_pos = 2098
+    set osd_displayport_device = MSP
+    set osd_canvas_width = 53
+    set osd_canvas_height = 20
+#$ OPTION END
