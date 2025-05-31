@@ -9,8 +9,8 @@
 # aux
 # NOTE: we set all the aux values here to avoid any unexpected surprises.
 
-aux 0 0 1 1950 2100 0 0
-aux 1 1 0 1300 2100 0 0
+aux 0 0 0 1950 2100 0 0
+aux 1 1 1 1300 2100 0 0
 aux 2 13 0 1925 2100 0 0
 aux 3 35 2 1875 2100 0 0
 aux 4 39 3 900 1075 0 0
