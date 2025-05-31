@@ -5,7 +5,10 @@
 #$ KEYWORDS: OSD, TBS, TBS Core, GPS, navigation, longrange, mountain surfing, MtnSurf
 #$ AUTHOR: bensonk
 
-#$ DESCRIPTION: I lay out my OSD the same way on every rig, so I always know where to find things. Perhaps my layout will make sense to you too! This configuration is based on the layout of the TBS Core Pro OSD, which I used before betaflight had OSD support.
+#$ DESCRIPTION: I lay out my OSD the same way on every rig, so I always know
+#$ DESCRIPTION: where to find things. Perhaps my layout will make sense to you
+#$ DESCRIPTION: too! This configuration is based on the layout of the TBS Core
+#$ DESCRIPTION: Pro OSD, which I used before betaflight had OSD support.
 
 # Common settings
 
@@ -104,6 +107,11 @@ set osd_aux_symbol = 65
 set osd_craftname_msgs = OFF
 set scheduler_relax_osd = 25
 
+#$ OPTION BEGIN (CHECKED): Use Craftname Messages
+    # -- ADDER: Enable if you'd like to use craftname messages --
+    set osd_craftname_msgs = ON
+#$ OPTION END
+
 # Analog
 
 set osd_link_quality_pos = 14711
@@ -130,43 +138,43 @@ set osd_displayport_device = AUTO
 set osd_canvas_width = 30
 set osd_canvas_height = 15
 
-#$ OPTION BEGIN (CHECKED): BrainFPV FC
-# -- ADDER: For quads using an OSD with BrainFPV extensions --
-set brainfpv_osd_sync_thresh_mode = 1
-set brainfpv_osd_sync_thresh = 150
-set brainfpv_osd_invert = 1
-set brainfpv_osd_x_offset = 0
-set brainfpv_osd_x_scale_diff = 0
-set brainfpv_osd_sbs3d = 0
-set brainfpv_osd_sbs3d_roff = 30
-set brainfpv_osd_font = 0
-set brainfpv_osd_ahi_steps = 2
-set brainfpv_dji_osd_warnings_info = 1
-set brainfpv_dji_osd_rssi_use_lq = 1
+#$ OPTION BEGIN (UNCHECKED): BrainFPV FC
+    # -- ADDER: For quads using an OSD with BrainFPV extensions --
+    set brainfpv_osd_sync_thresh_mode = 1
+    set brainfpv_osd_sync_thresh = 150
+    set brainfpv_osd_invert = 1
+    set brainfpv_osd_x_offset = 0
+    set brainfpv_osd_x_scale_diff = 0
+    set brainfpv_osd_sbs3d = 0
+    set brainfpv_osd_sbs3d_roff = 30
+    set brainfpv_osd_font = 0
+    set brainfpv_osd_ahi_steps = 2
+    set brainfpv_dji_osd_warnings_info = 1
+    set brainfpv_dji_osd_rssi_use_lq = 1
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): HD / Digital System
-# -- ADDER: For quads using DJI's Digital OSD --
-set osd_link_quality_pos = 15853
-set osd_link_tx_power_pos = 15821
-set osd_rssi_dbm_pos = 3597
-set osd_tim_2_pos = 14882
-set osd_flymode_pos = 14850
-set osd_current_pos = 14433
-set osd_mah_drawn_pos = 14379
-set osd_craft_name_pos = 14818
-set osd_gps_speed_pos = 2110
-set osd_gps_lon_pos = 19037
-set osd_gps_lat_pos = 19027
-set osd_gps_sats_pos = 3148
-set osd_home_dir_pos = 2170
-set osd_home_dist_pos = 3117
-set osd_altitude_pos = 3108
-set osd_warnings_pos = 14805
-set osd_nvario_pos = 3181
-set osd_flip_arrow_pos = 2362
-set osd_efficiency_pos = 2098
-set osd_displayport_device = MSP
-set osd_canvas_width = 53
-set osd_canvas_height = 20
+    # -- ADDER: For quads using DJI's Digital OSD --
+    set osd_link_quality_pos = 15853
+    set osd_link_tx_power_pos = 15821
+    set osd_rssi_dbm_pos = 3597
+    set osd_tim_2_pos = 14882
+    set osd_flymode_pos = 14850
+    set osd_current_pos = 14433
+    set osd_mah_drawn_pos = 14379
+    set osd_craft_name_pos = 14818
+    set osd_gps_speed_pos = 2110
+    set osd_gps_lon_pos = 19037
+    set osd_gps_lat_pos = 19027
+    set osd_gps_sats_pos = 3148
+    set osd_home_dir_pos = 2170
+    set osd_home_dist_pos = 3117
+    set osd_altitude_pos = 3108
+    set osd_warnings_pos = 14805
+    set osd_nvario_pos = 3181
+    set osd_flip_arrow_pos = 2362
+    set osd_efficiency_pos = 2098
+    set osd_displayport_device = MSP
+    set osd_canvas_width = 53
+    set osd_canvas_height = 20
 #$ OPTION END
