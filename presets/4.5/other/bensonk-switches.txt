@@ -2,6 +2,7 @@
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: OTHER
 #$ STATUS: COMMUNITY
+#$ KEYWORDS: switch, mode, modes
 #$ AUTHOR: bensonk
 
 #$ DESCRIPTION: Standard controller channel settings used by bensonk
