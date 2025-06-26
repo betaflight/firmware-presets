@@ -6652,6 +6652,27 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/4.5/other/phoenixplayz_osd_rates.txt",
+      "hash": "a9a5ec56749b39f081160349c30dd2a16681450dd080e7e7b4eda16403432537",
+      "title": "Phoenixplayz osd",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "OTHER",
+      "status": "COMMUNITY",
+      "keywords": [
+        "OSD",
+        "TBS",
+        "TBS Core",
+        "navigation",
+        "longrange",
+        "mountain surfing",
+        "MtnSurf"
+      ],
+      "author": "phoenixplayz",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.5/other/reset_3d.txt",
       "hash": "457090460225ee84ddb27a46e74530078f00741067dcf51fb5f3cec443b29d31",
       "title": "Reset 3D settings to 4.5 default settings",
