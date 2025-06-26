@@ -83,54 +83,38 @@ set osd_displayport_device = MAX7456
 set osd_canvas_width = 30
 set osd_canvas_height = 16
 
-#$ OPTION BEGIN (UNCHECKED): HD / Digital System
-    # -- ADDER: For quads using DJI's Digital OSD --
-    set osd_link_quality_pos = 15853
-    set osd_link_tx_power_pos = 15821
-    set osd_rssi_dbm_pos = 3597
-    set osd_tim_2_pos = 14882
-    set osd_flymode_pos = 14850
-    set osd_current_pos = 14433
-    set osd_mah_drawn_pos = 14379
-    set osd_craft_name_pos = 14818
-    set osd_gps_speed_pos = 2110
-    set osd_gps_lon_pos = 19037
-    set osd_gps_lat_pos = 19027
-    set osd_gps_sats_pos = 3148
-    set osd_home_dir_pos = 2170
-    set osd_home_dist_pos = 3117
-    set osd_altitude_pos = 3108
-    set osd_warnings_pos = 14805
-    set osd_nvario_pos = 3181
-    set osd_flip_arrow_pos = 2362
-    set osd_efficiency_pos = 2098
-    set osd_displayport_device = MSP
-    set osd_canvas_width = 53
-    set osd_canvas_height = 20
-#$ OPTION END
 
 #$ OPTION BEGIN (CHECKED): phoenixplayz osd
     # -- ADDER: phoenixplayz osd--
-    set osd_link_quality_pos = 15853
-    set osd_link_tx_power_pos = 15821
-    set osd_rssi_dbm_pos = 3597
-    set osd_tim_2_pos = 14882
-    set osd_flymode_pos = 14850
-    set osd_current_pos = 14433
-    set osd_mah_drawn_pos = 14379
-    set osd_craft_name_pos = 14818
-    set osd_gps_speed_pos = 2110
-    set osd_gps_lon_pos = 19037
-    set osd_gps_lat_pos = 19027
-    set osd_gps_sats_pos = 3148
-    set osd_home_dir_pos = 2170
-    set osd_home_dist_pos = 3117
-    set osd_altitude_pos = 3108
-    set osd_warnings_pos = 14805
-    set osd_nvario_pos = 3181
-    set osd_flip_arrow_pos = 2362
-    set osd_efficiency_pos = 2098
-    set osd_displayport_device = MSP
-    set osd_canvas_width = 53
-    set osd_canvas_height = 20
+    set osd_warn_bitmask = 57343
+    set osd_link_quality_alarm = 70
+    set osd_rssi_dbm_alarm = -100
+    set osd_cap_alarm = 20000
+    set osd_rssi_pos = 88
+    set osd_link_quality_pos = 2520
+    set osd_link_tx_power_pos = 24
+    set osd_rssi_dbm_pos = 2514
+    set osd_tim_2_pos = 2552
+    set osd_flymode_pos = 2508
+    set osd_throttle_pos = 2528
+    set osd_vtx_channel_pos = 373
+    set osd_current_pos = 2542
+    set osd_mah_drawn_pos = 497
+    set osd_craft_name_pos = 384
+    set osd_flight_dist_pos = 153
+    set osd_altitude_pos = 18488
+    set osd_power_pos = 388
+    set osd_warnings_pos = 14402
+    set osd_avg_cell_voltage_pos = 2496
+    set osd_battery_usage_pos = 33109
+    set osd_disarmed_pos = 2283
+    set osd_ready_mode_pos = 2316
+    set osd_flip_arrow_pos = 2389
+    set osd_core_temp_pos = 2535
+    set osd_sys_lq_pos = 32
+    set osd_sys_vtx_temp_pos = 480
+    set osd_stat_bitmask = 8402476
+    set osd_displayport_device = MAX7456
+    set osd_canvas_width = 30
+    set osd_canvas_height = 16
 #$ OPTION END
