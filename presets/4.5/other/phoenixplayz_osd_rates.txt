@@ -12,7 +12,7 @@
 
 # Common settings
 
-et osd_warn_bitmask = 57343
+set osd_warn_bitmask = 57343
 set osd_link_quality_alarm = 70
 set osd_rssi_dbm_alarm = -100
 set osd_cap_alarm = 20000
