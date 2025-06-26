@@ -44,7 +44,7 @@ set osd_displayport_device = MAX7456
 set osd_canvas_width = 30
 set osd_canvas_height = 16
 
-#$ OPTION BEGIN (CHECKED): Use Craftname Messages
+#$ OPTION BEGIN (UNCHECKED): Use Craftname Messages
     # -- ADDER: Enable if you'd like to use craftname messages --
     set osd_craftname_msgs = ON
 #$ OPTION END
@@ -83,23 +83,34 @@ set osd_displayport_device = MAX7456
 set osd_canvas_width = 30
 set osd_canvas_height = 16
 
-#$ OPTION BEGIN (UNCHECKED): BrainFPV FC
-    # -- ADDER: For quads using an OSD with BrainFPV extensions --
-    set brainfpv_osd_sync_thresh_mode = 1
-    set brainfpv_osd_sync_thresh = 150
-    set brainfpv_osd_invert = 1
-    set brainfpv_osd_x_offset = 0
-    set brainfpv_osd_x_scale_diff = 0
-    set brainfpv_osd_sbs3d = 0
-    set brainfpv_osd_sbs3d_roff = 30
-    set brainfpv_osd_font = 0
-    set brainfpv_osd_ahi_steps = 2
-    set brainfpv_dji_osd_warnings_info = 1
-    set brainfpv_dji_osd_rssi_use_lq = 1
-#$ OPTION END
-
 #$ OPTION BEGIN (UNCHECKED): HD / Digital System
     # -- ADDER: For quads using DJI's Digital OSD --
+    set osd_link_quality_pos = 15853
+    set osd_link_tx_power_pos = 15821
+    set osd_rssi_dbm_pos = 3597
+    set osd_tim_2_pos = 14882
+    set osd_flymode_pos = 14850
+    set osd_current_pos = 14433
+    set osd_mah_drawn_pos = 14379
+    set osd_craft_name_pos = 14818
+    set osd_gps_speed_pos = 2110
+    set osd_gps_lon_pos = 19037
+    set osd_gps_lat_pos = 19027
+    set osd_gps_sats_pos = 3148
+    set osd_home_dir_pos = 2170
+    set osd_home_dist_pos = 3117
+    set osd_altitude_pos = 3108
+    set osd_warnings_pos = 14805
+    set osd_nvario_pos = 3181
+    set osd_flip_arrow_pos = 2362
+    set osd_efficiency_pos = 2098
+    set osd_displayport_device = MSP
+    set osd_canvas_width = 53
+    set osd_canvas_height = 20
+#$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): phoenixplayz osd
+    # -- ADDER: phoenixplayz osd--
     set osd_link_quality_pos = 15853
     set osd_link_tx_power_pos = 15821
     set osd_rssi_dbm_pos = 3597
