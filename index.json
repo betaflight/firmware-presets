@@ -6531,7 +6531,7 @@
     },
     {
       "fullPath": "presets/4.5/osd/phoenixplayz_osd.txt",
-      "hash": "32ada231797b8a6c55907358bf6a51a2f99f5d0f9028284f8b7d27eca6be523b",
+      "hash": "f3b83109b6fca7d659f1ee820d03867676eb4cae007f13981e1226b6d7715b50",
       "title": "Phoenixplayz osd",
       "firmware_version": [
         "4.5"
@@ -6542,7 +6542,6 @@
         "OSD",
         "TBS",
         "TBS Core",
-        "GPS",
         "navigation",
         "longrange",
         "mountain surfing",
@@ -6766,7 +6765,7 @@
     },
     {
       "fullPath": "presets/4.5/rates/Phoenixplayz_rates.txt",
-      "hash": "f5b0bcefb83fb69a466b9836e513993d673964448de12806acd3344531cb271e",
+      "hash": "df6578ea5a26895ccd91eda072a0fd7a6483ef35fa4af20b5dbd478727bd34ec",
       "title": "Pheonixplayz rates",
       "firmware_version": [
         "4.3",

@@ -2,7 +2,7 @@
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: OSD
 #$ STATUS: COMMUNITY
-#$ KEYWORDS: OSD, TBS, TBS Core, GPS, navigation, longrange, mountain surfing, MtnSurf
+#$ KEYWORDS: OSD, TBS, TBS Core, navigation, longrange, mountain surfing, MtnSurf
 #$ AUTHOR: phoenixplayz
 
 #$ DESCRIPTION: I lay out my OSD the same way on every rig, so I always know
@@ -12,7 +12,7 @@
 
 # Common settings
 
-set osd_warn_bitmask = 57343
+et osd_warn_bitmask = 57343
 set osd_link_quality_alarm = 70
 set osd_rssi_dbm_alarm = -100
 set osd_cap_alarm = 20000
@@ -43,11 +43,6 @@ set osd_stat_bitmask = 8402476
 set osd_displayport_device = MAX7456
 set osd_canvas_width = 30
 set osd_canvas_height = 16
-
-#$ OPTION BEGIN (UNCHECKED): Use Craftname Messages
-    # -- ADDER: Enable if you'd like to use craftname messages --
-    set osd_craftname_msgs = ON
-#$ OPTION END
 
 # Analog
 
