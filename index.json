@@ -192,7 +192,6 @@
       "MrAlucardDante",
       "Neil Marek (Grower)",
       "NemesisXB",
-      "Pheonixplayz",
       "phoenixplayz",
       "QuadMcFly (Ryan Harrell)",
       "Sartor",
@@ -6530,27 +6529,6 @@
       "priority": 0
     },
     {
-      "fullPath": "presets/4.5/osd/phoenixplayz_osd.txt",
-      "hash": "f3b83109b6fca7d659f1ee820d03867676eb4cae007f13981e1226b6d7715b50",
-      "title": "Phoenixplayz osd",
-      "firmware_version": [
-        "4.5"
-      ],
-      "category": "OSD",
-      "status": "COMMUNITY",
-      "keywords": [
-        "OSD",
-        "TBS",
-        "TBS Core",
-        "navigation",
-        "longrange",
-        "mountain surfing",
-        "MtnSurf"
-      ],
-      "author": "phoenixplayz",
-      "priority": 0
-    },
-    {
       "fullPath": "presets/4.5/osd/sugark_hdzero_osd.txt",
       "hash": "d3f43e0baad7d2b2331b71b76029b2576f0f73520ac72060f4ec281153a1e8fa",
       "title": "sugarK HDzero OSD",
@@ -6782,28 +6760,6 @@
         "rosser"
       ],
       "author": "Chris Rosser",
-      "priority": 10000
-    },
-    {
-      "fullPath": "presets/4.5/rates/Phoenixplayz_rates.txt",
-      "hash": "df6578ea5a26895ccd91eda072a0fd7a6483ef35fa4af20b5dbd478727bd34ec",
-      "title": "Pheonixplayz rates",
-      "firmware_version": [
-        "4.3",
-        "4.4",
-        "4.5"
-      ],
-      "category": "RATES",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "rates",
-        "freestyle",
-        "race",
-        "der_V",
-        "settek",
-        "rubberquads"
-      ],
-      "author": "Pheonixplayz",
       "priority": 10000
     },
     {
