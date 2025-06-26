@@ -1,0 +1,130 @@
+#$ TITLE: Basher 5" 6S by JazzMutant
+#$ FIRMWARE_VERSION: 4.5
+#$ CATEGORY: TUNE
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: basher, freestyle, 5 Inch, 5 In, 5", recopter, bando, JazzMutant
+#$ AUTHOR: JazzMutant
+#$ PARSER: MARKED
+
+#$ DESCRIPTION: 
+#$ DESCRIPTION: <h1>Basher 5" 6S by JazzMutant</h1>
+#$ DESCRIPTION: <br>
+#$ DESCRIPTION: <img src="https://raw.githubusercontent.com/Jaz7Mutant/firmware-presets/refs/heads/images/misc/images/basher.jpg" width="350px" style="display: block; float: left; margin-right: 10px;"/>
+#$ DESCRIPTION: 
+#$ DESCRIPTION: This tune was specially developed by **@JazzMutant** for 6S [Basher](https://www.thingiverse.com/thing:7059385) with 1900-2050kv motors. This tune was tested on drones with and without action cameras and battery protection print.
+#$ DESCRIPTION: 
+#$ DESCRIPTION: <br>
+#$ DESCRIPTION: 
+#$ DESCRIPTION: Basher is a freestyle frame created by [recopter](https://www.youtube.com/channel/UCQquZvAgwYtovocyvV59Stw). 
+#$ DESCRIPTION: Check out his video about this frame [here](https://www.youtube.com/watch?v=5wYotsPC3NA).
+#$ DESCRIPTION: 
+#$ DESCRIPTION: <br>
+#$ DESCRIPTION:
+#$ DESCRIPTION: ## Important notes:
+#$ DESCRIPTION: - Be sure you're using ESC with bidirectional DShot support (BLHeli32, AM32, BlueJay).
+#$ DESCRIPTION: - Select "Clean builds" filters option only if your build is perfect and props are always not very damaged.
+#$ DESCRIPTION: - Test your quad after applying preset by flying slow for 30 seconds. Motors should stay cool. Quad should sound clean.
+#$ DESCRIPTION: - **If anything is off, don't fly it!**
+#$ DESCRIPTION:
+#$ DESCRIPTION: <br>
+#$ DISCUSSION: https://t.me/basherframes
+#$ FORCE_OPTIONS_REVIEW: TRUE
+
+# Apply defaults
+#$ INCLUDE_WARNING: misc/warnings/en/rpm_filters.txt
+#$ INCLUDE: presets/4.5/tune/defaults.txt
+#$ INCLUDE: presets/4.5/filters/defaults.txt
+
+set dshot_bidir = ON
+
+set simplified_i_gain = 100
+set simplified_d_gain = 90
+set simplified_pi_gain = 100
+set simplified_dmax_gain = 0
+set simplified_feedforward_gain = 100
+set simplified_pitch_d_gain = 110
+set simplified_pitch_pi_gain = 110
+set simplified_gyro_filter = ON
+
+set dyn_notch_q = 500
+set dyn_notch_min_hz = 150
+set dyn_notch_max_hz = 750
+
+set gyro_lpf2_static_hz = 0
+
+set tpa_mode = D
+set tpa_rate = 65
+set tpa_breakpoint = 1650
+
+set anti_gravity_gain = 120
+set pidsum_limit = 1000
+set pidsum_limit_yaw = 1000
+
+#$ OPTION_GROUP BEGIN: DShot options
+    #$ OPTION BEGIN (CHECKED): DShot600
+        set motor_pwm_protocol = DSHOT600
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): DShot300
+        set motor_pwm_protocol = DSHOT300
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+
+#$ OPTION_GROUP BEGIN: Tuning Options
+    #$ OPTION BEGIN (CHECKED): Set Dynamic Idle to 35
+        set dyn_idle_min_rpm = 35
+    #$ OPTION END
+
+    #$ OPTION BEGIN (CHECKED): Enable thrust linearization
+        set thrust_linear = 20
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): Enable full Battery Sag Compensation
+        set vbat_sag_compensation = 100
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): Disable Throttle Boost
+        set throttle_boost = 0
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+
+#$ OPTION_GROUP BEGIN: Filters (select one)
+    #$ OPTION BEGIN (CHECKED): Normal builds 
+        set simplified_master_multiplier = 75
+        set dyn_notch_count = 2
+        set rpm_filter_harmonics = 3
+        set rpm_filter_weights = 100,50,100
+        set rpm_filter_q = 600
+        set simplified_dterm_filter_multiplier = 100
+        set simplified_gyro_filter_multiplier = 80
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): Clean builds (be careful)
+        set simplified_master_multiplier = 110
+        set dyn_notch_count = 1
+        set rpm_filter_harmonics = 3
+        set rpm_filter_weights = 100,30,100
+        set rpm_filter_q = 800
+        set simplified_dterm_filter_multiplier = 130
+        set simplified_gyro_filter_multiplier = 110
+        set dterm_lpf1_dyn_expo = 7
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+simplified_tuning apply
+
+#$ OPTION BEGIN (UNCHECKED): recopter's rates (Actual)
+    #$ INCLUDE: presets/4.3/rates/defaults.txt
+    set rates_type = ACTUAL
+    set roll_rc_rate = 22
+    set pitch_rc_rate = 18
+    set yaw_rc_rate = 16
+    set roll_expo = 56
+    set pitch_expo = 56
+    set yaw_expo = 56
+    set roll_srate = 98
+    set pitch_srate = 82
+    set yaw_srate = 74
+#$ OPTION END
