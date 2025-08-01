@@ -1,0 +1,349 @@
+#$ TITLE:GEPRC Cinlog30V3 HD O4
+#$ FIRMWARE_VERSION: 4.5
+#$ CATEGORY: TUNE
+#$ STATUS: OFFICIAL
+#$ KEYWORDS: GEPRC,Cinelog30V3HD,Cinelog30V3WTF,"
+#$ AUTHOR: Grey pang
+
+#$ PARSER: MARKED
+#$ INCLUDE_WARNING: misc/warnings/en/rpm_filters.txt
+
+#$ DESCRIPTION: <div align="center"><a href="https://geprc.com"><img src="https://geprc.com/wp-content/uploads/2024/06/geprc-logo.png" alt="GEPRC" width="50%"/></a></div>
+#$ DESCRIPTION:
+#$ DESCRIPTION: <br>
+#$ DESCRIPTION:
+#$ DESCRIPTION: Cinelog30V3 HD WTF
+#$ DESCRIPTION:  
+#$ DESCRIPTION: Please choose the preset that matches your product model .<br>
+#$ DESCRIPTION: 建议用户根据自己的产品型号自主选择对应的预设。
+#$ DESCRIPTION:  
+#$ DESCRIPTION: This preset is optimized for factory motors, ESCs, and flight controllers.<br>
+#$ DESCRIPTION: 本预设适配原厂配置的电机、电调及飞控。 <br>
+#$ DESCRIPTION:  
+#$ DESCRIPTION: Fly safe and have fun!<br>
+#$ DESCRIPTION: Support, feedback and chat:<br>
+#$ DESCRIPTION:*[FACEBOOK SUPPORT/FEEDBACK](https://www.facebook.com/geprc)
+#$ DESCRIPTION:
+#$ DESCRIPTION:*[DISCORD SUPPORT/FEEDBACK](https://discord.gg/5J88MkGMBq) 
+#$ DESCRIPTION:
+#$ DESCRIPTION: <br>
+#$ DESCRIPTION: 
+
+#$ OPTION_GROUP BEGIN:MASTER
+
+#$ OPTION BEGIN (UNCHECKED): MASTER 主配置
+# mixer
+mixer QUADX
+mmix reset
+# beacon
+beacon RX_SET
+# feature
+feature -TELEMETRY
+# map
+map AETR1234
+set align_board_roll = 180
+set align_board_pitch = 0
+set align_board_yaw = -45
+set small_angle = 180
+set imu_process_denom = 2
+set pid_process_denom = 1
+set craft_name = Cinelog 30 V3
+set pilot_name = Cinelog 30 V3
+set debug_mode = GYRO_SCALED
+# serial
+serial 20 1 115200 57600 0 115200
+serial 0 131073 115200 57600 0 115200
+serial 1 64 115200 57600 0 115200
+serial 2 0 115200 57600 0 115200
+serial 3 0 115200 57600 0 115200
+serial 4 0 115200 57600 0 115200
+# aux
+aux 0 0 0 1700 2100 0 0
+aux 1 1 1 1700 2100 0 0
+aux 2 13 2 1700 2100 0 0
+aux 3 40 3 1700 2100 0 0
+set dshot_bidir = ON
+set motor_pwm_protocol = DSHOT600
+set motor_pwm_inversion = OFF
+set motor_poles = 12
+set motor_output_reordering = 2,3,0,1,4,5,6,7
+set yaw_motors_reversed = OFF
+set osd_displayport_device = MSP
+set vcd_video_system = HD
+serial 0 131073 115200 57600 0 115200
+set osd_link_quality_pos = 3434
+set osd_rssi_dbm_pos = 3402
+set osd_tim_2_pos = 3466
+set osd_flymode_pos = 2104
+set osd_throttle_pos = 2136
+set osd_crosshairs_pos = 312
+set osd_ah_sbar_pos = 313
+set osd_ah_pos = 185
+set osd_craft_name_pos = 2453
+set osd_debug_pos = 233
+set osd_warnings_pos = 14772
+set osd_avg_cell_voltage_pos = 2435
+set osd_up_down_reference_pos = 312
+set osd_stick_overlay_radio_mode = 2
+set osd_camera_frame_pos = 142
+set osd_stat_bitmask = 14124
+
+#$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): MASTER LED light strip LED灯条
+
+resource SERIAL_TX 5 none
+resource PINIO 2 C12
+set pinio_config = 129,1,1,1
+set pinio_box = 39,40,41,42
+
+#$ OPTION END
+
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN:Filters  滤波
+#$ OPTION BEGIN (UNCHECKED): Cinelog30V3 1404 3850KV 4S
+set gyro_hardware_lpf = NORMAL
+set gyro_lpf1_type = PT1
+set gyro_lpf1_static_hz = 375
+set gyro_lpf2_type = PT1
+set gyro_lpf2_static_hz = 750
+set gyro_notch1_hz = 104
+set gyro_notch1_cutoff = 97
+set gyro_notch2_hz = 88
+set gyro_notch2_cutoff = 81
+set gyro_calib_duration = 125
+set gyro_calib_noise_limit = 48
+set gyro_offset_yaw = 0
+set gyro_overflow_detect = ALL
+set yaw_spin_recovery = AUTO
+set yaw_spin_threshold = 1950
+set gyro_to_use = FIRST
+set dyn_notch_count = 1
+set dyn_notch_q = 600
+set dyn_notch_min_hz = 100
+set dyn_notch_max_hz = 400
+set gyro_lpf1_dyn_min_hz = 375
+set gyro_lpf1_dyn_max_hz = 750
+set gyro_lpf1_dyn_expo = 5
+set gyro_filter_debug_axis = ROLL
+set acc_hardware = AUTO
+set acc_lpf_hz = 25
+set acc_trim_pitch = 0
+set acc_trim_roll = 0
+set acc_calibration = -32,-9,-26,1
+set rpm_filter_harmonics = 3
+set rpm_filter_weights = 100,0,80
+set rpm_filter_q = 500
+set rpm_filter_min_hz = 100
+set rpm_filter_fade_range_hz = 50
+set rpm_filter_lpf_hz = 150
+#$ OPTION END
+
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN:Filters PID  RATE  
+#$ OPTION BEGIN (UNCHECKED): Cinelog30V3 1404 3850KV 4S
+profile 0
+# profile 0
+set profile_name = -
+set dterm_lpf1_dyn_min_hz = 75
+set dterm_lpf1_dyn_max_hz = 150
+set dterm_lpf1_dyn_expo = 5
+set dterm_lpf1_type = BIQUAD
+set dterm_lpf1_static_hz = 75
+set dterm_lpf2_type = PT1
+set dterm_lpf2_static_hz = 150
+set dterm_notch_hz = 0
+set dterm_notch_cutoff = 0
+set vbat_sag_compensation = 0
+set pid_at_min_throttle = ON
+set anti_gravity_gain = 100
+set anti_gravity_cutoff_hz = 5
+set anti_gravity_p_gain = 100
+set acc_limit_yaw = 0
+set acc_limit = 0
+set crash_dthreshold = 50
+set crash_gthreshold = 400
+set crash_setpoint_threshold = 350
+set crash_time = 500
+set crash_delay = 0
+set crash_recovery_angle = 10
+set crash_recovery_rate = 100
+set crash_limit_yaw = 200
+set crash_recovery = OFF
+set iterm_rotation = OFF
+set iterm_relax = RP
+set iterm_relax_type = SETPOINT
+set iterm_relax_cutoff = 15
+set iterm_windup = 85
+set iterm_limit = 400
+set pidsum_limit = 500
+set pidsum_limit_yaw = 400
+set yaw_lowpass_hz = 100
+set throttle_boost = 0
+set throttle_boost_cutoff = 15
+set acro_trainer_angle_limit = 20
+set acro_trainer_lookahead_ms = 50
+set acro_trainer_debug_axis = ROLL
+set acro_trainer_gain = 75
+set p_pitch = 77
+set i_pitch = 111
+set d_pitch = 92
+set f_pitch = 170
+set p_roll = 49
+set i_roll = 70
+set d_roll = 47
+set f_roll = 109
+set p_yaw = 95
+set i_yaw = 102
+set d_yaw = 0
+set f_yaw = 105
+set angle_p_gain = 80
+set angle_feedforward = 50
+set angle_feedforward_smoothing_ms = 80
+set angle_limit = 60
+set angle_earth_ref = 100
+set horizon_level_strength = 75
+set horizon_limit_sticks = 75
+set horizon_limit_degrees = 135
+set horizon_ignore_sticks = OFF
+set horizon_delay_ms = 500
+set abs_control_gain = 0
+set abs_control_limit = 90
+set abs_control_error_limit = 20
+set abs_control_cutoff = 11
+set use_integrated_yaw = OFF
+set integrated_yaw_relax = 200
+set d_min_roll = 42
+set d_min_pitch = 82
+set d_min_yaw = 0
+set d_max_gain = 37
+set d_max_advance = 20
+set motor_output_limit = 100
+set auto_profile_cell_count = 0
+set launch_control_mode = NORMAL
+set launch_trigger_allow_reset = ON
+set launch_trigger_throttle_percent = 20
+set launch_angle_limit = 0
+set launch_control_gain = 40
+set thrust_linear = 40
+set transient_throttle_limit = 0
+set feedforward_transition = 0
+set feedforward_averaging = OFF
+set feedforward_smooth_factor = 65
+set feedforward_jitter_factor = 10
+set feedforward_boost = 14
+set feedforward_max_rate_limit = 80
+set dyn_idle_min_rpm = 0
+set dyn_idle_p_gain = 50
+set dyn_idle_i_gain = 50
+set dyn_idle_d_gain = 50
+set dyn_idle_max_increase = 150
+set dyn_idle_start_increase = 20
+set level_race_mode = OFF
+set simplified_pids_mode = RP
+set simplified_master_multiplier = 130
+set simplified_i_gain = 80
+set simplified_d_gain = 110
+set simplified_pi_gain = 85
+set simplified_dmax_gain = 35
+set simplified_feedforward_gain = 70
+set simplified_pitch_d_gain = 170
+set simplified_pitch_pi_gain = 150
+set simplified_dterm_filter = ON
+set simplified_dterm_filter_multiplier = 100
+set tpa_mode = D
+set tpa_rate = 65
+set tpa_breakpoint = 1350
+set tpa_low_rate = 80
+set tpa_low_breakpoint = 1050
+set tpa_low_always = OFF
+set ez_landing_threshold = 25
+set ez_landing_limit = 15
+set ez_landing_speed = 50
+rateprofile 0
+# rateprofile 0
+set rateprofile_name = -
+set thr_mid = 50
+set thr_expo = 0
+set rates_type = ACTUAL
+set quickrates_rc_expo = OFF
+set roll_rc_rate = 7
+set pitch_rc_rate = 7
+set yaw_rc_rate = 7
+set roll_expo = 0
+set pitch_expo = 0
+set yaw_expo = 0
+set roll_srate = 67
+set pitch_srate = 67
+set yaw_srate = 67
+set throttle_limit_type = OFF
+set throttle_limit_percent = 100
+set roll_rate_limit = 1998
+set pitch_rate_limit = 1998
+set yaw_rate_limit = 1998
+#$ OPTION END
+
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: Choose RC Link
+
+    #$ OPTION BEGIN (UNCHECKED): Crossfire Dynamic
+        feature RX_SERIAL
+        set serialrx_provider = CRSF
+        set feedforward_averaging = OFF
+        set feedforward_smooth_factor = 15
+        set feedforward_jitter_factor = 10
+        set feedforward_boost = 10
+        set rc_smoothing_auto_factor = 45
+        set rc_smoothing_auto_factor_throttle = 45
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): DJI SBUS
+        feature RX_SERIAL
+        set serialrx_provider = SBUS
+        set feedforward_averaging = 2_POINT
+        set feedforward_smooth_factor = 40
+        set feedforward_jitter_factor = 15
+        set rc_smoothing_auto_factor = 250
+        set rc_smoothing_auto_factor_throttle = 170
+        set rc_smoothing_setpoint_cutoff = 12
+        set rc_smoothing_feedforward_cutoff = 12
+        set rc_smoothing_throttle_cutoff = 20
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): Crossfire 50Hz Locked
+        feature RX_SERIAL
+        set serialrx_provider = CRSF
+        set feedforward_averaging = OFF
+        set feedforward_smooth_factor = 0
+        set feedforward_jitter_factor = 10
+        set feedforward_boost = 5
+        set rc_smoothing_auto_factor = 45
+        set rc_smoothing_auto_factor_throttle = 45
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): Crossfire 150Hz Locked
+        feature RX_SERIAL
+        set serialrx_provider = CRSF
+        set feedforward_averaging = OFF
+        set feedforward_smooth_factor = 30
+        set feedforward_jitter_factor = 7
+        set rc_smoothing_auto_factor = 45
+        set rc_smoothing_auto_factor_throttle = 45
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): ELRS 500Hz
+
+        feature RX_SERIAL
+        set serialrx_provider = CRSF
+        set feedforward_averaging = 2_POINT
+        set feedforward_smooth_factor = 65
+        set feedforward_jitter_factor = 3
+        set feedforward_boost = 18
+        set rc_smoothing_auto_factor = 45
+        set rc_smoothing_auto_factor_throttle = 45
+    #$ OPTION END
+
+#$ OPTION_GROUP END
