@@ -6,6 +6,7 @@
 #$ AUTHOR: Grey pang
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/514
 #$ WARNING: This preset is optimized for the factory electronics of the GEPRC Cinelog30 V3. Applying it to other hardware configurations may result in incorrect motor order, output remapping, or unsafe behavior.
+#$ FORCE_OPTIONS_REVIEW: TRUE
 
 #$ PARSER: MARKED
 
