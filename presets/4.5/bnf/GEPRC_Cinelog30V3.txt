@@ -218,17 +218,6 @@
 
 #$ OPTION_GROUP BEGIN: Choose RC Link
 
-    #$ OPTION BEGIN (UNCHECKED): Crossfire Dynamic
-        feature RX_SERIAL
-        set serialrx_provider = CRSF
-        set feedforward_averaging = OFF
-        set feedforward_smooth_factor = 15
-        set feedforward_jitter_factor = 10
-        set feedforward_boost = 10
-        set rc_smoothing_auto_factor = 45
-        set rc_smoothing_auto_factor_throttle = 45
-    #$ OPTION END
-
     #$ OPTION BEGIN (UNCHECKED): DJI SBUS Normal
         feature RX_SERIAL
         set serialrx_provider = SBUS
