@@ -5,11 +5,12 @@
 #$ KEYWORDS: openracer, race, 5 Inch, 5 In, 5", JazzMutant
 #$ AUTHOR: JazzMutant
 #$ PARSER: MARKED
-#$ DESCRIPTION: This tune was specially developed by **@JazzMutant** for 6S [OpenRacer](https://github.com/OpenRacer/OpenRacer/tree/master) with 1900-2050kv motors.
+#$ DESCRIPTION: This tune was specially developed by **@JazzMutant** for 6S [OpenRacer](https://github.com/OpenRacer/OpenRacer/tree/master) with 1900-2100kv motors.
 #$ DESCRIPTION: 
 #$ DESCRIPTION: ## Important notes:
-#$ DESCRIPTION: - Be sure you're using ESC with bidirectional DShot support (BLHeli32, AM32, BlueJay)
-#$ DESCRIPTION: - Select "Clean builds" filters option only if your build is perfect and props are always not very damaged
+#$ DESCRIPTION: - Be sure you're using ESC with bidirectional DShot support (BLHeli32, AM32, BlueJay, OX32)
+#$ DESCRIPTION: - Select "Clean builds" filters option only if your build is perfect and props are always not very damaged.
+#$ DESCRIPTION: - For a typical racing quad "Normal" filters option is the best choice.
 #$ DESCRIPTION: - Test your quad after applying preset by flying slow for 30 seconds. Motors shoud stay cool or slightly warm. Quad should sound clean
 #$ DESCRIPTION: - **If anything is off, don't fly it!**
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/460
@@ -23,7 +24,7 @@
 set motor_pwm_protocol = DSHOT600
 set dshot_bidir = ON
 
-set simplified_master_multiplier = 95
+set simplified_master_multiplier = 85
 set simplified_i_gain = 90
 set simplified_d_gain = 100
 set simplified_pi_gain = 115
@@ -32,6 +33,7 @@ set simplified_feedforward_gain = 100
 set simplified_pitch_d_gain = 85
 set simplified_pitch_pi_gain = 85
 set simplified_gyro_filter = ON
+set thrust_linear = 20
 
 set gyro_lpf2_static_hz = 0
 
@@ -44,8 +46,8 @@ set tpa_breakpoint = 1650
 #$ OPTION END
 
 #$ OPTION_GROUP BEGIN: Tuning Options
-    #$ OPTION BEGIN (CHECKED): Set Dynamic Idle to 30
-        set dyn_idle_min_rpm = 30
+    #$ OPTION BEGIN (CHECKED): Set Dynamic Idle to 35
+        set dyn_idle_min_rpm = 35
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): Disable Throttle Boost
