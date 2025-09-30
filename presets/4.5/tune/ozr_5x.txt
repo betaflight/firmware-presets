@@ -4,6 +4,7 @@
 #$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: ozr, dindrones, 6s, 5 inch, 5", racing, 5in, din
 #$ AUTHOR: Benjamin Freelove
+#$ FORCE_OPTIONS_REVIEW: TRUE
 
 #$ PARSER: MARKED
 
@@ -11,7 +12,7 @@
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION: This 6S racing tune is based on Karate Race 6s 5" (non spicy) by sugarK with very minor changes.
 #$ DESCRIPTION: <br>
-#$ DESCRIPTION: Tested on DinDrones OZR-5X frame with Foxeer F722 v4 MPU6000 flight controller and default ESC settings.
+#$ DESCRIPTION: Tested on DinDrones OZR-5X frame with MPU6000 and ICM42688 flight controllers, and default ESC settings.
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION:
 #$ DESCRIPTION: ## Things to note:
@@ -43,6 +44,16 @@ set dyn_notch_max_hz = 650
 # -- Dterm filtering --
 set dterm_lpf1_dyn_expo = 7
 
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Gyro type
+    #$ OPTION BEGIN (CHECKED): MPU6000
+        # empty on purpose, only ICM needs corrections
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): ICM42688
+        set gyro_lpf2_static_hz = 0
+        set simplified_dterm_filter_multiplier = 110
+    #$ OPTION END
+#$ OPTION_GROUP END
+
 # -- RPM filtering --
 set dshot_bidir = ON
 set rpm_filter_weights = 100,50,100
@@ -67,6 +78,7 @@ set simplified_pi_gain = 85
 set simplified_dmax_gain = 200
 set simplified_feedforward_gain = 105
 set simplified_pitch_pi_gain = 105
+
 simplified_tuning apply
 
 # -- Feedforward --
