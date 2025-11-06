@@ -13,7 +13,7 @@
 #$ DESCRIPTION: 
 #$ DESCRIPTION: Information:
 #$ DESCRIPTION: -----------
-#$ DESCRIPTION: Geneeral analog OSD Setup. Layout was based on **NTSC** so if you need use the **PAL** format you may need to adjust element locations.
+#$ DESCRIPTION: General analog OSD Setup. Layout was based on **NTSC** so if you need use the **PAL** format you may need to adjust element locations.
 #$ DESCRIPTION: 
 #$ DESCRIPTION: OSD Elements Include:
 #$ DESCRIPTION: -----------
