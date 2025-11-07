@@ -1,0 +1,42 @@
+#$ TITLE: sugarK HDzero OSD
+#$ FIRMWARE_VERSION: 2025.12
+#$ CATEGORY: OSD
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: hdzero, HD, HDOSD, OSD, sugarK, racing
+#$ AUTHOR: sugarK 
+
+#$ DESCRIPTION: sugarKs HD OSD race settings
+#$ DESCRIPTION: Intended to be used with the HDzero race cameras using 4.3 aspect ratio.
+#$ DESCRIPTION: -----------
+#$ DESCRIPTION: For use with HDzero race vtx/cam combos and the HDzero goggles
+#$ DESCRIPTION:
+#$ DESCRIPTION: Information
+#$ DESCRIPTION: -----------
+#$ DESCRIPTION: 
+#$ DESCRIPTION: You will also need to select "VTX (MSP + Displayport)" on the appropriate port in the ports tab.
+#$ DESCRIPTION: And yes there is an HDzero MSP-OSD preset already
+
+#$ DESCRIPTION: Preview:
+#$ DESCRIPTION: -----------
+#$ DESCRIPTION: <img src="https://github.com/betaflight/firmware-presets/assets/83344205/039e4153-b056-4244-91e1-2b06501326d4" style="width:100%"/>
+#$ DESCRIPTION: 
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/477
+
+#$ INCLUDE: presets/2025.12/osd/defaults.txt
+
+set osd_warn_bitmask = 24319
+set osd_tim1 = 784
+set osd_tim2 = 785
+set osd_link_quality_pos = 3628
+set osd_tim_2_pos = 2592
+set osd_throttle_pos = 3404
+set osd_current_pos = 3595
+set osd_craft_name_pos = 459
+set osd_pilot_name_pos = 2614
+set osd_altitude_pos = 352
+set osd_warnings_pos = 14707
+set osd_avg_cell_voltage_pos = 3436
+set osd_esc_tmp_pos = 472
+set osd_rate_profile_name_pos = 1035
+set osd_pid_profile_name_pos = 2048
+set osd_stat_bitmask = 1879787044
