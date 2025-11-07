@@ -7,7 +7,7 @@
 
 #$ PARSER: MARKED
 
-#$ DESCRIPTION: I am a Betaflight contributor, Youtube content creator, and professional tuner [www.theuavtech.com](https://www.theuavtech.com)
+#$ DESCRIPTION: I am a Betaflight contributor, YouTube content creator, and professional tuner [www.theuavtech.com](https://www.theuavtech.com)
 #$ DESCRIPTION: 
 #$ DESCRIPTION: <img src="https://i0.wp.com/theuavtech.com/wp-content/uploads/2020/10/icon-150x150-1.png" width="125px" style="margin-left: auto; margin-right: auto; display: block;"/>
 #$ DESCRIPTION: 
