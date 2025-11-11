@@ -352,6 +352,17 @@ profile 0
         serial 5 64 115200 57600 0 115200
     #$ OPTION END
 
+    #$ OPTION BEGIN (UNCHECKED): Pilotix 3W
+        manufacturer_id SJET
+        mcu_id 002d00363233511436313533
+        signature
+        board_name AOCODARCF405V3
+        set acc_calibration = -24,23,20,1
+
+        # Ports (UARTS)
+	serial 3 2048 115200 57600 0 115200
+    #$ OPTION END
+
     #$ OPTION BEGIN (UNCHECKED): Moonshine HGLRCF405 V2 (Experimental)
         board_name HGLRCF405V2
         manufacturer_id HGLRC
