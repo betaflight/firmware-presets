@@ -233,8 +233,8 @@ profile 0
 
     #$ OPTION BEGIN (UNCHECKED): Pilotix R2500 SE 5.8G 2.5W
         # IRC Tramp Control Port
-        serial 0 8192 115200 57600 0 115200
-        serial 2 8192 115200 57600 0 115200 # moonshine fc related vtx serial port
+        #serial 0 8192 115200 57600 0 115200
+        #serial 2 8192 115200 57600 0 115200 # moonshine fc related vtx serial port
 
         vtxtable bands 6
         vtxtable channels 8
