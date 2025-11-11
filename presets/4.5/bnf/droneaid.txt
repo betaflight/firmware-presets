@@ -360,7 +360,7 @@ profile 0
         set acc_calibration = -24,23,20,1
 
         # Ports (UARTS)
-	serial 3 2048 115200 57600 0 115200
+        serial 3 2048 115200 57600 0 115200
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): Moonshine HGLRCF405 V2 (Experimental)
