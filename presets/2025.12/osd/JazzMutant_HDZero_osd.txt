@@ -1,0 +1,34 @@
+#$ TITLE: JazzMutant HDZero OSD
+#$ FIRMWARE_VERSION: 2025.12
+#$ CATEGORY: OSD
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: HDZERO, HD, HDOSD, OSD, JazzMutant, Racing
+#$ AUTHOR: JazzMutant
+#$ PARSER: MARKED
+
+#$ DESCRIPTION: <h1>JazzMutant HDZero OSD</h1>
+#$ DESCRIPTION: <br>
+#$ DESCRIPTION: This preset is intended to be used with 4/3 aspect ratio cameras.
+#$ DESCRIPTION: <br>
+#$ DESCRIPTION: You will also need to select "VTX (MSP + Displayport)" on the appropriate port in the Ports tab.
+#$ DESCRIPTION: 
+#$ DESCRIPTION: <h2>Preview:</h2>
+#$ DESCRIPTION: <img src="https://raw.githubusercontent.com/Jaz7Mutant/firmware-presets/refs/heads/images/misc/images/jazzmutant_osd_preset.jpeg" style="width:100%"/>
+#$ DESCRIPTION: 
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/515
+
+#$ INCLUDE: presets/2025.12/osd/defaults.txt
+
+set osd_warn_bitmask = 270333
+set osd_link_quality_pos = 2615
+set osd_tim_2_pos = 3623
+set osd_flymode_pos = 3076
+set osd_throttle_pos = 3081
+set osd_vtx_channel_pos = 2054
+set osd_current_pos = 2598
+set osd_pilot_name_pos = 2068
+set osd_warnings_pos = 14805
+set osd_avg_cell_voltage_pos = 2583
+set osd_flip_arrow_pos = 2489
+set osd_rate_profile_name_pos = 2606
+set osd_stat_bitmask = 1882194596
