@@ -67,6 +67,6 @@ feature -GPS
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): disable Mag?
-set gps_rescue_use_mag = OFF
+    set gps_rescue_use_mag = OFF
 #$ OPTION END
 
