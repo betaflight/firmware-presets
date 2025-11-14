@@ -59,7 +59,7 @@ set gps_rescue_imu_yaw_gain = 10
 feature -GPS
 
 #$ OPTION BEGIN (UNCHECKED): enable GPS?
-feature GPS
+    feature GPS
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): enable GPS_RESCUE?
