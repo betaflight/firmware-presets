@@ -46,7 +46,7 @@
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): Disable ACCELEROMETER data
-set blackbox_disable_acc = ON
+    set blackbox_disable_acc = ON
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): Disable DEBUG data
