@@ -14,7 +14,7 @@
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): Disable RC data
-set blackbox_disable_rc = ON
+    set blackbox_disable_rc = ON
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): Disable SETPOINT data
