@@ -50,7 +50,7 @@
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): Disable DEBUG data
-set blackbox_disable_debug = ON
+    set blackbox_disable_debug = ON
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): Disable MOTOR data
