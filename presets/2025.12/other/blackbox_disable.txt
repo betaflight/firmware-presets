@@ -30,7 +30,7 @@
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): Disable ALTIMETER data
-set blackbox_disable_alt = ON
+    set blackbox_disable_alt = ON
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): Disable ATTITUDE data
