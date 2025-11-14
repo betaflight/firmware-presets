@@ -54,7 +54,7 @@ set blackbox_disable_debug = ON
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): Disable MOTOR data
-set blackbox_disable_motors = ON
+    set blackbox_disable_motors = ON
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): Disable GPS data
