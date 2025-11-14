@@ -38,7 +38,7 @@
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): Disable RSSI data
-set blackbox_disable_rssi = ON
+    set blackbox_disable_rssi = ON
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): Disable GYRO data
