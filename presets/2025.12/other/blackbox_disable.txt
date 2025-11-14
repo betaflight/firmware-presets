@@ -42,7 +42,7 @@
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): Disable GYRO data
-set blackbox_disable_gyro = ON
+    set blackbox_disable_gyro = ON
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): Disable ACCELEROMETER data
