@@ -22,7 +22,7 @@
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): Disable BATTERY data
-set blackbox_disable_bat = ON
+    set blackbox_disable_bat = ON
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): Disable MAGNETOMETER data
