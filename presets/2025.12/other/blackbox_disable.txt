@@ -26,7 +26,7 @@
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): Disable MAGNETOMETER data
-set blackbox_disable_mag = ON
+    set blackbox_disable_mag = ON
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): Disable ALTIMETER data
