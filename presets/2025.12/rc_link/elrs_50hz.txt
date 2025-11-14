@@ -64,7 +64,7 @@ set feedforward_boost = 5
     #$ OPTION BEGIN (UNCHECKED): Single Cell values
         set report_cell_voltage = ON
     #$ OPTION END
-#   $ OPTION BEGIN (UNCHECKED): Whole pack values
+    #$ OPTION BEGIN (UNCHECKED): Whole pack values
         set report_cell_voltage = OFF
     #$ OPTION END
 #$ OPTION_GROUP END

@@ -5,7 +5,7 @@
 #$ KEYWORDS: frsky, sbus, fport, 9ms, 111hz, rc, link, smoothing
 #$ AUTHOR: ctzsnooze
 #$ DESCRIPTION: RC link settings for a 111Hz / 9ms D16 with FrSky Sbus or FPort link.
-#$ DESCRIPTION: WARNING: make ABSOLUTELY SURE that the OpenTx or EdgeTx Hardware ADC Filter is un-checked!
+#$ DESCRIPTION: WARNING: make sure that the OpenTx or EdgeTx Hardware ADC Filter is un-checked!
 #$ DESCRIPTION: Use a recent version of OpenTx / EdgeTx with good module sync.
 #$ DESCRIPTION: Note: Telemetry requires smartPort (s.Port) and does not convey RSSI (use Lua or analog RSSI).
 #$ FORCE_OPTIONS_REVIEW: TRUE
@@ -69,7 +69,7 @@ set tlm_halfduplex = ON
 
 #$ OPTION_GROUP BEGIN: (EXCLUSIVE) Voltage readings (choose one):
     #$ OPTION BEGIN (UNCHECKED): Single Cell values
-    set report_cell_voltage = ON
+        set report_cell_voltage = ON
     #$ OPTION END
     #$ OPTION BEGIN (UNCHECKED): Whole pack values
         set report_cell_voltage = OFF
@@ -89,7 +89,7 @@ set tlm_halfduplex = ON
     #$ OPTION BEGIN (UNCHECKED): Telemetry inverted (default is not inverted)
         set tlm_inverted = ON
     #$ OPTION END
-    #$ OPTION BEGIN (UNCHECKED): Full duplex telemetry (default is helf duplex)
+    #$ OPTION BEGIN (UNCHECKED): Full duplex telemetry (default is half duplex)
         set tlm_halfduplex = OFF
     #$ OPTION END
     #$ OPTION BEGIN (UNCHECKED): Bound with >8 channels (not recommended)

@@ -33,7 +33,7 @@ set feedforward_jitter_factor = 6
         set feedforward_smooth_factor = 45
         set feedforward_jitter_factor = 10
         set rc_smoothing_auto_factor = 140
-s       et rc_smoothing_setpoint_cutoff = 25
+        set rc_smoothing_setpoint_cutoff = 25
     #$ OPTION END
     #$ OPTION BEGIN (UNCHECKED): Cinematic
         set feedforward_smooth_factor = 60
