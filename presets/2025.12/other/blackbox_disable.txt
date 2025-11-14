@@ -58,7 +58,7 @@ set blackbox_disable_debug = ON
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): Disable GPS data
-set blackbox_disable_gps = ON
+    set blackbox_disable_gps = ON
 #$ OPTION END
 
 
