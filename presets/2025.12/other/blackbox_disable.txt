@@ -18,7 +18,7 @@
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): Disable SETPOINT data
-set blackbox_disable_setpoint = ON
+    set blackbox_disable_setpoint = ON
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): Disable BATTERY data
