@@ -10,7 +10,7 @@
 
 
 #$ OPTION BEGIN (UNCHECKED): Disable PID data
-set blackbox_disable_pids = ON
+    set blackbox_disable_pids = ON
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): Disable RC data
