@@ -4,7 +4,7 @@
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: defaults, reset, GPS, GPS_Rescue
 #$ AUTHOR: Betaflight
-#$ DESCRIPTION: Resets the GPS and GPS_RESCUE settings to 4.5 defaults
+#$ DESCRIPTION: Resets the GPS and GPS_RESCUE settings to 2025.12 defaults
 #$ DESCRIPTION: Optionally enable GPS and GPS_RESCUE, default is off
 #$ DESCRIPTION: Optionally disable Mag, best to disable unless validated
 
