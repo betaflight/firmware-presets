@@ -5,7 +5,7 @@
 #$ STATUS: COMMUNITY
 #$ KEYWORDS: fader fpv, secretfader, nicholas young, fictive flame
 #$ AUTHOR: Fader FPV (Nicholas Young)
-#$ DESCRIPTION: Nicholas Young is a professional FPV pilot, drone builder, and professional tuner. YouTube: [https://youtube.com/@secretfader].
+#$ DESCRIPTION: Nicholas Young is a professional FPV pilot, drone builder, and tuner. [https://youtube.com/@secretfader](https://youtube.com/@secretfader).
 #$ DESCRIPTION:
 #$ DESCRIPTION: Information:
 #$ DESCRIPTION: -----------
