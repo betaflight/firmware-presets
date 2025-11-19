@@ -9,7 +9,7 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: Information:
 #$ DESCRIPTION: -----------
-#$ DESCRIPTION: Primary rates are 490 for cinematic flying, but additional faster rates can be added with options.
+#$ DESCRIPTION: Primary settings are a max rate of 490 for cinematic flying, but additional faster max rates, with similar curves can be added with options.
 #$ DESCRIPTION: -----------
 #$ WARNING: Before applying this preset, REMEMBER to select your rateprofile to overwrite.
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/525
