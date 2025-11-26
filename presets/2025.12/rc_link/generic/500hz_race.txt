@@ -16,5 +16,6 @@ set feedforward_averaging = 2_POINT
 set feedforward_smooth_factor = 65
 set feedforward_jitter_factor = 3
 set feedforward_boost = 18
+
 set rc_smoothing_auto_factor = 25
 set rc_smoothing_auto_factor_throttle = 25
