@@ -1,51 +1,68 @@
-#$ TITLE: Fader FPV Rates
-#$ FIRMWARE_VERSION: 4.5
+#$ TITLE: Nicholas Young Rates
 #$ FIRMWARE_VERSION: 2025.12
 #$ CATEGORY: RATES
 #$ STATUS: COMMUNITY
 #$ KEYWORDS: fader fpv, secretfader, nicholas young, fictive flame
-#$ AUTHOR: Fader FPV (Nicholas Young)
-#$ DESCRIPTION: Nicholas Young is a professional FPV pilot, drone builder, and tuner. [https://youtube.com/@secretfader](https://youtube.com/@secretfader).
-#$ DESCRIPTION:
-#$ DESCRIPTION: Information:
-#$ DESCRIPTION: -----------
-#$ DESCRIPTION: Primary settings are a max rate of 490 for cinematic flying, but additional faster max rates, with similar curves can be added with options.
-#$ DESCRIPTION: -----------
+#$ AUTHOR: Nicholas Young (Fader FPV)
+#$ PARSER: MARKED
+#$ DESCRIPTION: This are the rates for the Fictive Air series of FPV drones, developed by professional FPV pilot, drone builder, and tuner, [Nicholas Young](https://secretfader.com). Default rates are a max of 730, with additional max rates of 530 and 330, both with similar curves, available as options.
 #$ WARNING: Before applying this preset, REMEMBER to select your rateprofile to overwrite.
-#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/525
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/526
 
 #$ INCLUDE: presets/2025.12/rates/defaults.txt
 
-set roll_rc_rate = 15
-set pitch_rc_rate = 15
-set yaw_rc_rate = 13
+# 730 max rate, which is suitable for most flight styles
+set rates_type = ACTUAL
+set quickrates_rc_expo = OFF
+set roll_rc_rate = 14
+set pitch_rc_rate = 14
+set yaw_rc_rate = 12
 set roll_expo = 53
 set pitch_expo = 53
 set yaw_expo = 43
-set roll_srate = 49
-set pitch_srate = 49
-set yaw_srate = 40
+set roll_srate = 73
+set pitch_srate = 73
+set yaw_srate = 64
+set throttle_limit_type = OFF
+set throttle_limit_percent = 100
+set roll_rate_limit = 1998
+set pitch_rate_limit = 1998
+set yaw_rate_limit = 1998
 
-#$ OPTION BEGIN (UNCHECKED): Actual Rates for Racing
-    set roll_rc_rate = 17
-    set pitch_rc_rate = 17
-    set yaw_rc_rate = 15
+#$ OPTION BEGIN (UNCHECKED): Actual rates, max 530
+    set rates_type = ACTUAL
+    set quickrates_rc_expo = OFF
+    set roll_rc_rate = 10
+    set pitch_rc_rate = 10
+    set yaw_rc_rate = 8
     set roll_expo = 53
     set pitch_expo = 53
     set yaw_expo = 43
-    set roll_srate = 69
-    set pitch_srate = 69
-    set yaw_srate = 60
+    set roll_srate = 53
+    set pitch_srate = 53
+    set yaw_srate = 44
+    set throttle_limit_type = OFF
+    set throttle_limit_percent = 100
+    set roll_rate_limit = 1998
+    set pitch_rate_limit = 1998
+    set yaw_rate_limit = 1998
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED): Actual Rates for Freestyle
-    set roll_rc_rate = 18
-    set pitch_rc_rate = 18
-    set yaw_rc_rate = 16
+#$ OPTION BEGIN (UNCHECKED): Actual rates, max 330
+    set rates_type = ACTUAL
+    set quickrates_rc_expo = OFF
+    set roll_rc_rate = 6
+    set pitch_rc_rate = 6
+    set yaw_rc_rate = 4
     set roll_expo = 53
     set pitch_expo = 53
     set yaw_expo = 43
-    set roll_srate = 89
-    set pitch_srate = 89
-    set yaw_srate = 80
+    set roll_srate = 33
+    set pitch_srate = 33
+    set yaw_srate = 24
+    set throttle_limit_type = OFF
+    set throttle_limit_percent = 100
+    set roll_rate_limit = 1998
+    set pitch_rate_limit = 1998
+    set yaw_rate_limit = 1998
 #$ OPTION END
