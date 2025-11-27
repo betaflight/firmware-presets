@@ -65,7 +65,7 @@ set feedforward_jitter_factor = 5
         set pitch_expo = 0
         set yaw_expo = 0
         set roll_srate = 50
-        et pitch_srate = 50
+        set pitch_srate = 50
         set yaw_srate = 50
     #$ OPTION END
 #$ OPTION_GROUP END

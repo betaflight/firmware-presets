@@ -25,7 +25,7 @@ set feedforward_jitter_factor = 8
     #$ OPTION END
     #$ OPTION BEGIN (UNCHECKED): HD Freestyle
         set feedforward_jitter_factor = 12
-    set rc_smoothing_setpoint_cutoff = 25
+        set rc_smoothing_setpoint_cutoff = 25
     #$ OPTION END
     #$ OPTION BEGIN (UNCHECKED): Cinematic
         set feedforward_jitter_factor = 12
