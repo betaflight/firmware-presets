@@ -3,7 +3,7 @@
 set -e
 
 basepath="${PWD}"
-artifacts="${basepath}/public"
+artifacts="${basepath}/public/firmware-presets"
 
 echo "Artifacts: ${artifacts}"
 echo "Branch:    ${GITHUB_REF}"
@@ -32,9 +32,4 @@ if [ "${1}" == "deploy" ]; then
   if [ -d ./misc ]; then
     cp -r ./misc/* $artifacts/misc
   fi
-
-  echo "Deploying to AWS S3: ${AWS_REGION}/${AWS_BUCKET}"
-  aws configure set preview.cloudfront true
-  aws s3 sync ${artifacts} s3://${AWS_BUCKET}/firmware-presets --delete --region "${AWS_REGION}" --cache-control max-age=345600
-  aws cloudfront create-invalidation --distribution-id ${AWS_DISTRIBUTION_ID} --path "/firmware-presets/*"
 fi
