@@ -38,6 +38,7 @@ jobs:
       with:
         name: dist-files
         path: public
+        retention-days: 7
 
   deploy:
     needs: build
