@@ -1,4 +1,4 @@
-name: CI - Indexer job (deploy if default branch - i.e. main)
+name: CI - Indexer job (deploy if master branch)
 
 on: [push, pull_request]
 
