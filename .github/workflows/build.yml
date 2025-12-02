@@ -1,10 +1,9 @@
-name: CI - Indexer job (deploy if default branch - i.e. main)
+name: CI - Indexer job (deploy if master branch)
 
 on: [push, pull_request]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     strategy:
@@ -25,10 +24,36 @@ jobs:
     - if: github.ref == 'refs/heads/master' && github.repository_owner == 'betaflight' 
       name: Run the checker, indexer and deployment script
       run: ./scripts/build.sh deploy
-      env:
-        AWS_DISTRIBUTION_ID: ${{secrets.AWS_DISTRIBUTION_ID}}
-        AWS_BUCKET: api.betaflight.com
-        AWS_REGION: us-east-1
-        AWS_DEFAULT_REGION: us-east-1
-        AWS_ACCESS_KEY_ID: ${{secrets.AWS_ACCESS_KEY_ID}}
-        AWS_SECRET_ACCESS_KEY: ${{secrets.AWS_SECRET_ACCESS_KEY}}
+
+    - if: github.ref == 'refs/heads/master' && github.repository_owner == 'betaflight' 
+      name: Upload build artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: dist-files
+        path: public
+        retention-days: 7
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/master' && github.repository_owner == 'betaflight' 
+    
+    steps:
+    - name: Download build artifact
+      uses: actions/download-artifact@v5
+      with:
+        name: dist-files
+        path: public
+          
+    - name: Set alias branch name for Cloudflare (if a push)
+      id: branch_push
+      run: |
+        echo "BRANCH=${{ github.ref_name }}" >> $GITHUB_ENV
+
+    - name: Deploy to Cloudflare
+      id: deploy
+      uses: cloudflare/wrangler-action@v3
+      with:
+        apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        command: pages deploy public --project-name=${{ vars.CLOUDFLARE_PROJECT_NAME }} --branch=${{ env.BRANCH }} --commit-dirty=true
