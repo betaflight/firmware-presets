@@ -1,0 +1,22 @@
+#$ TITLE: Generic 1000z Race
+#$ FIRMWARE_VERSION: 2025.12
+#$ CATEGORY: RC_LINK
+#$ STATUS: OFFICIAL
+#$ KEYWORDS: 1000Hz, 1ms, rc, rx, link, smoothing, ELRS
+#$ AUTHOR: Sugar K
+#$ DESCRIPTION: Generic RC link settings for racing with 1000Hz RC link. Best used with 2025.12.
+#$ DESCRIPTION: WARNING: make sure that the OpenTx or EdgeTx Hardware ADC Filter is un-checked!
+#$ DESCRIPTION: WARNING: check that you are using a compatible version of EdgeTx or OpenTx!
+
+#$ PRIORITY: 0
+
+#$ INCLUDE: presets/2025.12/rc_link/defaults.txt
+
+set feedforward_averaging = 2_POINT
+set feedforward_jitter_factor = 2
+set feedforward_boost = 18
+
+set rc_smoothing_auto_factor = 25
+set rc_smoothing_auto_factor_throttle = 25
+
+set osd_rssi_dbm_alarm = -90
