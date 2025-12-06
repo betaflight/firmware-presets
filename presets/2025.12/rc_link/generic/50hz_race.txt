@@ -13,7 +13,6 @@
 #$ INCLUDE: presets/2025.12/rc_link/defaults.txt
 
 set feedforward_averaging = OFF
-set feedforward_smooth_factor = 0
 set feedforward_jitter_factor = 7
 set feedforward_boost = 5
 

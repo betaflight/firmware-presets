@@ -18,7 +18,6 @@ set serialrx_provider = CRSF
 
 # 150hz default settings in case no tuning option is selected
 set feedforward_averaging = OFF
-set feedforward_smooth_factor = 30
 set feedforward_jitter_factor = 7
 
 #$ OPTION_GROUP BEGIN: (EXCLUSIVE) Flight Style

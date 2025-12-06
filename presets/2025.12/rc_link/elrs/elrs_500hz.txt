@@ -18,7 +18,6 @@ feature RX_SERIAL
 set serialrx_provider = CRSF
 
 set feedforward_averaging = 2_POINT
-set feedforward_smooth_factor = 65
 set feedforward_jitter_factor = 5
 
 #$ OPTION_GROUP BEGIN: (EXCLUSIVE) Flight Style

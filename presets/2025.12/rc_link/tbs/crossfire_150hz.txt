@@ -30,7 +30,6 @@ set serialrx_provider = CRSF
 
 # 150hz default settings in case option is not selected by the user
 set feedforward_averaging = OFF
-set feedforward_smooth_factor = 30
 set feedforward_jitter_factor = 7
 
 #$ OPTION BEGIN (UNCHECKED): Racing

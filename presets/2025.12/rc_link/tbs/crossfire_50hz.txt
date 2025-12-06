@@ -30,7 +30,6 @@ set serialrx_provider = CRSF
 
 # 50hz default settings in case option is not selected by the user
 set feedforward_averaging = OFF
-set feedforward_smooth_factor = 0
 set feedforward_jitter_factor = 12
 set feedforward_boost = 5
 

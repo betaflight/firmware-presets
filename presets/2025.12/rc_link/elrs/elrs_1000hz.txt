@@ -17,6 +17,9 @@
 feature RX_SERIAL
 set serialrx_provider = CRSF
 
+set feedforward_averaging = 2_POINT
+set feedforward_jitter_factor = 5
+
 #$ OPTION_GROUP BEGIN: (EXCLUSIVE) Flight Style
     #$ OPTION BEGIN (CHECKED): Racing
         #$ INCLUDE: presets/2025.12/rc_link/generic/1000hz_race.txt

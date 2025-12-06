@@ -15,7 +15,6 @@
 #$ INCLUDE: presets/2025.12/rc_link/defaults.txt
 
 set feedforward_averaging = 2_POINT
-set feedforward_smooth_factor = 65
 set feedforward_jitter_factor = 5
 
 #$ OPTION_GROUP BEGIN: Fine-tuning...
@@ -30,14 +29,12 @@ set feedforward_jitter_factor = 5
         set rc_smoothing_auto_factor = 150
     #$ OPTION END
     #$ OPTION BEGIN (UNCHECKED): HD Freestyle
-        set feedforward_smooth_factor = 70
         set feedforward_jitter_factor = 9
         set rc_smoothing_auto_factor = 250
         set rc_smoothing_setpoint_cutoff = 25
     #$ OPTION END
     #$ OPTION BEGIN (UNCHECKED): Cinematic
         set feedforward_averaging = 3_POINT
-        set feedforward_smooth_factor = 70
         set feedforward_jitter_factor = 11
         set rc_smoothing_auto_factor = 250
         set rc_smoothing_auto_factor_throttle = 250
@@ -46,7 +43,6 @@ set feedforward_jitter_factor = 5
     #$ OPTION END
     #$ OPTION BEGIN (UNCHECKED): Ultra Cinematic
         set feedforward_averaging = 3_POINT
-        set feedforward_smooth_factor = 75
         set feedforward_jitter_factor = 13
         set rc_smoothing_auto_factor = 250
         set rc_smoothing_auto_factor_throttle = 250
