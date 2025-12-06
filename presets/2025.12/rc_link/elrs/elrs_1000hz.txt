@@ -5,7 +5,7 @@
 #$ KEYWORDS: ELRS, express, 1000Hz, rc, rx, link, smoothing, 
 #$ AUTHOR: ctzsnooze, SupaflyFPV
 #$ DESCRIPTION: RC link settings for a 1000Hz ELRS link via CRSF.
-#$ DESCRIPTION: WARNING: make ABSOLUTELY SURE that the OpenTx or EdgeTx Hardware ADC Filter is un-checked!
+#$ DESCRIPTION: WARNING: make sure that the OpenTx or EdgeTx Hardware ADC Filter is un-checked!
 #$ DESCRIPTION: WARNING: Use a compatible version of EdgeTx or OpenTx!
 #$ DESCRIPTION: WARNING: Cinematic settings are very smooth - there is noticeable delay in stick response
 #$ DESCRIPTION: If a log shows excessive noise in your feedforward trace, most likely there is a Tx firmware issue.

@@ -5,7 +5,7 @@
 #$ KEYWORDS: ELRS, express, 50Hz, 20ms, rc, rx, link, smoothing
 #$ AUTHOR: ctzsnooze, SupaflyFPV
 #$ DESCRIPTION: RC link settings for a 50Hz ELRS link via CRSF.
-#$ DESCRIPTION: WARNING: make ABSOLUTELY SURE that the OpenTx or EdgeTx Hardware ADC Filter is un-checked!
+#$ DESCRIPTION: WARNING: make sure that the OpenTx or EdgeTx Hardware ADC Filter is un-checked!
 #$ DESCRIPTION: WARNING: check that you are using a compatible version of EdgeTx or OpenTx!
 #$ DESCRIPTION: WARNING: Cinematic settings are very smooth - there is noticeable delay in stick response
 
