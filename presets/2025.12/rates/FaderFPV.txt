@@ -5,7 +5,7 @@
 #$ KEYWORDS: fader fpv, secretfader, nicholas young, fictive flame
 #$ AUTHOR: Nicholas Young (Fader FPV)
 #$ PARSER: MARKED
-#$ DESCRIPTION: This are the rates for the Fictive Air series of FPV drones, developed by professional FPV pilot, drone builder, and tuner, [Nicholas Young](https://secretfader.com). Default rates are a max of 720, with additional max rates of 540, with a similar response curve, available as an option.
+#$ DESCRIPTION: This are the rates for the [Fictive Air series](https://secretfader.com/aircraft) of cinematic FPV drones, developed by professional FPV pilot, drone builder, and tuner, [Nicholas Young](https://secretfader.com). Default rates are a max of 720, with additional max rates of 540, with a similar response curve, available as an option.
 #$ WARNING: Before applying this preset, REMEMBER to select your rateprofile to overwrite.
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/526
 
