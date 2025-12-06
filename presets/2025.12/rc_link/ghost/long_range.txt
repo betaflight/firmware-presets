@@ -2,7 +2,7 @@
 #$ FIRMWARE_VERSION: 2025.12
 #$ CATEGORY: RC_LINK
 #$ STATUS: OFFICIAL
-#$ KEYWORDS: 15Hz, Long Range, ghost, rc, rx , link, ghost, IRC, GHST, immersionRC, immersion
+#$ KEYWORDS: 15Hz, Long Range, ghost, rc, rx, link, ghost, IRC, GHST, immersionRC, immersion
 #$ AUTHOR: Ivan Efimov (Limon)
 
 #$ DESCRIPTION:
