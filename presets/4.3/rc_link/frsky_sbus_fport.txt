@@ -7,7 +7,7 @@
 #$ KEYWORDS: frsky, sbus, fport, 9ms, 111hz, rc, link, smoothing
 #$ AUTHOR: ctzsnooze
 #$ DESCRIPTION: RC link settings for a 111Hz / 9ms D16 with FrSky Sbus or FPort link.
-#$ DESCRIPTION: WARNING: make sure that the OpenTx or EdgeTx Hardware ADC Filter is un-checked!
+#$ DESCRIPTION: WARNING: make ABSOLUTELY SURE that the OpenTx or EdgeTx Hardware ADC Filter is un-checked!
 #$ DESCRIPTION: Use a recent version of OpenTx / EdgeTx with good module sync.
 #$ DESCRIPTION: Note: Telemetry requires smartPort (s.Port) and does not convey RSSI (use Lua or analog RSSI).
 #$ FORCE_OPTIONS_REVIEW: TRUE
@@ -71,8 +71,8 @@ set rc_smoothing_feedforward_cutoff = 25
 #$ OPTION BEGIN (UNCHECKED): Cinematic
 set feedforward_smooth_factor = 45
 set feedforward_jitter_factor = 14
-set rc_smoothing_auto_factor = 130
-set rc_smoothing_auto_factor_throttle = 70
+set rc_smoothing_auto_factor = 130  
+set rc_smoothing_auto_factor_throttle = 70  
 set rc_smoothing_setpoint_cutoff = 12
 set rc_smoothing_feedforward_cutoff = 12
 set rc_smoothing_throttle_cutoff = 20

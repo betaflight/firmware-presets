@@ -14,20 +14,20 @@
 #$ DESCRIPTION: Basic RC link settings for DJI link via. "SBUS FAST".
 #$ DESCRIPTION: See the Settings -> Device -> Protocol in your DJI goggles for which TX link speed you have selected.
 #$ DESCRIPTION: This preset is for any Air Unit (full size (DJI) or Lite (CADXX Vista))
-#$ DESCRIPTION:
+#$ DESCRIPTION: 
 #$ DESCRIPTION: Preset Adjusts:
 #$ DESCRIPTION: -----------
 #$ DESCRIPTION: - Feedforward Jitter Factor
 #$ DESCRIPTION: - Feedforward Smoothing Factor
 #$ DESCRIPTION: - Feedforward Averaging
 #$ DESCRIPTION: - RC Smoothing Factors
-#$ DESCRIPTION:
+#$ DESCRIPTION: 
 #$ DESCRIPTION: Options:
 #$ DESCRIPTION: -----------
 #$ DESCRIPTION: - Racing
 #$ DESCRIPTION: - HD Freestyle
 #$ DESCRIPTION: - Cinematic
-#$ DESCRIPTION:
+#$ DESCRIPTION: 
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/200
 #$ FORCE_OPTIONS_REVIEW: TRUE
 

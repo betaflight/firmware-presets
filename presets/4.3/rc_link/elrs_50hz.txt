@@ -7,7 +7,7 @@
 #$ KEYWORDS: ELRS, express, 50Hz, 20ms, rc, rx, link, smoothing
 #$ AUTHOR: ctzsnooze
 #$ DESCRIPTION: RC link settings for a 50Hz ELRS link via CRSF.
-#$ DESCRIPTION: WARNING: make sure that the OpenTx or EdgeTx Hardware ADC Filter is un-checked!
+#$ DESCRIPTION: WARNING: make ABSOLUTELY SURE that the OpenTx or EdgeTx Hardware ADC Filter is un-checked!
 #$ DESCRIPTION: WARNING: check that you are using a compatible version of EdgeTx or OpenTx!
 #$ DESCRIPTION: WARNING: Cinematic settings are very smooth - there is noticeable delay in stick response
 
@@ -46,7 +46,7 @@ set rc_smoothing_feedforward_cutoff = 25
 #$ OPTION BEGIN (UNCHECKED): Cinematic
 set feedforward_smooth_factor = 20
 set feedforward_jitter_factor = 15
-set rc_smoothing_auto_factor = 35
+set rc_smoothing_auto_factor = 35   
 set rc_smoothing_auto_factor_throttle = 28
 set rc_smoothing_setpoint_cutoff = 12
 set rc_smoothing_feedforward_cutoff = 12
