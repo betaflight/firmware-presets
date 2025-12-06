@@ -8,7 +8,7 @@
 #$ AUTHOR: Jakub Espandr (FlyCamCzech)
 #$ DESCRIPTION: RC link settings for a 150 Hz (6.67 ms PWM) Frsky R9 FLEX ACCESS.
 
-#$ DESCRIPTION: WARNING: Make ABSOLUTELY SURE that the Hardware ADC Filter is unchecked in OpenTx/EdgeTx!
+#$ DESCRIPTION: WARNING: Make sure that the Hardware ADC Filter is unchecked in OpenTx/EdgeTx!
 #$ DESCRIPTION: WARNING: Check that you have selected 6.67 ms PWM mode in the model settings in the receiver tab (under Modules and Preferences)!
 #$ DESCRIPTION: WARNING: All cinematic settings are very smooth, resulting in a noticeable delay in stick response.
 #$ DESCRIPTION: WARNING: Frsky R9 module does not have a consistent packet rate, so 4-point FF averaging is required!
@@ -58,7 +58,7 @@
 
 #$ INCLUDE: presets/4.3/rc_link/defaults.txt
 
-# Basic requirements for FrSky R9 FPORT receiver 
+# Basic requirements for FrSky R9 FPORT receiver
 set serialrx_provider = FPORT
 set serialrx_halfduplex = ON
 set feedforward_averaging = 4_POINT

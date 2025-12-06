@@ -14,20 +14,20 @@
 #$ DESCRIPTION: Basic RC link settings for DJI link via. "NORMAL" SBUS.
 #$ DESCRIPTION: See the Settings -> Device -> Protocol in your DJI goggles for which TX link speed you have selected.
 #$ DESCRIPTION: This preset is for any Air Unit (full size (DJI) or Lite (CADXX Vista))
-#$ DESCRIPTION: 
+#$ DESCRIPTION:
 #$ DESCRIPTION: Preset Adjusts:
 #$ DESCRIPTION: -----------
 #$ DESCRIPTION: - Feedforward Jitter Factor
 #$ DESCRIPTION: - Feedforward Smoothing Factor
 #$ DESCRIPTION: - Feedforward Averaging
 #$ DESCRIPTION: - RC Smoothing Factors
-#$ DESCRIPTION: 
+#$ DESCRIPTION:
 #$ DESCRIPTION: Options:
 #$ DESCRIPTION: -----------
 #$ DESCRIPTION: - Racing
 #$ DESCRIPTION: - HD Freestyle
 #$ DESCRIPTION: - Cinematic
-#$ DESCRIPTION: 
+#$ DESCRIPTION:
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/179
 #$ FORCE_OPTIONS_REVIEW: TRUE
 
@@ -66,7 +66,7 @@ set rc_smoothing_feedforward_cutoff = 25
 set feedforward_averaging = 2_POINT
 set feedforward_smooth_factor = 40
 set feedforward_jitter_factor = 15
-set rc_smoothing_auto_factor = 250  
+set rc_smoothing_auto_factor = 250
 set rc_smoothing_auto_factor_throttle = 170
 set rc_smoothing_setpoint_cutoff = 12
 set rc_smoothing_feedforward_cutoff = 12
