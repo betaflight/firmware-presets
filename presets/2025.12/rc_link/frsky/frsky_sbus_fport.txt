@@ -37,7 +37,7 @@ set tlm_halfduplex = ON
     #$ OPTION BEGIN (UNCHECKED): Race
         set feedforward_jitter_factor = 6
         set rc_smoothing_auto_factor = 25
-        set rc_smoothing_auto_factor_throttle =20
+        set rc_smoothing_auto_factor_throttle = 20
     #$ OPTION END
     #$ OPTION BEGIN (UNCHECKED): Freestyle
         set feedforward_jitter_factor = 8
