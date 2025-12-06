@@ -12,20 +12,20 @@
 #$ DESCRIPTION: Basic RC link settings for DJI link via. "NORMAL" SBUS.
 #$ DESCRIPTION: See the Settings -> Device -> Protocol in your DJI goggles for which TX link speed you have selected.
 #$ DESCRIPTION: This preset is for any Air Unit (full size (DJI) or Lite (CADXX Vista))
-#$ DESCRIPTION: 
+#$ DESCRIPTION:
 #$ DESCRIPTION: Preset Adjusts:
 #$ DESCRIPTION: -----------
 #$ DESCRIPTION: - Feedforward Jitter Factor
 #$ DESCRIPTION: - Feedforward Smoothing Factor
 #$ DESCRIPTION: - Feedforward Averaging
 #$ DESCRIPTION: - RC Smoothing Factors
-#$ DESCRIPTION: 
+#$ DESCRIPTION:
 #$ DESCRIPTION: Options:
 #$ DESCRIPTION: -----------
 #$ DESCRIPTION: - Racing
 #$ DESCRIPTION: - HD Freestyle
 #$ DESCRIPTION: - Cinematic
-#$ DESCRIPTION: 
+#$ DESCRIPTION:
 #$ FORCE_OPTIONS_REVIEW: TRUE
 
 #$ INCLUDE: presets/2025.12/rc_link/defaults.txt
@@ -59,23 +59,23 @@ set feedforward_jitter_factor = 7
     set rc_smoothing_throttle_cutoff = 20
 #$ OPTION END
 
-#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Select Receiver UART 
-    #$ OPTION BEGIN (UNCHECKED): UART 1 
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Select Receiver UART
+    #$ OPTION BEGIN (UNCHECKED): UART 1
         serial UART1 64 115200 57600 0 115200
     #$ OPTION END
-    #$ OPTION BEGIN (UNCHECKED): UART 2 
+    #$ OPTION BEGIN (UNCHECKED): UART 2
         serial UART2 64 115200 57600 0 115200
     #$ OPTION END
-    #$ OPTION BEGIN (UNCHECKED): UART 3 
+    #$ OPTION BEGIN (UNCHECKED): UART 3
         serial UART3 64 115200 57600 0 115200
     #$ OPTION END
     #$ OPTION BEGIN (UNCHECKED): UART 4
         serial UART4 64 115200 57600 0 115200
     #$ OPTION END
-    #$ OPTION BEGIN (UNCHECKED): UART 5 
+    #$ OPTION BEGIN (UNCHECKED): UART 5
         serial UART5 64 115200 57600 0 115200
     #$ OPTION END
-    #$ OPTION BEGIN (UNCHECKED): UART 6 
+    #$ OPTION BEGIN (UNCHECKED): UART 6
         serial UART6 64 115200 57600 0 115200
     #$ OPTION END
     #$ OPTION BEGIN (UNCHECKED): UART 7

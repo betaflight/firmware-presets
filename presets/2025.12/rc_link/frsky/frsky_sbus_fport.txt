@@ -25,7 +25,7 @@ set tlm_halfduplex = ON
 #$ OPTION_GROUP BEGIN: (EXCLUSIVE) Sbus or FPort (choose only one)
     #$ OPTION BEGIN (UNCHECKED): Sbus
         set serialrx_provider = SBUS
-    #$ OPTION END   
+    #$ OPTION END
     #$ OPTION BEGIN (UNCHECKED): FPort
         set serialrx_provider = FPORT
         set serialrx_inverted = ON
@@ -50,7 +50,7 @@ set tlm_halfduplex = ON
         set rc_smoothing_throttle_cutoff = 20
     #$ OPTION END
     #$ OPTION BEGIN (UNCHECKED): Cinematic
-        set feedforward_jitter_factor = 14 
+        set feedforward_jitter_factor = 14
         set rc_smoothing_setpoint_cutoff = 12
         set rc_smoothing_throttle_cutoff = 20
     #$ OPTION END
@@ -82,23 +82,23 @@ set tlm_halfduplex = ON
     #$ OPTION END
 #$ OPTION_GROUP END
 
-#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Select Receiver UART 
-    #$ OPTION BEGIN (UNCHECKED): UART 1 
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Select Receiver UART
+    #$ OPTION BEGIN (UNCHECKED): UART 1
         serial UART1 64 115200 57600 0 115200
     #$ OPTION END
-    #$ OPTION BEGIN (UNCHECKED): UART 2 
+    #$ OPTION BEGIN (UNCHECKED): UART 2
         serial UART2 64 115200 57600 0 115200
     #$ OPTION END
-    #$ OPTION BEGIN (UNCHECKED): UART 3 
+    #$ OPTION BEGIN (UNCHECKED): UART 3
         serial UART3 64 115200 57600 0 115200
     #$ OPTION END
     #$ OPTION BEGIN (UNCHECKED): UART 4
         serial UART4 64 115200 57600 0 115200
     #$ OPTION END
-    #$ OPTION BEGIN (UNCHECKED): UART 5 
+    #$ OPTION BEGIN (UNCHECKED): UART 5
         serial UART5 64 115200 57600 0 115200
     #$ OPTION END
-    #$ OPTION BEGIN (UNCHECKED): UART 6 
+    #$ OPTION BEGIN (UNCHECKED): UART 6
         serial UART6 64 115200 57600 0 115200
     #$ OPTION END
     #$ OPTION BEGIN (UNCHECKED): UART 7

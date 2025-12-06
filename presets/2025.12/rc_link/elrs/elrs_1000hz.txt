@@ -2,7 +2,7 @@
 #$ FIRMWARE_VERSION: 2025.12
 #$ CATEGORY: RC_LINK
 #$ STATUS: OFFICIAL
-#$ KEYWORDS: ELRS, express, 1000Hz, rc, rx, link, smoothing, 
+#$ KEYWORDS: ELRS, express, 1000Hz, rc, rx, link, smoothing,
 #$ AUTHOR: ctzsnooze, SupaflyFPV
 #$ DESCRIPTION: RC link settings for a 1000Hz ELRS link via CRSF.
 #$ DESCRIPTION: WARNING: make sure that the OpenTx or EdgeTx Hardware ADC Filter is un-checked!
@@ -29,23 +29,23 @@ set feedforward_jitter_factor = 5
     #$ OPTION END
 #$ OPTION_GROUP END
 
-#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Select Receiver UART 
-    #$ OPTION BEGIN (UNCHECKED): UART 1 
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Select Receiver UART
+    #$ OPTION BEGIN (UNCHECKED): UART 1
         serial UART1 64 115200 57600 0 115200
     #$ OPTION END
-    #$ OPTION BEGIN (UNCHECKED): UART 2 
+    #$ OPTION BEGIN (UNCHECKED): UART 2
         serial UART2 64 115200 57600 0 115200
     #$ OPTION END
-    #$ OPTION BEGIN (UNCHECKED): UART 3 
+    #$ OPTION BEGIN (UNCHECKED): UART 3
         serial UART3 64 115200 57600 0 115200
     #$ OPTION END
     #$ OPTION BEGIN (UNCHECKED): UART 4
         serial UART4 64 115200 57600 0 115200
     #$ OPTION END
-    #$ OPTION BEGIN (UNCHECKED): UART 5 
+    #$ OPTION BEGIN (UNCHECKED): UART 5
         serial UART5 64 115200 57600 0 115200
     #$ OPTION END
-    #$ OPTION BEGIN (UNCHECKED): UART 6 
+    #$ OPTION BEGIN (UNCHECKED): UART 6
         serial UART6 64 115200 57600 0 115200
     #$ OPTION END
     #$ OPTION BEGIN (UNCHECKED): UART 7
