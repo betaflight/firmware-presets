@@ -2,7 +2,7 @@
 #$ FIRMWARE_VERSION: 2025.12
 #$ CATEGORY: RC_LINK
 #$ STATUS: OFFICIAL
-#$ KEYWORDS: ELRS, express, 500Hz, rc, rx, link, smoothing, 
+#$ KEYWORDS: ELRS, express, 500Hz, rc, rx, link, smoothing
 #$ AUTHOR: ctzsnooze, SupaflyFPV
 #$ DESCRIPTION: RC link settings for a 500Hz ELRS link via CRSF.
 #$ DESCRIPTION: WARNING: make ABSOLUTELY SURE that the OpenTx or EdgeTx Hardware ADC Filter is un-checked!
