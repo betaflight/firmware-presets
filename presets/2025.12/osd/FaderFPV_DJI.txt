@@ -6,7 +6,7 @@
 #$ KEYWORDS: fader fpv, secretfader, nicholas young, fictive flame
 #$ AUTHOR: Nicholas Young (Fader FPV)
 #$ PARSER: MARKED
-#$ DESCRIPTION: This is the standard OSD for the Fictive Air series of FPV drones, developed by professional FPV pilot, drone builder, and tuner, [Nicholas Young](https://secretfader.com). While the GPS and magnetometer are required for certain features, all navigation elements are optional and designed to be toggled.
+#$ DESCRIPTION: This is the standard OSD for the [Fictive Air series](https://secretfader.com/aircraft) of cinematic FPV drones, developed by professional FPV pilot, drone builder, and tuner, [Nicholas Young](https://secretfader.com). While the GPS and magnetometer are required for certain features, all navigation elements are optional and designed to be toggled.
 
 #$ INCLUDE: presets/2025.12/osd/defaults.txt
 
