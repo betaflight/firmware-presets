@@ -1,0 +1,21 @@
+#$ TITLE: Generic 150Hz Ultra Cinematic
+#$ FIRMWARE_VERSION: 2025.12
+#$ CATEGORY: RC_LINK
+#$ STATUS: OFFICIAL
+#$ KEYWORDS: 150Hz, rc, rx, link, smoothing
+#$ AUTHOR: Ivan Efimov (Limon)
+#$ DESCRIPTION: Generic RC link settings for ultra smooth cinematic with 150Hz RC link.
+#$ DESCRIPTION: WARNING: make sure that the OpenTx or EdgeTx Hardware ADC Filter is un-checked!
+#$ DESCRIPTION: WARNING: check that you are using a compatible version of EdgeTx or OpenTx!
+
+#$ PRIORITY: 0
+
+#$ INCLUDE: presets/2025.12/rc_link/defaults.txt
+
+set feedforward_averaging = OFF
+set feedforward_jitter_factor = 16
+
+set rc_smoothing_auto_factor = 180
+set rc_smoothing_auto_factor_throttle = 50
+
+set osd_rssi_dbm_alarm = -102
