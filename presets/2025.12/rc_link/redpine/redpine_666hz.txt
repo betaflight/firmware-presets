@@ -1,0 +1,79 @@
+#$ TITLE: Redpine 666Hz
+#$ FIRMWARE_VERSION: 2025.12
+#$ CATEGORY: RC_LINK
+#$ STATUS: OFFICIAL
+#$ KEYWORDS: Redpine, rc, link, 666Hz
+#$ AUTHOR: ctzsnooze
+#$ DESCRIPTION: Basic RC link settings for a 666Hz Redpine SPI link on a Deviation Tx
+#$ DESCRIPTION: WARNING: Do not use this Preset with Redpine on OpenTx!
+#$ DESCRIPTION: WARNING: be SURE that the Tx hardware ADC Filter is un-checked!
+#$ DESCRIPTION: If a log shows excessive noise in your feedforward trace, most likely there is a Tx firmware issue.
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/148
+
+#$ FORCE_OPTIONS_REVIEW: TRUE
+
+#$ INCLUDE: presets/2025.12/rc_link/defaults.txt
+
+set feedforward_averaging = 2_POINT
+set feedforward_jitter_factor = 5
+
+#$ OPTION_GROUP BEGIN: Fine-tuning...
+    #$ OPTION BEGIN (UNCHECKED): Race
+        set feedforward_jitter_factor = 4
+        set feedforward_boost = 18
+        set rc_smoothing_auto_factor = 25
+        set rc_smoothing_auto_factor_throttle = 25
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Freestyle
+        set feedforward_jitter_factor = 7
+        set rc_smoothing_auto_factor = 150
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): HD Freestyle
+        set feedforward_jitter_factor = 9
+        set rc_smoothing_auto_factor = 250
+        set rc_smoothing_setpoint_cutoff = 25
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Cinematic
+        set feedforward_averaging = 3_POINT
+        set feedforward_jitter_factor = 11
+        set rc_smoothing_auto_factor = 250
+        set rc_smoothing_auto_factor_throttle = 250
+        set rc_smoothing_setpoint_cutoff = 12
+        set rc_smoothing_throttle_cutoff = 20
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Ultra Cinematic
+        set feedforward_averaging = 3_POINT
+        set feedforward_jitter_factor = 13
+        set rc_smoothing_auto_factor = 250
+        set rc_smoothing_auto_factor_throttle = 250
+        set rc_smoothing_setpoint_cutoff = 6
+        set rc_smoothing_throttle_cutoff = 20
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Select Receiver UART
+    #$ OPTION BEGIN (UNCHECKED): UART 1
+        serial UART1 64 115200 57600 0 115200
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): UART 2
+        serial UART2 64 115200 57600 0 115200
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): UART 3
+        serial UART3 64 115200 57600 0 115200
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): UART 4
+        serial UART4 64 115200 57600 0 115200
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): UART 5
+        serial UART5 64 115200 57600 0 115200
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): UART 6
+        serial UART6 64 115200 57600 0 115200
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): UART 7
+        serial UART7 64 115200 57600 0 115200
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): UART 8
+        serial UART8 64 115200 57600 0 115200
+    #$ OPTION END
+#$ OPTION_GROUP END
