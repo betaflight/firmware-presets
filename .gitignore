@@ -54,5 +54,9 @@ eeprom.bin
 # public file staging location 
 /public
 
+# generated index artifacts
+/index.json
+/index_hash.txt
+
 # NPM packages folder
 /node_modules
