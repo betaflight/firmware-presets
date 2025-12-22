@@ -63,7 +63,7 @@ set iterm_relax_cutoff = 10
         set simplified_pitch_pi_gain = 125
         set simplified_pitch_d_gain = 130
     #$ OPTION END 
-    #$ OPTION BEGIN (UNCHECKED):No Action Camera
+    #$ OPTION BEGIN (UNCHECKED): No Action Camera
         set simplified_master_multiplier = 115
         set simplified_i_gain = 85
         set simplified_d_gain = 110
@@ -75,7 +75,7 @@ set iterm_relax_cutoff = 10
     #$ OPTION END
 #$ OPTION_GROUP END
 
-#$ OPTION_GROUP BEGIN: (EXCLUSIVE)Filters
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Filters
     #$ OPTION BEGIN (UNCHECKED): Clean Build (High Performance)
 	    set simplified_gyro_filter_multiplier = 160
         set rpm_filter_harmonics = 3
@@ -158,7 +158,7 @@ set iterm_relax_cutoff = 10
     #$ OPTION END
 #$ OPTION_GROUP END
 
-#$ OPTION_GROUP BEGIN: (EXCLUSIVE)Freestyle Rates
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Freestyle Rates
     #$ OPTION BEGIN (UNCHECKED): Smooth Medium
     #$ INCLUDE: presets/4.3/rates/defaults.txt
         set roll_rc_rate = 2
