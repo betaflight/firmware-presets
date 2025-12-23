@@ -1,0 +1,19 @@
+{
+  "title":"syrc",
+  "firmware_version":"v1.0",
+"category":"",
+"status":"",
+  "name": "My Custom F405 Mini Preset",
+  "description": "适用于5寸竞速机的F405 Mini自定义配置，4S电池，暴力飞行",
+  "platform": "STM32F4",
+  "board": "F405_MINI",
+  "betaflightVersion": "4.4.0",
+  "config": {
+    "serialrx_provider": "FRSKY_D",
+    "motor_pwm_protocol": "DSHOT600",
+    "pid_roll_p": 58,
+    "pid_roll_i": 42,
+    "pid_roll_d": 30,
+    "gyro_lowpass2_hz": 200
+  }
+}
