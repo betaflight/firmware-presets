@@ -1,5 +1,5 @@
 #$ TITLE: strc mode LED settings
-#$ FIRMWARE_VERSION: 4.44
+#$ FIRMWARE_VERSION: 4.4422
 #$ CATEGORY: LEDS
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: leds, race, vtx, colour change, sugarK, spec, spec racing, tinytrainer
