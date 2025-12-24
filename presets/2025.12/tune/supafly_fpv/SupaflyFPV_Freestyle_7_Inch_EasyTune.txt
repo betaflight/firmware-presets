@@ -44,8 +44,9 @@
 
 set anti_gravity_gain = 120
 set thrust_linear = 10
-set tpa_rate = 80
-set tpa_breakpoint = 1300
+set tpa_mode = PD
+set tpa_rate = 60
+set tpa_breakpoint = 1250
 set tpa_low_breakpoint = 1100
 set dyn_idle_min_rpm = 30
 set dshot_bidir = ON
@@ -77,6 +78,7 @@ set iterm_relax_cutoff = 8
 #$ OPTION_GROUP BEGIN: (EXCLUSIVE) Filters
     #$ OPTION BEGIN (UNCHECKED): Clean Build (High Performance)
         set simplified_gyro_filter_multiplier = 160
+        set gyro_lpf1_static_hz = 0
         set rpm_filter_harmonics = 3
         set rpm_filter_q = 600
         set rpm_filter_min_hz = 60
@@ -94,6 +96,7 @@ set iterm_relax_cutoff = 8
     #$ OPTION END 
     #$ OPTION BEGIN (CHECKED): Average Build (Robust)
         set simplified_gyro_filter_multiplier = 100
+        set gyro_lpf1_static_hz = 0
         set rpm_filter_harmonics = 3
         set rpm_filter_q = 500
         set dyn_notch_count = 2
