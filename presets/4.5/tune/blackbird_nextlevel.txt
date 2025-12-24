@@ -6,7 +6,7 @@
     #$ KEYWORDS: Black Bird FPV, Blackbird, Next Level, SBANG, 6S, Freestyle, 5 inch, 5"
     #$ AUTHOR: Black Bird FPV (Tune) / Saturn_FPV (Preset)
     #$ PARSER: MARKED
-    #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/nn
+    #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/540
 
 # -- Description --
     #$ DESCRIPTION: Black Bird FPV - Next Level Preset
