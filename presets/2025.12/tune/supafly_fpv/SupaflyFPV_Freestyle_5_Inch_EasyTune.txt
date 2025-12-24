@@ -54,7 +54,7 @@ set dshot_bidir = ON
 
 #$ OPTION_GROUP BEGIN: (EXCLUSIVE) Pitch Balance
     #$ OPTION BEGIN (CHECKED): Flying with Action Camera
-        set simplified_master_multiplier = 120
+        set simplified_master_multiplier = 115
         set simplified_i_gain = 85
         set simplified_d_gain = 105
         set simplified_pi_gain = 110
@@ -79,8 +79,6 @@ set dshot_bidir = ON
     #$ OPTION BEGIN (UNCHECKED): Clean Build (High Performance)
 	    set simplified_gyro_filter_multiplier = 160
         set gyro_lpf1_static_hz = 0
-        set gyro_lpf1_dyn_min_hz = 0
-        set gyro_lpf1_dyn_max_hz = 0
         set rpm_filter_harmonics = 3
         set rpm_filter_q = 800
         set dyn_notch_count = 1
@@ -97,8 +95,6 @@ set dshot_bidir = ON
     #$ OPTION BEGIN (CHECKED): Average Build (Robust)
 	    set simplified_gyro_filter_multiplier = 120
         set gyro_lpf1_static_hz = 0
-        set gyro_lpf1_dyn_min_hz = 0
-        set gyro_lpf1_dyn_max_hz = 0
         set rpm_filter_harmonics = 3
         set rpm_filter_q = 700
         set dyn_notch_count = 2
