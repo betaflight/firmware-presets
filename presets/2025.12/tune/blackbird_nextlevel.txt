@@ -170,10 +170,12 @@
             set gyro_lpf1_dyn_min_hz = 0
             set gyro_lpf1_dyn_max_hz = 0
         #$ OPTION END
-        #$ OPTION BEGIN (UNCHECKED): Low Quality Quad
+        #$ OPTION BEGIN (UNCHECKED): Low Quality Build
             set gyro_lpf1_static_hz = 0
             set gyro_lpf1_dyn_min_hz = 250
             set gyro_lpf1_dyn_max_hz = 500
+            set dyn_notch_count = 2
+            set dyn_notch_q = 400
         #$ OPTION END
     #$ OPTION_GROUP END
 
