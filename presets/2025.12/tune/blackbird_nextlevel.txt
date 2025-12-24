@@ -80,8 +80,6 @@
     set dyn_notch_count = 1
     set dyn_notch_q = 500
     set dyn_notch_min_hz = 150
-    set gyro_lpf1_dyn_min_hz = 0
-    set gyro_lpf1_dyn_max_hz = 0
     set simplified_gyro_filter = OFF
     set simplified_dterm_filter = OFF
     set rpm_filter_harmonics = 2
