@@ -44,8 +44,8 @@
 
 set anti_gravity_gain = 120
 set thrust_linear = 10
-set tpa_mode = PD
-set tpa_rate = 60
+set tpa_mode = D
+set tpa_rate = 80
 set tpa_breakpoint = 1250
 set tpa_low_breakpoint = 1100
 set dyn_idle_min_rpm = 30
