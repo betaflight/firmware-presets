@@ -31,6 +31,16 @@ set anti_gravity_p_gain = 100
 set acc_limit_yaw = 0
 set acc_limit = 0
 
+set crash_dthreshold = 50
+set crash_gthreshold = 400
+set crash_setpoint_threshold = 350
+set crash_time = 500
+set crash_delay = 0
+set crash_recovery_angle = 10
+set crash_recovery_rate = 100
+set crash_limit_yaw = 200
+set crash_recovery = OFF
+
 set iterm_rotation = OFF
 set iterm_relax = RP
 set iterm_relax_type = SETPOINT
@@ -41,6 +51,10 @@ set pidsum_limit_yaw = 400
 
 set throttle_boost = 5
 set throttle_boost_cutoff = 15
+set acro_trainer_angle_limit = 20
+set acro_trainer_lookahead_ms = 50
+set acro_trainer_debug_axis = ROLL
+set acro_trainer_gain = 75
 
 set p_pitch = 47
 set i_pitch = 84
@@ -79,8 +93,20 @@ set d_max_advance = 20
 set thrust_linear = 0
 set transient_throttle_limit = 0
 set feedforward_transition = 0
+set auto_profile_cell_count = 0
+set vbat_sag_compensation = 0
+set motor_output_limit = 100
+set level_race_mode = OFF
+
+set launch_control_mode = PITCHONLY
+set launch_trigger_allow_reset = ON
+set launch_trigger_throttle_percent = 20
+set launch_angle_limit = 0
+set launch_control_gain = 40
 
 set feedforward_max_rate_limit = 90
+set feedforward_yaw_hold_gain = 15
+set feedforward_yaw_hold_time = 100
 
 set dyn_idle_min_rpm = 0
 set dyn_idle_p_gain = 50
