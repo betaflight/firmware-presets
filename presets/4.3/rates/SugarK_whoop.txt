@@ -2,6 +2,7 @@
 #$ FIRMWARE_VERSION: 4.3
 #$ FIRMWARE_VERSION: 4.4
 #$ FIRMWARE_VERSION: 4.5
+#$ FIRMWARE_VERSION: 2025.12
 #$ CATEGORY: RATES
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: racing, rates, MultiGP, quaddiction, tyrant, sugar k
