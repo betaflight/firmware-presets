@@ -38,7 +38,7 @@
 #$ DESCRIPTION: ## Things to note:
 #$ DESCRIPTION: - **YOU HAVE TO USE RPM FILTERING WITH THIS TUNE!** Failure to do so might result in fire 🔥
 #$ DESCRIPTION: - Regarding DShot600: if your setup has errors in the motor tab using bidirectional DShot, change to **8k/4k and DShot300**
-#$ DESCRIPTION: - Also this should be applied to a clean flash after you've setup your rates, swtiches, vtx tables etc.
+#$ DESCRIPTION: - Also this should be applied to a clean flash after you've setup your rates, switches, vtx tables etc.
 #$ DESCRIPTION: - To test arm the quad with props on, it should **sound clean with no grinding**. If it passes that then hover test and check motor temps.
 #$ DESCRIPTION: - **If anything is off, don't fly it!!**
 #$ DESCRIPTION:
