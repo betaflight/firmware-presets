@@ -54,7 +54,7 @@
 #$ DESCRIPTION: - For best  BL32 esc performance set PWM frequency to 48Khz locked and timing to 25 degrees.  
 #$ DESCRIPTION: - For best AM32 esc performance set PWM frequency to 48Khz locked and timing to auto 
 
-#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/544
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/556
 
 #$ INCLUDE_WARNING: misc/warnings/en/rpm_filters.txt
 #$ INCLUDE: presets/2025.12/tune/defaults.txt
@@ -111,7 +111,7 @@ set tpa_breakpoint = 1250
     crashflip_auto_rearm = ON
 #$ OPTION END
 
-#$ OPTION_GROUP BEGIN: (EXCLUSIVE)
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Tunes
 
     #$ OPTION BEGIN (UNCHECKED): Sh*t Quad
         #my quad is a bit of a mess
@@ -202,7 +202,7 @@ set tpa_breakpoint = 1250
 #$ OPTION_GROUP END
 
 #$ OPTION_GROUP BEGIN (EXCLUSIVE): Radio links
-    #$ Note you have to build the firmware with Ghost or SBUS to use them
+    #Note you have to build the firmware with Ghost or SBUS to use them
     #$ OPTION BEGIN (CHECKED): CRSF/ELRS
         feature RX_SERIAL
         set serialrx_provider = CRSF
