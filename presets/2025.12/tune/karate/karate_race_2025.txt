@@ -111,7 +111,7 @@ set tpa_breakpoint = 1250
     set crashflip_auto_rearm = ON
 #$ OPTION END
 
-#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Tunes
+#$ OPTION_GROUP BEGIN (EXCLUSIVE): Tunes
 
     #$ OPTION BEGIN (UNCHECKED): Sh*t Quad
         #my quad is a bit of a mess
