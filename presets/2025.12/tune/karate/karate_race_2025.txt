@@ -13,16 +13,16 @@
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION:
 #$ DESCRIPTION: Brand new Karate race tune for the release formally known as 4.6. this tune leans into the changes in Betaflight and its performance gains since 4.5 was release.
-#$ DESCRIPTION: The spicy version needs to be worked up to as its VERY spicy, my recommendation is to start with the stock version and remember you can always grab the D silder and pull it back a few notches.
+#$ DESCRIPTION: The spicy version needs to be worked up to as its VERY spicy, my recommendation is to start with the stock version and remember you can always grab the D slider and pull it back a few notches.
 #$ DESCRIPTION: In light of the more agressive tunes i have included a ‘shit quad’ option as well which is similar settings to the original Karate tune. Remember that race quads eat arms for breakfast and a poor flying racer that was once good will pretty much always have some noodle arms going on.
-#$ DESCRIPTION: The quad used to develop  this new tune is the [the B-line Compressor](https://www.b-lineproducts.com.au/product/b-line-compressor-5-fpv-racing-frame/) built with 2100kv 2207 motors, both NDB Rs200 stack and HDZ Halo stacks with weigh of 246g with props. This is the new frame work of my self and [JWebb](https://www.instagram.com/jwebb.fpv/), it uses custom laid up T series carbon  
-#$ DESCRIPTION: and some other secret sauce to make it the bleeding egde of current racing frames. Its the frame of choice of 4 out 5 of Australias  top race pilots.. 
+#$ DESCRIPTION: The quad used to develop  this new tune is the [the B-line Compressor](https://www.b-lineproducts.com.au/product/b-line-compressor-5-fpv-racing-frame/) built with 2100kv 2207 motors, both NDB Rs200 stack and HDZ Halo stacks with weigh of 246g with props. This is the new frame work of my self and [JWebb](https://www.instagram.com/jwebb.fpv/), it uses custom laid-up T-series carbon  
+#$ DESCRIPTION: and some other secret sauce to make it the bleeding edge of current racing frames. Its the frame of choice of 4 out 5 of Australias  top race pilots.. 
 #$ DESCRIPTION:
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION:
-#$ DESCRIPTION: This tune should work well on any quality airframes, but start with the stock version and ensure your testing is done with a freshly serviced airframe, the tune is silder based and if its too edgy and agressive lowering the d slider until your issues disappear will help 
+#$ DESCRIPTION: This tune should work well on any quality airframes, but start with the stock version and ensure your testing is done with a freshly serviced airframe, the tune is silder based and if its too edgy and aggressive lowering the d slider until your issues disappear will help 
 #$ DESCRIPTION: In light of the state some peoples airframes will be in there is a ‘sh#t quad’ option which will give similar pids and filters to the og karate tune.
-#$ DESCRIPTION: As a point of note this new is has lower FF to suit the super light super powerfull 2207 build that are common now, heavier less powerfull setups will want a little more FF.
+#$ DESCRIPTION: As a point of note this new is has lower FF to suit the super light super powerful 2207 build that are common now, heavier less powerful setups will want more FF.
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION:
 #$ DESCRIPTION: It should also work on other quality racing frames but use at your own risk as it is an aggressive tune.
@@ -107,8 +107,8 @@ set tpa_breakpoint = 1250
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): New Crash flip mode if you dont use PRORACE 
-    crashflip_rate = 30
-    crashflip_auto_rearm = ON
+    set crashflip_rate = 30
+    set crashflip_auto_rearm = ON
 #$ OPTION END
 
 #$ OPTION_GROUP BEGIN: (EXCLUSIVE) Tunes
