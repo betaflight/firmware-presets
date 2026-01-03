@@ -22,7 +22,7 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: This tune should work well on any quality airframes, but start with the stock version and ensure your testing is done with a freshly serviced airframe, the tune is slider based and if its too edgy and aggressive lowering the d slider until your issues disappear will help 
 #$ DESCRIPTION: In light of the state some peoples airframes will be in there is a ‘sh#t quad’ option which will give similar pids and filters to the og karate tune.
-#$ DESCRIPTION: As a point of note this new tune  has lower FF to suit the super light super power 2207 builds that are common now, heavier less powerful setups will want more FF.
+#$ DESCRIPTION: As a point of note this new tune  has lower FF to suit the super light, super powerfull 2207 builds that are common now, heavier less powerful setups will want more FF.
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION:
 #$ DESCRIPTION: It should also work on other quality racing frames but use at your own risk as it is an aggressive tune.
