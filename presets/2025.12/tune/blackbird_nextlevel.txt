@@ -187,7 +187,7 @@
     #$ OPTION_GROUP END
 
     #$ OPTION_GROUP BEGIN: (EXCLUSIVE) Radio Link
-        #$ OPTION BEGIN (CHECKED): BB Stick Feel
+        #$ OPTION BEGIN (UNCHECKED): BB Stick Feel
             set rc_smoothing = ON
             set rc_smoothing_setpoint_cutoff = 0
             set rc_smoothing_throttle_cutoff = 0
@@ -214,7 +214,7 @@
     #$ OPTION_GROUP END
 
     #$ OPTION_GROUP BEGIN: (EXCLUSIVE) Deadband
-        #$ OPTION BEGIN (CHECKED): For high Center Rates
+        #$ OPTION BEGIN (UNCHECKED): For high Center Rates
             set deadband = 3
             set yaw_deadband = 4
         #$ OPTION END
