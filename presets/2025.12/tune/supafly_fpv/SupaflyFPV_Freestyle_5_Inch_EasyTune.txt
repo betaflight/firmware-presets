@@ -173,7 +173,7 @@ set iterm_relax_cutoff = 10
     #$ OPTION END
         #$ OPTION BEGIN (UNCHECKED): ELRS 1000Hz
         #$ INCLUDE: presets/2025.12/rc_link/defaults.txt
-        set feature RX_SERIAL
+        feature RX_SERIAL
         set serialrx_provider = CRSF
         set feedforward_averaging = 2_POINT
         set feedforward_jitter_factor = 5

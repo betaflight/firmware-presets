@@ -15,7 +15,7 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION:
-#$ DESCRIPTION: Pick your options from the drop-downmenua above:
+#$ DESCRIPTION: Pick your options from the drop-down menu above:
 #$ DESCRIPTION:
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION:
@@ -172,7 +172,7 @@ set iterm_relax_cutoff = 6
     #$ OPTION END
         #$ OPTION BEGIN (UNCHECKED): ELRS 1000Hz
         #$ INCLUDE: presets/2025.12/rc_link/defaults.txt
-        set feature RX_SERIAL
+        feature RX_SERIAL
         set serialrx_provider = CRSF
         set feedforward_averaging = 2_POINT
         set feedforward_jitter_factor = 5

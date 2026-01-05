@@ -19,7 +19,7 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION:
-#$ DESCRIPTION: * Select Tuning Balance - for framse style and if you run an Action Camera
+#$ DESCRIPTION: * Select Tuning Balance - for frame style and if you run an Action Camera
 #$ DESCRIPTION: * Select Filter Setup - based on the general condition of your quadcopter
 #$ DESCRIPTION: * Pick your Radio Link and Receiver Hardware UART
 #$ DESCRIPTION: * Try some Freestyle Rate starting points...
@@ -184,7 +184,7 @@ set iterm_relax_cutoff = 10
     #$ OPTION END
         #$ OPTION BEGIN (UNCHECKED): ELRS 1000Hz
         #$ INCLUDE: presets/2025.12/rc_link/defaults.txt
-        set feature RX_SERIAL
+        feature RX_SERIAL
         set serialrx_provider = CRSF
         set feedforward_averaging = 2_POINT
         set feedforward_jitter_factor = 5
