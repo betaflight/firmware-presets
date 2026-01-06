@@ -13,7 +13,7 @@
 #$ DESCRIPTION: - MCU: STM32F405
 #$ DESCRIPTION: - Battery: 2S LiPo
 #$ DESCRIPTION: - Optimized for responsive freestyle and general FPV flying
-#$ DESCRIPTION: - This preset is ONLY intended for Betaflight 4.5 firmware.
+#$ DESCRIPTION: - Intended for Betaflight 4.5 firmware due to simplified tuning behavior.
 #$ DESCRIPTION:
 
 profile 0
