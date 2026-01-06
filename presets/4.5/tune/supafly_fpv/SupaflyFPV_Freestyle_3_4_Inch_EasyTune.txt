@@ -104,7 +104,7 @@ set iterm_relax_cutoff = 10
         set rpm_filter_q = 800
         set rpm_filter_weights = 90,30,90
         set rpm_filter_fade_range_hz = 100
-	    set dterm_lpf1_dyn_min_hz = 0
+        set dterm_lpf1_dyn_min_hz = 0
         set dterm_lpf1_static_hz = 0
         set dterm_lpf2_type = PT3
         set dterm_lpf2_static_hz = PT3
@@ -112,7 +112,7 @@ set iterm_relax_cutoff = 10
         set simplified_gyro_filter_multiplier = 150
     #$ OPTION END 
     #$ OPTION BEGIN (CHECKED): Average Build (Safe Setup)
-	    set gyro_lpf1_static_hz = 0
+        set gyro_lpf1_static_hz = 0
         set gyro_lpf2_static_hz = 600
         set dyn_notch_count = 2
         set dyn_notch_q = 400
@@ -123,7 +123,7 @@ set iterm_relax_cutoff = 10
         set rpm_filter_q = 700
         set rpm_filter_weights = 90,50,90
         set rpm_filter_fade_range_hz = 50
-	    set dterm_lpf1_dyn_min_hz = 0
+        set dterm_lpf1_dyn_min_hz = 0
         set dterm_lpf1_static_hz = 0
         set dterm_lpf2_type = PT3
         set dterm_lpf2_static_hz = 120
@@ -134,7 +134,7 @@ set iterm_relax_cutoff = 10
 
 #$ OPTION_GROUP BEGIN: (EXCLUSIVE) Radio Link Setup
     #$ OPTION BEGIN (UNCHECKED): Crossfire Dynamic
-        #$ INCLUDE: presets/4.5/rc_link/defaults.txt
+        #$ INCLUDE: presets/4.3/rc_link/defaults.txt
         feature RX_SERIAL
         set serialrx_provider = CRSF
         set feedforward_averaging = OFF
@@ -144,7 +144,7 @@ set iterm_relax_cutoff = 10
         set rc_smoothing_auto_factor_throttle = 45
     #$ OPTION END
     #$ OPTION BEGIN (UNCHECKED): Crossfire 50Hz Locked
-        #$ INCLUDE: presets/4.5/rc_link/defaults.txt
+        #$ INCLUDE: presets/4.3/rc_link/defaults.txt
         feature RX_SERIAL
         set serialrx_provider = CRSF
         set feedforward_averaging = OFF
@@ -154,7 +154,7 @@ set iterm_relax_cutoff = 10
         set rc_smoothing_auto_factor_throttle = 45
     #$ OPTION END
     #$ OPTION BEGIN (UNCHECKED): Crossfire 150Hz Locked
-        #$ INCLUDE: presets/4.5/rc_link/defaults.txt
+        #$ INCLUDE: presets/4.3/rc_link/defaults.txt
         feature RX_SERIAL
         set serialrx_provider = CRSF
         set feedforward_averaging = OFF
@@ -163,7 +163,7 @@ set iterm_relax_cutoff = 10
         set rc_smoothing_auto_factor_throttle = 45
     #$ OPTION END
     #$ OPTION BEGIN (UNCHECKED): ELRS/Tracer 250Hz
-        #$ INCLUDE: presets/4.5/rc_link/defaults.txt
+        #$ INCLUDE: presets/4.3/rc_link/defaults.txt
         feature RX_SERIAL
         set serialrx_provider = CRSF
         set feedforward_averaging = 2_POINT
@@ -173,7 +173,7 @@ set iterm_relax_cutoff = 10
         set rc_smoothing_auto_factor_throttle = 45
     #$ OPTION END
     #$ OPTION BEGIN (UNCHECKED): ELRS 500Hz
-        #$ INCLUDE: presets/4.5/rc_link/defaults.txt
+        #$ INCLUDE: presets/4.3/rc_link/defaults.txt
         feature RX_SERIAL
         set serialrx_provider = CRSF
         set feedforward_averaging = 2_POINT
@@ -212,7 +212,7 @@ set iterm_relax_cutoff = 10
 
 #$ OPTION_GROUP BEGIN: (EXCLUSIVE) Freestyle Stick Rates
     #$ OPTION BEGIN (UNCHECKED): Smooth Centre Medium Rate
-    #$ INCLUDE: presets/4.5/rates/defaults.txt
+    #$ INCLUDE: presets/4.3/rates/defaults.txt
         set roll_rc_rate = 2
         set pitch_rc_rate = 2
         set yaw_rc_rate = 2
@@ -224,7 +224,7 @@ set iterm_relax_cutoff = 10
         set yaw_srate = 60
     #$ OPTION END
     #$ OPTION BEGIN (UNCHECKED): Smooth Centre Fast Rate
-    #$ INCLUDE: presets/4.5/rates/defaults.txt
+    #$ INCLUDE: presets/4.3/rates/defaults.txt
         set roll_rc_rate = 3
         set pitch_rc_rate = 3
         set yaw_rc_rate = 3
@@ -236,7 +236,7 @@ set iterm_relax_cutoff = 10
         set yaw_srate = 90
     #$ OPTION END
     #$ OPTION BEGIN (UNCHECKED): Medium Centre Fast Rate
-    #$ INCLUDE: presets/4.5/rates/defaults.txt
+    #$ INCLUDE: presets/4.3/rates/defaults.txt
         set roll_rc_rate = 25
         set pitch_rc_rate = 25
         set yaw_rc_rate = 25
