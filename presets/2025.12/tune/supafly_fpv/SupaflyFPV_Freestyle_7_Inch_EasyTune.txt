@@ -91,7 +91,7 @@ set iterm_relax_cutoff = 6
         set rpm_filter_weights = 90,30,90
         set rpm_filter_min_hz = 60
         set rpm_filter_fade_range_hz = 50
-	    set dterm_lpf1_dyn_min_hz = 0
+        set dterm_lpf1_dyn_min_hz = 0
         set dterm_lpf1_static_hz = 0
         set dterm_lpf2_type = PT3
         set dterm_lpf2_static_hz = 120
@@ -99,7 +99,7 @@ set iterm_relax_cutoff = 6
         set simplified_gyro_filter_multiplier = 100
     #$ OPTION END 
     #$ OPTION BEGIN (CHECKED): Average Build (Safe setup)
-	    set gyro_lpf1_static_hz = 0
+        set gyro_lpf1_static_hz = 0
         set gyro_lpf2_static_hz = 300
         set dyn_notch_count = 2
         set dyn_notch_q = 400
@@ -111,7 +111,7 @@ set iterm_relax_cutoff = 6
         set rpm_filter_weights = 90,60,90
         set rpm_filter_min_hz = 50
         set rpm_filter_fade_range_hz = 50
-	    set dterm_lpf1_dyn_min_hz = 0
+        set dterm_lpf1_dyn_min_hz = 0
         set dterm_lpf1_static_hz = 0
         set dterm_lpf2_type = PT3
         set dterm_lpf2_static_hz = 120

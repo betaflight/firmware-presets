@@ -170,7 +170,7 @@ set iterm_relax_cutoff = 8
         set rc_smoothing_auto_factor = 45
         set rc_smoothing_auto_factor_throttle = 45
     #$ OPTION END
-        #$ OPTION BEGIN (UNCHECKED): ELRS 1000Hz
+    #$ OPTION BEGIN (UNCHECKED): ELRS 1000Hz
         #$ INCLUDE: presets/2025.12/rc_link/defaults.txt
         feature RX_SERIAL
         set serialrx_provider = CRSF
