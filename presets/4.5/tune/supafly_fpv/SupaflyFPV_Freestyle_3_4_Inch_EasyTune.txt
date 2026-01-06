@@ -181,6 +181,7 @@ set iterm_relax_cutoff = 10
         set feedforward_boost = 18
         set rc_smoothing_auto_factor = 45
         set rc_smoothing_auto_factor_throttle = 45
+    #$ OPTION END
 #$ OPTION_GROUP END
 
 #$ OPTION_GROUP BEGIN: (EXCLUSIVE) Receiver Hardware UART:
