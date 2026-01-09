@@ -23,7 +23,7 @@
 #$ DESCRIPTION: * Select Filter Setup - based on the general condition of your quadcopter
 #$ DESCRIPTION: * Pick your Radio Link and Receiver Hardware UART
 #$ DESCRIPTION: * Try some Freestyle Rate starting points...
-#$ DESCRIPTION: * [Click Here to finish setup by with the integrated PID calculator and ESC guidelines](https://supaflyfpv.com/betaflight-setup/)
+#$ DESCRIPTION: * [Click Here to finish setup with the integrated PID calculator and ESC guidelines](https://supaflyfpv.com/betaflight-setup/)
 #$ DESCRIPTION: 
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION:
