@@ -1,0 +1,50 @@
+#$ TITLE: CADDX Protos – Factory Performance Tune
+#$ FIRMWARE_VERSION: 4.5
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/557
+
+#$ CATEGORY: TUNE
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: CADDX, Protos
+#$ AUTHOR: CADDXFPV
+#$ PARSER: MARKED
+
+#$ DESCRIPTION: Factory performance tune for CADDX Protos F4.
+#$ DESCRIPTION:
+#$ DESCRIPTION: - MCU: STM32F405
+#$ DESCRIPTION: - Battery: 2S LiPo
+#$ DESCRIPTION: - Optimized for responsive freestyle and general FPV flying
+#$ DESCRIPTION: - Intended for Betaflight 4.5 firmware due to simplified tuning behavior.
+#$ DESCRIPTION:
+
+profile 0
+
+# --- Gyro & Filtering ---
+set gyro_lpf1_dyn_min_hz = 275
+set gyro_lpf1_dyn_max_hz = 550
+set gyro_lpf1_static_hz = 0
+set gyro_lpf2_static_hz = 0
+
+set dyn_notch_count = 2
+set dyn_notch_q = 450
+set dyn_notch_min_hz = 80
+set dyn_notch_max_hz = 800
+
+set rpm_filter_min_hz = 80
+
+# --- Feedforward ---
+set feedforward_averaging = 3_POINT
+set feedforward_smooth_factor = 20
+set feedforward_jitter_factor = 12
+
+# --- Simplified Tuning ---
+set simplified_master_multiplier = 75
+set simplified_i_gain = 105
+set simplified_d_gain = 165
+set simplified_pi_gain = 155
+set simplified_dmax_gain = 90
+set simplified_feedforward_gain = 50
+set simplified_pitch_d_gain = 125
+set simplified_pitch_pi_gain = 125
+set simplified_dterm_filter_multiplier = 85
+
+simplified_tuning apply
