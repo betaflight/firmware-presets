@@ -88,6 +88,7 @@ set iterm_relax_cutoff = 10
         set simplified_feedforward_gain = 85
         set simplified_pitch_pi_gain = 105
         set simplified_pitch_d_gain = 105
+    #$ OPTION END 
 #$ OPTION_GROUP END
 
 #$ OPTION_GROUP BEGIN: (EXCLUSIVE) Filter Setup
