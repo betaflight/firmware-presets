@@ -143,7 +143,7 @@
             set d_max_advance = 0
         #$ OPTION END
         #$ OPTION BEGIN (UNCHECKED): Sea Level no Action Cam
-            set p_pitch = 72
+            set p_pitch = 62
             set i_pitch = 112
             set d_min_pitch = 32
             set p_roll = 58
@@ -188,6 +188,7 @@
 
     #$ OPTION_GROUP BEGIN: (EXCLUSIVE) Radio Link
         #$ OPTION BEGIN (UNCHECKED): BB Stick Feel
+		    #$ INCLUDE: presets/4.3/rc_link/defaults.txt
             set rc_smoothing = ON
             set rc_smoothing_setpoint_cutoff = 0
             set rc_smoothing_throttle_cutoff = 0
@@ -199,17 +200,17 @@
             set feedforward_boost = 20
             set feedforward_max_rate_limit = 95
         #$ OPTION END
-        #$ OPTION BEGIN (UNCHECKED): Official 50Hz HD Freestyle
-            #$ INCLUDE: presets/4.3/rc_link/generic/50hz_hd_freestyle.txt
+        #$ OPTION BEGIN (UNCHECKED): Official 50Hz Freestyle
+            #$ INCLUDE: presets/4.3/rc_link/generic/50hz_freestyle.txt
         #$ OPTION END
-        #$ OPTION BEGIN (UNCHECKED): Official 150Hz HD Freestyle
-            #$ INCLUDE: presets/4.3/rc_link/generic/150hz_hd_freestyle.txt
+        #$ OPTION BEGIN (UNCHECKED): Official 150Hz Freestyle
+            #$ INCLUDE: presets/4.3/rc_link/generic/150hz_freestyle.txt
         #$ OPTION END
-        #$ OPTION BEGIN (UNCHECKED): Official 250Hz HD Freestyle
-            #$ INCLUDE: presets/4.3/rc_link/generic/250hz_hd_freestyle.txt
+        #$ OPTION BEGIN (UNCHECKED): Official 250Hz Freestyle
+            #$ INCLUDE: presets/4.3/rc_link/generic/250hz_freestyle.txt
         #$ OPTION END
-        #$ OPTION BEGIN (UNCHECKED): Official 500Hz HD Freestyle
-            #$ INCLUDE: presets/4.3/rc_link/generic/500hz_hd_freestyle.txt
+        #$ OPTION BEGIN (UNCHECKED): Official 500Hz Freestyle
+            #$ INCLUDE: presets/4.3/rc_link/generic/500hz_freestyle.txt
         #$ OPTION END
     #$ OPTION_GROUP END
 
