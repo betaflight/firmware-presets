@@ -623,7 +623,7 @@
   "presets": [
     {
       "fullPath": "presets/2025.12/bnf/droneaid.txt",
-      "hash": "bd18dacdd80549125fe12d357c9ce731f000c75e3c29fe9e98c995157362c730",
+      "hash": "2142d8945544d36004e9c3b875575a10b15236717724e9cc78ad547d58aa5026",
       "title": "DroneAid 7\", 8\", 10\"",
       "firmware_version": [
         "2025.12"
