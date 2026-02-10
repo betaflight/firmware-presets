@@ -134,12 +134,12 @@
   },
   "uniqueValues": {
     "firmware_version": [
+      "2025.12",
       "3.5",
       "4.2",
       "4.3",
       "4.4",
-      "4.5",
-      "2025.12"
+      "4.5"
     ],
     "category": [
       "BNF",
@@ -162,10 +162,12 @@
       "Benjamin Freelove",
       "benlumley",
       "Betaflight",
+      "Black Bird FPV (Tune) / Saturn_FPV (Preset)",
       "BMSThomas",
       "Botgrinder",
       "Chris Rosser",
       "ctzsnooze",
+      "ctzsnooze, SupaflyFPV",
       "Daniel Appel / Tehllama",
       "Davide FPV (Davide Angeletti)",
       "Directory",
@@ -192,6 +194,7 @@
       "MrAlucardDante",
       "Neil Marek (Grower)",
       "NemesisXB",
+      "Nicholas Young (Fader FPV)",
       "QuadMcFly (Ryan Harrell)",
       "Sartor",
       "Sjoer van der Ploeg",
@@ -228,6 +231,7 @@
       "2023",
       "2024",
       "2024 sliders",
+      "2025.12",
       "20ms",
       "25",
       "2500mW",
@@ -290,7 +294,6 @@
       "aio5",
       "air",
       "air unit",
-      "air75",
       "akk",
       "AlexFPV",
       "analog",
@@ -311,10 +314,11 @@
       "betaflight",
       "betafpv",
       "bezerkrc",
+      "Black Bird FPV",
+      "Blackbird",
       "blackbox",
       "BMS",
       "BMSThomas",
-      "bnf",
       "botgrinder",
       "brushless",
       "Caddx",
@@ -335,6 +339,7 @@
       "clean",
       "clear",
       "colour change",
+      "COMPRESSOR",
       "Configure",
       "control",
       "Crossfire",
@@ -351,7 +356,6 @@
       "defaults",
       "der_V",
       "diatone",
-      "diff",
       "Digipick",
       "digital",
       "din",
@@ -370,7 +374,9 @@
       "expert",
       "express",
       "Extreme",
+      "fader fpv",
       "feisar",
+      "fictive flame",
       "filter",
       "filtering",
       "filters",
@@ -384,7 +390,7 @@
       "freedom",
       "freedom spec",
       "FreedomSpec",
-      "freestyle",
+      "Freestyle",
       "freesytle",
       "freetyle",
       "FreshBread",
@@ -403,7 +409,7 @@
       "HD",
       "HD video",
       "HDOSD",
-      "HDzero",
+      "HDZERO",
       "Headsup",
       "HighKV",
       "hot",
@@ -419,6 +425,7 @@
       "jhemcu",
       "juicy",
       "justice",
+      "JWebb",
       "karate",
       "KarateBrot",
       "kim",
@@ -427,7 +434,7 @@
       "LeadFingers",
       "League",
       "leds",
-      "Limon",
+      "limon",
       "link",
       "Llama",
       "log",
@@ -458,11 +465,13 @@
       "nanohawk",
       "Neil",
       "neuron",
+      "Next Level",
       "nice",
+      "nicholas young",
       "nmea",
       "no rpm",
       "noisy",
-      "normal",
+      "Normal",
       "O3",
       "O3 air unit",
       "Omni",
@@ -482,17 +491,17 @@
       "quaddiction",
       "quick",
       "R9",
-      "race",
+      "Race",
       "race rates ctzsnooze actual",
       "race v1",
       "race v2",
       "Race250",
       "Race500",
-      "racing",
+      "Racing",
       "rad",
       "ranging",
       "rates",
-      "rc",
+      "RC",
       "rc link",
       "rc_link",
       "rc_smoothing",
@@ -514,10 +523,12 @@
       "sa2.0",
       "sa20",
       "Safe",
-      "sbang",
+      "SBANG",
       "sbus",
       "SBUS fast",
+      "secretfader",
       "settek",
+      "Sh*t pilot",
       "shames",
       "Sharjah",
       "shitpilot",
@@ -560,12 +571,12 @@
       "TinyApe",
       "TinyTrainer",
       "toothpic",
-      "Toothpick",
+      "toothpick",
       "Tracer",
       "trainer",
       "tramp",
       "transmitter",
-      "Tune",
+      "tune",
       "twig",
       "tx1600",
       "tx5m.1",
@@ -589,6 +600,7 @@
       "viki",
       "viper",
       "viper lite",
+      "Viper Racing",
       "vista",
       "Voltage",
       "vt5804",
@@ -609,6 +621,1515 @@
     ]
   },
   "presets": [
+    {
+      "fullPath": "presets/2025.12/bnf/droneaid.txt",
+      "hash": "bd18dacdd80549125fe12d357c9ce731f000c75e3c29fe9e98c995157362c730",
+      "title": "DroneAid 7\", 8\", 10\"",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "DroneAid",
+        "Slava Ukraini"
+      ],
+      "author": "Vladyslav, Yevhen, Dmytro",
+      "force_options_review": true,
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/osd/FaderFPV_DJI.txt",
+      "hash": "70e7f9fcda229496c68e8a0361a7ab5cff2f2eb2370d94d71b214d7d3e6e14c8",
+      "title": "Nicholas Young DJI OSD",
+      "firmware_version": [
+        "4.5",
+        "2025.12"
+      ],
+      "category": "OSD",
+      "status": "COMMUNITY",
+      "keywords": [
+        "fader fpv",
+        "secretfader",
+        "nicholas young",
+        "fictive flame"
+      ],
+      "author": "Nicholas Young (Fader FPV)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/osd/JazzMutant_HDZero_osd.txt",
+      "hash": "fe9a089a9f86e1fdf676c73beec4558f8c895f2eb7d317f3e0a4d9989d779d86",
+      "title": "JazzMutant HDZero OSD",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "OSD",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "HDZERO",
+        "HD",
+        "HDOSD",
+        "OSD",
+        "JazzMutant",
+        "Racing"
+      ],
+      "author": "JazzMutant",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/osd/UAV_tech_Analog.txt",
+      "hash": "80cab8b4197661c9232b38564da4ee8e2ad10c0f89ea9975038b7e2b686274ef",
+      "title": "UAV Tech - Analog",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "OSD",
+      "status": "OFFICIAL",
+      "keywords": [
+        "analog"
+      ],
+      "author": "UAV Tech (Mark Spatz)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/osd/UAV_tech_DJI.txt",
+      "hash": "de9e7c169ff14594f454ccb2330c5b289ea946f8cf2c145682a960fff105e7ba",
+      "title": "UAV Tech - DJI",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "OSD",
+      "status": "OFFICIAL",
+      "keywords": [
+        "DJI"
+      ],
+      "author": "UAV Tech (Mark Spatz)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/osd/UAV_tech_DJI_GPS.txt",
+      "hash": "a2f45fc44448579f611fe2e4e8bf6145fec0ef42b17952287b6c0344b0e1d990",
+      "title": "UAV Tech - DJI with GPS",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "OSD",
+      "status": "OFFICIAL",
+      "keywords": [
+        "DJI",
+        "GPS"
+      ],
+      "author": "UAV Tech (Mark Spatz)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/osd/defaults.txt",
+      "hash": "82aecb211c6ed2fc0d6bcbefd59c2535b324c34f73c1c2649cdb821adaf2b63f",
+      "title": "Default 2025.12 OSD settings",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "OSD",
+      "status": "OFFICIAL",
+      "keywords": [
+        "defaults",
+        "reset",
+        "OSD"
+      ],
+      "author": "Betaflight",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/osd/sugark_hdzero_osd.txt",
+      "hash": "656a74f10de5a16a67ee453e84a4e87e2b4d03debb96ef45a1c52d7b6a1f26d3",
+      "title": "sugarK HDzero OSD",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "OSD",
+      "status": "COMMUNITY",
+      "keywords": [
+        "hdzero",
+        "HD",
+        "HDOSD",
+        "OSD",
+        "sugarK",
+        "racing"
+      ],
+      "author": "sugarK",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/other/blackbox_disable.txt",
+      "hash": "88b85f4fcc0dc75355af77a5d5a117e42a678fad18be0891178a437b456e13aa",
+      "title": "2025.12 Blackbox disable settings",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "OTHER",
+      "status": "OFFICIAL",
+      "keywords": [
+        "blackbox",
+        "logging",
+        "log",
+        "disable",
+        "sugarK"
+      ],
+      "author": "sugarK",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/other/reset_gps.txt",
+      "hash": "b2e065b7bbf6eef24d377a596428f2978800214de8c3a5606737c725d559e527",
+      "title": "Reset GPS to 2025.12 default settings",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "OTHER",
+      "status": "OFFICIAL",
+      "keywords": [
+        "defaults",
+        "reset",
+        "GPS",
+        "GPS_Rescue"
+      ],
+      "author": "Betaflight",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/rates/FaderFPV.txt",
+      "hash": "595799dbfa34a2051602533e6c4e9acd608df7ea237383e2db09264629c94b5c",
+      "title": "Nicholas Young Rates",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RATES",
+      "status": "COMMUNITY",
+      "keywords": [
+        "fader fpv",
+        "secretfader",
+        "nicholas young",
+        "fictive flame"
+      ],
+      "author": "Nicholas Young (Fader FPV)",
+      "priority": 10000
+    },
+    {
+      "fullPath": "presets/2025.12/rates/defaults.txt",
+      "hash": "28417e3b786a5d364fcc6c2a3c37207fb9ebb6c571364468096702f46c8835bb",
+      "title": "Default rates",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RATES",
+      "status": "OFFICIAL",
+      "keywords": [
+        "defaults",
+        "rates",
+        "actual"
+      ],
+      "author": "Betaflight",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/defaults.txt",
+      "hash": "db1fdbfe8ff47d4e8c263f651365dd07f7005933bc7311a63e583067b3ba6a70",
+      "title": "Reset RC related settings",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "defaults",
+        "Rx",
+        "RC",
+        "reset",
+        "rc link",
+        "rc_link",
+        "smoothing",
+        "rc_smoothing"
+      ],
+      "author": "Betaflight",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/dji/DJI_Normal.txt",
+      "hash": "f406ea99733d5e40c546b061064a14f32bd9fac2d11313aad775b043609538a1",
+      "title": "DJI Normal",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "DJI",
+        "rc",
+        "link",
+        "transmitter"
+      ],
+      "author": "UAV Tech (Mark Spatz)",
+      "force_options_review": true,
+      "priority": 10000000000
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/dji/DJI_SBUS_Fast.txt",
+      "hash": "a38fdec735ce96d6b5c6a91fa65a0eacdc24d7fdc885bc31a8c8f94ea23f454f",
+      "title": "DJI SBUS FAST",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "DJI",
+        "rc",
+        "link",
+        "SBUS fast"
+      ],
+      "author": "UAV Tech (Mark Spatz)",
+      "force_options_review": true,
+      "priority": 10000000000
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/elrs/elrs_1000hz.txt",
+      "hash": "c036b3761e168f5ae3be7b046d7eb73f0ca0e13e883e0abd99540d30fba1305c",
+      "title": "ExpressLRS 1000Hz",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "ELRS",
+        "express",
+        "1000Hz",
+        "rc",
+        "rx",
+        "link",
+        "smoothing"
+      ],
+      "author": "ctzsnooze, SupaflyFPV",
+      "force_options_review": true,
+      "priority": 10000000000
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/elrs/elrs_150hz.txt",
+      "hash": "1066894b2243034a5c53ad1923615251bf19fcc712408a95a51c67aa9afd5acc",
+      "title": "ExpressLRS 150Hz",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "ELRS",
+        "express",
+        "150Hz",
+        "rc",
+        "rx",
+        "link",
+        "smoothing"
+      ],
+      "author": "ctzsnooze, SupaflyFPV",
+      "force_options_review": true,
+      "priority": 10000000000
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/elrs/elrs_250hz.txt",
+      "hash": "845feb297cc14f785eac0cafbd3bea34bc5c9e4b466c481fdb689b90994ed180",
+      "title": "ExpressLRS 250Hz",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "ELRS",
+        "express",
+        "250Hz",
+        "rc",
+        "rx",
+        "link",
+        "smoothing"
+      ],
+      "author": "ctzsnooze, SupaflyFPV",
+      "force_options_review": true,
+      "priority": 10000000000
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/elrs/elrs_500hz.txt",
+      "hash": "3b9a533f56325fdffdedd77dd768417d7c3fd52860e09d82fa0ae5d23d0f73b3",
+      "title": "ExpressLRS 500Hz",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "ELRS",
+        "express",
+        "500Hz",
+        "rc",
+        "rx",
+        "link",
+        "smoothing"
+      ],
+      "author": "ctzsnooze, SupaflyFPV",
+      "force_options_review": true,
+      "priority": 10000000000
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/elrs/elrs_50hz.txt",
+      "hash": "ac86b881651b5e29f0110eae6b06bfb5bfbd454125b89f00aa2061bdc7265117",
+      "title": "ExpressLRS 50Hz",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "ELRS",
+        "express",
+        "50Hz",
+        "20ms",
+        "rc",
+        "rx",
+        "link",
+        "smoothing"
+      ],
+      "author": "ctzsnooze, SupaflyFPV",
+      "force_options_review": true,
+      "priority": 10000000000
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/frsky/frsky_sbus_fport.txt",
+      "hash": "9500948e733d8cee3c81486dc59a45850109cdbecb0bfe870ffd4dd9bd2f8026",
+      "title": "FrSky Sbus or FPort",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "frsky",
+        "sbus",
+        "fport",
+        "9ms",
+        "111hz",
+        "rc",
+        "link",
+        "smoothing"
+      ],
+      "author": "ctzsnooze",
+      "force_options_review": true,
+      "priority": 10000000000
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/generic/1000hz_freestyle.txt",
+      "hash": "0283ee264656bbe2bfbc87a191dc4e7179e195bc33a011bde41a8616a4d09552",
+      "title": "Generic 1000Hz Freestyle",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "1000Hz",
+        "1ms",
+        "rc",
+        "rx",
+        "link",
+        "smoothing",
+        "ELRS"
+      ],
+      "author": "Sugar K",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/generic/1000hz_race.txt",
+      "hash": "d8cb34bebec7992902ed99def7557045e805a4f15ac8d4566cc0f520212443e9",
+      "title": "Generic 1000z Race",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "1000Hz",
+        "1ms",
+        "rc",
+        "rx",
+        "link",
+        "smoothing",
+        "ELRS"
+      ],
+      "author": "Sugar K",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/generic/150hz_cinematic.txt",
+      "hash": "74e23d8082afb28ac8d8d0d1ed71eaa1b22a6aa2eece46edd1e4207a25e4dd12",
+      "title": "Generic 150Hz Cinematic",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "150Hz",
+        "rc",
+        "rx",
+        "link",
+        "smoothing"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/generic/150hz_freestyle.txt",
+      "hash": "25c8ec337599e69f76d9ba74b342ea0dc06fda5b076c6e92c1131a17941f1fec",
+      "title": "Generic 150Hz Freestyle",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "150Hz",
+        "rc",
+        "rx",
+        "link",
+        "smoothing"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/generic/150hz_hd_freestyle.txt",
+      "hash": "b61286d8c4fbbfb5a8d650bd0f16df0d3b6971a45803b124a269be8f0ce7665a",
+      "title": "Generic 150Hz HD Freestyle",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "150Hz",
+        "rc",
+        "rx",
+        "link",
+        "smoothing"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/generic/150hz_race.txt",
+      "hash": "4393731c8bdb38bd565a70fc055996a0daeaf7e5d8b8e0c2af14c78f16a086d7",
+      "title": "Generic 150Hz Race",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "150Hz",
+        "rc",
+        "rx",
+        "link",
+        "smoothing"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/generic/150hz_ultra_cinematic.txt",
+      "hash": "db8905f83de7b38d4a50750d822611e6a58fa29e268e59a5ec80cea7d0708752",
+      "title": "Generic 150Hz Ultra Cinematic",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "150Hz",
+        "rc",
+        "rx",
+        "link",
+        "smoothing"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/generic/250hz_cinematic.txt",
+      "hash": "1a80f0b6bd11d5a8bfa901156d6fb42b6e3d4b1c542306d5b52d5b47029c9fc8",
+      "title": "Generic 250Hz Cinematic",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "250Hz",
+        "rc",
+        "rx",
+        "link",
+        "smoothing"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/generic/250hz_freestyle.txt",
+      "hash": "930383e0e630f2e41440e18b96f962a2e61ca938af076a6c5dcb4c29160c6280",
+      "title": "Generic 250Hz Freestyle",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "250Hz",
+        "rc",
+        "rx",
+        "link",
+        "smoothing"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/generic/250hz_hd_freestyle.txt",
+      "hash": "bf9f4c54d9934533c83e373acbc69cdfc092c04b29b369846b62b0c011cef119",
+      "title": "Generic 250Hz HD Freestyle",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "250Hz",
+        "rc",
+        "rx",
+        "link",
+        "smoothing"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/generic/250hz_race.txt",
+      "hash": "376c9746fb613b13624201ae439b1e70552b37d375557d58308638d10732d64b",
+      "title": "Generic 250Hz Race",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "250Hz",
+        "rc",
+        "rx",
+        "link",
+        "smoothing"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/generic/250hz_ultra_cinematic.txt",
+      "hash": "654536a16719c7b165da6b3a468d8c8cfd63fa6f5c05264afbfafa0eb219ca65",
+      "title": "Generic 250Hz Ultra Cinematic",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "250Hz",
+        "rc",
+        "rx",
+        "link",
+        "smoothing"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/generic/500hz_cinematic.txt",
+      "hash": "2548e8c29acc38366045c08d5d9fd4751c4bab5aaf8a2cf8ff6f23f8b0fd948b",
+      "title": "Generic 500Hz Cinematic",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "500Hz",
+        "2ms",
+        "rc",
+        "rx",
+        "link",
+        "smoothing"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/generic/500hz_freestyle.txt",
+      "hash": "f38fc71f8e38e11e7ad70aad91407b5b0d4ac27783d8f704bae536b3d6a434da",
+      "title": "Generic 500Hz Freestyle",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "500Hz",
+        "2ms",
+        "rc",
+        "rx",
+        "link",
+        "smoothing"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/generic/500hz_hd_freestyle.txt",
+      "hash": "5e5f05eda50249506a47be9e6ecaa6e3b48d8971131892f228107def882c6d3f",
+      "title": "Generic 500Hz HD Freestyle",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "500Hz",
+        "2ms",
+        "rc",
+        "rx",
+        "link",
+        "smoothing"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/generic/500hz_race.txt",
+      "hash": "8124d533a1cc70e168ae60d588d4be3e278580252de8eb5a0068fc24c7885947",
+      "title": "Generic 500Hz Race",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "500Hz",
+        "2ms",
+        "rc",
+        "rx",
+        "link",
+        "smoothing"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/generic/500hz_ultra_cinematic.txt",
+      "hash": "4cae81e127dc9a724f4a205df70f62b3ff70108679e4ab7a841f68ce25259dd7",
+      "title": "Generic 500Hz Ultra Cinematic",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "500Hz",
+        "2ms",
+        "rc",
+        "rx",
+        "link",
+        "smoothing"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/generic/50hz_cinematic.txt",
+      "hash": "703b6bb09891ac3eaf77331a4ad7e6df3e167867e9b34e86ec346fb16057637f",
+      "title": "Generic 50Hz Cinematic",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "50Hz",
+        "20ms",
+        "rc",
+        "rx",
+        "link",
+        "smoothing"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/generic/50hz_freestyle.txt",
+      "hash": "46876dbe8b05fa40ec81b5254dcd0ded26557be65c015ac8139ed6fbe610689f",
+      "title": "Generic 50Hz Freestyle",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "50Hz",
+        "20ms",
+        "rc",
+        "rx",
+        "link",
+        "smoothing"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/generic/50hz_hd_freestyle.txt",
+      "hash": "b065a44375174a44648449bbacaf7a1c72be52f736c8850b6848ecebc002d2d2",
+      "title": "Generic 50Hz HD Freestyle",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "50Hz",
+        "20ms",
+        "rc",
+        "rx",
+        "link",
+        "smoothing"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/generic/50hz_race.txt",
+      "hash": "a8524d053fae22aaf71502044cd6d4102146fe19f2b314da2462fbefd3a8a4a1",
+      "title": "Generic 50Hz Race",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "50Hz",
+        "20ms",
+        "rc",
+        "rx",
+        "link",
+        "smoothing"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/generic/50hz_ultra_cinematic.txt",
+      "hash": "9e52e8af0723630c2976f5befb128c9ddad381443576a57cfed511d9043ac8bb",
+      "title": "Generic 50Hz Ultra Cinematic",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "50Hz",
+        "20ms",
+        "rc",
+        "rx",
+        "link",
+        "smoothing"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/ghost/long_range.txt",
+      "hash": "ef57f40dd3fbb86518a35ae0b54f9f7d15244a0dd95a7ed65f25f941210baf95",
+      "title": "IRC Ghost (Long Range)",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "15Hz",
+        "Long Range",
+        "ghost",
+        "rc",
+        "rx",
+        "link",
+        "ghost",
+        "IRC",
+        "GHST",
+        "immersionRC",
+        "immersion"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "priority": 10000000000
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/ghost/normal.txt",
+      "hash": "efc60f193ccbe078d359792f23b41b310fafff2ab7c255cc1117375ee9b45f21",
+      "title": "IRC Ghost (Mode: Normal)",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "55Hz",
+        "Normal",
+        "ghost",
+        "rc",
+        "rx",
+        "link",
+        "ghost",
+        "IRC",
+        "GHST",
+        "immersionRC",
+        "immersion"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "force_options_review": true,
+      "priority": 10000000000
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/ghost/pure_race.txt",
+      "hash": "a5d9a0c0d1f27f55dd01c0765ca8d7981a28abbda5d16392159170f75fc3b352",
+      "title": "IRC Ghost (Pure Race)",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "250Hz",
+        "Pure Race",
+        "ghost",
+        "rc",
+        "rx",
+        "link",
+        "ghost",
+        "IRC",
+        "GHST",
+        "immersionRC",
+        "immersion"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "force_options_review": true,
+      "priority": 10000000000
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/ghost/race.txt",
+      "hash": "374560902e22ccc9811471ec581a7b803d26bb1c1cfe9e0a55cd6601045f1fd1",
+      "title": "IRC Ghost (Mode: Race)",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "166Hz",
+        "Race",
+        "ghost",
+        "rc",
+        "rx",
+        "link",
+        "ghost",
+        "IRC",
+        "GHST",
+        "immersionRC",
+        "immersion"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "force_options_review": true,
+      "priority": 10000000000
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/ghost/race250.txt",
+      "hash": "217bddcf5e6a7b18b0bad6ea761ebc50325076c296052a79526713874660eaf5",
+      "title": "IRC Ghost (Race250)",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "250Hz",
+        "Race250",
+        "ghost",
+        "rc",
+        "rx",
+        "link",
+        "ghost",
+        "IRC",
+        "GHST",
+        "immersionRC",
+        "immersion"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "force_options_review": true,
+      "priority": 10000000000
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/ghost/race500.txt",
+      "hash": "b75e0082c721567219f9066458fd7a085a89f21439da3560458689c5e65e433f",
+      "title": "IRC Ghost (Race500)",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "500Hz",
+        "Race500",
+        "ghost",
+        "rc",
+        "rx",
+        "link",
+        "ghost",
+        "IRC",
+        "GHST",
+        "immersionRC",
+        "immersion"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "force_options_review": true,
+      "priority": 10000000000
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/ghost/solid250.txt",
+      "hash": "dc9184d567527f81102ce6d9d01352d94ad9687080a6635d253fbd15813f6903",
+      "title": "IRC Ghost (Solid250)",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "250Hz",
+        "Solid250",
+        "ghost",
+        "rc",
+        "rx",
+        "link",
+        "ghost",
+        "IRC",
+        "GHST",
+        "immersionRC",
+        "immersion"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "force_options_review": true,
+      "priority": 10000000000
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/redpine/redpine_666hz.txt",
+      "hash": "e2a0d313c6d44cdc708227cb06aa6a60f7262a9c5e349b228cd12f8ca3baa186",
+      "title": "Redpine 666Hz",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "Redpine",
+        "rc",
+        "link",
+        "666Hz"
+      ],
+      "author": "ctzsnooze",
+      "force_options_review": true,
+      "priority": 10000000000
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/redpine/redpine_mpm.txt",
+      "hash": "2b354e2171a5b29b8c3b6db390ad4aff45e1f62eec4822ead39818baa9d8fb01",
+      "title": "Redpine MPM",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "Redpine",
+        "rc",
+        "link",
+        "666Hz"
+      ],
+      "author": "ctzsnooze",
+      "force_options_review": true,
+      "priority": 10000000000
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/tbs/crossfire_150hz.txt",
+      "hash": "a6739bca811a7d264cb3014ae2f21b0bd9ee7fda54c9e061fcecddeee5af368e",
+      "title": "TBS Crossfire 150Hz",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "150Hz",
+        "TBS",
+        "Crossfire",
+        "Team Black Sheep",
+        "CRSF",
+        "rc",
+        "rx",
+        "link"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "force_options_review": true,
+      "priority": 10000000000
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/tbs/crossfire_50hz.txt",
+      "hash": "893652a0f3b89e3fd694158feab10e118606168c1e89edd8f6a6d6cbbbe53ffc",
+      "title": "TBS Crossfire 50Hz",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "50Hz",
+        "TBS",
+        "Crossfire",
+        "Team Black Sheep",
+        "CRSF",
+        "rc",
+        "rx",
+        "link"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "force_options_review": true,
+      "priority": 10000000000
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/tbs/tracer_250hz.txt",
+      "hash": "f63d5e28423dc6b66cafdb0c350a75e2f09292f7fdb8ad6fca4f0fbe416db335",
+      "title": "TBS Tracer 250Hz",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "250Hz",
+        "TBS",
+        "Tracer",
+        "Team Black Sheep",
+        "CRSF",
+        "rc",
+        "rx",
+        "link"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "force_options_review": true,
+      "priority": 10000000000
+    },
+    {
+      "fullPath": "presets/2025.12/tune/blackbird_nextlevel.txt",
+      "hash": "53ea94140986c7e43f7b7fb92b9d0f7d342de6c6949bb75788953a11c2242dba",
+      "title": "Black Bird FPV | Next Level",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "Black Bird FPV",
+        "Blackbird",
+        "Next Level",
+        "SBANG",
+        "6S",
+        "Freestyle",
+        "5 inch",
+        "5\""
+      ],
+      "author": "Black Bird FPV (Tune) / Saturn_FPV (Preset)",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/2025.12/tune/defaults.txt",
+      "hash": "45ed771374ec26cb8e755e2db3647ba01229c72daa5aad7b3b66764f2ba25317",
+      "title": "Betaflight 2025.12 TUNE defaults",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "TUNE",
+      "status": "OFFICIAL",
+      "keywords": [
+        "defaults",
+        "reset",
+        "tune",
+        "pid",
+        "basic",
+        "default"
+      ],
+      "author": "Betaflight",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/tune/karate/karate_race_2025.txt",
+      "hash": "c7e432d5a04d6ce10f2b5b3f63085a6d605484dbd0517de2e4bb9200e4ce63bd",
+      "title": "Karate Race 6s 5\" 2025.12",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "TUNE",
+      "status": "OFFICIAL",
+      "keywords": [
+        "karate",
+        "6S",
+        "race",
+        "world champion",
+        "5 inch",
+        "5\"",
+        "sugarK",
+        "limon",
+        "ctzsnooze",
+        "KarateBrot",
+        "2025.12",
+        "Sh*t pilot",
+        "Viper Racing",
+        "COMPRESSOR",
+        "JWebb"
+      ],
+      "author": "sugarK",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/2025.12/tune/supafly_fpv/SupaflyFPV_Freestyle_3_4_Inch_EasyTune.txt",
+      "hash": "680e6bc30a083412d7ae36659ef7b15f642ed91702685d28241738a8c2e3a81b",
+      "title": "SupaflyFPV Freestyle 3/4 Inch",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "TUNE",
+      "status": "OFFICIAL",
+      "keywords": [
+        "Supafly",
+        "SupaflyFPV",
+        "4S",
+        "6S",
+        "Freestyle",
+        "3 inch",
+        "4 inch",
+        "3\"",
+        "4\""
+      ],
+      "author": "SupaflyFPV",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/2025.12/tune/supafly_fpv/SupaflyFPV_Freestyle_5_Inch_EasyTune.txt",
+      "hash": "4b1c87106d6a32e355f1544848f3915120096ea1a28c5a7aa172c88b0ecea051",
+      "title": "SupaflyFPV Freestyle 5 Inch",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "TUNE",
+      "status": "OFFICIAL",
+      "keywords": [
+        "Supafly",
+        "SupaflyFPV",
+        "4S",
+        "6S",
+        "Freestyle",
+        "5 inch",
+        "5\""
+      ],
+      "author": "SupaflyFPV",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/2025.12/tune/supafly_fpv/SupaflyFPV_Freestyle_6_and_EasyTune.txt",
+      "hash": "4b7114d3b58f9ff966c21d63b618b2e0dc0a935ac6043884d3bab0cef496f1d9",
+      "title": "SupaflyFPV Freestyle 6 Inch",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "TUNE",
+      "status": "OFFICIAL",
+      "keywords": [
+        "Supafly",
+        "SupaflyFPV",
+        "4S",
+        "6S",
+        "Freestyle",
+        "6 inch",
+        "6\""
+      ],
+      "author": "SupaflyFPV",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/2025.12/tune/supafly_fpv/SupaflyFPV_Freestyle_7_Inch_EasyTune.txt",
+      "hash": "19deb42bdfc5ce7f99b3cbd37db5b55eab0c378527f2f239aced91b5c7232e2a",
+      "title": "SupaflyFPV Freestyle 7 Inch",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "TUNE",
+      "status": "OFFICIAL",
+      "keywords": [
+        "Supafly",
+        "SupaflyFPV",
+        "4S",
+        "6S",
+        "Freestyle",
+        "7 inch",
+        "7\""
+      ],
+      "author": "SupaflyFPV",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/2025.12/tune/uav_tech/UAV_tech_10in.txt",
+      "hash": "3bc72b8cff643ebac22e45253d1f6704862314beb736d0f3c850d3b2f4667c85",
+      "title": "UAV Tech - 10\" (1400-1700g | 31xx motors)",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "TUNE",
+      "status": "OFFICIAL",
+      "keywords": [
+        "4S",
+        "6S",
+        "10in",
+        "10\"",
+        "freestyle"
+      ],
+      "author": "UAV Tech (Mark Spatz)",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/2025.12/tune/uav_tech/UAV_tech_5in_Freestyle_575-650.txt",
+      "hash": "4e270574724a1bcb2febdfe740e4dffc040abc26c694cff4620e96ad0f766952",
+      "title": "UAV Tech - 5\" Freestyle withOUT GoPro (575-650g AUW)",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "TUNE",
+      "status": "OFFICIAL",
+      "keywords": [
+        "4S",
+        "6S",
+        "5in",
+        "5\"",
+        "freestyle"
+      ],
+      "author": "UAV Tech (Mark Spatz)",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/2025.12/tune/uav_tech/UAV_tech_5in_Freestyle_650-750.txt",
+      "hash": "d2dc006dd0008b7e7dacfcad26ab0fbd6a1b5484bf362d3833bd70f206112572",
+      "title": "UAV Tech - 5\" Freestyle with GoPro (650-750g AUW)",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "TUNE",
+      "status": "OFFICIAL",
+      "keywords": [
+        "4S",
+        "6S",
+        "5in",
+        "5\"",
+        "freestyle"
+      ],
+      "author": "UAV Tech (Mark Spatz)",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/2025.12/tune/uav_tech/UAV_tech_5in_Race_500-575.txt",
+      "hash": "6773d28d8e599162915630cbea5616e64b0e79c107888a9733c1f3ab8697a278",
+      "title": "UAV Tech - 5\" Race (500-575g AUW)",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "TUNE",
+      "status": "OFFICIAL",
+      "keywords": [
+        "4S",
+        "6S",
+        "5in",
+        "5\"",
+        "race",
+        "racing"
+      ],
+      "author": "UAV Tech (Mark Spatz)",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/2025.12/tune/uav_tech/UAV_tech_6-7in.txt",
+      "hash": "5aa33fa2da65fe3e0d88c74d495f458ec098a1b43f45562f0ad20ce1c5aef480",
+      "title": "UAV Tech - 6\"/7\" (750-1000g AUW)",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "TUNE",
+      "status": "OFFICIAL",
+      "keywords": [
+        "4S",
+        "6S",
+        "6in",
+        "7in",
+        "6\"",
+        "7\"",
+        "freestyle",
+        "long range"
+      ],
+      "author": "UAV Tech (Mark Spatz)",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/2025.12/tune/uav_tech/UAV_tech_8-9in.txt",
+      "hash": "63150b0f9e735a78c1e96308b294978ae810d2b7b877d08e3acbfb027d1981f6",
+      "title": "UAV Tech - 8\"/9\" (1000-1400 AUW)",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "TUNE",
+      "status": "OFFICIAL",
+      "keywords": [
+        "4S",
+        "6S",
+        "8in",
+        "9in",
+        "8\"",
+        "9\"",
+        "freestyle",
+        "long range"
+      ],
+      "author": "UAV Tech (Mark Spatz)",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/2025.12/tune/uav_tech/UAV_tech_Cinelifter_8-9in.txt",
+      "hash": "0e279d76f572d309b2e5cbb3b99f15922d73f65a19e7f80c9f4afa9703f80618",
+      "title": "UAV Tech - Cinelifter (8\"/9\" >2,000g AUW)",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "TUNE",
+      "status": "OFFICIAL",
+      "keywords": [
+        "6S",
+        "8S",
+        "8in",
+        "9in",
+        "8\"",
+        "9\"",
+        "cinelifter"
+      ],
+      "author": "UAV Tech (Mark Spatz)",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/2025.12/tune/uav_tech/UAV_tech_Cinelog.txt",
+      "hash": "1c6cadaa9b82726e7b9f1d06a8970be50f159f4613f4834a773c684b8bc64840",
+      "title": "UAV Tech - Cinelog (250-300g AUW)",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "TUNE",
+      "status": "OFFICIAL",
+      "keywords": [
+        "CineLog"
+      ],
+      "author": "UAV Tech (Mark Spatz)",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/2025.12/tune/uav_tech/UAV_tech_Cinewhoop.txt",
+      "hash": "d88c2510e12d6c925df856a5a29a2a656c57d3b9508aa931815b63fb66dce2bf",
+      "title": "UAV Tech - Cinewhoop",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "TUNE",
+      "status": "OFFICIAL",
+      "keywords": [
+        "cinewhoop"
+      ],
+      "author": "UAV Tech (Mark Spatz)",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/2025.12/tune/uav_tech/UAV_tech_GoFilm20.txt",
+      "hash": "8659b94784b6758851edabdc938d257f55445f0e273ee37608db54e38ccb06bc",
+      "title": "Caddx BNF Gofilm 20",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "TUNE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "Caddx",
+        "Gofilm20"
+      ],
+      "author": "UAV Tech (Mark Spatz)",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/2025.12/tune/uav_tech/UAV_tech_Micro.txt",
+      "hash": "e8173acbc58fc60fda7db11033def51f4455ef02b5c54664e195d7b2d7c9c7fd",
+      "title": "UAV Tech - Micro (2\" to 4\")",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "TUNE",
+      "status": "OFFICIAL",
+      "keywords": [
+        "2S",
+        "3S",
+        "4S",
+        "6S",
+        "toothpick",
+        "2in",
+        "2.5in",
+        "3in",
+        "3.5in",
+        "4in"
+      ],
+      "author": "UAV Tech (Mark Spatz)",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/2025.12/tune/uav_tech/UAV_tech_Whoop.txt",
+      "hash": "e5e31af88d42834994bfce41f30d6a4b5885a0fe9ea88ced404265d2bad26d68",
+      "title": "UAV Tech - Whoop (1S & 2S)",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "TUNE",
+      "status": "OFFICIAL",
+      "keywords": [
+        "whoop"
+      ],
+      "author": "UAV Tech (Mark Spatz)",
+      "priority": 1000000000000
+    },
     {
       "fullPath": "presets/4.3/filters/basic_no_rpm_clean.txt",
       "hash": "c0bd2461401e586a4bdb5bf104db999a11bf8341762dbe509adf2d676f5b4412",
@@ -5750,26 +7271,8 @@
       "priority": 1000000
     },
     {
-      "fullPath": "presets/4.5/bnf/betafpv_air75.txt",
-      "hash": "8b97e2a35503478d141d5707f3de6baddceff463f1eede4bd3caa3fd51c56075",
-      "title": "BetaFPV Air75 Factory Defaults",
-      "firmware_version": [
-        "4.5"
-      ],
-      "category": "BNF",
-      "status": "COMMUNITY",
-      "keywords": [
-        "bnf",
-        "diff",
-        "betafpv",
-        "air75"
-      ],
-      "author": "YarosFPV (Yaroslav Syubayev)",
-      "priority": 0
-    },
-    {
       "fullPath": "presets/4.5/bnf/droneaid.txt",
-      "hash": "0eb51fe22fcbe7b24cf33bf38641565e295d91e4fd38212126c77825980a623c",
+      "hash": "533710772082c4534c8d3aaf013edf574d94722c246712a905a90ecc704d23b1",
       "title": "DroneAid 7\", 8\", 10\"",
       "firmware_version": [
         "4.5"
