@@ -1,0 +1,53 @@
+#$ TITLE: Nicholas Young DJI OSD
+#$ FIRMWARE_VERSION: 4.5
+#$ FIRMWARE_VERSION: 2025.12
+#$ CATEGORY: OSD
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: fader fpv, secretfader, nicholas young, fictive flame
+#$ AUTHOR: Nicholas Young (Fader FPV)
+#$ PARSER: MARKED
+#$ DESCRIPTION: This is the standard OSD for the [Fictive Air series](https://secretfader.com/aircraft) of cinematic FPV drones, developed by professional FPV pilot, drone builder, and tuner, [Nicholas Young](https://secretfader.com). While the GPS and magnetometer are required for certain features, all navigation elements are optional and designed to be toggled.
+
+#$ INCLUDE: presets/2025.12/osd/defaults.txt
+
+set osd_units = IMPERIAL
+set osd_warn_bitmask = 421759
+set osd_rssi_dbm_alarm = -95
+set osd_vbat_pos = 483
+set osd_link_quality_pos = 15468
+set osd_link_tx_power_pos = 15404
+set osd_rssi_dbm_pos = 15436
+set osd_rsnr_pos = 382
+set osd_tim_1_pos = 14915
+set osd_tim_2_pos = 14922
+set osd_flymode_pos = 14371
+set osd_throttle_pos = 14435
+set osd_crosshairs_pos = 238
+set osd_ah_sbar_pos = 8506
+set osd_ah_pos = 8378
+set osd_current_pos = 15425
+set osd_mah_drawn_pos = 1090
+set osd_craft_name_pos = 14392
+set osd_gps_speed_pos = 14413
+set osd_gps_lon_pos = 12771
+set osd_gps_lat_pos = 12739
+set osd_gps_sats_pos = 14883
+set osd_home_dir_pos = 12602
+set osd_home_dist_pos = 12842
+set osd_flight_dist_pos = 1197
+set osd_compass_bar_pos = 118
+set osd_altitude_pos = 14380
+set osd_warnings_pos = 14773
+set osd_avg_cell_voltage_pos = 15394
+set osd_disarmed_pos = 394
+set osd_nheading_pos = 109
+set osd_nvario_pos = 41
+set osd_rtc_date_time_pos = 16674
+set osd_flip_arrow_pos = 8282
+set osd_core_temp_pos = 427
+set osd_log_status_pos = 546
+set osd_stick_overlay_left_pos = 464
+set osd_stick_overlay_right_pos = 478
+set osd_rate_profile_name_pos = 14403
+set osd_pid_profile_name_pos = 195
+set osd_stat_bitmask = 1073889068
