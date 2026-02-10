@@ -3,7 +3,7 @@
 #$ CATEGORY: OTHER
 #$ STATUS: COMMUNITY
 #$ KEYWORDS: OSD, TBS, TBS Core, navigation, longrange, mountain surfing, MtnSurf
-#$ AUTHOR: phoenixplayz
+#$ AUTHOR: Phoenixplayz1
 
 #$ DESCRIPTION: I lay out my OSD the same way on every rig, so I always know
 #$ DESCRIPTION: where to find things. Perhaps my layout will make sense to you
@@ -65,13 +65,13 @@
         set thr_expo = 0
         set rates_type = ACTUAL
         set quickrates_rc_expo = OFF
-        set roll_rc_rate = 21
-        set pitch_rc_rate = 21
-        set yaw_rc_rate = 24
-        set roll_expo = 50
-        set pitch_expo = 50
-        set yaw_expo = 45
-        set roll_srate = 32
-        set pitch_srate = 32
-        set yaw_srate = 32
+        set roll_rc_rate = 20
+        set pitch_rc_rate = 20
+        set yaw_rc_rate = 21
+        set roll_expo = 40
+        set pitch_expo = 40
+        set yaw_expo = 30
+        set roll_srate = 70
+        set pitch_srate = 70
+        set yaw_srate = 70
     #$ OPTION END
