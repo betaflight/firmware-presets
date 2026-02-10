@@ -1,6 +1,6 @@
 {
 	"name" : "firmware-presets",
-	"productName" : "Betaflight Firmware Presets",
+	"productName" : "DroneAid Firmware Presets",
 	"description" : "Collection of CLI-based presets",
 	"scripts" : {
 		"index" : "node indexer/indexer.js",
@@ -8,7 +8,7 @@
 	},
 	"repository" : {
 		"type" : "git",
-		"url" : "github.com/betaflight/firmware-presets"
+		"url" : "https://github.com/vbereshchenko/droneaid-firmware-presets"
 	},
 	"author" : "The Betaflight open source project.",
 	"license" : "GPL-3.0",
