@@ -91,7 +91,7 @@ profile 0
 
    #$ OPTION BEGIN (CHECKED): Pilotix 5.8GHz 3W
         # TBS Smart Audio Control Port
-        serial 0 2048 115200 57600 0 115200
+        serial 3 2048 115200 57600 0 115200
 
         vtxtable bands 6
         vtxtable channels 8
@@ -325,6 +325,7 @@ profile 0
         set acc_calibration = -24,23,20,1
 
         # Ports (UARTS)
+
     #$ OPTION END
     #$ OPTION BEGIN (UNCHECKED): SpeedyBee F405 V4
         manufacturer_id SPBE
