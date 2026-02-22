@@ -14,7 +14,7 @@
 #$ DESCRIPTION: By default, both profiles are installed (you can uncheck one in the options if you prefer only one).
 #$ DISCLAIMER: The VTX table and settings in this preset are for educational purposes only. Users assume all responsibility for complying with local RF laws and regulations.
 #$ WARNING: This preset sets the motor protocol to DSHOT300. Ensure your ESCs support DSHOT to avoid unintended motor activation.
-#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/XXXX
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/569
 #$ FORCE_OPTIONS_REVIEW: TRUE
 
 defaults nosave
