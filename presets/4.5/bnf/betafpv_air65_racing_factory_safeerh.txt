@@ -21,8 +21,6 @@ defaults nosave
 
 board_name BETAFPVG473
 manufacturer_id BEFH
-mcu_id 0056003e4c45501320373958
-signature 
 
 # feature
 feature OSD
@@ -58,7 +56,6 @@ set dyn_notch_q = 500
 set dyn_notch_min_hz = 120
 set dyn_notch_max_hz = 500
 set gyro_lpf1_dyn_min_hz = 0
-set acc_calibration = -44,-10,-41,1
 set baro_hardware = NONE
 set dshot_bidir = ON
 set dshot_bitbang = AUTO
@@ -66,7 +63,6 @@ set motor_pwm_protocol = DSHOT300
 set motor_poles = 12
 set vbat_max_cell_voltage = 440
 set vbat_warning_cell_voltage = 345
-set ibata_offset = -600
 set yaw_motors_reversed = ON
 set small_angle = 180
 set pid_process_denom = 2
@@ -98,7 +94,6 @@ set osd_core_temp_pos = 278
 set osd_displayport_device = AUTO
 set osd_canvas_width = 30
 set osd_canvas_height = 13
-set debug_mode = GYRO_SCALED
 set vtx_band = 5
 set vtx_channel = 8
 set vtx_power = 1
@@ -157,10 +152,12 @@ set craft_name = AIR65 R
         set angle_p_gain = 100
         set d_min_roll = 41
         set d_min_pitch = 51
+        set d_max_gain = 0
         set feedforward_averaging = 2_POINT
         set feedforward_smooth_factor = 65
         set feedforward_jitter_factor = 5
         set simplified_master_multiplier = 125
+        set simplified_i_gain = 100
         set simplified_d_gain = 110
         set simplified_pi_gain = 110
         set simplified_dmax_gain = 0
