@@ -1,0 +1,190 @@
+#$ TITLE: BETAFPV Air65 Racing Factory Settings
+#$ FIRMWARE_VERSION: 4.5
+#$ CATEGORY: BNF
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: betafpv, air65, racing, factory, defaults
+#$ AUTHOR: Safeer Hussain
+#$ DESCRIPTION: This preset applies the factory default configuration for the BETAFPV Air65 Racing drone.
+#$ DESCRIPTION: 
+#$ DESCRIPTION: It includes PID profiles, VTX table, OSD settings, motor protocol, and other manufacturer-recommended settings.
+#$ DESCRIPTION: It resets to defaults before applying changes.
+#$ DESCRIPTION: 
+#$ DESCRIPTION: The drone comes with two factory PID profiles pre-installed: 1219S (default) and HQ 31mm (optimized for 31mm props).
+#$ DESCRIPTION: 
+#$ DESCRIPTION: By default, both profiles are installed (you can uncheck one in the options if you prefer only one).
+#$ DISCLAIMER: The VTX table and settings in this preset are for educational purposes only. Users assume all responsibility for complying with local RF laws and regulations.
+#$ WARNING: This preset sets the motor protocol to DSHOT300. Ensure your ESCs support DSHOT to avoid unintended motor activation.
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/XXXX
+#$ FORCE_OPTIONS_REVIEW: TRUE
+
+defaults nosave
+
+board_name BETAFPVG473
+manufacturer_id BEFH
+mcu_id 0056003e4c45501320373958
+signature 
+
+# feature
+feature OSD
+
+# beacon
+beacon RX_LOST
+beacon RX_SET
+
+# aux
+aux 0 0 0 1700 2100 0 0
+aux 1 1 1 900 1300 0 0
+aux 2 2 1 1300 1700 0 0
+aux 3 13 3 1700 2100 0 0
+aux 4 35 2 1700 2100 0 0
+
+# vtxtable
+vtxtable bands 6
+vtxtable channels 8
+vtxtable band 1 BOSCAM_A A FACTORY 5865 5845 5825 5805 5785 5765 5745 5725
+vtxtable band 2 BOSCAM_B B FACTORY 5733 5752 5771 5790 5809 5828 5847 5866
+vtxtable band 3 BOSCAM_E E FACTORY 5705 5685 5665 5645 5885 5905 5925 5945
+vtxtable band 4 FATSHARK F FACTORY 5740 5760 5780 5800 5820 5840 5860 5880
+vtxtable band 5 RACEBAND R FACTORY 5658 5695 5732 5769 5806 5843 5880 5917
+vtxtable band 6 LOWRACE  L FACTORY 5362 5399 5436 5473 5510 5547 5584 5621
+vtxtable powerlevels 5
+vtxtable powervalues 1 2 3 4 0
+vtxtable powerlabels 25 100 200 400 PIT
+
+# master
+set gyro_lpf1_static_hz = 0
+set dyn_notch_count = 1
+set dyn_notch_q = 500
+set dyn_notch_min_hz = 120
+set dyn_notch_max_hz = 500
+set gyro_lpf1_dyn_min_hz = 0
+set acc_calibration = -44,-10,-41,1
+set baro_hardware = NONE
+set dshot_bidir = ON
+set dshot_bitbang = AUTO
+set motor_pwm_protocol = DSHOT300
+set motor_poles = 12
+set vbat_max_cell_voltage = 440
+set vbat_warning_cell_voltage = 345
+set ibata_offset = -600
+set yaw_motors_reversed = ON
+set small_angle = 180
+set pid_process_denom = 2
+set osd_rssi_dbm_alarm = -99
+set osd_vbat_pos = 2369
+set osd_rssi_pos = 226
+set osd_link_quality_pos = 2337
+set osd_rssi_dbm_pos = 2305
+set osd_tim_1_pos = 386
+set osd_tim_2_pos = 2454
+set osd_remaining_time_estimate_pos = 33
+set osd_flymode_pos = 2422
+set osd_throttle_pos = 2390
+set osd_vtx_channel_pos = 2081
+set osd_crosshairs_pos = 2253
+set osd_current_pos = 2400
+set osd_mah_drawn_pos = 2434
+set osd_craft_name_pos = 2443
+set osd_home_dist_pos = 98
+set osd_flight_dist_pos = 130
+set osd_warnings_pos = 2378
+set osd_avg_cell_voltage_pos = 44
+set osd_pit_ang_pos = 97
+set osd_rol_ang_pos = 65
+set osd_disarmed_pos = 267
+set osd_esc_tmp_pos = 163
+set osd_esc_rpm_pos = 150
+set osd_core_temp_pos = 278
+set osd_displayport_device = AUTO
+set osd_canvas_width = 30
+set osd_canvas_height = 13
+set debug_mode = GYRO_SCALED
+set vtx_band = 5
+set vtx_channel = 8
+set vtx_power = 1
+set vtx_freq = 5917
+set vcd_video_system = AUTO
+set craft_name = AIR65 R
+
+#$ OPTION_GROUP BEGIN: PID Profile Selection
+    #$ OPTION BEGIN (CHECKED): 1219S Profile
+        profile 0
+
+        set profile_name = 1219S
+        set p_pitch = 71
+        set i_pitch = 101
+        set d_pitch = 60
+        set f_pitch = 0
+        set p_roll = 61
+        set i_roll = 87
+        set d_roll = 44
+        set f_roll = 0
+        set p_yaw = 61
+        set i_yaw = 87
+        set f_yaw = 0
+        set angle_p_gain = 100
+        set d_min_roll = 41
+        set d_min_pitch = 56
+        set d_max_gain = 20
+        set feedforward_averaging = 2_POINT
+        set feedforward_smooth_factor = 65
+        set feedforward_jitter_factor = 5
+        set simplified_master_multiplier = 125
+        set simplified_i_gain = 80
+        set simplified_d_gain = 110
+        set simplified_pi_gain = 110
+        set simplified_dmax_gain = 20
+        set simplified_feedforward_gain = 0
+        set simplified_pitch_d_gain = 120
+        set simplified_pitch_pi_gain = 110
+        set tpa_rate = 60
+    #$ OPTION END
+    #$ OPTION BEGIN (CHECKED): HQ 31mm Profile
+        profile 1
+
+        set profile_name = HQ 31mm
+        set p_pitch = 67
+        set i_pitch = 121
+        set d_pitch = 51
+        set f_pitch = 0
+        set p_roll = 61
+        set i_roll = 110
+        set d_roll = 41
+        set f_roll = 0
+        set p_yaw = 61
+        set i_yaw = 110
+        set f_yaw = 0
+        set angle_p_gain = 100
+        set d_min_roll = 41
+        set d_min_pitch = 51
+        set feedforward_averaging = 2_POINT
+        set feedforward_smooth_factor = 65
+        set feedforward_jitter_factor = 5
+        set simplified_master_multiplier = 125
+        set simplified_d_gain = 110
+        set simplified_pi_gain = 110
+        set simplified_dmax_gain = 0
+        set simplified_feedforward_gain = 0
+        set simplified_pitch_d_gain = 110
+        set simplified_pitch_pi_gain = 105
+        set tpa_rate = 60
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+profile 2
+
+profile 3
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+# restore original rateprofile selection
+rateprofile 0
