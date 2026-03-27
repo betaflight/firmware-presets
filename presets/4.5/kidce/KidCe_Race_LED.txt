@@ -1,4 +1,4 @@
-#$ TITLE: KidCe race led
+#$ TITLE: KidCe race leds
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: LEDS
 #$ STATUS: OFFICIAL
