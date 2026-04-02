@@ -1,59 +1,98 @@
-name: CI - Indexer job (deploy if master branch)
+name: 'Deployment'
 
-on: [push, pull_request]
+on:
+  pull_request_target:
+    branches:
+      - master
+  push:
+    branches:
+      - master
 
 jobs:
+  # Job 1: Build the code (no secrets here)
   build:
+    permissions:
+      actions: read
+      contents: read
+      deployments: write
+      pull-requests: write
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [15.x]
-
+    timeout-minutes: 5
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
+      - name: Checkout code
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          persist-credentials: false
 
-    - if: github.ref != 'refs/heads/master' || github.repository_owner != 'betaflight' 
-      name: Run the checker script
-      run: ./scripts/build.sh
+      - name: Setup node
+        uses: actions/setup-node@v5
+        with:
+          node-version: 20
 
-    - if: github.ref == 'refs/heads/master' && github.repository_owner == 'betaflight' 
-      name: Run the checker, indexer and deployment script
-      run: ./scripts/build.sh deploy
+      - name: Run the checker script
+        if: github.ref != 'refs/heads/master' || github.repository_owner != 'betaflight'
+        run: ./scripts/build.sh
 
-    - if: github.ref == 'refs/heads/master' && github.repository_owner == 'betaflight' 
-      name: Upload build artifact
-      uses: actions/upload-artifact@v4
-      with:
-        name: dist-files
-        path: public
-        retention-days: 7
+      - name: Run the checker, indexer and deployment script
+        if: github.ref == 'refs/heads/master' && github.repository_owner == 'betaflight'
+        run: ./scripts/build.sh deploy
 
+      - name: Run the checker, indexer and deployment script (PR)
+        if: github.event_name == 'pull_request_target'
+        run: ./scripts/build.sh deploy
+
+      - name: Upload build artifact
+        if: github.ref == 'refs/heads/master' && github.repository_owner == 'betaflight' || github.event_name == 'pull_request_target'
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist-files
+          path: public
+          retention-days: 7
+
+  # Job 2: Deploy with secrets (no PR code checkout)
   deploy:
     needs: build
+    permissions:
+      actions: read
+      contents: read
+      deployments: write
+      pull-requests: write
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/master' && github.repository_owner == 'betaflight' 
-    
+    if: (github.ref == 'refs/heads/master' && github.repository_owner == 'betaflight') || github.event_name == 'pull_request_target'
+    timeout-minutes: 5
     steps:
-    - name: Download build artifact
-      uses: actions/download-artifact@v5
-      with:
-        name: dist-files
-        path: public
-          
-    - name: Set alias branch name for Cloudflare (if a push)
-      id: branch_push
-      run: |
-        echo "BRANCH=${{ github.ref_name }}" >> $GITHUB_ENV
+      - name: Download build artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: dist-files
+          path: public
 
-    - name: Deploy to Cloudflare
-      id: deploy
-      uses: cloudflare/wrangler-action@v3
-      with:
-        apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-        accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-        command: pages deploy public --project-name=${{ vars.CLOUDFLARE_PROJECT_NAME }} --branch=${{ env.BRANCH }} --commit-dirty=true
+      - name: Set alias branch name for Cloudflare (if a push)
+        id: branch_push
+        if: github.event_name == 'push'
+        run: |
+          echo "BRANCH=${{ github.ref_name }}" >> $GITHUB_ENV
+
+      - name: Set alias branch name for Cloudflare (if a pull_request)
+        id: branch_pull
+        if: github.event_name == 'pull_request_target'
+        run: |
+          echo "BRANCH=PR${{ github.event.pull_request.number }}" >> $GITHUB_ENV
+
+      - name: Deploy to Cloudflare
+        id: deploy
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy public --project-name=${{ vars.CLOUDFLARE_PROJECT_NAME }} --branch=${{ env.BRANCH }} --commit-dirty=true
+
+      - name: Add deployment comment
+        if: github.event_name == 'pull_request_target'
+        uses: thollander/actions-comment-pull-request@v3
+        with:
+          message: |
+             Preview URL: ${{ steps.deploy.outputs.pages-deployment-alias-url }}
+          comment-tag: 'Preview URL'
+          mode: recreate
