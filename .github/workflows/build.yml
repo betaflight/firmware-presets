@@ -14,15 +14,13 @@ jobs:
     permissions:
       actions: read
       contents: read
-      deployments: write
-      pull-requests: write
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
       - name: Checkout code
         uses: actions/checkout@v5
         with:
-          ref: ${{ github.event.pull_request.head.sha }}
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
           persist-credentials: false
 
       - name: Setup node
@@ -35,7 +33,7 @@ jobs:
         run: ./scripts/build.sh
 
       - name: Run the checker, indexer and deployment script
-        if: github.ref == 'refs/heads/master' && github.repository_owner == 'betaflight'
+        if: github.ref == 'refs/heads/master' && github.repository_owner == 'betaflight' && github.event_name == 'push'
         run: ./scripts/build.sh deploy
 
       - name: Run the checker, indexer and deployment script (PR)
@@ -43,7 +41,7 @@ jobs:
         run: ./scripts/build.sh deploy
 
       - name: Upload build artifact
-        if: github.ref == 'refs/heads/master' && github.repository_owner == 'betaflight' || github.event_name == 'pull_request_target'
+        if: (github.ref == 'refs/heads/master' && github.repository_owner == 'betaflight' && github.event_name == 'push') || github.event_name == 'pull_request_target'
         uses: actions/upload-artifact@v4
         with:
           name: dist-files
@@ -93,6 +91,6 @@ jobs:
         uses: thollander/actions-comment-pull-request@v3
         with:
           message: |
-             Preview URL: ${{ steps.deploy.outputs.pages-deployment-alias-url }}
+            Preview URL: ${{ steps.deploy.outputs.pages-deployment-alias-url }}
           comment-tag: 'Preview URL'
           mode: recreate
