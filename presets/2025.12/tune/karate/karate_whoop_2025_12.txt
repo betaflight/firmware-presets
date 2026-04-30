@@ -93,7 +93,7 @@ set cpu_late_limit_permille = 15
 #$ OPTION END
     
 #$ OPTION BEGIN (UNCHECKED): New crash flip mode
-    set crashflip_rate = 20
+    set crashflip_rate = 30
     set crashflip_auto_rearm = ON 
 #$ OPTION END
 
