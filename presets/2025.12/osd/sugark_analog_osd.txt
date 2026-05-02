@@ -15,7 +15,7 @@
 #$ DESCRIPTION: 
 #$ DESCRIPTION: Preview:
 #$ DESCRIPTION: -----------
-#$ DESCRIPTION: <img width="237" height="172" src="https://private-user-images.githubusercontent.com/83344205/578400294-71bc26fc-2fe6-4478-899e-7f61dab72398.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Nzc1MjAzMTUsIm5iZiI6MTc3NzUyMDAxNSwicGF0aCI6Ii84MzM0NDIwNS81Nzg0MDAyOTQtNzFiYzI2ZmMtMmZlNi00NDc4LTg5OWUtN2Y2MWRhYjcyMzk4LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA0MzAlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNDMwVDAzMzMzNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPThiOWYxMTk3YzUxODI1NDRhYjA1NDA3OTkzYTM4NGVlNDYxZmQ2ZWQzMGExNDQzZTA1OWZmOWYyZGQ3ZDY3NzUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.AjM5TP9vkRku9shuwgMPt8Mwsy6DSKfz1exwQafTOws"/>
+#$ DESCRIPTION: <img width="237" height="172" alt="Screenshot 2026-04-15 at 3 27 51 pm" src="https://github.com/user-attachments/assets/71bc26fc-2fe6-4478-899e-7f61dab72398" />
 #$ DESCRIPTION:
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/576
 
