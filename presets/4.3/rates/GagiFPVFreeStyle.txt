@@ -1,0 +1,52 @@
+#$ TITLE: GagiFPV Rates for Freestyle with Cinematic Option
+#$ FIRMWARE_VERSION: 4.3
+#$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.5
+#$ CATEGORY: RATES
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: GagiFPV, Gagi, rates, freestyle, hd, cinematic
+#$ AUTHOR: GagiFPV
+#$ DESCRIPTION: GagiFPV Rates
+#$ DESCRIPTION:
+#$ DESCRIPTION: Information:
+#$ DESCRIPTION: -----------
+#$ DESCRIPTION: GagiFPV Rates for Drone FPV Freestyle using 867 Max Vel [deg/s] for Roll/Pitch and 571 Max Vel [deg/s] for Yaw.
+#$ DESCRIPTION:If you want to use cinematic smooth rates just remember to select also the "Cinematic/HD" option. 
+#$ DESCRIPTION: -----------
+#$ WARNING: Before applying this preset, REMEMBER to select your rateprofile to overwrite 
+
+#$ INCLUDE: presets/4.3/rates/defaults.txt
+
+set rates_type = BETAFLIGHT
+set thr_expo = 60
+set roll_rc_rate = 130
+set pitch_rc_rate = 130
+set roll_expo = 22
+set pitch_expo = 22
+set yaw_expo = 10
+set yaw_srate = 65
+set tpa_rate = 45
+
+#$ OPTION BEGIN (UNCHECKED): Actual Rates for FPV Freestyle
+set rates_type = ACTUAL
+set thr_expo = 60
+set roll_rc_rate = 19
+set pitch_rc_rate = 19
+set yaw_rc_rate = 16
+set roll_expo = 63
+set pitch_expo = 63
+set yaw_expo = 48
+set roll_srate = 87
+set pitch_srate = 87
+set yaw_srate = 57
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Add Cinematic/HD smooth feeling
+    # -- ADDER: Cinematic/HD --
+    set roll_rc_rate = 6
+    set pitch_rc_rate = 6
+    set yaw_rc_rate = 5
+    set roll_expo = 45
+    set pitch_expo = 45
+    set yaw_expo = 45
+#$ OPTION END
