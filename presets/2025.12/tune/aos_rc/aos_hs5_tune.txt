@@ -76,7 +76,7 @@ set dyn_idle_p_gain = 40
 
 # -- Fast Rx Link Options --
 
-#$ OPTION_GROUP BEGIN: Choose your RC link (or apply another preset separately)
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Choose your RC link (or apply another preset separately)
     #$ OPTION BEGIN (UNCHECKED): ELRS_250HZ (Recommended)
         #$ INCLUDE: presets/4.3/rc_link/elrs_250hz.txt
     #$ OPTION END
