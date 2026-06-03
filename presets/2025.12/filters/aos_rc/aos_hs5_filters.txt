@@ -31,5 +31,5 @@ set rpm_filter_fade_range_hz = 50
 set rpm_filter_min_hz = 100
 set rpm_filter_weights = 100, 100, 100
 
-# ------ OPIONS GO BELOW THIS LINE ------
+# ------ OPTIONS GO BELOW THIS LINE ------
 

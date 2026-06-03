@@ -61,7 +61,7 @@ set thrust_linear = 25
 set dyn_idle_min_rpm = 100
 set dyn_idle_p_gain = 40
 
-# ------ OPIONS GO BELOW THIS LINE ------
+# ------ OPTIONS GO BELOW THIS LINE ------
 
 # -- Filters --
 
