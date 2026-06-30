@@ -3,12 +3,14 @@
 #$ FIRMWARE_VERSION: 4.3
 #$ FIRMWARE_VERSION: 4.4
 #$ FIRMWARE_VERSION: 4.5
+#$ FIRMWARE_VERSION: 2025.12
+#$ FIRMWARE_VERSION: 2026.6
 #$ CATEGORY: VTX
 #$ STATUS: COMMUNITY
 #$ KEYWORDS:  vtx, vtx table, tbs, unify , pro32, DP, SA 2.1
 #$ AUTHOR: andybrwr
 #$ DESCRIPTION: VTX table for TBS Unify Pro32 DP SA 2.1. NOTE 1. Max power set to 65dB as it will force the VTX to output max power. NOTE 2. This table is as provided by the manufacturer.
-#$ DESCRIPTION: !!! Make sure to use the correct broad band antenna to avoid damaging the VTX !!!
+#$ DESCRIPTION: !!! Make sure to use the correct broadband antenna to avoid damaging the VTX !!!
 #$ DESCRIPTION: The information provided on this preset is for educational and entertainment purposes only. Betaflight makes no representations as to the safety or legality of the use of any information provided herein. End users assume all responsibility and liability for ensuring they are complying with all relevant laws and regulations.
 #$ DESCRIPTION: ----------
 #$ DESCRIPTION: Using the VTX tables as provided may be in breach of your local RF laws. It is up to the end user to research and comply with local regulations and in using these presets the user assumes all liability associated with breaching local regulations.
