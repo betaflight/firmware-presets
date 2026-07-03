@@ -21,7 +21,7 @@
 #$ DESCRIPTION: - Battery: 1480mAh-1550mAh, any brand/C-rating
 #$ DESCRIPTION:
 #$ DESCRIPTION: These are recommendations only. Every pilot has their own preferences — feel free to experiment.
-#$ DISCUSSION: https://github.com/gyyy414/firmware-presets
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/584
 
 # OXBT CHAMP2 Factory Preset
 #
