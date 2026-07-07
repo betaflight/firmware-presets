@@ -1446,7 +1446,7 @@
     },
     {
       "fullPath": "presets/2025.12/rc_link/generic/1000hz_freestyle.txt",
-      "hash": "314442a30307bfcff0f9ef14af9959708af4998f76ccb2af0ae64b61a16255d6",
+      "hash": "3f19c72e366fd2f8f1e6f570246ca26c1fcb5a762bb6977ca94c67e6058e19ea",
       "title": "Generic 1000Hz Freestyle",
       "firmware_version": [
         "2025.12",
@@ -1468,7 +1468,7 @@
     },
     {
       "fullPath": "presets/2025.12/rc_link/generic/1000hz_race.txt",
-      "hash": "49d16693e1bd9c21d8b48182053171d268d07a169595cd4fc42257cfe1dd5519",
+      "hash": "87d29a11a0b7cba1005ec711bd048d3e7776d9f099e533f9a6688e40d773b166",
       "title": "Generic 1000z Race",
       "firmware_version": [
         "2025.12",
