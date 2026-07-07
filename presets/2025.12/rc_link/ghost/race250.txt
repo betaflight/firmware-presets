@@ -1,5 +1,6 @@
 #$ TITLE: IRC Ghost (Race250)
 #$ FIRMWARE_VERSION: 2025.12
+#$ FIRMWARE_VERSION: 2026.6
 #$ CATEGORY: RC_LINK
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: 250Hz, Race250, ghost, rc, rx , link, ghost, IRC, GHST, immersionRC, immersion

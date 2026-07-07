@@ -1,5 +1,6 @@
 #$ TITLE: TBS Crossfire 50Hz
 #$ FIRMWARE_VERSION: 2025.12
+#$ FIRMWARE_VERSION: 2026.6
 #$ CATEGORY: RC_LINK
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: 50Hz, TBS, Crossfire, Team Black Sheep, CRSF, rc, rx , link
