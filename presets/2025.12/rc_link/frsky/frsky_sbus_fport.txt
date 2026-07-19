@@ -1,5 +1,6 @@
 #$ TITLE: FrSky Sbus or FPort
 #$ FIRMWARE_VERSION: 2025.12
+#$ FIRMWARE_VERSION: 2026.6
 #$ CATEGORY: RC_LINK
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: frsky, sbus, fport, 9ms, 111hz, rc, link, smoothing
