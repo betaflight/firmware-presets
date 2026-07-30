@@ -8,6 +8,7 @@
 #$ DESCRIPTION: Tune for the Impetus 2 frame by Funkolius.
 #$ DESCRIPTION: Bidirectional DShot is required. Make sure your ESCs are 32-bit or flashed with BlueJay for 8-bit.
 #$ DESCRIPTION: Back up your current configuration before applying this preset, then test carefully and check motor temperatures.
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/588
 #$ FORCE_OPTIONS_REVIEW: false
 
 # Use PID profile 0 so the defaults include resets the same profile the tune uses.
