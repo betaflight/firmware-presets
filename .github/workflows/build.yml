@@ -22,6 +22,7 @@ jobs:
         with:
           ref: ${{ github.event.pull_request.head.sha || github.sha }}
           persist-credentials: false
+          allow-unsafe-pr-checkout: true  # checkout@v5 fork-checkout gate; job is contents:read, no secrets
 
       - name: Setup node
         uses: actions/setup-node@v5
