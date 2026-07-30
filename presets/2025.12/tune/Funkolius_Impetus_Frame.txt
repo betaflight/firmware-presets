@@ -2,7 +2,7 @@
 #$ FIRMWARE_VERSION: 2025.12
 #$ CATEGORY: TUNE
 #$ STATUS: EXPERIMENTAL
-#$ KEYWORDS: freestyle, impetus 2, impetus, micro, 2 inch, 2.2 inch prop, frame, Funkolius
+#$ KEYWORDS: freestyle, impetus 2, impetus, micro, 2 inch, 2 in, 2", 2.2 inch prop, frame, Funkolius
 #$ AUTHOR: Funkolius
 #$ PARSER: MARKED
 #$ DESCRIPTION: Tune for the Impetus 2 frame by Funkolius.
@@ -15,7 +15,6 @@
 profile 0
 
 #$ INCLUDE: presets/2025.12/tune/defaults.txt
-#$ INCLUDE: presets/4.5/filters/defaults.txt
 
 # -- Simplified tuning baseline --
 set simplified_master_multiplier = 120
@@ -35,24 +34,12 @@ set iterm_rotation = ON
 set iterm_relax = RPY
 set iterm_relax_type = GYRO
 set iterm_relax_cutoff = 13
-set p_pitch = 39
-set i_pitch = 52
-set d_pitch = 53
-set f_pitch = 89
-set p_roll = 37
-set i_roll = 50
-set d_roll = 43
-set f_roll = 86
-set p_yaw = 37
-set i_yaw = 50
-set f_yaw = 86
-set d_max_roll = 43
-set d_max_pitch = 53
 set d_max_gain = 35
 set d_max_advance = 55
 
 # -- Filters --
 #$ OPTION BEGIN (CHECKED): FILTERS RECOMMENDED FOR CLEAN BUILD
+#$ INCLUDE: presets/4.5/filters/defaults.txt
 set gyro_lpf1_static_hz = 0
 set gyro_lpf2_static_hz = 700
 set dyn_notch_count = 1
@@ -69,13 +56,6 @@ set dterm_lpf2_static_hz = 0
 set simplified_dterm_filter = OFF
 set simplified_dterm_filter_multiplier = 100
 #$ OPTION END
-
-# -- Launch control defaults reset --
-set launch_control_mode = PITCHONLY
-set launch_trigger_allow_reset = ON
-set launch_trigger_throttle_percent = 20
-set launch_angle_limit = 0
-set launch_control_gain = 40
 
 # -- Launch control (optional) --
 #$ OPTION BEGIN (UNCHECKED): LAUNCH CONTROL (PITCHONLY)
