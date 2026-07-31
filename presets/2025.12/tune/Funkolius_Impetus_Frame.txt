@@ -39,30 +39,30 @@ set d_max_advance = 55
 
 # -- Filters --
 #$ OPTION BEGIN (CHECKED): FILTERS RECOMMENDED FOR CLEAN BUILD
-#$ INCLUDE: presets/4.5/filters/defaults.txt
-set gyro_lpf1_static_hz = 0
-set gyro_lpf2_static_hz = 700
-set dyn_notch_count = 1
-set dyn_notch_q = 750
-set dyn_notch_min_hz = 115
-set gyro_lpf1_dyn_min_hz = 0
-set simplified_gyro_filter = OFF
+    #$ INCLUDE: presets/4.5/filters/defaults.txt
+    set gyro_lpf1_static_hz = 0
+    set gyro_lpf2_static_hz = 700
+    set dyn_notch_count = 1
+    set dyn_notch_q = 750
+    set dyn_notch_min_hz = 115
+    set gyro_lpf1_dyn_min_hz = 0
+    set simplified_gyro_filter = OFF
 
-set dterm_lpf1_dyn_min_hz = 80
-set dterm_lpf1_dyn_max_hz = 120
-set dterm_lpf1_type = BIQUAD
-set dterm_lpf2_static_hz = 0
-# Keep disabled D-term slider state sane if the user later re-enables the slider.
-set simplified_dterm_filter = OFF
-set simplified_dterm_filter_multiplier = 100
+    set dterm_lpf1_dyn_min_hz = 80
+    set dterm_lpf1_dyn_max_hz = 120
+    set dterm_lpf1_type = BIQUAD
+    set dterm_lpf2_static_hz = 0
+    # Keep disabled D-term slider state sane if the user later re-enables the slider.
+    set simplified_dterm_filter = OFF
+    set simplified_dterm_filter_multiplier = 100
 #$ OPTION END
 
 # -- Launch control (optional) --
 #$ OPTION BEGIN (UNCHECKED): LAUNCH CONTROL (PITCHONLY)
-set launch_control_mode = PITCHONLY
-set launch_trigger_throttle_percent = 35
-set launch_angle_limit = 80
-set launch_control_gain = 40
+    set launch_control_mode = PITCHONLY
+    set launch_trigger_throttle_percent = 35
+    set launch_angle_limit = 80
+    set launch_control_gain = 40
 #$ OPTION END
 
 # -- Other Requirements --
