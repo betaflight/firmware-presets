@@ -1,0 +1,52 @@
+#$ TITLE: sugarK analog OSD
+#$ FIRMWARE_VERSION: 2025.12
+#$ CATEGORY: OSD
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: analog, SD, whoop, OSD, sugarK, racing
+#$ AUTHOR: sugarK 
+
+#$ DESCRIPTION: sugarKs analog OSD race settings
+#$ DESCRIPTION: Intended to be used with analog whoops 
+#$ DESCRIPTION: -----------
+#$ DESCRIPTION: for use on analog racing whoops
+#$ DESCRIPTION:
+#$ DESCRIPTION: Information
+#$ DESCRIPTION: -----------
+#$ DESCRIPTION: 
+#$ DESCRIPTION: Preview:
+#$ DESCRIPTION: -----------
+#$ DESCRIPTION: <img width="237" height="172" alt="Screenshot 2026-04-15 at 3 27 51 pm" src="https://github.com/user-attachments/assets/71bc26fc-2fe6-4478-899e-7f61dab72398" />
+#$ DESCRIPTION:
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/576
+
+#$ INCLUDE: presets/2025.12/osd/defaults.txt
+
+set osd_rssi_alarm = 0
+set osd_rssi_dbm_alarm = -99
+set osd_cap_alarm = 0
+set osd_alt_alarm = 0
+set osd_vbat_pos = 312
+set osd_rssi_pos = 226
+set osd_link_quality_pos = 2424
+set osd_rssi_dbm_pos = 289
+set osd_tim_1_pos = 386
+set osd_tim_2_pos = 2456
+set osd_remaining_time_estimate_pos = 33
+set osd_flymode_pos = 366
+set osd_throttle_pos = 2392
+set osd_vtx_channel_pos = 33
+set osd_current_pos = 407
+set osd_mah_drawn_pos = 386
+set osd_craft_name_pos = 395
+set osd_pilot_name_pos = 2444
+set osd_home_dist_pos = 98
+set osd_flight_dist_pos = 130
+set osd_warnings_pos = 2282
+set osd_avg_cell_voltage_pos = 2296
+set osd_pit_ang_pos = 97
+set osd_rol_ang_pos = 65
+set osd_disarmed_pos = 267
+set osd_esc_tmp_pos = 163
+set osd_esc_rpm_pos = 150
+set osd_core_temp_pos = 278
+set osd_stat_bitmask = 611876

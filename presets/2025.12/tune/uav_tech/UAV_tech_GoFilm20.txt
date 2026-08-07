@@ -1,0 +1,136 @@
+#$ TITLE: Caddx BNF Gofilm 20
+#$ FIRMWARE_VERSION: 2025.12
+#$ CATEGORY: TUNE
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: Caddx, Gofilm20
+#$ AUTHOR: UAV Tech (Mark Spatz)
+
+#$ PARSER: MARKED
+#$ DESCRIPTION: - [My Full Review](https://youtu.be/kzLa2VxzDGY?si=BfAVsKG5_qjcO5qw)
+#$ DESCRIPTION: - [My Freestyle Flight - SHE RIPS!](https://youtu.be/pV_Vb6-TmRY?si=gZOYgZr2AvVUhlR9)
+#$ DESCRIPTION:
+#$ DESCRIPTION: Performance Tune for Caddx Gofilm 20:
+#$ DESCRIPTION: -----------
+#$ DESCRIPTION: <img src="https://github.com/betaflight/firmware-presets/assets/25570978/7d87b940-dcfb-43a5-aaf3-182d59fc8ced" width="350px"/>
+#$ DESCRIPTION:
+#$ DESCRIPTION: Description:
+#$ DESCRIPTION: -----------
+#$ DESCRIPTION: Performance tune based on a Gofilm 20 all-up-weight (AUW) of 190 to 195 grams. Battery is a 650mAh-4S (74g). It assumes the ESC PWM frequency is left at the default of 48K.
+#$ DESCRIPTION:
+#$ DESCRIPTION: Created by:
+#$ DESCRIPTION: -----------
+#$ DESCRIPTION: UAV Tech - YouTube content creator and professional tuner [www.theuavtech.com](https://www.theuavtech.com)
+#$ DESCRIPTION:
+#$ DESCRIPTION: <img src="https://i0.wp.com/theuavtech.com/wp-content/uploads/2020/10/icon-150x150-1.png" width="100px" style="margin-left: auto; margin-right: auto; display: block;"/>
+#$ DESCRIPTION:
+#$ DESCRIPTION:
+#$ WARNING: **DO NOT** select this preset unless your ESCs support Bi-Directional DSHOT communication, WHICH IS THE DEFAULT FOR THE CADDX GOFILM 20.  If you have re-flashed the ESCs and are unsure if the firmware you flashed supports Bi-Directional DSHOT, HIT CANCEL! To test, take your props OFF.
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/468
+#$ INCLUDE: presets/2025.12/tune/defaults.txt
+#$ INCLUDE: presets/4.5/filters/defaults.txt
+
+# -- PID Settings --
+set simplified_pids_mode = RP
+set simplified_d_gain = 90
+set simplified_pi_gain = 100
+set simplified_feedforward_gain = 110
+set simplified_d_max_gain = 100
+set simplified_i_gain = 100
+set simplified_pitch_d_gain = 130
+set simplified_pitch_pi_gain = 130
+set simplified_master_multiplier = 100
+
+set p_yaw = 90
+set i_yaw = 90
+
+set tpa_breakpoint = 1750
+
+set dyn_idle_min_rpm = 25
+set vbat_sag_compensation = 100
+set anti_gravity_gain = 85
+set pidsum_limit = 1000
+set pidsum_limit_yaw = 1000
+
+#$ OPTION_GROUP BEGIN: Choose YOUR spice option
+  #$ OPTION BEGIN (UNCHECKED): low Spice (low Alt.)
+  # -- ADDER: 0 to 1,000ft --
+    set simplified_master_multiplier = 90
+  #$ OPTION END
+
+  #$ OPTION BEGIN (CHECKED): Medium Spice (Med. Alt.)
+    # -- ADDER: 1,000ft to 3,000ft --
+    set simplified_master_multiplier = 100
+  #$ OPTION END
+
+  #$ OPTION BEGIN (UNCHECKED): HIGH Spice (HIGH Alt.)
+    # -- ADDER: 3,000ft+ --
+    set simplified_master_multiplier = 110
+  #$ OPTION END
+
+  #$ OPTION BEGIN (UNCHECKED): EXTRA Spicy (HIGHer Alt.)
+    # -- ADDER: 3,000ft+ --
+    set simplified_master_multiplier = 120
+  #$ OPTION END
+
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: Choose ONE Filter option
+  #$ OPTION BEGIN (UNCHECKED): low Build Quality
+    # -- ADDER: For HIGH gyro vibration builds --
+    set simplified_gyro_filter = ON
+    set simplified_gyro_filter_multiplier = 125
+    set simplified_dterm_filter = ON
+    set simplified_dterm_filter_multiplier = 100
+    set gyro_lpf2_static_hz = 0
+    set dyn_notch_count = 1
+    set dyn_notch_q = 300
+    set dyn_notch_min_hz = 125
+    set dyn_notch_max_hz = 850
+    set motor_pwm_protocol = DSHOT600
+    set dshot_bidir = ON
+    set motor_poles = 12
+    set rpm_filter_harmonics = 1
+    set yaw_lowpass_hz = 0
+  #$ OPTION END
+
+  #$ OPTION BEGIN (UNCHECKED): Medium Build Quality
+    # -- ADDER: For Medium gyro vibration builds --
+    set simplified_gyro_filter = ON
+    set simplified_gyro_filter_multiplier = 150
+    set simplified_dterm_filter = ON
+    set simplified_dterm_filter_multiplier = 100
+    set gyro_lpf2_static_hz = 0
+    set dyn_notch_count = 1
+    set dyn_notch_q = 500
+    set dyn_notch_min_hz = 125
+    set dyn_notch_max_hz = 850
+    set motor_pwm_protocol = DSHOT600
+    set dshot_bidir = ON
+    set motor_poles = 12
+    set rpm_filter_harmonics = 1
+    set yaw_lowpass_hz = 0
+  #$ OPTION END
+
+  #$ OPTION BEGIN (CHECKED): HIGH Build Quality (default)
+    # -- ADDER: For low gyro vibration builds --
+    set simplified_gyro_filter = ON
+    set simplified_gyro_filter_multiplier = 100
+    set simplified_dterm_filter = ON
+    set simplified_dterm_filter_multiplier = 100
+    set gyro_lpf1_static_hz = 0
+    set gyro_lpf1_dyn_min_hz = 0
+    set gyro_lpf2_static_hz = 0
+    set dyn_notch_count = 0
+    set dyn_notch_q = 500
+    set dyn_notch_min_hz = 125
+    set dyn_notch_max_hz = 850
+    set motor_pwm_protocol = DSHOT600
+    set dshot_bidir = ON
+    set motor_poles = 12
+    set rpm_filter_harmonics = 1
+    set yaw_lowpass_hz = 0
+  #$ OPTION END
+
+#$ OPTION_GROUP END
+
+simplified_tuning apply

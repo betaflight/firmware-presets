@@ -1,7 +1,7 @@
 #$ TITLE: UAV Tech - Analog
 #$ FIRMWARE_VERSION: 2025.12
 #$ CATEGORY: OSD
-#$ STATUS: OFFICIAL
+#$ STATUS: COMMUNITY
 #$ KEYWORDS: analog
 #$ AUTHOR: UAV Tech (Mark Spatz)
 

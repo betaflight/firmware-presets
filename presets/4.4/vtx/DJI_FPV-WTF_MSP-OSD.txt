@@ -1,9 +1,10 @@
-#$ TITLE: OSD for Fpv.wtf, DJI O3, Avatar HD
+#$ TITLE: OSD for Fpv.wtf, DJI O3 & O4, Avatar HD
 #$ FIRMWARE_VERSION: 4.4
 #$ FIRMWARE_VERSION: 4.5
+#$ FIRMWARE_VERSION: 2025.12
 #$ CATEGORY: VTX
 #$ STATUS: COMMUNITY
-#$ KEYWORDS:  vtx, dji, O3 air unit, O3, 03, avatar, walksnail,HD, HD video, vista, air unit, fpv.wtf, wtfos, msp-osd, displayport, msp, sugarK
+#$ KEYWORDS:  vtx, dji, O3 air unit, O3 & O4, avatar, walksnail,HD, HD video, vista, air unit, fpv.wtf, wtfos, msp-osd, displayport, msp, sugarK
 #$ AUTHOR: benlumley
 
 #$ PARSER: MARKED
@@ -14,7 +15,7 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: Sets up MSP displayport on selected UART for use with MSP-OSD and HDOSD
 #$ DESCRIPTION:
-#$ DESCRIPTION: For DJi O3 Air Unit, Walksnail Avatar and DJI FPV.WTF
+#$ DESCRIPTION: For DJi O3 & O4 Air Unit, Walksnail Avatar and DJI FPV.WTF
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION: Preset updated by sugarK.
 #$ DESCRIPTION: <br>

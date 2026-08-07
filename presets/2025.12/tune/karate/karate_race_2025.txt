@@ -1,0 +1,255 @@
+#$ TITLE: Karate Race 6s 5" 2025.12
+#$ FIRMWARE_VERSION: 2025.12
+#$ CATEGORY: TUNE
+#$ STATUS: OFFICIAL
+#$ KEYWORDS: karate, 6S, race, world champion, 5 inch, 5", sugarK, limon, ctzsnooze, KarateBrot, 2025.12, Sh*t pilot, Viper Racing, COMPRESSOR, JWebb
+#$ AUTHOR: sugarK
+
+#$ PARSER: MARKED
+
+#$ DESCRIPTION:
+#$ DESCRIPTION: <img src="https://www.b-lineproducts.com.au/wp-content/uploads/2025/11/Compressor-Product-Circle-Medium.png" width="150px" style="display: block; float: left; margin-right: 10px; margin-top: 20px"/>
+#$ DESCRIPTION: <h1>Karate Race 6S 5"</h1>
+#$ DESCRIPTION: <br>
+#$ DESCRIPTION:
+#$ DESCRIPTION: Brand new Karate race tune for the release formally known as 4.6. this tune leans into the changes in Betaflight and its performance gains since 4.5 was release.
+#$ DESCRIPTION: The spicy version needs to be worked up to as its VERY spicy, my recommendation is to start with the stock version and remember you can always grab the D slider and pull it back a few notches.
+#$ DESCRIPTION: In light of the more agressive tunes i have included a ‘shit quad’ option as well which is similar settings to the original Karate tune. Remember that race quads eat arms for breakfast and a poor flying racer that was once good will pretty much always have some noodle arms going on.
+#$ DESCRIPTION: The quad used to develop  this new tune is the [the B-line Compressor](https://www.b-lineproducts.com.au/product/b-line-compressor-5-fpv-racing-frame/) built with 2100kv 2207 motors, both NDB Rs200 stack and HDZ Halo stacks with weigh of 246g with props. This is the new frame work of my self and [JWebb](https://www.instagram.com/jwebb.fpv/), it uses custom laid-up T-series carbon  
+#$ DESCRIPTION: and some other secret sauce to make it the bleeding edge of current racing frames. Its the frame of choice of Australias  top race pilots including [Fizz_FPV](https://www.instagram.com/fizz_fpv/) and the fastet dude in the southern hemisphere [Wilf](https://www.instagram.com/_iamwilf/)
+#$ DESCRIPTION:
+#$ DESCRIPTION: <br>
+#$ DESCRIPTION:
+#$ DESCRIPTION: This tune should work well on any quality airframes, but start with the stock version and ensure your testing is done with a freshly serviced airframe, the tune is slider based and if its too edgy and aggressive lowering the d slider until your issues disappear will help 
+#$ DESCRIPTION: In light of the state some peoples airframes will be in there is a ‘sh#t quad’ option which will give similar pids and filters to the og karate tune.
+#$ DESCRIPTION: As a point of note this new tune has lower FF to suit the super light, super powerfull 2207 builds that are common now, heavier less powerful setups will want more FF.
+#$ DESCRIPTION: <br>
+#$ DESCRIPTION:
+#$ DESCRIPTION: It should also work on other quality racing frames but use at your own risk as it is an aggressive tune.
+#$ DESCRIPTION: <br>
+#$ DESCRIPTION:
+#$ DESCRIPTION: New release no longer requires the use of radio presets. stick feel though is still configurable with the rc smoothing amount as these are race tunes i will include std and sharp options. 
+#$ DESCRIPTION: Any radio link other than ELRS/CRSF will need to be selected when you build the firmware
+#$ DESCRIPTION: <br>
+#$ DESCRIPTION:
+#$ DESCRIPTION: Lastly i recommend building with the PRO RACE or KAAAK options so you get access to the new and improved turtle mode. This is a huge improvement over the older code that cuts motor drive as the quad flips over. 
+#$ DESCRIPTION: It also has a faster rearm sequence once you get the muscle memory down with you only having to unlatch the turtle switch and the quad arms.
+#$ DESCRIPTION: <br>
+#$ DESCRIPTION: ## Things to note:
+#$ DESCRIPTION: - **YOU HAVE TO USE RPM FILTERING WITH THIS TUNE!** Failure to do so might result in fire 🔥
+#$ DESCRIPTION: - Regarding DShot600: if your setup has errors in the motor tab using bidirectional DShot, change to **8k/4k and DShot300**
+#$ DESCRIPTION: - Also this should be applied to a clean flash after you've setup your rates, switches, vtx tables etc.
+#$ DESCRIPTION: - To test arm the quad with props on, it should **sound clean with no grinding**. If it passes that then hover test and check motor temps.
+#$ DESCRIPTION: - **If anything is off, don't fly it!!**
+#$ DESCRIPTION:
+#$ DESCRIPTION: <br>
+#$ DESCRIPTION:
+#$ DESCRIPTION: ## Second note... Radio links:
+#$ DESCRIPTION: 1. Make sure your radio firmware is up to date using either EdgeTX or OpenTX
+#$ DESCRIPTION: 2. Make sure your **ADC Filter is OFF** in the hardware page
+#$ DESCRIPTION: 
+#$ DESCRIPTION: <br>
+#$ DESCRIPTION: 
+#$ DESCRIPTION: ## Third note... ESC settings:
+#$ DESCRIPTION: - For best  BL32 esc performance set PWM frequency to 48Khz locked and timing to 25 degrees.  
+#$ DESCRIPTION: - For best AM32 esc performance set PWM frequency to 48Khz locked and timing to auto 
+
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/556
+
+#$ INCLUDE_WARNING: misc/warnings/en/rpm_filters.txt
+#$ INCLUDE: presets/2025.12/tune/defaults.txt
+#$ INCLUDE: presets/2025.12/rc_link/defaults.txt
+#$ INCLUDE: presets/4.5/filters/defaults.txt
+
+# -- RPM filtering --
+set dshot_bidir = ON
+
+# -- Misc --
+set yaw_spin_recovery = AUTO
+set thrust_linear = 20
+set throttle_boost = 2
+
+# -- iTerm  --
+set iterm_relax_cutoff = 45
+
+# -- PID values --
+set simplified_pids_mode = RP
+set simplified_i_gain = 115
+set simplified_d_gain = 85
+set simplified_pi_gain = 85
+set simplified_d_max_gain = 75
+set simplified_feedforward_gain = 105
+set simplified_pitch_d_gain = 95
+set simplified_pitch_pi_gain = 105
+simplified_tuning apply
+ 
+# -- TPA --
+set tpa_rate = 70
+set tpa_breakpoint = 1250
+
+#$ OPTION_GROUP BEGIN (EXCLUSIVE): Dshot settings
+    #$ OPTION BEGIN (CHECKED): Dshot600
+        set dshot_bidir = ON
+        set motor_pwm_protocol = DSHOT600
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): Dshot300
+        set dshot_bidir = ON
+        set motor_pwm_protocol = Dshot300
+    #$ OPTION END
+    
+#$ OPTION_GROUP END
+
+#$ OPTION BEGIN (UNCHECKED): Dynamic idle for 2000kv 6s
+    #dynamic idle for 6s 2100kv
+    set dyn_idle_min_rpm = 40
+    set dyn_idle_p_gain = 35
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): New Crash flip mode if you dont use PRORACE 
+    set crashflip_rate = 30
+    set crashflip_auto_rearm = ON
+#$ OPTION END
+
+#$ OPTION_GROUP BEGIN (EXCLUSIVE): Tunes
+
+    #$ OPTION BEGIN (UNCHECKED): Sh*t Quad
+        #my quad is a bit of a mess
+    
+    # -- Gyro Lowpass Filters --
+        set gyro_lpf1_static_hz = 0
+        set gyro_lpf1_dyn_min_hz = 500
+        set gyro_lpf1_dyn_max_hz = 1000
+        set simplified_gyro_filter = OFF
+        
+        # -- PID values --
+        set simplified_pids_mode = RP
+        set simplified_i_gain = 120
+        set simplified_d_gain = 70
+        set simplified_pi_gain = 85
+        set simplified_pitch_pi_gain = 105
+        simplified_tuning apply
+    #$ OPTION END
+
+    #$ OPTION BEGIN (CHECKED): New Karate (2025)
+        #spicy tune use with care
+    
+    # -- Misc --
+         set thrust_linear = 20
+         
+    # -- Gyro Lowpass Filters --
+        set gyro_lpf1_static_hz = 0
+        set gyro_lpf1_dyn_min_hz = 0
+       
+    # -- Gyro Dynamic Notches --
+        set dyn_notch_count = 1
+        set dyn_notch_q = 500
+        set dyn_notch_max_hz = 650
+
+    # -- Dterm filtering --
+        set dterm_lpf1_dyn_expo = 7
+
+    # -- RPM Filtering --
+        set rpm_filter_weights = 100,20,100
+        set rpm_filter_fade_range_hz = 100
+
+    # -- PID values --
+        set simplified_pids_mode = RP
+        set simplified_i_gain = 115
+        set simplified_d_gain = 85
+        set simplified_pi_gain = 85
+        set simplified_d_max_gain = 75
+        set simplified_pitch_d_gain = 95
+        set simplified_pitch_pi_gain = 105
+        simplified_tuning apply
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): New Karate Spicy (2025)
+         #VERY spicy tune use with care or buy a COMPRESSOR
+         
+    #-- Misc --
+         set thrust_linear = 20
+
+    # -- Gyro Lowpass Filters --
+        set gyro_lpf1_dyn_min_hz = 0
+        set simplified_gyro_filter_multiplier = 130
+       
+    # -- Gyro Dynamic Notches --
+        set dyn_notch_count = 1
+        set dyn_notch_q = 500
+        set dyn_notch_min_hz = 200
+        set dyn_notch_max_hz = 650
+
+    # -- Dterm filtering --
+        set dterm_lpf1_dyn_expo = 10
+
+    # -- RPM Filtering --
+        set rpm_filter_weights = 100,20,100
+        set rpm_filter_fade_range_hz = 100
+        
+    # -- PID values --
+        set simplified_pids_mode = RP
+        set simplified_i_gain = 115
+        set simplified_d_gain = 90
+        set simplified_pi_gain = 85
+        set simplified_d_max_gain = 135
+        set simplified_feedforward_gain = 90
+        set simplified_pitch_d_gain = 95
+        set simplified_pitch_pi_gain = 105
+        simplified_tuning apply
+    #$ OPTION END
+    
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN (EXCLUSIVE): Radio links
+    #Note you have to build the firmware with Ghost or SBUS to use them
+    #$ OPTION BEGIN (CHECKED): CRSF/ELRS
+        feature RX_SERIAL
+        set serialrx_provider = CRSF
+
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): Ghost 
+        feature RX_SERIAL
+        set serialrx_provider = GHST
+
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): SBUS
+        feature RX_SERIAL
+        set serialrx_provider = SBUS
+
+    #$ OPTION END
+
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN (EXCLUSIVE): Stick feel aka Jitter reduction
+    #$ OPTION BEGIN (UNCHECKED): Standard feel 
+        set feedforward_jitter_factor = 7
+        
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (CHECKED): Racy feel 
+        set feedforward_jitter_factor = 3
+        
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): Sharpest feel 
+        set feedforward_jitter_factor = 0
+        
+    #$ OPTION END
+    
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: Optional rates
+    #$ OPTION BEGIN (UNCHECKED): sugarK's rates
+        #$ INCLUDE: presets/4.3/rates/SugarK.txt
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): Throttle curve for 6s racer
+        set thr_mid = 25
+        set thr_expo = 65
+        set thr_hover = 25
+     #$ OPTION END
+     
+#$ OPTION_GROUP END

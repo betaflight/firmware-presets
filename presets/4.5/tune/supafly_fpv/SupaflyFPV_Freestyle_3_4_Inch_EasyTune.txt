@@ -2,16 +2,16 @@
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: TUNE
 #$ STATUS: OFFICIAL
-#$ KEYWORDS: Supafly, SupaflyFPV, 4S, 6S, Freestyle, 3 inch, 4 inch, 3", 4"
+#$ KEYWORDS: Supafly, SupaflyFPV, 4S, 6S, 8S, Freestyle, 3 inch, 4 inch, 3", 4"
 #$ AUTHOR: SupaflyFPV
 
 #$ PARSER: MARKED
 
-#$ DESCRIPTION: <a href="https://supaflyfpv.com"><img src="https://supaflyfpv.com/wp-content/uploads/2022/06/Logo-Cropped192.svg" width="220px" style="margin-left: auto; margin-right: auto; display: block;"/></a>
+#$ DESCRIPTION: <a href="https://supaflyfpv.com"><img src="https://supaflyfpv.com/wp-content/uploads/2025/11/SupaFly-Logo-07-01-25.svg" width="220px" style="margin-left: auto; margin-right: auto; display: block;"/></a>
 #$ DESCRIPTION:
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION:
-#$ DESCRIPTION: ### SupaflyFPV 3/4 Inch Freestyle Preset
+#$ DESCRIPTION: ### Community 3/4 Inch Freestyle Setup
 #$ DESCRIPTION:
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION:
@@ -19,15 +19,12 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION:
-#$ DESCRIPTION: * For optimisation and tips [use this custom PID calculator](https://supaflyfpv.com/betaflight-setup/)
-#$ DESCRIPTION: * RPM Filtering recommended on compatible ESC or de-select if not available
-#$ DESCRIPTION: * Pick your Radio Link or search in presets if not found
-#$ DESCRIPTION: * Try some freestyle rates modeled on the 3 main styles...
+#$ DESCRIPTION: * Select Tuning Balance - dependent on craft shape
+#$ DESCRIPTION: * Select Filter Setup - based on the general condition of your quadcopter
+#$ DESCRIPTION: * Pick your Radio Link and Receiver Hardware UART
+#$ DESCRIPTION: * Try some Freestyle Rate starting points...
+#$ DESCRIPTION: * [Click Here to finish setup with the integrated PID calculator and ESC guidelines](https://supaflyfpv.com/betaflight-setup/)
 #$ DESCRIPTION: 
-#$ DESCRIPTION: <br>
-#$ DESCRIPTION:
-#$ DESCRIPTION: Enjoy!
-#$ DESCRIPTION:
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION:
 #$ DESCRIPTION: Support, feedback and chat:
@@ -44,164 +41,179 @@
 #$ DESCRIPTION: 
 
 #$ INCLUDE: presets/4.5/tune/defaults.txt
-
-# -- Antigravity --
-
-set anti_gravity_gain = 120
-set feedforward_transition = 30
-
-#$ OPTION_GROUP BEGIN:PIDs
-
-    #$ OPTION BEGIN (CHECKED):With Action Camera
-
-        set simplified_master_multiplier = 100
-        set simplified_i_gain = 90
-        set simplified_d_gain = 100
-        set simplified_pi_gain = 110
-        set simplified_dmax_gain = 0
-        set simplified_feedforward_gain = 90
-        set simplified_pitch_pi_gain = 115
-
-    #$ OPTION END 
-
-    #$ OPTION BEGIN (UNCHECKED):No Action Camera
-
-        set simplified_master_multiplier = 95
-        set simplified_i_gain = 90
-        set simplified_d_gain = 100
-        set simplified_pi_gain = 110
-        set simplified_dmax_gain = 0
-        set simplified_feedforward_gain = 90
-        set simplified_pitch_pi_gain = 105
-
-    #$ OPTION END
-
-#$ OPTION_GROUP END
-
-# ---- Filters Base Setup -------
-
 #$ INCLUDE: presets/4.5/filters/defaults.txt
 
-set dshot_bidir = OFF
-set simplified_gyro_filter_multiplier = 160
-set gyro_lpf1_static_hz = 0
-set gyro_lpf1_dyn_min_hz = 0
-set gyro_lpf1_dyn_max_hz = 0
-set dyn_notch_count = 3
-set dyn_notch_q = 300
-set dyn_notch_min_hz = 90
-set dyn_notch_max_hz = 800
+# ---- Base Setup -------
 
-set simplified_dterm_filter_multiplier = 140
-set dterm_lpf1_dyn_min_hz = 0
-set dterm_lpf1_dyn_max_hz = 0
-set dterm_lpf1_dyn_expo = 0
+set thrust_linear = 40
+set tpa_mode = PD
+set tpa_rate = 50
+set tpa_breakpoint = 1250
+set tpa_low_breakpoint = 1100
+set tpa_low_always = ON
+set dyn_idle_min_rpm = 30
+set dshot_bidir = ON
+set iterm_relax_cutoff = 10
 
-#$ OPTION_GROUP BEGIN: Filters
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Frame Balance
+    #$ OPTION BEGIN (CHECKED): Long Body - No Action Camera
+        set anti_gravity_gain = 120
+        set simplified_master_multiplier = 115
+        set simplified_i_gain = 85
+        set simplified_d_gain = 105
+        set simplified_pi_gain = 105
+        set simplified_dmax_gain = 0
+        set simplified_feedforward_gain = 85
+        set simplified_pitch_pi_gain = 120
+        set simplified_pitch_d_gain = 120
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Long Body with Action Camera
+        set anti_gravity_gain = 120
+        set simplified_master_multiplier = 120
+        set simplified_i_gain = 85
+        set simplified_d_gain = 105
+        set simplified_pi_gain = 105
+        set simplified_dmax_gain = 0
+        set simplified_feedforward_gain = 85
+        set simplified_pitch_pi_gain = 130
+        set simplified_pitch_d_gain = 130
+    #$ OPTION END 
+    #$ OPTION BEGIN (UNCHECKED): True X / Toothpick
+        set anti_gravity_gain = 100
+        set simplified_master_multiplier = 110
+        set simplified_i_gain = 85
+        set simplified_d_gain = 105
+        set simplified_pi_gain = 105
+        set simplified_dmax_gain = 0
+        set simplified_feedforward_gain = 85
+        set simplified_pitch_pi_gain = 105
+        set simplified_pitch_d_gain = 105
+    #$ OPTION END 
+#$ OPTION_GROUP END
 
-    #$ OPTION BEGIN (CHECKED): RPM filtering  - Uncheck for Dynamic Notch Filter Setup
-    #$ INCLUDE_WARNING: misc/warnings/en/rpm_filters.txt
-
-        set dshot_bidir = ON
-        set motor_pwm_protocol = DSHOT600
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Filter Setup
+    #$ OPTION BEGIN (UNCHECKED): Clean Build (High Performance)
+        set gyro_lpf1_static_hz = 0
+        set gyro_lpf2_static_hz = 750
+        set gyro_lpf1_dyn_min_hz = 0
+        set dyn_notch_count = 1
+        set dyn_notch_q = 400
+        set dyn_notch_min_hz = 90
+        set dyn_notch_max_hz = 400
         set rpm_filter_harmonics = 3
-        set rpm_filter_q = 1000
+        set rpm_filter_q = 800
+        set rpm_filter_weights = 90,30,90
+        set rpm_filter_fade_range_hz = 100
+        set dterm_lpf1_dyn_min_hz = 0
+        set dterm_lpf1_static_hz = 0
+        set dterm_lpf2_type = PT3
+        set dterm_lpf2_static_hz = 120
+        set simplified_dterm_filter_multiplier = 80
+        set simplified_gyro_filter_multiplier = 150
+    #$ OPTION END 
+    #$ OPTION BEGIN (CHECKED): Average Build (Safe Setup)
+        set gyro_lpf1_static_hz = 0
+        set gyro_lpf2_static_hz = 600
         set dyn_notch_count = 2
         set dyn_notch_q = 400
-        set rpm_filter_fade_range_hz = 100
-
+        set dyn_notch_min_hz = 90
+        set dyn_notch_max_hz = 400
+        set gyro_lpf1_dyn_min_hz = 0
+        set rpm_filter_harmonics = 3
+        set rpm_filter_q = 700
+        set rpm_filter_weights = 90,50,90
+        set rpm_filter_fade_range_hz = 50
+        set dterm_lpf1_dyn_min_hz = 0
+        set dterm_lpf1_static_hz = 0
+        set dterm_lpf2_type = PT3
+        set dterm_lpf2_static_hz = 120
+        set simplified_dterm_filter_multiplier = 80
+        set simplified_gyro_filter_multiplier = 120
     #$ OPTION END 
-
 #$ OPTION_GROUP END
 
-#$ OPTION_GROUP BEGIN: Choose RC Link
-
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Radio Link Setup
     #$ OPTION BEGIN (UNCHECKED): Crossfire Dynamic
         #$ INCLUDE: presets/4.3/rc_link/defaults.txt
-
         feature RX_SERIAL
         set serialrx_provider = CRSF
-
         set feedforward_averaging = OFF
-        set feedforward_smooth_factor = 15
         set feedforward_jitter_factor = 10
         set feedforward_boost = 10
-
         set rc_smoothing_auto_factor = 45
         set rc_smoothing_auto_factor_throttle = 45
-
     #$ OPTION END
-
     #$ OPTION BEGIN (UNCHECKED): Crossfire 50Hz Locked
         #$ INCLUDE: presets/4.3/rc_link/defaults.txt
-
         feature RX_SERIAL
         set serialrx_provider = CRSF
-
         set feedforward_averaging = OFF
-        set feedforward_smooth_factor = 0
         set feedforward_jitter_factor = 10
         set feedforward_boost = 5
-
         set rc_smoothing_auto_factor = 45
         set rc_smoothing_auto_factor_throttle = 45
-
     #$ OPTION END
-
     #$ OPTION BEGIN (UNCHECKED): Crossfire 150Hz Locked
         #$ INCLUDE: presets/4.3/rc_link/defaults.txt
-
         feature RX_SERIAL
         set serialrx_provider = CRSF
-
         set feedforward_averaging = OFF
-        set feedforward_smooth_factor = 30
         set feedforward_jitter_factor = 7
-
         set rc_smoothing_auto_factor = 45
         set rc_smoothing_auto_factor_throttle = 45
-
     #$ OPTION END
-
-    #$ OPTION BEGIN (UNCHECKED): Tracer/ELRS 250Hz
+    #$ OPTION BEGIN (UNCHECKED): ELRS/Tracer 250Hz
         #$ INCLUDE: presets/4.3/rc_link/defaults.txt
-
         feature RX_SERIAL
         set serialrx_provider = CRSF
-
         set feedforward_averaging = 2_POINT
-        set feedforward_smooth_factor = 35
-        set feedforward_jitter_factor = 4
+        set feedforward_jitter_factor = 5
         set feedforward_boost = 18
-
         set rc_smoothing_auto_factor = 45
         set rc_smoothing_auto_factor_throttle = 45
-
     #$ OPTION END
-
     #$ OPTION BEGIN (UNCHECKED): ELRS 500Hz
         #$ INCLUDE: presets/4.3/rc_link/defaults.txt
-        
         feature RX_SERIAL
         set serialrx_provider = CRSF
-
         set feedforward_averaging = 2_POINT
-        set feedforward_smooth_factor = 65
-        set feedforward_jitter_factor = 3
+        set feedforward_jitter_factor = 5
         set feedforward_boost = 18
-
         set rc_smoothing_auto_factor = 45
         set rc_smoothing_auto_factor_throttle = 45
-
     #$ OPTION END
-
 #$ OPTION_GROUP END
 
-    #$ OPTION_GROUP BEGIN: Freestyle Rates
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Receiver Hardware UART:
+    #$ OPTION BEGIN (UNCHECKED): UART 1
+        serial UART1 64 115200 57600 0 115200
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): UART 2
+        serial UART2 64 115200 57600 0 115200
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): UART 3
+        serial UART3 64 115200 57600 0 115200
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): UART 4
+        serial UART4 64 115200 57600 0 115200
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): UART 5
+        serial UART5 64 115200 57600 0 115200
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): UART 6
+        serial UART6 64 115200 57600 0 115200
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): UART 7
+        serial UART7 64 115200 57600 0 115200
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): UART 8
+        serial UART8 64 115200 57600 0 115200
+    #$ OPTION END
+#$ OPTION_GROUP END
 
-    #$ OPTION BEGIN (UNCHECKED): Smooth Medium
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Freestyle Stick Rates
+    #$ OPTION BEGIN (UNCHECKED): Smooth Centre Medium Rate
     #$ INCLUDE: presets/4.3/rates/defaults.txt
-
         set roll_rc_rate = 2
         set pitch_rc_rate = 2
         set yaw_rc_rate = 2
@@ -211,12 +223,9 @@ set dterm_lpf1_dyn_expo = 0
         set roll_srate = 80
         set pitch_srate = 80
         set yaw_srate = 60
-        
     #$ OPTION END
-
-    #$ OPTION BEGIN (UNCHECKED): Smooth Fast
+    #$ OPTION BEGIN (UNCHECKED): Smooth Centre Fast Rate
     #$ INCLUDE: presets/4.3/rates/defaults.txt
-
         set roll_rc_rate = 3
         set pitch_rc_rate = 3
         set yaw_rc_rate = 3
@@ -226,12 +235,9 @@ set dterm_lpf1_dyn_expo = 0
         set roll_srate = 105
         set pitch_srate = 105
         set yaw_srate = 90
-
     #$ OPTION END
-
-    #$ OPTION BEGIN (UNCHECKED): Medium Fast
+    #$ OPTION BEGIN (UNCHECKED): Medium Centre Fast Rate
     #$ INCLUDE: presets/4.3/rates/defaults.txt
-
         set roll_rc_rate = 25
         set pitch_rc_rate = 25
         set yaw_rc_rate = 25
@@ -241,9 +247,7 @@ set dterm_lpf1_dyn_expo = 0
         set roll_srate = 108
         set pitch_srate = 108
         set yaw_srate = 88     
- 
     #$ OPTION END
-
 #$ OPTION_GROUP END
 
 simplified_tuning apply

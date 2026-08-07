@@ -18,7 +18,7 @@
 
 #$ DESCRIPTION: Preview:
 #$ DESCRIPTION: -----------
-#$ DESCRIPTION: <img src="https://github.com/betaflight/firmware-presets/assets/83344205/039e4153-b056-4244-91e1-2b06501326d4" style="width:100%"/>
+#$ DESCRIPTION: <img width="237" height="132" alt="Screenshot 2024-07-11 at 4 25 20 pm" src="https://github.com/betaflight/firmware-presets/assets/83344205/039e4153-b056-4244-91e1-2b06501326d4">
 #$ DESCRIPTION: 
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/477
 
