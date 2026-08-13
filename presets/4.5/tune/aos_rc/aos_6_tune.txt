@@ -5,7 +5,7 @@
 #$ KEYWORDS: aos, chris, rosser, pid, tune, 6
 #$ AUTHOR: Chris Rosser
 #$ DISCUSSION: https://www.aos-rc.com
-#$ DESCRIPTION: Custom Tune for the AOS 6. Derived from the AOS 5.5 tune, which was based on a 1100mAh 6S build with 1800KV Motors.
+#$ DESCRIPTION: Custom Tune for the AOS 6. Based on a 1500mAh 6S build with 1570KV Motors.
 #$ DESCRIPTION:
 #$ DESCRIPTION: Master multiplier is set to 1.2 for safety. Increase it carefully to further improve flight performance.
 #$ DESCRIPTION:
