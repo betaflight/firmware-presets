@@ -68,7 +68,7 @@ set dyn_idle_p_gain = 40
 
 #$ OPTION_GROUP BEGIN: Filters
     #$ OPTION BEGIN (CHECKED): AOS 65mm Filters (Recommended)
-        #$ INCLUDE: presets/4.5/filters/aos_rc/aos_65mm_filters.txt
+        #$ INCLUDE: presets/2025.12/filters/aos_rc/aos_65mm_filters.txt
     #$ OPTION END
 
 #$ OPTION_GROUP END
