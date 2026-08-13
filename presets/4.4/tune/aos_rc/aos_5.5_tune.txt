@@ -81,7 +81,7 @@ set dyn_idle_p_gain = 40
 
 #$ OPTION_GROUP BEGIN: Filters
     #$ OPTION BEGIN (CHECKED): AOS Filters (Recommended)
-    #$ INCLUDE: presets/4.4/filters/aos_rc/aos_5_filters.txt
+    #$ INCLUDE: presets/4.4/filters/aos_rc/aos_5.5_filters.txt
     #$ OPTION END
 
 #$ OPTION_GROUP END
