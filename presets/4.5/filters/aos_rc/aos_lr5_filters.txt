@@ -1,5 +1,7 @@
 #$ TITLE: AOS LR5 Filters
 #$ FIRMWARE_VERSION: 4.5
+#$ FIRMWARE_VERSION: 2025.12
+#$ FIRMWARE_VERSION: 2026.6
 #$ CATEGORY: FILTERS
 #$ STATUS: COMMUNITY
 #$ KEYWORDS: filter, filters, aos, chris, rosser, lr5
@@ -37,7 +39,7 @@ set dterm_lpf1_type = BIQUAD
 set dterm_lpf2_static_hz = 0
 set simplified_dterm_filter = OFF
 
-# ------ OPIONS GO BELOW THIS LINE ------
+# ------ OPTIONS GO BELOW THIS LINE ------
 
 # -- RPM Filter Weights --
 

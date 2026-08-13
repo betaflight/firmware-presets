@@ -81,7 +81,7 @@ set dyn_idle_p_gain = 40
 
 #$ OPTION_GROUP BEGIN: Filters
     #$ OPTION BEGIN (CHECKED): AOS Filters (Recommended)
-    #$ INCLUDE: presets/2025.12/filters/aos_rc/aos_3.5_filters.txt
+    #$ INCLUDE: presets/4.5/filters/aos_rc/aos_3.5_filters.txt
     #$ OPTION END
     
     #$ OPTION BEGIN (CHECKED): RPM Filter Weights for triblade props
