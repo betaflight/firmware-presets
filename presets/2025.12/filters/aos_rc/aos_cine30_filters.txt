@@ -1,5 +1,6 @@
 #$ TITLE: AOS Cine30 Filters
 #$ FIRMWARE_VERSION: 2025.12
+#$ FIRMWARE_VERSION: 2026.6
 #$ CATEGORY: FILTERS
 #$ STATUS: COMMUNITY
 #$ KEYWORDS: filter, filters, aos, chris, rosser, cine, 30

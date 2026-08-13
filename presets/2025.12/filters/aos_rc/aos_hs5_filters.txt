@@ -1,5 +1,6 @@
 #$ TITLE: AOS HS5 200mph Filters
 #$ FIRMWARE_VERSION: 2025.12
+#$ FIRMWARE_VERSION: 2026.6
 #$ CATEGORY: FILTERS
 #$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: filter, filters, aos, chris, rosser, HS5
