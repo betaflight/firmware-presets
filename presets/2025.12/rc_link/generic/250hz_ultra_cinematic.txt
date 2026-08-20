@@ -1,5 +1,6 @@
 #$ TITLE: Generic 250Hz Ultra Cinematic
 #$ FIRMWARE_VERSION: 2025.12
+#$ FIRMWARE_VERSION: 2026.6
 #$ CATEGORY: RC_LINK
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: 250Hz, rc, rx, link, smoothing

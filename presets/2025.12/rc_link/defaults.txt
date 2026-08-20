@@ -1,5 +1,6 @@
 #$ TITLE: Reset RC related settings
 #$ FIRMWARE_VERSION: 2025.12
+#$ FIRMWARE_VERSION: 2026.6
 #$ CATEGORY: RC_LINK
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: defaults, Rx, RC, reset, rc link, rc_link, smoothing, rc_smoothing
