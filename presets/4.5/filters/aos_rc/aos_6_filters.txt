@@ -1,10 +1,12 @@
-#$ TITLE: AOS LR5 Filters
+#$ TITLE: AOS 6 Filters
+#$ FIRMWARE_VERSION: 4.5
 #$ FIRMWARE_VERSION: 2025.12
+#$ FIRMWARE_VERSION: 2026.6
 #$ CATEGORY: FILTERS
 #$ STATUS: COMMUNITY
-#$ KEYWORDS: filter, filters, aos, chris, rosser, lr5
+#$ KEYWORDS: filter, filters, aos, chris, rosser, 6
 #$ AUTHOR: Chris Rosser
-#$ DESCRIPTION: Developed for the AOS LR5
+#$ DESCRIPTION: Developed for the AOS 6
 #$ DESCRIPTION: NOTE this needs bidirectional Dshot support and RPM filtering active to use. DO NOT ATEMPT TO USE WITH OUT RPM FILTERING!
 #$ DESCRIPTION: Follow the usual process of hover testing and safely checking out your tune before using. USE AT YOUR OWN RISK.
 #$ DISCUSSION: https://www.aos-rc.com
@@ -31,7 +33,7 @@ set rpm_filter_fade_range_hz = 50
 set rpm_filter_min_hz = 100
 
 # -- Dterm filtering --
-set dterm_lpf1_dyn_min_hz = 75
+set dterm_lpf1_dyn_min_hz = 80
 set dterm_lpf1_dyn_max_hz = 110
 set dterm_lpf1_type = BIQUAD
 set dterm_lpf2_static_hz = 0
