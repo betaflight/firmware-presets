@@ -4,6 +4,7 @@
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: frsky, sbus, fport, 9ms, 111hz, rc, link, smoothing
 #$ AUTHOR: ctzsnooze
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/597
 #$ DESCRIPTION: RC link settings for a 111Hz / 9ms D16 with FrSky Sbus or FPort link.
 #$ DESCRIPTION: WARNING: make sure that the OpenTx or EdgeTx Hardware ADC Filter is un-checked!
 #$ DESCRIPTION: Use a recent version of OpenTx / EdgeTx with good module sync.
