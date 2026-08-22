@@ -1,0 +1,69 @@
+#$ TITLE: Funkolius - Impetus 2 Frame
+#$ FIRMWARE_VERSION: 2026.6
+#$ CATEGORY: TUNE
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: freestyle, impetus 2, impetus, micro, 2 inch, 2 in, 2", 2.2 inch prop, frame, Funkolius
+#$ AUTHOR: Funkolius
+#$ PARSER: MARKED
+#$ DESCRIPTION: Tune for the Impetus 2 frame by Funkolius.
+#$ DESCRIPTION: Bidirectional DShot is required. Make sure your ESCs are 32-bit or flashed with BlueJay for 8-bit.
+#$ DESCRIPTION: Back up your current configuration before applying this preset, then test carefully and check motor temperatures.
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/588
+#$ FORCE_OPTIONS_REVIEW: false
+
+# Use PID profile 0 so the defaults include resets the same profile the tune uses.
+profile 0
+
+#$ INCLUDE: presets/2026.6/tune/defaults.txt
+
+# -- Simplified tuning baseline --
+set simplified_master_multiplier = 120
+set simplified_i_gain = 75
+set simplified_d_gain = 120
+set simplified_pi_gain = 70
+set simplified_d_max_gain = 0
+set simplified_feedforward_gain = 60
+set simplified_pitch_d_gain = 110
+set simplified_dterm_filter = OFF
+set simplified_dterm_filter_multiplier = 100
+
+simplified_tuning apply
+
+# -- PID tuning --
+set iterm_rotation = ON
+set iterm_relax = RPY
+set iterm_relax_type = GYRO
+set iterm_relax_cutoff = 13
+set d_max_gain = 35
+set d_max_advance = 55
+
+# -- Filters --
+#$ OPTION BEGIN (CHECKED): FILTERS RECOMMENDED FOR CLEAN BUILD
+    #$ INCLUDE: presets/2026.6/filters/defaults.txt
+    set gyro_lpf1_static_hz = 0
+    set gyro_lpf2_static_hz = 700
+    set dyn_notch_count = 1
+    set dyn_notch_q = 750
+    set dyn_notch_min_hz = 115
+    set gyro_lpf1_dyn_min_hz = 0
+    set simplified_gyro_filter = OFF
+
+    set dterm_lpf1_dyn_min_hz = 80
+    set dterm_lpf1_dyn_max_hz = 120
+    set dterm_lpf1_type = BIQUAD
+    set dterm_lpf2_static_hz = 0
+    # Keep disabled D-term slider state sane if the user later re-enables the slider.
+    set simplified_dterm_filter = OFF
+    set simplified_dterm_filter_multiplier = 100
+#$ OPTION END
+
+# -- Launch control (optional) --
+#$ OPTION BEGIN (UNCHECKED): LAUNCH CONTROL (PITCHONLY)
+    set launch_control_mode = PITCHONLY
+    set launch_trigger_throttle_percent = 35
+    set launch_angle_limit = 80
+    set launch_control_gain = 40
+#$ OPTION END
+
+# -- Other Requirements --
+set dshot_bidir = ON
