@@ -4,6 +4,7 @@
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: Supafly, SupaflyFPV, 4S, 6S, Freestyle, 3 inch, 4 inch, 3", 4"
 #$ AUTHOR: SupaflyFPV
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/599
 
 #$ PARSER: MARKED
 
