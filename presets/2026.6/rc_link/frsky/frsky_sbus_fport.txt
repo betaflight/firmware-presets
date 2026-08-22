@@ -50,7 +50,7 @@ set tlm_halfduplex = ON
     #$ OPTION END
 #$ OPTION_GROUP END
 
-#$ OPTION_GROUP BEGIN: Metric or Imperial units
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Metric or Imperial units
     #$ OPTION BEGIN (UNCHECKED): Metric
         set frsky_unit = metric
     #$ OPTION END
