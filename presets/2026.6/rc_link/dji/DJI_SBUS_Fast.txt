@@ -4,6 +4,7 @@
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: DJI, rc, link, SBUS fast
 #$ AUTHOR: UAV Tech (Mark Spatz)
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/597
 
 #$ PARSER: MARKED
 

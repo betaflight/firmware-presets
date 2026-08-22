@@ -4,6 +4,7 @@
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: automatic, detected, rc, rx, link, smoothing, racing
 #$ AUTHOR: Ivan Efimov (Limon)
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/597
 #$ DESCRIPTION: Racing RC smoothing that automatically follows the detected receiver packet rate.
 
 #$ PRIORITY: 0
