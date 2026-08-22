@@ -5,6 +5,7 @@
 #$ KEYWORDS: defaults, filter, filters, reset
 #$ AUTHOR: Betaflight
 #$ DESCRIPTION: Resets Filter settings to 2026.6 defaults
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/596
 
 set gyro_hardware_lpf = NORMAL
 set gyro_lpf1_type = PT1
