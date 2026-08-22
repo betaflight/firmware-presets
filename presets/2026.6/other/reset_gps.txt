@@ -69,6 +69,7 @@ feature -GPS
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): enable GPS_RESCUE?
+    feature GPS
     set failsafe_procedure = GPS-RESCUE
 #$ OPTION END
 
