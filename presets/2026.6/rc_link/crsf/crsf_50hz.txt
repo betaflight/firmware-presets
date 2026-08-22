@@ -4,6 +4,7 @@
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: CRSF, ELRS, ExpressLRS, Crossfire, Tracer, TBS, fixed, 50Hz, rc, rx, link, smoothing
 #$ AUTHOR: ctzsnooze, Ivan Efimov (Limon), SupaflyFPV
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/597
 #$ DESCRIPTION: CRSF receiver setup for ExpressLRS, Crossfire or Tracer deliberately locked to 50Hz.
 #$ DESCRIPTION: Do not use this preset for dynamic packet rates; use the automatic CRSF preset instead.
 #$ DESCRIPTION: WARNING: make sure that the OpenTx or EdgeTx Hardware ADC Filter is un-checked!

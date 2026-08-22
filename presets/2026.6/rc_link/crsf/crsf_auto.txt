@@ -4,6 +4,7 @@
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: CRSF, ELRS, ExpressLRS, Crossfire, Tracer, TBS, automatic, rc, rx, link, smoothing
 #$ AUTHOR: ctzsnooze, Ivan Efimov (Limon), SupaflyFPV, Sugar K
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/597
 #$ DESCRIPTION: CRSF receiver setup with RC smoothing that automatically follows the detected packet rate.
 #$ DESCRIPTION: Use the separate fixed 50Hz preset only when the transmitter is deliberately locked to 50Hz.
 #$ DESCRIPTION: WARNING: make sure that the OpenTx or EdgeTx Hardware ADC Filter is un-checked!
