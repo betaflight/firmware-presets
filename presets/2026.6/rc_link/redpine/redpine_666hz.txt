@@ -17,7 +17,7 @@
 set feedforward_averaging = 2_POINT
 set feedforward_jitter_factor = 5
 
-#$ OPTION_GROUP BEGIN: Fine-tuning...
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Fine-tuning...
     #$ OPTION BEGIN (UNCHECKED): Race
         set feedforward_jitter_factor = 4
         set feedforward_boost = 18
