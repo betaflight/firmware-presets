@@ -1,0 +1,62 @@
+#$ TITLE: CRSF - ExpressLRS, Crossfire or Tracer
+#$ FIRMWARE_VERSION: 2026.6
+#$ CATEGORY: RC_LINK
+#$ STATUS: OFFICIAL
+#$ KEYWORDS: CRSF, ELRS, ExpressLRS, Crossfire, Tracer, TBS, automatic, rc, rx, link, smoothing
+#$ AUTHOR: ctzsnooze, Ivan Efimov (Limon), SupaflyFPV, Sugar K
+#$ DESCRIPTION: CRSF receiver setup with RC smoothing that automatically follows the detected packet rate.
+#$ DESCRIPTION: Use the separate fixed 50Hz preset only when the transmitter is deliberately locked to 50Hz.
+#$ DESCRIPTION: WARNING: make sure that the OpenTx or EdgeTx Hardware ADC Filter is un-checked!
+#$ DESCRIPTION: WARNING: check that you are using a compatible version of EdgeTx or OpenTx!
+
+#$ FORCE_OPTIONS_REVIEW: TRUE
+
+#$ INCLUDE: presets/2026.6/rc_link/defaults.txt
+
+feature RX_SERIAL
+set serialrx_provider = CRSF
+
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Flight Style
+    #$ OPTION BEGIN (UNCHECKED): Racing
+        #$ INCLUDE: presets/2026.6/rc_link/generic/auto_race.txt
+    #$ OPTION END
+    #$ OPTION BEGIN (CHECKED): Freestyle
+        #$ INCLUDE: presets/2026.6/rc_link/generic/auto_freestyle.txt
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): HD Freestyle
+        #$ INCLUDE: presets/2026.6/rc_link/generic/auto_hd_freestyle.txt
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Cinematic
+        #$ INCLUDE: presets/2026.6/rc_link/generic/auto_cinematic.txt
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Ultra Cinematic
+        #$ INCLUDE: presets/2026.6/rc_link/generic/auto_ultra_cinematic.txt
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Select Receiver UART
+    #$ OPTION BEGIN (UNCHECKED): UART 1
+        serial UART1 64 115200 57600 0 115200
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): UART 2
+        serial UART2 64 115200 57600 0 115200
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): UART 3
+        serial UART3 64 115200 57600 0 115200
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): UART 4
+        serial UART4 64 115200 57600 0 115200
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): UART 5
+        serial UART5 64 115200 57600 0 115200
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): UART 6
+        serial UART6 64 115200 57600 0 115200
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): UART 7
+        serial UART7 64 115200 57600 0 115200
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): UART 8
+        serial UART8 64 115200 57600 0 115200
+    #$ OPTION END
+#$ OPTION_GROUP END
