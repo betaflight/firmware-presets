@@ -21,8 +21,10 @@
 #$ DESCRIPTION: Options:
 #$ DESCRIPTION: -----------
 #$ DESCRIPTION: - Racing
+#$ DESCRIPTION: - Freestyle
 #$ DESCRIPTION: - HD Freestyle
 #$ DESCRIPTION: - Cinematic
+#$ DESCRIPTION: - Ultra Cinematic
 #$ DESCRIPTION:
 #$ FORCE_OPTIONS_REVIEW: TRUE
 
