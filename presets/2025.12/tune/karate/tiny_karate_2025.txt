@@ -34,7 +34,7 @@
 #$ DESCRIPTION: 1. Make sure your radio firmware is up to date using either EdgeTX or OpenTX
 #$ DESCRIPTION: 2. Make sure your **ADC Filter is OFF** in the hardware page
 #$ DESCRIPTION: 3. Radio link speed presets are now not required as BetaFlight auto adjusts the averaging now.
-#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/81
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/603
 #$ INCLUDE_WARNING: misc/warnings/en/rpm_filters.txt
 #$ INCLUDE: presets/2025.12/tune/defaults.txt
 #$ INCLUDE: presets/2025.12/rc_link/defaults.txt
