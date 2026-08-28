@@ -42,6 +42,7 @@
 
 # -- Gyro lowpass filters --
 set gyro_lpf1_static_hz = 0
+set gyro_lpf1_dyn_min_hz = 0
 
 # -- Gyro Dynamic Notches --
 set dyn_notch_count = 1

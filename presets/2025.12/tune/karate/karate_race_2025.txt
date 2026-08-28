@@ -52,7 +52,7 @@
 #$ DESCRIPTION: 
 #$ DESCRIPTION: ## Third note... ESC settings:
 #$ DESCRIPTION: - For best  BL32 esc performance set PWM frequency to 48Khz locked and timing to 25 degrees.  
-#$ DESCRIPTION: - For best AM32 esc performance set PWM frequency to 48Khz locked and timing to fixed max 
+#$ DESCRIPTION: - For best AM32 esc performance set PWM frequency to 48Khz locked and TIMING_ADVANCE to 30 degrees 
 
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/556
 
