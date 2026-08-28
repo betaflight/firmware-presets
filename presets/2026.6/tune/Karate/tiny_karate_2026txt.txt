@@ -170,12 +170,7 @@ set tpa_breakpoint = 1250
         feature RX_SERIAL
         set serialrx_provider = SBUS
 
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): Set RX to SPI ELRS 
-        set rx_spi_protocol = EXPRESSLRS   
-        
-    #$ OPTION END
+    #$ OPTION ENDx
 
 #$ OPTION_GROUP END
 
