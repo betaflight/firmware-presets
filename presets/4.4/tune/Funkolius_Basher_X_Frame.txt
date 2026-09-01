@@ -1,0 +1,81 @@
+#$ TITLE: Funkolius - Basher X Frame
+#$ FIRMWARE_VERSION: 4.4
+#$ CATEGORY: TUNE
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: freestyle, basher, x-frame, funky, Funkolius
+#$ AUTHOR: Funkolius
+#$ PARSER: MARKED
+#$ DESCRIPTION: <img src="https://raw.githubusercontent.com/Funkolius/firmware-presets/master/assets/funkolius-productions-preset-logo.png" alt="Funkolius Productions" width="160px" style="display: block; margin-left: auto; margin-right: auto;"/>
+#$ DESCRIPTION: The Basher is an open-source project originally designed by Recopter. The Basher X is Funkolius Productions’ remix of that design, featuring a true-X layout and a 16 mm longer frame: 10 mm added to the front and 6 mm to the rear. It also uses two rear standoffs and includes revised bottom plate, arm, pinch plate, and mid-plate geometry. Files for both the original Basher and the Basher X are available on Thingiverse.
+#$ DESCRIPTION: Bidirectional DShot is required. Make sure your ESCs are 32-bit or flashed with BlueJay for 8-bit.
+#$ DESCRIPTION: PID calculator and supporting material: https://homesliced3d.com/funkdafied-basher-x/
+#$ FORCE_OPTIONS_REVIEW: false
+
+# Use PID profile 0 so the defaults include resets the same profile the tune uses.
+profile 0
+
+#$ INCLUDE: presets/4.4/tune/defaults.txt
+
+# -- Simplified tuning baseline --
+set simplified_master_multiplier = 145
+set simplified_d_gain = 120
+set simplified_dmax_gain = 0
+set simplified_feedforward_gain = 80
+set simplified_pitch_pi_gain = 105
+set simplified_dterm_filter = OFF
+
+simplified_tuning apply
+
+# -- PID tuning --
+set anti_gravity_gain = 100
+set iterm_rotation = ON
+set iterm_relax_cutoff = 10
+set iterm_windup = 85
+set p_pitch = 71
+set i_pitch = 127
+set d_pitch = 59
+set f_pitch = 152
+set p_roll = 65
+set i_roll = 115
+set d_roll = 52
+set f_roll = 139
+set p_yaw = 65
+set i_yaw = 115
+set f_yaw = 139
+set d_min_roll = 52
+set d_min_pitch = 59
+
+# -- Filters --
+#$ OPTION BEGIN (CHECKED): FILTERS RECOMMENDED FOR CLEAN BUILD
+    #$ INCLUDE: presets/4.3/filters/defaults.txt
+    set simplified_dterm_filter = OFF
+    set simplified_dterm_filter_multiplier = 100
+    set yaw_lowpass_hz = 115
+    set simplified_gyro_filter = OFF
+    set gyro_lpf1_static_hz = 0
+    set gyro_lpf2_static_hz = 700
+    set gyro_lpf1_dyn_min_hz = 0
+    set gyro_lpf1_dyn_max_hz = 0
+
+    set dyn_notch_count = 1
+    set dyn_notch_q = 700
+
+    set rpm_filter_min_hz = 115
+    set rpm_filter_fade_range_hz = 75
+
+    set dterm_lpf1_dyn_min_hz = 85
+    set dterm_lpf1_dyn_max_hz = 140
+    set dterm_lpf1_type = BIQUAD
+    set dterm_lpf2_static_hz = 0
+#$ OPTION END
+
+# -- Launch control (optional) --
+#$ OPTION BEGIN (UNCHECKED): LAUNCH CONTROL (PITCHONLY)
+    set launch_control_mode = PITCHONLY
+    set launch_trigger_throttle_percent = 35
+    set launch_angle_limit = 80
+    set launch_control_gain = 40
+#$ OPTION END
+
+# -- Other Requirements --
+set dshot_bidir = ON
