@@ -10,6 +10,7 @@
 #$ DESCRIPTION: Bidirectional DShot is required. Make sure your ESCs are 32-bit or flashed with BlueJay for 8-bit.
 #$ DESCRIPTION: PID calculator and supporting material: https://homesliced3d.com/funkdafied-basher-x/
 #$ FORCE_OPTIONS_REVIEW: false
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/605
 
 # Use PID profile 0 so the defaults include resets the same profile the tune uses.
 profile 0
