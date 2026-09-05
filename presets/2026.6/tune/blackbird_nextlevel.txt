@@ -231,7 +231,7 @@
             set i_yaw = 80
             set d_max_roll = 40
             set d_max_pitch = 46
-            set d_max_advance = 20
+            set d_max_advance = 35
             set iterm_relax_cutoff = 15
             set throttle_boost = 5
             set thrust_linear = 0
@@ -264,6 +264,7 @@
             set rc_smoothing_throttle_cutoff = 0
             set rc_smoothing_auto_factor = 30
             set rc_smoothing_auto_factor_throttle = 30
+            set osd_rssi_dbm_alarm = -60
             set deadband = 0
             set yaw_deadband = 0
             set motor_idle = 550
@@ -283,7 +284,7 @@
             set i_yaw = 80
             set d_max_roll = 40
             set d_max_pitch = 46
-            set d_max_advance = 20
+            set d_max_advance = 35
             set iterm_relax_cutoff = 15
             set throttle_boost = 5
             set thrust_linear = 0

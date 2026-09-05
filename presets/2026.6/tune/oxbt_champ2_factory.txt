@@ -70,6 +70,8 @@ profile 0
 
 #$ OPTION_GROUP BEGIN: (EXCLUSIVE) PID Tune Selection
     #$ OPTION BEGIN (CHECKED): Standard PIDs — Smooth, stable, all-round flight
+        feature AIRMODE
+        set acc_hardware = DEFAULT
         set dterm_lpf1_dyn_min_hz = 65
         set dterm_lpf1_dyn_max_hz = 135
         set dterm_lpf1_static_hz = 0

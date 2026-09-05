@@ -70,7 +70,7 @@ set thrust_linear = 20
 set vbat_max_cell_voltage = 445
 set cpu_late_limit_permille = 15
 
-#$ OPTION_GROUP BEGIN: Dynamic Idle
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Dynamic Idle
 
     #$ OPTION BEGIN (CHECKED): 12k race 15-18g whoop ( recommended )
         set dyn_idle_min_rpm = 120
@@ -115,24 +115,29 @@ simplified_tuning apply
 #$ OPTION_GROUP BEGIN (EXCLUSIVE): Radio links
     #Note you have to build the firmware with Ghost or SBUS to use them
     #$ OPTION BEGIN (CHECKED): CRSF/ELRS
+        feature -RX_SPI
         feature RX_SERIAL
         set serialrx_provider = CRSF
 
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): Ghost
+        feature -RX_SPI
         feature RX_SERIAL
         set serialrx_provider = GHST
 
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): SBUS
+        feature -RX_SPI
         feature RX_SERIAL
         set serialrx_provider = SBUS
 
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): Set RX to SPI ELRS
+        feature -RX_SERIAL
+        feature RX_SPI
         set rx_spi_protocol = EXPRESSLRS
 
     #$ OPTION END
@@ -162,7 +167,9 @@ simplified_tuning apply
         #$ INCLUDE: presets/4.3/rates/SugarK_whoop.txt
 
     #$ OPTION END
+#$ OPTION_GROUP END
 
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Throttle expo
     #$ OPTION BEGIN (UNCHECKED): throttle expo for 30% hover throttle
         set thr_mid = 30
         set thr_hover = 30
