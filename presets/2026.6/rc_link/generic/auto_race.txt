@@ -1,0 +1,15 @@
+#$ TITLE: Automatic RC Smoothing - Racing
+#$ FIRMWARE_VERSION: 2026.6
+#$ CATEGORY: RC_LINK
+#$ STATUS: OFFICIAL
+#$ KEYWORDS: automatic, detected, rc, rx, link, smoothing, racing
+#$ AUTHOR: Ivan Efimov (Limon)
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/597
+#$ DESCRIPTION: Racing RC smoothing that automatically follows the detected receiver packet rate.
+
+#$ PRIORITY: 0
+
+#$ INCLUDE: presets/2026.6/rc_link/generic/auto_defaults.txt
+
+set rc_smoothing_auto_factor = 25
+set rc_smoothing_auto_factor_throttle = 25
