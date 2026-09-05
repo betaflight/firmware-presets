@@ -5,10 +5,10 @@
 #$ KEYWORDS: freestyle, impetus 2, impetus, micro, 2 inch, 2 in, 2", 2.2 inch prop, frame, Funkolius
 #$ AUTHOR: Funkolius
 #$ PARSER: MARKED
+#$ DESCRIPTION: <img src="https://raw.githubusercontent.com/Funkolius/firmware-presets/master/assets/funkolius-productions-preset-logo.png" alt="Funkolius Productions" width="160px" style="display: block; margin-left: auto; margin-right: auto;"/>
 #$ DESCRIPTION: Tune for the Impetus 2 frame by Funkolius.
 #$ DESCRIPTION: Bidirectional DShot is required. Make sure your ESCs are 32-bit or flashed with BlueJay for 8-bit.
 #$ DESCRIPTION: Back up your current configuration before applying this preset, then test carefully and check motor temperatures.
-#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/588
 #$ FORCE_OPTIONS_REVIEW: false
 
 # Use PID profile 0 so the defaults include resets the same profile the tune uses.
@@ -39,7 +39,7 @@ set d_max_advance = 55
 
 # -- Filters --
 #$ OPTION BEGIN (CHECKED): FILTERS RECOMMENDED FOR CLEAN BUILD
-    #$ INCLUDE: presets/2026.6/filters/defaults.txt
+    #$ INCLUDE: presets/4.5/filters/defaults.txt
     set gyro_lpf1_static_hz = 0
     set gyro_lpf2_static_hz = 700
     set dyn_notch_count = 1
