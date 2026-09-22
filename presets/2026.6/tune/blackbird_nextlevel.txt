@@ -1,12 +1,12 @@
 # -- Header --
     #$ TITLE: Black Bird FPV | Next Level
-    #$ FIRMWARE_VERSION: 2025.12
+    #$ FIRMWARE_VERSION: 2026.6
     #$ CATEGORY: TUNE
     #$ STATUS: EXPERIMENTAL
     #$ KEYWORDS: Black Bird FPV, Blackbird, Next Level, SBANG, 6S, Freestyle, 5 inch, 5"
     #$ AUTHOR: Black Bird FPV (Tune) / Saturn FPV (Preset)
     #$ PARSER: MARKED
-    #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/540
+    #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/606
 
 # -- Description --
     #$ DESCRIPTION: Black Bird FPV - Next Level Preset
@@ -50,8 +50,8 @@
     #$ WARNING: **DO NOT** select this preset unless your ESCs support Bi-Directional DSHOT communication! **WARNING:** This is an aggressive tune that may cause overheating motors, oscillations, or flyaways if applied to unsuitable hardware. Apply cautiously and test thoroughly.
 
 # -- Includes --
-    #$ INCLUDE: presets/4.5/filters/defaults.txt
-    #$ INCLUDE: presets/2025.12/tune/defaults.txt
+    #$ INCLUDE: presets/2026.6/filters/defaults.txt
+    #$ INCLUDE: presets/2026.6/tune/defaults.txt
 
 # -- PID Tune --
     set p_pitch = 70
@@ -188,7 +188,7 @@
 
     #$ OPTION_GROUP BEGIN: (EXCLUSIVE) Radio Link
         #$ OPTION BEGIN (UNCHECKED): BB Stick Feel
-		    #$ INCLUDE: presets/2025.12/rc_link/defaults.txt
+		    #$ INCLUDE: presets/2026.6/rc_link/defaults.txt
             set rc_smoothing = ON
             set rc_smoothing_setpoint_cutoff = 0
             set rc_smoothing_throttle_cutoff = 0
@@ -200,17 +200,13 @@
             set feedforward_boost = 20
             set feedforward_max_rate_limit = 95
         #$ OPTION END
-        #$ OPTION BEGIN (UNCHECKED): Official 50Hz Freestyle
-            #$ INCLUDE: presets/2025.12/rc_link/generic/50hz_freestyle.txt
+        #$ OPTION BEGIN (UNCHECKED): Auto Packet Rate Race
+			#$ INCLUDE: presets/2026.6/rc_link/defaults.txt
+            #$ INCLUDE: presets/2026.6/rc_link/generic/auto_race.txt
         #$ OPTION END
-        #$ OPTION BEGIN (UNCHECKED): Official 150Hz Freestyle
-            #$ INCLUDE: presets/2025.12/rc_link/generic/150hz_freestyle.txt
-        #$ OPTION END
-        #$ OPTION BEGIN (UNCHECKED): Official 250Hz Freestyle
-            #$ INCLUDE: presets/2025.12/rc_link/generic/250hz_freestyle.txt
-        #$ OPTION END
-        #$ OPTION BEGIN (UNCHECKED): Official 500Hz Freestyle
-            #$ INCLUDE: presets/2025.12/rc_link/generic/500hz_freestyle.txt
+        #$ OPTION BEGIN (UNCHECKED): Auto Packet Rate Freestyle
+			#$ INCLUDE: presets/2026.6/rc_link/defaults.txt
+            #$ INCLUDE: presets/2026.6/rc_link/generic/auto_freestyle.txt
         #$ OPTION END
     #$ OPTION_GROUP END
 
@@ -237,7 +233,7 @@
             set i_yaw = 80
             set d_max_roll = 40
             set d_max_pitch = 46
-            set d_max_advance = 20
+            set d_max_advance = 35
             set iterm_relax_cutoff = 15
             set throttle_boost = 5
             set thrust_linear = 0
@@ -289,7 +285,7 @@
             set i_yaw = 80
             set d_max_roll = 40
             set d_max_pitch = 46
-            set d_max_advance = 20
+            set d_max_advance = 35
             set iterm_relax_cutoff = 15
             set throttle_boost = 5
             set thrust_linear = 0
