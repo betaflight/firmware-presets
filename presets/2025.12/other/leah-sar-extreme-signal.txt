@@ -1,9 +1,6 @@
 #$ AUTHOR: Kloudz805
 #$ KEYWORDS: Leah-SAR, Extreme Environment, Signal Reliability, Search and Rescue
 #$ DESCRIPTION: Maximizes signal awareness and optimizes resources for reliable operation in high-interference or maritime environments. Optimized for Betaflight 4.4+.
-#$ DISCLAIMER: Test in a controlled environment before mission deployment.
-
-#$ AUTHOR: Kloudz805
 #$ DESCRIPTION: Optimizes for field operations and SAR missions.
 #$ DESCRIPTION: Configures low-resource logging, aggressive OSD warnings
 #$ DESCRIPTION: for signal degradation, and GPS rescue for maritime/high-interference environments.
