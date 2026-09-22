@@ -32,19 +32,6 @@ set anti_gravity_gain = 100
 set iterm_rotation = ON
 set iterm_relax_cutoff = 10
 set iterm_windup = 85
-set p_pitch = 71
-set i_pitch = 127
-set d_pitch = 59
-set f_pitch = 152
-set p_roll = 65
-set i_roll = 115
-set d_roll = 52
-set f_roll = 139
-set p_yaw = 65
-set i_yaw = 115
-set f_yaw = 139
-set d_max_roll = 52
-set d_max_pitch = 59
 
 # -- Filters --
 #$ OPTION BEGIN (CHECKED): FILTERS RECOMMENDED FOR CLEAN BUILD
