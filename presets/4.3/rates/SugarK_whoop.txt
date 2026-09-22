@@ -8,6 +8,8 @@
 #$ KEYWORDS: racing, rates, MultiGP, quaddiction, tyrant, sugar k
 #$ AUTHOR: sugarK
 #$ DESCRIPTION: Racing rates from Zak Smiley, aka SugarK, second  fastest Dev in Betaflight.
+#$ DESCRIPTION:
+#$ DESCRIPTION: <img width="400" alt="Screenshot 2026-05-02 at 11 11 48 pm" src="https://github.com/user-attachments/assets/47b0b75f-eea3-4b76-928b-425f4cb1c928" />
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/366
 #$ INCLUDE: presets/4.3/rates/defaults.txt
 

@@ -1,0 +1,11 @@
+#$ TITLE: Default 2026.6 OSD settings
+#$ FIRMWARE_VERSION: 2026.6
+#$ CATEGORY: OSD
+#$ STATUS: OFFICIAL
+#$ KEYWORDS: defaults, reset, OSD
+#$ AUTHOR: Betaflight
+#$ DESCRIPTION: Resets the OSD values back to Betaflight 2026.6 defaults
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/596
+
+defaults group_id 501 nosave # PG_OSD_CONFIG
+defaults group_id 2045 nosave # PG_OSD_ELEMENT_CONFIG

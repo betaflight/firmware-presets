@@ -1,0 +1,15 @@
+#$ TITLE: Automatic RC Smoothing - Cinematic
+#$ FIRMWARE_VERSION: 2026.6
+#$ CATEGORY: RC_LINK
+#$ STATUS: OFFICIAL
+#$ KEYWORDS: automatic, detected, rc, rx, link, smoothing, cinematic
+#$ AUTHOR: Ivan Efimov (Limon)
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/597
+#$ DESCRIPTION: Cinematic RC smoothing that automatically follows the detected receiver packet rate.
+
+#$ PRIORITY: 0
+
+#$ INCLUDE: presets/2026.6/rc_link/generic/auto_defaults.txt
+
+set rc_smoothing_auto_factor = 90
+set rc_smoothing_auto_factor_throttle = 50

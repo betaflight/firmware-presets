@@ -1,0 +1,80 @@
+#$ TITLE: DJI Normal
+#$ FIRMWARE_VERSION: 2026.6
+#$ CATEGORY: RC_LINK
+#$ STATUS: OFFICIAL
+#$ KEYWORDS: DJI, rc, link, transmitter
+#$ AUTHOR: UAV Tech (Mark Spatz)
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/597
+
+#$ PARSER: MARKED
+
+#$ DESCRIPTION: Information:
+#$ DESCRIPTION: -----------
+#$ DESCRIPTION: Basic RC link settings for DJI link via. "NORMAL" SBUS.
+#$ DESCRIPTION: See the Settings -> Device -> Protocol in your DJI goggles for which TX link speed you have selected.
+#$ DESCRIPTION: This preset is for any Air Unit (full size (DJI) or Lite (CADXX Vista))
+#$ DESCRIPTION:
+#$ DESCRIPTION: Preset Adjusts:
+#$ DESCRIPTION: -----------
+#$ DESCRIPTION: - RC Smoothing Factors
+#$ DESCRIPTION:
+#$ DESCRIPTION: Options:
+#$ DESCRIPTION: -----------
+#$ DESCRIPTION: - Racing
+#$ DESCRIPTION: - Freestyle
+#$ DESCRIPTION: - HD Freestyle
+#$ DESCRIPTION: - Cinematic
+#$ DESCRIPTION: - Ultra Cinematic
+#$ DESCRIPTION:
+#$ FORCE_OPTIONS_REVIEW: TRUE
+
+#$ INCLUDE: presets/2026.6/rc_link/defaults.txt
+
+feature RX_SERIAL
+set serialrx_provider = SBUS
+set sbus_baud_fast = OFF
+
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Flight Style
+    #$ OPTION BEGIN (UNCHECKED): Racing
+        #$ INCLUDE: presets/2026.6/rc_link/generic/auto_race.txt
+    #$ OPTION END
+    #$ OPTION BEGIN (CHECKED): Freestyle
+        #$ INCLUDE: presets/2026.6/rc_link/generic/auto_freestyle.txt
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): HD Freestyle
+        #$ INCLUDE: presets/2026.6/rc_link/generic/auto_hd_freestyle.txt
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Cinematic
+        #$ INCLUDE: presets/2026.6/rc_link/generic/auto_cinematic.txt
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Ultra Cinematic
+        #$ INCLUDE: presets/2026.6/rc_link/generic/auto_ultra_cinematic.txt
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Select Receiver UART
+    #$ OPTION BEGIN (UNCHECKED): UART 1
+        serial UART1 64 115200 57600 0 115200
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): UART 2
+        serial UART2 64 115200 57600 0 115200
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): UART 3
+        serial UART3 64 115200 57600 0 115200
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): UART 4
+        serial UART4 64 115200 57600 0 115200
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): UART 5
+        serial UART5 64 115200 57600 0 115200
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): UART 6
+        serial UART6 64 115200 57600 0 115200
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): UART 7
+        serial UART7 64 115200 57600 0 115200
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): UART 8
+        serial UART8 64 115200 57600 0 115200
+    #$ OPTION END
+#$ OPTION_GROUP END

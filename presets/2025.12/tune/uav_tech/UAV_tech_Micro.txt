@@ -1,7 +1,7 @@
 #$ TITLE: UAV Tech - Micro (2" to 4")
 #$ FIRMWARE_VERSION: 2025.12
 #$ CATEGORY: TUNE
-#$ STATUS: OFFICIAL
+#$ STATUS: COMMUNITY
 #$ KEYWORDS: 2S, 3S, 4S, 6S, toothpick, 2in, 2.5in, 3in, 3.5in, 4in
 #$ AUTHOR: UAV Tech (Mark Spatz)
 

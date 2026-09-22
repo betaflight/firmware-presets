@@ -1,5 +1,7 @@
 #$ TITLE: HDZero VTXs
 #$ FIRMWARE_VERSION: 4.5
+#$ FIRMWARE_VERSION: 2025.12
+#$ FIRMWARE_VERSION: 2026.6
 #$ CATEGORY: VTX
 #$ STATUS: COMMUNITY
 #$ KEYWORDS:  vtx, vtx table, HDzero, divimath, SA 2.1, digital, whoop, whoop lite, race v1, race v2, freestyle, tx5m.1, MSP VTX
