@@ -64,6 +64,7 @@ set iterm_relax_cutoff = 10
 set anti_gravity_gain = 100
 set pidsum_limit = 1000
 set pidsum_limit_yaw = 1000
+set rpm_filter_harmonics = 0
 
 #$ OPTION_GROUP BEGIN: (EXCLUSIVE) Choose ONE Filter option
   #$ OPTION BEGIN (UNCHECKED): low Build Quality

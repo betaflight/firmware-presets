@@ -61,6 +61,7 @@ set vbat_sag_compensation = 100
 set anti_gravity_gain = 90
 set pidsum_limit = 1000
 set pidsum_limit_yaw = 1000
+set rpm_filter_harmonics = 0
 
 #$ OPTION_GROUP BEGIN: (EXCLUSIVE) Choose ONE Filter option
   #$ OPTION BEGIN (UNCHECKED): low Build Quality

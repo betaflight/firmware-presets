@@ -57,6 +57,7 @@ set simplified_master_multiplier = 160
 set anti_gravity_gain = 120
 set pidsum_limit = 1000
 set pidsum_limit_yaw = 1000
+set rpm_filter_harmonics = 0
 
 #$ OPTION_GROUP BEGIN: (EXCLUSIVE) Choose ONE Filter option
   #$ OPTION BEGIN (UNCHECKED): low Build Quality
@@ -126,7 +127,6 @@ set pidsum_limit_yaw = 1000
   # -- ADDER: Enabling Dynamic Idle --
     set motor_pwm_protocol = DSHOT600
     set dshot_bidir = ON
-    set rpm_filter_harmonics = 0
     set dyn_idle_min_rpm = 30
   #$ OPTION END
 #$ OPTION_GROUP END
