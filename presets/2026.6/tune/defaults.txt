@@ -51,10 +51,6 @@ set pidsum_limit_yaw = 400
 
 set throttle_boost = 5
 set throttle_boost_cutoff = 15
-set acro_trainer_angle_limit = 20
-set acro_trainer_lookahead_ms = 50
-set acro_trainer_debug_axis = ROLL
-set acro_trainer_gain = 75
 
 set p_pitch = 47
 set i_pitch = 84

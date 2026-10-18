@@ -1,0 +1,209 @@
+#$ TITLE: Tiny Karate 2025:12
+#$ FIRMWARE_VERSION: 2025.12
+#$ CATEGORY: TUNE
+#$ STATUS:   OFFICIAL
+#$ KEYWORDS: karate, race, 533, 3 inch, 3", sugarK, shames, tiny, trainer, spec, tinyTrainer
+#$ AUTHOR: sugarK
+
+#$ PARSER: MARKED
+
+#$ DESCRIPTION:
+#$ DESCRIPTION: <a href="https://flyfive33.com/pages/tinytrainer-v2"><img src="https://github.com/betaflight/firmware-presets/assets/19867640/8914662e-121a-4ab0-b5ad-1fe7705cb801" alt="533" width="50%" style="display: block; margin-left: auto; margin-right: auto; margin-top: 20px;"/></a>
+#$ DESCRIPTION: <h1>533 TinyTrainer “spec” Karate</h1>
+#$ DESCRIPTION: <br>
+#$ DESCRIPTION:
+#$ DESCRIPTION: This racing tune was developed for the <a href="https://flyfive33.com/pages/tinytrainer-v2">533 TinyTrainer</a> spec class 
+#$ DESCRIPTION: For the V2 Tiny Trainer here is my arm bumper SLT file <a href="https://makerworld.com/en/models/551584-533-tiny-trainer-v2-arm-bumper">TinyTrainer arm bumper</a>
+#$ DESCRIPTION:
+#$ DESCRIPTION: <br>
+#$ DESCRIPTION:
+#$ DESCRIPTION: The revised tune has been updated after i realised how bad the old tune flys on the better new firmware
+#$ DESCRIPTION: I recommend using the Kaaak or PRO RACE build options for your TT so you can get the new fast turtle mode
+#$ DESCRIPTION:
+#$ DESCRIPTION: <br>
+#$ DESCRIPTION:
+#$ DESCRIPTION: ## Things to note:
+#$ DESCRIPTION: - Please use Betaflight 4.4.2 or newer
+#$ DESCRIPTION: - **YOU HAVE TO USE RPM FILTERING WITH THIS TUNE!** Failure to do so might result in fire 🔥
+#$ DESCRIPTION: - This preset sets the **motor pole count to 12** to match the Tiny Trainer Headsup motors
+#$ DESCRIPTION: - Regarding DShot600: All F4, F7 and G4 based FCs will default to 8k/4k and dshot 300. if your setup has errors in the motor tab using bidirectional DShot, change to **8k/4k and DShot300**
+#$ DESCRIPTION:
+#$ DESCRIPTION: <br>
+#$ DESCRIPTION:
+#$ DESCRIPTION: ## Second note... Radio links:
+#$ DESCRIPTION: 1. Make sure your radio firmware is up to date using either EdgeTX or OpenTX
+#$ DESCRIPTION: 2. Make sure your **ADC Filter is OFF** in the hardware page
+#$ DESCRIPTION: 3. Radio link speed presets are now not required as BetaFlight auto adjusts the averaging now.
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/603
+#$ INCLUDE_WARNING: misc/warnings/en/rpm_filters.txt
+#$ INCLUDE: presets/2025.12/tune/defaults.txt
+#$ INCLUDE: presets/2025.12/rc_link/defaults.txt
+#$ INCLUDE: presets/4.5/filters/defaults.txt
+
+# -- Gyro lowpass filters --
+set gyro_lpf1_static_hz = 0
+set gyro_lpf1_dyn_min_hz = 0
+
+# -- Gyro Dynamic Notches --
+set dyn_notch_count = 1
+set dyn_notch_q = 500
+set dyn_notch_min_hz = 120
+set dyn_notch_max_hz = 700
+
+# -- Dterm filtering --
+set simplified_dterm_filter_multiplier = 90
+set dterm_lpf1_dyn_expo = 10
+
+# -- RPM filtering --
+set dshot_bidir = ON
+set rpm_filter_weights = 100,20,100
+set rpm_filter_fade_range_hz = 100
+set motor_poles = 12
+
+# -- Misc --
+set yaw_spin_recovery = AUTO
+set thrust_linear = 20
+set throttle_boost = 10
+
+# -- iTerm  --
+set iterm_relax_cutoff = 45
+
+# -- PIDsum limits --
+set iterm_limit = 500
+set pidsum_limit_yaw = 1000
+
+#--Vbat sag
+set vbat_sag_compensation = 100
+
+# -- PID values --
+set d_max_gain = 0
+set d_max_advance = 37
+set feedforward_boost = 18
+set simplified_pids_mode = RP
+set simplified_i_gain = 115
+set simplified_d_gain = 150
+set simplified_pi_gain = 140
+set simplified_d_max_gain = 120
+set simplified_feedforward_gain = 185
+set simplified_pitch_d_gain = 95
+set simplified_dterm_filter_multiplier = 90
+
+
+
+simplified_tuning apply
+
+
+# -- TPA --
+set tpa_rate = 60
+set tpa_breakpoint = 1250
+
+#$ OPTION BEGIN (CHECKED): Dshot600
+    set dshot_bidir = ON
+    set motor_pwm_protocol = DSHOT600
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Dshot300
+    set dshot_bidir = ON
+    set motor_pwm_protocol = Dshot300
+#$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): dynamic idle
+    set dshot_idle_value = 700
+    set dyn_idle_min_rpm = 60
+    set dyn_idle_p_gain = 35
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): LED channel mapping to vtx channel
+    feature LED_STRIP
+    set ledstrip_profile = RACE
+    set ledstrip_race_color = BLACK
+    
+    led 0 2,3::CV:1
+    led 1 3,3::CV:1
+    led 2 4,3::CV:1
+    led 3 5,3::CV:1
+    led 4 6,3::CV:1
+    led 5 7,3::CV:1
+    led 6 8,3::CV:1
+    led 7 7,5::CV:1
+    led 8 8,6::CV:1
+    led 9 9,7::CV:1
+    led 10 10,8::CV:1
+    led 11 11,9::CV:1
+    led 12 12,10::CV:1
+    led 13 13,11::CV:1
+    led 14 14,12::CV:1
+    led 15 8,5::CV:1
+    led 16 9,6::CV:1
+    led 17 10,7::CV:1
+    led 18 11,8::CV:1
+    led 19 12,9::CV:1
+    led 20 13,10::CV:1
+    led 21 14,11::CV:1
+    led 22 15,12::CV:1
+    led 23 6,5::CV:1
+    led 24 7,6::CV:1
+    led 25 8,7::CV:1
+    led 26 9,8::CV:1
+    led 27 10,9::CV:1
+    led 28 11,10::CV:1
+    led 29 12,11::CV:1
+    led 30 13,12::CV:1
+    led 31 15,13::CB:1
+#$ OPTION END
+
+#$ OPTION_GROUP BEGIN (EXCLUSIVE): Radio links
+    #Note you have to build the firmware with Ghost or SBUS to use them
+    #$ OPTION BEGIN (CHECKED): CRSF/ELRS
+        feature RX_SERIAL
+        set serialrx_provider = CRSF
+
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): Ghost 
+        feature RX_SERIAL
+        set serialrx_provider = GHST
+
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): SBUS
+        feature RX_SERIAL
+        set serialrx_provider = SBUS
+
+    #$ OPTION END
+
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN (EXCLUSIVE): Stick feel aka Jitter reduction
+    #$ OPTION BEGIN (UNCHECKED): Standard feel 
+        set feedforward_jitter_factor = 7
+        
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (CHECKED): Racy feel 
+        set feedforward_jitter_factor = 3
+        
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): Sharpest feel 
+        set feedforward_jitter_factor = 0
+        
+    #$ OPTION END
+    
+#$ OPTION_GROUP END
+
+
+#$ OPTION_GROUP BEGIN: Optional rates
+    #$ OPTION BEGIN (UNCHECKED): sugarK's rates
+        #$ INCLUDE: presets/4.3/rates/SugarK.txt
+        
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): Throttle curve Tiny Trainer
+        set thr_mid = 39
+        set thr_expo = 65
+        set thr_hover = 39
+        
+     #$ OPTION END
+     
+#$ OPTION_GROUP END

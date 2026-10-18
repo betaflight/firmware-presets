@@ -52,7 +52,7 @@
 #$ DESCRIPTION: 
 #$ DESCRIPTION: ## Third note... ESC settings:
 #$ DESCRIPTION: - For best  BL32 esc performance set PWM frequency to 48Khz locked and timing to 25 degrees.  
-#$ DESCRIPTION: - For best AM32 esc performance set PWM frequency to 48Khz locked and timing to auto 
+#$ DESCRIPTION: - For best AM32 esc performance set PWM frequency to 48Khz locked and TIMING_ADVANCE to 30 degrees 
 
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/556
 
@@ -161,6 +161,8 @@ set tpa_breakpoint = 1250
         set simplified_d_max_gain = 75
         set simplified_pitch_d_gain = 95
         set simplified_pitch_pi_gain = 105
+        set d_max_gain = 0
+        set d_max_advance = 37
         simplified_tuning apply
     #$ OPTION END
     
@@ -196,6 +198,8 @@ set tpa_breakpoint = 1250
         set simplified_feedforward_gain = 90
         set simplified_pitch_d_gain = 95
         set simplified_pitch_pi_gain = 105
+        set d_max_gain = 0
+        set d_max_advance = 37
         simplified_tuning apply
     #$ OPTION END
     
