@@ -39,6 +39,7 @@ set osd_flight_dist_pos = 79
 set osd_compass_bar_pos = 41
 set osd_altitude_pos = 131
 set osd_warnings_pos = 6313
+set osd_vbat_pos = 6152
 set osd_avg_cell_voltage_pos = 6158
 set osd_battery_usage_pos = 40
 set osd_disarmed_pos = 6252

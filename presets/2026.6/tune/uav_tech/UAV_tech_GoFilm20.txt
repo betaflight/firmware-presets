@@ -51,7 +51,7 @@ set anti_gravity_gain = 85
 set pidsum_limit = 1000
 set pidsum_limit_yaw = 1000
 
-#$ OPTION_GROUP BEGIN: Choose YOUR spice option
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Choose YOUR spice option
   #$ OPTION BEGIN (UNCHECKED): low Spice (low Alt.)
   # -- ADDER: 0 to 1,000ft --
     set simplified_master_multiplier = 90
@@ -74,7 +74,7 @@ set pidsum_limit_yaw = 1000
 
 #$ OPTION_GROUP END
 
-#$ OPTION_GROUP BEGIN: Choose ONE Filter option
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Choose ONE Filter option
   #$ OPTION BEGIN (UNCHECKED): low Build Quality
     # -- ADDER: For HIGH gyro vibration builds --
     set simplified_gyro_filter = ON

@@ -58,7 +58,7 @@ set anti_gravity_gain = 120
 set pidsum_limit = 1000
 set pidsum_limit_yaw = 1000
 
-#$ OPTION_GROUP BEGIN: Choose ONE Filter option (+ RPM filter if desired)
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Choose ONE Filter option
   #$ OPTION BEGIN (UNCHECKED): low Build Quality
   # -- ADDER: For HIGH gyro vibration builds --
     set simplified_gyro_filter = ON
@@ -97,7 +97,9 @@ set pidsum_limit_yaw = 1000
     set dyn_notch_max_hz = 650
     set yaw_lowpass_hz = 0
   #$ OPTION END
+#$ OPTION_GROUP END
 
+#$ OPTION_GROUP BEGIN: Additional Filter Options
   #$ OPTION BEGIN (UNCHECKED): ... + enable RPM filter (if supported)
   # -- ADDER: Enabled RPM filtering --
     set motor_pwm_protocol = DSHOT600
@@ -115,7 +117,7 @@ set pidsum_limit_yaw = 1000
 
   #$ OPTION BEGIN (UNCHECKED): 48k+ ESC PWM Settings
   # -- ADDER: For 48k+ ESC PWM Settings --
-    set thrust_linear = 20
+    set thrust_linear = 17
   #$ OPTION END
 #$ OPTION_GROUP END
 

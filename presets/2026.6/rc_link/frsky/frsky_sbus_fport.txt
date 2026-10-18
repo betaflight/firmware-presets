@@ -24,6 +24,8 @@ set tlm_halfduplex = ON
 #$ OPTION_GROUP BEGIN: (EXCLUSIVE) Sbus or FPort (choose only one)
     #$ OPTION BEGIN (UNCHECKED): Sbus
         set serialrx_provider = SBUS
+        set serialrx_inverted = OFF
+        set serialrx_halfduplex = OFF
     #$ OPTION END
     #$ OPTION BEGIN (UNCHECKED): FPort
         set serialrx_provider = FPORT
