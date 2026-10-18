@@ -133,6 +133,7 @@ set rpm_filter_harmonics = 0
 #$ OPTION_GROUP BEGIN: Prop Wash Performance Booster ...
   #$ OPTION BEGIN (UNCHECKED): Dynamic Idle (ESC bi-directional Dshot required)
   # -- ADDER: Enabling Dynamic Idle --
+    set motor_pwm_protocol = DSHOT300
     set dshot_bidir = ON
     set dyn_idle_min_rpm = 40
   #$ OPTION END
