@@ -15,7 +15,7 @@
 #$ DESCRIPTION: No band E; band I (IMD6) is 5362-5621 MHz, as HGLRC's file names it.
 #$ DISCLAIMER: All previous VTX Table settings will be reset.
 #$ INCLUDE_DISCLAIMER: misc/disclaimer/en/vtxtable.txt
-#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/NNN
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/610
 
 #$ INCLUDE: presets/4.3/vtx/defaults_vtx_tables.txt
 
