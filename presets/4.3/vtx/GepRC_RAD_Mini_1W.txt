@@ -15,7 +15,7 @@
 #$ DESCRIPTION: Band E repeats 5665 and 5905 in four slots exactly as GEPRC's own CLI file does (the same on GEPRC's RAD Tiny and RAD 2.5W files).
 #$ DISCLAIMER: All previous VTX Table settings will be reset.
 #$ INCLUDE_DISCLAIMER: misc/disclaimer/en/vtxtable.txt
-#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/NNN
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/611
 
 #$ INCLUDE: presets/4.3/vtx/defaults_vtx_tables.txt
 
