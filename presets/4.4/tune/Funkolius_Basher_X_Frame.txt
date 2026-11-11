@@ -1,7 +1,7 @@
 #$ TITLE: Funkolius - Basher X Frame
 #$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: TUNE
-#$ STATUS: EXPERIMENTAL
+#$ STATUS: COMMUNITY
 #$ KEYWORDS: freestyle, basher, x-frame, funky, Funkolius
 #$ AUTHOR: Funkolius
 #$ PARSER: MARKED
