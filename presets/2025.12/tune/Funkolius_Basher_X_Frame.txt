@@ -9,8 +9,8 @@
 #$ DESCRIPTION: The Basher is an open-source project originally designed by Recopter. The Basher X is Funkolius Productions’ remix of that design, featuring a true-X layout and a 16 mm longer frame: 10 mm added to the front and 6 mm to the rear. It also uses two rear standoffs and includes revised bottom plate, arm, pinch plate, and mid-plate geometry. Files for both the original Basher and the Basher X are available on Thingiverse.
 #$ DESCRIPTION: Bidirectional DShot is required. Make sure your ESCs are 32-bit or flashed with BlueJay for 8-bit.
 #$ DESCRIPTION: PID calculator and supporting material: https://homesliced3d.com/funkdafied-basher-x/
-#$ FORCE_OPTIONS_REVIEW: false
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/605
+#$ FORCE_OPTIONS_REVIEW: false
 
 # Use PID profile 0 so the defaults include resets the same profile the tune uses.
 profile 0
