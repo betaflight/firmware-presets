@@ -82,7 +82,9 @@ set dyn_idle_p_gain = 40
     #$ OPTION BEGIN (CHECKED): AOS Filters (Recommended)
     #$ INCLUDE: presets/4.5/filters/aos_rc/aos_6_filters.txt
     #$ OPTION END
+#$ OPTION_GROUP END
 
+#$ OPTION_GROUP BEGIN (EXCLUSIVE): RPM filter weights
     #$ OPTION BEGIN (CHECKED): RPM Filter Weights for triblade props
         set rpm_filter_weights = 100, 0, 80
     #$ OPTION END
@@ -90,7 +92,6 @@ set dyn_idle_p_gain = 40
     #$ OPTION BEGIN (UNCHECKED): RPM Filter Weights for other props
         set rpm_filter_weights = 100, 100, 100
     #$ OPTION END
-
 #$ OPTION_GROUP END
 
 #$ OPTION_GROUP BEGIN: Motors
@@ -105,27 +106,27 @@ set dyn_idle_p_gain = 40
 
 #$ OPTION_GROUP BEGIN (EXCLUSIVE): Choose your RC link (or apply another preset separately)
     #$ OPTION BEGIN (UNCHECKED): ELRS_250HZ (Recommended)
-        #$ INCLUDE: presets/4.3/rc_link/elrs_250hz.txt
+        #$ INCLUDE: presets/2025.12/rc_link/elrs/elrs_250hz.txt
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): ELRS_500HZ
-        #$ INCLUDE: presets/4.3/rc_link/elrs_500hz.txt
+        #$ INCLUDE: presets/2025.12/rc_link/elrs/elrs_500hz.txt
     #$ OPTION END
     
     #$ OPTION BEGIN (UNCHECKED): DJI Normal
-        #$ INCLUDE: presets/4.3/rc_link/DJI_Normal.txt
+        #$ INCLUDE: presets/2025.12/rc_link/dji/DJI_Normal.txt
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): DJI SBUS FAST
-        #$ INCLUDE: presets/4.3/rc_link/DJI_SBUS_Fast.txt
+        #$ INCLUDE: presets/2025.12/rc_link/dji/DJI_SBUS_Fast.txt
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): Crossfire 50Hz
-        #$ INCLUDE: presets/4.3/rc_link/tbs/crossfire_50hz.txt
+        #$ INCLUDE: presets/2025.12/rc_link/tbs/crossfire_50hz.txt
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): Crossfire 150Hz
-        #$ INCLUDE: presets/4.3/rc_link/tbs/crossfire_150hz.txt
+        #$ INCLUDE: presets/2025.12/rc_link/tbs/crossfire_150hz.txt
     #$ OPTION END
 #$ OPTION_GROUP END
 
