@@ -21,6 +21,3 @@ set yaw_expo = 0
 set roll_srate = 67
 set pitch_srate = 67
 set yaw_srate = 67
-set roll_rate_limit = 1998
-set pitch_rate_limit = 1998
-set yaw_rate_limit = 1998

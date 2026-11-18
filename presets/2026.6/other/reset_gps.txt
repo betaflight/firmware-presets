@@ -63,6 +63,7 @@ set gps_rescue_yaw_p = 20
 set trust_mag = OFF
 
 feature -GPS
+set failsafe_procedure = DROP
 
 #$ OPTION BEGIN (UNCHECKED): enable GPS?
     feature GPS
