@@ -45,10 +45,13 @@
 #$ DESCRIPTION: - [UAV Tech Discord](https://discordapp.com/invite/rCCzgeT)
 #$ DESCRIPTION: - [Take it to the NEXT LEVEL!](https://theuavtech.com/tuning)
 #$ DESCRIPTION:
-#$ WARNING: **DO NOT** select the RPM Filter option unless your ESCs support DSHOT and Bi-Directional Communication.  If you are unsure, HIT CANCEL and deselect that option; OTHERWISE, it can spin up motors even before you arm your quad!!!
+#$ WARNING: Do not select RPM Filter or Dynamic Idle unless your ESCs support bidirectional DShot. If unsure, cancel, remove the propellers and verify support first.
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/350
 #$ INCLUDE: presets/2026.6/tune/defaults.txt
 #$ INCLUDE: presets/2026.6/filters/defaults.txt
+
+# RPM filtering remains off unless selected independently.
+set rpm_filter_harmonics = 0
 
 # -- PID Settings --
 set simplified_master_multiplier = 80
@@ -62,7 +65,7 @@ set anti_gravity_gain = 80
 set pidsum_limit = 1000
 set pidsum_limit_yaw = 1000
 
-#$ OPTION_GROUP BEGIN: Choose ONE Filter option (+ RPM filter if desired)
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Choose one filter option
     #$ OPTION BEGIN (UNCHECKED): low Build Quality
         # -- ADDER: For HIGH gyro vibration builds --
         set simplified_gyro_filter = ON
@@ -99,6 +102,9 @@ set pidsum_limit_yaw = 1000
         set yaw_lowpass_hz = 0
     #$ OPTION END
 
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: RPM filtering
     #$ OPTION BEGIN (UNCHECKED): ... + enable RPM filter (if supported)
         # -- ADDER: Enabled RPM filtering --
         set motor_pwm_protocol = DSHOT600
@@ -122,6 +128,7 @@ set pidsum_limit_yaw = 1000
 
 #$ OPTION_GROUP BEGIN: Prop Wash Performance Booster ...
     #$ OPTION BEGIN (UNCHECKED): Dynamic Idle
+        set dshot_bidir = ON
         # -- ADDER: Enabling Dynamic Idle --
         set dyn_idle_min_rpm = 35
     #$ OPTION END
