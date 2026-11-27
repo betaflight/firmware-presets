@@ -21,7 +21,7 @@
 
 # -- PID values --
 
-et p_pitch = 37
+set p_pitch = 37
 set i_pitch = 67
 set d_pitch = 30
 set f_pitch = 162

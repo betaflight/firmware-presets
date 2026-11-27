@@ -24,7 +24,7 @@
 #$ DESCRIPTION: <img src="https://i0.wp.com/theuavtech.com/wp-content/uploads/2020/10/icon-150x150-1.png" width="100px" style="margin-left: auto; margin-right: auto; display: block;"/>
 #$ DESCRIPTION:
 #$ DESCRIPTION:
-#$ WARNING: **DO NOT** select this preset unless your ESCs support Bi-Directional DSHOT communication, WHICH IS THE DEFAULT FOR THE CADDX GOFILM 20.  If you have re-flashed the ESCs and are unsure if the firmware you flashed supports Bi-Directional DSHOT, HIT CANCEL! To test, take your props OFF.
+#$ WARNING: This preset assumes the stock Caddx GoFilm20 ESC setup and enables RPM filtering and Dynamic Idle. If you replaced or reflashed the ESCs, confirm the firmware supports bidirectional DShot before applying the preset. Select a DShot protocol compatible with your ESC and PID loop rate (not PWM), enable bidirectional DShot, and verify valid RPM telemetry from every motor in the Motors tab with the propellers removed. This preset can set DShot600. For older EFM8BB1 (L) ESCs with bidirectional DShot support, Betaflight recommends DShot150 with a 2 kHz PID loop. After applying the preset, change the motor protocol in the Motors tab to DShot150 and verify RPM telemetry again before arming. Do not arm if telemetry is invalid or missing.
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/468
 #$ INCLUDE: presets/2026.6/tune/defaults.txt
 #$ INCLUDE: presets/2026.6/filters/defaults.txt
@@ -131,3 +131,5 @@ set pidsum_limit_yaw = 1000
 #$ OPTION_GROUP END
 
 simplified_tuning apply
+# Apply this override last so the gyro slider does not replace it during preset application.
+set gyro_lpf2_static_hz = 1000
