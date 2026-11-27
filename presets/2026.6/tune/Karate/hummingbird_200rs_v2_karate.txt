@@ -1,0 +1,49 @@
+#$ TITLE: Hummingbird 200RS V2 Karate Race 5-inch 6S
+#$ FIRMWARE_VERSION: 2026.6
+#$ CATEGORY: TUNE
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: NewBeeDrone, Hummingbird, 200RS, 200RSV2, RaceSpec, Karate, 5 inch, 6S
+#$ AUTHOR: sugarK
+#$ PARSER: MARKED
+#$ DESCRIPTION: Betaflight 2026.6 port of the standard New Karate (2025) tune for 5-inch 6S racers using a Hummingbird 200RS V2 stack.
+#$ DESCRIPTION: sugarK developed the [original Karate Race tune](https://github.com/betaflight/firmware-presets/pull/556) on a B-Line Compressor with 2100 KV 2207 motors, including a build with a NewBeeDrone 200RS stack.
+#$ DESCRIPTION: Applies PID, TPA, gyro and D-term filtering, and RPM filtering. Requires an ESC configured for DShot300 or DShot600 with bidirectional DShot support.
+#$ DESCRIPTION: Configures UART5 for HDZero VTX (MSP + DisplayPort) at 115200 baud.
+#$ DESCRIPTION: Experimental port. Verify RPM telemetry and validate the tune on your airframe before racing.
+#$ INCLUDE_WARNING: misc/warnings/en/rpm_filters.txt
+#$ INCLUDE: presets/2026.6/tune/defaults.txt
+#$ INCLUDE: presets/2026.6/filters/defaults.txt
+
+# HDZero VTX
+serial UART5 131073 115200 57600 0 115200
+
+# Gyro and D-term filtering
+set gyro_lpf1_static_hz = 0
+set gyro_lpf1_dyn_min_hz = 0
+set dyn_notch_count = 1
+set dyn_notch_q = 500
+set dyn_notch_max_hz = 650
+set dterm_lpf1_dyn_expo = 7
+
+# RPM filtering
+set dshot_bidir = ON
+set rpm_filter_weights = 100,20,100
+set rpm_filter_fade_range_hz = 100
+
+# PID and throttle response
+set thrust_linear = 20
+set throttle_boost = 2
+set iterm_relax_cutoff = 45
+set simplified_pids_mode = RP
+set simplified_i_gain = 115
+set simplified_d_gain = 85
+set simplified_pi_gain = 85
+set simplified_d_max_gain = 75
+set simplified_feedforward_gain = 105
+set simplified_pitch_d_gain = 95
+set simplified_pitch_pi_gain = 105
+set d_max_gain = 0
+set d_max_advance = 37
+set tpa_rate = 70
+set tpa_breakpoint = 1250
+simplified_tuning apply
