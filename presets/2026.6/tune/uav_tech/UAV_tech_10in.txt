@@ -45,7 +45,7 @@
 #$ DESCRIPTION: - [UAV Tech Discord](https://discordapp.com/invite/rCCzgeT)
 #$ DESCRIPTION: - [Take it to the NEXT LEVEL!](https://theuavtech.com/tuning)
 #$ DESCRIPTION:
-#$ WARNING: Do not select RPM Filter or Dynamic Idle unless your ESCs support bidirectional DShot. If unsure, cancel, remove the propellers and verify support first.
+#$ WARNING: Before using RPM Filter or Dynamic Idle, select a DShot protocol compatible with your ESC and PID loop rate (not PWM), enable bidirectional DShot, and verify valid RPM telemetry from every motor in the Motors tab with the propellers removed. This preset can set DShot600. For older EFM8BB1 (L) ESCs with bidirectional DShot support, Betaflight recommends DShot150 with a 2 kHz PID loop. After applying the preset, change the motor protocol in the Motors tab to DShot150 and verify RPM telemetry again before arming. Do not arm if telemetry is invalid or missing.
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/350
 #$ INCLUDE: presets/2026.6/tune/defaults.txt
 #$ INCLUDE: presets/2026.6/filters/defaults.txt
