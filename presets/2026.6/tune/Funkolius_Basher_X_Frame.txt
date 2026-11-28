@@ -35,7 +35,7 @@ set iterm_windup = 85
 
 # -- Filters --
 #$ OPTION BEGIN (CHECKED): FILTERS RECOMMENDED FOR CLEAN BUILD
-    #$ INCLUDE: presets/4.5/filters/defaults.txt
+    #$ INCLUDE: presets/2026.6/filters/defaults.txt
     set simplified_dterm_filter = OFF
     set simplified_dterm_filter_multiplier = 100
     set yaw_lowpass_hz = 115
