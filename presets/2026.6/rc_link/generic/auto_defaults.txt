@@ -1,0 +1,15 @@
+#$ TITLE: Reset automatic RC smoothing settings
+#$ FIRMWARE_VERSION: 2026.6
+#$ CATEGORY: RC_LINK
+#$ STATUS: OFFICIAL
+#$ KEYWORDS: defaults, automatic, rc, smoothing, reset
+#$ AUTHOR: Betaflight
+#$ DESCRIPTION: Resets RC smoothing settings to Betaflight 2026.6 defaults without changing RC link or feedforward settings.
+#$ HIDDEN: true
+
+set rc_smoothing = ON
+set rc_smoothing_auto_factor = 30
+set rc_smoothing_auto_factor_throttle = 30
+set rc_smoothing_setpoint_cutoff = 0
+set rc_smoothing_throttle_cutoff = 0
+set rc_smoothing_debug_axis = ROLL
